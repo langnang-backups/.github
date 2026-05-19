@@ -1,0 +1,445 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="../../www.googletagmanager.com/gtag/js-id=UA-878633-1" tppabs="https://www.googletagmanager.com/gtag/js?id=UA-878633-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-878633-1');
+</script>
+
+<meta charset=utf-8"utf-8">
+<meta name="robots" content="all" />
+<meta name="author" content="w3school.com.cn" />
+
+<link rel="stylesheet" type="text/css" href="../c.css" tppabs="https://www.w3school.com.cn/c.css" />
+
+<script src="../lib/cc/prism2.js" tppabs="https://www.w3school.com.cn/lib/cc/prism2.js"></script>
+<link rel='stylesheet' href="../lib/cc/prism.css" tppabs="https://www.w3school.com.cn/lib/cc/prism.css">
+
+<link rel="icon" type="image/png" sizes="16x16" href="/ui2019/logo-16-red.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/ui2019/logo-32-red.png">
+<link rel="icon" type="image/png" sizes="48x48" href="/ui2019/logo-48-red.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/ui2019/logo-96-red.png">
+<link rel="apple-touch-icon-precomposed" sizes="180x180" href="/ui2019/logo-180.png">
+
+
+<title>HTML DOM HR 对象</title>
+
+</head>
+
+<body class="browserscripting">
+
+<div id="wrapper">
+
+<div id="header">
+<a id="logo" href="../index.html" tppabs="https://www.w3school.com.cn/index.html" title="w3school 在线教程" style="float:left;">w3school 在线教程</a>
+<div id="header_gg">
+<script async src="../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" tppabs="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- W3 页眉 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-3381531532877742"
+     data-ad-slot="7423315034"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+
+<div id="navfirst">
+<ul id="menu">
+<li id="h"><a href="../h.asp.htm" tppabs="https://www.w3school.com.cn/h.asp" title="HTML 系列教程">HTML 系列教程</a></li>
+<li id="b"><a href="../b.asp.htm" tppabs="https://www.w3school.com.cn/b.asp" title="浏览器脚本教程">浏览器脚本</a></li>
+<li id="s"><a href="../s.asp.htm" tppabs="https://www.w3school.com.cn/s.asp" title="服务器脚本教程">服务器脚本</a></li>
+<li id="p"><a href="../p.asp.htm" tppabs="https://www.w3school.com.cn/p.asp" title="编程教程">编程教程</a></li>
+<li id="x"><a href="../x.asp.htm" tppabs="https://www.w3school.com.cn/x.asp" title="XML 系列教程">XML 系列教程</a></li>
+<li id="w"><a href="../w.asp.htm" tppabs="https://www.w3school.com.cn/w.asp" title="建站手册">建站手册</a></li>
+<li id="r"><a href="../r.asp.htm" tppabs="https://www.w3school.com.cn/r.asp" title="参考手册">参考手册</a></li>
+</ul>
+</div>
+
+<div id="navsecond">
+
+<div id="course"><h2>JS 参考手册</h2>
+<ul>
+<li><a href="index.asp.htm" tppabs="https://www.w3school.com.cn/jsref/index.asp" title="JavaScript 和 HTML DOM 参考手册">JS 参考手册（类别排序）</a></li>
+<li><a href="jsref_reference.asp.htm" tppabs="https://www.w3school.com.cn/jsref/jsref_reference.asp" title="JavaScript 参考手册">JS 参考手册（字母排序）</a></li>
+</ul>
+<h2>JavaScript</h2>
+<ul>
+<li><a href="jsref_obj_array.asp.htm" tppabs="https://www.w3school.com.cn/jsref/jsref_obj_array.asp" title="JavaScript Array 参考手册">JS Array</a></li>
+<li><a href="jsref_obj_boolean.asp.htm" tppabs="https://www.w3school.com.cn/jsref/jsref_obj_boolean.asp" title="JavaScript Boolean 参考手册">JS Boolean</a></li>
+<li><a href="jsref_classes.asp.htm" tppabs="https://www.w3school.com.cn/jsref/jsref_classes.asp" title="JavaScript Class 参考手册">JS Class</a></li>
+<li><a href="jsref_obj_date.asp.htm" tppabs="https://www.w3school.com.cn/jsref/jsref_obj_date.asp" title="JavaScript Date 参考手册">JS Date</a></li>
+<li><a href="jsref_obj_error.asp.htm" tppabs="https://www.w3school.com.cn/jsref/jsref_obj_error.asp" title="JavaScript Error 参考手册">JS Error</a></li>
+<li><a href="jsref_obj_global.asp.htm" tppabs="https://www.w3school.com.cn/jsref/jsref_obj_global.asp" title="JavaScript Global 参考手册">JS Global</a></li>
+<li><a href="jsref_obj_json.asp.htm" tppabs="https://www.w3school.com.cn/jsref/jsref_obj_json.asp" title="JavaScript JSON 参考手册">JS JSON</a></li>
+<li><a href="jsref_obj_map.asp.htm" tppabs="https://www.w3school.com.cn/jsref/jsref_obj_map.asp" title="JavaScript Map 参考手册">JS Map</a></li>
+<li><a href="jsref_obj_math.asp.htm" tppabs="https://www.w3school.com.cn/jsref/jsref_obj_math.asp" title="JavaScript Math 参考手册">JS Math</a></li>
+<li><a href="jsref_obj_number.asp.htm" tppabs="https://www.w3school.com.cn/jsref/jsref_obj_number.asp" title="JavaScript Number 参考手册">JS Number</a></li>
+<li><a href="jsref_obj_promise.asp.htm" tppabs="https://www.w3school.com.cn/jsref/jsref_obj_promise.asp" title="JavaScript Promise 对象">JS Promise</a></li>
+<li><a href="jsref_obj_regexp.asp.htm" tppabs="https://www.w3school.com.cn/jsref/jsref_obj_regexp.asp" title="JavaScript RegExp 参考手册">JS RegExp</a></li>
+<li><a href="jsref_obj_set.asp.htm" tppabs="https://www.w3school.com.cn/jsref/jsref_obj_set.asp" title="JavaScript Set 参考手册">JS Set</a></li>
+<li><a href="jsref_obj_string.asp.htm" tppabs="https://www.w3school.com.cn/jsref/jsref_obj_string.asp" title="JavaScript String 参考手册">JS String</a></li>
+<li><a href="jsref_obj_object.asp.htm" tppabs="https://www.w3school.com.cn/jsref/jsref_obj_object.asp" title="JavaScript Object 参考手册">JS 对象</a></li>
+<li><a href="jsref_operators.asp.htm" tppabs="https://www.w3school.com.cn/jsref/jsref_operators.asp" title="JavaScript 运算符参考手册">JS 运算符</a></li>
+<li><a href="jsref_precedence.asp.htm" tppabs="https://www.w3school.com.cn/jsref/jsref_precedence.asp" title="JavaScript 运算符优先级">JS 运算符优先级</a></li>
+<li><a href="jsref_statements.asp.htm" tppabs="https://www.w3school.com.cn/jsref/jsref_statements.asp" title="JavaScript 语句参考手册">JS 语句</a></li>
+<li><a href="jsref_obj_typed_array.asp.htm" tppabs="https://www.w3school.com.cn/jsref/jsref_obj_typed_array.asp" title="JavaScript 类型化数组参考手册">JS 类型化数组</a></li>
+</ul>
+<h2>Window</h2>
+<ul>
+<li><a href="obj_window.asp.htm" tppabs="https://www.w3school.com.cn/jsref/obj_window.asp" title="Window 对象">Window 对象</a></li>
+<li><a href="obj_console.asp.htm" tppabs="https://www.w3school.com.cn/jsref/obj_console.asp" title="Window Console 对象">Window Console</a></li>
+<li><a href="obj_history.asp.htm" tppabs="https://www.w3school.com.cn/jsref/obj_history.asp" title="Window History 对象">Window History</a></li>
+<li><a href="obj_location.asp.htm" tppabs="https://www.w3school.com.cn/jsref/obj_location.asp" title="Window Location 对象">Window Location</a></li>
+<li><a href="obj_navigator.asp.htm" tppabs="https://www.w3school.com.cn/jsref/obj_navigator.asp" title="Window Navigator 对象">Window Navigator</a></li>
+<li><a href="obj_screen.asp.htm" tppabs="https://www.w3school.com.cn/jsref/obj_screen.asp" title="Window Screen 对象">Window Screen</a></li>
+</ul>
+<h2>HTML DOM</h2>
+<ul>
+<li><a href="dom_obj_document.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_document.asp" title="HTML DOM Document 对象">HTML Document</a></li>
+<li><a href="dom_obj_all.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_all.asp" title="HTML DOM Element 对象">HTML Element</a></li>
+<li><a href="dom_obj_attributes.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_attributes.asp" title="HTML DOM Attr 对象">HTML Attribute</a></li>
+<li><a href="dom_obj_event.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_event.asp" title="HTML DOM 事件">HTML Event</a></li>
+<li><a href="obj_events.asp.htm" tppabs="https://www.w3school.com.cn/jsref/obj_events.asp" title="HTML DOM Event 对象">HTML Event 对象</a></li>
+<li><a href="dom_obj_htmlcollection.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_htmlcollection.asp" title="DOM HTMLCollection">HTML Collection</a></li>
+<li><a href="dom_obj_html_nodelist.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_html_nodelist.asp" title="HTML DOM NodeList 对象">HTML NodeList</a></li>
+<li><a href="dom_obj_html_domtokenlist.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_html_domtokenlist.asp" title="HTML DOMTokenList 对象">HTML DOMTokenList</a></li>
+<li><a href="dom_obj_style.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_style.asp" title="HTML DOM Style 对象">HTML Style</a></li>
+</ul>
+<h2>Web API</h2>
+<ul>
+<li><a href="api_canvas.asp.htm" tppabs="https://www.w3school.com.cn/jsref/api_canvas.asp" title="JavaScript Canvas API">API Canvas</a></li>
+<li><a href="api_console.asp.htm" tppabs="https://www.w3school.com.cn/jsref/api_console.asp" title="JavaScript Console API">API Console</a></li>
+<li><a href="api_fetch.asp.htm" tppabs="https://www.w3school.com.cn/jsref/api_fetch.asp" title="JavaScript Fetch API">API Fetch</a></li>
+<li><a href="api_fullscreen.asp.htm" tppabs="https://www.w3school.com.cn/jsref/api_fullscreen.asp" title="JavaScript Fullscreen API">API Fullscreen</a></li>
+<li><a href="api_geolocation.asp.htm" tppabs="https://www.w3school.com.cn/jsref/api_geolocation.asp" title="JavaScript Geolocation API">API Geolocation</a></li>
+<li><a href="api_history.asp.htm" tppabs="https://www.w3school.com.cn/jsref/api_history.asp" title="JavaScript History API">API History</a></li>
+<li><a href="api_mediaquerylist.asp.htm" tppabs="https://www.w3school.com.cn/jsref/api_mediaquerylist.asp" title="JavaScript MediaQueryList API">API MediaQueryList</a></li>
+<li><a href="api_storage.asp.htm" tppabs="https://www.w3school.com.cn/jsref/api_storage.asp" title="JavaScript Storage API">API Storage</a></li>
+<li><a href="api_validation.asp.htm" tppabs="https://www.w3school.com.cn/jsref/api_validation.asp" title="JavaScript Validation API">API Validation</a></li>
+<li><a href="api_web.asp.htm" tppabs="https://www.w3school.com.cn/jsref/api_web.asp" title="JavaScript Web API">API Web</a></li>
+</ul>
+<h2>HTML 对象</h2>
+<ul>
+<li><a href="dom_obj_anchor.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_anchor.asp" title="HTML DOM Anchor 对象">&lt;a&gt;</a></li>
+<li><a href="dom_obj_abbr.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_abbr.asp" title="HTML DOM Abbreviation 对象">&lt;abbr&gt;</a></li>
+<li><a href="dom_obj_address.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_address.asp" title="HTML DOM Address 对象">&lt;address&gt;</a></li>
+<li><a href="dom_obj_area.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_area.asp" title="HTML DOM Area 对象">&lt;area&gt;</a></li>
+<li><a href="dom_obj_article.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_article.asp" title="HTML DOM Article 对象">&lt;article&gt;</a></li>
+<li><a href="dom_obj_aside.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_aside.asp" title="HTML DOM Aside 对象">&lt;aside&gt;</a></li>
+<li><a href="dom_obj_audio.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_audio.asp" title="HTML DOM Audio 对象">&lt;audio&gt;</a></li>
+<li><a href="dom_obj_b.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_b.asp" title="HTML DOM Bold 对象">&lt;b&gt;</a></li>
+<li><a href="dom_obj_base.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_base.asp" title="HTML DOM Base 对象">&lt;base&gt;</a></li>
+<li><a href="dom_obj_bdo.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_bdo.asp" title="HTML DOM Bdo 对象">&lt;bdo&gt;</a></li>
+<li><a href="dom_obj_blockquote.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_blockquote.asp" title="HTML DOM Blockquote 对象">&lt;blockquote&gt;</a></li>
+<li><a href="dom_obj_body.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_body.asp" title="HTML DOM Body 对象">&lt;body&gt;</a></li>
+<li><a href="dom_obj_br.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_br.asp" title="HTML DOM BR 对象">&lt;br&gt;</a></li>
+<li><a href="dom_obj_pushbutton.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_pushbutton.asp" title="HTML DOM Button 对象">&lt;button&gt;</a></li>
+<li><a href="dom_obj_canvas.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_canvas.asp" title="HTML DOM Canvas 对象">&lt;canvas&gt;</a></li>
+<li><a href="dom_obj_caption.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_caption.asp" title="HTML DOM Caption 对象">&lt;caption&gt;</a></li>
+<li><a href="dom_obj_cite.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_cite.asp" title="HTML DOM Cite 对象">&lt;cite&gt;</a></li>
+<li><a href="dom_obj_code.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_code.asp" title="HTML DOM Code 对象">&lt;code&gt;</a></li>
+<li><a href="dom_obj_col.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_col.asp" title="HTML DOM Column 对象">&lt;col&gt;</a></li>
+<li><a href="dom_obj_colgroup.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_colgroup.asp" title="HTML DOM ColumnGroup 对象">&lt;colgroup&gt;</a></li>
+<li><a href="dom_obj_datalist.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_datalist.asp" title="HTML DOM Datalist 对象">&lt;datalist&gt;</a></li>
+<li><a href="dom_obj_dd.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_dd.asp" title="HTML DOM DD 对象">&lt;dd&gt;</a></li>
+<li><a href="dom_obj_del.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_del.asp" title="HTML DOM Del 对象">&lt;del&gt;</a></li>
+<li><a href="dom_obj_details.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_details.asp" title="HTML DOM Details 对象">&lt;details&gt;</a></li>
+<li><a href="dom_obj_dfn.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_dfn.asp" title="HTML DOM DFN 对象">&lt;dfn&gt;</a></li>
+<li><a href="dom_obj_dialog.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_dialog.asp" title="HTML DOM Dialog 对象">&lt;dialog&gt;</a></li>
+<li><a href="dom_obj_div.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_div.asp" title="HTML DOM Div 对象">&lt;div&gt;</a></li>
+<li><a href="dom_obj_dl.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_dl.asp" title="HTML DOM DList 对象">&lt;dl&gt;</a></li>
+<li><a href="dom_obj_dt.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_dt.asp" title="HTML DOM DT 对象">&lt;dt&gt;</a></li>
+<li><a href="dom_obj_em.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_em.asp" title="HTML DOM Emphasized 对象">&lt;em&gt;</a></li>
+<li><a href="dom_obj_embed.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_embed.asp" title="HTML DOM Embed 对象">&lt;embed&gt;</a></li>
+<li><a href="dom_obj_fieldset.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_fieldset.asp" title="HTML DOM Fieldset 对象">&lt;fieldset&gt;</a></li>
+<li><a href="dom_obj_figcaption.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_figcaption.asp" title="HTML DOM Figcaption 对象">&lt;figcaption&gt;</a></li>
+<li><a href="dom_obj_figure.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_figure.asp" title="HTML DOM Figure 对象">&lt;figure&gt;</a></li>
+<li><a href="dom_obj_footer.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_footer.asp" title="HTML DOM Footer 对象">&lt;footer&gt;</a></li>
+<li><a href="dom_obj_form.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_form.asp" title="HTML DOM Form 对象">&lt;form&gt;</a></li>
+<li><a href="dom_obj_head.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_head.asp" title="HTML DOM Head 对象">&lt;head&gt;</a></li>
+<li><a href="dom_obj_header.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_header.asp" title="HTML DOM Header 对象">&lt;header&gt;</a></li>
+<li><a href="dom_obj_heading.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_heading.asp" title="HTML DOM Heading 对象">&lt;h1&gt; - &lt;h6&gt;</a></li>
+<li class="currentLink"><a href="dom_obj_hr.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_hr.asp" title="HTML DOM HR 对象">&lt;hr&gt;</a></li>
+<li><a href="dom_obj_html.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_html.asp" title="HTML DOM HTML 对象">&lt;html&gt;</a></li>
+<li><a href="dom_obj_i.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_i.asp" title="HTML DOM Italic 对象">&lt;i&gt;</a></li>
+<li><a href="dom_obj_frame.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_frame.asp" title="HTML DOM IFrame 对象">&lt;iframe&gt;</a></li>
+<li><a href="dom_obj_image.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_image.asp" title="HTML DOM Image 对象">&lt;img&gt;</a></li>
+<li><a href="dom_obj_ins.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_ins.asp" title="HTML DOM Ins 对象">&lt;ins&gt;</a></li>
+<li><a href="dom_obj_button.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_button.asp" title="HTML DOM Input Button 对象">&lt;input&gt; button</a></li>
+<li><a href="dom_obj_checkbox.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_checkbox.asp" title="HTML DOM Input Checkbox 对象">&lt;input&gt; checkbox</a></li>
+<li><a href="dom_obj_color.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_color.asp" title="HTML DOM Input Color 对象">&lt;input&gt; color</a></li>
+<li><a href="dom_obj_date.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_date.asp" title="HTML DOM Input Date 对象">&lt;input&gt; date</a></li>
+<li><a href="dom_obj_datetime.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_datetime.asp" title="HTML DOM Input Datetime 对象">&lt;input&gt; datetime</a></li>
+<li><a href="dom_obj_datetime-local.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_datetime-local.asp" title="HTML DOM Input DatetimeLocal 对象">&lt;input&gt; datetime-local</a></li>
+<li><a href="dom_obj_email.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_email.asp" title="HTML DOM Input Email 对象">&lt;input&gt; email</a></li>
+<li><a href="dom_obj_fileupload.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_fileupload.asp" title="HTML DOM Input FileUpload 对象">&lt;input&gt; file</a></li>
+<li><a href="dom_obj_hidden.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_hidden.asp" title="HTML DOM Input Hidden 对象">&lt;input&gt; hidden</a></li>
+<li><a href="dom_obj_input_image.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_input_image.asp" title="HTML DOM Input Image 对象">&lt;input&gt; image</a></li>
+<li><a href="dom_obj_month.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_month.asp" title="HTML DOM Input Month 对象">&lt;input&gt; month</a></li>
+<li><a href="dom_obj_number.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_number.asp" title="HTML DOM Input Number 对象">&lt;input&gt; number</a></li>
+<li><a href="dom_obj_password.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_password.asp" title="HTML DOM Input Password 对象">&lt;input&gt; password</a></li>
+<li><a href="dom_obj_radio.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_radio.asp" title="HTML DOM Input Radio 对象">&lt;input&gt; radio</a></li>
+<li><a href="dom_obj_range.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_range.asp" title="HTML DOM Input Range 对象">&lt;input&gt; range</a></li>
+<li><a href="dom_obj_reset.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_reset.asp" title="HTML DOM Input Reset 对象">&lt;input&gt; reset</a></li>
+<li><a href="dom_obj_search.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_search.asp" title="HTML DOM Input Search 对象">&lt;input&gt; search</a></li>
+<li><a href="dom_obj_submit.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_submit.asp" title="HTML DOM Input Submit 对象">&lt;input&gt; submit</a></li>
+<li><a href="dom_obj_text.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_text.asp" title="HTML DOM Input Text 对象">&lt;input&gt; text</a></li>
+<li><a href="dom_obj_input_time.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_input_time.asp" title="HTML DOM Input Time 对象">&lt;input&gt; time</a></li>
+<li><a href="dom_obj_url.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_url.asp" title="HTML DOM Input URL 对象">&lt;input&gt; url</a></li>
+<li><a href="dom_obj_week.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_week.asp" title="HTML DOM Input Week 对象">&lt;input&gt; week</a></li>
+<li><a href="dom_obj_kbd.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_kbd.asp" title="HTML DOM Kbd 对象">&lt;kbd&gt;</a></li>
+<li><a href="dom_obj_label.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_label.asp" title="HTML DOM Label 对象">&lt;label&gt;</a></li>
+<li><a href="dom_obj_legend.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_legend.asp" title="HTML DOM Legend 对象">&lt;legend&gt;</a></li>
+<li><a href="dom_obj_li.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_li.asp" title="HTML DOM Li 对象">&lt;li&gt;</a></li>
+<li><a href="dom_obj_link.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_link.asp" title="HTML DOM Link 对象">&lt;link&gt;</a></li>
+<li><a href="dom_obj_map.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_map.asp" title="HTML DOM Map 对象">&lt;map&gt;</a></li>
+<li><a href="dom_obj_mark.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_mark.asp" title="HTML DOM Mark 对象">&lt;mark&gt;</a></li>
+<li><a href="dom_obj_menu.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_menu.asp" title="HTML DOM Menu 对象">&lt;menu&gt;</a></li>
+<li><a href="dom_obj_menuitem.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_menuitem.asp" title="HTML DOM MenuItem 对象">&lt;menuitem&gt;</a></li>
+<li><a href="dom_obj_meta.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_meta.asp" title="HTML DOM Meta 对象">&lt;meta&gt;</a></li>
+<li><a href="dom_obj_meter.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_meter.asp" title="HTML DOM Meter 对象">&lt;meter&gt;</a></li>
+<li><a href="dom_obj_nav.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_nav.asp" title="HTML DOM Nav 对象">&lt;nav&gt;</a></li>
+<li><a href="dom_obj_object.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_object.asp" title="HTML DOM Object 对象">&lt;object&gt;</a></li>
+<li><a href="dom_obj_ol.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_ol.asp" title="HTML DOM Ol 对象">&lt;ol&gt;</a></li>
+<li><a href="dom_obj_optgroup.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_optgroup.asp" title="HTML DOM OptionGroup 对象">&lt;optgroup&gt;</a></li>
+<li><a href="dom_obj_option.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_option.asp" title="HTML DOM Option 对象">&lt;option&gt;</a></li>
+<li><a href="dom_obj_output.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_output.asp" title="HTML DOM Output 对象">&lt;output&gt;</a></li>
+<li><a href="dom_obj_paragraph.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_paragraph.asp" title="HTML DOM Paragraph 对象">&lt;p&gt;</a></li>
+<li><a href="dom_obj_param.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_param.asp" title="HTML DOM Parameter 对象">&lt;param&gt;</a></li>
+<li><a href="dom_obj_pre.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_pre.asp" title="HTML DOM Pre 对象">&lt;pre&gt;</a></li>
+<li><a href="dom_obj_progress.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_progress.asp" title="HTML DOM Progress 对象">&lt;progress&gt;</a></li>
+<li><a href="dom_obj_quote.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_quote.asp" title="HTML DOM Quote 对象">&lt;q&gt;</a></li>
+<li><a href="dom_obj_s.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_s.asp" title="HTML DOM S 对象">&lt;s&gt;</a></li>
+<li><a href="dom_obj_samp.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_samp.asp" title="HTML DOM Samp 对象">&lt;samp&gt;</a></li>
+<li><a href="dom_obj_script.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_script.asp" title="HTML DOM Script 对象">&lt;script&gt;</a></li>
+<li><a href="dom_obj_section.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_section.asp" title="HTML DOM Section 对象">&lt;section&gt;</a></li>
+<li><a href="dom_obj_select.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_select.asp" title="HTML DOM Select 对象">&lt;select&gt;</a></li>
+<li><a href="dom_obj_small.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_small.asp" title="HTML DOM Small 对象">&lt;small&gt;</a></li>
+<li><a href="dom_obj_source.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_source.asp" title="HTML DOM Source 对象">&lt;source&gt;</a></li>
+<li><a href="dom_obj_span.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_span.asp" title="HTML DOM Span 对象">&lt;span&gt;</a></li>
+<li><a href="dom_obj_strong.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_strong.asp" title="HTML DOM Strong 对象">&lt;strong&gt;</a></li>
+<li><a href="dom_obj_sub.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_sub.asp" title="HTML DOM Subscript 对象">&lt;sub&gt;</a></li>
+<li><a href="dom_obj_summary.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_summary.asp" title="HTML DOM Summary 对象">&lt;summary&gt;</a></li>
+<li><a href="dom_obj_sup.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_sup.asp" title="HTML DOM Superscript 对象">&lt;sup&gt;</a></li>
+<li><a href="dom_obj_table.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_table.asp" title="HTML DOM Table 对象">&lt;table&gt;</a></li>
+<li><a href="dom_obj_tbody.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_tbody.asp" title="HTML DOM TBody 对象">&lt;tbody&gt;</a></li>
+<li><a href="dom_obj_tabledata.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_tabledata.asp" title="HTML DOM TableData 对象">&lt;td&gt;</a></li>
+<li><a href="dom_obj_tfoot.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_tfoot.asp" title="HTML DOM TFoot 对象">&lt;tfoot&gt;</a></li>
+<li><a href="dom_obj_tablehead.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_tablehead.asp" title="HTML DOM TableHeader 对象">&lt;th&gt;</a></li>
+<li><a href="dom_obj_thead.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_thead.asp" title="HTML DOM THead 对象">&lt;thead&gt;</a></li>
+<li><a href="dom_obj_tablerow.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_tablerow.asp" title="HTML DOM TableRow 对象">&lt;tr&gt;</a></li>
+<li><a href="dom_obj_textarea.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_textarea.asp" title="HTML DOM Textarea 对象">&lt;textarea&gt;</a></li>
+<li><a href="dom_obj_time.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_time.asp" title="HTML DOM Time 对象">&lt;time&gt;</a></li>
+<li><a href="dom_obj_title.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_title.asp" title="HTML DOM Title 对象">&lt;title&gt;</a></li>
+<li><a href="dom_obj_track.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_track.asp" title="HTML DOM Track 对象">&lt;track&gt;</a></li>
+<li><a href="dom_obj_u.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_u.asp" title="HTML DOM Underline 对象">&lt;u&gt;</a></li>
+<li><a href="dom_obj_ul.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_ul.asp" title="HTML DOM Ul 对象">&lt;ul&gt;</a></li>
+<li><a href="dom_obj_var.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_var.asp" title="HTML DOM Variable 对象">&lt;var&gt;</a></li>
+<li><a href="dom_obj_video.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_video.asp" title="HTML DOM Video 对象">&lt;video&gt;</a></li>
+</ul>
+<h2>其他参考手册</h2>
+<ul>
+<li><a href="obj_cssstyledeclaration.asp.htm" tppabs="https://www.w3school.com.cn/jsref/obj_cssstyledeclaration.asp" title="CSSStyleDeclaration 对象">CSSStyleDeclaration</a></li>
+<li><a href="jsref_type_conversion.asp.htm" tppabs="https://www.w3school.com.cn/jsref/jsref_type_conversion.asp" title="JavaScript 类型转换">JS 类型转换</a></li>
+</ul>
+</div><div id="selected">
+<h2>课程推荐：</h2>
+<ul>
+<li><a href="../howto/index.asp.htm" tppabs="https://www.w3school.com.cn/howto/index.asp" title="W3School 百宝箱">W3School 百宝箱</a></li>
+<li><a href="../java/index.asp.htm" tppabs="https://www.w3school.com.cn/java/index.asp" title="Java 教程">Java 教程</a></li>
+</ul>
+
+</div>
+
+</div>
+
+<div id="maincontent">
+
+<h1>HTML DOM HR 对象</h1>
+
+<div class="prenextnav">
+<ul class="prenext">
+<li class="pre"><a href="dom_obj_heading.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_heading.asp" title="HTML DOM Heading 对象">&lt;h1&gt; - &lt;h6&gt;</a></li>
+<li class="next"><a href="dom_obj_html.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_html.asp" title="HTML DOM HTML 对象">&lt;html&gt;</a></li>
+</ul>
+</div>
+
+
+
+<div>
+<h2>HR 对象</h2>
+
+<p>HR 对象代表 HTML &lt;hr&gt; 元素。</p>
+
+<h3>访问 HR 对象</h3>
+
+<p>您可使用 getElementById() 来访问 &lt;hr&gt; 元素：</p>
+
+<pre class="language-js">
+var x = document.getElementById(&quot;myHR&quot;);
+</pre>
+
+<p class="tiy"><a target="_blank" href="javascript:if(confirm('https://www.w3school.com.cn/tiy/pr_accent-color.asp  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ������, �����������, ����Ŀ����ֹͣ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.w3school.com.cn/tiy/pr_accent-color.asp'" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=htmldom_hr_get">亲自试一试</a></p>
+
+<h3>创建 HR 对象</h3>
+
+<p>您可使用 document.createElement() 方法来创建 &lt;hr&gt; 元素：</p>
+
+<pre class="language-js">
+var x = document.createElement(&quot;HR&quot;);
+</pre>
+
+<p class="tiy"><a target="_blank" href="javascript:if(confirm('https://www.w3school.com.cn/tiy/ref_html_entities_f.asp  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ������, �����������, ����Ŀ����ֹͣ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.w3school.com.cn/tiy/ref_html_entities_f.asp'" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=htmldom_hr_create">亲自试一试</a></p>
+</div>
+
+
+
+<div>
+<h2>HR 对象属性</h2>
+
+<table class="dataintable">
+<tr>
+<th style="width: 27%;">属性</th>
+<th>描述</th>
+</tr>
+
+<tr>
+<td>align</td>
+<td>
+	<p><span class="deprecated">HTML5 中不支持。</span>请改用 <a href="javascript:if(confirm('https://www.w3school.com.cn/jsref/pr_border-top-style.asp  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ������, �����������, ����Ŀ����ֹͣ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.w3school.com.cn/jsref/pr_border-top-style.asp'" tppabs="https://www.w3school.com.cn/jsref/prop_style_textalign.asp" title="Style textAlign 属性">style.textAlign</a>。</p>
+	<p>设置或返回水平线的对齐方式。</p>
+</td>
+</tr>
+
+<tr>
+<td>color</td>
+<td>
+	<p><span class="deprecated">HTML5 中不支持。</span>请改用 <a href="javascript:if(confirm('https://www.w3school.com.cn/jsref/tag_font.asp  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ������, �����������, ����Ŀ����ֹͣ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.w3school.com.cn/jsref/tag_font.asp'" tppabs="https://www.w3school.com.cn/jsref/prop_style_color.asp" title="Style color 属性">style.color</a>。</p>
+	<p>设置或返回水平线的颜色。</p>
+</td>
+</tr>
+
+<tr>
+<td>noshade</td>
+<td>
+	<p><span class="deprecated">HTML5 中不支持。</span></p>
+	<p>设置或返回水平线是否应以一种纯色呈现（无阴影）。</p>
+</td>
+</tr>
+
+<tr>
+<td>size</td>
+<td>
+	<p><span class="deprecated">HTML5 中不支持。</span>请改用 <a href="javascript:if(confirm('https://www.w3school.com.cn/jsref/pr_border-block-start-width.asp  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ������, �����������, ����Ŀ����ֹͣ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.w3school.com.cn/jsref/pr_border-block-start-width.asp'" tppabs="https://www.w3school.com.cn/jsref/prop_style_height.asp" title="Style height 属性">style.height</a>。</p>
+	<p>设置或返回水平线的高度。</p>
+</td>
+</tr>
+
+<tr>
+<td>width</td>
+<td>
+	<p><span class="deprecated">HTML5 中不支持。</span>请改用 <a href="javascript:if(confirm('https://www.w3school.com.cn/jsref/pr_column-rule-style.asp  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ������, �����������, ����Ŀ����ֹͣ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.w3school.com.cn/jsref/pr_column-rule-style.asp'" tppabs="https://www.w3school.com.cn/jsref/prop_style_width.asp" title="Style width 属性">style.width</a>。</p>
+	<p>设置或返回水平线的宽度。</p>
+</td>
+</tr>
+</table>
+</div>
+
+
+
+<div>
+<h2>标准属性和事件</h2>
+
+<p>HR 对象支持标准<a href="dom_obj_all.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_all.asp" title="HTML DOM Element 对象">属性</a>和<a href="dom_obj_event.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_event.asp" title="HTML DOM Event 对象">事件</a>。</p>
+</div>
+
+
+
+<div>
+<h2>相关页面</h2>
+
+<p>HTML 参考手册：<a href="../tags/tag_hr.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_hr.asp" title="HTML &lt;hr&gt; 标签">HTML &lt;hr&gt; 标签</a></p>
+</div>
+
+
+
+<div class="prenextnav">
+<ul class="prenext">
+<li class="pre"><a href="dom_obj_heading.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_heading.asp" title="HTML DOM Heading 对象">&lt;h1&gt; - &lt;h6&gt;</a></li>
+<li class="next"><a href="dom_obj_html.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_html.asp" title="HTML DOM HTML 对象">&lt;html&gt;</a></li>
+</ul>
+</div><div style="background-color:#fcfdf8; padding:0;">
+<script async src="../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" tppabs="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- W3School ���Ĺ�� -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:800px;height:250px"
+     data-ad-client="ca-pub-3381531532877742"
+     data-ad-slot="2086924285"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+</div>
+<!-- maincontent end -->
+
+<div id="sidebar">
+
+<div id="tools">
+<h5 id="tools_reference"><a href="index.asp.htm" tppabs="https://www.w3school.com.cn/jsref/index.asp">JavaScript 和 HTML DOM 参考手册</a></h5>
+<h5 id="tools_example"><a href="../js/js_examples.asp.htm" tppabs="https://www.w3school.com.cn/js/js_examples.asp">JavaScript 实例</a></h5>
+<h5 id="tools_quiz"><a href="../js/js_quiz.asp.htm" tppabs="https://www.w3school.com.cn/js/js_quiz.asp">JavaScript 测验</a></h5>
+<h5 id="tools_tutorial"><a href="../js/index.asp.htm" tppabs="https://www.w3school.com.cn/js/index.asp">JavaScript 教程</a></h5>
+</div>
+
+<div id="sidebar_zzs">
+
+<div id="sbtg">
+<script async src="../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" tppabs="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- W3School 侧栏广告位 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-3381531532877742"
+     data-ad-slot="6744370501"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+</div>
+
+</div>
+
+<div id="footer">
+<p id="p1">
+W3School 简体中文版提供的内容仅用于培训和测试，不保证内容的正确性。通过使用本站内容随之而来的风险与本站无关。版权所有，保留一切权利。
+</p>
+
+<p id="p2">
+<a href="../about/index.asp.htm" tppabs="https://www.w3school.com.cn/about/index.asp" title="关于 W3School">关于 W3School</a>
+<a href="../about/about_helping.asp.htm" tppabs="https://www.w3school.com.cn/about/about_helping.asp" title="帮助 W3School">帮助 W3School</a>
+<a href="../about/about_use.asp.htm" tppabs="https://www.w3school.com.cn/about/about_use.asp" title="关于使用">使用条款</a>
+<a href="../about/about_privacy.asp.htm" tppabs="https://www.w3school.com.cn/about/about_privacy.asp" title="关于隐私">隐私条款</a>
+<a target="_blank" href="javascript:if(confirm('https://www.ykinvestment.com/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.ykinvestment.com/'" tppabs="https://www.ykinvestment.com/">技术支持：赢科</a>
+<a target="_blank" href="javascript:if(confirm('http://www.beian.miit.gov.cn/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://www.beian.miit.gov.cn/'" tppabs="http://www.beian.miit.gov.cn/">蒙ICP备06004630号</a>
+</p>
+</div>
+
+
+</div>
+<!-- wrapper end -->
+
+
+</body>
+
+</html>

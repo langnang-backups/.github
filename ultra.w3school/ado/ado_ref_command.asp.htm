@@ -1,0 +1,312 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="../../www.googletagmanager.com/gtag/js-id=UA-878633-1" tppabs="https://www.googletagmanager.com/gtag/js?id=UA-878633-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-878633-1');
+</script>
+
+<meta charset=utf-8"utf-8">
+<meta name="robots" content="all" />
+<meta name="author" content="w3school.com.cn" />
+
+<link rel="stylesheet" type="text/css" href="../c.css" tppabs="https://www.w3school.com.cn/c.css" />
+
+<script src="../lib/cc/prism2.js" tppabs="https://www.w3school.com.cn/lib/cc/prism2.js"></script>
+<link rel='stylesheet' href="../lib/cc/prism.css" tppabs="https://www.w3school.com.cn/lib/cc/prism.css">
+
+<link rel="icon" type="image/png" sizes="16x16" href="/ui2019/logo-16-red.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/ui2019/logo-32-red.png">
+<link rel="icon" type="image/png" sizes="48x48" href="/ui2019/logo-48-red.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/ui2019/logo-96-red.png">
+<link rel="apple-touch-icon-precomposed" sizes="180x180" href="/ui2019/logo-180.png">
+
+
+<title>ADO Command 对象</title>
+
+</head>
+
+<body class="serverscripting">
+
+<div id="wrapper">
+
+<div id="header">
+<a id="logo" href="../index.html" tppabs="https://www.w3school.com.cn/index.html" title="w3school 在线教程" style="float:left;">w3school 在线教程</a>
+<div id="header_gg">
+<script async src="../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" tppabs="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- W3 页眉 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-3381531532877742"
+     data-ad-slot="7423315034"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+
+<div id="navfirst">
+<ul id="menu">
+<li id="h"><a href="../h.asp.htm" tppabs="https://www.w3school.com.cn/h.asp" title="HTML 系列教程">HTML 系列教程</a></li>
+<li id="b"><a href="../b.asp.htm" tppabs="https://www.w3school.com.cn/b.asp" title="浏览器脚本教程">浏览器脚本</a></li>
+<li id="s"><a href="../s.asp.htm" tppabs="https://www.w3school.com.cn/s.asp" title="服务器脚本教程">服务器脚本</a></li>
+<li id="p"><a href="../p.asp.htm" tppabs="https://www.w3school.com.cn/p.asp" title="编程教程">编程教程</a></li>
+<li id="x"><a href="../x.asp.htm" tppabs="https://www.w3school.com.cn/x.asp" title="XML 系列教程">XML 系列教程</a></li>
+<li id="w"><a href="../w.asp.htm" tppabs="https://www.w3school.com.cn/w.asp" title="建站手册">建站手册</a></li>
+<li id="r"><a href="../r.asp.htm" tppabs="https://www.w3school.com.cn/r.asp" title="参考手册">参考手册</a></li>
+</ul>
+</div>
+
+<div id="navsecond">
+
+<div id="course"><h2>ADO 教程</h2>
+<ul>
+<li><a href="index.asp.htm" tppabs="https://www.w3school.com.cn/ado/index.asp" title="ADO 教程">ADO 教程</a></li>
+<li><a href="ado_intro.asp.htm" tppabs="https://www.w3school.com.cn/ado/ado_intro.asp" title="ADO 简介">ADO 简介</a></li>
+<li><a href="ado_connect.asp.htm" tppabs="https://www.w3school.com.cn/ado/ado_connect.asp" title="ADO 数据库连接">ADO 连接</a></li>
+<li><a href="ado_recordset.asp.htm" tppabs="https://www.w3school.com.cn/ado/ado_recordset.asp" title="ADO Recordset（记录集）">ADO 记录集</a></li>
+<li><a href="ado_display.asp.htm" tppabs="https://www.w3school.com.cn/ado/ado_display.asp" title="ADO 显示">ADO 显示</a></li>
+<li><a href="ado_query.asp.htm" tppabs="https://www.w3school.com.cn/ado/ado_query.asp" title="ADO 查询">ADO 查询</a></li>
+<li><a href="ado_sort.asp.htm" tppabs="https://www.w3school.com.cn/ado/ado_sort.asp" title="ADO 排序">ADO 排序</a></li>
+<li><a href="ado_add.asp.htm" tppabs="https://www.w3school.com.cn/ado/ado_add.asp" title="ADO 添加记录">ADO 添加</a></li>
+<li><a href="ado_update.asp.htm" tppabs="https://www.w3school.com.cn/ado/ado_update.asp" title="ADO 更新记录">ADO 更新</a></li>
+<li><a href="ado_delete.asp.htm" tppabs="https://www.w3school.com.cn/ado/ado_delete.asp" title="ADO 删除记录">ADO 删除</a></li>
+<li><a href="ado_getstring.asp.htm" tppabs="https://www.w3school.com.cn/ado/ado_getstring.asp" title="ADO 通过 GetString() 加速脚本">ADO 加速</a></li>
+</ul>
+<h2>ADO 对象</h2>
+<ul>
+<li class="currentLink"><a href="ado_ref_command.asp.htm" tppabs="https://www.w3school.com.cn/ado/ado_ref_command.asp" title="ADO Command 对象">ADO Command</a></li>
+<li><a href="ado_ref_connection.asp.htm" tppabs="https://www.w3school.com.cn/ado/ado_ref_connection.asp" title="ADO Connection 对象">ADO Connection</a></li>
+<li><a href="ado_ref_error.asp.htm" tppabs="https://www.w3school.com.cn/ado/ado_ref_error.asp" title="ADO Error 对象">ADO Error</a></li>
+<li><a href="ado_ref_field.asp.htm" tppabs="https://www.w3school.com.cn/ado/ado_ref_field.asp" title="ADO Field 对象">ADO Field</a></li>
+<li><a href="ado_ref_parameter.asp.htm" tppabs="https://www.w3school.com.cn/ado/ado_ref_parameter.asp" title="ADO Parameter 对象">ADO Parameter</a></li>
+<li><a href="ado_ref_property.asp.htm" tppabs="https://www.w3school.com.cn/ado/ado_ref_property.asp" title="ADO Property 对象">ADO Property</a></li>
+<li><a href="ado_ref_record.asp.htm" tppabs="https://www.w3school.com.cn/ado/ado_ref_record.asp" title="ADO Record 对象">ADO Record</a></li>
+<li><a href="ado_ref_recordset.asp.htm" tppabs="https://www.w3school.com.cn/ado/ado_ref_recordset.asp" title="ADO Recordset 对象">ADO Recordset</a></li>
+<li><a href="ado_ref_stream.asp.htm" tppabs="https://www.w3school.com.cn/ado/ado_ref_stream.asp" title="ADO Stream 对象">ADO Stream</a></li>
+</ul>
+<h2>ADO 总结</h2>
+<ul>
+<li><a href="ado_datatypes.asp.htm" tppabs="https://www.w3school.com.cn/ado/ado_datatypes.asp" title="ADO 数据类型">ADO 数据类型</a></li>
+<li><a href="ado_summary.asp.htm" tppabs="https://www.w3school.com.cn/ado/ado_summary.asp" title="您已经学习了 ADO，下一步呢？">ADO 总结</a></li>
+</ul>
+<h2>ADO 实例</h2>
+<ul>
+<li><a href="ado_examples.asp.htm" tppabs="https://www.w3school.com.cn/ado/ado_examples.asp" title="ADO 实例">ADO 实例</a></li>
+</ul>
+</div><div id="selected">
+<h2>课程推荐：</h2>
+<ul>
+<li><a href="../howto/index.asp.htm" tppabs="https://www.w3school.com.cn/howto/index.asp" title="W3School 百宝箱">W3School 百宝箱</a></li>
+<li><a href="../java/index.asp.htm" tppabs="https://www.w3school.com.cn/java/index.asp" title="Java 教程">Java 教程</a></li>
+</ul>
+
+</div>
+
+</div>
+
+<div id="maincontent">
+
+<h1>ADO Command 对象</h1>
+
+<div class="prenextnav">
+<ul class="prenext">
+<li class="pre"><a href="ado_getstring.asp.htm" tppabs="https://www.w3school.com.cn/ado/ado_getstring.asp" title="ADO 通过 GetString() 加速脚本">ADO 加速</a></li>
+<li class="next"><a href="ado_ref_connection.asp.htm" tppabs="https://www.w3school.com.cn/ado/ado_ref_connection.asp" title="ADO Connection 对象">ADO Connection</a></li>
+</ul>
+</div>
+
+
+
+<div>
+<h2>Command 对象</h2>
+
+<p>ADO Command 对象用于执行面向数据库的一次简单查询。此查询可执行诸如创建、添加、取回、删除或更新记录等动作。</p>
+
+<p>如果该查询用于取回数据，此数据将以一个 RecordSet 对象返回。这意味着被取回的数据能够被 RecordSet 对象的属性、集合、方法或事件进行操作。</p>
+
+<p>Command 对象的主要特性是有能力使用存储查询和带有参数的存储过程。</p>
+
+<h3>ProgID</h3>
+
+<pre class="language-vbnet">
+set objCommand=Server.CreateObject(&quot;ADODB.command&quot;)
+</pre>
+</div>
+
+
+
+<div>
+<h2>属性</h2>
+
+<table class="dataintable">
+<tr>
+<th>属性</th>
+<th>描述</th>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/ado/t.asp?f=eg_js_array_length  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ������, �����������, ����Ŀ����ֹͣ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.w3school.com.cn/ado/t.asp?f=eg_js_array_length'" tppabs="https://www.w3school.com.cn/ado/prop_comm_activeconn.asp" title="ADO ActiveConnection 属性">ActiveConnection</a></td>
+<td>设置或返回包含了定义连接或 Connection 对象的字符串。</td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/ado/t.asp?f=eg_js_array_loop_for  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ������, �����������, ����Ŀ����ֹͣ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.w3school.com.cn/ado/t.asp?f=eg_js_array_loop_for'" tppabs="https://www.w3school.com.cn/ado/prop_comm_commandtext.asp" title="ADO CommandText 属性">CommandText</a></td>
+<td>设置或返回包含提供者（provider）命令（如 SOL 语句、表格名称或存储的过程调用）的字符串值。默认值为 &quot;&quot;（零长度字符串）。</td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/ado/t.asp?f=eg_js_array_add_length  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ������, �����������, ����Ŀ����ֹͣ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.w3school.com.cn/ado/t.asp?f=eg_js_array_add_length'" tppabs="https://www.w3school.com.cn/ado/prop_commandtimeout.asp">CommandTimeout</a></td>
+<td>设置或返回长整型值，该值指示等待命令执行的时间（单位为秒）。默认值为 30。</td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/ado/t.asp?f=eg_js_array_holes  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ������, �����������, ����Ŀ����ֹͣ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.w3school.com.cn/ado/t.asp?f=eg_js_array_holes'" tppabs="https://www.w3school.com.cn/ado/prop_comm_commandtype.asp">CommandType</a></td>
+<td>设置或返回一个  Command 对象的类型</td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/ado/t.asp?f=eg_js_array_instanceof  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ������, �����������, ����Ŀ����ֹͣ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.w3school.com.cn/ado/t.asp?f=eg_js_array_instanceof'" tppabs="https://www.w3school.com.cn/ado/prop_comm_name.asp">Name</a></td>
+<td>设置或返回一个 Command 对象的名称</td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/ado/t.asp?f=hdom_document_cookie  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ������, �����������, ����Ŀ����ֹͣ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.w3school.com.cn/ado/t.asp?f=hdom_document_cookie'" tppabs="https://www.w3school.com.cn/ado/prop_comm_prepared.asp">Prepared</a></td>
+<td>指示执行前是否保存命令的编译版本（已经准备好的版本）。</td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/ado/t.asp?f=hdom_document_domain  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ������, �����������, ����Ŀ����ֹͣ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.w3school.com.cn/ado/t.asp?f=hdom_document_domain'" tppabs="https://www.w3school.com.cn/ado/prop_comm_state.asp">State</a></td>
+<td>返回一个值，此值可描述该 Command 对象处于打开、关闭、连接、执行还是取回数据的状态。</td>
+</tr>
+</table>
+</div>
+
+
+
+<div>
+<h2>方法</h2>
+
+<table class="dataintable">
+<tr>
+<th>方法</th>
+<th>描述</th>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/ado/t.asp?f=eg_js_array_push  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ������, �����������, ����Ŀ����ֹͣ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.w3school.com.cn/ado/t.asp?f=eg_js_array_push'" tppabs="https://www.w3school.com.cn/ado/met_comm_cancel.asp">Cancel</a></td>
+<td>取消一个方法的一次执行。</td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/ado/t.asp?f=hdom_document_lastmodified  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ������, �����������, ����Ŀ����ֹͣ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.w3school.com.cn/ado/t.asp?f=hdom_document_lastmodified'" tppabs="https://www.w3school.com.cn/ado/met_comm_createparameter.asp">CreateParameter</a></td>
+<td>创建一个新的 Parameter 对象</td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/ado/t.asp?f=eg_js_array_pop  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ������, �����������, ����Ŀ����ֹͣ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.w3school.com.cn/ado/t.asp?f=eg_js_array_pop'" tppabs="https://www.w3school.com.cn/ado/met_comm_execute.asp">Execute</a></td>
+<td>执行 CommandText 属性中的查询、SQL 语句或存储过程。</td>
+</tr>
+</table>
+</div>
+
+
+
+<div>
+<h2>集合</h2>
+
+<table class="dataintable">
+<tr>
+<th>集合</th>
+<th>描述</th>
+</tr>
+
+<tr>
+<td>Parameters</td>
+<td>包含一个 Command 对象的所有 Parameter 对象。</td>
+</tr>
+
+<tr>
+<td>Properties</td>
+<td>包含一个 Command 对象的所有 Property 对象。</td>
+</tr>
+</table>
+</div>
+
+
+
+<div class="prenextnav">
+<ul class="prenext">
+<li class="pre"><a href="ado_getstring.asp.htm" tppabs="https://www.w3school.com.cn/ado/ado_getstring.asp" title="ADO 通过 GetString() 加速脚本">ADO 加速</a></li>
+<li class="next"><a href="ado_ref_connection.asp.htm" tppabs="https://www.w3school.com.cn/ado/ado_ref_connection.asp" title="ADO Connection 对象">ADO Connection</a></li>
+</ul>
+</div><div style="background-color:#fcfdf8; padding:0;">
+<script async src="../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" tppabs="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- W3School ���Ĺ�� -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:800px;height:250px"
+     data-ad-client="ca-pub-3381531532877742"
+     data-ad-slot="2086924285"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+</div>
+<!-- maincontent end -->
+
+<div id="sidebar">
+
+<div id="tools">
+<h5 id="tools_reference"><a href="ado_reference.asp.htm" tppabs="https://www.w3school.com.cn/ado/ado_reference.asp">ADO 参考手册</a></h5>
+<h5 id="tools_example"><a href="ado_examples.asp.htm" tppabs="https://www.w3school.com.cn/ado/ado_examples.asp">ADO 实例</a></h5>
+</div>
+
+<div id="sidebar_zzs">
+
+<div id="sbtg">
+<script async src="../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" tppabs="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- W3School 侧栏广告位 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-3381531532877742"
+     data-ad-slot="6744370501"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+</div>
+
+</div>
+
+<div id="footer">
+<p id="p1">
+W3School 简体中文版提供的内容仅用于培训和测试，不保证内容的正确性。通过使用本站内容随之而来的风险与本站无关。版权所有，保留一切权利。
+</p>
+
+<p id="p2">
+<a href="../about/index.asp.htm" tppabs="https://www.w3school.com.cn/about/index.asp" title="关于 W3School">关于 W3School</a>
+<a href="../about/about_helping.asp.htm" tppabs="https://www.w3school.com.cn/about/about_helping.asp" title="帮助 W3School">帮助 W3School</a>
+<a href="../about/about_use.asp.htm" tppabs="https://www.w3school.com.cn/about/about_use.asp" title="关于使用">使用条款</a>
+<a href="../about/about_privacy.asp.htm" tppabs="https://www.w3school.com.cn/about/about_privacy.asp" title="关于隐私">隐私条款</a>
+<a target="_blank" href="javascript:if(confirm('https://www.ykinvestment.com/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.ykinvestment.com/'" tppabs="https://www.ykinvestment.com/">技术支持：赢科</a>
+<a target="_blank" href="javascript:if(confirm('http://www.beian.miit.gov.cn/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://www.beian.miit.gov.cn/'" tppabs="http://www.beian.miit.gov.cn/">蒙ICP备06004630号</a>
+</p>
+</div>
+
+
+</div>
+<!-- wrapper end -->
+
+</body>
+
+</html>

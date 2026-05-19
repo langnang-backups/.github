@@ -1,0 +1,499 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="../../www.googletagmanager.com/gtag/js-id=UA-878633-1" tppabs="https://www.googletagmanager.com/gtag/js?id=UA-878633-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-878633-1');
+</script>
+
+<meta charset=utf-8"utf-8">
+<meta name="robots" content="all" />
+<meta name="author" content="w3school.com.cn" />
+
+<link rel="stylesheet" type="text/css" href="../c.css" tppabs="https://www.w3school.com.cn/c.css" />
+
+<script src="../lib/cc/prism2.js" tppabs="https://www.w3school.com.cn/lib/cc/prism2.js"></script>
+<link rel='stylesheet' href="../lib/cc/prism.css" tppabs="https://www.w3school.com.cn/lib/cc/prism.css">
+
+<link rel="icon" type="image/png" sizes="16x16" href="/ui2019/logo-16-red.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/ui2019/logo-32-red.png">
+<link rel="icon" type="image/png" sizes="48x48" href="/ui2019/logo-48-red.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/ui2019/logo-96-red.png">
+<link rel="apple-touch-icon-precomposed" sizes="180x180" href="/ui2019/logo-180.png">
+
+
+<title>AngularJS è¿‡æ»¤å™¨</title>
+
+</head>
+
+<body class="browserscripting">
+
+<div id="wrapper">
+
+<div id="header">
+<a id="logo" href="../index.html" tppabs="https://www.w3school.com.cn/index.html" title="w3school åœ¨çº¿æ•™ç¨‹" style="float:left;">w3school åœ¨çº¿æ•™ç¨‹</a>
+<div id="header_gg">
+<script async src="../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" tppabs="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- W3 é¡µçœ‰ -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-3381531532877742"
+     data-ad-slot="7423315034"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+
+<div id="navfirst">
+<ul id="menu">
+<li id="h"><a href="../h.asp.htm" tppabs="https://www.w3school.com.cn/h.asp" title="HTML ç³»åˆ—æ•™ç¨‹">HTML ç³»åˆ—æ•™ç¨‹</a></li>
+<li id="b"><a href="../b.asp.htm" tppabs="https://www.w3school.com.cn/b.asp" title="æµè§ˆå™¨è„šæœ¬æ•™ç¨‹">æµè§ˆå™¨è„šæœ¬</a></li>
+<li id="s"><a href="../s.asp.htm" tppabs="https://www.w3school.com.cn/s.asp" title="æœåŠ¡å™¨è„šæœ¬æ•™ç¨‹">æœåŠ¡å™¨è„šæœ¬</a></li>
+<li id="p"><a href="../p.asp.htm" tppabs="https://www.w3school.com.cn/p.asp" title="ç¼–ç¨‹æ•™ç¨‹">ç¼–ç¨‹æ•™ç¨‹</a></li>
+<li id="x"><a href="../x.asp.htm" tppabs="https://www.w3school.com.cn/x.asp" title="XML ç³»åˆ—æ•™ç¨‹">XML ç³»åˆ—æ•™ç¨‹</a></li>
+<li id="w"><a href="../w.asp.htm" tppabs="https://www.w3school.com.cn/w.asp" title="å»ºç«™æ‰‹å†Œ">å»ºç«™æ‰‹å†Œ</a></li>
+<li id="r"><a href="../r.asp.htm" tppabs="https://www.w3school.com.cn/r.asp" title="å‚è€ƒæ‰‹å†Œ">å‚è€ƒæ‰‹å†Œ</a></li>
+</ul>
+</div>
+
+<div id="navsecond">
+
+<div id="course"><h2>æ•™ç¨‹</h2>
+<ul>
+<li><a href="index.asp.htm" tppabs="https://www.w3school.com.cn/angular/index.asp" title="AngularJS æ•™ç¨‹">AngularJS æ•™ç¨‹</a></li>
+<li><a href="angular_intro.asp.htm" tppabs="https://www.w3school.com.cn/angular/angular_intro.asp" title="AngularJS ç®€ä»‹">AngularJS ç®€ä»‹</a></li>
+<li><a href="angular_expressions.asp.htm" tppabs="https://www.w3school.com.cn/angular/angular_expressions.asp" title="AngularJS è¡¨è¾¾å¼">AngularJS è¡¨è¾¾å¼</a></li>
+<li><a href="angular_modules.asp.htm" tppabs="https://www.w3school.com.cn/angular/angular_modules.asp" title="AngularJS æ¨¡å—">AngularJS æ¨¡å—</a></li>
+<li><a href="angular_directives.asp.htm" tppabs="https://www.w3school.com.cn/angular/angular_directives.asp" title="AngularJS æŒ‡ä»¤">AngularJS æŒ‡ä»¤</a></li>
+<li><a href="angular_model.asp.htm" tppabs="https://www.w3school.com.cn/angular/angular_model.asp" title="AngularJS æ¨¡å‹">AngularJS æ¨¡å‹</a></li>
+<li><a href="angular_databinding.asp.htm" tppabs="https://www.w3school.com.cn/angular/angular_databinding.asp" title="AngularJS æ•°æ®ç»‘å®š">AngularJS æ•°æ®ç»‘å®š</a></li>
+<li><a href="angular_controllers.asp.htm" tppabs="https://www.w3school.com.cn/angular/angular_controllers.asp" title="AngularJS æ§åˆ¶å™¨">AngularJS æ§åˆ¶å™¨</a></li>
+<li><a href="angular_scopes.asp.htm" tppabs="https://www.w3school.com.cn/angular/angular_scopes.asp" title="AngularJS ä½œç”¨åŸŸ">AngularJS ä½œç”¨åŸŸ</a></li>
+<li class="currentLink"><a href="angular_filters.asp.htm" tppabs="https://www.w3school.com.cn/angular/angular_filters.asp" title="AngularJS è¿‡æ»¤å™¨">AngularJS è¿‡æ»¤å™¨</a></li>
+<li><a href="angular_services.asp.htm" tppabs="https://www.w3school.com.cn/angular/angular_services.asp" title="AngularJS æœåŠ¡">AngularJS æœåŠ¡</a></li>
+<li><a href="angular_http.asp.htm" tppabs="https://www.w3school.com.cn/angular/angular_http.asp" title="AngularJS Http">AngularJS Http</a></li>
+<li><a href="angular_tables.asp.htm" tppabs="https://www.w3school.com.cn/angular/angular_tables.asp" title="AngularJS è¡¨æ ¼">AngularJS è¡¨æ ¼</a></li>
+<li><a href="angular_select.asp.htm" tppabs="https://www.w3school.com.cn/angular/angular_select.asp" title="AngularJS é€‰æ‹©">AngularJS é€‰æ‹©</a></li>
+<li><a href="angular_sql.asp.htm" tppabs="https://www.w3school.com.cn/angular/angular_sql.asp" title="AngularJS SQL">AngularJS SQL</a></li>
+<li><a href="angular_htmldom.asp.htm" tppabs="https://www.w3school.com.cn/angular/angular_htmldom.asp" title="AngularJS DOM">AngularJS DOM</a></li>
+<li><a href="angular_events.asp.htm" tppabs="https://www.w3school.com.cn/angular/angular_events.asp" title="AngularJS äº‹ä»¶">AngularJS äº‹ä»¶</a></li>
+<li><a href="angular_forms.asp.htm" tppabs="https://www.w3school.com.cn/angular/angular_forms.asp" title="AngularJS è¡¨å•">AngularJS è¡¨å•</a></li>
+<li><a href="angular_validation.asp.htm" tppabs="https://www.w3school.com.cn/angular/angular_validation.asp" title="AngularJS éªŒè¯">AngularJS éªŒè¯</a></li>
+<li><a href="angular_api.asp.htm" tppabs="https://www.w3school.com.cn/angular/angular_api.asp" title="AngularJS API">AngularJS API</a></li>
+<li><a href="angular_includes.asp.htm" tppabs="https://www.w3school.com.cn/angular/angular_includes.asp" title="AngularJS åŒ…å«">AngularJS åŒ…å«</a></li>
+<li><a href="angular_animations.asp.htm" tppabs="https://www.w3school.com.cn/angular/angular_animations.asp" title="AngularJS åŠ¨ç”»">AngularJS åŠ¨ç”»</a></li>
+<li><a href="angular_routing.asp.htm" tppabs="https://www.w3school.com.cn/angular/angular_routing.asp" title="AngularJS è·¯ç”±">AngularJS è·¯ç”±</a></li>
+<li><a href="angular_application.asp.htm" tppabs="https://www.w3school.com.cn/angular/angular_application.asp" title="AngularJS åº”ç”¨ç¨‹åº">AngularJS åº”ç”¨ç¨‹åº</a></li>
+</ul>
+<h2>å®ä¾‹</h2>
+<ul>
+<li><a href="angular_examples.asp.htm" tppabs="https://www.w3school.com.cn/angular/angular_examples.asp" title="AngularJS å®ä¾‹">AngularJS å®ä¾‹</a></li>
+</ul>
+<h2>å‚è€ƒæ‰‹å†Œ</h2>
+<ul>
+<li><a href="angular_ref_directives.asp.htm" tppabs="https://www.w3school.com.cn/angular/angular_ref_directives.asp" title="AngularJS å‚è€ƒæ‰‹å†Œ">AngularJS å‚è€ƒæ‰‹å†Œ</a></li>
+</ul>
+</div><div id="selected">
+<h2>è¯¾ç¨‹æ¨èï¼š</h2>
+<ul>
+<li><a href="../howto/index.asp.htm" tppabs="https://www.w3school.com.cn/howto/index.asp" title="W3School ç™¾å®ç®±">W3School ç™¾å®ç®±</a></li>
+<li><a href="../java/index.asp.htm" tppabs="https://www.w3school.com.cn/java/index.asp" title="Java æ•™ç¨‹">Java æ•™ç¨‹</a></li>
+</ul>
+
+</div>
+
+</div>
+
+<div id="maincontent">
+
+<h1>AngularJS è¿‡æ»¤å™¨</h1>
+
+<div class="prenextnav">
+<ul class="prenext">
+<li class="pre"><a href="angular_scopes.asp.htm" tppabs="https://www.w3school.com.cn/angular/angular_scopes.asp" title="AngularJS ä½œç”¨åŸŸ">AngularJS ä½œç”¨åŸŸ</a></li>
+<li class="next"><a href="angular_services.asp.htm" tppabs="https://www.w3school.com.cn/angular/angular_services.asp" title="AngularJS æœåŠ¡">AngularJS æœåŠ¡</a></li>
+</ul>
+</div>
+
+
+
+<section id="intro">
+<p>å¯ä»¥åœ¨ AngularJS ä¸­æ·»åŠ è¿‡æ»¤å™¨æ¥æ ¼å¼åŒ–æ•°æ®ã€‚</p>
+</section>
+
+
+
+<section>
+<h2>AngularJS è¿‡æ»¤å™¨</h2>
+
+<p>AngularJS æä¾›äº†è¿‡æ»¤å™¨æ¥è½¬æ¢æ•°æ®ï¼š</p>
+
+<ul>
+<li><code>currency</code> å°†æ•°å­—æ ¼å¼åŒ–ä¸ºè´§å¸æ ¼å¼</li>
+<li><code>date</code> å°†æ—¥æœŸæ ¼å¼åŒ–ä¸ºæŒ‡å®šçš„æ ¼å¼</li>
+<li><code>filter</code> ä»æ•°ç»„ä¸­é€‰æ‹©ä¸€ä¸ªå­é›†</li>
+<li><code>json</code> å°†å¯¹è±¡æ ¼å¼åŒ–ä¸º JSON å­—ç¬¦ä¸²</li>
+<li><code>limitTo</code> å°†æ•°ç»„/å­—ç¬¦ä¸²é™åˆ¶ä¸ºæŒ‡å®šæ•°é‡çš„å…ƒç´ /å­—ç¬¦</li>
+<li><code>lowercase</code> å°†å­—ç¬¦ä¸²æ ¼å¼åŒ–ä¸ºå°å†™</li>
+<li><code>number</code> å°†æ•°å­—æ ¼å¼åŒ–ä¸ºå­—ç¬¦ä¸²</li>
+<li><code>orderBy</code> é€šè¿‡è¡¨è¾¾å¼å¯¹æ•°ç»„è¿›è¡Œæ’åº</li>
+<li><code>uppercase</code> å°†å­—ç¬¦ä¸²æ ¼å¼åŒ–ä¸ºå¤§å†™</li>
+</ul>
+</section>
+
+
+
+<section>
+<h2>å‘è¡¨è¾¾å¼æ·»åŠ è¿‡æ»¤å™¨</h2>
+
+<p>å¯ä»¥ä½¿ç”¨ç®¡é“ç¬¦ | å‘è¡¨è¾¾å¼æ·»åŠ è¿‡æ»¤å™¨ï¼Œåè·Ÿä¸€ä¸ªè¿‡æ»¤å™¨ã€‚</p>
+
+<p><code>uppercase</code> è¿‡æ»¤å™¨å°†å­—ç¬¦ä¸²æ ¼å¼åŒ–ä¸ºå¤§å†™ï¼š</p>
+
+<h3>å®ä¾‹</h3>
+
+<pre class="language-html">
+&lt;div ng-app=&quot;myApp&quot; ng-controller=&quot;personCtrl&quot;&gt;
+
+&lt;p&gt;åå­—æ˜¯ {{ lastName | uppercase }}&lt;/p&gt;
+
+&lt;/div&gt;
+</pre>
+
+<p class="tiy"><a target="_blank" href="javascript:if(confirm('https://www.w3school.com.cn/tiy/asp_quiz.asp  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/tiy/asp_quiz.asp'" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=angular_filters_uppercase">äº²è‡ªè¯•ä¸€è¯•</a></p>
+
+<p><code>lowercase</code> è¿‡æ»¤å™¨å°†å­—ç¬¦ä¸²æ ¼å¼åŒ–ä¸ºå°å†™ï¼š</p>
+
+<h3>å®ä¾‹</h3>
+
+<pre class="language-html">
+&lt;div ng-app=&quot;myApp&quot; ng-controller=&quot;personCtrl&quot;&gt;
+
+&lt;p&gt;åå­—æ˜¯ {{ lastName | lowercase }}&lt;/p&gt;
+
+&lt;/div&gt;
+</pre>
+
+<p class="tiy"><a target="_blank" href="javascript:if(confirm('https://www.w3school.com.cn/tiy/Array.prototype.find  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/tiy/Array.prototype.find'" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=angular_filters_lowercase">äº²è‡ªè¯•ä¸€è¯•</a></p>
+</section>
+
+
+
+<section>
+<h2>å‘æŒ‡ä»¤æ·»åŠ è¿‡æ»¤å™¨</h2>
+
+<p>é€šè¿‡ä½¿ç”¨ç®¡é“å­—ç¬¦ <code>|</code> åè·Ÿè¿‡æ»¤å™¨ï¼Œå¯ä»¥å°†è¿‡æ»¤å™¨æ·»åŠ åˆ°æŒ‡ä»¤ä¸­ï¼Œä¾‹å¦‚ <code>ng-repeat</code>ï¼š</p>
+
+<h3>å®ä¾‹</h3>
+
+<p>orderBy è¿‡æ»¤å™¨å¯¹æ•°ç»„è¿›è¡Œæ’åºï¼š</p>
+
+<pre class="language-html">
+&lt;div ng-app=&quot;myApp&quot; ng-controller=&quot;namesCtrl&quot;&gt;
+
+&lt;ul&gt;
+  &lt;li ng-repeat=&quot;x in names | orderBy:'country'&quot;&gt;
+    {{ x.name + ', ' + x.country }}
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/div&gt;
+</pre>
+
+<p class="tiy"><a target="_blank" href="javascript:if(confirm('https://www.w3school.com.cn/tiy/Array.from  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/tiy/Array.from'" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=angular_filters_orderby">äº²è‡ªè¯•ä¸€è¯•</a></p>
+</section>
+
+
+
+<section>
+<h2>currency è¿‡æ»¤å™¨</h2>
+
+<p><code>currency</code> è¿‡æ»¤å™¨å°†æ•°å­—æ ¼å¼åŒ–ä¸ºè´§å¸ï¼š</p>
+
+<h3>å®ä¾‹</h3>
+
+<pre class="language-html">
+&lt;div ng-app=&quot;myApp&quot; ng-controller=&quot;costCtrl&quot;&gt;
+
+&lt;h1&gt;Price: {{ price | currency }}&lt;/h1&gt;
+
+&lt;/div&gt;
+</pre>
+
+<p class="tiy"><a target="_blank" href="javascript:if(confirm('https://www.w3school.com.cn/tiy/Object.is  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/tiy/Object.is'" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=angular_filters_currency">äº²è‡ªè¯•ä¸€è¯•</a></p>
+
+<p>æœ‰å…³ currency è¿‡æ»¤å™¨çš„æ›´å¤šä¿¡æ¯ï¼Œè¯·å‚é˜…æˆ‘ä»¬çš„ AngularJS currency è¿‡æ»¤å™¨å‚è€ƒæ‰‹å†Œã€‚</p>
+</section>
+
+
+
+<section>
+<h2>filter è¿‡æ»¤å™¨</h2>
+
+<p><code>filter</code> è¿‡æ»¤å™¨é€‰æ‹©æ•°ç»„çš„å­é›†ã€‚</p>
+
+<p><code>filter</code> è¿‡æ»¤å™¨åªèƒ½ç”¨äºæ•°ç»„ï¼Œå®ƒè¿”å›åªåŒ…å«åŒ¹é…é¡¹çš„æ•°ç»„ã€‚</p>
+
+<h3>å®ä¾‹</h3>
+
+<p>è¿”å›åŒ…å«å­—æ¯ &quot;i&quot; çš„åå­—ï¼š</p>
+
+<pre class="language-html">
+&lt;div ng-app=&quot;myApp&quot; ng-controller=&quot;namesCtrl&quot;&gt;
+
+&lt;ul&gt;
+  &lt;li ng-repeat=&quot;x in names | filter : 'i'&quot;&gt;
+    {{ x }}
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/div&gt;
+</pre>
+
+<p class="tiy"><a target="_blank" href="javascript:if(confirm('https://www.w3school.com.cn/tiy/pr_margin-inline.asp  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/tiy/pr_margin-inline.asp'" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=angular_filters_filter">äº²è‡ªè¯•ä¸€è¯•</a></p>
+
+<p>æœ‰å…³ filter è¿‡æ»¤å™¨çš„æ›´å¤šä¿¡æ¯ï¼Œè¯·å‚é˜…æˆ‘ä»¬çš„ AngularJS filter è¿‡æ»¤å™¨å‚è€ƒæ‰‹å†Œã€‚</p>
+</section>
+
+
+
+<section>
+<h2>æ ¹æ®ç”¨æˆ·è¾“å…¥è¿‡æ»¤æ•°ç»„</h2>
+
+<p>é€šè¿‡åœ¨è¾“å…¥å­—æ®µä¸Šè®¾ç½® <code>ng-model</code> æŒ‡ä»¤ï¼Œæˆ‘ä»¬å¯ä»¥ä½¿ç”¨è¾“å…¥å­—æ®µçš„å€¼ä½œä¸ºè¿‡æ»¤å™¨ä¸­çš„è¡¨è¾¾å¼ã€‚</p>
+
+<p>åœ¨è¾“å…¥å­—æ®µä¸­è¾“å…¥ä¸€ä¸ªå­—æ¯ï¼Œåˆ—è¡¨å°†æ ¹æ®åŒ¹é…é¡¹è¿›è¡Œç¼©å°/æ‰©å¤§ï¼š</p>
+
+<ul>
+<li>Jani</li>
+<li>Carl</li>
+<li>Margareth</li>
+<li>Hege</li>
+<li>Joe</li>
+<li>Gustav</li>
+<li>Birgit</li>
+<li>Mary</li>
+<li>Kai</li>
+</ul>
+
+<h3>å®ä¾‹</h3>
+
+<pre class="language-html">
+&lt;div ng-app=&quot;myApp&quot; ng-controller=&quot;namesCtrl&quot;&gt;
+
+&lt;p&gt;&lt;input type=&quot;text&quot; ng-model=&quot;test&quot;&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li ng-repeat=&quot;x in names | filter : test&quot;&gt;
+    {{ x }}
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/div&gt;
+</pre>
+
+<p class="tiy"><a target="_blank" href="javascript:if(confirm('https://www.w3school.com.cn/tiy/Array.prototype.keys  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/tiy/Array.prototype.keys'" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=angular_filters_input">äº²è‡ªè¯•ä¸€è¯•</a></p>
+</section>
+
+
+
+<section>
+<h2>æ ¹æ®ç”¨æˆ·è¾“å…¥å¯¹æ•°ç»„è¿›è¡Œæ’åº</h2>
+
+<p>å•å‡»è¡¨å¤´å¯æ›´æ”¹æ’åºé¡ºåºï¼š</p>
+
+Name
+Country
+
+Jani
+Norway
+
+Carl
+Sweden
+
+Margareth
+England
+
+Hege
+Norway
+
+Joe
+Denmark
+
+Gustav
+Sweden
+
+Birgit
+Denmark
+
+Mary
+England
+
+Kai
+Norway
+
+<p>é€šè¿‡åœ¨è¡¨å¤´æ·»åŠ  <code>ng-click</code> æŒ‡ä»¤ï¼Œæˆ‘ä»¬å¯ä»¥è¿è¡Œä¸€ä¸ªå‡½æ•°ï¼Œè¯¥å‡½æ•°ä¼šæ›´æ”¹æ•°ç»„çš„æ’åºé¡ºåºï¼š</p>
+
+<h3>å®ä¾‹</h3>
+
+<pre class="language-html">
+&lt;div ng-app=&quot;myApp&quot; ng-controller=&quot;namesCtrl&quot;&gt;
+
+&lt;table border=&quot;1&quot; width=&quot;100%&quot;&gt;
+  &lt;tr&gt;
+    &lt;th ng-click=&quot;orderByMe('name')&quot;&gt;Name&lt;/th&gt;
+    &lt;th ng-click=&quot;orderByMe('country')&quot;&gt;Country&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr ng-repeat=&quot;x in names | orderBy:myOrderBy&quot;&gt;
+    &lt;td&gt;{{x.name}}&lt;/td&gt;
+    &lt;td&gt;{{x.country}}&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;/div&gt;
+
+&lt;script&gt;
+angular.module('myApp', []).controller('namesCtrl', function($scope) {
+  $scope.names = [
+    {name:'Jani',country:'Norway'},
+    {name:'Carl',country:'Sweden'},
+    {name:'Margareth',country:'England'},
+    {name:'Hege',country:'Norway'},
+    {name:'Joe',country:'Denmark'},
+    {name:'Gustav',country:'Sweden'},
+    {name:'Birgit',country:'Denmark'},
+    {name:'Mary',country:'England'},
+    {name:'Kai',country:'Norway'}
+  ];
+  $scope.orderByMe = function(x) {
+    $scope.myOrderBy = x;
+  }
+});
+&lt;/script&gt;
+</pre>
+
+<p class="tiy"><a target="_blank" href="javascript:if(confirm('https://www.w3school.com.cn/tiy/pr_margin-inline-end.asp  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/tiy/pr_margin-inline-end.asp'" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=angular_filters_orderby_click">äº²è‡ªè¯•ä¸€è¯•</a></p>
+</section>
+
+
+
+<section>
+<h2>è‡ªå®šä¹‰è¿‡æ»¤å™¨</h2>
+
+<p>æ‚¨å¯ä»¥é€šè¿‡å‘æ¨¡å—æ³¨å†Œä¸€ä¸ªæ–°çš„è¿‡æ»¤å™¨å·¥å‚å‡½æ•°æ¥åˆ›å»ºè‡ªå·±çš„è¿‡æ»¤å™¨ï¼š</p>
+
+<h3>å®ä¾‹</h3>
+
+<p>åˆ›å»ºä¸€ä¸ªåä¸º "myFormat" çš„è‡ªå®šä¹‰è¿‡æ»¤å™¨ï¼š</p>
+
+<pre class="language-html">
+&lt;ul ng-app=&quot;myApp&quot; ng-controller=&quot;namesCtrl&quot;&gt;
+  &lt;li ng-repeat=&quot;x in names&quot;&gt;
+    {{x | myFormat}}
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;script&gt;
+var app = angular.module('myApp', []);
+app.filter('myFormat', function() {
+  return function(x) {
+    var i, c, txt = &quot;&quot;;
+    for (i = 0; i &lt; x.length; i++) {
+      c = x[i];
+      if (i % 2 == 0) {
+        c = c.toUpperCase();
+      }
+      txt += c;
+    }
+    return txt;
+  };
+});
+app.controller('namesCtrl', function($scope) {
+  $scope.names = ['Jani', 'Carl', 'Margareth', 'Hege', 'Joe', 'Gustav', 'Birgit', 'Mary', 'Kai'];
+});
+&lt;/script&gt;
+</pre>
+
+<p class="tiy"><a target="_blank" href="javascript:if(confirm('https://www.w3school.com.cn/tiy/pr_margin-inline-start.asp  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/tiy/pr_margin-inline-start.asp'" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=angular_filters_custom">äº²è‡ªè¯•ä¸€è¯•</a></p>
+
+<p><code>myFormat</code> è¿‡æ»¤å™¨å°†æ¯éš”ä¸€ä¸ªå­—ç¬¦æ ¼å¼åŒ–ä¸ºå¤§å†™ã€‚</p>
+</section>
+
+
+
+<div class="prenextnav">
+<ul class="prenext">
+<li class="pre"><a href="angular_scopes.asp.htm" tppabs="https://www.w3school.com.cn/angular/angular_scopes.asp" title="AngularJS ä½œç”¨åŸŸ">AngularJS ä½œç”¨åŸŸ</a></li>
+<li class="next"><a href="angular_services.asp.htm" tppabs="https://www.w3school.com.cn/angular/angular_services.asp" title="AngularJS æœåŠ¡">AngularJS æœåŠ¡</a></li>
+</ul>
+</div><div style="background-color:#fcfdf8; padding:0;">
+<script async src="../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" tppabs="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- W3School ÕıÎÄ¹ã¸æ -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:800px;height:250px"
+     data-ad-client="ca-pub-3381531532877742"
+     data-ad-slot="2086924285"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+</div>
+<!-- maincontent end -->
+
+<div id="sidebar">
+
+<div id="tools">
+<h5 id="tools_reference"><a href="angular_ref_directives.asp.htm" tppabs="https://www.w3school.com.cn/angular/angular_ref_directives.asp">AngularJS å‚è€ƒæ‰‹å†Œ</a></h5>
+<h5 id="tools_example"><a href="angular_examples.asp.htm" tppabs="https://www.w3school.com.cn/angular/angular_examples.asp">AngularJS å®ä¾‹</a></h5>
+</div>
+
+<div id="sidebar_zzs">
+
+<div id="sbtg">
+<script async src="../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" tppabs="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- W3School ä¾§æ å¹¿å‘Šä½ -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-3381531532877742"
+     data-ad-slot="6744370501"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+</div>
+
+</div>
+
+<div id="footer">
+<p id="p1">
+W3School ç®€ä½“ä¸­æ–‡ç‰ˆæä¾›çš„å†…å®¹ä»…ç”¨äºåŸ¹è®­å’Œæµ‹è¯•ï¼Œä¸ä¿è¯å†…å®¹çš„æ­£ç¡®æ€§ã€‚é€šè¿‡ä½¿ç”¨æœ¬ç«™å†…å®¹éšä¹‹è€Œæ¥çš„é£é™©ä¸æœ¬ç«™æ— å…³ã€‚ç‰ˆæƒæ‰€æœ‰ï¼Œä¿ç•™ä¸€åˆ‡æƒåˆ©ã€‚
+</p>
+
+<p id="p2">
+<a href="../about/index.asp.htm" tppabs="https://www.w3school.com.cn/about/index.asp" title="å…³äº W3School">å…³äº W3School</a>
+<a href="../about/about_helping.asp.htm" tppabs="https://www.w3school.com.cn/about/about_helping.asp" title="å¸®åŠ© W3School">å¸®åŠ© W3School</a>
+<a href="../about/about_use.asp.htm" tppabs="https://www.w3school.com.cn/about/about_use.asp" title="å…³äºä½¿ç”¨">ä½¿ç”¨æ¡æ¬¾</a>
+<a href="../about/about_privacy.asp.htm" tppabs="https://www.w3school.com.cn/about/about_privacy.asp" title="å…³äºéšç§">éšç§æ¡æ¬¾</a>
+<a target="_blank" href="javascript:if(confirm('https://www.ykinvestment.com/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.ykinvestment.com/'" tppabs="https://www.ykinvestment.com/">æŠ€æœ¯æ”¯æŒï¼šèµ¢ç§‘</a>
+<a target="_blank" href="javascript:if(confirm('http://www.beian.miit.gov.cn/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.beian.miit.gov.cn/'" tppabs="http://www.beian.miit.gov.cn/">è’™ICPå¤‡06004630å·</a>
+</p>
+</div>
+
+
+</div>
+<!-- wrapper end -->
+
+</body>
+
+</html>

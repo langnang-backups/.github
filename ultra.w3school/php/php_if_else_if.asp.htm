@@ -1,0 +1,400 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="../../www.googletagmanager.com/gtag/js-id=UA-878633-1" tppabs="https://www.googletagmanager.com/gtag/js?id=UA-878633-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-878633-1');
+</script>
+
+<meta charset=utf-8"utf-8">
+<meta name="robots" content="all" />
+<meta name="author" content="w3school.com.cn" />
+
+<link rel="stylesheet" type="text/css" href="../c.css" tppabs="https://www.w3school.com.cn/c.css" />
+
+<script src="../lib/cc/prism2.js" tppabs="https://www.w3school.com.cn/lib/cc/prism2.js"></script>
+<link rel='stylesheet' href="../lib/cc/prism.css" tppabs="https://www.w3school.com.cn/lib/cc/prism.css">
+
+<link rel="icon" type="image/png" sizes="16x16" href="/ui2019/logo-16-red.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/ui2019/logo-32-red.png">
+<link rel="icon" type="image/png" sizes="48x48" href="/ui2019/logo-48-red.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/ui2019/logo-96-red.png">
+<link rel="apple-touch-icon-precomposed" sizes="180x180" href="/ui2019/logo-180.png">
+
+
+<title>PHP if...else 语句</title>
+
+</head>
+
+<body class="serverscripting">
+
+<div id="wrapper">
+
+<div id="header">
+<a id="logo" href="../index.html" tppabs="https://www.w3school.com.cn/index.html" title="w3school 在线教程" style="float:left;">w3school 在线教程</a>
+<div id="header_gg">
+<script async src="../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" tppabs="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- W3 页眉 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-3381531532877742"
+     data-ad-slot="7423315034"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+
+<div id="navfirst">
+<ul id="menu">
+<li id="h"><a href="../h.asp.htm" tppabs="https://www.w3school.com.cn/h.asp" title="HTML 系列教程">HTML 系列教程</a></li>
+<li id="b"><a href="../b.asp.htm" tppabs="https://www.w3school.com.cn/b.asp" title="浏览器脚本教程">浏览器脚本</a></li>
+<li id="s"><a href="../s.asp.htm" tppabs="https://www.w3school.com.cn/s.asp" title="服务器脚本教程">服务器脚本</a></li>
+<li id="p"><a href="../p.asp.htm" tppabs="https://www.w3school.com.cn/p.asp" title="编程教程">编程教程</a></li>
+<li id="x"><a href="../x.asp.htm" tppabs="https://www.w3school.com.cn/x.asp" title="XML 系列教程">XML 系列教程</a></li>
+<li id="w"><a href="../w.asp.htm" tppabs="https://www.w3school.com.cn/w.asp" title="建站手册">建站手册</a></li>
+<li id="r"><a href="../r.asp.htm" tppabs="https://www.w3school.com.cn/r.asp" title="参考手册">参考手册</a></li>
+</ul>
+</div>
+
+<div id="navsecond">
+
+<div id="course"><h2>PHP 教程</h2>
+<ul>
+<li><a href="index.asp.htm" tppabs="https://www.w3school.com.cn/php/index.asp" title="PHP 教程">PHP 教程</a></li>
+<li><a href="php_intro.asp.htm" tppabs="https://www.w3school.com.cn/php/php_intro.asp" title="PHP 简介">PHP 简介</a></li>
+<li><a href="php_install.asp.htm" tppabs="https://www.w3school.com.cn/php/php_install.asp" title="PHP 安装">PHP 安装</a></li>
+<li><a href="php_syntax.asp.htm" tppabs="https://www.w3school.com.cn/php/php_syntax.asp" title="PHP 语法">PHP 语法</a></li>
+<li><a href="php_comments.asp.htm" tppabs="https://www.w3school.com.cn/php/php_comments.asp" title="PHP 注释">PHP 注释</a></li>
+<li><a href="php_comments_multiline.asp.htm" tppabs="https://www.w3school.com.cn/php/php_comments_multiline.asp" title="PHP 多行注释">PHP 多行注释</a></li>
+<li><a href="php_variables.asp.htm" tppabs="https://www.w3school.com.cn/php/php_variables.asp" title="PHP 变量">PHP 变量</a></li>
+<li><a href="php_variables_scope.asp.htm" tppabs="https://www.w3school.com.cn/php/php_variables_scope.asp" title="PHP 变量作用域">PHP 变量作用域</a></li>
+<li><a href="php_echo_print.asp.htm" tppabs="https://www.w3school.com.cn/php/php_echo_print.asp" title="PHP Echo 和 Print 语句">PHP Echo / Print</a></li>
+<li><a href="php_datatypes.asp.htm" tppabs="https://www.w3school.com.cn/php/php_datatypes.asp" title="PHP 数据类型">PHP 数据类型</a></li>
+<li><a href="php_string.asp.htm" tppabs="https://www.w3school.com.cn/php/php_string.asp" title="PHP 字符串">PHP 字符串</a></li>
+<li><a href="php_string_modify.asp.htm" tppabs="https://www.w3school.com.cn/php/php_string_modify.asp" title="PHP 字符串修改">PHP 字符串修改</a></li>
+<li><a href="php_string_concatenate.asp.htm" tppabs="https://www.w3school.com.cn/php/php_string_concatenate.asp" title="PHP 字符串连接">PHP 字符串连接</a></li>
+<li><a href="php_string_slicing.asp.htm" tppabs="https://www.w3school.com.cn/php/php_string_slicing.asp" title="PHP 字符串切片">PHP 字符串切片</a></li>
+<li><a href="php_string_escape.asp.htm" tppabs="https://www.w3school.com.cn/php/php_string_escape.asp" title="PHP 转义字符">PHP 转义字符</a></li>
+<li><a href="php_numbers.asp.htm" tppabs="https://www.w3school.com.cn/php/php_numbers.asp" title="PHP 数字">PHP 数字</a></li>
+<li><a href="php_casting.asp.htm" tppabs="https://www.w3school.com.cn/php/php_casting.asp" title="PHP 类型转换">PHP 类型转换</a></li>
+<li><a href="php_math.asp.htm" tppabs="https://www.w3school.com.cn/php/php_math.asp" title="PHP 数学">PHP 数学</a></li>
+<li><a href="php_constants.asp.htm" tppabs="https://www.w3school.com.cn/php/php_constants.asp" title="PHP 常量">PHP 常量</a></li>
+<li><a href="php_magic_constants.asp.htm" tppabs="https://www.w3school.com.cn/php/php_magic_constants.asp" title="PHP 魔法常量">PHP 魔法常量</a></li>
+<li><a href="php_operators.asp.htm" tppabs="https://www.w3school.com.cn/php/php_operators.asp" title="PHP 运算符">PHP 运算符</a></li>
+<li><a href="php_if_else.asp.htm" tppabs="https://www.w3school.com.cn/php/php_if_else.asp" title="PHP if 语句">PHP if</a></li>
+<li><a href="php_if_operators.asp.htm" tppabs="https://www.w3school.com.cn/php/php_if_operators.asp" title="PHP if 运算符">PHP if 运算符</a></li>
+<li class="currentLink"><a href="php_if_else_if.asp.htm" tppabs="https://www.w3school.com.cn/php/php_if_else_if.asp" title="PHP if...else 语句">PHP if...else</a></li>
+<li><a href="php_if_shorthand.asp.htm" tppabs="https://www.w3school.com.cn/php/php_if_shorthand.asp" title="PHP 简写 if">PHP 简写 if</a></li>
+<li><a href="php_if_nested.asp.htm" tppabs="https://www.w3school.com.cn/php/php_if_nested.asp" title="PHP 嵌套 if 语句">PHP 嵌套 if</a></li>
+<li><a href="php_switch.asp.htm" tppabs="https://www.w3school.com.cn/php/php_switch.asp" title="PHP switch 语句">PHP switch</a></li>
+<li><a href="php_looping.asp.htm" tppabs="https://www.w3school.com.cn/php/php_looping.asp" title="PHP 循环">PHP 循环</a></li>
+<li><a href="php_looping_while.asp.htm" tppabs="https://www.w3school.com.cn/php/php_looping_while.asp" title="PHP while 循环">PHP While 循环</a></li>
+<li><a href="php_looping_do_while.asp.htm" tppabs="https://www.w3school.com.cn/php/php_looping_do_while.asp" title="PHP do while 循环">PHP do while 循环</a></li>
+<li><a href="php_looping_for.asp.htm" tppabs="https://www.w3school.com.cn/php/php_looping_for.asp" title="PHP for 循环">PHP for 循环</a></li>
+<li><a href="php_looping_foreach.asp.htm" tppabs="https://www.w3school.com.cn/php/php_looping_foreach.asp" title="PHP foreach 循环">PHP foreach 循环</a></li>
+<li><a href="php_looping_break.asp.htm" tppabs="https://www.w3school.com.cn/php/php_looping_break.asp" title="PHP Break">PHP Break</a></li>
+<li><a href="php_looping_continue.asp.htm" tppabs="https://www.w3school.com.cn/php/php_looping_continue.asp" title="PHP Continue">PHP Continue</a></li>
+<li><a href="php_functions.asp.htm" tppabs="https://www.w3school.com.cn/php/php_functions.asp" title="PHP 函数">PHP 函数</a></li>
+<li><a href="php_arrays.asp.htm" tppabs="https://www.w3school.com.cn/php/php_arrays.asp" title="PHP 数组">PHP 数组</a></li>
+<li><a href="php_arrays_indexed.asp.htm" tppabs="https://www.w3school.com.cn/php/php_arrays_indexed.asp" title="PHP 索引数组">PHP 索引数组</a></li>
+<li><a href="php_arrays_associative.asp.htm" tppabs="https://www.w3school.com.cn/php/php_arrays_associative.asp" title="PHP 关联数组">PHP 关联数组</a></li>
+<li><a href="php_arrays_create.asp.htm" tppabs="https://www.w3school.com.cn/php/php_arrays_create.asp" title="PHP 创建数组">PHP 创建数组</a></li>
+<li><a href="php_arrays_access.asp.htm" tppabs="https://www.w3school.com.cn/php/php_arrays_access.asp" title="PHP 访问数组">PHP 访问数组</a></li>
+<li><a href="php_arrays_update.asp.htm" tppabs="https://www.w3school.com.cn/php/php_arrays_update.asp" title="PHP 更新数组项">PHP 更新数组项</a></li>
+<li><a href="php_arrays_add.asp.htm" tppabs="https://www.w3school.com.cn/php/php_arrays_add.asp" title="PHP 添加数组项">PHP 添加数组项</a></li>
+<li><a href="php_arrays_remove.asp.htm" tppabs="https://www.w3school.com.cn/php/php_arrays_remove.asp" title="PHP 删除数组项">PHP 删除数组项</a></li>
+<li><a href="php_arrays_sort.asp.htm" tppabs="https://www.w3school.com.cn/php/php_arrays_sort.asp" title="PHP 数组排序">PHP 数组排序</a></li>
+<li><a href="php_arrays_multidimensional.asp.htm" tppabs="https://www.w3school.com.cn/php/php_arrays_multidimensional.asp" title="PHP 多维数组">PHP 多维数组</a></li>
+<li><a href="php_arrays_functions.asp.htm" tppabs="https://www.w3school.com.cn/php/php_arrays_functions.asp" title="PHP 数组函数">PHP 数组函数</a></li>
+<li><a href="php_superglobals.asp.htm" tppabs="https://www.w3school.com.cn/php/php_superglobals.asp" title="PHP 全局变量 - 超全局变量">PHP 超全局变量</a></li>
+<li><a href="php_superglobals_globals.asp.htm" tppabs="https://www.w3school.com.cn/php/php_superglobals_globals.asp" title="PHP $GLOBALS">PHP $GLOBALS</a></li>
+<li><a href="php_superglobals_server.asp.htm" tppabs="https://www.w3school.com.cn/php/php_superglobals_server.asp" title="PHP $_SERVER">PHP $_SERVER</a></li>
+<li><a href="php_superglobals_request.asp.htm" tppabs="https://www.w3school.com.cn/php/php_superglobals_request.asp" title="PHP $_REQUEST">PHP $_REQUEST</a></li>
+<li><a href="php_superglobals_post.asp.htm" tppabs="https://www.w3school.com.cn/php/php_superglobals_post.asp" title="PHP $_POST">PHP $_POST</a></li>
+<li><a href="php_superglobals_get.asp.htm" tppabs="https://www.w3school.com.cn/php/php_superglobals_get.asp" title="PHP $_GET">PHP $_GET</a></li>
+<li><a href="php_regex.asp.htm" tppabs="https://www.w3school.com.cn/php/php_regex.asp" title="PHP 正则表达式">PHP 正则表达式</a></li>
+</ul>
+<h2>PHP 表单</h2>
+<ul>
+<li><a href="php_forms.asp.htm" tppabs="https://www.w3school.com.cn/php/php_forms.asp" title="PHP 表单处理">PHP 表单处理</a></li>
+<li><a href="php_form_validation.asp.htm" tppabs="https://www.w3school.com.cn/php/php_form_validation.asp" title="PHP 表单验证">PHP 表单验证</a></li>
+<li><a href="php_form_required.asp.htm" tppabs="https://www.w3school.com.cn/php/php_form_required.asp" title="PHP 表单 - 必填字段">PHP 表单必填字段</a></li>
+<li><a href="php_form_url_email.asp.htm" tppabs="https://www.w3school.com.cn/php/php_form_url_email.asp" title="PHP 表单 - 验证电子邮件和 URL">PHP 表单 URL/E-mail</a></li>
+<li><a href="php_form_complete.asp.htm" tppabs="https://www.w3school.com.cn/php/php_form_complete.asp" title="PHP 完整表单实例">PHP 完整表单实例</a></li>
+</ul>
+<h2>PHP 高级教程</h2>
+<ul>
+<li><a href="php_date.asp.htm" tppabs="https://www.w3school.com.cn/php/php_date.asp" title="PHP 日期和时间">PHP 日期和时间</a></li>
+<li><a href="php_includes.asp.htm" tppabs="https://www.w3school.com.cn/php/php_includes.asp" title="PHP 包含文件">PHP 包含文件</a></li>
+<li><a href="php_file.asp.htm" tppabs="https://www.w3school.com.cn/php/php_file.asp" title="PHP 文件处理">PHP 文件处理</a></li>
+<li><a href="php_file_open.asp.htm" tppabs="https://www.w3school.com.cn/php/php_file_open.asp" title="PHP 文件打开/读取/关闭">PHP 文件打开/读取</a></li>
+<li><a href="php_file_create.asp.htm" tppabs="https://www.w3school.com.cn/php/php_file_create.asp" title="PHP 文件创建/写入">PHP 文件创建/写入</a></li>
+<li><a href="php_file_upload.asp.htm" tppabs="https://www.w3school.com.cn/php/php_file_upload.asp" title="PHP 文件上传">PHP 文件上传</a></li>
+<li><a href="php_cookies.asp.htm" tppabs="https://www.w3school.com.cn/php/php_cookies.asp" title="PHP Cookie">PHP Cookie</a></li>
+<li><a href="php_sessions.asp.htm" tppabs="https://www.w3school.com.cn/php/php_sessions.asp" title="PHP 会话">PHP 会话</a></li>
+<li><a href="php_filter.asp.htm" tppabs="https://www.w3school.com.cn/php/php_filter.asp" title="PHP 过滤器">PHP 过滤器</a></li>
+<li><a href="php_filter_advanced.asp.htm" tppabs="https://www.w3school.com.cn/php/php_filter_advanced.asp" title="PHP 过滤器进阶">PHP 过滤器进阶</a></li>
+<li><a href="php_callback_functions.asp.htm" tppabs="https://www.w3school.com.cn/php/php_callback_functions.asp" title="PHP 回调函数">PHP 回调函数</a></li>
+<li><a href="php_json.asp.htm" tppabs="https://www.w3school.com.cn/php/php_json.asp" title="PHP 和 JSON">PHP JSON</a></li>
+<li><a href="php_exceptions.asp.htm" tppabs="https://www.w3school.com.cn/php/php_exceptions.asp" title="PHP 异常">PHP 异常</a></li>
+</ul>
+<h2>PHP OOP</h2>
+<ul>
+<li><a href="php_oop_what_is.asp.htm" tppabs="https://www.w3school.com.cn/php/php_oop_what_is.asp" title="PHP - 什么是 OOP？">PHP 什么是 OOP？</a></li>
+<li><a href="php_oop_classes_objects.asp.htm" tppabs="https://www.w3school.com.cn/php/php_oop_classes_objects.asp" title="PHP OOP - 类和对象">PHP 类/对象</a></li>
+<li><a href="php_oop_constructor.asp.htm" tppabs="https://www.w3school.com.cn/php/php_oop_constructor.asp" title="PHP OOP - 构造函数">PHP 构造函数</a></li>
+<li><a href="php_oop_destructor.asp.htm" tppabs="https://www.w3school.com.cn/php/php_oop_destructor.asp" title="PHP OOP - 析构函数">PHP 析构函数</a></li>
+<li><a href="php_oop_access_modifiers.asp.htm" tppabs="https://www.w3school.com.cn/php/php_oop_access_modifiers.asp" title="PHP OOP - 访问修饰符">PHP 访问修饰符</a></li>
+<li><a href="php_oop_inheritance.asp.htm" tppabs="https://www.w3school.com.cn/php/php_oop_inheritance.asp" title="PHP OOP - 继承">PHP 继承</a></li>
+<li><a href="php_oop_constants.asp.htm" tppabs="https://www.w3school.com.cn/php/php_oop_constants.asp" title="PHP OOP - 类常量">PHP 类常量</a></li>
+<li><a href="php_oop_classes_abstract.asp.htm" tppabs="https://www.w3school.com.cn/php/php_oop_classes_abstract.asp" title="PHP OOP - 抽象类">PHP 抽象类</a></li>
+<li><a href="php_oop_interfaces.asp.htm" tppabs="https://www.w3school.com.cn/php/php_oop_interfaces.asp" title="PHP OOP - 接口">PHP 接口</a></li>
+<li><a href="php_oop_traits.asp.htm" tppabs="https://www.w3school.com.cn/php/php_oop_traits.asp" title="PHP OOP - Trait">PHP Trait</a></li>
+<li><a href="php_oop_static_methods.asp.htm" tppabs="https://www.w3school.com.cn/php/php_oop_static_methods.asp" title="PHP OOP - 静态方法">PHP 静态方法</a></li>
+<li><a href="php_oop_static_properties.asp.htm" tppabs="https://www.w3school.com.cn/php/php_oop_static_properties.asp" title="PHP OOP - 静态属性">PHP 静态属性</a></li>
+<li><a href="php_namespaces.asp.htm" tppabs="https://www.w3school.com.cn/php/php_namespaces.asp" title="PHP OOP - 命名空间">PHP 命名空间</a></li>
+<li><a href="php_iterables.asp.htm" tppabs="https://www.w3school.com.cn/php/php_iterables.asp" title="PHP Iterable">PHP Iterable</a></li>
+</ul>
+<h2>PHP 数据库</h2>
+<ul>
+<li><a href="php_mysql_intro.asp.htm" tppabs="https://www.w3school.com.cn/php/php_mysql_intro.asp" title="PHP MySQL 数据库">MySQL 数据库</a></li>
+<li><a href="php_mysql_connect.asp.htm" tppabs="https://www.w3school.com.cn/php/php_mysql_connect.asp" title="PHP 连接 MySQL">MySQL 连接</a></li>
+<li><a href="php_mysql_create.asp.htm" tppabs="https://www.w3school.com.cn/php/php_mysql_create.asp" title="PHP 创建 MySQL 数据库">MySQL 创建 DB</a></li>
+<li><a href="php_mysql_create_table.asp.htm" tppabs="https://www.w3school.com.cn/php/php_mysql_create_table.asp" title="PHP MySQL 创建表格">MySQL 创建表格</a></li>
+<li><a href="php_mysql_insert.asp.htm" tppabs="https://www.w3school.com.cn/php/php_mysql_insert.asp" title="PHP MySQL 插入数据">MySQL 插入数据</a></li>
+<li><a href="php_mysql_insert_lastid.asp.htm" tppabs="https://www.w3school.com.cn/php/php_mysql_insert_lastid.asp" title="PHP MySQL 获取最后插入的 ID">MySQL 获取最后的 ID</a></li>
+<li><a href="php_mysql_insert_multiple.asp.htm" tppabs="https://www.w3school.com.cn/php/php_mysql_insert_multiple.asp" title="PHP MySQL 插入多条记录">MySQL 插入多条记录</a></li>
+<li><a href="php_mysql_prepared_statements.asp.htm" tppabs="https://www.w3school.com.cn/php/php_mysql_prepared_statements.asp" title="PHP MySQL Prepared 语句">MySQL Prepared</a></li>
+<li><a href="php_mysql_select.asp.htm" tppabs="https://www.w3school.com.cn/php/php_mysql_select.asp" title="PHP MySQL 选取数据">MySQL 选取数据</a></li>
+<li><a href="php_mysql_select_where.asp.htm" tppabs="https://www.w3school.com.cn/php/php_mysql_select_where.asp" title="PHP MySQL 使用 WHERE 子句">MySQL WHERE</a></li>
+<li><a href="php_mysql_select_orderby.asp.htm" tppabs="https://www.w3school.com.cn/php/php_mysql_select_orderby.asp" title="PHP MySQL 使用 ORDER BY 子句">MySQL ORDER BY</a></li>
+<li><a href="php_mysql_delete.asp.htm" tppabs="https://www.w3school.com.cn/php/php_mysql_delete.asp" title="PHP MySQL 删除数据">MySQL 删除数据</a></li>
+<li><a href="php_mysql_update.asp.htm" tppabs="https://www.w3school.com.cn/php/php_mysql_update.asp" title="PHP MySQL 更新数据">MySQL 更新数据</a></li>
+<li><a href="php_mysql_select_limit.asp.htm" tppabs="https://www.w3school.com.cn/php/php_mysql_select_limit.asp" title="PHP MySQL 限制数据选择">MySQL 限制数据</a></li>
+</ul>
+<h2>PHP XML</h2>
+<ul>
+<li><a href="php_xml_parsers.asp.htm" tppabs="https://www.w3school.com.cn/php/php_xml_parsers.asp" title="PHP XML 解析器">PHP XML 解析器</a></li>
+<li><a href="php_xml_simplexml_read.asp.htm" tppabs="https://www.w3school.com.cn/php/php_xml_simplexml_read.asp" title="PHP SimpleXML 解析器">PHP SimpleXML 解析器</a></li>
+<li><a href="php_xml_simplexml_get.asp.htm" tppabs="https://www.w3school.com.cn/php/php_xml_simplexml_get.asp" title="PHP SimpleXML - 获取节点/属性值">PHP SimpleXML - 获取</a></li>
+<li><a href="php_xml_parser_expat.asp.htm" tppabs="https://www.w3school.com.cn/php/php_xml_parser_expat.asp" title="PHP XML Expat 解析器">PHP XML Expat</a></li>
+<li><a href="php_xml_dom.asp.htm" tppabs="https://www.w3school.com.cn/php/php_xml_dom.asp" title="PHP XML DOM 解析器">PHP XML DOM 解析器</a></li>
+</ul>
+<h2>PHP 和 AJAX</h2>
+<ul>
+<li><a href="php_ajax_intro.asp.htm" tppabs="https://www.w3school.com.cn/php/php_ajax_intro.asp" title="PHP - AJAX 简介">AJAX 简介</a></li>
+<li><a href="php_ajax_php.asp.htm" tppabs="https://www.w3school.com.cn/php/php_ajax_php.asp" title="PHP - AJAX 与 PHP">AJAX PHP</a></li>
+<li><a href="php_ajax_database.asp.htm" tppabs="https://www.w3school.com.cn/php/php_ajax_database.asp" title="PHP - AJAX 与 MySQL">AJAX 数据库</a></li>
+<li><a href="php_ajax_xml.asp.htm" tppabs="https://www.w3school.com.cn/php/php_ajax_xml.asp" title="PHP 实例 - AJAX 与 XML">AJAX XML</a></li>
+<li><a href="php_ajax_livesearch.asp.htm" tppabs="https://www.w3school.com.cn/php/php_ajax_livesearch.asp" title="PHP 实例 - AJAX 实时搜索">AJAX 实时搜索</a></li>
+<li><a href="php_ajax_poll.asp.htm" tppabs="https://www.w3school.com.cn/php/php_ajax_poll.asp" title="PHP 实例 - AJAX 投票">AJAX Poll</a></li>
+</ul>
+<h2>PHP 参考手册</h2>
+<ul>
+<li><a href="php_ref.asp.htm" tppabs="https://www.w3school.com.cn/php/php_ref.asp" title="PHP 参考手册">PHP 参考手册</a></li>
+<li><a href="php_ref_array.asp.htm" tppabs="https://www.w3school.com.cn/php/php_ref_array.asp" title="PHP Array 函数">PHP Array</a></li>
+<li><a href="php_ref_calendar.asp.htm" tppabs="https://www.w3school.com.cn/php/php_ref_calendar.asp" title="PHP Calendar 函数">PHP Calendar</a></li>
+<li><a href="php_ref_date.asp.htm" tppabs="https://www.w3school.com.cn/php/php_ref_date.asp" title="PHP Date / Time 函数">PHP Date</a></li>
+<li><a href="php_ref_directory.asp.htm" tppabs="https://www.w3school.com.cn/php/php_ref_directory.asp" title="PHP Directory 函数">PHP Directory</a></li>
+<li><a href="php_ref_error.asp.htm" tppabs="https://www.w3school.com.cn/php/php_ref_error.asp" title="PHP Error 和 Logging 函数">PHP Error</a></li>
+<li><a href="php_ref_exception.asp.htm" tppabs="https://www.w3school.com.cn/php/php_ref_exception.asp" title="PHP Exception 参考手册">PHP Exception</a></li>
+<li><a href="php_ref_filesystem.asp.htm" tppabs="https://www.w3school.com.cn/php/php_ref_filesystem.asp" title="PHP Filesystem 函数">PHP Filesystem</a></li>
+<li><a href="php_ref_filter.asp.htm" tppabs="https://www.w3school.com.cn/php/php_ref_filter.asp" title="PHP Filter 函数">PHP Filter</a></li>
+<li><a href="php_ref_ftp.asp.htm" tppabs="https://www.w3school.com.cn/php/php_ref_ftp.asp" title="PHP FTP 函数">PHP FTP</a></li>
+<li><a href="php_ref_http.asp.htm" tppabs="https://www.w3school.com.cn/php/php_ref_http.asp" title="PHP HTTP 函数">PHP HTTP</a></li>
+<li><a href="php_ref_json.asp.htm" tppabs="https://www.w3school.com.cn/php/php_ref_json.asp" title="PHP JSON 函数">PHP JSON</a></li>
+<li><a href="php_ref_libxml.asp.htm" tppabs="https://www.w3school.com.cn/php/php_ref_libxml.asp" title="PHP LibXML 函数">PHP LibXML</a></li>
+<li><a href="php_ref_mail.asp.htm" tppabs="https://www.w3school.com.cn/php/php_ref_mail.asp" title="PHP Mail 函数">PHP Mail</a></li>
+<li><a href="php_ref_math.asp.htm" tppabs="https://www.w3school.com.cn/php/php_ref_math.asp" title="PHP Math 函数">PHP Math</a></li>
+<li><a href="php_ref_mysql.asp.htm" tppabs="https://www.w3school.com.cn/php/php_ref_mysql.asp" title="PHP MySQL 函数">PHP MySQL</a></li>
+<li><a href="php_ref_mysqli.asp.htm" tppabs="https://www.w3school.com.cn/php/php_ref_mysqli.asp" title="PHP 5 MySQLi 函数">PHP MySQLi</a></li>
+<li><a href="php_ref_network.asp.htm" tppabs="https://www.w3school.com.cn/php/php_ref_network.asp" title="PHP Network 函数">PHP Network</a></li>
+<li><a href="php_ref_regex.asp.htm" tppabs="https://www.w3school.com.cn/php/php_ref_regex.asp" title="PHP 正则表达式函数">PHP RegEx</a></li>
+<li><a href="php_ref_simplexml.asp.htm" tppabs="https://www.w3school.com.cn/php/php_ref_simplexml.asp" title="PHP SimpleXML 函数">PHP SimpleXML</a></li>
+<li><a href="php_ref_stream.asp.htm" tppabs="https://www.w3school.com.cn/php/php_ref_stream.asp" title="PHP Stream 函数">PHP Stream</a></li>
+<li><a href="php_ref_string.asp.htm" tppabs="https://www.w3school.com.cn/php/php_ref_string.asp" title="PHP String 函数">PHP String</a></li>
+<li><a href="php_ref_xml.asp.htm" tppabs="https://www.w3school.com.cn/php/php_ref_xml.asp" title="PHP XML Parser 函数">PHP XML</a></li>
+<li><a href="php_ref_zip.asp.htm" tppabs="https://www.w3school.com.cn/php/php_ref_zip.asp" title="PHP Zip File 函数">PHP Zip</a></li>
+<li><a href="php_ref_variable_handling.asp.htm" tppabs="https://www.w3school.com.cn/php/php_ref_variable_handling.asp" title="PHP 变量处理函数">PHP 变量处理</a></li>
+<li><a href="php_ref_output_control.asp.htm" tppabs="https://www.w3school.com.cn/php/php_ref_output_control.asp" title="PHP 输出控制函数">PHP 输出控制</a></li>
+<li><a href="php_ref_timezones.asp.htm" tppabs="https://www.w3school.com.cn/php/php_ref_timezones.asp" title="PHP 时区">PHP 时区</a></li>
+<li><a href="php_ref_misc.asp.htm" tppabs="https://www.w3school.com.cn/php/php_ref_misc.asp" title="PHP 杂项函数">PHP 杂项</a></li>
+<li><a href="php_ref_keywords.asp.htm" tppabs="https://www.w3school.com.cn/php/php_ref_keywords.asp" title="PHP 关键词">PHP 关键词</a></li>
+</ul>
+<h2>PHP 实例</h2>
+<ul>
+<li><a href="php_examples.asp.htm" tppabs="https://www.w3school.com.cn/php/php_examples.asp" title="PHP 实例">PHP 实例</a></li>
+<li><a href="php_quiz.asp.htm" tppabs="https://www.w3school.com.cn/php/php_quiz.asp" title="PHP 测验">PHP 测验</a></li>
+</ul>
+</div><div id="selected">
+<h2>课程推荐：</h2>
+<ul>
+<li><a href="../howto/index.asp.htm" tppabs="https://www.w3school.com.cn/howto/index.asp" title="W3School 百宝箱">W3School 百宝箱</a></li>
+<li><a href="../java/index.asp.htm" tppabs="https://www.w3school.com.cn/java/index.asp" title="Java 教程">Java 教程</a></li>
+</ul>
+
+</div>
+
+</div>
+
+<div id="maincontent">
+
+<h1>PHP if...else 语句</h1>
+
+<div class="prenextnav">
+<ul class="prenext">
+<li class="pre"><a href="php_if_operators.asp.htm" tppabs="https://www.w3school.com.cn/php/php_if_operators.asp" title="PHP if 运算符">PHP if 运算符</a></li>
+<li class="next"><a href="php_if_shorthand.asp.htm" tppabs="https://www.w3school.com.cn/php/php_if_shorthand.asp" title="PHP 简写 if">PHP 简写 if</a></li>
+</ul>
+</div>
+
+
+
+<section>
+<h2>PHP - if...else 语句</h2>
+
+<p><code>if...else</code> 语句在条件为真时执行一些代码，而在条件为假时执行另一段代码。</p>
+
+<h3>语法</h3>
+
+<pre class="language-php">
+if (<i>条件</i>) {
+  // 如果条件为真，要执行的代码；
+} else {
+  // 如果条件为假，要执行的代码；
+}
+</pre>
+
+<h3>实例</h3>
+
+<p>如果当前时间小于 20，则输出&quot;日安&quot;，否则输出&quot;晚安&quot;：</p>
+
+<pre class="language-php">
+$t = date(&quot;H&quot;);
+
+if ($t &lt; &quot;20&quot;) {
+  echo &quot;日安&quot;;
+} else {
+  echo &quot;晚安&quot;;
+}
+</pre>
+
+<p class="tiy"><a target="_blank" href="javascript:if(confirm('https://www.w3school.com.cn/php/t.asp?f=css_syntax_class  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ������, �����������, ����Ŀ����ֹͣ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.w3school.com.cn/php/t.asp?f=css_syntax_class'" tppabs="https://www.w3school.com.cn/php/t.php?f=php_if_else">亲自试一试</a></p>
+</section>
+
+
+
+<section>
+<h2>PHP - if...elseif...else 语句</h2>
+
+<p><code>if...elseif...else</code> 语句对两个以上的条件执行不同的代码。</p>
+
+<h3>语法</h3>
+
+<pre class="language-php">
+if (<i>条件</i>) {
+  如果此条件为真，要执行的代码；
+} elseif (<i>条件</i>) {
+  // 如果第一个条件为假且此条件为真，要执行的代码；
+} else {
+  // 如果所有条件都为假，要执行的代码；
+}
+</pre>
+
+<h3>实例</h3>
+
+<p>如果当前时间小于 10，则输出&quot;早安&quot;，如果当前时间小于 20，则输出&quot;日安&quot;。否则，它将输出&quot;晚安&quot;：</p>
+
+<pre class="language-php">
+$t = date(&quot;H&quot;);
+
+if ($t &lt; &quot;10&quot;) {
+  echo &quot;早安&quot;;
+} elseif ($t &lt; &quot;20&quot;) {
+  echo &quot;日安&quot;;
+} else {
+  echo &quot;晚安&quot;;
+}
+</pre>
+
+<p class="tiy"><a target="_blank" href="javascript:if(confirm('https://www.w3school.com.cn/php/t.asp?f=eg_html_lists_unordered  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ������, �����������, ����Ŀ����ֹͣ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.w3school.com.cn/php/t.asp?f=eg_html_lists_unordered'" tppabs="https://www.w3school.com.cn/php/t.php?f=php_if_elseif">亲自试一试</a></p>
+</section>
+
+
+
+<div class="prenextnav">
+<ul class="prenext">
+<li class="pre"><a href="php_if_operators.asp.htm" tppabs="https://www.w3school.com.cn/php/php_if_operators.asp" title="PHP if 运算符">PHP if 运算符</a></li>
+<li class="next"><a href="php_if_shorthand.asp.htm" tppabs="https://www.w3school.com.cn/php/php_if_shorthand.asp" title="PHP 简写 if">PHP 简写 if</a></li>
+</ul>
+</div><div style="background-color:#fcfdf8; padding:0;">
+<script async src="../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" tppabs="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- W3School ���Ĺ�� -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:800px;height:250px"
+     data-ad-client="ca-pub-3381531532877742"
+     data-ad-slot="2086924285"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+</div>
+<!-- maincontent end -->
+
+<div id="sidebar">
+
+<div id="tools">
+<h5 id="tools_reference"><a href="php_ref.asp.htm" tppabs="https://www.w3school.com.cn/php/php_ref.asp">PHP 参考手册</a></h5>
+<h5 id="tools_quiz"><a href="php_quiz.asp.htm" tppabs="https://www.w3school.com.cn/php/php_quiz.asp">PHP 测验</a></h5>
+</div>
+
+<div id="sidebar_zzs">
+
+<div id="sbtg">
+<script async src="../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" tppabs="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- W3School 侧栏广告位 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-3381531532877742"
+     data-ad-slot="6744370501"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+</div>
+
+</div>
+
+<div id="footer">
+<p id="p1">
+W3School 简体中文版提供的内容仅用于培训和测试，不保证内容的正确性。通过使用本站内容随之而来的风险与本站无关。版权所有，保留一切权利。
+</p>
+
+<p id="p2">
+<a href="../about/index.asp.htm" tppabs="https://www.w3school.com.cn/about/index.asp" title="关于 W3School">关于 W3School</a>
+<a href="../about/about_helping.asp.htm" tppabs="https://www.w3school.com.cn/about/about_helping.asp" title="帮助 W3School">帮助 W3School</a>
+<a href="../about/about_use.asp.htm" tppabs="https://www.w3school.com.cn/about/about_use.asp" title="关于使用">使用条款</a>
+<a href="../about/about_privacy.asp.htm" tppabs="https://www.w3school.com.cn/about/about_privacy.asp" title="关于隐私">隐私条款</a>
+<a target="_blank" href="javascript:if(confirm('https://www.ykinvestment.com/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.ykinvestment.com/'" tppabs="https://www.ykinvestment.com/">技术支持：赢科</a>
+<a target="_blank" href="javascript:if(confirm('http://www.beian.miit.gov.cn/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://www.beian.miit.gov.cn/'" tppabs="http://www.beian.miit.gov.cn/">蒙ICP备06004630号</a>
+</p>
+</div>
+
+
+</div>
+<!-- wrapper end -->
+
+</body>
+
+</html>

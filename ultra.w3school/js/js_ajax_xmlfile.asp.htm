@@ -1,0 +1,484 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="../../www.googletagmanager.com/gtag/js-id=UA-878633-1" tppabs="https://www.googletagmanager.com/gtag/js?id=UA-878633-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-878633-1');
+</script>
+
+<meta charset=utf-8"utf-8">
+<meta name="robots" content="all" />
+<meta name="author" content="w3school.com.cn" />
+
+<link rel="stylesheet" type="text/css" href="../c.css" tppabs="https://www.w3school.com.cn/c.css" />
+
+<script src="../lib/cc/prism2.js" tppabs="https://www.w3school.com.cn/lib/cc/prism2.js"></script>
+<link rel='stylesheet' href="../lib/cc/prism.css" tppabs="https://www.w3school.com.cn/lib/cc/prism.css">
+
+<link rel="icon" type="image/png" sizes="16x16" href="/ui2019/logo-16-red.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/ui2019/logo-32-red.png">
+<link rel="icon" type="image/png" sizes="48x48" href="/ui2019/logo-48-red.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/ui2019/logo-96-red.png">
+<link rel="apple-touch-icon-precomposed" sizes="180x180" href="/ui2019/logo-180.png">
+
+
+<title>AJAX XML 实例</title>
+
+</head>
+
+<body class="browserscripting">
+
+<div id="wrapper">
+
+<div id="header">
+<a id="logo" href="../index.html" tppabs="https://www.w3school.com.cn/index.html" title="w3school 在线教程" style="float:left;">w3school 在线教程</a>
+<div id="header_gg">
+<script async src="../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" tppabs="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- W3 页眉 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-3381531532877742"
+     data-ad-slot="7423315034"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+
+<div id="navfirst">
+<ul id="menu">
+<li id="h"><a href="../h.asp.htm" tppabs="https://www.w3school.com.cn/h.asp" title="HTML 系列教程">HTML 系列教程</a></li>
+<li id="b"><a href="../b.asp.htm" tppabs="https://www.w3school.com.cn/b.asp" title="浏览器脚本教程">浏览器脚本</a></li>
+<li id="s"><a href="../s.asp.htm" tppabs="https://www.w3school.com.cn/s.asp" title="服务器脚本教程">服务器脚本</a></li>
+<li id="p"><a href="../p.asp.htm" tppabs="https://www.w3school.com.cn/p.asp" title="编程教程">编程教程</a></li>
+<li id="x"><a href="../x.asp.htm" tppabs="https://www.w3school.com.cn/x.asp" title="XML 系列教程">XML 系列教程</a></li>
+<li id="w"><a href="../w.asp.htm" tppabs="https://www.w3school.com.cn/w.asp" title="建站手册">建站手册</a></li>
+<li id="r"><a href="../r.asp.htm" tppabs="https://www.w3school.com.cn/r.asp" title="参考手册">参考手册</a></li>
+</ul>
+</div>
+
+<div id="navsecond">
+
+<div id="course"><h2>JS 教程</h2>
+<ul>
+<li><a href="index.asp.htm" tppabs="https://www.w3school.com.cn/js/index.asp" title="JavaScript 教程">JS 教程</a></li>
+<li><a href="js_intro.asp.htm" tppabs="https://www.w3school.com.cn/js/js_intro.asp" title="JavaScript 简介">JS 简介</a></li>
+<li><a href="js_shiyong.asp.htm" tppabs="https://www.w3school.com.cn/js/js_shiyong.asp" title="JavaScript 使用">JS 使用</a></li>
+<li><a href="js_output.asp.htm" tppabs="https://www.w3school.com.cn/js/js_output.asp" title="JavaScript 输出">JS 输出</a></li>
+<li><a href="js_statements.asp.htm" tppabs="https://www.w3school.com.cn/js/js_statements.asp" title="JavaScript 语句">JS 语句</a></li>
+<li><a href="js_syntax.asp.htm" tppabs="https://www.w3school.com.cn/js/js_syntax.asp" title="JavaScript 语法">JS 语法</a></li>
+<li><a href="js_comments.asp.htm" tppabs="https://www.w3school.com.cn/js/js_comments.asp" title="JavaScript 注释">JS 注释</a></li>
+<li><a href="js_variables.asp.htm" tppabs="https://www.w3school.com.cn/js/js_variables.asp" title="JavaScript 变量">JS 变量</a></li>
+<li><a href="js_let.asp.htm" tppabs="https://www.w3school.com.cn/js/js_let.asp" title="JavaScript Let">JS Let</a></li>
+<li><a href="js_const.asp.htm" tppabs="https://www.w3school.com.cn/js/js_const.asp" title="JavaScript Const">JS Const</a></li>
+<li><a href="js_operators.asp.htm" tppabs="https://www.w3school.com.cn/js/js_operators.asp" title="JavaScript 运算符">JS 运算符</a></li>
+<li><a href="js_arithmetic.asp.htm" tppabs="https://www.w3school.com.cn/js/js_arithmetic.asp" title="JavaScript 算术">JS 算数</a></li>
+<li><a href="js_assignment.asp.htm" tppabs="https://www.w3school.com.cn/js/js_assignment.asp" title="JavaScript 赋值">JS 赋值</a></li>
+<li><a href="js_datatypes.asp.htm" tppabs="https://www.w3school.com.cn/js/js_datatypes.asp" title="JavaScript 数据类型">JS 数据类型</a></li>
+<li><a href="js_functions.asp.htm" tppabs="https://www.w3school.com.cn/js/js_functions.asp" title="JavaScript 函数">JS 函数</a></li>
+<li><a href="js_objects.asp.htm" tppabs="https://www.w3school.com.cn/js/js_objects.asp" title="JavaScript 对象">JS 对象</a></li>
+<li><a href="js_events.asp.htm" tppabs="https://www.w3school.com.cn/js/js_events.asp" title="JavaScript 事件">JS 事件</a></li>
+<li><a href="js_strings.asp.htm" tppabs="https://www.w3school.com.cn/js/js_strings.asp" title="JavaScript 字符串">JS 字符串</a></li>
+<li><a href="js_string_methods.asp.htm" tppabs="https://www.w3school.com.cn/js/js_string_methods.asp" title="JavaScript 字符串方法">JS 字符串方法</a></li>
+<li><a href="js_string_search.asp.htm" tppabs="https://www.w3school.com.cn/js/js_string_search.asp" title="JavaScript 字符串搜索">JS 字符串搜索</a></li>
+<li><a href="js_string_templates.asp.htm" tppabs="https://www.w3school.com.cn/js/js_string_templates.asp" title="JavaScript 模板文字">JS 字符串模板</a></li>
+<li><a href="js_numbers.asp.htm" tppabs="https://www.w3school.com.cn/js/js_numbers.asp" title="JavaScript 数字">JS 数字</a></li>
+<li><a href="js_bigint.asp.htm" tppabs="https://www.w3school.com.cn/js/js_bigint.asp" title="JavaScript BigInt">JS BigInt</a></li>
+<li><a href="js_number_methods.asp.htm" tppabs="https://www.w3school.com.cn/js/js_number_methods.asp" title="JavaScript 数字方法">JS 数字方法</a></li>
+<li><a href="js_number_properties.asp.htm" tppabs="https://www.w3school.com.cn/js/js_number_properties.asp" title="JavaScript 数字属性">JS 数字属性</a></li>
+<li><a href="js_arrays.asp.htm" tppabs="https://www.w3school.com.cn/js/js_arrays.asp" title="JavaScript 数组">JS 数组</a></li>
+<li><a href="js_array_methods.asp.htm" tppabs="https://www.w3school.com.cn/js/js_array_methods.asp" title="JavaScript 数组方法">JS 数组方法</a></li>
+<li><a href="js_array_search.asp.htm" tppabs="https://www.w3school.com.cn/js/js_array_search.asp" title="JavaScript 数组搜索">JS 数组搜索</a></li>
+<li><a href="js_array_sort.asp.htm" tppabs="https://www.w3school.com.cn/js/js_array_sort.asp" title="JavaScript 数组排序">JS 数组排序</a></li>
+<li><a href="js_array_iteration.asp.htm" tppabs="https://www.w3school.com.cn/js/js_array_iteration.asp" title="JavaScript 数组迭代方法">JS 数组迭代</a></li>
+<li><a href="js_array_const.asp.htm" tppabs="https://www.w3school.com.cn/js/js_array_const.asp" title="JavaScript 数组 Const">JS 数组 Const</a></li>
+<li><a href="js_dates.asp.htm" tppabs="https://www.w3school.com.cn/js/js_dates.asp" title="JavaScript 日期">JS 日期</a></li>
+<li><a href="js_date_formats.asp.htm" tppabs="https://www.w3school.com.cn/js/js_date_formats.asp" title="JavaScript 日期格式">JS 日期格式</a></li>
+<li><a href="js_date_methods.asp.htm" tppabs="https://www.w3school.com.cn/js/js_date_methods.asp" title="JavaScript 获取日期方法">JS 日期获取方法</a></li>
+<li><a href="js_date_methods_set.asp.htm" tppabs="https://www.w3school.com.cn/js/js_date_methods_set.asp" title="JavaScript 设置日期方法">JS 日期设置方法</a></li>
+<li><a href="js_math.asp.htm" tppabs="https://www.w3school.com.cn/js/js_math.asp" title="JavaScript Math 对象">JS 数学</a></li>
+<li><a href="js_random.asp.htm" tppabs="https://www.w3school.com.cn/js/js_random.asp" title="JavaScript 随机">JS 随机</a></li>
+<li><a href="js_booleans.asp.htm" tppabs="https://www.w3school.com.cn/js/js_booleans.asp" title="JavaScript 逻辑">JS 逻辑</a></li>
+<li><a href="js_comparisons.asp.htm" tppabs="https://www.w3school.com.cn/js/js_comparisons.asp" title="JavaScript 比较和逻辑运算">JS 比较</a></li>
+<li><a href="js_if_else.asp.htm" tppabs="https://www.w3school.com.cn/js/js_if_else.asp" title="JavaScript If...Else 语句">JS 条件</a></li>
+<li><a href="js_switch.asp.htm" tppabs="https://www.w3school.com.cn/js/js_switch.asp" title="JavaScript Switch 语句">JS Switch</a></li>
+<li><a href="js_loop_for.asp.htm" tppabs="https://www.w3school.com.cn/js/js_loop_for.asp" title="JavaScript For 循环">JS Loop For</a></li>
+<li><a href="js_loop_forin.asp.htm" tppabs="https://www.w3school.com.cn/js/js_loop_forin.asp" title="JavaScript For In">JS Loop For In</a></li>
+<li><a href="js_loop_forof.asp.htm" tppabs="https://www.w3school.com.cn/js/js_loop_forof.asp" title="JavaScript For Of">JS Loop For Of</a></li>
+<li><a href="js_loop_while.asp.htm" tppabs="https://www.w3school.com.cn/js/js_loop_while.asp" title="JavaScript While 循环">JS Loop While</a></li>
+<li><a href="js_break.asp.htm" tppabs="https://www.w3school.com.cn/js/js_break.asp" title="JavaScript Break 和 Continue">JS Break</a></li>
+<li><a href="js_iterables.asp.htm" tppabs="https://www.w3school.com.cn/js/js_iterables.asp" title="JavaScript 可迭代对象">JS 可迭代对象</a></li>
+<li><a href="js_sets.asp.htm" tppabs="https://www.w3school.com.cn/js/js_sets.asp" title="JavaScript Set">JS Set</a></li>
+<li><a href="js_set_methods.asp.htm" tppabs="https://www.w3school.com.cn/js/js_set_methods.asp" title="JavaScript Set 方法">JS Set 方法</a></li>
+<li><a href="js_maps.asp.htm" tppabs="https://www.w3school.com.cn/js/js_maps.asp" title="JavaScript Map">JS Map</a></li>
+<li><a href="js_map_methods.asp.htm" tppabs="https://www.w3school.com.cn/js/js_map_methods.asp" title="JavaScript Map 方法">JS Map 方法</a></li>
+<li><a href="js_typeof.asp.htm" tppabs="https://www.w3school.com.cn/js/js_typeof.asp" title="JavaScript typeof">JS typeof</a></li>
+<li><a href="js_type_conversion.asp.htm" tppabs="https://www.w3school.com.cn/js/js_type_conversion.asp" title="JavaScript 类型转换">JS 类型转换</a></li>
+<li><a href="js_destructuring.asp.htm" tppabs="https://www.w3school.com.cn/js/js_destructuring.asp" title="JavaScript 解构">JS 解构</a></li>
+<li><a href="js_bitwise.asp.htm" tppabs="https://www.w3school.com.cn/js/js_bitwise.asp" title="JavaScript 位运算符">JS 位运算</a></li>
+<li><a href="js_regexp.asp.htm" tppabs="https://www.w3school.com.cn/js/js_regexp.asp" title="JavaScript 正则表达式">JS 正则表达式</a></li>
+<li><a href="js_precedence.asp.htm" tppabs="https://www.w3school.com.cn/js/js_precedence.asp" title="JavaScript 运算符优先级">JS 运算符优先级</a></li>
+<li><a href="js_errors.asp.htm" tppabs="https://www.w3school.com.cn/js/js_errors.asp" title="JavaScript 错误 - Throw 和 Try to Catch">JS 异常</a></li>
+<li><a href="js_scope.asp.htm" tppabs="https://www.w3school.com.cn/js/js_scope.asp" title="JavaScript 作用域">JS 作用域</a></li>
+<li><a href="js_hoisting.asp.htm" tppabs="https://www.w3school.com.cn/js/js_hoisting.asp" title="JavaScript Hoisting">JS Hoisting</a></li>
+<li><a href="js_strict.asp.htm" tppabs="https://www.w3school.com.cn/js/js_strict.asp" title="JavaScript Use Strict">JS 严格模式</a></li>
+<li><a href="js_this.asp.htm" tppabs="https://www.w3school.com.cn/js/js_this.asp" title="JavaScript this 关键词">JS this 关键词</a></li>
+<li><a href="js_arrow_function.asp.htm" tppabs="https://www.w3school.com.cn/js/js_arrow_function.asp" title="JavaScript 箭头函数">JS 箭头函数</a></li>
+<li><a href="js_classes.asp.htm" tppabs="https://www.w3school.com.cn/js/js_classes.asp" title="JavaScript 类">JS 类</a></li>
+<li><a href="js_modules.asp.htm" tppabs="https://www.w3school.com.cn/js/js_modules.asp" title="JavaScript 模块">JS 模块</a></li>
+<li><a href="js_json.asp.htm" tppabs="https://www.w3school.com.cn/js/js_json.asp" title="JavaScript JSON">JS JSON</a></li>
+<li><a href="js_debugging.asp.htm" tppabs="https://www.w3school.com.cn/js/js_debugging.asp" title="JavaScript 调试">JS 调试</a></li>
+<li><a href="js_conventions.asp.htm" tppabs="https://www.w3school.com.cn/js/js_conventions.asp" title="JavaScript 样式指南和代码约定">JS 样式指南</a></li>
+<li><a href="js_best_practices.asp.htm" tppabs="https://www.w3school.com.cn/js/js_best_practices.asp" title="JavaScript 最佳实践">JS 最佳实践</a></li>
+<li><a href="js_mistakes.asp.htm" tppabs="https://www.w3school.com.cn/js/js_mistakes.asp" title="JavaScript 常见错误">JS 错误</a></li>
+<li><a href="js_performance.asp.htm" tppabs="https://www.w3school.com.cn/js/js_performance.asp" title="JavaScript 性能">JS 性能</a></li>
+<li><a href="js_reserved.asp.htm" tppabs="https://www.w3school.com.cn/js/js_reserved.asp" title="JavaScript 保留词">JS 保留词</a></li>
+</ul>
+<h2>JS 版本</h2>
+<ul>
+<li><a href="js_versions.asp.htm" tppabs="https://www.w3school.com.cn/js/js_versions.asp" title="JavaScript 版本">JS 版本</a></li>
+<li><a href="js_es5.asp.htm" tppabs="https://www.w3school.com.cn/js/js_es5.asp" title="JavaScript ES5">JS 2009 (ES5)</a></li>
+<li><a href="js_es6.asp.htm" tppabs="https://www.w3school.com.cn/js/js_es6.asp" title="Javascript ES6">JS 2015 (ES6)</a></li>
+<li><a href="js_2016.asp.htm" tppabs="https://www.w3school.com.cn/js/js_2016.asp" title="ECMAScript 2016">JS 2016</a></li>
+<li><a href="js_2017.asp.htm" tppabs="https://www.w3school.com.cn/js/js_2017.asp" title="ECMAScript 2017">JS 2017</a></li>
+<li><a href="js_2018.asp.htm" tppabs="https://www.w3school.com.cn/js/js_2018.asp" title="ECMAScript 2018">JS 2018</a></li>
+<li><a href="js_2019.asp.htm" tppabs="https://www.w3school.com.cn/js/js_2019.asp" title="ECMAScript 2019">JS 2019</a></li>
+<li><a href="js_2020.asp.htm" tppabs="https://www.w3school.com.cn/js/js_2020.asp" title="ECMAScript 2020">JS 2020</a></li>
+<li><a href="js_2021.asp.htm" tppabs="https://www.w3school.com.cn/js/js_2021.asp" title="ECMAScript 2021">JS 2021</a></li>
+<li><a href="js_2022.asp.htm" tppabs="https://www.w3school.com.cn/js/js_2022.asp" title="ECMAScript 2022">JS 2022</a></li>
+<li><a href="js_2023.asp.htm" tppabs="https://www.w3school.com.cn/js/js_2023.asp" title="ECMAScript 2023">JS 2023</a></li>
+<li><a href="js_2024.asp.htm" tppabs="https://www.w3school.com.cn/js/js_2024.asp" title="ECMAScript 2024">JS 2024</a></li>
+<li><a href="js_ie_edge.asp.htm" tppabs="https://www.w3school.com.cn/js/js_ie_edge.asp" title="Internet Explorer / Edge">JS IE / Edge</a></li>
+<li><a href="js_history.asp.htm" tppabs="https://www.w3school.com.cn/js/js_history.asp" title="JavaScript 历史">JS 历史</a></li>
+</ul>
+<h2>JS 对象</h2>
+<ul>
+<li><a href="js_object_definition.asp.htm" tppabs="https://www.w3school.com.cn/js/js_object_definition.asp" title="JavaScript 对象定义">JS 对象定义</a></li>
+<li><a href="js_object_properties.asp.htm" tppabs="https://www.w3school.com.cn/js/js_object_properties.asp" title="JavaScript 对象属性">JS 对象属性</a></li>
+<li><a href="js_object_methods.asp.htm" tppabs="https://www.w3school.com.cn/js/js_object_methods.asp" title="JavaScript 对象方法">JS 对象方法</a></li>
+<li><a href="js_object_display.asp.htm" tppabs="https://www.w3school.com.cn/js/js_object_display.asp" title="JavaScript 显示对象">JS 对象显示</a></li>
+<li><a href="js_object_accessors.asp.htm" tppabs="https://www.w3school.com.cn/js/js_object_accessors.asp" title="JavaScript 对象访问器">JS 对象访问器</a></li>
+<li><a href="js_object_constructors.asp.htm" tppabs="https://www.w3school.com.cn/js/js_object_constructors.asp" title="JavaScript 对象构造器">JS 对象构造器</a></li>
+<li><a href="js_object_prototypes.asp.htm" tppabs="https://www.w3school.com.cn/js/js_object_prototypes.asp" title="JavaScript 对象原型">JS 对象原型</a></li>
+<li><a href="js_object_es5.asp.htm" tppabs="https://www.w3school.com.cn/js/js_object_es5.asp" title="JavaScript ES5 对象方法">JS 对象引用</a></li>
+</ul>
+<h2>JS 函数</h2>
+<ul>
+<li><a href="js_function_definition.asp.htm" tppabs="https://www.w3school.com.cn/js/js_function_definition.asp" title="JavaScript 函数定义">JS 函数定义</a></li>
+<li><a href="js_function_parameters.asp.htm" tppabs="https://www.w3school.com.cn/js/js_function_parameters.asp" title="JavaScript 函数参数">JS 函数参数</a></li>
+<li><a href="js_function_invocation.asp.htm" tppabs="https://www.w3school.com.cn/js/js_function_invocation.asp" title="JavaScript 函数调用">JS 函数调用</a></li>
+<li><a href="js_function_call.asp.htm" tppabs="https://www.w3school.com.cn/js/js_function_call.asp" title="JavaScript 函数 Call">JS 函数 Call</a></li>
+<li><a href="js_function_apply.asp.htm" tppabs="https://www.w3school.com.cn/js/js_function_apply.asp" title="JavaScript 函数 Apply">JS 函数 Apply</a></li>
+<li><a href="js_function_bind.asp.htm" tppabs="https://www.w3school.com.cn/js/js_function_bind.asp" title="JavaScript 函数 bind()">JS 函数绑定</a></li>
+<li><a href="js_function_closures.asp.htm" tppabs="https://www.w3school.com.cn/js/js_function_closures.asp" title="JavaScript 闭包">JS 闭包</a></li>
+</ul>
+<h2>JS 类</h2>
+<ul>
+<li><a href="js_class_intro.asp.htm" tppabs="https://www.w3school.com.cn/js/js_class_intro.asp" title="JavaScript 类">JS 类简介</a></li>
+<li><a href="js_class_inheritance.asp.htm" tppabs="https://www.w3school.com.cn/js/js_class_inheritance.asp" title="JavaScript 类继承">JS 类继承</a></li>
+<li><a href="js_class_static.asp.htm" tppabs="https://www.w3school.com.cn/js/js_class_static.asp" title="JavaScript Static 方法">JS Static</a></li>
+</ul>
+<h2>JS Async</h2>
+<ul>
+<li><a href="js_callback.asp.htm" tppabs="https://www.w3school.com.cn/js/js_callback.asp" title="JavaScript 回调">JS 回调</a></li>
+<li><a href="js_asynchronous.asp.htm" tppabs="https://www.w3school.com.cn/js/js_asynchronous.asp" title="异步的 JavaScript">JS 异步</a></li>
+<li><a href="js_promise.asp.htm" tppabs="https://www.w3school.com.cn/js/js_promise.asp" title="JavaScript Promise">JS Promise</a></li>
+<li><a href="js_async.asp.htm" tppabs="https://www.w3school.com.cn/js/js_async.asp" title="JavaScript Async/Await">JS Async</a></li>
+</ul>
+<h2>JS HTML DOM</h2>
+<ul>
+<li><a href="js_htmldom.asp.htm" tppabs="https://www.w3school.com.cn/js/js_htmldom.asp" title="JavaScript HTML DOM">DOM 简介</a></li>
+<li><a href="js_htmldom_methods.asp.htm" tppabs="https://www.w3school.com.cn/js/js_htmldom_methods.asp" title="JavaScript - HTML DOM 方法">DOM 方法</a></li>
+<li><a href="js_htmldom_document.asp.htm" tppabs="https://www.w3school.com.cn/js/js_htmldom_document.asp" title="JavaScript HTML DOM 文档">DOM 文档</a></li>
+<li><a href="js_htmldom_elements.asp.htm" tppabs="https://www.w3school.com.cn/js/js_htmldom_elements.asp" title="JavaScript HTML DOM 元素">DOM 元素</a></li>
+<li><a href="js_htmldom_html.asp.htm" tppabs="https://www.w3school.com.cn/js/js_htmldom_html.asp" title="JavaScript HTML DOM - 改变 HTML">DOM HTML</a></li>
+<li><a href="js_validation.asp.htm" tppabs="https://www.w3school.com.cn/js/js_validation.asp" title="JavaScript 表单">DOM 表单</a></li>
+<li><a href="js_htmldom_css.asp.htm" tppabs="https://www.w3school.com.cn/js/js_htmldom_css.asp" title="JavaScript HTML DOM - 改变 CSS">DOM CSS</a></li>
+<li><a href="js_htmldom_animate.asp.htm" tppabs="https://www.w3school.com.cn/js/js_htmldom_animate.asp" title="JavaScript HTML DOM 动画">DOM 动画</a></li>
+<li><a href="js_htmldom_events.asp.htm" tppabs="https://www.w3school.com.cn/js/js_htmldom_events.asp" title="JavaScript HTML DOM 事件">DOM 事件</a></li>
+<li><a href="js_htmldom_eventlistener.asp.htm" tppabs="https://www.w3school.com.cn/js/js_htmldom_eventlistener.asp" title="JavaScript HTML DOM 事件监听程序">DOM 事件监听程序</a></li>
+<li><a href="js_htmldom_navigation.asp.htm" tppabs="https://www.w3school.com.cn/js/js_htmldom_navigation.asp" title="JavaScript HTML DOM 导航">DOM 导航</a></li>
+<li><a href="js_htmldom_nodes.asp.htm" tppabs="https://www.w3school.com.cn/js/js_htmldom_nodes.asp" title="JavaScript HTML DOM 元素（节点）">DOM 节点</a></li>
+<li><a href="js_htmldom_collections.asp.htm" tppabs="https://www.w3school.com.cn/js/js_htmldom_collections.asp" title="JavaScript HTML DOM 集合">DOM 集合</a></li>
+<li><a href="js_htmldom_nodelist.asp.htm" tppabs="https://www.w3school.com.cn/js/js_htmldom_nodelist.asp" title="JavaScript HTML DOM 节点列表">DOM 节点列表</a></li>
+</ul>
+<h2>JS Browser BOM</h2>
+<ul>
+<li><a href="js_window.asp.htm" tppabs="https://www.w3school.com.cn/js/js_window.asp" title="JavaScript Window - 浏览器对象模型">JS Window</a></li>
+<li><a href="js_window_screen.asp.htm" tppabs="https://www.w3school.com.cn/js/js_window_screen.asp" title="JavaScript Window Screen">JS Screen</a></li>
+<li><a href="js_window_location.asp.htm" tppabs="https://www.w3school.com.cn/js/js_window_location.asp" title="JavaScript Window Location">JS Location</a></li>
+<li><a href="js_window_history.asp.htm" tppabs="https://www.w3school.com.cn/js/js_window_history.asp" title="JavaScript Window History">JS History</a></li>
+<li><a href="js_window_navigator.asp.htm" tppabs="https://www.w3school.com.cn/js/js_window_navigator.asp" title="JavaScript Window Navigator">JS Navigator</a></li>
+<li><a href="js_popup.asp.htm" tppabs="https://www.w3school.com.cn/js/js_popup.asp" title="JavaScript 弹出框">JS 弹出框</a></li>
+<li><a href="js_timing.asp.htm" tppabs="https://www.w3school.com.cn/js/js_timing.asp" title="JavaScript Timing 事件">JS Timing</a></li>
+<li><a href="js_cookies.asp.htm" tppabs="https://www.w3school.com.cn/js/js_cookies.asp" title="JavaScript Cookies">JS Cookies</a></li>
+</ul>
+<h2>JS Web API</h2>
+<ul>
+<li><a href="js_api_intro.asp.htm" tppabs="https://www.w3school.com.cn/js/js_api_intro.asp" title="Web APIs - 简介">Web API 简介</a></li>
+<li><a href="js_validation_api.asp.htm" tppabs="https://www.w3school.com.cn/js/js_validation_api.asp" title="JavaScript 验证 API">Web Form API</a></li>
+<li><a href="js_api_history.asp.htm" tppabs="https://www.w3school.com.cn/js/js_api_history.asp" title="Web History API">Web History API</a></li>
+<li><a href="js_api_web_storage.asp.htm" tppabs="https://www.w3school.com.cn/js/js_api_web_storage.asp" title="Web Storage API">Web Storage API</a></li>
+<li><a href="js_api_web_workers.asp.htm" tppabs="https://www.w3school.com.cn/js/js_api_web_workers.asp" title="Web Worker API">Web Worker API</a></li>
+<li><a href="js_api_fetch.asp.htm" tppabs="https://www.w3school.com.cn/js/js_api_fetch.asp" title="JavaScript Fetch API">Web Fetch API</a></li>
+<li><a href="js_api_geolocation.asp.htm" tppabs="https://www.w3school.com.cn/js/js_api_geolocation.asp" title="Web Geolocation API">Web Geolocation API</a></li>
+</ul>
+<h2>JS AJAX</h2>
+<ul>
+<li><a href="js_ajax_intro.asp.htm" tppabs="https://www.w3school.com.cn/js/js_ajax_intro.asp" title="AJAX 简介">AJAX 简介</a></li>
+<li><a href="js_ajax_http.asp.htm" tppabs="https://www.w3school.com.cn/js/js_ajax_http.asp" title="AJAX - XMLHttpRequest 对象">AJAX XMLHttp</a></li>
+<li><a href="js_ajax_http_send.asp.htm" tppabs="https://www.w3school.com.cn/js/js_ajax_http_send.asp" title="AJAX - XMLHttpRequest">AJAX 请求</a></li>
+<li><a href="js_ajax_http_response.asp.htm" tppabs="https://www.w3school.com.cn/js/js_ajax_http_response.asp" title="AJAX - 服务器响应">AJAX 响应</a></li>
+<li class="currentLink"><a href="js_ajax_xmlfile.asp.htm" tppabs="https://www.w3school.com.cn/js/js_ajax_xmlfile.asp" title="AJAX XML 实例">AJAX XML 文件</a></li>
+<li><a href="js_ajax_php.asp.htm" tppabs="https://www.w3school.com.cn/js/js_ajax_php.asp" title="AJAX PHP 实例">AJAX PHP</a></li>
+<li><a href="js_ajax_asp.asp.htm" tppabs="https://www.w3school.com.cn/js/js_ajax_asp.asp" title="AJAX ASP 实例">AJAX ASP</a></li>
+<li><a href="js_ajax_database.asp.htm" tppabs="https://www.w3school.com.cn/js/js_ajax_database.asp" title="AJAX Database 实例">AJAX 数据库</a></li>
+<li><a href="js_ajax_applications.asp.htm" tppabs="https://www.w3school.com.cn/js/js_ajax_applications.asp" title="XML 应用程序">AJAX 应用程序</a></li>
+<li><a href="js_ajax_examples.asp.htm" tppabs="https://www.w3school.com.cn/js/js_ajax_examples.asp" title="AJAX 实例">AJAX 实例</a></li>
+</ul>
+<h2>JS JSON</h2>
+<ul>
+<li><a href="js_json_intro.asp.htm" tppabs="https://www.w3school.com.cn/js/js_json_intro.asp" title="JSON 简介">JSON 简介</a></li>
+<li><a href="js_json_syntax.asp.htm" tppabs="https://www.w3school.com.cn/js/js_json_syntax.asp" title="JSON 语法">JSON 语法</a></li>
+<li><a href="js_json_xml.asp.htm" tppabs="https://www.w3school.com.cn/js/js_json_xml.asp" title="JSON vs XML">JSON vs XML</a></li>
+<li><a href="js_json_datatypes.asp.htm" tppabs="https://www.w3school.com.cn/js/js_json_datatypes.asp" title="JSON 数据类型">JSON 数据类型</a></li>
+<li><a href="js_json_parse.asp.htm" tppabs="https://www.w3school.com.cn/js/js_json_parse.asp" title="JSON.parse()">JSON 解析</a></li>
+<li><a href="js_json_stringify.asp.htm" tppabs="https://www.w3school.com.cn/js/js_json_stringify.asp" title="JSON.stringify()">JSON 字符串化</a></li>
+<li><a href="js_json_objects.asp.htm" tppabs="https://www.w3school.com.cn/js/js_json_objects.asp" title="JSON 对象">JSON 对象</a></li>
+<li><a href="js_json_arrays.asp.htm" tppabs="https://www.w3school.com.cn/js/js_json_arrays.asp" title="JSON 数组">JSON 数组</a></li>
+<li><a href="js_json_server.asp.htm" tppabs="https://www.w3school.com.cn/js/js_json_server.asp" title="JSON 服务器">JSON 服务器</a></li>
+<li><a href="js_json_php.asp.htm" tppabs="https://www.w3school.com.cn/js/js_json_php.asp" title="JSON PHP">JSON PHP</a></li>
+<li><a href="js_json_html.asp.htm" tppabs="https://www.w3school.com.cn/js/js_json_html.asp" title="JSON HTML">JSON HTML</a></li>
+<li><a href="js_json_jsonp.asp.htm" tppabs="https://www.w3school.com.cn/js/js_json_jsonp.asp" title="JSONP">JSON JSONP</a></li>
+</ul>
+<h2>JS vs jQuery</h2>
+<ul>
+<li><a href="js_jquery_selectors.asp.htm" tppabs="https://www.w3school.com.cn/js/js_jquery_selectors.asp" title="JavaScript / jQuery DOM 选择器">jQuery 选择器</a></li>
+<li><a href="js_jquery_elements.asp.htm" tppabs="https://www.w3school.com.cn/js/js_jquery_elements.asp" title="JavaScript / jQuery HTML 元素">jQuery HTML</a></li>
+<li><a href="js_jquery_css.asp.htm" tppabs="https://www.w3school.com.cn/js/js_jquery_css.asp" title="JavaScript / jQuery CSS 样式">jQuery CSS</a></li>
+<li><a href="js_jquery_dom.asp.htm" tppabs="https://www.w3school.com.cn/js/js_jquery_dom.asp" title="JavaScript / jQuery HTML DOM">jQuery DOM</a></li>
+</ul>
+<h2>JS 图形</h2>
+<ul>
+<li><a href="js_graphics.asp.htm" tppabs="https://www.w3school.com.cn/js/js_graphics.asp" title="JavaScript 图形">JS 图形</a></li>
+<li><a href="js_graphics_canvas.asp.htm" tppabs="https://www.w3school.com.cn/js/js_graphics_canvas.asp" title="HTML Canvas">JS Canvas</a></li>
+<li><a href="js_graphics_plotly.asp.htm" tppabs="https://www.w3school.com.cn/js/js_graphics_plotly.asp" title="Plotly.js">JS Plotly.js</a></li>
+<li><a href="js_graphics_chartjs.asp.htm" tppabs="https://www.w3school.com.cn/js/js_graphics_chartjs.asp" title="Chart.js">JS Chart</a></li>
+<li><a href="js_graphics_google_chart.asp.htm" tppabs="https://www.w3school.com.cn/js/js_graphics_google_chart.asp" title="谷歌图表">JS 谷歌图表</a></li>
+<li><a href="js_graphics_d3js.asp.htm" tppabs="https://www.w3school.com.cn/js/js_graphics_d3js.asp" title="D3.js">JS D3.js</a></li>
+</ul>
+<h2>JS 实例</h2>
+<ul>
+<li><a href="js_examples.asp.htm" tppabs="https://www.w3school.com.cn/js/js_examples.asp" title="JavaScript 实例">JS 实例</a></li>
+<li><a href="js_examples_dom.asp.htm" tppabs="https://www.w3school.com.cn/js/js_examples_dom.asp" title="JavaScript HTML DOM 实例">JS HTML DOM</a></li>
+<li><a href="js_examples_input.asp.htm" tppabs="https://www.w3school.com.cn/js/js_examples_input.asp" title="JavaScript HTML 输入实例">JS HTML 输入</a></li>
+<li><a href="js_examples_html.asp.htm" tppabs="https://www.w3school.com.cn/js/js_examples_html.asp" title="JavaScript HTML 对象实例">JS HTML 对象</a></li>
+<li><a href="js_examples_events.asp.htm" tppabs="https://www.w3school.com.cn/js/js_examples_events.asp" title="JavaScript HTML 事件实例">JS HTML 事件</a></li>
+<li><a href="js_examples_browser.asp.htm" tppabs="https://www.w3school.com.cn/js/js_examples_browser.asp" title="JavaScript Browser 对象实例">JS Browser</a></li>
+<li><a href="js_quiz.asp.htm" tppabs="https://www.w3school.com.cn/js/js_quiz.asp" title="JavaScript 测验">JS 测验</a></li>
+</ul>
+<h2>JS 参考手册</h2>
+<ul>
+<li><a href="../jsref/index.asp.htm" tppabs="https://www.w3school.com.cn/jsref/index.asp" title="JavaScript 和 HTML DOM 参考手册">JavaScript 对象</a></li>
+<li><a href="../jsref/index.asp.htm" tppabs="https://www.w3school.com.cn/jsref/index.asp" title="JavaScript 和 HTML DOM 参考手册">HTML DOM 对象</a></li>
+</ul>
+</div><div id="selected">
+<h2>课程推荐：</h2>
+<ul>
+<li><a href="../howto/index.asp.htm" tppabs="https://www.w3school.com.cn/howto/index.asp" title="W3School 百宝箱">W3School 百宝箱</a></li>
+<li><a href="../java/index.asp.htm" tppabs="https://www.w3school.com.cn/java/index.asp" title="Java 教程">Java 教程</a></li>
+</ul>
+
+</div>
+
+</div>
+
+<div id="maincontent">
+
+<h1>AJAX XML 实例</h1>
+
+<div class="prenextnav">
+<ul class="prenext">
+<li class="pre"><a href="js_ajax_http_response.asp.htm" tppabs="https://www.w3school.com.cn/js/js_ajax_http_response.asp" title="AJAX - 服务器响应">AJAX 响应</a></li>
+<li class="next"><a href="js_ajax_php.asp.htm" tppabs="https://www.w3school.com.cn/js/js_ajax_php.asp" title="AJAX PHP 实例">AJAX PHP</a></li>
+</ul>
+</div>
+
+
+
+<div id="intro">
+<p><strong>AJAX 可用于同 XML 文件进行交互式通信。</strong></p>
+</div>
+
+
+
+<div>
+<h2>AJAX XML 实例</h2>
+
+<p>下面的例子演示网页如何通过 AJAX 从 XML 文件读取信息：</p>
+
+<h3>实例</h3>
+
+<p><button type="button" onclick="loadDoc()" style="padding: 6px; border: 1px solid #555;">获取我的音乐列表</button></p>
+
+<table id="demo" class="dataintable" style="width: 75%;"></table>
+
+<script>
+function loadDoc() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      myFunction(this);
+    }
+  };
+  xhttp.open("GET", "https://www.w3school.com.cn/demo/js_examples_dom.asp", true);
+  xhttp.send();
+}
+function myFunction(xml) {
+  var i;
+  var xmlDoc = xml.responseXML;
+  var table="<tr><th>艺术家</th><th>曲目</th></tr>";
+  var x = xmlDoc.getElementsByTagName("TRACK");
+  for (i = 0; i <x.length; i++) { 
+    table += "<tr><td>" +
+    x[i].getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue +
+    "</td><td>" +
+    x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue +
+    "</td></tr>";
+  }
+  document.getElementById("demo").innerHTML = table;
+}
+</script>
+
+<p class="tiy"><a target="_blank" href="javascript:if(confirm('https://www.w3school.com.cn/tiy/java_reference.asp  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ������, �����������, ����Ŀ����ֹͣ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.w3school.com.cn/tiy/java_reference.asp'" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_ajax_xml">亲自试一试</a></p>
+</div>
+
+
+
+<div>
+<h2>例子解释</h2>
+
+<p>当用户点击“获取 CD 信息”按钮时，执行 loadDoc() 函数。</p>
+
+<p>loadDoc() 函数创建 XMLHttpRequest 对象，添加当服务器响应就绪时执行的函数，并向服务器发送请求。</p>
+
+<p>当服务器响应就绪后，构建 HTML 表格，从 XML 文件提取节点（因素），最后使用由 XML 数据填充的 HTML 表格对元素“demo”进行更新：</p>
+
+<h3>LoadXMLDoc()</h3>
+
+<pre class="language-js">
+function loadDoc() {
+  var xhttp = new XMLHttpRequest();
+   xhttp.onreadystatechange = function() {
+    if (this.readyState  == 4 && this.status == 200) {
+    myFunction(this);
+     }
+  };
+  xhttp.open(&quot;GET&quot;, &quot;music_list.xml&quot;, true);
+  xhttp.send();
+}
+function myFunction(xml) {
+  var i;
+  var xmlDoc = xml.responseXML;
+  var table=&quot;&lt;tr&gt;&lt;th&gt;艺术家&lt;/th&gt;&lt;th&gt;曲目&lt;/th&gt;&lt;/tr&gt;&quot;;
+  var x = xmlDoc.getElementsByTagName(&quot;TRACK&quot;);
+  for (i = 0; i &lt;x.length;  i++) { 
+    table += &quot;&lt;tr&gt;&lt;td&gt;&quot; +
+    x[i].getElementsByTagName(&quot;ARTIST&quot;)[0].childNodes[0].nodeValue  +
+    &quot;&lt;/td&gt;&lt;td&gt;&quot; +
+    x[i].getElementsByTagName(&quot;TITLE&quot;)[0].childNodes[0].nodeValue  +
+    &quot;&lt;/td&gt;&lt;/tr&gt;&quot;;
+  }
+   document.getElementById(&quot;demo&quot;).innerHTML = table;
+} 
+</pre>
+</div>
+
+
+
+<div>
+<h2>XML 文件</h2>
+
+<p>上例中使用的 XML 文件类似这样：&quot;<a href="javascript:if(confirm('https://www.w3school.com.cn/demo/js_examples_dom.asp  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ������, �����������, ����Ŀ����ֹͣ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.w3school.com.cn/demo/js_examples_dom.asp'" tppabs="https://www.w3school.com.cn/demo/music_list.xml">music_list.xml</a>&quot;。</p>
+</div>
+
+
+
+<div class="prenextnav">
+<ul class="prenext">
+<li class="pre"><a href="js_ajax_http_response.asp.htm" tppabs="https://www.w3school.com.cn/js/js_ajax_http_response.asp" title="AJAX - 服务器响应">AJAX 响应</a></li>
+<li class="next"><a href="js_ajax_php.asp.htm" tppabs="https://www.w3school.com.cn/js/js_ajax_php.asp" title="AJAX PHP 实例">AJAX PHP</a></li>
+</ul>
+</div><div style="background-color:#fcfdf8; padding:0;">
+<script async src="../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" tppabs="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- W3School ���Ĺ�� -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:800px;height:250px"
+     data-ad-client="ca-pub-3381531532877742"
+     data-ad-slot="2086924285"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+</div>
+<!-- maincontent end -->
+
+<div id="sidebar">
+
+<div id="tools">
+<h5 id="tools_reference"><a href="../jsref/index.asp.htm" tppabs="https://www.w3school.com.cn/jsref/index.asp">JavaScript 和 HTML DOM 参考手册</a></h5>
+<h5 id="tools_example"><a href="js_examples.asp.htm" tppabs="https://www.w3school.com.cn/js/js_examples.asp">JavaScript 实例</a></h5>
+<h5 id="tools_quiz"><a href="js_quiz.asp.htm" tppabs="https://www.w3school.com.cn/js/js_quiz.asp">JavaScript 测验</a></h5>
+<h5 id="tools_professional"><a href="index_pro.asp.htm" tppabs="https://www.w3school.com.cn/js/index_pro.asp">JavaScript 高级教程</a></h5>
+</div>
+
+<div id="sidebar_zzs">
+
+<div id="sbtg">
+<script async src="../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" tppabs="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- W3School 侧栏广告位 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-3381531532877742"
+     data-ad-slot="6744370501"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+</div>
+
+</div>
+
+<div id="footer">
+<p id="p1">
+W3School 简体中文版提供的内容仅用于培训和测试，不保证内容的正确性。通过使用本站内容随之而来的风险与本站无关。版权所有，保留一切权利。
+</p>
+
+<p id="p2">
+<a href="../about/index.asp.htm" tppabs="https://www.w3school.com.cn/about/index.asp" title="关于 W3School">关于 W3School</a>
+<a href="../about/about_helping.asp.htm" tppabs="https://www.w3school.com.cn/about/about_helping.asp" title="帮助 W3School">帮助 W3School</a>
+<a href="../about/about_use.asp.htm" tppabs="https://www.w3school.com.cn/about/about_use.asp" title="关于使用">使用条款</a>
+<a href="../about/about_privacy.asp.htm" tppabs="https://www.w3school.com.cn/about/about_privacy.asp" title="关于隐私">隐私条款</a>
+<a target="_blank" href="javascript:if(confirm('https://www.ykinvestment.com/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.ykinvestment.com/'" tppabs="https://www.ykinvestment.com/">技术支持：赢科</a>
+<a target="_blank" href="javascript:if(confirm('http://www.beian.miit.gov.cn/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://www.beian.miit.gov.cn/'" tppabs="http://www.beian.miit.gov.cn/">蒙ICP备06004630号</a>
+</p>
+</div>
+
+
+</div>
+<!-- wrapper end -->
+
+
+</body>
+
+</html>

@@ -1,0 +1,535 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="../../www.googletagmanager.com/gtag/js-id=UA-878633-1" tppabs="https://www.googletagmanager.com/gtag/js?id=UA-878633-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-878633-1');
+</script>
+
+<meta charset=utf-8"utf-8">
+<meta name="robots" content="all" />
+<meta name="author" content="w3school.com.cn" />
+
+<link rel="stylesheet" type="text/css" href="../c.css" tppabs="https://www.w3school.com.cn/c.css" />
+
+<script src="../lib/cc/prism2.js" tppabs="https://www.w3school.com.cn/lib/cc/prism2.js"></script>
+<link rel='stylesheet' href="../lib/cc/prism.css" tppabs="https://www.w3school.com.cn/lib/cc/prism.css">
+
+<link rel="icon" type="image/png" sizes="16x16" href="/ui2019/logo-16-red.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/ui2019/logo-32-red.png">
+<link rel="icon" type="image/png" sizes="48x48" href="/ui2019/logo-48-red.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/ui2019/logo-96-red.png">
+<link rel="apple-touch-icon-precomposed" sizes="180x180" href="/ui2019/logo-180.png">
+
+
+<title>CSS HSL 颜色</title>
+
+<script src="../lib/t.asp-f=css_mediaqueries_website" tppabs="https://www.w3school.com.cn/lib/w3color.js"></script>
+
+</head>
+
+<body class="html">
+
+<div id="wrapper">
+
+<div id="header">
+<a id="logo" href="../index.html" tppabs="https://www.w3school.com.cn/index.html" title="w3school 在线教程" style="float:left;">w3school 在线教程</a>
+<div id="header_gg">
+<script async src="../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" tppabs="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- W3 页眉 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-3381531532877742"
+     data-ad-slot="7423315034"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+
+<div id="navfirst">
+<ul id="menu">
+<li id="h"><a href="../h.asp.htm" tppabs="https://www.w3school.com.cn/h.asp" title="HTML 系列教程">HTML 系列教程</a></li>
+<li id="b"><a href="../b.asp.htm" tppabs="https://www.w3school.com.cn/b.asp" title="浏览器脚本教程">浏览器脚本</a></li>
+<li id="s"><a href="../s.asp.htm" tppabs="https://www.w3school.com.cn/s.asp" title="服务器脚本教程">服务器脚本</a></li>
+<li id="p"><a href="../p.asp.htm" tppabs="https://www.w3school.com.cn/p.asp" title="编程教程">编程教程</a></li>
+<li id="x"><a href="../x.asp.htm" tppabs="https://www.w3school.com.cn/x.asp" title="XML 系列教程">XML 系列教程</a></li>
+<li id="w"><a href="../w.asp.htm" tppabs="https://www.w3school.com.cn/w.asp" title="建站手册">建站手册</a></li>
+<li id="r"><a href="../r.asp.htm" tppabs="https://www.w3school.com.cn/r.asp" title="参考手册">参考手册</a></li>
+</ul>
+</div>
+
+<div id="navsecond">
+
+<div id="course"><h2>CSS 基础教程</h2>
+<ul>
+<li><a href="index.asp.htm" tppabs="https://www.w3school.com.cn/css/index.asp" title="CSS 教程">CSS 教程</a></li>
+<li><a href="css_jianjie.asp.htm" tppabs="https://www.w3school.com.cn/css/css_jianjie.asp" title="CSS 简介">CSS 简介</a></li>
+<li><a href="css_syntax.asp.htm" tppabs="https://www.w3school.com.cn/css/css_syntax.asp" title="CSS 语法">CSS 语法</a></li>
+<li><a href="css_selectors.asp.htm" tppabs="https://www.w3school.com.cn/css/css_selectors.asp" title="CSS 选择器">CSS 选择器</a></li>
+<li><a href="css_shiyong.asp.htm" tppabs="https://www.w3school.com.cn/css/css_shiyong.asp" title="CSS 使用">CSS 使用</a></li>
+<li><a href="css_comments.asp.htm" tppabs="https://www.w3school.com.cn/css/css_comments.asp" title="CSS 注释">CSS 注释</a></li>
+<li><a href="css_colors.asp.htm" tppabs="https://www.w3school.com.cn/css/css_colors.asp" title="CSS 颜色">CSS 颜色</a></li>
+<li><a href="css_colors_rgb.asp.htm" tppabs="https://www.w3school.com.cn/css/css_colors_rgb.asp" title="CSS RGB 颜色">CSS RGB 颜色</a></li>
+<li><a href="css_colors_hex.asp.htm" tppabs="https://www.w3school.com.cn/css/css_colors_hex.asp" title="CSS HEX 颜色">CSS HEX 颜色</a></li>
+<li class="currentLink"><a href="css_colors_hsl.asp.htm" tppabs="https://www.w3school.com.cn/css/css_colors_hsl.asp" title="CSS HSL 颜色">CSS HSL 颜色</a></li>
+<li><a href="css_background.asp.htm" tppabs="https://www.w3school.com.cn/css/css_background.asp" title="CSS 背景">CSS 背景</a></li>
+<li><a href="css_background_image.asp.htm" tppabs="https://www.w3school.com.cn/css/css_background_image.asp" title="CSS 背景图像">CSS 背景图像</a></li>
+<li><a href="css_background_repeat.asp.htm" tppabs="https://www.w3school.com.cn/css/css_background_repeat.asp" title="CSS 背景重复">CSS 背景重复</a></li>
+<li><a href="css_background_attachment.asp.htm" tppabs="https://www.w3school.com.cn/css/css_background_attachment.asp" title="CSS 背景附着">CSS 背景附着</a></li>
+<li><a href="css_background_shorthand.asp.htm" tppabs="https://www.w3school.com.cn/css/css_background_shorthand.asp" title="CSS 简写背景属性">CSS 简写背景属性</a></li>
+<li><a href="css_border.asp.htm" tppabs="https://www.w3school.com.cn/css/css_border.asp" title="CSS 边框">CSS 边框</a></li>
+<li><a href="css_border_width.asp.htm" tppabs="https://www.w3school.com.cn/css/css_border_width.asp" title="CSS 边框宽度">CSS 边框宽度</a></li>
+<li><a href="css_border_color.asp.htm" tppabs="https://www.w3school.com.cn/css/css_border_color.asp" title="CSS 边框颜色">CSS 边框颜色</a></li>
+<li><a href="css_border_sides.asp.htm" tppabs="https://www.w3school.com.cn/css/css_border_sides.asp" title="CSS 边框各边">CSS 边框各边</a></li>
+<li><a href="css_border_shorthand.asp.htm" tppabs="https://www.w3school.com.cn/css/css_border_shorthand.asp" title="CSS 简写边框属性">CSS 简写边框属性</a></li>
+<li><a href="css_border_rounded.asp.htm" tppabs="https://www.w3school.com.cn/css/css_border_rounded.asp" title="CSS 圆角边框">CSS 圆角边框</a></li>
+<li><a href="css_margin.asp.htm" tppabs="https://www.w3school.com.cn/css/css_margin.asp" title="CSS 外边距">CSS 外边距</a></li>
+<li><a href="css_margin_collapse.asp.htm" tppabs="https://www.w3school.com.cn/css/css_margin_collapse.asp" title="CSS 外边距合并">CSS 外边距合并</a></li>
+<li><a href="css_padding.asp.htm" tppabs="https://www.w3school.com.cn/css/css_padding.asp" title="CSS 内边距">CSS 内边距</a></li>
+<li><a href="css_dimension.asp.htm" tppabs="https://www.w3school.com.cn/css/css_dimension.asp" title="CSS 高度和宽度">CSS 高度/宽度</a></li>
+<li><a href="css_boxmodel.asp.htm" tppabs="https://www.w3school.com.cn/css/css_boxmodel.asp" title="CSS 框模型">CSS 框模型</a></li>
+<li><a href="css_outline.asp.htm" tppabs="https://www.w3school.com.cn/css/css_outline.asp" title="CSS 轮廓">CSS 轮廓</a></li>
+<li><a href="css_outline_width.asp.htm" tppabs="https://www.w3school.com.cn/css/css_outline_width.asp" title="CSS 轮廓宽度">CSS 轮廓宽度</a></li>
+<li><a href="css_outline_color.asp.htm" tppabs="https://www.w3school.com.cn/css/css_outline_color.asp" title="CSS 轮廓颜色">CSS 轮廓颜色</a></li>
+<li><a href="css_outline_shorthand.asp.htm" tppabs="https://www.w3school.com.cn/css/css_outline_shorthand.asp" title="CSS 简写轮廓属性">CSS 简写轮廓属性</a></li>
+<li><a href="css_outline_offset.asp.htm" tppabs="https://www.w3school.com.cn/css/css_outline_offset.asp" title="CSS 轮廓偏移">CSS 轮廓偏移</a></li>
+<li><a href="css_text.asp.htm" tppabs="https://www.w3school.com.cn/css/css_text.asp" title="CSS 文本">CSS 文本</a></li>
+<li><a href="css_text_align.asp.htm" tppabs="https://www.w3school.com.cn/css/css_text_align.asp" title="CSS 文本对齐">CSS 文本对齐</a></li>
+<li><a href="css_text_decoration.asp.htm" tppabs="https://www.w3school.com.cn/css/css_text_decoration.asp" title="CSS 文本装饰">CSS 文本装饰</a></li>
+<li><a href="css_text_transformation.asp.htm" tppabs="https://www.w3school.com.cn/css/css_text_transformation.asp" title="CSS 文本转换">CSS 文本转换</a></li>
+<li><a href="css_text_spacing.asp.htm" tppabs="https://www.w3school.com.cn/css/css_text_spacing.asp" title="CSS 文字间距">CSS 文字间距</a></li>
+<li><a href="css_text_shadow.asp.htm" tppabs="https://www.w3school.com.cn/css/css_text_shadow.asp" title="CSS 文本阴影">CSS 文本阴影</a></li>
+<li><a href="css_font.asp.htm" tppabs="https://www.w3school.com.cn/css/css_font.asp" title="CSS 字体">CSS 字体</a></li>
+<li><a href="css_font_style.asp.htm" tppabs="https://www.w3school.com.cn/css/css_font_style.asp" title="CSS 字体样式">CSS 字体样式</a></li>
+<li><a href="css_font_size.asp.htm" tppabs="https://www.w3school.com.cn/css/css_font_size.asp" title="CSS 字体大小">CSS 字体大小</a></li>
+<li><a href="css_font_google.asp.htm" tppabs="https://www.w3school.com.cn/css/css_font_google.asp" title="CSS 谷歌字体">CSS 谷歌字体</a></li>
+<li><a href="css_font_shorthand.asp.htm" tppabs="https://www.w3school.com.cn/css/css_font_shorthand.asp" title="CSS 简写字体属性">CSS 简写字体属性</a></li>
+<li><a href="css_icons.asp.htm" tppabs="https://www.w3school.com.cn/css/css_icons.asp" title="CSS 图标">CSS 图标</a></li>
+<li><a href="css_link.asp.htm" tppabs="https://www.w3school.com.cn/css/css_link.asp" title="CSS 链接">CSS 链接</a></li>
+<li><a href="css_list.asp.htm" tppabs="https://www.w3school.com.cn/css/css_list.asp" title="CSS 列表">CSS 列表</a></li>
+<li><a href="css_table.asp.htm" tppabs="https://www.w3school.com.cn/css/css_table.asp" title="CSS 表格">CSS 表格</a></li>
+</ul>
+<h2>CSS 中级教程</h2>
+<ul>
+<li><a href="css_display_visibility.asp.htm" tppabs="https://www.w3school.com.cn/css/css_display_visibility.asp" title="CSS 布局 - display 属性">CSS Display</a></li>
+<li><a href="css_max-width.asp.htm" tppabs="https://www.w3school.com.cn/css/css_max-width.asp" title="CSS 布局 - width 和 max-width">CSS max-width</a></li>
+<li><a href="css_positioning.asp.htm" tppabs="https://www.w3school.com.cn/css/css_positioning.asp" title="CSS 布局 - position 属性">CSS 定位</a></li>
+<li><a href="css_z-index.asp.htm" tppabs="https://www.w3school.com.cn/css/css_z-index.asp" title="CSS 布局 - z-index 属性">CSS z-index</a></li>
+<li><a href="css_overflow.asp.htm" tppabs="https://www.w3school.com.cn/css/css_overflow.asp" title="CSS 布局 - 溢出">CSS 溢出</a></li>
+<li><a href="css_float.asp.htm" tppabs="https://www.w3school.com.cn/css/css_float.asp" title="CSS 布局 - 浮动和清除">CSS 浮动</a></li>
+<li><a href="css_float_clear.asp.htm" tppabs="https://www.w3school.com.cn/css/css_float_clear.asp" title="CSS 布局 - clear 和 clearfix">CSS 清除浮动</a></li>
+<li><a href="css_float_examples.asp.htm" tppabs="https://www.w3school.com.cn/css/css_float_examples.asp" title="CSS 布局 - 浮动实例">CSS 布局 - 浮动实例</a></li>
+<li><a href="css_inline-block.asp.htm" tppabs="https://www.w3school.com.cn/css/css_inline-block.asp" title="CSS 布局 - display: inline-block">CSS inline-block</a></li>
+<li><a href="css_align.asp.htm" tppabs="https://www.w3school.com.cn/css/css_align.asp" title="CSS 布局 - 水平和垂直对齐">CSS 对齐</a></li>
+<li><a href="css_combinators.asp.htm" tppabs="https://www.w3school.com.cn/css/css_combinators.asp" title="CSS 选择器">CSS 组合器</a></li>
+<li><a href="css_pseudo_classes.asp.htm" tppabs="https://www.w3school.com.cn/css/css_pseudo_classes.asp" title="CSS 伪类">CSS 伪类</a></li>
+<li><a href="css_pseudo_elements.asp.htm" tppabs="https://www.w3school.com.cn/css/css_pseudo_elements.asp" title="CSS 伪元素">CSS 伪元素</a></li>
+<li><a href="css_image_transparency.asp.htm" tppabs="https://www.w3school.com.cn/css/css_image_transparency.asp" title="CSS 不透明度">CSS 不透明度</a></li>
+<li><a href="css_navbar.asp.htm" tppabs="https://www.w3school.com.cn/css/css_navbar.asp" title="CSS 导航栏">CSS 导航栏</a></li>
+<li><a href="css_navbar_vertical.asp.htm" tppabs="https://www.w3school.com.cn/css/css_navbar_vertical.asp" title="CSS 垂直导航栏">CSS 垂直导航栏</a></li>
+<li><a href="css_navbar_horizontal.asp.htm" tppabs="https://www.w3school.com.cn/css/css_navbar_horizontal.asp" title="CSS 水平导航栏">CSS 水平导航栏</a></li>
+<li><a href="css_dropdowns.asp.htm" tppabs="https://www.w3school.com.cn/css/css_dropdowns.asp" title="CSS 下拉菜单">CSS 下拉菜单</a></li>
+<li><a href="css_image_gallery.asp.htm" tppabs="https://www.w3school.com.cn/css/css_image_gallery.asp" title="CSS 图片库">CSS 图片库</a></li>
+<li><a href="css_image_sprites.asp.htm" tppabs="https://www.w3school.com.cn/css/css_image_sprites.asp" title="CSS 图像精灵">CSS 图像精灵</a></li>
+<li><a href="css_attribute_selectors.asp.htm" tppabs="https://www.w3school.com.cn/css/css_attribute_selectors.asp" title="CSS 属性选择器">CSS 属性选择器</a></li>
+<li><a href="css_form.asp.htm" tppabs="https://www.w3school.com.cn/css/css_form.asp" title="CSS 表单">CSS 表单</a></li>
+<li><a href="css_counters.asp.htm" tppabs="https://www.w3school.com.cn/css/css_counters.asp" title="CSS 计数器">CSS 计数器</a></li>
+<li><a href="css_website_layout.asp.htm" tppabs="https://www.w3school.com.cn/css/css_website_layout.asp" title="CSS 网站布局">CSS 网站布局</a></li>
+<li><a href="css_units.asp.htm" tppabs="https://www.w3school.com.cn/css/css_units.asp" title="CSS 单位">CSS 单位</a></li>
+<li><a href="css_specificity.asp.htm" tppabs="https://www.w3school.com.cn/css/css_specificity.asp" title="CSS 特异性">CSS 特异性</a></li>
+<li><a href="css_important.asp.htm" tppabs="https://www.w3school.com.cn/css/css_important.asp" title="CSS !important 规则">CSS !important</a></li>
+<li><a href="css_math_functions.asp.htm" tppabs="https://www.w3school.com.cn/css/css_math_functions.asp" title="CSS 数学函数">CSS 数学函数</a></li>
+</ul>
+<h2>CSS3 高级教程</h2>
+<ul>
+<li><a href="css3_borders.asp.htm" tppabs="https://www.w3school.com.cn/css/css3_borders.asp" title="CSS 圆角">CSS 圆角</a></li>
+<li><a href="css3_border_images.asp.htm" tppabs="https://www.w3school.com.cn/css/css3_border_images.asp" title="CSS 边框图像">CSS 边框图像</a></li>
+<li><a href="css3_backgrounds.asp.htm" tppabs="https://www.w3school.com.cn/css/css3_backgrounds.asp" title="CSS 背景">CSS 背景</a></li>
+<li><a href="css3_colors.asp.htm" tppabs="https://www.w3school.com.cn/css/css3_colors.asp" title="CSS 颜色">CSS 颜色</a></li>
+<li><a href="css_colors_keywords.asp.htm" tppabs="https://www.w3school.com.cn/css/css_colors_keywords.asp" title="CSS 颜色关键字">CSS 颜色关键字</a></li>
+<li><a href="css3_gradients.asp.htm" tppabs="https://www.w3school.com.cn/css/css3_gradients.asp" title="CSS 渐变">CSS 渐变</a></li>
+<li><a href="css3_gradients_radial.asp.htm" tppabs="https://www.w3school.com.cn/css/css3_gradients_radial.asp" title="CSS 径向渐变">CSS 径向渐变</a></li>
+<li><a href="css3_shadows.asp.htm" tppabs="https://www.w3school.com.cn/css/css3_shadows.asp" title="CSS 阴影">CSS 阴影</a></li>
+<li><a href="css3_shadows_box.asp.htm" tppabs="https://www.w3school.com.cn/css/css3_shadows_box.asp" title="CSS box-shadow">CSS box-shadow</a></li>
+<li><a href="css3_text_effects.asp.htm" tppabs="https://www.w3school.com.cn/css/css3_text_effects.asp" title="CSS 文本效果">CSS 文本效果</a></li>
+<li><a href="css3_fonts.asp.htm" tppabs="https://www.w3school.com.cn/css/css3_fonts.asp" title="CSS 网络字体">CSS 网络字体</a></li>
+<li><a href="css3_2dtransforms.asp.htm" tppabs="https://www.w3school.com.cn/css/css3_2dtransforms.asp" title="CSS 2D 转换">CSS 2D 转换</a></li>
+<li><a href="css3_3dtransforms.asp.htm" tppabs="https://www.w3school.com.cn/css/css3_3dtransforms.asp" title="CSS 3D 转换">CSS 3D 转换</a></li>
+<li><a href="css3_transitions.asp.htm" tppabs="https://www.w3school.com.cn/css/css3_transitions.asp" title="CSS 过渡">CSS 过渡</a></li>
+<li><a href="css3_animations.asp.htm" tppabs="https://www.w3school.com.cn/css/css3_animations.asp" title="CSS 动画">CSS 动画</a></li>
+<li><a href="css_tooltip.asp.htm" tppabs="https://www.w3school.com.cn/css/css_tooltip.asp" title="CSS 工具提示">CSS 工具提示</a></li>
+<li><a href="css3_images.asp.htm" tppabs="https://www.w3school.com.cn/css/css3_images.asp" title="CSS 图像样式">CSS 图像样式</a></li>
+<li><a href="css3_object-fit.asp.htm" tppabs="https://www.w3school.com.cn/css/css3_object-fit.asp" title="CSS object-fit">CSS object-fit</a></li>
+<li><a href="css3_object-position.asp.htm" tppabs="https://www.w3school.com.cn/css/css3_object-position.asp" title="CSS object-position 属性">CSS object-position</a></li>
+<li><a href="css3_masking.asp.htm" tppabs="https://www.w3school.com.cn/css/css3_masking.asp" title="CSS 遮罩">CSS 遮罩</a></li>
+<li><a href="css3_buttons.asp.htm" tppabs="https://www.w3school.com.cn/css/css3_buttons.asp" title="CSS 按钮">CSS 按钮</a></li>
+<li><a href="css3_pagination.asp.htm" tppabs="https://www.w3school.com.cn/css/css3_pagination.asp" title="CSS 分页">CSS 分页</a></li>
+<li><a href="css3_multiple_columns.asp.htm" tppabs="https://www.w3school.com.cn/css/css3_multiple_columns.asp" title="CSS 多列">CSS 多列</a></li>
+<li><a href="css3_user_interface.asp.htm" tppabs="https://www.w3school.com.cn/css/css3_user_interface.asp" title="CSS 用户界面">CSS 用户界面</a></li>
+<li><a href="css3_variables.asp.htm" tppabs="https://www.w3school.com.cn/css/css3_variables.asp" title="CSS 变量">CSS 变量</a></li>
+<li><a href="css3_variables_overriding.asp.htm" tppabs="https://www.w3school.com.cn/css/css3_variables_overriding.asp" title="CSS 覆盖变量">CSS 覆盖变量</a></li>
+<li><a href="css3_variables_javascript.asp.htm" tppabs="https://www.w3school.com.cn/css/css3_variables_javascript.asp" title="CSS 使用 JavaScript 更改变量">CSS 变量 - JavaScript</a></li>
+<li><a href="css3_variables_mediaqueries.asp.htm" tppabs="https://www.w3school.com.cn/css/css3_variables_mediaqueries.asp" title="CSS 在媒体查询中使用变量">CSS 变量 - 媒体查询</a></li>
+<li><a href="css3_property.asp.htm" tppabs="https://www.w3school.com.cn/css/css3_property.asp" title="CSS @property 规则">CSS @property</a></li>
+<li><a href="css3_box-sizing.asp.htm" tppabs="https://www.w3school.com.cn/css/css3_box-sizing.asp" title="CSS Box Sizing">CSS Box Sizing</a></li>
+<li><a href="css3_flexbox.asp.htm" tppabs="https://www.w3school.com.cn/css/css3_flexbox.asp" title="CSS Flexbox">CSS Flexbox</a></li>
+<li><a href="css3_mediaqueries.asp.htm" tppabs="https://www.w3school.com.cn/css/css3_mediaqueries.asp" title="CSS 媒体查询">CSS 媒体查询</a></li>
+<li><a href="css3_mediaqueries_ex.asp.htm" tppabs="https://www.w3school.com.cn/css/css3_mediaqueries_ex.asp" title="CSS 媒体查询实例">CSS 媒体查询实例</a></li>
+</ul>
+<h2>CSS 响应式设计</h2>
+<ul>
+<li><a href="css_rwd_intro.asp.htm" tppabs="https://www.w3school.com.cn/css/css_rwd_intro.asp" title="响应式网站设计 - 简介">RWD 简介</a></li>
+<li><a href="css_rwd_viewport.asp.htm" tppabs="https://www.w3school.com.cn/css/css_rwd_viewport.asp" title="响应式网页设计 - 视口">RWD 视口</a></li>
+<li><a href="css_rwd_grid.asp.htm" tppabs="https://www.w3school.com.cn/css/css_rwd_grid.asp" title="响应式网页设计 - Grid-View">RWD 网格视图</a></li>
+<li><a href="css_rwd_mediaqueries.asp.htm" tppabs="https://www.w3school.com.cn/css/css_rwd_mediaqueries.asp" title="响应式网页设计 - 媒体查询">RWD 媒体查询</a></li>
+<li><a href="css_rwd_images.asp.htm" tppabs="https://www.w3school.com.cn/css/css_rwd_images.asp" title="响应式网页设计 - 图像">RWD 图像</a></li>
+<li><a href="css_rwd_videos.asp.htm" tppabs="https://www.w3school.com.cn/css/css_rwd_videos.asp" title="响应式网页设计 - 视频">RWD 视频</a></li>
+</ul>
+<h2>CSS 网格教程</h2>
+<ul>
+<li><a href="css_grid.asp.htm" tppabs="https://www.w3school.com.cn/css/css_grid.asp" title="CSS 网格布局模块">CSS 网格布局模块</a></li>
+<li><a href="css_grid_container.asp.htm" tppabs="https://www.w3school.com.cn/css/css_grid_container.asp" title="CSS 网格容器">CSS 网格容器</a></li>
+<li><a href="css_grid_item.asp.htm" tppabs="https://www.w3school.com.cn/css/css_grid_item.asp" title="CSS 网格项目">CSS 网格项目</a></li>
+</ul>
+<h2>CSS 实例</h2>
+<ul>
+<li><a href="css_examples.asp.htm" tppabs="https://www.w3school.com.cn/css/css_examples.asp" title="CSS 实例">CSS 实例</a></li>
+</ul>
+<h2>CSS 测验</h2>
+<ul>
+<li><a href="css_quiz.asp.htm" tppabs="https://www.w3school.com.cn/css/css_quiz.asp" title="CSS 测验">CSS 测验</a></li>
+</ul>
+<h2>CSS 参考手册</h2>
+<ul>
+<li><a href="../cssref/index.asp.htm" tppabs="https://www.w3school.com.cn/cssref/index.asp" title="CSS 参考手册">CSS 参考手册</a></li>
+<li><a href="../cssref/css_browsersupport.asp.htm" tppabs="https://www.w3school.com.cn/cssref/css3_browsersupport.asp" title="CSS 浏览器支持">CSS 浏览器支持</a></li>
+<li><a href="../cssref/css_selectors.asp.htm" tppabs="https://www.w3school.com.cn/cssref/css_selectors.asp" title="CSS 选择器">CSS 选择器</a></li>
+<li><a href="../cssref/css_functions.asp.htm" tppabs="https://www.w3school.com.cn/cssref/css_functions.asp" title="CSS 函数">CSS 函数</a></li>
+<li><a href="../cssref/css_units.asp.htm" tppabs="https://www.w3school.com.cn/cssref/css_units.asp" title="CSS 单位">CSS 单位</a></li>
+<li><a href="../cssref/css_ref_aural.asp.htm" tppabs="https://www.w3school.com.cn/cssref/css_ref_aural.asp" title="CSS 听觉">CSS 听觉</a></li>
+<li><a href="../cssref/css_websafe_fonts.asp.htm" tppabs="https://www.w3school.com.cn/cssref/css_websafe_fonts.asp" title="CSS 网络安全字体">CSS 网络安全字体</a></li>
+<li><a href="../cssref/css_animatable.asp.htm" tppabs="https://www.w3school.com.cn/cssref/css_animatable.asp" title="CSS 可动画制作">CSS 可动画制作</a></li>
+<li><a href="../cssref/css_units.asp.htm" tppabs="https://www.w3school.com.cn/cssref/css_units.asp" title="CSS 单位">CSS 单位</a></li>
+<li><a href="../cssref/css_colors.asp.htm" tppabs="https://www.w3school.com.cn/cssref/css_colors.asp" title="CSS 颜色">CSS 颜色</a></li>
+<li><a href="../cssref/css_colors_legal.asp.htm" tppabs="https://www.w3school.com.cn/cssref/css_colors_legal.asp" title="CSS 颜色值">CSS 颜色值</a></li>
+<li><a href="../cssref/css_default_values.asp.htm" tppabs="https://www.w3school.com.cn/cssref/css_default_values.asp" title="CSS 默认值">CSS 默认值</a></li>
+<li><a href="../cssref/css_entities.asp.htm" tppabs="https://www.w3school.com.cn/cssref/css_entities.asp" title="CSS 实体">CSS 实体</a></li>
+</ul>
+</div><div id="selected">
+<h2>课程推荐：</h2>
+<ul>
+<li><a href="../howto/index.asp.htm" tppabs="https://www.w3school.com.cn/howto/index.asp" title="W3School 百宝箱">W3School 百宝箱</a></li>
+<li><a href="../java/index.asp.htm" tppabs="https://www.w3school.com.cn/java/index.asp" title="Java 教程">Java 教程</a></li>
+</ul>
+
+</div>
+
+</div>
+
+<div id="maincontent">
+
+<h1>CSS HSL 颜色</h1>
+
+<div class="prenextnav">
+<ul class="prenext">
+<li class="pre"><a href="css_colors_hex.asp.htm" tppabs="https://www.w3school.com.cn/css/css_colors_hex.asp" title="CSS HEX 颜色">CSS HEX 颜色</a></li>
+<li class="next"><a href="css_background.asp.htm" tppabs="https://www.w3school.com.cn/css/css_background.asp" title="CSS 背景">CSS 背景</a></li>
+</ul>
+</div>
+
+
+
+<div>
+<h2>HSL 值</h2>
+
+<p>在 CSS 中，可以使用色相、饱和度和明度（HSL）来指定颜色，格式如下：</p>
+
+<h3 style="margin: 20px 0;">hsla(<i>hue</i>, <i>saturation</i>, <i>lightness</i>)</h3>
+
+<p>色相（<i>hue</i>）是色轮上从 0 到 360 的度数。0 是红色，120 是绿色，240 是蓝色。</p>
+
+<p>饱和度（<i>saturation</i>）是一个百分比值，0％ 表示灰色阴影，而 100％ 是全色。</p>
+
+<p>亮度（<i>lightness</i>）也是百分比，0％ 是黑色，50％ 是既不明也不暗，100％是白色。</p>
+
+<p>请通过混合以下 HSL 值来进行实验：</p>
+
+<div id="hslresult" class="css-100" style="margin-top: 15px;">
+<p id="hslresulttext" style="line-height: 80px;">&nbsp;</p>
+</div>
+
+    <div style="float: left; margin-left: 100px; margin-bottom: 50px;">
+      <h3 style="margin-bottom: 20px;">HUE</h3>
+      <input onchange="changeHsl()" oninput="changeHsl()" type="range" id="slideHue" name="slideHue" value="0" min="0" max="360">
+      <div id="valHue" style="font-size:120%;font-family:Consolas, 'Courier New', Courier, monospace;">0</div>
+    </div>
+	
+    <div style="float: left; margin-left: 100px;">
+      <h3 style="margin-bottom: 20px;">SATURATION</h3>
+      <input onchange="changeHsl()" oninput="changeHsl()" type="range" id="slideSat" name="slideSat" value="100" min="0" max="100">
+      <div id="valSat" style="font-size:120%;font-family:Consolas, 'Courier New', Courier, monospace;">100%</div>
+    </div>
+	
+    <div style="float: left; margin-left: 100px;">
+      <h3 style="margin-bottom: 20px;">LIGHTNESS</h3>
+      <input onchange="changeHsl()" oninput="changeHsl()" type="range" id="slideLight" name="slideLight" value="50" min="0" max="100">
+      <div id="valLight" style="font-size:120%;font-family:Consolas, 'Courier New', Courier, monospace;">50%</div>
+    </div>
+
+<h3 style="clear: left;">实例</h3>
+
+<div class="css-50" style="background-color:hsl(0, 100%, 50%);">hsl(0, 100%, 50%)</div>
+<div class="css-50" style="background-color:hsl(240, 100%, 50%);">hsl(240, 100%, 50%)</div>
+<div class="css-50" style="background-color:hsl(147, 50%, 47%);">hsl(147, 50%, 47%)</div>
+<div class="css-50" style="background-color:hsl(300, 76%, 72%);">hsl(300, 76%, 72%)</div>
+<div class="css-50" style="background-color:hsl(39, 100%, 50%);">hsl(39, 100%, 50%)</div>
+<div class="css-50" style="background-color:hsl(248, 53%, 58%);">hsl(248, 53%, 58%)</div>
+
+<p class="tiy"><a target="_blank" href="../tiy/t.asp-f=css_color_hsl.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_color_hsl">亲自试一试</a></p>
+</div>
+
+
+
+<div>
+<h2>饱和度</h2>
+
+<p>饱和度可以描述为颜色的强度。</p>
+
+<p>100％ 是纯色，没有灰色阴影</p>
+
+<p>50％ 是 50％ 灰色，但是您仍然可以看到颜色。</p>
+
+<p>0％ 是完全灰色，您无法再看到颜色。</p>
+
+<h3>实例</h3>
+
+<div class="css-50" style="background-color:hsl(0, 100%, 50%);">hsl(0, 100%, 50%)</div>
+<div class="css-50" style="background-color:hsl(0, 80%, 50%);">hsl(0, 80%, 50%)</div>
+<div class="css-50" style="background-color:hsl(0, 60%, 50%);">hsl(0, 60%, 50%)</div>
+<div class="css-50" style="background-color:hsl(0, 40%, 50%);">hsl(0, 40%, 50%)</div>
+<div class="css-50" style="background-color:hsl(0, 20%, 50%);">hsl(0, 20%, 50%)</div>
+<div class="css-50" style="background-color:hsl(0, 0%, 50%);">hsl(0, 0%, 50%)</div>
+
+<p class="tiy"><a target="_blank" href="javascript:if(confirm('https://www.w3school.com.cn/tiy/t.asp?f=responsive_mediaquery_breakpoints  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ������, �����������, ����Ŀ����ֹͣ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.w3school.com.cn/tiy/t.asp?f=responsive_mediaquery_breakpoints'" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_color_hsl_saturation">亲自试一试</a></p>
+</div>
+
+
+
+<div>
+<h2>亮度</h2>
+
+<p>颜色的明暗度可以描述为要赋予颜色多少光，其中 0％ 表示不亮（黑色），50％ 表示 50％ 亮（既不暗也不亮），100％ 表示全明（白）。</p>
+
+<h3>实例</h3>
+
+<div class="css-50" style="background-color:hsl(0, 100%, 0%);">hsl(0, 100%, 0%)</div>
+<div class="css-50" style="background-color:hsl(0, 100%, 25%);">hsl(0, 100%, 25%)</div>
+<div class="css-50" style="background-color:hsl(0, 100%, 50%);">hsl(0, 100%, 50%)</div>
+<div class="css-50" style="background-color:hsl(0, 100%, 75%);">hsl(0, 100%, 75%)</div>
+<div class="css-50" style="background-color:hsl(0, 100%, 90%); color: black;">hsl(0, 100%, 90%)</div>
+<div class="css-50" style="background-color:hsl(0, 100%, 100%); color: black;">hsl(0, 100%, 100%)</div>
+
+<p class="tiy"><a target="_blank" href="javascript:if(confirm('https://www.w3school.com.cn/tiy/t.asp?f=responsive_image_1  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ������, �����������, ����Ŀ����ֹͣ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.w3school.com.cn/tiy/t.asp?f=responsive_image_1'" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_color_hsl_lightness">亲自试一试</a></p>
+
+<p>通常通过将色调和饱和度设置为 0 来定义灰色阴影，并将亮度从 0％ 到 100％ 进行调整可以得到更深/更浅的阴影：</p>
+
+<h3>实例</h3>
+
+<div class="css-50" style="background-color:hsl(0, 0%, 0%);">hsl(0, 0%, 0%)</div>
+<div class="css-50" style="background-color:hsl(0, 0%, 24%);">hsl(0, 0%, 24%)</div>
+<div class="css-50" style="background-color:hsl(0, 0%, 47%);">hsl(0, 0%, 47%)</div>
+<div class="css-50" style="background-color:hsl(0, 0%, 71%);">hsl(0, 0%, 71%)</div>
+<div class="css-50" style="background-color:hsl(0, 0%, 94%); color: #000;">hsl(0, 0%, 94%)</div>
+<div class="css-50" style="background-color:hsl(0, 0%, 100%); color: #000;">hsl(0, 0%, 100%)</div>
+
+<p class="tiy"><a target="_blank" href="javascript:if(confirm('https://www.w3school.com.cn/tiy/t.asp?f=responsive_video_1  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ������, �����������, ����Ŀ����ֹͣ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.w3school.com.cn/tiy/t.asp?f=responsive_video_1'" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_color_hsl_gray">亲自试一试</a></p>
+</div>
+
+
+
+<div>
+<h2>HSLA 值</h2>
+
+<p>HSLA 颜色值是带有 Alpha 通道的 HSL 颜色值的扩展 - 它指定了颜色的不透明度。</p>
+
+<p>HSLA 颜色值指定为：</p>
+
+<h3 style="margin: 20px 0;">hsla(<i>hue</i>, <i>saturation</i>, <i>lightness</i>, <i>alpha</i>)</h3>
+
+<p><i>alpha</i> 参数是介于 0.0（完全透明）和 1.0（完全不透明）之间的数字：</p>
+
+<p>请通过混合以下 HSLA 值进行实验：</p>
+
+
+<div id="hslaresult" class="css-100" style="margin-top: 15px;">
+<p id="hslaresulttext" style="line-height: 80px;">&nbsp;</p>
+</div>
+
+    <div style="float: left; margin-left: 60px; margin-bottom: 50px;">
+      <h3 style="margin-bottom: 20px;">HUE</h3>
+      <input onchange="changeHsla()" oninput="changeHsla()" type="range" id="slideHueA" name="slideHueA" value="0" min="0" max="360">
+      <div id="valHueA" style="font-size:120%;font-family:Consolas, 'Courier New', Courier, monospace;">0</div>
+    </div>
+	
+    <div style="float: left; margin-left: 60px; margin-bottom: 50px;">
+      <h3 style="margin-bottom: 20px;">SATURATION</h3>
+      <input onchange="changeHsla()" oninput="changeHsla()" type="range" id="slideSatA" name="slideSatA" value="100" min="0" max="100">
+      <div id="valSatA" style="font-size:120%;font-family:Consolas, 'Courier New', Courier, monospace;">100%</div>
+    </div>
+	
+    <div style="float: left; margin-left: 60px; margin-bottom: 50px;">
+      <h3 style="margin-bottom: 20px;">LIGHTNESS</h3>
+      <input onchange="changeHsla()" oninput="changeHsla()" type="range" id="slideLightA" name="slideLightA" value="50" min="0" max="100">
+      <div id="valLightA" style="font-size:120%;font-family:Consolas, 'Courier New', Courier, monospace;">50%</div>
+    </div>
+	
+    <div style="float: left; margin-left: 60px; margin-bottom: 50px;">
+      <h3 style="margin-bottom: 20px;">ALPHA</h3>
+      <input onchange="changeHsla()" oninput="changeHsla()" type="range" id="slideHslAlpha" name="slideHslAlpha" value="5" min="0" max="10">
+      <div id="valHslAlpha" style="font-size:120%;font-family:Consolas, 'Courier New', Courier, monospace;">0.5</div>
+    </div>
+
+<h3 style="clear: left;">实例</h3>
+
+<div class="css-bg" style="float: left; margin-top: 20px;">
+<div class="css-50" style="background-color:hsl(9, 100%, 64%, 0); color: black;">hsla(9, 100%, 64%, 0)</div>
+<div class="css-50" style="background-color:hsl(9, 100%, 64%, 0.2); color: black;">hsla(9, 100%, 64%, 0.2)</div>
+<div class="css-50" style="background-color:hsl(9, 100%, 64%, 0.4);">hsla(9, 100%, 64%, 0.4)</div>
+<div class="css-50" style="background-color:hsl(9, 100%, 64%, 0.6);">hsla(9, 100%, 64%, 0.6)</div>
+<div class="css-50" style="background-color:hsl(9, 100%, 64%, 0.8);">hsla(9, 100%, 64%, 0.8)</div>
+<div class="css-50" style="background-color:hsl(9, 100%, 64%, 1);">hsla(9, 100%, 64%, 1)</div>
+</div>
+
+<p class="tiy"><a target="_blank" href="javascript:if(confirm('https://www.w3school.com.cn/tiy/t.asp?f=responsive_w3css  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ������, �����������, ����Ŀ����ֹͣ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.w3school.com.cn/tiy/t.asp?f=responsive_w3css'" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_color_hsla">亲自试一试</a></p>
+</div>
+
+
+
+<script>
+//changeRed(255)
+//changeGreen(0)
+//changeBlue(0)
+
+
+changeHsl("h");
+function changeHsl(x) {
+  var col, h, s, l;
+  h = document.getElementById("slideHue").value;
+  s = document.getElementById("slideSat").value;
+  l = document.getElementById("slideLight").value;
+  col = w3color("hsl(" + h + "," + s/100 + "," + l/100 + ")");
+    document.getElementById('valHue').innerHTML = col.toHsl().h;
+    document.getElementById('valSat').innerHTML = Math.round(col.toHsl().s * 100) + "%";
+    document.getElementById('valLight').innerHTML = Math.round(col.toHsl().l * 100) + "%";
+    document.getElementById('hslresult').style.backgroundColor = col.toHslString();
+    document.getElementById('hslresulttext').innerHTML = col.toHslString();
+  if (col.isDark(150)) {
+    document.getElementById('hslresulttext').style.color = "#ffffff";
+  } else {
+    document.getElementById('hslresulttext').style.color = "#1f2d3d";
+  }
+}
+
+changeHsla("h");
+function changeHsla(x) {
+  var col, h, s, l, a;
+  h = document.getElementById("slideHueA").value;
+  s = document.getElementById("slideSatA").value;
+  l = document.getElementById("slideLightA").value;
+  a = document.getElementById("slideHslAlpha").value/10;
+  col = w3color("hsla(" + h + "," + s/100 + "," + l/100 + "," + a + ")");
+  document.getElementById('valHueA').innerHTML = col.toHsl().h;
+  document.getElementById('valSatA').innerHTML = Math.round(col.toHsl().s * 100) + "%";
+  document.getElementById('valLightA').innerHTML = Math.round(col.toHsl().l * 100) + "%";
+  document.getElementById('valHslAlpha').innerHTML = col.toHsl().a;
+  document.getElementById('hslaresult').style.backgroundColor = col.toHslaString();
+  document.getElementById('hslaresulttext').innerHTML = col.toHslaString();
+  if (col.isDark(150) && a > 0.2) {
+    document.getElementById('hslaresulttext').style.color = "#ffffff";
+  } else {
+    document.getElementById('hslaresulttext').style.color = "#1f2d3d";
+  }
+}
+
+</script>
+
+
+
+<div class="prenextnav">
+<ul class="prenext">
+<li class="pre"><a href="css_colors_hex.asp.htm" tppabs="https://www.w3school.com.cn/css/css_colors_hex.asp" title="CSS HEX 颜色">CSS HEX 颜色</a></li>
+<li class="next"><a href="css_background.asp.htm" tppabs="https://www.w3school.com.cn/css/css_background.asp" title="CSS 背景">CSS 背景</a></li>
+</ul>
+</div><div style="background-color:#fcfdf8; padding:0;">
+<script async src="../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" tppabs="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- W3School ���Ĺ�� -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:800px;height:250px"
+     data-ad-client="ca-pub-3381531532877742"
+     data-ad-slot="2086924285"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+</div>
+<!-- maincontent end -->
+
+<div id="sidebar">
+
+<div id="tools">
+<h5 id="tools_reference"><a href="../cssref/index.asp.htm" tppabs="https://www.w3school.com.cn/cssref/index.asp">CSS 参考手册</a></h5>
+<h5 id="tools_example"><a href="css_examples.asp.htm" tppabs="https://www.w3school.com.cn/css/css_examples.asp">CSS 实例</a></h5>
+<h5 id="tools_quiz"><a href="css_quiz.asp.htm" tppabs="https://www.w3school.com.cn/css/css_quiz.asp">CSS 测验</a></h5>
+<h5 id="tools_professional"><a href="index_pro.asp.htm" tppabs="https://www.w3school.com.cn/css/index_pro.asp">CSS 课外书</a></h5>
+</div>
+
+<div id="sidebar_zzs">
+
+<div id="sbtg">
+<script async src="../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" tppabs="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- W3School 侧栏广告位 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-3381531532877742"
+     data-ad-slot="6744370501"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+</div>
+
+</div>
+
+<div id="footer">
+<p id="p1">
+W3School 简体中文版提供的内容仅用于培训和测试，不保证内容的正确性。通过使用本站内容随之而来的风险与本站无关。版权所有，保留一切权利。
+</p>
+
+<p id="p2">
+<a href="../about/index.asp.htm" tppabs="https://www.w3school.com.cn/about/index.asp" title="关于 W3School">关于 W3School</a>
+<a href="../about/about_helping.asp.htm" tppabs="https://www.w3school.com.cn/about/about_helping.asp" title="帮助 W3School">帮助 W3School</a>
+<a href="../about/about_use.asp.htm" tppabs="https://www.w3school.com.cn/about/about_use.asp" title="关于使用">使用条款</a>
+<a href="../about/about_privacy.asp.htm" tppabs="https://www.w3school.com.cn/about/about_privacy.asp" title="关于隐私">隐私条款</a>
+<a target="_blank" href="javascript:if(confirm('https://www.ykinvestment.com/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.ykinvestment.com/'" tppabs="https://www.ykinvestment.com/">技术支持：赢科</a>
+<a target="_blank" href="javascript:if(confirm('http://www.beian.miit.gov.cn/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://www.beian.miit.gov.cn/'" tppabs="http://www.beian.miit.gov.cn/">蒙ICP备06004630号</a>
+</p>
+</div>
+
+
+</div>
+<!-- wrapper end -->
+
+</body>
+
+</html>

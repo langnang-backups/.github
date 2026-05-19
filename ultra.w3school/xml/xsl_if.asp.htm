@@ -1,0 +1,367 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="../../www.googletagmanager.com/gtag/js-id=UA-878633-1" tppabs="https://www.googletagmanager.com/gtag/js?id=UA-878633-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-878633-1');
+</script>
+
+<meta charset=utf-8"utf-8">
+<meta name="robots" content="all" />
+<meta name="author" content="w3school.com.cn" />
+
+<link rel="stylesheet" type="text/css" href="../c.css" tppabs="https://www.w3school.com.cn/c.css" />
+
+<script src="../lib/cc/prism2.js" tppabs="https://www.w3school.com.cn/lib/cc/prism2.js"></script>
+<link rel='stylesheet' href="../lib/cc/prism.css" tppabs="https://www.w3school.com.cn/lib/cc/prism.css">
+
+<link rel="icon" type="image/png" sizes="16x16" href="/ui2019/logo-16-red.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/ui2019/logo-32-red.png">
+<link rel="icon" type="image/png" sizes="48x48" href="/ui2019/logo-48-red.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/ui2019/logo-96-red.png">
+<link rel="apple-touch-icon-precomposed" sizes="180x180" href="/ui2019/logo-180.png">
+
+
+<title>XSLT &lt;xsl:if&gt; 元素</title>
+
+</head>
+
+<body class="xml">
+
+<div id="wrapper">
+
+<div id="header">
+<a id="logo" href="../index.html" tppabs="https://www.w3school.com.cn/index.html" title="w3school 在线教程" style="float:left;">w3school 在线教程</a>
+<div id="header_gg">
+<script async src="../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" tppabs="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- W3 页眉 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-3381531532877742"
+     data-ad-slot="7423315034"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+
+<div id="navfirst">
+<ul id="menu">
+<li id="h"><a href="../h.asp.htm" tppabs="https://www.w3school.com.cn/h.asp" title="HTML 系列教程">HTML 系列教程</a></li>
+<li id="b"><a href="../b.asp.htm" tppabs="https://www.w3school.com.cn/b.asp" title="浏览器脚本教程">浏览器脚本</a></li>
+<li id="s"><a href="../s.asp.htm" tppabs="https://www.w3school.com.cn/s.asp" title="服务器脚本教程">服务器脚本</a></li>
+<li id="p"><a href="../p.asp.htm" tppabs="https://www.w3school.com.cn/p.asp" title="编程教程">编程教程</a></li>
+<li id="x"><a href="../x.asp.htm" tppabs="https://www.w3school.com.cn/x.asp" title="XML 系列教程">XML 系列教程</a></li>
+<li id="w"><a href="../w.asp.htm" tppabs="https://www.w3school.com.cn/w.asp" title="建站手册">建站手册</a></li>
+<li id="r"><a href="../r.asp.htm" tppabs="https://www.w3school.com.cn/r.asp" title="参考手册">参考手册</a></li>
+</ul>
+</div>
+
+<div id="navsecond">
+
+<div id="course"><h2>XML 教程</h2>
+<ul>
+<li><a href="index.asp.htm" tppabs="https://www.w3school.com.cn/xml/index.asp" title="XML 教程">XML 教程</a></li>
+<li><a href="xml_intro.asp.htm" tppabs="https://www.w3school.com.cn/xml/xml_intro.asp" title="XML 简介">XML 简介</a></li>
+<li><a href="xml_usedfor.asp.htm" tppabs="https://www.w3school.com.cn/xml/xml_usedfor.asp" title="XML 的用途">XML 用途</a></li>
+<li><a href="xml_tree.asp.htm" tppabs="https://www.w3school.com.cn/xml/xml_tree.asp" title="XML 树结构">XML 树结构</a></li>
+<li><a href="xml_syntax.asp.htm" tppabs="https://www.w3school.com.cn/xml/xml_syntax.asp" title="XML 语法规则">XML 语法</a></li>
+<li><a href="xml_elements.asp.htm" tppabs="https://www.w3school.com.cn/xml/xml_elements.asp" title="XML 元素">XML 元素</a></li>
+<li><a href="xml_attributes.asp.htm" tppabs="https://www.w3school.com.cn/xml/xml_attributes.asp" title="XML 属性">XML 属性</a></li>
+<li><a href="xml_namespaces.asp.htm" tppabs="https://www.w3school.com.cn/xml/xml_namespaces.asp" title="XML 命名空间">XML 命名空间</a></li>
+<li><a href="xml_display.asp.htm" tppabs="https://www.w3school.com.cn/xml/xml_display.asp" title="显示 XML">XML 显示</a></li>
+<li><a href="xml_http.asp.htm" tppabs="https://www.w3school.com.cn/xml/xml_http.asp" title="XML HttpRequest">XML HttpRequest</a></li>
+<li><a href="xml_parser.asp.htm" tppabs="https://www.w3school.com.cn/xml/xml_parser.asp" title="XML 解析器">XML 解析器</a></li>
+<li><a href="xml_dom.asp.htm" tppabs="https://www.w3school.com.cn/xml/xml_dom.asp" title="XML DOM">XML DOM</a></li>
+<li><a href="xml_xpath.asp.htm" tppabs="https://www.w3school.com.cn/xml/xml_xpath.asp" title="XML 和 XPath">XML XPath</a></li>
+<li><a href="xml_xslt.asp.htm" tppabs="https://www.w3school.com.cn/xml/xml_xslt.asp" title="XML 和 XSLT">XML XSLT</a></li>
+<li><a href="xml_xquery.asp.htm" tppabs="https://www.w3school.com.cn/xml/xml_xquery.asp" title="XML 和 XQuery">XML XQuery</a></li>
+<li><a href="xml_xlink.asp.htm" tppabs="https://www.w3school.com.cn/xml/xml_xlink.asp" title="XML、XLink 和 XPointer">XML XLink</a></li>
+<li><a href="xml_validator.asp.htm" tppabs="https://www.w3school.com.cn/xml/xml_validator.asp" title="XML 验证器">XML 验证器</a></li>
+<li><a href="xml_dtd.asp.htm" tppabs="https://www.w3school.com.cn/xml/xml_dtd.asp" title="XML DTD">XML DTD</a></li>
+<li><a href="xml_schema.asp.htm" tppabs="https://www.w3school.com.cn/xml/xml_schema.asp" title="XML Schema">XML Schema</a></li>
+<li><a href="xml_server.asp.htm" tppabs="https://www.w3school.com.cn/xml/xml_server.asp" title="服务器上的 XML">XML 服务器</a></li>
+<li><a href="xml_examples.asp.htm" tppabs="https://www.w3school.com.cn/xml/xml_examples.asp" title="XML 实例">XML 实例</a></li>
+<li><a href="xml_quiz.asp.htm" tppabs="https://www.w3school.com.cn/xml/xml_quiz.asp" title="XML 测验">XML 测验</a></li>
+</ul>
+<h2>XML DOM 教程</h2>
+<ul>
+<li><a href="dom_intro.asp.htm" tppabs="https://www.w3school.com.cn/xml/dom_intro.asp" title="XML DOM 简介">DOM 简介</a></li>
+<li><a href="dom_nodes.asp.htm" tppabs="https://www.w3school.com.cn/xml/dom_nodes.asp" title="XML DOM 节点">DOM 节点</a></li>
+<li><a href="dom_nodes_access.asp.htm" tppabs="https://www.w3school.com.cn/xml/dom_nodes_access.asp" title="XML DOM 访问节点">DOM 访问节点</a></li>
+<li><a href="dom_nodes_info.asp.htm" tppabs="https://www.w3school.com.cn/xml/dom_nodes_info.asp" title="XML DOM 节点信息">DOM 节点信息</a></li>
+<li><a href="dom_nodes_nodelist.asp.htm" tppabs="https://www.w3school.com.cn/xml/dom_nodes_nodelist.asp" title="XML DOM 节点列表">DOM 节点列表</a></li>
+<li><a href="dom_nodes_traverse.asp.htm" tppabs="https://www.w3school.com.cn/xml/dom_nodes_traverse.asp" title="XML DOM 遍历节点">DOM 遍历节点</a></li>
+<li><a href="dom_nodes_navigate.asp.htm" tppabs="https://www.w3school.com.cn/xml/dom_nodes_navigate.asp" title="XML DOM 定位节点">DOM 定位节点</a></li>
+<li><a href="dom_nodes_get.asp.htm" tppabs="https://www.w3school.com.cn/xml/dom_nodes_get.asp" title="XML DOM 获取节点">DOM 获取节点</a></li>
+<li><a href="dom_nodes_set.asp.htm" tppabs="https://www.w3school.com.cn/xml/dom_nodes_set.asp" title="XML DOM 改变节点">DOM 改变节点</a></li>
+<li><a href="dom_nodes_remove.asp.htm" tppabs="https://www.w3school.com.cn/xml/dom_nodes_remove.asp" title="XML DOM 删除节点">DOM 删除节点</a></li>
+<li><a href="dom_nodes_replace.asp.htm" tppabs="https://www.w3school.com.cn/xml/dom_nodes_replace.asp" title="XML DOM 替换节点">DOM 替换节点</a></li>
+<li><a href="dom_nodes_create.asp.htm" tppabs="https://www.w3school.com.cn/xml/dom_nodes_create.asp" title="XML DOM 创建节点">DOM 创建节点</a></li>
+<li><a href="dom_nodes_add.asp.htm" tppabs="https://www.w3school.com.cn/xml/dom_nodes_add.asp" title="XML DOM 添加节点">DOM 添加节点</a></li>
+<li><a href="dom_nodes_clone.asp.htm" tppabs="https://www.w3school.com.cn/xml/dom_nodes_clone.asp" title="XML DOM 克隆节点">DOM 克隆节点</a></li>
+<li><a href="dom_examples.asp.htm" tppabs="https://www.w3school.com.cn/xml/dom_examples.asp" title="XML DOM 实例">DOM 实例</a></li>
+</ul>
+<h2>XPath 教程</h2>
+<ul>
+<li><a href="xpath_intro.asp.htm" tppabs="https://www.w3school.com.cn/xml/xpath_intro.asp" title="XPath 简介">XPath 简介</a></li>
+<li><a href="xpath_nodes.asp.htm" tppabs="https://www.w3school.com.cn/xml/xpath_nodes.asp" title="XPath 节点">XPath 节点</a></li>
+<li><a href="xpath_syntax.asp.htm" tppabs="https://www.w3school.com.cn/xml/xpath_syntax.asp" title="XPath 语法">XPath 语法</a></li>
+<li><a href="xpath_axes.asp.htm" tppabs="https://www.w3school.com.cn/xml/xpath_axes.asp" title="XPath Axes（轴）">XPath 轴</a></li>
+<li><a href="xpath_operators.asp.htm" tppabs="https://www.w3school.com.cn/xml/xpath_operators.asp" title="XPath 运算符">XPath 运算符</a></li>
+<li><a href="xpath_examples.asp.htm" tppabs="https://www.w3school.com.cn/xml/xpath_examples.asp" title="XPath 实例">XPath 实例</a></li>
+</ul>
+<h2>XSLT 教程</h2>
+<ul>
+<li><a href="xsl_intro.asp.htm" tppabs="https://www.w3school.com.cn/xml/xsl_intro.asp" title="XSLT 简介">XSLT 简介</a></li>
+<li><a href="xsl_languages.asp.htm" tppabs="https://www.w3school.com.cn/xml/xsl_languages.asp" title="XSLT 语言">XSLT 语言</a></li>
+<li><a href="xsl_transformation.asp.htm" tppabs="https://www.w3school.com.cn/xml/xsl_transformation.asp" title="XSLT - 转换">XSLT 转换</a></li>
+<li><a href="xsl_templates.asp.htm" tppabs="https://www.w3school.com.cn/xml/xsl_templates.asp" title="XSLT &lt;xsl:template&gt; 元素">XSLT &lt;template&gt;</a></li>
+<li><a href="xsl_value_of.asp.htm" tppabs="https://www.w3school.com.cn/xml/xsl_value_of.asp" title="XSLT &lt;xsl:value-of&gt; 元素">XSLT &lt;value-of&gt;</a></li>
+<li><a href="xsl_for_each.asp.htm" tppabs="https://www.w3school.com.cn/xml/xsl_for_each.asp" title="XSLT &lt;xsl:for-each&gt; 元素">XSLT &lt;for-each&gt;</a></li>
+<li><a href="xsl_sort.asp.htm" tppabs="https://www.w3school.com.cn/xml/xsl_sort.asp" title="XSLT &lt;xsl:sort&gt; 元素">XSLT &lt;sort&gt;</a></li>
+<li class="currentLink"><a href="xsl_if.asp.htm" tppabs="https://www.w3school.com.cn/xml/xsl_if.asp" title="XSLT &lt;xsl:if&gt; 元素">XSLT &lt;if&gt;</a></li>
+<li><a href="xsl_choose.asp.htm" tppabs="https://www.w3school.com.cn/xml/xsl_choose.asp" title="XSLT &lt;xsl:choose&gt; 元素">XSLT &lt;choose&gt;</a></li>
+<li><a href="xsl_apply_templates.asp.htm" tppabs="https://www.w3school.com.cn/xml/xsl_apply_templates.asp" title="XSLT &lt;xsl:apply-templates&gt; 元素">XSLT Apply</a></li>
+<li><a href="xsl_client.asp.htm" tppabs="https://www.w3school.com.cn/xml/xsl_client.asp" title="XSLT - 在客户端">XSLT 在客户端</a></li>
+<li><a href="xsl_server.asp.htm" tppabs="https://www.w3school.com.cn/xml/xsl_server.asp" title="XSLT - 在服务器上">XSLT 在服务器端</a></li>
+<li><a href="xsl_editxml.asp.htm" tppabs="https://www.w3school.com.cn/xml/xsl_editxml.asp" title="XSLT - 编辑 XML">XSLT 编辑 XML</a></li>
+<li><a href="xsl_examples.asp.htm" tppabs="https://www.w3school.com.cn/xml/xsl_examples.asp" title="XSLT 实例">XSLT 实例</a></li>
+</ul>
+<h2>XQuery 教程</h2>
+<ul>
+<li><a href="xquery_intro.asp.htm" tppabs="https://www.w3school.com.cn/xml/xquery_intro.asp" title="XQuery 简介">XQuery 简介</a></li>
+<li><a href="xquery_example.asp.htm" tppabs="https://www.w3school.com.cn/xml/xquery_example.asp" title="XQuery 实例">XQuery 实例</a></li>
+<li><a href="xquery_flwor.asp.htm" tppabs="https://www.w3school.com.cn/xml/xquery_flwor.asp" title="XQuery FLWOR 表达式">XQuery FLWOR</a></li>
+<li><a href="xquery_flwor_html.asp.htm" tppabs="https://www.w3school.com.cn/xml/xquery_flwor_html.asp" title="XQuery FLWOR + HTML">XQuery HTML</a></li>
+<li><a href="xquery_terms.asp.htm" tppabs="https://www.w3school.com.cn/xml/xquery_terms.asp" title="XQuery 术语">XQuery 术语</a></li>
+<li><a href="xquery_syntax.asp.htm" tppabs="https://www.w3school.com.cn/xml/xquery_syntax.asp" title="XQuery 语法">XQuery 语法</a></li>
+<li><a href="xquery_add.asp.htm" tppabs="https://www.w3school.com.cn/xml/xquery_add.asp" title="XQuery 添加元素和属性">XQuery 添加</a></li>
+<li><a href="xquery_select.asp.htm" tppabs="https://www.w3school.com.cn/xml/xquery_select.asp" title="XQuery 选择和过滤">XQuery 选取</a></li>
+<li><a href="xquery_functions.asp.htm" tppabs="https://www.w3school.com.cn/xml/xquery_functions.asp" title="XQuery 函数">XQuery 函数</a></li>
+</ul>
+<h2>XML DTD 教程</h2>
+<ul>
+<li><a href="dtd_intro.asp.htm" tppabs="https://www.w3school.com.cn/xml/dtd_intro.asp" title="DTD 简介">DTD 简介</a></li>
+<li><a href="dtd_building.asp.htm" tppabs="https://www.w3school.com.cn/xml/dtd_building.asp" title="DTD - XML 构建模块">DTD 构建模块</a></li>
+<li><a href="dtd_elements.asp.htm" tppabs="https://www.w3school.com.cn/xml/dtd_elements.asp" title="DTD - 元素">DTD 元素</a></li>
+<li><a href="dtd_attributes.asp.htm" tppabs="https://www.w3school.com.cn/xml/dtd_attributes.asp" title="DTD - 属性">DTD 属性</a></li>
+<li><a href="dtd_el_vs_attr.asp.htm" tppabs="https://www.w3school.com.cn/xml/dtd_el_vs_attr.asp" title="DTD - 元素对比属性">DTD 元素对比属性</a></li>
+<li><a href="dtd_entities.asp.htm" tppabs="https://www.w3school.com.cn/xml/dtd_entities.asp" title="DTD - 实体">DTD 实体</a></li>
+<li><a href="dtd_examples.asp.htm" tppabs="https://www.w3school.com.cn/xml/dtd_examples.asp" title="DTD 实例">DTD 实例</a></li>
+</ul>
+<h2>XSD Schema 教程</h2>
+<ul>
+<li><a href="schema_intro.asp.htm" tppabs="https://www.w3school.com.cn/xml/schema_intro.asp" title="XML Schema 教程">XSD 教程</a></li>
+<li><a href="schema_howto.asp.htm" tppabs="https://www.w3school.com.cn/xml/schema_howto.asp" title="如何使用 XSD？">XSD 使用</a></li>
+<li><a href="schema_schema.asp.htm" tppabs="https://www.w3school.com.cn/xml/schema_schema.asp" title="XSD - &lt;schema&gt; 元素">XSD &lt;schema&gt;</a></li>
+<li><a href="schema_simple.asp.htm" tppabs="https://www.w3school.com.cn/xml/schema_simple.asp" title="XSD 简易元素">XSD 元素</a></li>
+<li><a href="schema_simple_attributes.asp.htm" tppabs="https://www.w3school.com.cn/xml/schema_simple_attributes.asp" title="XSD 属性">XSD 属性</a></li>
+<li><a href="schema_facets.asp.htm" tppabs="https://www.w3school.com.cn/xml/schema_facets.asp" title="XSD 限定/Facets">XSD 限定</a></li>
+<li><a href="schema_complex.asp.htm" tppabs="https://www.w3school.com.cn/xml/schema_complex.asp" title="XSD 复合元素">XSD 复合元素</a></li>
+<li><a href="schema_complex_empty.asp.htm" tppabs="https://www.w3school.com.cn/xml/schema_complex_empty.asp" title="XSD 复合空元素">XSD 空元素</a></li>
+<li><a href="schema_complex_elements.asp.htm" tppabs="https://www.w3school.com.cn/xml/schema_complex_elements.asp" title="XSD 复合类型 - 仅含元素">XSD 仅含元素</a></li>
+<li><a href="schema_complex_text.asp.htm" tppabs="https://www.w3school.com.cn/xml/schema_complex_text.asp" title="XSD 仅含文本复合元素">XSD 仅含文本</a></li>
+<li><a href="schema_complex_mixed.asp.htm" tppabs="https://www.w3school.com.cn/xml/schema_complex_mixed.asp" title="XSD 带有混合内容的复合类型">XSD 混合内容</a></li>
+<li><a href="schema_complex_indicators.asp.htm" tppabs="https://www.w3school.com.cn/xml/schema_complex_indicators.asp" title="XSD 复合类型指示器">XSD 指示器</a></li>
+<li><a href="schema_complex_any.asp.htm" tppabs="https://www.w3school.com.cn/xml/schema_complex_any.asp" title="XSD &lt;any&gt; 元素">XSD &lt;any&gt;</a></li>
+<li><a href="schema_complex_anyattribute.asp.htm" tppabs="https://www.w3school.com.cn/xml/schema_complex_anyattribute.asp" title="XSD &lt;anyAttribute&gt; 元素">XSD &lt;anyAttribute&gt;</a></li>
+<li><a href="schema_complex_subst.asp.htm" tppabs="https://www.w3school.com.cn/xml/schema_complex_subst.asp" title="XSD 元素替换（Element Substitution）">XSD 元素替换</a></li>
+<li><a href="schema_example.asp.htm" tppabs="https://www.w3school.com.cn/xml/schema_example.asp" title="一个 XSD 实例">XSD 实例</a></li>
+</ul>
+<h2>XSD 数据类型</h2>
+<ul>
+<li><a href="schema_dtypes_string.asp.htm" tppabs="https://www.w3school.com.cn/xml/schema_dtypes_string.asp" title="XSD 字符串数据类型">XSD 字符串</a></li>
+<li><a href="schema_dtypes_date.asp.htm" tppabs="https://www.w3school.com.cn/xml/schema_dtypes_date.asp" title="XSD 日期及时间数据类型">XSD 日期/时间</a></li>
+<li><a href="schema_dtypes_numeric.asp.htm" tppabs="https://www.w3school.com.cn/xml/schema_dtypes_numeric.asp" title="XSD 数值数据类型">XSD 数值</a></li>
+<li><a href="schema_dtypes_misc.asp.htm" tppabs="https://www.w3school.com.cn/xml/schema_dtypes_misc.asp" title="XSD 杂项数据类型">XSD 杂项</a></li>
+</ul>
+<h2>参考手册</h2>
+<ul>
+<li><a href="xml_reference.asp.htm" tppabs="https://www.w3school.com.cn/xml/xml_reference.asp" title="XML DOM 参考手册">XML 参考手册</a></li>
+<li><a href="ref_dom_nodetype.asp.htm" tppabs="https://www.w3school.com.cn/xml/ref_dom_nodetype.asp" title="XML DOM 节点类型">DOM 节点类型</a></li>
+<li><a href="ref_dom_node.asp.htm" tppabs="https://www.w3school.com.cn/xml/ref_dom_node.asp" title="XML DOM Node 对象">DOM Node</a></li>
+<li><a href="ref_dom_nodelist.asp.htm" tppabs="https://www.w3school.com.cn/xml/ref_dom_nodelist.asp" title="XML DOM NodeList 对象">DOM NodeList</a></li>
+<li><a href="ref_dom_namednodemap.asp.htm" tppabs="https://www.w3school.com.cn/xml/ref_dom_namednodemap.asp" title="XML DOM NamedNodeMap 对象">DOM NamedNodeMap</a></li>
+<li><a href="ref_dom_document.asp.htm" tppabs="https://www.w3school.com.cn/xml/ref_dom_document.asp" title="XML DOM Document 对象">DOM Document</a></li>
+<li><a href="ref_dom_element.asp.htm" tppabs="https://www.w3school.com.cn/xml/ref_dom_element.asp" title="XML DOM Element 对象">DOM Element</a></li>
+<li><a href="ref_dom_attribute.asp.htm" tppabs="https://www.w3school.com.cn/xml/ref_dom_attribute.asp" title="XML DOM Attr 对象">DOM Attr</a></li>
+<li><a href="ref_dom_text.asp.htm" tppabs="https://www.w3school.com.cn/xml/ref_dom_text.asp" title="XML DOM Text 对象">DOM Text</a></li>
+<li><a href="ref_dom_cdatasection.asp.htm" tppabs="https://www.w3school.com.cn/xml/ref_dom_cdatasection.asp" title="XML DOM CDATASection 对象">DOM CDATA</a></li>
+<li><a href="ref_dom_comment.asp.htm" tppabs="https://www.w3school.com.cn/xml/ref_dom_comment.asp" title="XML DOM Comment 对象">DOM Comment</a></li>
+<li><a href="ref_dom_http.asp.htm" tppabs="https://www.w3school.com.cn/xml/ref_dom_http.asp" title="XML DOM XMLHttpRequest 对象">DOM XMLHttpRequest</a></li>
+<li><a href="ref_dom_errors.asp.htm" tppabs="https://www.w3school.com.cn/xml/ref_dom_errors.asp" title="XML DOM ParseError 对象">DOM ParseError</a></li>
+<li><a href="ref_schema_elements.asp.htm" tppabs="https://www.w3school.com.cn/xml/ref_schema_elements.asp" title="XML Schema 参考手册">Schema 元素</a></li>
+<li><a href="ref_xsl_elements.asp.htm" tppabs="https://www.w3school.com.cn/xml/ref_xsl_elements.asp" title="XSLT 元素参考手册">XSLT 元素</a></li>
+<li><a href="ref_xsl_functions.asp.htm" tppabs="https://www.w3school.com.cn/xml/ref_xsl_functions.asp" title="XSLT、XPath 以及 XQuery 函数">XSLT/XPath 函数</a></li>
+</ul>
+</div><div id="selected">
+<h2>课程推荐：</h2>
+<ul>
+<li><a href="../howto/index.asp.htm" tppabs="https://www.w3school.com.cn/howto/index.asp" title="W3School 百宝箱">W3School 百宝箱</a></li>
+<li><a href="../java/index.asp.htm" tppabs="https://www.w3school.com.cn/java/index.asp" title="Java 教程">Java 教程</a></li>
+</ul>
+
+</div>
+
+</div>
+
+<div id="maincontent">
+
+<h1>XSLT &lt;xsl:if&gt; 元素</h1>
+
+<div class="prenextnav">
+<ul class="prenext">
+<li class="pre"><a href="xsl_sort.asp.htm" tppabs="https://www.w3school.com.cn/xml/xsl_sort.asp" title="XSLT &lt;xsl:sort&gt; 元素">XSLT &lt;sort&gt;</a></li>
+<li class="next"><a href="xsl_choose.asp.htm" tppabs="https://www.w3school.com.cn/xml/xsl_choose.asp" title="XSLT &lt;xsl:choose&gt; 元素">XSLT &lt;choose&gt;</a></li>
+</ul>
+</div>
+
+
+
+<div id="intro">
+<p><strong>&lt;xsl:if&gt; 元素用于放置针对 XML 文件内容的条件测试。</strong></p>
+</div>
+
+
+
+<div>
+<h2>&lt;xsl:if&gt; 元素</h2>
+
+<p>如需放置针对 XML 文件内容的条件测试，请向 XSL 文档添加 &lt;xsl:if&gt; 元素。</p>
+
+<h3>语法</h3>
+
+<pre class="language-xml">
+&lt;xsl:if test=&quot;<i>expression</i>&quot;&gt;
+  ...
+  ...如果条件成立则输出...
+  ...
+&lt;/xsl:if&gt;
+</pre>
+</div>
+
+
+
+<div>
+<h2>在何处放置 &lt;xsl:if&gt; 元素</h2>
+
+<p>如需添加有条件的测试，请在 XSL 文件中的 &lt;xsl:for-each&gt; 元素内部添加 &lt;xsl:if&gt; 元素：</p>
+
+<pre class="language-xml">
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;ISO-8859-1&quot;?&gt;
+&lt;xsl:stylesheet version=&quot;1.0&quot;
+xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot;&gt;
+&lt;xsl:template match=&quot;/&quot;&gt;
+  &lt;html&gt;
+  &lt;body&gt;
+    &lt;h2&gt;My CD Collection&lt;/h2&gt;
+    &lt;table border=&quot;1&quot;&gt;
+      &lt;tr bgcolor=&quot;#9acd32&quot;&gt;
+        &lt;th&gt;Title&lt;/th&gt;
+        &lt;th&gt;Artist&lt;/th&gt;
+      &lt;/tr&gt;
+      &lt;xsl:for-each select=&quot;catalog/cd&quot;&gt;
+      <code>&lt;xsl:if test=&quot;price &amp;gt; 10&quot;&gt;</code>
+        &lt;tr&gt;
+          &lt;td&gt;&lt;xsl:value-of select=&quot;title&quot;/&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;xsl:value-of select=&quot;artist&quot;/&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      <code>&lt;/xsl:if&gt;</code>
+      &lt;/xsl:for-each&gt;
+    &lt;/table&gt;
+  &lt;/body&gt;
+  &lt;/html&gt;
+&lt;/xsl:template&gt;
+&lt;/xsl:stylesheet&gt;
+</pre>
+
+<p class="note"><span>注释：</span>必选的 <em>test</em> 属性的值包含了需要求值的表达式。</p>
+
+<p>上面的代码仅仅会输出价格高于 10 的 CD 的 title 和 artist 元素。</p>
+
+<h3>上面的转换结果类似这样：</h3>
+
+<img class="illustration" src="i/jquery_ref_ajax.asp" tppabs="https://www.w3school.com.cn/xml/i/xsl_if_01.gif" />
+
+<p><a href="javascript:if(confirm('https://www.w3school.com.cn/xsl/t.asp?f=eg_js_boolean_expression_1  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ������, �����������, ����Ŀ����ֹͣ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.w3school.com.cn/xsl/t.asp?f=eg_js_boolean_expression_1'" tppabs="https://www.w3school.com.cn/xsl/cdcatalog.xml">查看此 XML 文件</a>，<a href="javascript:if(confirm('https://www.w3school.com.cn/xsl/jquery_ref_traversing.asp  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ������, �����������, ����Ŀ����ֹͣ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.w3school.com.cn/xsl/jquery_ref_traversing.asp'" tppabs="https://www.w3school.com.cn/xsl/cdcatalog_if.xsl">查看此 XSL 文件</a>，<a href="javascript:if(confirm('https://www.w3school.com.cn/xsl/jquery_ref_data.asp  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ������, �����������, ����Ŀ����ֹͣ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.w3school.com.cn/xsl/jquery_ref_data.asp'" tppabs="https://www.w3school.com.cn/xsl/cdcatalog_if.xml">查看结果</a>。</p>
+</div>
+
+
+
+<div class="prenextnav">
+<ul class="prenext">
+<li class="pre"><a href="xsl_sort.asp.htm" tppabs="https://www.w3school.com.cn/xml/xsl_sort.asp" title="XSLT &lt;xsl:sort&gt; 元素">XSLT &lt;sort&gt;</a></li>
+<li class="next"><a href="xsl_choose.asp.htm" tppabs="https://www.w3school.com.cn/xml/xsl_choose.asp" title="XSLT &lt;xsl:choose&gt; 元素">XSLT &lt;choose&gt;</a></li>
+</ul>
+</div><div style="background-color:#fcfdf8; padding:0;">
+<script async src="../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" tppabs="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- W3School ���Ĺ�� -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:800px;height:250px"
+     data-ad-client="ca-pub-3381531532877742"
+     data-ad-slot="2086924285"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+</div>
+<!-- maincontent end -->
+
+<div id="sidebar">
+
+<div id="tools">
+<h5 id="tools_reference"><a href="xml_reference.asp.htm" tppabs="https://www.w3school.com.cn/xml/xml_reference.asp">XML 参考手册</a></h5>
+<h5 id="tools_example"><a href="xml_examples.asp.htm" tppabs="https://www.w3school.com.cn/xml/xml_examples.asp">XML 实例</a></h5>
+<h5 id="tools_quiz"><a href="xml_quiz.asp.htm" tppabs="https://www.w3school.com.cn/xml/xml_quiz.asp">XML 测验</a></h5>
+</div>
+
+<div id="sidebar_zzs">
+
+<div id="sbtg">
+<script async src="../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" tppabs="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- W3School 侧栏广告位 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-3381531532877742"
+     data-ad-slot="6744370501"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+</div>
+
+</div>
+
+<div id="footer">
+<p id="p1">
+W3School 简体中文版提供的内容仅用于培训和测试，不保证内容的正确性。通过使用本站内容随之而来的风险与本站无关。版权所有，保留一切权利。
+</p>
+
+<p id="p2">
+<a href="../about/index.asp.htm" tppabs="https://www.w3school.com.cn/about/index.asp" title="关于 W3School">关于 W3School</a>
+<a href="../about/about_helping.asp.htm" tppabs="https://www.w3school.com.cn/about/about_helping.asp" title="帮助 W3School">帮助 W3School</a>
+<a href="../about/about_use.asp.htm" tppabs="https://www.w3school.com.cn/about/about_use.asp" title="关于使用">使用条款</a>
+<a href="../about/about_privacy.asp.htm" tppabs="https://www.w3school.com.cn/about/about_privacy.asp" title="关于隐私">隐私条款</a>
+<a target="_blank" href="javascript:if(confirm('https://www.ykinvestment.com/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.ykinvestment.com/'" tppabs="https://www.ykinvestment.com/">技术支持：赢科</a>
+<a target="_blank" href="javascript:if(confirm('http://www.beian.miit.gov.cn/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://www.beian.miit.gov.cn/'" tppabs="http://www.beian.miit.gov.cn/">蒙ICP备06004630号</a>
+</p>
+</div>
+
+
+</div>
+<!-- wrapper end -->
+
+</body>
+
+</html>

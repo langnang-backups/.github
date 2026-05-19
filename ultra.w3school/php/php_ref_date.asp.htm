@@ -1,0 +1,719 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="../../www.googletagmanager.com/gtag/js-id=UA-878633-1" tppabs="https://www.googletagmanager.com/gtag/js?id=UA-878633-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-878633-1');
+</script>
+
+<meta charset=utf-8"utf-8">
+<meta name="robots" content="all" />
+<meta name="author" content="w3school.com.cn" />
+
+<link rel="stylesheet" type="text/css" href="../c.css" tppabs="https://www.w3school.com.cn/c.css" />
+
+<script src="../lib/cc/prism2.js" tppabs="https://www.w3school.com.cn/lib/cc/prism2.js"></script>
+<link rel='stylesheet' href="../lib/cc/prism.css" tppabs="https://www.w3school.com.cn/lib/cc/prism.css">
+
+<link rel="icon" type="image/png" sizes="16x16" href="/ui2019/logo-16-red.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/ui2019/logo-32-red.png">
+<link rel="icon" type="image/png" sizes="48x48" href="/ui2019/logo-48-red.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/ui2019/logo-96-red.png">
+<link rel="apple-touch-icon-precomposed" sizes="180x180" href="/ui2019/logo-180.png">
+
+
+<title>PHP Date / Time å‡½æ•°</title>
+
+</head>
+
+<body class="serverscripting">
+
+<div id="wrapper">
+
+<div id="header">
+<a id="logo" href="../index.html" tppabs="https://www.w3school.com.cn/index.html" title="w3school åœ¨çº¿æ•™ç¨‹" style="float:left;">w3school åœ¨çº¿æ•™ç¨‹</a>
+<div id="header_gg">
+<script async src="../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" tppabs="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- W3 é¡µçœ‰ -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-3381531532877742"
+     data-ad-slot="7423315034"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+
+<div id="navfirst">
+<ul id="menu">
+<li id="h"><a href="../h.asp.htm" tppabs="https://www.w3school.com.cn/h.asp" title="HTML ç³»åˆ—æ•™ç¨‹">HTML ç³»åˆ—æ•™ç¨‹</a></li>
+<li id="b"><a href="../b.asp.htm" tppabs="https://www.w3school.com.cn/b.asp" title="æµè§ˆå™¨è„šæœ¬æ•™ç¨‹">æµè§ˆå™¨è„šæœ¬</a></li>
+<li id="s"><a href="../s.asp.htm" tppabs="https://www.w3school.com.cn/s.asp" title="æœåŠ¡å™¨è„šæœ¬æ•™ç¨‹">æœåŠ¡å™¨è„šæœ¬</a></li>
+<li id="p"><a href="../p.asp.htm" tppabs="https://www.w3school.com.cn/p.asp" title="ç¼–ç¨‹æ•™ç¨‹">ç¼–ç¨‹æ•™ç¨‹</a></li>
+<li id="x"><a href="../x.asp.htm" tppabs="https://www.w3school.com.cn/x.asp" title="XML ç³»åˆ—æ•™ç¨‹">XML ç³»åˆ—æ•™ç¨‹</a></li>
+<li id="w"><a href="../w.asp.htm" tppabs="https://www.w3school.com.cn/w.asp" title="å»ºç«™æ‰‹å†Œ">å»ºç«™æ‰‹å†Œ</a></li>
+<li id="r"><a href="../r.asp.htm" tppabs="https://www.w3school.com.cn/r.asp" title="å‚è€ƒæ‰‹å†Œ">å‚è€ƒæ‰‹å†Œ</a></li>
+</ul>
+</div>
+
+<div id="navsecond">
+
+<div id="course"><h2>PHP æ•™ç¨‹</h2>
+<ul>
+<li><a href="index.asp.htm" tppabs="https://www.w3school.com.cn/php/index.asp" title="PHP æ•™ç¨‹">PHP æ•™ç¨‹</a></li>
+<li><a href="php_intro.asp.htm" tppabs="https://www.w3school.com.cn/php/php_intro.asp" title="PHP ç®€ä»‹">PHP ç®€ä»‹</a></li>
+<li><a href="php_install.asp.htm" tppabs="https://www.w3school.com.cn/php/php_install.asp" title="PHP å®‰è£…">PHP å®‰è£…</a></li>
+<li><a href="php_syntax.asp.htm" tppabs="https://www.w3school.com.cn/php/php_syntax.asp" title="PHP è¯­æ³•">PHP è¯­æ³•</a></li>
+<li><a href="php_comments.asp.htm" tppabs="https://www.w3school.com.cn/php/php_comments.asp" title="PHP æ³¨é‡Š">PHP æ³¨é‡Š</a></li>
+<li><a href="php_comments_multiline.asp.htm" tppabs="https://www.w3school.com.cn/php/php_comments_multiline.asp" title="PHP å¤šè¡Œæ³¨é‡Š">PHP å¤šè¡Œæ³¨é‡Š</a></li>
+<li><a href="php_variables.asp.htm" tppabs="https://www.w3school.com.cn/php/php_variables.asp" title="PHP å˜é‡">PHP å˜é‡</a></li>
+<li><a href="php_variables_scope.asp.htm" tppabs="https://www.w3school.com.cn/php/php_variables_scope.asp" title="PHP å˜é‡ä½œç”¨åŸŸ">PHP å˜é‡ä½œç”¨åŸŸ</a></li>
+<li><a href="php_echo_print.asp.htm" tppabs="https://www.w3school.com.cn/php/php_echo_print.asp" title="PHP Echo å’Œ Print è¯­å¥">PHP Echo / Print</a></li>
+<li><a href="php_datatypes.asp.htm" tppabs="https://www.w3school.com.cn/php/php_datatypes.asp" title="PHP æ•°æ®ç±»åž‹">PHP æ•°æ®ç±»åž‹</a></li>
+<li><a href="php_string.asp.htm" tppabs="https://www.w3school.com.cn/php/php_string.asp" title="PHP å­—ç¬¦ä¸²">PHP å­—ç¬¦ä¸²</a></li>
+<li><a href="php_string_modify.asp.htm" tppabs="https://www.w3school.com.cn/php/php_string_modify.asp" title="PHP å­—ç¬¦ä¸²ä¿®æ”¹">PHP å­—ç¬¦ä¸²ä¿®æ”¹</a></li>
+<li><a href="php_string_concatenate.asp.htm" tppabs="https://www.w3school.com.cn/php/php_string_concatenate.asp" title="PHP å­—ç¬¦ä¸²è¿žæŽ¥">PHP å­—ç¬¦ä¸²è¿žæŽ¥</a></li>
+<li><a href="php_string_slicing.asp.htm" tppabs="https://www.w3school.com.cn/php/php_string_slicing.asp" title="PHP å­—ç¬¦ä¸²åˆ‡ç‰‡">PHP å­—ç¬¦ä¸²åˆ‡ç‰‡</a></li>
+<li><a href="php_string_escape.asp.htm" tppabs="https://www.w3school.com.cn/php/php_string_escape.asp" title="PHP è½¬ä¹‰å­—ç¬¦">PHP è½¬ä¹‰å­—ç¬¦</a></li>
+<li><a href="php_numbers.asp.htm" tppabs="https://www.w3school.com.cn/php/php_numbers.asp" title="PHP æ•°å­—">PHP æ•°å­—</a></li>
+<li><a href="php_casting.asp.htm" tppabs="https://www.w3school.com.cn/php/php_casting.asp" title="PHP ç±»åž‹è½¬æ¢">PHP ç±»åž‹è½¬æ¢</a></li>
+<li><a href="php_math.asp.htm" tppabs="https://www.w3school.com.cn/php/php_math.asp" title="PHP æ•°å­¦">PHP æ•°å­¦</a></li>
+<li><a href="php_constants.asp.htm" tppabs="https://www.w3school.com.cn/php/php_constants.asp" title="PHP å¸¸é‡">PHP å¸¸é‡</a></li>
+<li><a href="php_magic_constants.asp.htm" tppabs="https://www.w3school.com.cn/php/php_magic_constants.asp" title="PHP é­”æ³•å¸¸é‡">PHP é­”æ³•å¸¸é‡</a></li>
+<li><a href="php_operators.asp.htm" tppabs="https://www.w3school.com.cn/php/php_operators.asp" title="PHP è¿ç®—ç¬¦">PHP è¿ç®—ç¬¦</a></li>
+<li><a href="php_if_else.asp.htm" tppabs="https://www.w3school.com.cn/php/php_if_else.asp" title="PHP if è¯­å¥">PHP if</a></li>
+<li><a href="php_if_operators.asp.htm" tppabs="https://www.w3school.com.cn/php/php_if_operators.asp" title="PHP if è¿ç®—ç¬¦">PHP if è¿ç®—ç¬¦</a></li>
+<li><a href="php_if_else_if.asp.htm" tppabs="https://www.w3school.com.cn/php/php_if_else_if.asp" title="PHP if...else è¯­å¥">PHP if...else</a></li>
+<li><a href="php_if_shorthand.asp.htm" tppabs="https://www.w3school.com.cn/php/php_if_shorthand.asp" title="PHP ç®€å†™ if">PHP ç®€å†™ if</a></li>
+<li><a href="php_if_nested.asp.htm" tppabs="https://www.w3school.com.cn/php/php_if_nested.asp" title="PHP åµŒå¥— if è¯­å¥">PHP åµŒå¥— if</a></li>
+<li><a href="php_switch.asp.htm" tppabs="https://www.w3school.com.cn/php/php_switch.asp" title="PHP switch è¯­å¥">PHP switch</a></li>
+<li><a href="php_looping.asp.htm" tppabs="https://www.w3school.com.cn/php/php_looping.asp" title="PHP å¾ªçŽ¯">PHP å¾ªçŽ¯</a></li>
+<li><a href="php_looping_while.asp.htm" tppabs="https://www.w3school.com.cn/php/php_looping_while.asp" title="PHP while å¾ªçŽ¯">PHP While å¾ªçŽ¯</a></li>
+<li><a href="php_looping_do_while.asp.htm" tppabs="https://www.w3school.com.cn/php/php_looping_do_while.asp" title="PHP do while å¾ªçŽ¯">PHP do while å¾ªçŽ¯</a></li>
+<li><a href="php_looping_for.asp.htm" tppabs="https://www.w3school.com.cn/php/php_looping_for.asp" title="PHP for å¾ªçŽ¯">PHP for å¾ªçŽ¯</a></li>
+<li><a href="php_looping_foreach.asp.htm" tppabs="https://www.w3school.com.cn/php/php_looping_foreach.asp" title="PHP foreach å¾ªçŽ¯">PHP foreach å¾ªçŽ¯</a></li>
+<li><a href="php_looping_break.asp.htm" tppabs="https://www.w3school.com.cn/php/php_looping_break.asp" title="PHP Break">PHP Break</a></li>
+<li><a href="php_looping_continue.asp.htm" tppabs="https://www.w3school.com.cn/php/php_looping_continue.asp" title="PHP Continue">PHP Continue</a></li>
+<li><a href="php_functions.asp.htm" tppabs="https://www.w3school.com.cn/php/php_functions.asp" title="PHP å‡½æ•°">PHP å‡½æ•°</a></li>
+<li><a href="php_arrays.asp.htm" tppabs="https://www.w3school.com.cn/php/php_arrays.asp" title="PHP æ•°ç»„">PHP æ•°ç»„</a></li>
+<li><a href="php_arrays_indexed.asp.htm" tppabs="https://www.w3school.com.cn/php/php_arrays_indexed.asp" title="PHP ç´¢å¼•æ•°ç»„">PHP ç´¢å¼•æ•°ç»„</a></li>
+<li><a href="php_arrays_associative.asp.htm" tppabs="https://www.w3school.com.cn/php/php_arrays_associative.asp" title="PHP å…³è”æ•°ç»„">PHP å…³è”æ•°ç»„</a></li>
+<li><a href="php_arrays_create.asp.htm" tppabs="https://www.w3school.com.cn/php/php_arrays_create.asp" title="PHP åˆ›å»ºæ•°ç»„">PHP åˆ›å»ºæ•°ç»„</a></li>
+<li><a href="php_arrays_access.asp.htm" tppabs="https://www.w3school.com.cn/php/php_arrays_access.asp" title="PHP è®¿é—®æ•°ç»„">PHP è®¿é—®æ•°ç»„</a></li>
+<li><a href="php_arrays_update.asp.htm" tppabs="https://www.w3school.com.cn/php/php_arrays_update.asp" title="PHP æ›´æ–°æ•°ç»„é¡¹">PHP æ›´æ–°æ•°ç»„é¡¹</a></li>
+<li><a href="php_arrays_add.asp.htm" tppabs="https://www.w3school.com.cn/php/php_arrays_add.asp" title="PHP æ·»åŠ æ•°ç»„é¡¹">PHP æ·»åŠ æ•°ç»„é¡¹</a></li>
+<li><a href="php_arrays_remove.asp.htm" tppabs="https://www.w3school.com.cn/php/php_arrays_remove.asp" title="PHP åˆ é™¤æ•°ç»„é¡¹">PHP åˆ é™¤æ•°ç»„é¡¹</a></li>
+<li><a href="php_arrays_sort.asp.htm" tppabs="https://www.w3school.com.cn/php/php_arrays_sort.asp" title="PHP æ•°ç»„æŽ’åº">PHP æ•°ç»„æŽ’åº</a></li>
+<li><a href="php_arrays_multidimensional.asp.htm" tppabs="https://www.w3school.com.cn/php/php_arrays_multidimensional.asp" title="PHP å¤šç»´æ•°ç»„">PHP å¤šç»´æ•°ç»„</a></li>
+<li><a href="php_arrays_functions.asp.htm" tppabs="https://www.w3school.com.cn/php/php_arrays_functions.asp" title="PHP æ•°ç»„å‡½æ•°">PHP æ•°ç»„å‡½æ•°</a></li>
+<li><a href="php_superglobals.asp.htm" tppabs="https://www.w3school.com.cn/php/php_superglobals.asp" title="PHP å…¨å±€å˜é‡ - è¶…å…¨å±€å˜é‡">PHP è¶…å…¨å±€å˜é‡</a></li>
+<li><a href="php_superglobals_globals.asp.htm" tppabs="https://www.w3school.com.cn/php/php_superglobals_globals.asp" title="PHP $GLOBALS">PHP $GLOBALS</a></li>
+<li><a href="php_superglobals_server.asp.htm" tppabs="https://www.w3school.com.cn/php/php_superglobals_server.asp" title="PHP $_SERVER">PHP $_SERVER</a></li>
+<li><a href="php_superglobals_request.asp.htm" tppabs="https://www.w3school.com.cn/php/php_superglobals_request.asp" title="PHP $_REQUEST">PHP $_REQUEST</a></li>
+<li><a href="php_superglobals_post.asp.htm" tppabs="https://www.w3school.com.cn/php/php_superglobals_post.asp" title="PHP $_POST">PHP $_POST</a></li>
+<li><a href="php_superglobals_get.asp.htm" tppabs="https://www.w3school.com.cn/php/php_superglobals_get.asp" title="PHP $_GET">PHP $_GET</a></li>
+<li><a href="php_regex.asp.htm" tppabs="https://www.w3school.com.cn/php/php_regex.asp" title="PHP æ­£åˆ™è¡¨è¾¾å¼">PHP æ­£åˆ™è¡¨è¾¾å¼</a></li>
+</ul>
+<h2>PHP è¡¨å•</h2>
+<ul>
+<li><a href="php_forms.asp.htm" tppabs="https://www.w3school.com.cn/php/php_forms.asp" title="PHP è¡¨å•å¤„ç†">PHP è¡¨å•å¤„ç†</a></li>
+<li><a href="php_form_validation.asp.htm" tppabs="https://www.w3school.com.cn/php/php_form_validation.asp" title="PHP è¡¨å•éªŒè¯">PHP è¡¨å•éªŒè¯</a></li>
+<li><a href="php_form_required.asp.htm" tppabs="https://www.w3school.com.cn/php/php_form_required.asp" title="PHP è¡¨å• - å¿…å¡«å­—æ®µ">PHP è¡¨å•å¿…å¡«å­—æ®µ</a></li>
+<li><a href="php_form_url_email.asp.htm" tppabs="https://www.w3school.com.cn/php/php_form_url_email.asp" title="PHP è¡¨å• - éªŒè¯ç”µå­é‚®ä»¶å’Œ URL">PHP è¡¨å• URL/E-mail</a></li>
+<li><a href="php_form_complete.asp.htm" tppabs="https://www.w3school.com.cn/php/php_form_complete.asp" title="PHP å®Œæ•´è¡¨å•å®žä¾‹">PHP å®Œæ•´è¡¨å•å®žä¾‹</a></li>
+</ul>
+<h2>PHP é«˜çº§æ•™ç¨‹</h2>
+<ul>
+<li><a href="php_date.asp.htm" tppabs="https://www.w3school.com.cn/php/php_date.asp" title="PHP æ—¥æœŸå’Œæ—¶é—´">PHP æ—¥æœŸå’Œæ—¶é—´</a></li>
+<li><a href="php_includes.asp.htm" tppabs="https://www.w3school.com.cn/php/php_includes.asp" title="PHP åŒ…å«æ–‡ä»¶">PHP åŒ…å«æ–‡ä»¶</a></li>
+<li><a href="php_file.asp.htm" tppabs="https://www.w3school.com.cn/php/php_file.asp" title="PHP æ–‡ä»¶å¤„ç†">PHP æ–‡ä»¶å¤„ç†</a></li>
+<li><a href="php_file_open.asp.htm" tppabs="https://www.w3school.com.cn/php/php_file_open.asp" title="PHP æ–‡ä»¶æ‰“å¼€/è¯»å–/å…³é—­">PHP æ–‡ä»¶æ‰“å¼€/è¯»å–</a></li>
+<li><a href="php_file_create.asp.htm" tppabs="https://www.w3school.com.cn/php/php_file_create.asp" title="PHP æ–‡ä»¶åˆ›å»º/å†™å…¥">PHP æ–‡ä»¶åˆ›å»º/å†™å…¥</a></li>
+<li><a href="php_file_upload.asp.htm" tppabs="https://www.w3school.com.cn/php/php_file_upload.asp" title="PHP æ–‡ä»¶ä¸Šä¼ ">PHP æ–‡ä»¶ä¸Šä¼ </a></li>
+<li><a href="php_cookies.asp.htm" tppabs="https://www.w3school.com.cn/php/php_cookies.asp" title="PHP Cookie">PHP Cookie</a></li>
+<li><a href="php_sessions.asp.htm" tppabs="https://www.w3school.com.cn/php/php_sessions.asp" title="PHP ä¼šè¯">PHP ä¼šè¯</a></li>
+<li><a href="php_filter.asp.htm" tppabs="https://www.w3school.com.cn/php/php_filter.asp" title="PHP è¿‡æ»¤å™¨">PHP è¿‡æ»¤å™¨</a></li>
+<li><a href="php_filter_advanced.asp.htm" tppabs="https://www.w3school.com.cn/php/php_filter_advanced.asp" title="PHP è¿‡æ»¤å™¨è¿›é˜¶">PHP è¿‡æ»¤å™¨è¿›é˜¶</a></li>
+<li><a href="php_callback_functions.asp.htm" tppabs="https://www.w3school.com.cn/php/php_callback_functions.asp" title="PHP å›žè°ƒå‡½æ•°">PHP å›žè°ƒå‡½æ•°</a></li>
+<li><a href="php_json.asp.htm" tppabs="https://www.w3school.com.cn/php/php_json.asp" title="PHP å’Œ JSON">PHP JSON</a></li>
+<li><a href="php_exceptions.asp.htm" tppabs="https://www.w3school.com.cn/php/php_exceptions.asp" title="PHP å¼‚å¸¸">PHP å¼‚å¸¸</a></li>
+</ul>
+<h2>PHP OOP</h2>
+<ul>
+<li><a href="php_oop_what_is.asp.htm" tppabs="https://www.w3school.com.cn/php/php_oop_what_is.asp" title="PHP - ä»€ä¹ˆæ˜¯ OOPï¼Ÿ">PHP ä»€ä¹ˆæ˜¯ OOPï¼Ÿ</a></li>
+<li><a href="php_oop_classes_objects.asp.htm" tppabs="https://www.w3school.com.cn/php/php_oop_classes_objects.asp" title="PHP OOP - ç±»å’Œå¯¹è±¡">PHP ç±»/å¯¹è±¡</a></li>
+<li><a href="php_oop_constructor.asp.htm" tppabs="https://www.w3school.com.cn/php/php_oop_constructor.asp" title="PHP OOP - æž„é€ å‡½æ•°">PHP æž„é€ å‡½æ•°</a></li>
+<li><a href="php_oop_destructor.asp.htm" tppabs="https://www.w3school.com.cn/php/php_oop_destructor.asp" title="PHP OOP - æžæž„å‡½æ•°">PHP æžæž„å‡½æ•°</a></li>
+<li><a href="php_oop_access_modifiers.asp.htm" tppabs="https://www.w3school.com.cn/php/php_oop_access_modifiers.asp" title="PHP OOP - è®¿é—®ä¿®é¥°ç¬¦">PHP è®¿é—®ä¿®é¥°ç¬¦</a></li>
+<li><a href="php_oop_inheritance.asp.htm" tppabs="https://www.w3school.com.cn/php/php_oop_inheritance.asp" title="PHP OOP - ç»§æ‰¿">PHP ç»§æ‰¿</a></li>
+<li><a href="php_oop_constants.asp.htm" tppabs="https://www.w3school.com.cn/php/php_oop_constants.asp" title="PHP OOP - ç±»å¸¸é‡">PHP ç±»å¸¸é‡</a></li>
+<li><a href="php_oop_classes_abstract.asp.htm" tppabs="https://www.w3school.com.cn/php/php_oop_classes_abstract.asp" title="PHP OOP - æŠ½è±¡ç±»">PHP æŠ½è±¡ç±»</a></li>
+<li><a href="php_oop_interfaces.asp.htm" tppabs="https://www.w3school.com.cn/php/php_oop_interfaces.asp" title="PHP OOP - æŽ¥å£">PHP æŽ¥å£</a></li>
+<li><a href="php_oop_traits.asp.htm" tppabs="https://www.w3school.com.cn/php/php_oop_traits.asp" title="PHP OOP - Trait">PHP Trait</a></li>
+<li><a href="php_oop_static_methods.asp.htm" tppabs="https://www.w3school.com.cn/php/php_oop_static_methods.asp" title="PHP OOP - é™æ€æ–¹æ³•">PHP é™æ€æ–¹æ³•</a></li>
+<li><a href="php_oop_static_properties.asp.htm" tppabs="https://www.w3school.com.cn/php/php_oop_static_properties.asp" title="PHP OOP - é™æ€å±žæ€§">PHP é™æ€å±žæ€§</a></li>
+<li><a href="php_namespaces.asp.htm" tppabs="https://www.w3school.com.cn/php/php_namespaces.asp" title="PHP OOP - å‘½åç©ºé—´">PHP å‘½åç©ºé—´</a></li>
+<li><a href="php_iterables.asp.htm" tppabs="https://www.w3school.com.cn/php/php_iterables.asp" title="PHP Iterable">PHP Iterable</a></li>
+</ul>
+<h2>PHP æ•°æ®åº“</h2>
+<ul>
+<li><a href="php_mysql_intro.asp.htm" tppabs="https://www.w3school.com.cn/php/php_mysql_intro.asp" title="PHP MySQL æ•°æ®åº“">MySQL æ•°æ®åº“</a></li>
+<li><a href="php_mysql_connect.asp.htm" tppabs="https://www.w3school.com.cn/php/php_mysql_connect.asp" title="PHP è¿žæŽ¥ MySQL">MySQL è¿žæŽ¥</a></li>
+<li><a href="php_mysql_create.asp.htm" tppabs="https://www.w3school.com.cn/php/php_mysql_create.asp" title="PHP åˆ›å»º MySQL æ•°æ®åº“">MySQL åˆ›å»º DB</a></li>
+<li><a href="php_mysql_create_table.asp.htm" tppabs="https://www.w3school.com.cn/php/php_mysql_create_table.asp" title="PHP MySQL åˆ›å»ºè¡¨æ ¼">MySQL åˆ›å»ºè¡¨æ ¼</a></li>
+<li><a href="php_mysql_insert.asp.htm" tppabs="https://www.w3school.com.cn/php/php_mysql_insert.asp" title="PHP MySQL æ’å…¥æ•°æ®">MySQL æ’å…¥æ•°æ®</a></li>
+<li><a href="php_mysql_insert_lastid.asp.htm" tppabs="https://www.w3school.com.cn/php/php_mysql_insert_lastid.asp" title="PHP MySQL èŽ·å–æœ€åŽæ’å…¥çš„ ID">MySQL èŽ·å–æœ€åŽçš„ ID</a></li>
+<li><a href="php_mysql_insert_multiple.asp.htm" tppabs="https://www.w3school.com.cn/php/php_mysql_insert_multiple.asp" title="PHP MySQL æ’å…¥å¤šæ¡è®°å½•">MySQL æ’å…¥å¤šæ¡è®°å½•</a></li>
+<li><a href="php_mysql_prepared_statements.asp.htm" tppabs="https://www.w3school.com.cn/php/php_mysql_prepared_statements.asp" title="PHP MySQL Prepared è¯­å¥">MySQL Prepared</a></li>
+<li><a href="php_mysql_select.asp.htm" tppabs="https://www.w3school.com.cn/php/php_mysql_select.asp" title="PHP MySQL é€‰å–æ•°æ®">MySQL é€‰å–æ•°æ®</a></li>
+<li><a href="php_mysql_select_where.asp.htm" tppabs="https://www.w3school.com.cn/php/php_mysql_select_where.asp" title="PHP MySQL ä½¿ç”¨ WHERE å­å¥">MySQL WHERE</a></li>
+<li><a href="php_mysql_select_orderby.asp.htm" tppabs="https://www.w3school.com.cn/php/php_mysql_select_orderby.asp" title="PHP MySQL ä½¿ç”¨ ORDER BY å­å¥">MySQL ORDER BY</a></li>
+<li><a href="php_mysql_delete.asp.htm" tppabs="https://www.w3school.com.cn/php/php_mysql_delete.asp" title="PHP MySQL åˆ é™¤æ•°æ®">MySQL åˆ é™¤æ•°æ®</a></li>
+<li><a href="php_mysql_update.asp.htm" tppabs="https://www.w3school.com.cn/php/php_mysql_update.asp" title="PHP MySQL æ›´æ–°æ•°æ®">MySQL æ›´æ–°æ•°æ®</a></li>
+<li><a href="php_mysql_select_limit.asp.htm" tppabs="https://www.w3school.com.cn/php/php_mysql_select_limit.asp" title="PHP MySQL é™åˆ¶æ•°æ®é€‰æ‹©">MySQL é™åˆ¶æ•°æ®</a></li>
+</ul>
+<h2>PHP XML</h2>
+<ul>
+<li><a href="php_xml_parsers.asp.htm" tppabs="https://www.w3school.com.cn/php/php_xml_parsers.asp" title="PHP XML è§£æžå™¨">PHP XML è§£æžå™¨</a></li>
+<li><a href="php_xml_simplexml_read.asp.htm" tppabs="https://www.w3school.com.cn/php/php_xml_simplexml_read.asp" title="PHP SimpleXML è§£æžå™¨">PHP SimpleXML è§£æžå™¨</a></li>
+<li><a href="php_xml_simplexml_get.asp.htm" tppabs="https://www.w3school.com.cn/php/php_xml_simplexml_get.asp" title="PHP SimpleXML - èŽ·å–èŠ‚ç‚¹/å±žæ€§å€¼">PHP SimpleXML - èŽ·å–</a></li>
+<li><a href="php_xml_parser_expat.asp.htm" tppabs="https://www.w3school.com.cn/php/php_xml_parser_expat.asp" title="PHP XML Expat è§£æžå™¨">PHP XML Expat</a></li>
+<li><a href="php_xml_dom.asp.htm" tppabs="https://www.w3school.com.cn/php/php_xml_dom.asp" title="PHP XML DOM è§£æžå™¨">PHP XML DOM è§£æžå™¨</a></li>
+</ul>
+<h2>PHP å’Œ AJAX</h2>
+<ul>
+<li><a href="php_ajax_intro.asp.htm" tppabs="https://www.w3school.com.cn/php/php_ajax_intro.asp" title="PHP - AJAX ç®€ä»‹">AJAX ç®€ä»‹</a></li>
+<li><a href="php_ajax_php.asp.htm" tppabs="https://www.w3school.com.cn/php/php_ajax_php.asp" title="PHP - AJAX ä¸Ž PHP">AJAX PHP</a></li>
+<li><a href="php_ajax_database.asp.htm" tppabs="https://www.w3school.com.cn/php/php_ajax_database.asp" title="PHP - AJAX ä¸Ž MySQL">AJAX æ•°æ®åº“</a></li>
+<li><a href="php_ajax_xml.asp.htm" tppabs="https://www.w3school.com.cn/php/php_ajax_xml.asp" title="PHP å®žä¾‹ - AJAX ä¸Ž XML">AJAX XML</a></li>
+<li><a href="php_ajax_livesearch.asp.htm" tppabs="https://www.w3school.com.cn/php/php_ajax_livesearch.asp" title="PHP å®žä¾‹ - AJAX å®žæ—¶æœç´¢">AJAX å®žæ—¶æœç´¢</a></li>
+<li><a href="php_ajax_poll.asp.htm" tppabs="https://www.w3school.com.cn/php/php_ajax_poll.asp" title="PHP å®žä¾‹ - AJAX æŠ•ç¥¨">AJAX Poll</a></li>
+</ul>
+<h2>PHP å‚è€ƒæ‰‹å†Œ</h2>
+<ul>
+<li><a href="php_ref.asp.htm" tppabs="https://www.w3school.com.cn/php/php_ref.asp" title="PHP å‚è€ƒæ‰‹å†Œ">PHP å‚è€ƒæ‰‹å†Œ</a></li>
+<li><a href="php_ref_array.asp.htm" tppabs="https://www.w3school.com.cn/php/php_ref_array.asp" title="PHP Array å‡½æ•°">PHP Array</a></li>
+<li><a href="php_ref_calendar.asp.htm" tppabs="https://www.w3school.com.cn/php/php_ref_calendar.asp" title="PHP Calendar å‡½æ•°">PHP Calendar</a></li>
+<li class="currentLink"><a href="php_ref_date.asp.htm" tppabs="https://www.w3school.com.cn/php/php_ref_date.asp" title="PHP Date / Time å‡½æ•°">PHP Date</a></li>
+<li><a href="php_ref_directory.asp.htm" tppabs="https://www.w3school.com.cn/php/php_ref_directory.asp" title="PHP Directory å‡½æ•°">PHP Directory</a></li>
+<li><a href="php_ref_error.asp.htm" tppabs="https://www.w3school.com.cn/php/php_ref_error.asp" title="PHP Error å’Œ Logging å‡½æ•°">PHP Error</a></li>
+<li><a href="php_ref_exception.asp.htm" tppabs="https://www.w3school.com.cn/php/php_ref_exception.asp" title="PHP Exception å‚è€ƒæ‰‹å†Œ">PHP Exception</a></li>
+<li><a href="php_ref_filesystem.asp.htm" tppabs="https://www.w3school.com.cn/php/php_ref_filesystem.asp" title="PHP Filesystem å‡½æ•°">PHP Filesystem</a></li>
+<li><a href="php_ref_filter.asp.htm" tppabs="https://www.w3school.com.cn/php/php_ref_filter.asp" title="PHP Filter å‡½æ•°">PHP Filter</a></li>
+<li><a href="php_ref_ftp.asp.htm" tppabs="https://www.w3school.com.cn/php/php_ref_ftp.asp" title="PHP FTP å‡½æ•°">PHP FTP</a></li>
+<li><a href="php_ref_http.asp.htm" tppabs="https://www.w3school.com.cn/php/php_ref_http.asp" title="PHP HTTP å‡½æ•°">PHP HTTP</a></li>
+<li><a href="php_ref_json.asp.htm" tppabs="https://www.w3school.com.cn/php/php_ref_json.asp" title="PHP JSON å‡½æ•°">PHP JSON</a></li>
+<li><a href="php_ref_libxml.asp.htm" tppabs="https://www.w3school.com.cn/php/php_ref_libxml.asp" title="PHP LibXML å‡½æ•°">PHP LibXML</a></li>
+<li><a href="php_ref_mail.asp.htm" tppabs="https://www.w3school.com.cn/php/php_ref_mail.asp" title="PHP Mail å‡½æ•°">PHP Mail</a></li>
+<li><a href="php_ref_math.asp.htm" tppabs="https://www.w3school.com.cn/php/php_ref_math.asp" title="PHP Math å‡½æ•°">PHP Math</a></li>
+<li><a href="php_ref_mysql.asp.htm" tppabs="https://www.w3school.com.cn/php/php_ref_mysql.asp" title="PHP MySQL å‡½æ•°">PHP MySQL</a></li>
+<li><a href="php_ref_mysqli.asp.htm" tppabs="https://www.w3school.com.cn/php/php_ref_mysqli.asp" title="PHP 5 MySQLi å‡½æ•°">PHP MySQLi</a></li>
+<li><a href="php_ref_network.asp.htm" tppabs="https://www.w3school.com.cn/php/php_ref_network.asp" title="PHP Network å‡½æ•°">PHP Network</a></li>
+<li><a href="php_ref_regex.asp.htm" tppabs="https://www.w3school.com.cn/php/php_ref_regex.asp" title="PHP æ­£åˆ™è¡¨è¾¾å¼å‡½æ•°">PHP RegEx</a></li>
+<li><a href="php_ref_simplexml.asp.htm" tppabs="https://www.w3school.com.cn/php/php_ref_simplexml.asp" title="PHP SimpleXML å‡½æ•°">PHP SimpleXML</a></li>
+<li><a href="php_ref_stream.asp.htm" tppabs="https://www.w3school.com.cn/php/php_ref_stream.asp" title="PHP Stream å‡½æ•°">PHP Stream</a></li>
+<li><a href="php_ref_string.asp.htm" tppabs="https://www.w3school.com.cn/php/php_ref_string.asp" title="PHP String å‡½æ•°">PHP String</a></li>
+<li><a href="php_ref_xml.asp.htm" tppabs="https://www.w3school.com.cn/php/php_ref_xml.asp" title="PHP XML Parser å‡½æ•°">PHP XML</a></li>
+<li><a href="php_ref_zip.asp.htm" tppabs="https://www.w3school.com.cn/php/php_ref_zip.asp" title="PHP Zip File å‡½æ•°">PHP Zip</a></li>
+<li><a href="php_ref_variable_handling.asp.htm" tppabs="https://www.w3school.com.cn/php/php_ref_variable_handling.asp" title="PHP å˜é‡å¤„ç†å‡½æ•°">PHP å˜é‡å¤„ç†</a></li>
+<li><a href="php_ref_output_control.asp.htm" tppabs="https://www.w3school.com.cn/php/php_ref_output_control.asp" title="PHP è¾“å‡ºæŽ§åˆ¶å‡½æ•°">PHP è¾“å‡ºæŽ§åˆ¶</a></li>
+<li><a href="php_ref_timezones.asp.htm" tppabs="https://www.w3school.com.cn/php/php_ref_timezones.asp" title="PHP æ—¶åŒº">PHP æ—¶åŒº</a></li>
+<li><a href="php_ref_misc.asp.htm" tppabs="https://www.w3school.com.cn/php/php_ref_misc.asp" title="PHP æ‚é¡¹å‡½æ•°">PHP æ‚é¡¹</a></li>
+<li><a href="php_ref_keywords.asp.htm" tppabs="https://www.w3school.com.cn/php/php_ref_keywords.asp" title="PHP å…³é”®è¯">PHP å…³é”®è¯</a></li>
+</ul>
+<h2>PHP å®žä¾‹</h2>
+<ul>
+<li><a href="php_examples.asp.htm" tppabs="https://www.w3school.com.cn/php/php_examples.asp" title="PHP å®žä¾‹">PHP å®žä¾‹</a></li>
+<li><a href="php_quiz.asp.htm" tppabs="https://www.w3school.com.cn/php/php_quiz.asp" title="PHP æµ‹éªŒ">PHP æµ‹éªŒ</a></li>
+</ul>
+</div><div id="selected">
+<h2>è¯¾ç¨‹æŽ¨èï¼š</h2>
+<ul>
+<li><a href="../howto/index.asp.htm" tppabs="https://www.w3school.com.cn/howto/index.asp" title="W3School ç™¾å®ç®±">W3School ç™¾å®ç®±</a></li>
+<li><a href="../java/index.asp.htm" tppabs="https://www.w3school.com.cn/java/index.asp" title="Java æ•™ç¨‹">Java æ•™ç¨‹</a></li>
+</ul>
+
+</div>
+
+</div>
+
+<div id="maincontent">
+
+<h1>PHP Date / Time å‡½æ•°</h1>
+
+<div class="prenextnav">
+<ul class="prenext">
+<li class="pre"><a href="php_ref_calendar.asp.htm" tppabs="https://www.w3school.com.cn/php/php_ref_calendar.asp" title="PHP Calendar å‡½æ•°">PHP Calendar</a></li>
+<li class="next"><a href="php_ref_directory.asp.htm" tppabs="https://www.w3school.com.cn/php/php_ref_directory.asp" title="PHP Directory å‡½æ•°">PHP Directory</a></li>
+</ul>
+</div>
+
+
+
+<div>
+<h2>PHP Date/Time ç®€ä»‹</h2>
+
+<p>Date/Time å‡½æ•°å…è®¸æ‚¨ä»Ž PHP è„šæœ¬è¿è¡Œçš„æœåŠ¡å™¨ä¸ŠèŽ·å–æ—¥æœŸå’Œæ—¶é—´ã€‚æ‚¨å¯ä»¥ä½¿ç”¨ Date/Time å‡½æ•°é€šè¿‡ä¸åŒçš„æ–¹å¼æ¥æ ¼å¼åŒ–æ—¥æœŸå’Œæ—¶é—´ã€‚</p>
+
+<p class="note"><span>æ³¨é‡Šï¼š</span>è¿™äº›å‡½æ•°ä¾èµ–äºŽæœåŠ¡å™¨çš„æœ¬åœ°è®¾ç½®ã€‚ä½¿ç”¨è¿™äº›å‡½æ•°æ—¶è¯·è®°ä½è¦è€ƒè™‘å¤ä»¤æ—¶å’Œé—°å¹´ã€‚</p>
+</div>
+
+
+
+<div>
+<h2>å®‰è£…</h2>
+
+<p>PHP Date/Time å‡½æ•°æ˜¯ PHP æ ¸å¿ƒçš„ç»„æˆéƒ¨åˆ†ã€‚æ— éœ€å®‰è£…å³å¯ä½¿ç”¨è¿™äº›å‡½æ•°ã€‚</p>
+</div>
+
+
+
+<div>
+<h2>Runtime é…ç½®</h2>
+
+<p>Date/Time å‡½æ•°çš„è¡Œä¸ºå—åˆ° php.ini ä¸­è®¾ç½®çš„å½±å“ï¼š</p>
+
+<table class="ref">
+<tr>
+<th>åç§°</th>
+<th>æè¿°</th>
+<th>é»˜è®¤</th>
+<th>PHP ç‰ˆæœ¬</th>
+</tr>
+
+<tr>
+<td>date.timezone</td>
+<td>é»˜è®¤æ—¶åŒºï¼ˆæ‰€æœ‰çš„ Date/Time å‡½æ•°ä½¿ç”¨è¯¥é€‰é¡¹ï¼‰</td>
+<td>&quot;&quot;</td>
+<td>PHP 5.1</td>
+</tr>
+
+<tr>
+<td>date.default_latitude</td>
+<td>é»˜è®¤çº¬åº¦ï¼ˆdate_sunrise() å’Œ date_sunset() ä½¿ç”¨è¯¥é€‰é¡¹ï¼‰</td>
+<td>&quot;31.7667&quot;</td>
+<td>PHP 5.0</td>
+</tr>
+
+<tr>
+<td>date.default_longitude</td>
+<td>é»˜è®¤ç»åº¦ï¼ˆdate_sunrise() å’Œ date_sunset() ä½¿ç”¨è¯¥é€‰é¡¹ï¼‰</td>
+<td>&quot;35.2333&quot;</td>
+<td>PHP 5.0</td>
+</tr>
+
+<tr>
+<td>date.sunrise_zenith</td>
+<td>é»˜è®¤æ—¥å‡ºå¤©é¡¶ï¼ˆdate_sunrise() å’Œ date_sunset() ä½¿ç”¨è¯¥é€‰é¡¹ï¼‰</td>
+<td>&quot;90.83&quot;</td>
+<td>PHP 5.0</td>
+</tr>
+
+<tr>
+<td>date.sunset_zenith</td>
+<td>é»˜è®¤æ—¥è½å¤©é¡¶ï¼ˆdate_sunrise() å’Œ date_sunset() ä½¿ç”¨è¯¥é€‰é¡¹ï¼‰</td>
+<td>&quot;90.83&quot;</td>
+<td>PHP 5.0</td>
+</tr>
+</table>
+</div>
+
+
+
+<div>
+<h2>PHP 5 Date/Time å‡½æ•°</h2>
+
+<table class="ref">
+<tr>
+<th>å‡½æ•°</th>
+<th>æè¿°</th>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/php/dom_obj_datetime-local.asp  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/php/dom_obj_datetime-local.asp'" tppabs="https://www.w3school.com.cn/php/func_date_checkdate.asp" title="PHP checkdate() å‡½æ•°">checkdate()</a></td>
+<td>éªŒè¯æ ¼åˆ©é«˜é‡Œæ—¥æœŸã€‚</td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/php/dom_obj_email.asp  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/php/dom_obj_email.asp'" tppabs="https://www.w3school.com.cn/php/func_date_date_add.asp" title="PHP date_add() å‡½æ•°">date_add()</a></td>
+<td>æ·»åŠ æ—¥ã€æœˆã€å¹´ã€æ—¶ã€åˆ†å’Œç§’åˆ°æ—¥æœŸã€‚</td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/php/dom_obj_input_image.asp  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/php/dom_obj_input_image.asp'" tppabs="https://www.w3school.com.cn/php/func_date_create_from_format.asp" title="PHP date_create_from_format() å‡½æ•°">date_create_from_format()</a></td>
+<td>è¿”å›žæ ¹æ®æŒ‡å®šæ ¼å¼è¿›è¡Œæ ¼å¼åŒ–çš„æ–°çš„ DateTime å¯¹è±¡ã€‚</td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/php/dom_obj_month.asp  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/php/dom_obj_month.asp'" tppabs="https://www.w3school.com.cn/php/func_date_date_create.asp" title="PHP date_create() å‡½æ•°">date_create()</a></td>
+<td>è¿”å›žæ–°çš„ DateTime å¯¹è±¡ã€‚</td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/php/dom_obj_number.asp  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/php/dom_obj_number.asp'" tppabs="https://www.w3school.com.cn/php/func_date_date_set.asp" title="PHP date_date_set() å‡½æ•°">date_date_set()</a></td>
+<td>è®¾ç½®æ–°æ—¥æœŸã€‚</td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/php/dom_obj_range.asp  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/php/dom_obj_range.asp'" tppabs="https://www.w3school.com.cn/php/func_date_default_timezone_get.asp" title="PHP date_default_timezone_get() å‡½æ•°">date_default_timezone_get()</a></td>
+<td>è¿”å›žç”±æ‰€æœ‰çš„ Date/Time å‡½æ•°ä½¿ç”¨çš„é»˜è®¤æ—¶åŒºã€‚</td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/php/dom_obj_search.asp  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/php/dom_obj_search.asp'" tppabs="https://www.w3school.com.cn/php/func_date_default_timezone_set.asp" title="PHP date_default_timezone_set() å‡½æ•°">date_default_timezone_set()</a></td>
+<td>è®¾ç½®ç”±æ‰€æœ‰çš„ Date/Time å‡½æ•°ä½¿ç”¨çš„é»˜è®¤æ—¶åŒºã€‚</td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/php/dom_obj_input_time.asp  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/php/dom_obj_input_time.asp'" tppabs="https://www.w3school.com.cn/php/func_date_date_diff.asp" title="PHP date_diff() å‡½æ•°">date_diff()</a></td>
+<td>è¿”å›žä¸¤ä¸ªæ—¥æœŸé—´çš„å·®å€¼ã€‚</td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/php/dom_obj_url.asp  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/php/dom_obj_url.asp'" tppabs="https://www.w3school.com.cn/php/func_date_date_format.asp" title="PHP date_format() å‡½æ•°">date_format()</a></td>
+<td>è¿”å›žæ ¹æ®æŒ‡å®šæ ¼å¼è¿›è¡Œæ ¼å¼åŒ–çš„æ—¥æœŸã€‚</td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/php/dom_obj_week.asp  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/php/dom_obj_week.asp'" tppabs="https://www.w3school.com.cn/php/func_date_get_last_errors.asp" title="PHP date_get_last_errors() å‡½æ•°">date_get_last_errors()</a></td>
+<td>è¿”å›žæ—¥æœŸå­—ç¬¦ä¸²ä¸­çš„è­¦å‘Š/é”™è¯¯ã€‚</td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/php/dom_obj_kbd.asp  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/php/dom_obj_kbd.asp'" tppabs="https://www.w3school.com.cn/php/func_date_interval_create_from_date_string.asp" title="PHP date_interval_create_from_date_string() å‡½æ•°">date_interval_create_from_date_string()</a></td>
+<td>ä»Žå­—ç¬¦ä¸²çš„ç›¸å…³éƒ¨åˆ†å»ºç«‹ DateIntervalã€‚</td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/php/dom_obj_label.asp  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/php/dom_obj_label.asp'" tppabs="https://www.w3school.com.cn/php/func_date_interval_format.asp" title="PHP date_interval_format() å‡½æ•°">date_interval_format()</a></td>
+<td>æ ¼å¼åŒ–æ—¶é—´é—´éš”ã€‚</td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/php/dom_obj_legend.asp  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/php/dom_obj_legend.asp'" tppabs="https://www.w3school.com.cn/php/func_date_isodate_set.asp" title="PHP date_isodate_set() å‡½æ•°">date_isodate_set()</a></td>
+<td>è®¾ç½® ISO æ—¥æœŸã€‚</td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/php/dom_obj_li.asp  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/php/dom_obj_li.asp'" tppabs="https://www.w3school.com.cn/php/func_date_modify.asp" title="PHP date_modify() å‡½æ•°">date_modify()</a></td>
+<td>ä¿®æ”¹æ—¶é—´æˆ³ã€‚</td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/php/dom_obj_map.asp  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/php/dom_obj_map.asp'" tppabs="https://www.w3school.com.cn/php/func_date_offset_get.asp" title="PHP date_offset_get() å‡½æ•°">date_offset_get()</a></td>
+<td>è¿”å›žæ—¶åŒºåç§»ã€‚</td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/php/dom_obj_mark.asp  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/php/dom_obj_mark.asp'" tppabs="https://www.w3school.com.cn/php/func_date_parse_from_format.asp" title="PHP date_parse_from_format() å‡½æ•°">date_parse_from_format()</a></td>
+<td>æ ¹æ®æŒ‡å®šçš„æ ¼å¼è¿”å›žå¸¦æœ‰å…³äºŽæŒ‡å®šæ—¥æœŸçš„è¯¦ç»†ä¿¡æ¯çš„å…³è”æ•°ç»„ã€‚</td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/php/dom_obj_menu.asp  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/php/dom_obj_menu.asp'" tppabs="https://www.w3school.com.cn/php/func_date_date_parse.asp" title="PHP date_parse() å‡½æ•°">date_parse()</a></td>
+<td>è¿”å›žå¸¦æœ‰å…³äºŽæŒ‡å®šæ—¥æœŸçš„è¯¦ç»†ä¿¡æ¯çš„å…³è”æ•°ç»„ã€‚</td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/php/dom_obj_menuitem.asp  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/php/dom_obj_menuitem.asp'" tppabs="https://www.w3school.com.cn/php/func_date_date_sub.asp" title="PHP date_sub() å‡½æ•°">date_sub()</a></td>
+<td>ä»ŽæŒ‡å®šæ—¥æœŸå‡åŽ»æ—¥ã€æœˆã€å¹´ã€æ—¶ã€åˆ†å’Œç§’ã€‚</td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/php/dom_obj_meter.asp  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/php/dom_obj_meter.asp'" tppabs="https://www.w3school.com.cn/php/func_date_sun_info.asp" title="PHP date_sun_info() å‡½æ•°">date_sun_info()</a></td>
+<td>è¿”å›žåŒ…å«æœ‰å…³æŒ‡å®šæ—¥æœŸä¸Žåœ°ç‚¹çš„æ—¥å‡º/æ—¥è½å’Œé»„æ˜å¼€å§‹/é»„æ˜ç»“æŸçš„ä¿¡æ¯çš„æ•°ç»„ã€‚</td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/php/dom_obj_nav.asp  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/php/dom_obj_nav.asp'" tppabs="https://www.w3school.com.cn/php/func_date_sunrise.asp" title="PHP date_sunrise() å‡½æ•°">date_sunrise()</a></td>
+<td>è¿”å›žæŒ‡å®šæ—¥æœŸä¸Žä½ç½®çš„æ—¥å‡ºæ—¶é—´ã€‚</td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/php/dom_obj_ol.asp  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/php/dom_obj_ol.asp'" tppabs="https://www.w3school.com.cn/php/func_date_sunset.asp" title="PHP date_sunset() å‡½æ•°">date_sunset()</a></td>
+<td>è¿”å›žæŒ‡å®šæ—¥æœŸä¸Žä½ç½®çš„æ—¥è½æ—¶é—´ã€‚</td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/php/dom_obj_optgroup.asp  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/php/dom_obj_optgroup.asp'" tppabs="https://www.w3school.com.cn/php/func_date_time_set.asp" title="PHP date_time_set() å‡½æ•°">date_time_set()</a></td>
+<td>è®¾ç½®æ—¶é—´ã€‚</td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/php/dom_obj_output.asp  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/php/dom_obj_output.asp'" tppabs="https://www.w3school.com.cn/php/func_date_timestamp_get.asp" title="PHP date_timestamp_get() å‡½æ•°">date_timestamp_get()</a></td>
+<td>è¿”å›ž Unix æ—¶é—´æˆ³ã€‚</td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/php/dom_obj_paragraph.asp  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/php/dom_obj_paragraph.asp'" tppabs="https://www.w3school.com.cn/php/func_date_timestamp_set.asp" title="PHP date_timestamp_set() å‡½æ•°">date_timestamp_set()</a></td>
+<td>è®¾ç½®åŸºäºŽ Unix æ—¶é—´æˆ³çš„æ—¥æœŸå’Œæ—¶é—´ã€‚</td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/php/dom_obj_param.asp  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/php/dom_obj_param.asp'" tppabs="https://www.w3school.com.cn/php/func_date_timezone_get.asp" title="PHP date_timezone_get() å‡½æ•°">date_timezone_get()</a></td>
+<td>è¿”å›žç»™å®š DateTime å¯¹è±¡çš„æ—¶åŒºã€‚</td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/php/dom_obj_pre.asp  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/php/dom_obj_pre.asp'" tppabs="https://www.w3school.com.cn/php/func_date_timezone_set.asp" title="PHP date_timezone_set() å‡½æ•°">date_timezone_set()</a></td>
+<td>è®¾ç½® DateTime å¯¹è±¡çš„æ—¶åŒºã€‚</td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/php/dom_obj_progress.asp  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/php/dom_obj_progress.asp'" tppabs="https://www.w3school.com.cn/php/func_date_date.asp" title="PHP date() å‡½æ•°">date()</a></td>
+<td>æ ¼å¼åŒ–æœ¬åœ°æ—¥æœŸå’Œæ—¶é—´ã€‚</td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/php/dom_obj_quote.asp  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/php/dom_obj_quote.asp'" tppabs="https://www.w3school.com.cn/php/func_date_getdate.asp" title="PHP getdate() å‡½æ•°">getdate()</a></td>
+<td>è¿”å›žæŸä¸ªæ—¶é—´æˆ³æˆ–è€…å½“å‰æœ¬åœ°çš„æ—¥æœŸ/æ—¶é—´çš„æ—¥æœŸ/æ—¶é—´ä¿¡æ¯ã€‚</td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/php/dom_obj_s.asp  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/php/dom_obj_s.asp'" tppabs="https://www.w3school.com.cn/php/func_date_gettimeofday.asp" title="PHP gettimeofday() å‡½æ•°">gettimeofday()</a></td>
+<td>è¿”å›žå½“å‰æ—¶é—´ã€‚</td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/php/dom_obj_samp.asp  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/php/dom_obj_samp.asp'" tppabs="https://www.w3school.com.cn/php/func_date_gmdate.asp" title="PHP gmdate() å‡½æ•°">gmdate()</a></td>
+<td>æ ¼å¼åŒ– GMT/UTC æ—¥æœŸå’Œæ—¶é—´ã€‚</td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/php/dom_obj_script.asp  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/php/dom_obj_script.asp'" tppabs="https://www.w3school.com.cn/php/func_date_gmmktime.asp" title="PHP gmmktime() å‡½æ•°">gmmktime()</a></td>
+<td>è¿”å›ž GMT æ—¥æœŸçš„ UNIX æ—¶é—´æˆ³ã€‚</td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/php/dom_obj_section.asp  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/php/dom_obj_section.asp'" tppabs="https://www.w3school.com.cn/php/func_date_gmstrftime.asp" title="PHP gmstrftime() å‡½æ•°">gmstrftime()</a></td>
+<td>æ ¹æ®åŒºåŸŸè®¾ç½®å¯¹ GMT/UTC æ—¥æœŸå’Œæ—¶é—´è¿›è¡Œæ ¼å¼åŒ–ã€‚</td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/php/dom_obj_small.asp  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/php/dom_obj_small.asp'" tppabs="https://www.w3school.com.cn/php/func_date_idate.asp" title="PHP idate() å‡½æ•°">idate()</a></td>
+<td>å°†æœ¬åœ°æ—¶é—´/æ—¥æœŸæ ¼å¼åŒ–ä¸ºæ•´æ•°ã€‚</td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/php/dom_obj_source.asp  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/php/dom_obj_source.asp'" tppabs="https://www.w3school.com.cn/php/func_date_localtime.asp" title="PHP localtime() å‡½æ•°">localtime()</a></td>
+<td>è¿”å›žæœ¬åœ°æ—¶é—´ã€‚</td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/php/dom_obj_span.asp  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/php/dom_obj_span.asp'" tppabs="https://www.w3school.com.cn/php/func_date_microtime.asp" title="PHP microtime() å‡½æ•°">microtime()</a></td>
+<td>è¿”å›žå½“å‰æ—¶é—´çš„å¾®ç§’æ•°ã€‚</td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/php/dom_obj_strong.asp  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/php/dom_obj_strong.asp'" tppabs="https://www.w3school.com.cn/php/func_date_mktime.asp" title="PHP mktime() å‡½æ•°">mktime()</a></td>
+<td>è¿”å›žæ—¥æœŸçš„ Unix æ—¶é—´æˆ³ã€‚</td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/php/dom_obj_sub.asp  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/php/dom_obj_sub.asp'" tppabs="https://www.w3school.com.cn/php/func_date_strftime.asp" title="PHP strftime() å‡½æ•°">strftime()</a></td>
+<td>æ ¹æ®åŒºåŸŸè®¾ç½®å¯¹æœ¬åœ°æ—¶é—´/æ—¥æœŸè¿›è¡Œæ ¼å¼åŒ–ã€‚</td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/php/dom_obj_summary.asp  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/php/dom_obj_summary.asp'" tppabs="https://www.w3school.com.cn/php/func_date_strptime.asp" title="PHP strptime() å‡½æ•°">strptime()</a></td>
+<td>è§£æžç”± strftime() ç”Ÿæˆçš„æ—¶é—´/æ—¥æœŸã€‚</td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/php/dom_obj_sup.asp  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/php/dom_obj_sup.asp'" tppabs="https://www.w3school.com.cn/php/func_date_strtotime.asp" title="PHP strtotime() å‡½æ•°">strtotime()</a></td>
+<td>å°†ä»»ä½•è‹±æ–‡æ–‡æœ¬çš„æ—¥æœŸæˆ–æ—¶é—´æè¿°è§£æžä¸º Unix æ—¶é—´æˆ³ã€‚</td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/php/dom_obj_tbody.asp  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/php/dom_obj_tbody.asp'" tppabs="https://www.w3school.com.cn/php/func_date_time.asp" title="PHP time() å‡½æ•°">time()</a></td>
+<td>è¿”å›žå½“å‰æ—¶é—´çš„ Unix æ—¶é—´æˆ³ã€‚</td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/php/dom_obj_tfoot.asp  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/php/dom_obj_tfoot.asp'" tppabs="https://www.w3school.com.cn/php/func_date_timezone_abbreviations_list.asp" title="PHP timezone_abbreviations_list() å‡½æ•°">timezone_abbreviations_list()</a></td>
+<td>è¿”å›žåŒ…å«å¤ä»¤æ—¶ã€åç§»é‡å’Œæ—¶åŒºåç§°çš„å…³è”æ•°ç»„ã€‚</td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/php/dom_obj_tablehead.asp  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/php/dom_obj_tablehead.asp'" tppabs="https://www.w3school.com.cn/php/func_date_timezone_identifiers_list.asp" title="PHP timezone_identifiers_list() å‡½æ•°">timezone_identifiers_list()</a></td>
+<td>è¿”å›žå¸¦æœ‰æ‰€æœ‰æ—¶åŒºæ ‡è¯†ç¬¦çš„ç´¢å¼•æ•°ç»„ã€‚</td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/php/dom_obj_thead.asp  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/php/dom_obj_thead.asp'" tppabs="https://www.w3school.com.cn/php/func_date_timezone_location_get.asp" title="PHP timezone_location_get() å‡½æ•°">timezone_location_get()</a></td>
+<td>è¿”å›žæŒ‡å®šæ—¶åŒºçš„ä½ç½®ä¿¡æ¯ã€‚</td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/php/dom_obj_time.asp  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/php/dom_obj_time.asp'" tppabs="https://www.w3school.com.cn/php/func_date_timezone_name_from_abbr.asp" title="PHP timezone_name_from_abbr() å‡½æ•°">timezone_name_from_abbr()</a></td>
+<td>æ ¹æ®æ—¶åŒºç¼©ç•¥è¯­è¿”å›žæ—¶åŒºåç§°ã€‚</td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/php/dom_obj_title.asp  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/php/dom_obj_title.asp'" tppabs="https://www.w3school.com.cn/php/func_date_timezone_name_get.asp" title="PHP timezone_name_get() å‡½æ•°">timezone_name_get()</a></td>
+<td>è¿”å›žæ—¶åŒºçš„åç§°ã€‚</td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/php/dom_obj_track.asp  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/php/dom_obj_track.asp'" tppabs="https://www.w3school.com.cn/php/func_date_timezone_offset_get.asp" title="PHP timezone_offset_get() å‡½æ•°">timezone_offset_get()</a></td>
+<td>è¿”å›žç›¸å¯¹äºŽ GMT çš„æ—¶åŒºåç§»ã€‚</td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/php/dom_obj_u.asp  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/php/dom_obj_u.asp'" tppabs="https://www.w3school.com.cn/php/func_date_timezone_open.asp" title="PHP timezone_open() å‡½æ•°">timezone_open()</a></td>
+<td>åˆ›å»ºæ–°çš„ DateTimeZone å¯¹è±¡ã€‚</td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/php/dom_obj_ul.asp  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/php/dom_obj_ul.asp'" tppabs="https://www.w3school.com.cn/php/func_date_timezone_transitions_get.asp" title="PHP timezone_transitions_get() å‡½æ•°">timezone_transitions_get()</a></td>
+<td>è¿”å›žæ—¶åŒºçš„æ‰€æœ‰è½¬æ¢ã€‚</td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/php/dom_obj_var.asp  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/php/dom_obj_var.asp'" tppabs="https://www.w3school.com.cn/php/func_date_timezone_version_get.asp" title="PHP timezone_version_get() å‡½æ•°">timezone_version_get()</a></td>
+<td>è¿”å›žæ—¶åŒºæ•°æ®åº“çš„ç‰ˆæœ¬ã€‚</td>
+</tr>
+</table>
+</div>
+
+
+
+<div>
+<h2>PHP 5 é¢„å®šä¹‰çš„ Date/Time å¸¸é‡</h2>
+
+<table class="ref">
+<tr>
+<th style="width: 35%;">å¸¸é‡</th>
+<th>æè¿°</th>
+</tr>
+
+<tr>
+<td>DATE_ATOM</td>
+<td>Atom ï¼ˆä¾‹å¦‚ï¼š2005-08-15T16:13:03+0000ï¼‰</td>
+</tr>
+
+<tr>
+<td>DATE_COOKIE</td>
+<td>HTTP Cookies ï¼ˆä¾‹å¦‚ï¼šSun, 14 Aug 2005 16:13:03 UTCï¼‰</td>
+</tr>
+
+<tr>
+<td>DATE_ISO8601</td>
+<td>ISO-8601 ï¼ˆä¾‹å¦‚ï¼š2005-08-14T16:13:03+0000ï¼‰</td>
+</tr>
+
+<tr>
+<td>DATE_RFC822</td>
+<td>RFC 822 ï¼ˆä¾‹å¦‚ï¼šSun, 14 Aug 2005 16:13:03 UTCï¼‰</td>
+</tr>
+
+<tr>
+<td>DATE_RFC850</td>
+<td>RFC 850 ï¼ˆä¾‹å¦‚ï¼šSunday, 14-Aug-05 16:13:03 UTCï¼‰</td>
+</tr>
+
+<tr>
+<td>DATE_RFC1036</td>
+<td>RFC 1036 ï¼ˆä¾‹å¦‚ï¼šSunday, 14-Aug-05 16:13:03 UTCï¼‰</td>
+</tr>
+
+<tr>
+<td>DATE_RFC1123</td>
+<td>RFC 1123 ï¼ˆä¾‹å¦‚ï¼šSun, 14 Aug 2005 16:13:03 UTCï¼‰</td>
+</tr>
+
+<tr>
+<td>DATE_RFC2822</td>
+<td>RFC 2822 ï¼ˆSun, 14 Aug 2005 16:13:03 +0000ï¼‰</td>
+</tr>
+
+<tr>
+<td>DATE_RSS</td>
+<td>RSS ï¼ˆSun, 14 Aug 2005 16:13:03 UTCï¼‰</td>
+</tr>
+
+<tr>
+<td>DATE_W3C</td>
+<td>World Wide Web Consortium ï¼ˆä¾‹å¦‚ï¼š 2005-08-14T16:13:03+0000ï¼‰</td>
+</tr>
+</table>
+</div>
+
+
+
+<div class="prenextnav">
+<ul class="prenext">
+<li class="pre"><a href="php_ref_calendar.asp.htm" tppabs="https://www.w3school.com.cn/php/php_ref_calendar.asp" title="PHP Calendar å‡½æ•°">PHP Calendar</a></li>
+<li class="next"><a href="php_ref_directory.asp.htm" tppabs="https://www.w3school.com.cn/php/php_ref_directory.asp" title="PHP Directory å‡½æ•°">PHP Directory</a></li>
+</ul>
+</div><div style="background-color:#fcfdf8; padding:0;">
+<script async src="../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" tppabs="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- W3School ÕýÎÄ¹ã¸æ -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:800px;height:250px"
+     data-ad-client="ca-pub-3381531532877742"
+     data-ad-slot="2086924285"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+</div>
+<!-- maincontent end -->
+
+<div id="sidebar">
+
+<div id="tools">
+<h5 id="tools_reference"><a href="php_ref.asp.htm" tppabs="https://www.w3school.com.cn/php/php_ref.asp">PHP å‚è€ƒæ‰‹å†Œ</a></h5>
+<h5 id="tools_quiz"><a href="php_quiz.asp.htm" tppabs="https://www.w3school.com.cn/php/php_quiz.asp">PHP æµ‹éªŒ</a></h5>
+</div>
+
+<div id="sidebar_zzs">
+
+<div id="sbtg">
+<script async src="../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" tppabs="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- W3School ä¾§æ å¹¿å‘Šä½ -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-3381531532877742"
+     data-ad-slot="6744370501"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+</div>
+
+</div>
+
+<div id="footer">
+<p id="p1">
+W3School ç®€ä½“ä¸­æ–‡ç‰ˆæä¾›çš„å†…å®¹ä»…ç”¨äºŽåŸ¹è®­å’Œæµ‹è¯•ï¼Œä¸ä¿è¯å†…å®¹çš„æ­£ç¡®æ€§ã€‚é€šè¿‡ä½¿ç”¨æœ¬ç«™å†…å®¹éšä¹‹è€Œæ¥çš„é£Žé™©ä¸Žæœ¬ç«™æ— å…³ã€‚ç‰ˆæƒæ‰€æœ‰ï¼Œä¿ç•™ä¸€åˆ‡æƒåˆ©ã€‚
+</p>
+
+<p id="p2">
+<a href="../about/index.asp.htm" tppabs="https://www.w3school.com.cn/about/index.asp" title="å…³äºŽ W3School">å…³äºŽ W3School</a>
+<a href="../about/about_helping.asp.htm" tppabs="https://www.w3school.com.cn/about/about_helping.asp" title="å¸®åŠ© W3School">å¸®åŠ© W3School</a>
+<a href="../about/about_use.asp.htm" tppabs="https://www.w3school.com.cn/about/about_use.asp" title="å…³äºŽä½¿ç”¨">ä½¿ç”¨æ¡æ¬¾</a>
+<a href="../about/about_privacy.asp.htm" tppabs="https://www.w3school.com.cn/about/about_privacy.asp" title="å…³äºŽéšç§">éšç§æ¡æ¬¾</a>
+<a target="_blank" href="javascript:if(confirm('https://www.ykinvestment.com/  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.ykinvestment.com/'" tppabs="https://www.ykinvestment.com/">æŠ€æœ¯æ”¯æŒï¼šèµ¢ç§‘</a>
+<a target="_blank" href="javascript:if(confirm('http://www.beian.miit.gov.cn/  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.beian.miit.gov.cn/'" tppabs="http://www.beian.miit.gov.cn/">è’™ICPå¤‡06004630å·</a>
+</p>
+</div>
+
+
+</div>
+<!-- wrapper end -->
+
+</body>
+
+</html>

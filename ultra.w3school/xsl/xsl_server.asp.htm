@@ -1,0 +1,297 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="../../www.googletagmanager.com/gtag/js-id=UA-878633-1" tppabs="https://www.googletagmanager.com/gtag/js?id=UA-878633-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-878633-1');
+</script>
+
+<meta charset=utf-8"utf-8">
+<meta name="robots" content="all" />
+<meta name="author" content="w3school.com.cn" />
+
+<link rel="stylesheet" type="text/css" href="../c.css" tppabs="https://www.w3school.com.cn/c.css" />
+
+<script src="../lib/cc/prism2.js" tppabs="https://www.w3school.com.cn/lib/cc/prism2.js"></script>
+<link rel='stylesheet' href="../lib/cc/prism.css" tppabs="https://www.w3school.com.cn/lib/cc/prism.css">
+
+<link rel="icon" type="image/png" sizes="16x16" href="/ui2019/logo-16-red.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/ui2019/logo-32-red.png">
+<link rel="icon" type="image/png" sizes="48x48" href="/ui2019/logo-48-red.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/ui2019/logo-96-red.png">
+<link rel="apple-touch-icon-precomposed" sizes="180x180" href="/ui2019/logo-180.png">
+
+
+<title>XSLT - åœ¨æœåŠ¡å™¨ä¸Š</title>
+
+</head>
+
+<body class="xml">
+
+<div id="wrapper">
+
+<div id="header">
+<a id="logo" href="../index.html" tppabs="https://www.w3school.com.cn/index.html" title="w3school åœ¨çº¿æ•™ç¨‹" style="float:left;">w3school åœ¨çº¿æ•™ç¨‹</a>
+<div id="header_gg">
+<script async src="../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" tppabs="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- W3 é¡µçœ‰ -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-3381531532877742"
+     data-ad-slot="7423315034"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+
+<div id="navfirst">
+<ul id="menu">
+<li id="h"><a href="../h.asp.htm" tppabs="https://www.w3school.com.cn/h.asp" title="HTML ç³»åˆ—æ•™ç¨‹">HTML ç³»åˆ—æ•™ç¨‹</a></li>
+<li id="b"><a href="../b.asp.htm" tppabs="https://www.w3school.com.cn/b.asp" title="æµè§ˆå™¨è„šæœ¬æ•™ç¨‹">æµè§ˆå™¨è„šæœ¬</a></li>
+<li id="s"><a href="../s.asp.htm" tppabs="https://www.w3school.com.cn/s.asp" title="æœåŠ¡å™¨è„šæœ¬æ•™ç¨‹">æœåŠ¡å™¨è„šæœ¬</a></li>
+<li id="p"><a href="../p.asp.htm" tppabs="https://www.w3school.com.cn/p.asp" title="ç¼–ç¨‹æ•™ç¨‹">ç¼–ç¨‹æ•™ç¨‹</a></li>
+<li id="x"><a href="../x.asp.htm" tppabs="https://www.w3school.com.cn/x.asp" title="XML ç³»åˆ—æ•™ç¨‹">XML ç³»åˆ—æ•™ç¨‹</a></li>
+<li id="w"><a href="../w.asp.htm" tppabs="https://www.w3school.com.cn/w.asp" title="å»ºç«™æ‰‹å†Œ">å»ºç«™æ‰‹å†Œ</a></li>
+<li id="r"><a href="../r.asp.htm" tppabs="https://www.w3school.com.cn/r.asp" title="å‚è€ƒæ‰‹å†Œ">å‚è€ƒæ‰‹å†Œ</a></li>
+</ul>
+</div>
+
+<div id="navsecond">
+
+<div id="course"><h2>XSLT æ•™ç¨‹</h2>
+<ul>
+<li><a href="index.asp.htm" tppabs="https://www.w3school.com.cn/xsl/index.asp" title="XSLT æ•™ç¨‹">XSLT æ•™ç¨‹</a></li>
+<li><a href="xsl_languages.asp.htm" tppabs="https://www.w3school.com.cn/xsl/xsl_languages.asp" title="XSLT è¯­è¨€">XSLT è¯­è¨€</a></li>
+<li><a href="xsl_intro.asp.htm" tppabs="https://www.w3school.com.cn/xsl/xsl_intro.asp" title="XSLT ç®€ä»‹">XSLT ç®€ä»‹</a></li>
+<li><a href="javascript:if(confirm('https://www.w3school.com.cn/xsl/howto_css_star_rating.asp  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ·şÎñÆ÷±¨¸æ¸ÃÎÄ¼şÎ´ÕÒµ½¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/xsl/howto_css_star_rating.asp'" tppabs="https://www.w3school.com.cn/xsl/xsl_browsers.asp" title="å¯¹ XSLT çš„æµè§ˆå™¨æ”¯æŒ">XSLT æµè§ˆå™¨</a></li>
+<li><a href="xsl_transformation.asp.htm" tppabs="https://www.w3school.com.cn/xsl/xsl_transformation.asp" title="XSLT - è½¬æ¢">XSLT è½¬æ¢</a></li>
+<li><a href="xsl_templates.asp.htm" tppabs="https://www.w3school.com.cn/xsl/xsl_templates.asp" title="XSLT &lt;xsl:template&gt; å…ƒç´ ">XSLT &lt;template&gt;</a></li>
+<li><a href="xsl_value_of.asp.htm" tppabs="https://www.w3school.com.cn/xsl/xsl_value_of.asp" title="XSLT &lt;xsl:value-of&gt; å…ƒç´ ">XSLT &lt;value-of&gt;</a></li>
+<li><a href="xsl_for_each.asp.htm" tppabs="https://www.w3school.com.cn/xsl/xsl_for_each.asp" title="XSLT &lt;xsl:for-each&gt; å…ƒç´ ">XSLT &lt;for-each&gt;</a></li>
+<li><a href="xsl_sort.asp.htm" tppabs="https://www.w3school.com.cn/xsl/xsl_sort.asp" title="XSLT &lt;xsl:sort&gt; å…ƒç´ ">XSLT &lt;xsl:sort&gt;</a></li>
+<li><a href="xsl_if.asp.htm" tppabs="https://www.w3school.com.cn/xsl/xsl_if.asp" title="XSLT &lt;xsl:if&gt; å…ƒç´ ">XSLT &lt;if&gt;</a></li>
+<li><a href="xsl_choose.asp.htm" tppabs="https://www.w3school.com.cn/xsl/xsl_choose.asp" title="XSLT &lt;xsl:choose&gt; å…ƒç´ ">XSLT &lt;choose&gt;</a></li>
+<li><a href="xsl_apply_templates.asp.htm" tppabs="https://www.w3school.com.cn/xsl/xsl_apply_templates.asp" title="XSLT &lt;xsl:apply-templates&gt; å…ƒç´ ">XSLT apply</a></li>
+</ul>
+<h2>XSLT é«˜çº§</h2>
+<ul>
+<li><a href="xsl_client.asp.htm" tppabs="https://www.w3school.com.cn/xsl/xsl_client.asp" title="XSLT - å®¢æˆ·ç«¯">XSLT åœ¨å®¢æˆ·ç«¯</a></li>
+<li class="currentLink"><a href="xsl_server.asp.htm" tppabs="https://www.w3school.com.cn/xsl/xsl_server.asp" title="XSLT - åœ¨æœåŠ¡å™¨ä¸Š">XSLT åœ¨æœåŠ¡å™¨ç«¯</a></li>
+<li><a href="xsl_editxml.asp.htm" tppabs="https://www.w3school.com.cn/xsl/xsl_editxml.asp" title="XSLT - ç¼–è¾‘ XML">XSLT ç¼–è¾‘ XML</a></li>
+<li><a href="javascript:if(confirm('https://www.w3school.com.cn/xsl/js_strings.asp  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/xsl/js_strings.asp'" tppabs="https://www.w3school.com.cn/xsl/xsl_editors.asp" title="XSLT ç¼–è¾‘å™¨">XSLT ç¼–è¾‘å™¨</a></li>
+<li><a href="javascript:if(confirm('https://www.w3school.com.cn/xsl/howto_css_user_rating.asp  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/xsl/howto_css_user_rating.asp'" tppabs="https://www.w3school.com.cn/xsl/xsl_summary.asp" title="æ‚¨å·²ç»å­¦ä¹ äº† XSLTï¼Œä¸‹ä¸€æ­¥å‘¢ï¼Ÿ">XSLT æ•™ç¨‹æ€»ç»“</a></li>
+</ul>
+<h2>XSLT å‚è€ƒæ‰‹å†Œ</h2>
+<ul>
+<li><a href="xsl_w3celementref.asp.htm" tppabs="https://www.w3school.com.cn/xsl/xsl_w3celementref.asp" title="XSLT å…ƒç´ å‚è€ƒæ‰‹å†Œ">XSLT å…ƒç´ </a></li>
+<li><a href="javascript:if(confirm('https://www.w3school.com.cn/xsl/js_string_methods.asp  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/xsl/js_string_methods.asp'" tppabs="https://www.w3school.com.cn/xsl/xsl_functions.asp" title="XSLT å‡½æ•°å‚è€ƒæ‰‹å†Œ">XSLT å‡½æ•°</a></li>
+</ul>
+</div><div id="selected">
+<h2>è¯¾ç¨‹æ¨èï¼š</h2>
+<ul>
+<li><a href="../howto/index.asp.htm" tppabs="https://www.w3school.com.cn/howto/index.asp" title="W3School ç™¾å®ç®±">W3School ç™¾å®ç®±</a></li>
+<li><a href="../java/index.asp.htm" tppabs="https://www.w3school.com.cn/java/index.asp" title="Java æ•™ç¨‹">Java æ•™ç¨‹</a></li>
+</ul>
+
+</div>
+
+</div>
+
+<div id="maincontent">
+
+<h1>XSLT - åœ¨æœåŠ¡å™¨ä¸Š</h1>
+
+<div class="prenextnav">
+<ul class="prenext">
+<li class="pre"><a href="xsl_client.asp.htm" tppabs="https://www.w3school.com.cn/xsl/xsl_client.asp" title="XSLT - å®¢æˆ·ç«¯">XSLT åœ¨å®¢æˆ·ç«¯</a></li>
+<li class="next"><a href="xsl_editxml.asp.htm" tppabs="https://www.w3school.com.cn/xsl/xsl_editxml.asp" title="XSLT - ç¼–è¾‘ XML">XSLT ç¼–è¾‘ XML</a></li>
+</ul>
+</div>
+
+
+
+<div id="intro">
+<p><strong>ç”±äºå¹¶éæ‰€æœ‰çš„æµè§ˆå™¨éƒ½æ”¯æŒ XSLTï¼Œå¦ä¸€ç§è§£å†³æ–¹æ¡ˆæ˜¯åœ¨æœåŠ¡å™¨ä¸Šå®Œæˆ XML è‡³ XHTML çš„è½¬åŒ–ã€‚</strong></p>
+</div>
+
+
+
+<div>
+<h2>è·¨æµè§ˆå™¨è§£å†³æ–¹æ¡ˆ</h2>
+
+<p>åœ¨å‰é¢çš„ç« èŠ‚ï¼Œæˆ‘ä»¬è®²è§£è¿‡å¦‚ä½•åœ¨æµè§ˆå™¨ä¸­ä½¿ç”¨ XSLT æ¥å®Œæˆ XML åˆ° XHTML çš„è½¬åŒ–ã€‚æˆ‘ä»¬åˆ›å»ºäº†ä¸€æ®µä½¿ç”¨ XML è§£æå™¨æ¥è¿›è¡Œè½¬åŒ–çš„ JavaScriptã€‚JavaScript è§£å†³æ–¹æ¡ˆæ— æ³•å·¥ä½œäºæ²¡æœ‰ XML è§£æå™¨çš„æµè§ˆå™¨ã€‚ä¸ºäº†è®© XML æ•°æ®é€‚ç”¨äºä»»ä½•ç±»å‹çš„æµè§ˆå™¨ï¼Œæˆ‘ä»¬å¿…é¡»åœ¨æœåŠ¡å™¨ä¸Šå¯¹ XML æ–‡æ¡£è¿›è¡Œè½¬æ¢ï¼Œç„¶åå°†å…¶ä½œä¸º XHMTL å‘é€åˆ°æµè§ˆå™¨ã€‚</p>
+
+<p><strong>è¿™æ˜¯ XSLT çš„å¦ä¸€ä¸ªä¼˜ç‚¹ã€‚XSLT çš„è®¾è®¡ç›®æ ‡ä¹‹ä¸€æ˜¯ä½¿æ•°æ®åœ¨æœåŠ¡å™¨ä¸Šä»ä¸€ç§æ ¼å¼è½¬æ¢åˆ°å¦ä¸€ç§æ ¼å¼æˆä¸ºå¯èƒ½ï¼Œå¹¶å‘æ‰€æœ‰ç±»å‹çš„æµè§ˆå™¨è¿”å›å¯è¯»çš„æ•°æ®ã€‚</strong></p>
+</div>
+
+
+
+<div>
+<h2>XML æ–‡ä»¶å’Œ XSL æ–‡ä»¶</h2>
+
+<p>è¯·çœ‹è¿™ä¸ªåœ¨å‰é¢çš„ç« èŠ‚å·²å±•ç¤ºè¿‡çš„ XML æ–‡æ¡£ï¼š</p>
+
+<pre class="language-xml">
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;ISO-8859-1&quot;?&gt;
+&lt;catalog&gt;
+  &lt;cd&gt;
+    &lt;title&gt;Empire Burlesque&lt;/title&gt;
+    &lt;artist&gt;Bob Dylan&lt;/artist&gt;
+    &lt;country&gt;USA&lt;/country&gt;
+    &lt;company&gt;Columbia&lt;/company&gt;
+    &lt;price&gt;10.90&lt;/price&gt;
+    &lt;year&gt;1985&lt;/year&gt;
+  &lt;/cd&gt;
+.
+.
+.
+&lt;/catalog&gt;
+</pre>
+
+<p><a href="javascript:if(confirm('https://www.w3school.com.cn/xsl/t.asp?f=eg_js_boolean_expression_1  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/xsl/t.asp?f=eg_js_boolean_expression_1'" tppabs="https://www.w3school.com.cn/xsl/cdcatalog.xml">æŸ¥çœ‹æ­¤ XML æ–‡ä»¶</a>ã€‚</p>
+
+<p>ä»¥åŠé™„éšçš„ XSL æ ·å¼è¡¨ï¼š</p>
+
+<pre class="language-xml">
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;ISO-8859-1&quot;?&gt;
+&lt;xsl:stylesheet version=&quot;1.0&quot;
+xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot;&gt;
+
+&lt;xsl:template match=&quot;/&quot;&gt;
+  &lt;html&gt;
+  &lt;body&gt;
+    &lt;h2&gt;My CD Collection&lt;/h2&gt; 
+    &lt;table border=&quot;1&quot;&gt;
+      &lt;tr bgcolor=&quot;#9acd32&quot;&gt;
+        &lt;th align=&quot;left&quot;&gt;Title&lt;/th&gt; 
+        &lt;th align=&quot;left&quot;&gt;Artist&lt;/th&gt; 
+      &lt;/tr&gt;
+      &lt;xsl:for-each select=&quot;catalog/cd&quot;&gt;
+      &lt;tr&gt;
+        &lt;td&gt;&lt;xsl:value-of select=&quot;title&quot; /&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;xsl:value-of select=&quot;artist&quot; /&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;/xsl:for-each&gt;
+  &lt;/table&gt;
+  &lt;/body&gt;
+  &lt;/html&gt;
+&lt;/xsl:template&gt;
+
+&lt;/xsl:stylesheet&gt;
+</pre>
+
+<p><a href="javascript:if(confirm('https://www.w3school.com.cn/xsl/dom_obj_event.asp  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/xsl/dom_obj_event.asp'" tppabs="https://www.w3school.com.cn/xsl/cdcatalog.xsl">æŸ¥çœ‹æ­¤ XSL æ–‡ä»¶</a>ã€‚</p>
+
+<p><strong>è¯·æ³¨æ„ï¼Œè¿™ä¸ª XML æ–‡ä»¶æ²¡æœ‰åŒ…å«å¯¹ XSL æ–‡ä»¶çš„å¼•ç”¨ã€‚</strong></p>
+
+<p class="important"><span>é‡è¦äº‹é¡¹ï¼š</span>ä¸Šé¢è¿™å¥è¯è¡¨æ˜ï¼ŒXML æ–‡ä»¶å¯ä½¿ç”¨å¤šä¸ªä¸åŒçš„ XSL æ ·å¼è¡¨æ¥è¿›è¡Œè½¬æ¢ã€‚</p>
+</div>
+
+
+
+<div>
+<h2>åœ¨æœåŠ¡å™¨æŠŠ XML è½¬æ¢ä¸º XHTML</h2>
+
+<p>è¿™æ˜¯åœ¨æœåŠ¡å™¨ä¸ŠæŠŠ XML æ–‡ä»¶è½¬æ¢ä¸º XHTML çš„æºä»£ç ï¼š</p>
+
+<pre class="language-vbnet">
+&lt;%
+'Load XML
+set xml = Server.CreateObject(&quot;Microsoft.XMLDOM&quot;)
+xml.async = false
+xml.load(Server.MapPath(&quot;cdcatalog.xml&quot;))
+
+'Load XSL
+set xsl = Server.CreateObject(&quot;Microsoft.XMLDOM&quot;)
+xsl.async = false
+xsl.load(Server.MapPath(&quot;cdcatalog.xsl&quot;))
+
+'Transform file
+Response.Write(xml.transformNode(xsl))
+%&gt;
+</pre>
+
+<p class="tip"><span>æç¤ºï¼š</span>å‡å¦‚æ‚¨ä¸äº†è§£å¦‚ä½•ç¼–å†™ ASPï¼Œæ‚¨å¯ä»¥å­¦ä¹ æˆ‘ä»¬çš„ã€Š<a href="../asp/index.asp.htm" tppabs="https://www.w3school.com.cn/asp/index.asp">ASP æ•™ç¨‹</a>ã€‹ã€‚</p>
+
+<p>ç¬¬ä¸€æ®µä»£ç åˆ›å»ºäº†å¾®è½¯çš„ XML è§£æå™¨çš„ä¸€ä¸ªå®ä¾‹ï¼Œç„¶åæŠŠ XML æ–‡ä»¶è½½å…¥äº†å†…å­˜ã€‚ç¬¬äºŒæ®µä»£ç åˆ›å»ºäº†è§£æå™¨çš„å¦ä¸€ä¸ªå®ä¾‹ï¼Œç„¶åæŠŠè¿™ä¸ª XSL æ–‡ä»¶è½½å…¥äº†å†…å­˜ã€‚æœ€åä¸€è¡Œä»£ç ä½¿ç”¨ XSL æ–‡æ¡£è½¬æ¢äº† XML æ–‡æ¡£ï¼Œå¹¶æŠŠç»“æœä½œä¸º XHTML å‘é€åˆ°æ‚¨çš„æµè§ˆå™¨ã€‚ä»»åŠ¡å®Œæˆï¼</p>
+
+<p><a href="javascript:if(confirm('https://www.w3school.com.cn/xsl/html_url.asp  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/xsl/html_url.asp'" tppabs="https://www.w3school.com.cn/xsl/cdcatalog.asp">è¯·çœ‹å®ƒå¦‚ä½•å·¥ä½œ</a>ã€‚</p>
+</div>
+
+
+
+<div class="prenextnav">
+<ul class="prenext">
+<li class="pre"><a href="xsl_client.asp.htm" tppabs="https://www.w3school.com.cn/xsl/xsl_client.asp" title="XSLT - å®¢æˆ·ç«¯">XSLT åœ¨å®¢æˆ·ç«¯</a></li>
+<li class="next"><a href="xsl_editxml.asp.htm" tppabs="https://www.w3school.com.cn/xsl/xsl_editxml.asp" title="XSLT - ç¼–è¾‘ XML">XSLT ç¼–è¾‘ XML</a></li>
+</ul>
+</div><div style="background-color:#fcfdf8; padding:0;">
+<script async src="../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" tppabs="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- W3School ÕıÎÄ¹ã¸æ -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:800px;height:250px"
+     data-ad-client="ca-pub-3381531532877742"
+     data-ad-slot="2086924285"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+</div>
+<!-- maincontent end -->
+
+<div id="sidebar">
+
+<div id="tools">
+<h5 id="tools_reference"><a href="xsl_w3celementref.asp.htm" tppabs="https://www.w3school.com.cn/xsl/xsl_w3celementref.asp">XSLT å‚è€ƒæ‰‹å†Œ</a></h5>
+</div>
+
+<div id="sidebar_zzs">
+
+<div id="sbtg">
+<script async src="../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" tppabs="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- W3School ä¾§æ å¹¿å‘Šä½ -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-3381531532877742"
+     data-ad-slot="6744370501"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+</div>
+
+</div>
+
+<div id="footer">
+<p id="p1">
+W3School ç®€ä½“ä¸­æ–‡ç‰ˆæä¾›çš„å†…å®¹ä»…ç”¨äºåŸ¹è®­å’Œæµ‹è¯•ï¼Œä¸ä¿è¯å†…å®¹çš„æ­£ç¡®æ€§ã€‚é€šè¿‡ä½¿ç”¨æœ¬ç«™å†…å®¹éšä¹‹è€Œæ¥çš„é£é™©ä¸æœ¬ç«™æ— å…³ã€‚ç‰ˆæƒæ‰€æœ‰ï¼Œä¿ç•™ä¸€åˆ‡æƒåˆ©ã€‚
+</p>
+
+<p id="p2">
+<a href="../about/index.asp.htm" tppabs="https://www.w3school.com.cn/about/index.asp" title="å…³äº W3School">å…³äº W3School</a>
+<a href="../about/about_helping.asp.htm" tppabs="https://www.w3school.com.cn/about/about_helping.asp" title="å¸®åŠ© W3School">å¸®åŠ© W3School</a>
+<a href="../about/about_use.asp.htm" tppabs="https://www.w3school.com.cn/about/about_use.asp" title="å…³äºä½¿ç”¨">ä½¿ç”¨æ¡æ¬¾</a>
+<a href="../about/about_privacy.asp.htm" tppabs="https://www.w3school.com.cn/about/about_privacy.asp" title="å…³äºéšç§">éšç§æ¡æ¬¾</a>
+<a target="_blank" href="javascript:if(confirm('https://www.ykinvestment.com/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.ykinvestment.com/'" tppabs="https://www.ykinvestment.com/">æŠ€æœ¯æ”¯æŒï¼šèµ¢ç§‘</a>
+<a target="_blank" href="javascript:if(confirm('http://www.beian.miit.gov.cn/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.beian.miit.gov.cn/'" tppabs="http://www.beian.miit.gov.cn/">è’™ICPå¤‡06004630å·</a>
+</p>
+</div>
+
+
+</div>
+<!-- wrapper end -->
+
+</body>
+
+</html>

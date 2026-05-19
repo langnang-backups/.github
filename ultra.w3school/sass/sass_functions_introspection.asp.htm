@@ -1,0 +1,327 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="../../www.googletagmanager.com/gtag/js-id=UA-878633-1" tppabs="https://www.googletagmanager.com/gtag/js?id=UA-878633-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-878633-1');
+</script>
+
+<meta charset=utf-8"utf-8">
+<meta name="robots" content="all" />
+<meta name="author" content="w3school.com.cn" />
+
+<link rel="stylesheet" type="text/css" href="../c.css" tppabs="https://www.w3school.com.cn/c.css" />
+
+<script src="../lib/cc/prism2.js" tppabs="https://www.w3school.com.cn/lib/cc/prism2.js"></script>
+<link rel='stylesheet' href="../lib/cc/prism.css" tppabs="https://www.w3school.com.cn/lib/cc/prism.css">
+
+<link rel="icon" type="image/png" sizes="16x16" href="/ui2019/logo-16-red.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/ui2019/logo-32-red.png">
+<link rel="icon" type="image/png" sizes="48x48" href="/ui2019/logo-48-red.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/ui2019/logo-96-red.png">
+<link rel="apple-touch-icon-precomposed" sizes="180x180" href="/ui2019/logo-180.png">
+
+
+<title>Sass 自省</title>
+
+</head>
+
+<body class="browserscripting">
+
+<div id="wrapper">
+
+<div id="header">
+<a id="logo" href="../index.html" tppabs="https://www.w3school.com.cn/index.html" title="w3school 在线教程" style="float:left;">w3school 在线教程</a>
+<div id="header_gg">
+<script async src="../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" tppabs="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- W3 页眉 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-3381531532877742"
+     data-ad-slot="7423315034"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+
+<div id="navfirst">
+<ul id="menu">
+<li id="h"><a href="../h.asp.htm" tppabs="https://www.w3school.com.cn/h.asp" title="HTML 系列教程">HTML 系列教程</a></li>
+<li id="b"><a href="../b.asp.htm" tppabs="https://www.w3school.com.cn/b.asp" title="浏览器脚本教程">浏览器脚本</a></li>
+<li id="s"><a href="../s.asp.htm" tppabs="https://www.w3school.com.cn/s.asp" title="服务器脚本教程">服务器脚本</a></li>
+<li id="p"><a href="../p.asp.htm" tppabs="https://www.w3school.com.cn/p.asp" title="编程教程">编程教程</a></li>
+<li id="x"><a href="../x.asp.htm" tppabs="https://www.w3school.com.cn/x.asp" title="XML 系列教程">XML 系列教程</a></li>
+<li id="w"><a href="../w.asp.htm" tppabs="https://www.w3school.com.cn/w.asp" title="建站手册">建站手册</a></li>
+<li id="r"><a href="../r.asp.htm" tppabs="https://www.w3school.com.cn/r.asp" title="参考手册">参考手册</a></li>
+</ul>
+</div>
+
+<div id="navsecond">
+
+<div id="course"><h2>Sass 教程</h2>
+<ul>
+<li><a href="index.asp.htm" tppabs="https://www.w3school.com.cn/sass/index.asp" title="Sass 教程">Sass 教程</a></li>
+<li><a href="sass_intro.asp.htm" tppabs="https://www.w3school.com.cn/sass/sass_intro.asp" title="Sass 简介">Sass 简介</a></li>
+<li><a href="sass_installation.asp.htm" tppabs="https://www.w3school.com.cn/sass/sass_installation.asp" title="Sass 安装">Sass 安装</a></li>
+<li><a href="sass_variables.asp.htm" tppabs="https://www.w3school.com.cn/sass/sass_variables.asp" title="Sass 变量">Sass 变量</a></li>
+<li><a href="sass_nesting.asp.htm" tppabs="https://www.w3school.com.cn/sass/sass_nesting.asp" title="Sass 嵌套规则和属性">Sass 嵌套</a></li>
+<li><a href="sass_import.asp.htm" tppabs="https://www.w3school.com.cn/sass/sass_import.asp" title="Sass @import 和 Partials">Sass @import</a></li>
+<li><a href="sass_mixin_include.asp.htm" tppabs="https://www.w3school.com.cn/sass/sass_mixin_include.asp" title="Sass @mixin 和 @include">Sass @mixin</a></li>
+<li><a href="sass_extend.asp.htm" tppabs="https://www.w3school.com.cn/sass/sass_extend.asp" title="Sass @extend 和继承">Sass @extend</a></li>
+</ul>
+<h2>Sass 函数</h2>
+<ul>
+<li><a href="sass_functions_string.asp.htm" tppabs="https://www.w3school.com.cn/sass/sass_functions_string.asp" title="Sass 字符串函数">Sass 字符串</a></li>
+<li><a href="sass_functions_numeric.asp.htm" tppabs="https://www.w3school.com.cn/sass/sass_functions_numeric.asp" title="Sass 数字函数">Sass 数字</a></li>
+<li><a href="sass_functions_list.asp.htm" tppabs="https://www.w3school.com.cn/sass/sass_functions_list.asp" title="Sass 列表函数">Sass 列表</a></li>
+<li><a href="sass_functions_map.asp.htm" tppabs="https://www.w3school.com.cn/sass/sass_functions_map.asp" title="Sass 映射函数">Sass 映射</a></li>
+<li><a href="sass_functions_selector.asp.htm" tppabs="https://www.w3school.com.cn/sass/sass_functions_selector.asp" title="Sass 选择器函数">Sass 选择器</a></li>
+<li class="currentLink"><a href="sass_functions_introspection.asp.htm" tppabs="https://www.w3school.com.cn/sass/sass_functions_introspection.asp" title="Sass 自省函数">Sass 自省</a></li>
+<li><a href="sass_functions_color.asp.htm" tppabs="https://www.w3school.com.cn/sass/sass_functions_color.asp" title="Sass 颜色函数">Sass 颜色</a></li>
+</ul>
+</div><div id="selected">
+<h2>课程推荐：</h2>
+<ul>
+<li><a href="../howto/index.asp.htm" tppabs="https://www.w3school.com.cn/howto/index.asp" title="W3School 百宝箱">W3School 百宝箱</a></li>
+<li><a href="../java/index.asp.htm" tppabs="https://www.w3school.com.cn/java/index.asp" title="Java 教程">Java 教程</a></li>
+</ul>
+
+</div>
+
+</div>
+
+<div id="maincontent">
+
+<h1>Sass 自省函数</h1>
+
+<div class="prenextnav">
+<ul class="prenext">
+<li class="pre"><a href="sass_functions_selector.asp.htm" tppabs="https://www.w3school.com.cn/sass/sass_functions_selector.asp" title="Sass 选择器函数">Sass 选择器</a></li>
+<li class="next"><a href="sass_functions_color.asp.htm" tppabs="https://www.w3school.com.cn/sass/sass_functions_color.asp" title="Sass 颜色函数">Sass 颜色</a></li>
+</ul>
+</div>
+
+
+
+<section>
+<h2>Sass 自省函数</h2>
+
+<p>构建样式表时很少使用自省（Introspection）函数。</p>
+
+<p>但是，如果代码不能正常工作，自省函数就很有价值 - 可以弄清楚发生了什么：比如调试函数。</p>
+
+<p>下表列出了 Sass 中的所有内省函数：</p>
+
+<table class="definition-usage">
+<tr>
+<th>函数</th>
+<th>描述 &amp; 例子</th>
+</tr>
+
+<tr>
+<td>call(<i>function</i>, <i>arguments</i>...)</td>
+<td>调用带参数的函数，并返回结果。</td>
+</tr>
+
+<tr>
+<td>content-exists()</td>
+<td>检查当前 mixin 是否被传递了 @content 块。</td>
+</tr>
+
+<tr>
+<td>feature-exists(<i>feature</i>)</td>
+<td>
+<p>检查当前 Sass 实现是否支持该 <i>feature</i>。</p>
+
+<h3>实例：</h3>
+<p>feature-exists(&quot;at-error&quot;);</p>
+<p>结果：true</p>
+</td>
+</tr>
+
+<tr>
+<td>function-exists(<i>functionname</i>)</td>
+<td>
+<p>检查指定的函数是否存在。</p>
+
+<h3>实例：</h3>
+<p>function-exists(&quot;nonsense&quot;)</p>
+<p>结果：false</p>
+</td>
+</tr>
+
+<tr>
+<td>get-function(<i>functionname</i>, css: false)</td>
+<td>返回指定的函数。如果 css 为真，它会返回一个普通的 CSS 函数。</td>
+</tr>
+
+<tr>
+<td>global-variable-exists(<i>variablename</i>)</td>
+<td>
+<p>检查指定的全局变量是否存在。</p>
+
+<h3>实例：</h3>
+<p>variable-exists(a)</p>
+<p>结果：true</p>
+</td>
+</tr>
+
+<tr>
+<td>inspect(<i>value</i>)</td>
+<td>返回值的字符串表示形式。</td>
+</tr>
+
+<tr>
+<td>mixin-exists(<i>mixinname</i>)</td>
+<td>
+<p>检查指定的 mixin 是否存在。</p>
+
+<h3>实例：</h3>
+<p>mixin-exists(&quot;important-text&quot;)</p>
+<p>结果：true</p>
+</td>
+</tr>
+
+<tr>
+<td>type-of(<i>value</i>)</td>
+<td>
+<p>返回值的类型。可以是：</p>
+
+<ul>
+<li>number</li>
+<li>string</li>
+<li>color</li>
+<li>list</li>
+<li>map</li>
+<li>bool</li>
+<li>null</li>
+<li>function</li>
+<li>arglist</li>
+</ul>
+
+<h3>实例：</h3>
+<p>type-of(15px)</p>
+<p>结果：number</p>
+<p>type-of(#ff0000)</p>
+<p>结果：color</p>
+</td>
+</tr>
+
+<tr>
+<td>unit(<i>number</i>)</td>
+<td>
+<p>返回与数字相关的单位。</p>
+
+<h3>实例：</h3>
+<p>unit(15px)</p>
+<p>结果：px</p>
+</td>
+</tr>
+
+<tr>
+<td>unitless(<i>number</i>)</td>
+<td>
+<p>检查指定的数字是否具有与其相关的单位。</p>
+
+<h3>实例：</h3>
+<p>unitless(15px)</p>
+<p>结果：false</p>
+<p>unitless(15)</p>
+<p>结果：true</p>
+</td>
+</tr>
+
+<tr>
+<td>variable-exists(<i>variablename</i>)</td>
+<td>
+<p>检查指定的变量是否存在于当前作用域中。</p>
+
+<h3>实例：</h3>
+<p>variable-exists(b)</p>
+<p>结果：true</p>
+</td>
+</tr>
+</table>
+</section>
+
+
+
+<div class="prenextnav">
+<ul class="prenext">
+<li class="pre"><a href="sass_functions_selector.asp.htm" tppabs="https://www.w3school.com.cn/sass/sass_functions_selector.asp" title="Sass 选择器函数">Sass 选择器</a></li>
+<li class="next"><a href="sass_functions_color.asp.htm" tppabs="https://www.w3school.com.cn/sass/sass_functions_color.asp" title="Sass 颜色函数">Sass 颜色</a></li>
+</ul>
+</div><div style="background-color:#fcfdf8; padding:0;">
+<script async src="../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" tppabs="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- W3School ���Ĺ�� -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:800px;height:250px"
+     data-ad-client="ca-pub-3381531532877742"
+     data-ad-slot="2086924285"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+</div>
+<!-- maincontent end -->
+
+<div id="sidebar">
+
+<div id="tools">
+<h5 id="tools_reference"><a href="../jsref/index.asp.htm" tppabs="https://www.w3school.com.cn/jsref/index.asp">JavaScript 和 HTML DOM 参考手册</a></h5>
+<h5 id="tools_example"><a href="javascript:if(confirm('https://www.w3school.com.cn/sass/js_examples.asp  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ������������ļ�δ�ҵ���  \n\n�����ڷ������ϴ���?'))window.location='https://www.w3school.com.cn/sass/js_examples.asp'" tppabs="https://www.w3school.com.cn/sass/js_examples.asp">JavaScript 实例</a></h5>
+<h5 id="tools_quiz"><a href="javascript:if(confirm('https://www.w3school.com.cn/sass/js_quiz.asp  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ������������ļ�δ�ҵ���  \n\n�����ڷ������ϴ���?'))window.location='https://www.w3school.com.cn/sass/js_quiz.asp'" tppabs="https://www.w3school.com.cn/sass/js_quiz.asp">JavaScript 测验</a></h5>
+<h5 id="tools_professional"><a href="javascript:if(confirm('https://www.w3school.com.cn/sass/index_pro.asp  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ������������ļ�δ�ҵ���  \n\n�����ڷ������ϴ���?'))window.location='https://www.w3school.com.cn/sass/index_pro.asp'" tppabs="https://www.w3school.com.cn/sass/index_pro.asp">JavaScript 高级教程</a></h5>
+</div>
+
+<div id="sidebar_zzs">
+
+<div id="sbtg">
+<script async src="../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" tppabs="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- W3School 侧栏广告位 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-3381531532877742"
+     data-ad-slot="6744370501"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+</div>
+
+</div>
+
+<div id="footer">
+<p id="p1">
+W3School 简体中文版提供的内容仅用于培训和测试，不保证内容的正确性。通过使用本站内容随之而来的风险与本站无关。版权所有，保留一切权利。
+</p>
+
+<p id="p2">
+<a href="../about/index.asp.htm" tppabs="https://www.w3school.com.cn/about/index.asp" title="关于 W3School">关于 W3School</a>
+<a href="../about/about_helping.asp.htm" tppabs="https://www.w3school.com.cn/about/about_helping.asp" title="帮助 W3School">帮助 W3School</a>
+<a href="../about/about_use.asp.htm" tppabs="https://www.w3school.com.cn/about/about_use.asp" title="关于使用">使用条款</a>
+<a href="../about/about_privacy.asp.htm" tppabs="https://www.w3school.com.cn/about/about_privacy.asp" title="关于隐私">隐私条款</a>
+<a target="_blank" href="javascript:if(confirm('https://www.ykinvestment.com/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.ykinvestment.com/'" tppabs="https://www.ykinvestment.com/">技术支持：赢科</a>
+<a target="_blank" href="javascript:if(confirm('http://www.beian.miit.gov.cn/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://www.beian.miit.gov.cn/'" tppabs="http://www.beian.miit.gov.cn/">蒙ICP备06004630号</a>
+</p>
+</div>
+
+
+</div>
+<!-- wrapper end -->
+
+
+</body>
+
+</html>

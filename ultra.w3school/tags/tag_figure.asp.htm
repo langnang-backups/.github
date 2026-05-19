@@ -1,0 +1,450 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="../../www.googletagmanager.com/gtag/js-id=UA-878633-1" tppabs="https://www.googletagmanager.com/gtag/js?id=UA-878633-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-878633-1');
+</script>
+
+<meta charset=utf-8"utf-8">
+<meta name="robots" content="all" />
+<meta name="author" content="w3school.com.cn" />
+
+<link rel="stylesheet" type="text/css" href="../c.css" tppabs="https://www.w3school.com.cn/c.css" />
+
+<script src="../lib/cc/prism2.js" tppabs="https://www.w3school.com.cn/lib/cc/prism2.js"></script>
+<link rel='stylesheet' href="../lib/cc/prism.css" tppabs="https://www.w3school.com.cn/lib/cc/prism.css">
+
+<link rel="icon" type="image/png" sizes="16x16" href="/ui2019/logo-16-red.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/ui2019/logo-32-red.png">
+<link rel="icon" type="image/png" sizes="48x48" href="/ui2019/logo-48-red.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/ui2019/logo-96-red.png">
+<link rel="apple-touch-icon-precomposed" sizes="180x180" href="/ui2019/logo-180.png">
+
+
+<title>HTML &lt;figure&gt; 标签</title>
+
+</head>
+
+<body class="html">
+
+<div id="wrapper">
+
+<div id="header">
+<a id="logo" href="../index.html" tppabs="https://www.w3school.com.cn/index.html" title="w3school 在线教程" style="float:left;">w3school 在线教程</a>
+<div id="header_gg">
+<script async src="../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" tppabs="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- W3 页眉 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-3381531532877742"
+     data-ad-slot="7423315034"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+
+<div id="navfirst">
+<ul id="menu">
+<li id="h"><a href="../h.asp.htm" tppabs="https://www.w3school.com.cn/h.asp" title="HTML 系列教程">HTML 系列教程</a></li>
+<li id="b"><a href="../b.asp.htm" tppabs="https://www.w3school.com.cn/b.asp" title="浏览器脚本教程">浏览器脚本</a></li>
+<li id="s"><a href="../s.asp.htm" tppabs="https://www.w3school.com.cn/s.asp" title="服务器脚本教程">服务器脚本</a></li>
+<li id="p"><a href="../p.asp.htm" tppabs="https://www.w3school.com.cn/p.asp" title="编程教程">编程教程</a></li>
+<li id="x"><a href="../x.asp.htm" tppabs="https://www.w3school.com.cn/x.asp" title="XML 系列教程">XML 系列教程</a></li>
+<li id="w"><a href="../w.asp.htm" tppabs="https://www.w3school.com.cn/w.asp" title="建站手册">建站手册</a></li>
+<li id="r"><a href="../r.asp.htm" tppabs="https://www.w3school.com.cn/r.asp" title="参考手册">参考手册</a></li>
+</ul>
+</div>
+
+<div id="navsecond">
+
+<div id="course"><h2>参考手册</h2>
+<ul>
+<li><a href="index.asp.htm" tppabs="https://www.w3school.com.cn/tags/index.asp" title="HTML 元素参考手册">HTML 元素（字母排序）</a></li>
+<li><a href="html_ref_byfunc.asp.htm" tppabs="https://www.w3school.com.cn/tags/html_ref_byfunc.asp" title="HTML 元素参考手册 - 功能排序">HTML 元素（功能排序）</a></li>
+<li><a href="html_ref_html_browsersupport.asp.htm" tppabs="https://www.w3school.com.cn/tags/html_ref_html_browsersupport.asp" title="HTML 参考手册 - 浏览器支持">HTML 浏览器支持</a></li>
+<li><a href="html_ref_standardattributes.asp.htm" tppabs="https://www.w3school.com.cn/tags/html_ref_standardattributes.asp" title="HTML 全局属性">HTML 全局属性</a></li>
+<li><a href="html_ref_eventattributes.asp.htm" tppabs="https://www.w3school.com.cn/tags/html_ref_eventattributes.asp" title="HTML 事件参考手册">HTML 事件</a></li>
+<li><a href="html_ref_colornames.asp.htm" tppabs="https://www.w3school.com.cn/tags/html_ref_colornames.asp" title="HTML 颜色名">HTML 颜色名</a></li>
+<li><a href="html_ref_canvas.asp.htm" tppabs="https://www.w3school.com.cn/tags/html_ref_canvas.asp" title="HTML Canvas 参考手册">HTML 画布</a></li>
+<li><a href="html_ref_audio_video_dom.asp.htm" tppabs="https://www.w3school.com.cn/tags/html_ref_audio_video_dom.asp" title="HTML 音频/视频参考手册">HTML 视频/音频</a></li>
+<li><a href="html_ref_charactersets.asp.htm" tppabs="https://www.w3school.com.cn/tags/html_ref_charactersets.asp" title="HTML 字符集">HTML 字符集</a></li>
+<li><a href="html_ref_dtd.asp.htm" tppabs="https://www.w3school.com.cn/tags/html_ref_dtd.asp" title="HTML &lt;!DOCTYPE&gt;">HTML 文档类型</a></li>
+<li><a href="html_ref_urlencode.asp.htm" tppabs="https://www.w3school.com.cn/tags/html_ref_urlencode.asp" title="HTML URL 编码">HTML URL 编码</a></li>
+<li><a href="html_ref_language_codes.asp.htm" tppabs="https://www.w3school.com.cn/tags/html_ref_language_codes.asp" title="HTML 语言代码参考手册">HTML 语言代码</a></li>
+<li><a href="html_ref_country_codes.asp.htm" tppabs="https://www.w3school.com.cn/tags/html_ref_country_codes.asp" title="HTML ISO 国家代码参考手册">HTML 国家代码</a></li>
+<li><a href="html_ref_httpmessages.asp.htm" tppabs="https://www.w3school.com.cn/tags/html_ref_httpmessages.asp" title="HTTP 状态消息">HTTP 消息</a></li>
+<li><a href="html_ref_httpmethods.asp.htm" tppabs="https://www.w3school.com.cn/tags/html_ref_httpmethods.asp" title="HTTP 请求方法">HTTP 方法</a></li>
+<li><a href="html_ref_keyboardshortcuts.asp.htm" tppabs="https://www.w3school.com.cn/tags/html_ref_keyboardshortcuts.asp" title="键盘快捷键">键盘快捷键</a></li>
+</ul>
+<h2>HTML 标签</h2>
+<ul>
+<li><a href="tag_comment.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_comment.asp" title="HTML &lt;!--&gt; 标签">&lt;!--&gt;</a></li>
+<li><a href="tag_doctype.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_doctype.asp" title="HTML &lt;!DOCTYPE&gt; 标签">&lt;!DOCTYPE&gt;</a></li>
+<li><a href="tag_a.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_a.asp" title="HTML &lt;a&gt; 标签">&lt;a&gt;</a></li>
+<li><a href="tag_abbr.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_abbr.asp" title="HTML &lt;abbr&gt; 标签">&lt;abbr&gt;</a></li>
+<li><a href="tag_acronym.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_acronym.asp" title="HTML &lt;acronym&gt; 标签">&lt;acronym&gt;</a></li>
+<li><a href="tag_address.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_address.asp" title="HTML &lt;address&gt; 标签">&lt;address&gt;</a></li>
+<li><a href="tag_applet.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_applet.asp" title="HTML &lt;applet&gt; 标签">&lt;applet&gt;</a></li>
+<li><a href="tag_area.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_area.asp" title="HTML &lt;area&gt; 标签">&lt;area&gt;</a></li>
+<li><a href="tag_article.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_article.asp" title="HTML &lt;article&gt; 标签">&lt;article&gt;</a></li>
+<li><a href="tag_aside.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_aside.asp" title="HTML &lt;aside&gt; 标签">&lt;aside&gt;</a></li>
+<li><a href="tag_audio.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_audio.asp" title="HTML &lt;audio&gt; 标签">&lt;audio&gt;</a></li>
+<li><a href="tag_b.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_b.asp" title="HTML &lt;b&gt; 标签">&lt;b&gt;</a></li>
+<li><a href="tag_base.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_base.asp" title="HTML &lt;base&gt; 标签">&lt;base&gt;</a></li>
+<li><a href="tag_basefont.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_basefont.asp" title="HTML &lt;basefont&gt; 标签">&lt;basefont&gt;</a></li>
+<li><a href="tag_bdi.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_bdi.asp" title="HTML &lt;bdi&gt; 标签">&lt;bdi&gt;</a></li>
+<li><a href="tag_bdo.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_bdo.asp" title="HTML &lt;bdo&gt; 标签">&lt;bdo&gt;</a></li>
+<li><a href="tag_big.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_big.asp" title="HTML &lt;big&gt; 标签">&lt;big&gt;</a></li>
+<li><a href="tag_blockquote.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_blockquote.asp" title="HTML &lt;blockquote&gt; 标签">&lt;blockquote&gt;</a></li>
+<li><a href="tag_body.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_body.asp" title="HTML &lt;body&gt; 标签">&lt;body&gt;</a></li>
+<li><a href="tag_br.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_br.asp" title="HTML &lt;br&gt; 标签">&lt;br&gt;</a></li>
+<li><a href="tag_button.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_button.asp" title="HTML &lt;button&gt; 标签">&lt;button&gt;</a></li>
+<li><a href="tag_canvas.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_canvas.asp" title="HTML &lt;canvas&gt; 标签">&lt;canvas&gt;</a></li>
+<li><a href="tag_caption.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_caption.asp" title="HTML &lt;caption&gt; 标签">&lt;caption&gt;</a></li>
+<li><a href="tag_center.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_center.asp" title="HTML &lt;center&gt; 标签">&lt;center&gt;</a></li>
+<li><a href="tag_cite.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_cite.asp" title="HTML &lt;cite&gt; 标签">&lt;cite&gt;</a></li>
+<li><a href="tag_code.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_code.asp" title="HTML &lt;code&gt; 标签">&lt;code&gt;</a></li>
+<li><a href="tag_col.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_col.asp" title="HTML &lt;col&gt; 标签">&lt;col&gt;</a></li>
+<li><a href="tag_colgroup.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_colgroup.asp" title="HTML &lt;colgroup&gt; 标签">&lt;colgroup&gt;</a></li>
+<li><a href="tag_data.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_data.asp" title="HTML &lt;data&gt; 标签">&lt;data&gt;</a></li>
+<li><a href="tag_datalist.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_datalist.asp" title="HTML &lt;datalist&gt; 标签">&lt;datalist&gt;</a></li>
+<li><a href="tag_dd.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_dd.asp" title="HTML &lt;dd&gt; 标签">&lt;dd&gt;</a></li>
+<li><a href="tag_del.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_del.asp" title="HTML &lt;del&gt; 标签">&lt;del&gt;</a></li>
+<li><a href="tag_details.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_details.asp" title="HTML &lt;details&gt; 标签">&lt;details&gt;</a></li>
+<li><a href="tag_dfn.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_dfn.asp" title="HTML &lt;dfn&gt; 标签">&lt;dfn&gt;</a></li>
+<li><a href="tag_dialog.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_dialog.asp" title="HTML &lt;dialog&gt; 标签">&lt;dialog&gt;</a></li>
+<li><a href="tag_dir.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_dir.asp" title="HTML &lt;dir&gt; 标签">&lt;dir&gt;</a></li>
+<li><a href="tag_div.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_div.asp" title="HTML &lt;div&gt; 标签">&lt;div&gt;</a></li>
+<li><a href="tag_dl.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_dl.asp" title="HTML &lt;dl&gt; 标签">&lt;dl&gt;</a></li>
+<li><a href="tag_dt.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_dt.asp" title="HTML &lt;dt&gt; 标签">&lt;dt&gt;</a></li>
+<li><a href="tag_em.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_em.asp" title="HTML &lt;em&gt; 标签">&lt;em&gt;</a></li>
+<li><a href="tag_embed.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_embed.asp" title="HTML &lt;embed&gt; 标签">&lt;embed&gt;</a></li>
+<li><a href="tag_fieldset.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_fieldset.asp" title="HTML &lt;fieldset&gt; 标签">&lt;fieldset&gt;</a></li>
+<li><a href="tag_figcaption.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_figcaption.asp" title="HTML &lt;figcaption&gt; 标签">&lt;figcaption&gt;</a></li>
+<li class="currentLink"><a href="tag_figure.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_figure.asp" title="HTML &lt;figure&gt; 标签">&lt;figure&gt;</a></li>
+<li><a href="tag_font.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_font.asp" title="HTML &lt;font&gt; 标签">&lt;font&gt;</a></li>
+<li><a href="tag_footer.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_footer.asp" title="HTML &lt;footer&gt; 标签">&lt;footer&gt;</a></li>
+<li><a href="tag_form.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_form.asp" title="HTML &lt;form&gt; 标签">&lt;form&gt;</a></li>
+<li><a href="tag_frame.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_frame.asp" title="HTML &lt;frame&gt; 标签">&lt;frame&gt;</a></li>
+<li><a href="tag_frameset.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_frameset.asp" title="HTML &lt;frameset&gt; 标签">&lt;frameset&gt;</a></li>
+<li><a href="tag_hn.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_hn.asp" title="HTML &lt;h1&gt; - &lt;h6&gt; 标签">&lt;h1&gt; - &lt;h6&gt;</a></li>
+<li><a href="tag_head.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_head.asp" title="HTML &lt;head&gt; 标签">&lt;head&gt;</a></li>
+<li><a href="tag_header.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_header.asp" title="HTML &lt;header&gt; 标签">&lt;header&gt;</a></li>
+<li><a href="tag_hgroup.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_hgroup.asp" title="HTML &lt;hgroup&gt; 标签">&lt;hgroup&gt;</a></li>
+<li><a href="tag_hr.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_hr.asp" title="HTML &lt;hr&gt; 标签">&lt;hr&gt;</a></li>
+<li><a href="tag_html.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_html.asp" title="HTML &lt;html&gt; 标签">&lt;html&gt;</a></li>
+<li><a href="tag_i.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_i.asp" title="HTML &lt;i&gt; 标签">&lt;i&gt;</a></li>
+<li><a href="tag_iframe.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_iframe.asp" title="HTML &lt;iframe&gt; 标签">&lt;iframe&gt;</a></li>
+<li><a href="tag_img.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_img.asp" title="HTML &lt;img&gt; 标签">&lt;img&gt;</a></li>
+<li><a href="tag_input.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_input.asp" title="HTML &lt;input&gt; 标签">&lt;input&gt;</a></li>
+<li><a href="tag_ins.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_ins.asp" title="HTML &lt;ins&gt; 标签">&lt;ins&gt;</a></li>
+<li><a href="tag_kbd.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_kbd.asp" title="HTML &lt;kbd&gt; 标签">&lt;kbd&gt;</a></li>
+<li><a href="tag_label.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_label.asp" title="HTML &lt;label&gt; 标签">&lt;label&gt;</a></li>
+<li><a href="tag_legend.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_legend.asp" title="HTML &lt;legend&gt; 标签">&lt;legend&gt;</a></li>
+<li><a href="tag_li.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_li.asp" title="HTML &lt;li&gt; 标签">&lt;li&gt;</a></li>
+<li><a href="tag_link.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_link.asp" title="HTML &lt;link&gt; 标签">&lt;link&gt;</a></li>
+<li><a href="tag_main.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_main.asp" title="HTML &lt;main&gt; 标签">&lt;main&gt;</a></li>
+<li><a href="tag_map.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_map.asp" title="HTML &lt;map&gt; 标签">&lt;map&gt;</a></li>
+<li><a href="tag_mark.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_mark.asp" title="HTML &lt;mark&gt; 标签">&lt;mark&gt;</a></li>
+<li><a href="tag_menu.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_menu.asp" title="HTML &lt;menu&gt; 标签">&lt;menu&gt;</a></li>
+<li><a href="tag_meta.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_meta.asp" title="HTML &lt;meta&gt; 标签">&lt;meta&gt;</a></li>
+<li><a href="tag_meter.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_meter.asp" title="HTML &lt;meter&gt; 标签">&lt;meter&gt;</a></li>
+<li><a href="tag_nav.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_nav.asp" title="HTML &lt;nav&gt; 标签">&lt;nav&gt;</a></li>
+<li><a href="tag_noframes.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_noframes.asp" title="HTML &lt;noframes&gt; 标签">&lt;noframes&gt;</a></li>
+<li><a href="tag_noscript.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_noscript.asp" title="HTML &lt;noscript&gt; 标签">&lt;noscript&gt;</a></li>
+<li><a href="tag_object.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_object.asp" title="HTML &lt;object&gt; 标签">&lt;object&gt;</a></li>
+<li><a href="tag_ol.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_ol.asp" title="HTML &lt;ol&gt; 标签">&lt;ol&gt;</a></li>
+<li><a href="tag_optgroup.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_optgroup.asp" title="HTML &lt;optgroup&gt; 标签">&lt;optgroup&gt;</a></li>
+<li><a href="tag_option.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_option.asp" title="HTML &lt;option&gt; 标签">&lt;option&gt;</a></li>
+<li><a href="tag_output.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_output.asp" title="HTML &lt;output&gt; 标签">&lt;output&gt;</a></li>
+<li><a href="tag_p.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_p.asp" title="HTML &lt;p&gt; 标签">&lt;p&gt;</a></li>
+<li><a href="tag_param.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_param.asp" title="HTML &lt;param&gt; 标签">&lt;param&gt;</a></li>
+<li><a href="tag_picture.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_picture.asp" title="HTML &lt;picture&gt; 标签">&lt;picture&gt;</a></li>
+<li><a href="tag_pre.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_pre.asp" title="HTML &lt;pre&gt; 标签">&lt;pre&gt;</a></li>
+<li><a href="tag_progress.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_progress.asp" title="HTML &lt;progress&gt; 标签">&lt;progress&gt;</a></li>
+<li><a href="tag_q.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_q.asp" title="HTML &lt;q&gt; 标签">&lt;q&gt;</a></li>
+<li><a href="tag_rp.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_rp.asp" title="HTML &lt;rp&gt; 标签">&lt;rp&gt;</a></li>
+<li><a href="tag_rt.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_rt.asp" title="HTML &lt;rt&gt; 标签">&lt;rt&gt;</a></li>
+<li><a href="tag_ruby.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_ruby.asp" title="HTML &lt;ruby&gt; 标签">&lt;ruby&gt;</a></li>
+<li><a href="tag_s.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_s.asp" title="HTML &lt;s&gt; 标签">&lt;s&gt;</a></li>
+<li><a href="tag_samp.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_samp.asp" title="HTML &lt;samp&gt; 标签">&lt;samp&gt;</a></li>
+<li><a href="tag_script.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_script.asp" title="HTML &lt;script&gt; 标签">&lt;script&gt;</a></li>
+<li><a href="tag_search.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_search.asp" title="HTML &lt;search&gt; 标签">&lt;search&gt;</a></li>
+<li><a href="tag_section.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_section.asp" title="HTML &lt;section&gt; 标签">&lt;section&gt;</a></li>
+<li><a href="tag_select.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_select.asp" title="HTML &lt;select&gt; 标签">&lt;select&gt;</a></li>
+<li><a href="tag_small.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_small.asp" title="HTML &lt;small&gt; 标签">&lt;small&gt;</a></li>
+<li><a href="tag_source.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_source.asp" title="HTML &lt;source&gt; 标签">&lt;source&gt;</a></li>
+<li><a href="tag_span.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_span.asp" title="HTML &lt;span&gt; 标签">&lt;span&gt;</a></li>
+<li><a href="tag_strike.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_strike.asp" title="HTML &lt;strike&gt; 标签">&lt;strike&gt;</a></li>
+<li><a href="tag_strong.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_strong.asp" title="HTML &lt;strong&gt; 标签">&lt;strong&gt;</a></li>
+<li><a href="tag_style.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_style.asp" title="HTML &lt;style&gt; 标签">&lt;style&gt;</a></li>
+<li><a href="tag_sub.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_sub.asp" title="HTML &lt;sub&gt; 标签">&lt;sub&gt;</a></li>
+<li><a href="tag_summary.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_summary.asp" title="HTML &lt;summary&gt; 标签">&lt;summary&gt;</a></li>
+<li><a href="tag_sup.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_sup.asp" title="HTML &lt;sup&gt; 标签">&lt;sup&gt;</a></li>
+<li><a href="tag_svg.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_svg.asp" title="HTML &lt;svg&gt; 标签">&lt;svg&gt;</a></li>
+<li><a href="tag_table.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_table.asp" title="HTML &lt;table&gt; 标签">&lt;table&gt;</a></li>
+<li><a href="tag_tbody.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_tbody.asp" title="HTML &lt;tbody&gt; 标签">&lt;tbody&gt;</a></li>
+<li><a href="tag_td.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_td.asp" title="HTML &lt;td&gt; 标签">&lt;td&gt;</a></li>
+<li><a href="tag_template.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_template.asp" title="HTML &lt;template&gt; 标签">&lt;template&gt;</a></li>
+<li><a href="tag_textarea.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_textarea.asp" title="HTML &lt;textarea&gt; 标签">&lt;textarea&gt;</a></li>
+<li><a href="tag_tfoot.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_tfoot.asp" title="HTML &lt;tfoot&gt; 标签">&lt;tfoot&gt;</a></li>
+<li><a href="tag_th.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_th.asp" title="HTML &lt;th&gt; 标签">&lt;th&gt;</a></li>
+<li><a href="tag_thead.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_thead.asp" title="HTML &lt;thead&gt; 标签">&lt;thead&gt;</a></li>
+<li><a href="tag_time.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_time.asp" title="HTML &lt;time&gt; 标签">&lt;time&gt;</a></li>
+<li><a href="tag_title.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_title.asp" title="HTML &lt;title&gt; 标签">&lt;title&gt;</a></li>
+<li><a href="tag_tr.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_tr.asp" title="HTML &lt;tr&gt; 标签">&lt;tr&gt;</a></li>
+<li><a href="tag_track.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_track.asp" title="HTML &lt;track&gt; 标签">&lt;track&gt;</a></li>
+<li><a href="tag_tt.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_tt.asp" title="HTML &lt;tt&gt; 标签">&lt;tt&gt;</a></li>
+<li><a href="tag_u.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_u.asp" title="HTML &lt;u&gt; 标签">&lt;u&gt;</a></li>
+<li><a href="tag_ul.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_ul.asp" title="HTML &lt;ul&gt; 标签">&lt;ul&gt;</a></li>
+<li><a href="tag_var.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_var.asp" title="HTML &lt;var&gt; 标签">&lt;var&gt;</a></li>
+<li><a href="tag_video.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_video.asp" title="HTML &lt;video&gt; 标签">&lt;video&gt;</a></li>
+<li><a href="tag_wbr.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_wbr.asp" title="HTML &lt;wbr&gt; 标签">&lt;wbr&gt;</a></li>
+</ul>
+</div><div id="selected">
+<h2>课程推荐：</h2>
+<ul>
+<li><a href="../howto/index.asp.htm" tppabs="https://www.w3school.com.cn/howto/index.asp" title="W3School 百宝箱">W3School 百宝箱</a></li>
+<li><a href="../java/index.asp.htm" tppabs="https://www.w3school.com.cn/java/index.asp" title="Java 教程">Java 教程</a></li>
+</ul>
+
+</div>
+
+</div>
+
+<div id="maincontent">
+
+<h1>HTML &lt;figure&gt; 标签</h1>
+
+<div class="prenextnav">
+<ul class="prenext">
+<li class="pre"><a href="tag_figcaption.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_figcaption.asp" title="HTML &lt;figcaption&gt; 标签">&lt;figcaption&gt;</a></li>
+<li class="next"><a href="tag_font.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_font.asp" title="HTML &lt;font&gt; 标签">&lt;font&gt;</a></li>
+</ul>
+</div>
+
+
+
+<div>
+<h2>定义和用法</h2>
+
+<p><code>&lt;figure&gt;</code> 标签规定自包含的内容，如插图、图表、照片、代码清单等。</p>
+
+<p>虽然 <code>&lt;figure&gt;</code> 元素的内容与主要内容相关，但它的位置独立于主要内容流，如果删除它，不应影响文档流。</p>
+
+<p class="tip"><span>提示：</span>请使用 <a href="tag_figcaption.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_figcaption.asp" title="HTML &lt;figcaption&gt; 标签">&lt;figcaption&gt; 元素</a> 为 <code>&lt;figure&gt;</code> 元素添加标题。</p>
+
+<h3>另请参阅：</h3>
+
+<p>HTML DOM 参考手册：<a href="../jsref/dom_obj_figure.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_figure.asp" title="HTML DOM Figure 对象">Figure 对象</a></p>
+</div>
+
+
+
+<div>
+<h2>实例</h2>
+
+<h3>例子 1</h3>
+
+<p>使用 &lt;figure&gt; 元素标记文档中的照片，使用 &lt;figcaption&gt; 元素定义照片的标题：</p>
+
+<pre class="language-html">
+&lt;figure&gt;
+  &lt;img src=&quot;trulli.jpg&quot; alt=&quot;Trulli&quot; style=&quot;width:100%&quot;&gt;
+  &lt;figcaption&gt;图 1 - 意大利普利亚地区的 Trulli。&lt;/figcaption&gt;
+&lt;/figure&gt;
+</pre>
+
+<p class="tiy"><a target="_blank" href="javascript:if(confirm('https://www.w3school.com.cn/tiy/howto_css_thumbnail.asp  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ������, �����������, ����Ŀ����ֹͣ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.w3school.com.cn/tiy/howto_css_thumbnail.asp'" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=tags_figure">亲自试一试</a></p>
+
+<h3>例子 2</h3>
+
+<p>使用 CSS 设置 &lt;figure&gt; 和 &lt;figcaption&gt; 的样式：</p>
+
+<pre class="language-html">
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+figure {
+  border: 1px #cccccc solid;
+  padding: 4px;
+  margin: auto;
+}
+
+figcaption {
+  background-color: black;
+  color: white;
+  font-style: italic;
+  padding: 2px;
+  text-align: center;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;figure&gt;
+  &lt;img src=&quot;trulli.jpg&quot; alt=&quot;Trulli&quot; style=&quot;width:100%&quot;&gt;
+  &lt;figcaption&gt;图 1 - 意大利普利亚地区的 Trulli。&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+
+<p class="tiy"><a target="_blank" href="javascript:if(confirm('https://www.w3school.com.cn/tiy/howto_css_image_center.asp  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ������, �����������, ����Ŀ����ֹͣ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.w3school.com.cn/tiy/howto_css_image_center.asp'" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=tags_figcaption_css">亲自试一试</a></p>
+</div>
+
+
+
+<div>
+<h2>全局属性</h2>
+
+<p><code>&lt;figure&gt;</code> 标签还支持 <a href="html_ref_standardattributes.asp.htm" tppabs="https://www.w3school.com.cn/tags/html_ref_standardattributes.asp" title="HTML 全局属性">HTML 中的全局属性</a>。</p>
+</div>
+
+
+
+<div>
+<h2>事件属性</h2>
+
+<p><code>&lt;figure&gt;</code> 标签还支持 <a href="html_ref_eventattributes.asp.htm" tppabs="https://www.w3school.com.cn/tags/html_ref_eventattributes.asp" title="HTML 事件属性">HTML 中的事件属性</a>。</p>
+</div>
+
+
+
+<div>
+<h2>默认的 CSS 设置</h2>
+
+<p>大多数浏览器将使用以下默认值显示 <code>&lt;figure&gt;</code> 元素：</p>
+
+<pre class="language-css">
+figure {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+</pre>
+
+<p class="tiy"><a target="_blank" href="javascript:if(confirm('https://www.w3school.com.cn/tiy/howto_css_border_image.asp  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ������, �����������, ����Ŀ����ֹͣ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.w3school.com.cn/tiy/howto_css_border_image.asp'" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=tags_figure_default_css">亲自试一试</a></p>
+</div>
+
+
+
+<div>
+<h2>浏览器支持</h2>
+
+<p>表中的数字注明了首个完全支持该元素的浏览器版本。</p>
+
+<table class="browser-support">
+<tr>
+<th class="bsChrome">Chrome</th>
+<th class="bsEdge">Edge</th>
+<th class="bsFirefox">Firefox</th>
+<th class="bsSafari">Safari</th>
+<th class="bsOpera">Opera</th>
+</tr>
+
+<tr>
+<td>Chrome</td>
+<td>Edge</td>
+<td>Firefox</td>
+<td>Safari</td>
+<td>Opera</td>
+</tr>
+
+<tr>
+<td>8.0</td>
+<td>9.0</td>
+<td>4.0</td>
+<td>5.1</td>
+<td>11.0</td>
+</tr>
+</table>
+
+<p>注释：&lt;figure&gt; 标签是 HTML 5 中的新标签。</p>
+</div>
+
+
+
+<div class="prenextnav">
+<ul class="prenext">
+<li class="pre"><a href="tag_figcaption.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_figcaption.asp" title="HTML &lt;figcaption&gt; 标签">&lt;figcaption&gt;</a></li>
+<li class="next"><a href="tag_font.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_font.asp" title="HTML &lt;font&gt; 标签">&lt;font&gt;</a></li>
+</ul>
+</div><div style="background-color:#fcfdf8; padding:0;">
+<script async src="../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" tppabs="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- W3School ���Ĺ�� -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:800px;height:250px"
+     data-ad-client="ca-pub-3381531532877742"
+     data-ad-slot="2086924285"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+</div>
+<!-- maincontent end -->
+
+<div id="sidebar">
+
+<div id="tools">
+<h5 id="tools_reference"><a href="index.asp.htm" tppabs="https://www.w3school.com.cn/tags/index.asp">HTML 参考手册</a></h5>
+<h5 id="tools_example"><a href="../html/html_examples.asp.htm" tppabs="https://www.w3school.com.cn/html/html_examples.asp">HTML 实例</a></h5>
+<h5 id="tools_quiz"><a href="../html/html_quiz.asp.htm" tppabs="https://www.w3school.com.cn/html/html_quiz.asp">HTML 测验</a></h5>
+<h5 id="tools_tutorial"><a href="../html/index.asp.htm" tppabs="https://www.w3school.com.cn/html/index.asp">HTML 教程</a></h5>
+</div>
+
+<div id="sidebar_zzs">
+
+<div id="sbtg">
+<script async src="../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" tppabs="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- W3School 侧栏广告位 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-3381531532877742"
+     data-ad-slot="6744370501"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+</div>
+
+</div>
+
+<div id="footer">
+<p id="p1">
+W3School 简体中文版提供的内容仅用于培训和测试，不保证内容的正确性。通过使用本站内容随之而来的风险与本站无关。版权所有，保留一切权利。
+</p>
+
+<p id="p2">
+<a href="../about/index.asp.htm" tppabs="https://www.w3school.com.cn/about/index.asp" title="关于 W3School">关于 W3School</a>
+<a href="../about/about_helping.asp.htm" tppabs="https://www.w3school.com.cn/about/about_helping.asp" title="帮助 W3School">帮助 W3School</a>
+<a href="../about/about_use.asp.htm" tppabs="https://www.w3school.com.cn/about/about_use.asp" title="关于使用">使用条款</a>
+<a href="../about/about_privacy.asp.htm" tppabs="https://www.w3school.com.cn/about/about_privacy.asp" title="关于隐私">隐私条款</a>
+<a target="_blank" href="javascript:if(confirm('https://www.ykinvestment.com/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.ykinvestment.com/'" tppabs="https://www.ykinvestment.com/">技术支持：赢科</a>
+<a target="_blank" href="javascript:if(confirm('http://www.beian.miit.gov.cn/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://www.beian.miit.gov.cn/'" tppabs="http://www.beian.miit.gov.cn/">蒙ICP备06004630号</a>
+</p>
+</div>
+
+
+</div>
+<!-- wrapper end -->
+
+
+</body>
+
+</html>

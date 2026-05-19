@@ -1,0 +1,365 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="../../www.googletagmanager.com/gtag/js-id=UA-878633-1" tppabs="https://www.googletagmanager.com/gtag/js?id=UA-878633-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-878633-1');
+</script>
+
+<meta charset=utf-8"utf-8">
+<meta name="robots" content="all" />
+<meta name="author" content="w3school.com.cn" />
+
+<link rel="stylesheet" type="text/css" href="../c.css" tppabs="https://www.w3school.com.cn/c.css" />
+
+<script src="../lib/cc/prism2.js" tppabs="https://www.w3school.com.cn/lib/cc/prism2.js"></script>
+<link rel='stylesheet' href="../lib/cc/prism.css" tppabs="https://www.w3school.com.cn/lib/cc/prism.css">
+
+<link rel="icon" type="image/png" sizes="16x16" href="/ui2019/logo-16-red.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/ui2019/logo-32-red.png">
+<link rel="icon" type="image/png" sizes="48x48" href="/ui2019/logo-48-red.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/ui2019/logo-96-red.png">
+<link rel="apple-touch-icon-precomposed" sizes="180x180" href="/ui2019/logo-180.png">
+
+
+<title>ADO Record 对象</title>
+
+</head>
+
+<body class="serverscripting">
+
+<div id="wrapper">
+
+<div id="header">
+<a id="logo" href="../index.html" tppabs="https://www.w3school.com.cn/index.html" title="w3school 在线教程" style="float:left;">w3school 在线教程</a>
+<div id="header_gg">
+<script async src="../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" tppabs="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- W3 页眉 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-3381531532877742"
+     data-ad-slot="7423315034"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+
+<div id="navfirst">
+<ul id="menu">
+<li id="h"><a href="../h.asp.htm" tppabs="https://www.w3school.com.cn/h.asp" title="HTML 系列教程">HTML 系列教程</a></li>
+<li id="b"><a href="../b.asp.htm" tppabs="https://www.w3school.com.cn/b.asp" title="浏览器脚本教程">浏览器脚本</a></li>
+<li id="s"><a href="../s.asp.htm" tppabs="https://www.w3school.com.cn/s.asp" title="服务器脚本教程">服务器脚本</a></li>
+<li id="p"><a href="../p.asp.htm" tppabs="https://www.w3school.com.cn/p.asp" title="编程教程">编程教程</a></li>
+<li id="x"><a href="../x.asp.htm" tppabs="https://www.w3school.com.cn/x.asp" title="XML 系列教程">XML 系列教程</a></li>
+<li id="w"><a href="../w.asp.htm" tppabs="https://www.w3school.com.cn/w.asp" title="建站手册">建站手册</a></li>
+<li id="r"><a href="../r.asp.htm" tppabs="https://www.w3school.com.cn/r.asp" title="参考手册">参考手册</a></li>
+</ul>
+</div>
+
+<div id="navsecond">
+
+<div id="course"><h2>ADO 教程</h2>
+<ul>
+<li><a href="index.asp.htm" tppabs="https://www.w3school.com.cn/ado/index.asp" title="ADO 教程">ADO 教程</a></li>
+<li><a href="ado_intro.asp.htm" tppabs="https://www.w3school.com.cn/ado/ado_intro.asp" title="ADO 简介">ADO 简介</a></li>
+<li><a href="ado_connect.asp.htm" tppabs="https://www.w3school.com.cn/ado/ado_connect.asp" title="ADO 数据库连接">ADO 连接</a></li>
+<li><a href="ado_recordset.asp.htm" tppabs="https://www.w3school.com.cn/ado/ado_recordset.asp" title="ADO Recordset（记录集）">ADO 记录集</a></li>
+<li><a href="ado_display.asp.htm" tppabs="https://www.w3school.com.cn/ado/ado_display.asp" title="ADO 显示">ADO 显示</a></li>
+<li><a href="ado_query.asp.htm" tppabs="https://www.w3school.com.cn/ado/ado_query.asp" title="ADO 查询">ADO 查询</a></li>
+<li><a href="ado_sort.asp.htm" tppabs="https://www.w3school.com.cn/ado/ado_sort.asp" title="ADO 排序">ADO 排序</a></li>
+<li><a href="ado_add.asp.htm" tppabs="https://www.w3school.com.cn/ado/ado_add.asp" title="ADO 添加记录">ADO 添加</a></li>
+<li><a href="ado_update.asp.htm" tppabs="https://www.w3school.com.cn/ado/ado_update.asp" title="ADO 更新记录">ADO 更新</a></li>
+<li><a href="ado_delete.asp.htm" tppabs="https://www.w3school.com.cn/ado/ado_delete.asp" title="ADO 删除记录">ADO 删除</a></li>
+<li><a href="ado_getstring.asp.htm" tppabs="https://www.w3school.com.cn/ado/ado_getstring.asp" title="ADO 通过 GetString() 加速脚本">ADO 加速</a></li>
+</ul>
+<h2>ADO 对象</h2>
+<ul>
+<li><a href="ado_ref_command.asp.htm" tppabs="https://www.w3school.com.cn/ado/ado_ref_command.asp" title="ADO Command 对象">ADO Command</a></li>
+<li><a href="ado_ref_connection.asp.htm" tppabs="https://www.w3school.com.cn/ado/ado_ref_connection.asp" title="ADO Connection 对象">ADO Connection</a></li>
+<li><a href="ado_ref_error.asp.htm" tppabs="https://www.w3school.com.cn/ado/ado_ref_error.asp" title="ADO Error 对象">ADO Error</a></li>
+<li><a href="ado_ref_field.asp.htm" tppabs="https://www.w3school.com.cn/ado/ado_ref_field.asp" title="ADO Field 对象">ADO Field</a></li>
+<li><a href="ado_ref_parameter.asp.htm" tppabs="https://www.w3school.com.cn/ado/ado_ref_parameter.asp" title="ADO Parameter 对象">ADO Parameter</a></li>
+<li><a href="ado_ref_property.asp.htm" tppabs="https://www.w3school.com.cn/ado/ado_ref_property.asp" title="ADO Property 对象">ADO Property</a></li>
+<li class="currentLink"><a href="ado_ref_record.asp.htm" tppabs="https://www.w3school.com.cn/ado/ado_ref_record.asp" title="ADO Record 对象">ADO Record</a></li>
+<li><a href="ado_ref_recordset.asp.htm" tppabs="https://www.w3school.com.cn/ado/ado_ref_recordset.asp" title="ADO Recordset 对象">ADO Recordset</a></li>
+<li><a href="ado_ref_stream.asp.htm" tppabs="https://www.w3school.com.cn/ado/ado_ref_stream.asp" title="ADO Stream 对象">ADO Stream</a></li>
+</ul>
+<h2>ADO 总结</h2>
+<ul>
+<li><a href="ado_datatypes.asp.htm" tppabs="https://www.w3school.com.cn/ado/ado_datatypes.asp" title="ADO 数据类型">ADO 数据类型</a></li>
+<li><a href="ado_summary.asp.htm" tppabs="https://www.w3school.com.cn/ado/ado_summary.asp" title="您已经学习了 ADO，下一步呢？">ADO 总结</a></li>
+</ul>
+<h2>ADO 实例</h2>
+<ul>
+<li><a href="ado_examples.asp.htm" tppabs="https://www.w3school.com.cn/ado/ado_examples.asp" title="ADO 实例">ADO 实例</a></li>
+</ul>
+</div><div id="selected">
+<h2>课程推荐：</h2>
+<ul>
+<li><a href="../howto/index.asp.htm" tppabs="https://www.w3school.com.cn/howto/index.asp" title="W3School 百宝箱">W3School 百宝箱</a></li>
+<li><a href="../java/index.asp.htm" tppabs="https://www.w3school.com.cn/java/index.asp" title="Java 教程">Java 教程</a></li>
+</ul>
+
+</div>
+
+</div>
+
+<div id="maincontent">
+
+<h1>ADO Record 对象</h1>
+
+<div class="prenextnav">
+<ul class="prenext">
+<li class="pre"><a href="ado_ref_property.asp.htm" tppabs="https://www.w3school.com.cn/ado/ado_ref_property.asp" title="ADO Property 对象">ADO Property</a></li>
+<li class="next"><a href="ado_ref_recordset.asp.htm" tppabs="https://www.w3school.com.cn/ado/ado_ref_recordset.asp" title="ADO Recordset 对象">ADO Recordset</a></li>
+</ul>
+</div>
+
+
+
+<div>
+<h2>Record 对象 (ADO version 2.5)</h2>
+
+<p>ADO Record 对象用于容纳记录集中的一行、或文件系统的一个文件或一个目录。</p>
+
+<p>ADO 2.5 之前的版本仅能够访问结构化的数据库。在一个结构化的数据库中，每个表在每一行均有确切相同的列数，并且每一列都由相同的数据类型组成。</p>
+
+<p>Record 对象允许访问行与行之间的列数且/或数据类型不同的数据集。</p>
+
+<h3>语法</h3>
+
+<pre class="language-vbnet">
+objectname.property
+objectname.method
+</pre>
+</div>
+
+
+
+<div>
+<h2>属性</h2>
+
+<table class="dataintable">
+<tr>
+<th>属性</th>
+<th>描述</th>
+</tr>
+
+<tr>
+<td>ActiveConnection</td>
+<td>设置或返回 Record 对象当前所属的 Connection 对象。</td>
+</tr>
+
+<tr>
+<td>Mode</td>
+<td>设置或返回在Record 对象中修改数据的有效权限。</td>
+</tr>
+
+<tr>
+<td>ParentURL</td>
+<td>返回父 Record 的绝对URL。</td>
+</tr>
+
+<tr>
+<td>RecordType</td>
+<td>返回 Record 对象的类型。</td>
+</tr>
+
+<tr>
+<td>Source</td>
+<td>设置或返回 Record 对象的 Open 方法的 src 参数。</td>
+</tr>
+
+<tr>
+<td>State</td>
+<td>返回 Record 对象的状态。</td>
+</tr>
+</table>
+</div>
+
+
+
+<div>
+<h2>方法</h2>
+
+<table class="dataintable">
+<tr>
+<th>方法</th>
+<th>描述</th>
+</tr>
+
+<tr>
+<td>Cancel</td>
+<td>取消一次 CopyRecord、DeleteRecord、MoveRecord 或 Open 调用的执行。</td>
+</tr>
+
+<tr>
+<td>Close</td>
+<td>关闭一个 Record 对象。</td>
+</tr>
+
+<tr>
+<td>CopyRecord</td>
+<td>把文件或目录拷贝到另外一个位置。</td>
+</tr>
+
+<tr>
+<td>DeleteRecord</td>
+<td>删除一个文件或目录。</td>
+</tr>
+
+<tr>
+<td>GetChildren</td>
+<td>返回一个 Recordset 对象，其中的每一行表示目录中的文件或子目录。</td>
+</tr>
+
+<tr>
+<td>MoveRecord</td>
+<td>把文件或目录移动到另外一个位置。</td>
+</tr>
+
+<tr>
+<td>Open</td>
+<td>打开一个已有的 Record 对象或创建一个新的文件或目录。</td>
+</tr>
+</table>
+</div>
+
+
+
+<div>
+<h2>集合</h2>
+
+<table class="dataintable">
+<tr>
+<th>集合</th>
+<th>描述</th>
+</tr>
+
+<tr>
+<td>Properties</td>
+<td>特定提供者属性的一个集合。</td>
+</tr>
+
+<tr>
+<td>Fields</td>
+<td>包含 Record 对象中的所有 Field 对象。</td>
+</tr>
+</table>
+</div>
+
+
+
+<div>
+<h2>Fields 集合的属性</h2>
+
+<table class="dataintable">
+<tr>
+<th>属性</th>
+<th>描述</th>
+</tr>
+
+<tr>
+<td>Count </td>
+<td>
+	<p>返回 fields 集合中的项目数。起始值为 0。</p>
+	<p>例子：</p>
+	<pre class="language-vbnet">
+	countfields = rec.Fields.Count
+	</pre>
+</td>
+</tr>
+
+<tr>
+<td>Item(named_item/number)</td>
+<td>
+	<p>返回 fields 集合中的某个指定的项目。</p>
+	<p>例子：</p>
+	<pre class="language-vbnet">
+	itemfields = rec.Fields.Item(1)
+	或者
+	itemfields = rec.Fields.Item(&quot;Name&quot;)
+	</pre>
+</td>
+</tr>
+</table>
+</div>
+
+
+
+<div class="prenextnav">
+<ul class="prenext">
+<li class="pre"><a href="ado_ref_property.asp.htm" tppabs="https://www.w3school.com.cn/ado/ado_ref_property.asp" title="ADO Property 对象">ADO Property</a></li>
+<li class="next"><a href="ado_ref_recordset.asp.htm" tppabs="https://www.w3school.com.cn/ado/ado_ref_recordset.asp" title="ADO Recordset 对象">ADO Recordset</a></li>
+</ul>
+</div><div style="background-color:#fcfdf8; padding:0;">
+<script async src="../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" tppabs="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- W3School ���Ĺ�� -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:800px;height:250px"
+     data-ad-client="ca-pub-3381531532877742"
+     data-ad-slot="2086924285"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+</div>
+<!-- maincontent end -->
+
+<div id="sidebar">
+
+<div id="tools">
+<h5 id="tools_reference"><a href="ado_reference.asp.htm" tppabs="https://www.w3school.com.cn/ado/ado_reference.asp">ADO 参考手册</a></h5>
+<h5 id="tools_example"><a href="ado_examples.asp.htm" tppabs="https://www.w3school.com.cn/ado/ado_examples.asp">ADO 实例</a></h5>
+</div>
+
+<div id="sidebar_zzs">
+
+<div id="sbtg">
+<script async src="../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" tppabs="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- W3School 侧栏广告位 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-3381531532877742"
+     data-ad-slot="6744370501"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+</div>
+
+</div>
+
+<div id="footer">
+<p id="p1">
+W3School 简体中文版提供的内容仅用于培训和测试，不保证内容的正确性。通过使用本站内容随之而来的风险与本站无关。版权所有，保留一切权利。
+</p>
+
+<p id="p2">
+<a href="../about/index.asp.htm" tppabs="https://www.w3school.com.cn/about/index.asp" title="关于 W3School">关于 W3School</a>
+<a href="../about/about_helping.asp.htm" tppabs="https://www.w3school.com.cn/about/about_helping.asp" title="帮助 W3School">帮助 W3School</a>
+<a href="../about/about_use.asp.htm" tppabs="https://www.w3school.com.cn/about/about_use.asp" title="关于使用">使用条款</a>
+<a href="../about/about_privacy.asp.htm" tppabs="https://www.w3school.com.cn/about/about_privacy.asp" title="关于隐私">隐私条款</a>
+<a target="_blank" href="javascript:if(confirm('https://www.ykinvestment.com/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.ykinvestment.com/'" tppabs="https://www.ykinvestment.com/">技术支持：赢科</a>
+<a target="_blank" href="javascript:if(confirm('http://www.beian.miit.gov.cn/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://www.beian.miit.gov.cn/'" tppabs="http://www.beian.miit.gov.cn/">蒙ICP备06004630号</a>
+</p>
+</div>
+
+
+</div>
+<!-- wrapper end -->
+
+</body>
+
+</html>

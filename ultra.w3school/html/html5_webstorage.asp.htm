@@ -1,0 +1,431 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="../../www.googletagmanager.com/gtag/js-id=UA-878633-1" tppabs="https://www.googletagmanager.com/gtag/js?id=UA-878633-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-878633-1');
+</script>
+
+<meta charset=utf-8"utf-8">
+<meta name="robots" content="all" />
+<meta name="author" content="w3school.com.cn" />
+
+<link rel="stylesheet" type="text/css" href="../c.css" tppabs="https://www.w3school.com.cn/c.css" />
+
+<script src="../lib/cc/prism2.js" tppabs="https://www.w3school.com.cn/lib/cc/prism2.js"></script>
+<link rel='stylesheet' href="../lib/cc/prism.css" tppabs="https://www.w3school.com.cn/lib/cc/prism.css">
+
+<link rel="icon" type="image/png" sizes="16x16" href="/ui2019/logo-16-red.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/ui2019/logo-32-red.png">
+<link rel="icon" type="image/png" sizes="48x48" href="/ui2019/logo-48-red.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/ui2019/logo-96-red.png">
+<link rel="apple-touch-icon-precomposed" sizes="180x180" href="/ui2019/logo-180.png">
+
+
+<title>HTML 本地存储</title>
+
+</head>
+
+<body class="html">
+
+<div id="wrapper">
+
+<div id="header">
+<a id="logo" href="../index.html" tppabs="https://www.w3school.com.cn/index.html" title="w3school 在线教程" style="float:left;">w3school 在线教程</a>
+<div id="header_gg">
+<script async src="../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" tppabs="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- W3 页眉 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-3381531532877742"
+     data-ad-slot="7423315034"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+
+<div id="navfirst">
+<ul id="menu">
+<li id="h"><a href="../h.asp.htm" tppabs="https://www.w3school.com.cn/h.asp" title="HTML 系列教程">HTML 系列教程</a></li>
+<li id="b"><a href="../b.asp.htm" tppabs="https://www.w3school.com.cn/b.asp" title="浏览器脚本教程">浏览器脚本</a></li>
+<li id="s"><a href="../s.asp.htm" tppabs="https://www.w3school.com.cn/s.asp" title="服务器脚本教程">服务器脚本</a></li>
+<li id="p"><a href="../p.asp.htm" tppabs="https://www.w3school.com.cn/p.asp" title="编程教程">编程教程</a></li>
+<li id="x"><a href="../x.asp.htm" tppabs="https://www.w3school.com.cn/x.asp" title="XML 系列教程">XML 系列教程</a></li>
+<li id="w"><a href="../w.asp.htm" tppabs="https://www.w3school.com.cn/w.asp" title="建站手册">建站手册</a></li>
+<li id="r"><a href="../r.asp.htm" tppabs="https://www.w3school.com.cn/r.asp" title="参考手册">参考手册</a></li>
+</ul>
+</div>
+
+<div id="navsecond">
+
+<div id="course"><h2>HTML 基础教程</h2>
+<ul>
+<li><a href="index.asp.htm" tppabs="https://www.w3school.com.cn/html/index.asp" title="HTML 教程">HTML 教程</a></li>
+<li><a href="html_jianjie.asp.htm" tppabs="https://www.w3school.com.cn/html/html_jianjie.asp" title="HTML 简介">HTML 简介</a></li>
+<li><a href="html_editors.asp.htm" tppabs="https://www.w3school.com.cn/html/html_editors.asp" title="HTML 编辑器">HTML 编辑器</a></li>
+<li><a href="html_basic.asp.htm" tppabs="https://www.w3school.com.cn/html/html_basic.asp" title="HTML 基础 - 四个实例">HTML 基础</a></li>
+<li><a href="html_elements.asp.htm" tppabs="https://www.w3school.com.cn/html/html_elements.asp" title="HTML 元素">HTML 元素</a></li>
+<li><a href="html_attributes.asp.htm" tppabs="https://www.w3school.com.cn/html/html_attributes.asp" title="HTML 属性">HTML 属性</a></li>
+<li><a href="html_headings.asp.htm" tppabs="https://www.w3school.com.cn/html/html_headings.asp" title="HTML 标题">HTML 标题</a></li>
+<li><a href="html_paragraphs.asp.htm" tppabs="https://www.w3school.com.cn/html/html_paragraphs.asp" title="HTML 段落">HTML 段落</a></li>
+<li><a href="html_styles.asp.htm" tppabs="https://www.w3school.com.cn/html/html_styles.asp" title="HTML 样式 - CSS">HTML 样式</a></li>
+<li><a href="html_formatting.asp.htm" tppabs="https://www.w3school.com.cn/html/html_formatting.asp" title="HTML 文本格式化">HTML 格式化</a></li>
+<li><a href="html_quotation_elements.asp.htm" tppabs="https://www.w3school.com.cn/html/html_quotation_elements.asp" title="HTML 引用">HTML 引用</a></li>
+<li><a href="html_comments.asp.htm" tppabs="https://www.w3school.com.cn/html/html_comments.asp" title="HTML 注释">HTML 注释</a></li>
+<li><a href="html_colors.asp.htm" tppabs="https://www.w3school.com.cn/html/html_colors.asp" title="HTML 颜色">HTML 颜色</a></li>
+<li><a href="html_colornames.asp.htm" tppabs="https://www.w3school.com.cn/html/html_colornames.asp" title="HTML 颜色名">HTML 颜色名</a></li>
+<li><a href="html_css.asp.htm" tppabs="https://www.w3school.com.cn/html/html_css.asp" title="HTML 样式 - CSS">HTML CSS</a></li>
+<li><a href="html_links.asp.htm" tppabs="https://www.w3school.com.cn/html/html_links.asp" title="HTML 链接">HTML 链接</a></li>
+<li><a href="html_images.asp.htm" tppabs="https://www.w3school.com.cn/html/html_images.asp" title="HTML 图像">HTML 图像</a></li>
+<li><a href="html_tables.asp.htm" tppabs="https://www.w3school.com.cn/html/html_tables.asp" title="HTML 表格">HTML 表格</a></li>
+<li><a href="html_lists.asp.htm" tppabs="https://www.w3school.com.cn/html/html_lists.asp" title="HTML 列表">HTML 列表</a></li>
+<li><a href="html_blocks.asp.htm" tppabs="https://www.w3school.com.cn/html/html_blocks.asp" title="HTML &lt;div&gt; 和 &lt;span&gt;">HTML 块</a></li>
+<li><a href="html_classes.asp.htm" tppabs="https://www.w3school.com.cn/html/html_classes.asp" title="HTML 类">HTML 类</a></li>
+<li><a href="html_id.asp.htm" tppabs="https://www.w3school.com.cn/html/html_id.asp" title="HTML id 属性">HTML Id</a></li>
+<li><a href="html_iframe.asp.htm" tppabs="https://www.w3school.com.cn/html/html_iframe.asp" title="HTML Iframe">HTML 内联框架</a></li>
+<li><a href="html_script.asp.htm" tppabs="https://www.w3school.com.cn/html/html_script.asp" title="HTML JavaScript">HTML JavaScript</a></li>
+<li><a href="html_filepaths.asp.htm" tppabs="https://www.w3school.com.cn/html/html_filepaths.asp" title="HTML 文件路径">HTML 路径</a></li>
+<li><a href="html_head.asp.htm" tppabs="https://www.w3school.com.cn/html/html_head.asp" title="HTML 头部元素">HTML 头部</a></li>
+<li><a href="html_layout.asp.htm" tppabs="https://www.w3school.com.cn/html/html_layout.asp" title="HTML 布局">HTML 布局</a></li>
+<li><a href="html_responsive.asp.htm" tppabs="https://www.w3school.com.cn/html/html_responsive.asp" title="HTML 响应式 Web 设计">HTML 响应式设计</a></li>
+<li><a href="html_computercode_elements.asp.htm" tppabs="https://www.w3school.com.cn/html/html_computercode_elements.asp" title="HTML 计算机代码">HTML 计算机代码</a></li>
+<li><a href="html5_semantic_elements.asp.htm" tppabs="https://www.w3school.com.cn/html/html5_semantic_elements.asp" title="HTML5 语义元素">HTML5 语义</a></li>
+<li><a href="html5_syntax.asp.htm" tppabs="https://www.w3school.com.cn/html/html5_syntax.asp" title="HTML(5) 样式指南和代码约定">HTML5 代码约定</a></li>
+<li><a href="html_entities.asp.htm" tppabs="https://www.w3school.com.cn/html/html_entities.asp" title="HTML 实体">HTML 实体</a></li>
+<li><a href="html_symbols.asp.htm" tppabs="https://www.w3school.com.cn/html/html_symbols.asp" title="HTML 符号">HTML 符号</a></li>
+<li><a href="html_emoji.asp.htm" tppabs="https://www.w3school.com.cn/html/html_emoji.asp" title="在 HTML 中使用表情符号">HTML 表情符号</a></li>
+<li><a href="html_charset.asp.htm" tppabs="https://www.w3school.com.cn/html/html_charset.asp" title="HTML 编码（字符集）">HTML 字符集</a></li>
+<li><a href="html_url.asp.htm" tppabs="https://www.w3school.com.cn/html/html_url.asp" title="HTML 统一资源定位器">HTML URL</a></li>
+<li><a href="html_frames.asp.htm" tppabs="https://www.w3school.com.cn/html/html_frames.asp" title="HTML 框架">HTML 框架</a></li>
+<li><a href="html_backgrounds.asp.htm" tppabs="https://www.w3school.com.cn/html/html_backgrounds.asp" title="HTML 背景">HTML 背景</a></li>
+<li><a href="html_urlencode.asp.htm" tppabs="https://www.w3school.com.cn/html/html_urlencode.asp" title="HTML URL 编码">HTML URL 编码</a></li>
+<li><a href="html_webserver.asp.htm" tppabs="https://www.w3school.com.cn/html/html_webserver.asp" title="HTML Web 服务器">HTML Web 服务器</a></li>
+<li><a href="html_doctype.asp.htm" tppabs="https://www.w3school.com.cn/html/html_doctype.asp" title="HTML &lt;!DOCTYPE&gt;">HTML 文档类型</a></li>
+<li><a href="html_quick.asp.htm" tppabs="https://www.w3school.com.cn/html/html_quick.asp" title="HTML 4.01 速查手册">HTML 速查手册</a></li>
+</ul>
+<h2>HTML XHTML</h2>
+<ul>
+<li><a href="html_xhtml.asp.htm" tppabs="https://www.w3school.com.cn/html/html_xhtml.asp" title="XHTML 简介">XHTML 简介</a></li>
+<li><a href="html_xhtml_elements.asp.htm" tppabs="https://www.w3school.com.cn/html/html_xhtml_elements.asp" title="XHTML - 元素">XHTML 元素</a></li>
+<li><a href="html_xhtml_attributes.asp.htm" tppabs="https://www.w3school.com.cn/html/html_xhtml_attributes.asp" title="XHTML - 属性">XHTML 属性</a></li>
+</ul>
+<h2>HTML 表单</h2>
+<ul>
+<li><a href="html_forms.asp.htm" tppabs="https://www.w3school.com.cn/html/html_forms.asp" title="HTML 表单和输入">HTML 表单</a></li>
+<li><a href="html_forms_attributes.asp.htm" tppabs="https://www.w3school.com.cn/html/html_forms_attributes.asp" title="HTML 表单属性">HTML 表单属性</a></li>
+<li><a href="html_form_elements.asp.htm" tppabs="https://www.w3school.com.cn/html/html_form_elements.asp" title="HTML 表单元素">HTML 表单元素</a></li>
+<li><a href="html_form_input_types.asp.htm" tppabs="https://www.w3school.com.cn/html/html_form_input_types.asp" title="HTML Input 类型">HTML 输入类型</a></li>
+<li><a href="html_form_attributes.asp.htm" tppabs="https://www.w3school.com.cn/html/html_form_attributes.asp" title="HTML 输入属性">HTML 输入属性</a></li>
+<li><a href="html_form_attributes_form.asp.htm" tppabs="https://www.w3school.com.cn/html/html_form_attributes_form.asp" title="HTML Input form* 属性">HTML Input 表单属性</a></li>
+</ul>
+<h2>HTML 图形</h2>
+<ul>
+<li><a href="html5_canvas.asp.htm" tppabs="https://www.w3school.com.cn/html/html5_canvas.asp" title="HTML5 Canvas">HTML5 画布</a></li>
+<li><a href="html5_svg.asp.htm" tppabs="https://www.w3school.com.cn/html/html5_svg.asp" title="HTML5 内联 SVG">HTML5 SVG</a></li>
+<li><a href="html5_canvas_vs_svg.asp.htm" tppabs="https://www.w3school.com.cn/html/html5_canvas_vs_svg.asp" title="HTML5 Canvas vs. SVG">HTML5 画布 vs SVG</a></li>
+</ul>
+<h2>HTML 媒体</h2>
+<ul>
+<li><a href="html_media.asp.htm" tppabs="https://www.w3school.com.cn/html/html_media.asp" title="HTML 多媒体">HTML 媒体</a></li>
+<li><a href="html_object.asp.htm" tppabs="https://www.w3school.com.cn/html/html_object.asp" title="HTML Object 元素">HTML 对象</a></li>
+<li><a href="html_audio.asp.htm" tppabs="https://www.w3school.com.cn/html/html_audio.asp" title="HTML 音频">HTML 音频</a></li>
+<li><a href="html_video.asp.htm" tppabs="https://www.w3school.com.cn/html/html_video.asp" title="HTML 视频">HTML 视频</a></li>
+<li><a href="html_youtube.asp.htm" tppabs="https://www.w3school.com.cn/html/html_youtube.asp" title="HTML YouTube 视频">HTML YouTube</a></li>
+</ul>
+<h2>HTML5</h2>
+<ul>
+<li><a href="html5_intro.asp.htm" tppabs="https://www.w3school.com.cn/html/html5_intro.asp" title="HTML5 简介">HTML5 简介</a></li>
+<li><a href="html5_browsers.asp.htm" tppabs="https://www.w3school.com.cn/html/html5_browsers.asp" title="HTML5 浏览器支持">HTML5 支持</a></li>
+<li><a href="html5_new_elements.asp.htm" tppabs="https://www.w3school.com.cn/html/html5_new_elements.asp" title="HTML5 元素">HTML5 元素</a></li>
+<li><a href="html5_migration.asp.htm" tppabs="https://www.w3school.com.cn/html/html5_migration.asp" title="HTML5 迁移">HTML5 迁移</a></li>
+</ul>
+<h2>HTML API</h2>
+<ul>
+<li><a href="html5_geolocation.asp.htm" tppabs="https://www.w3school.com.cn/html/html5_geolocation.asp" title="HTML5 地理定位">HTML5 地理定位</a></li>
+<li><a href="html5_draganddrop.asp.htm" tppabs="https://www.w3school.com.cn/html/html5_draganddrop.asp" title="HTML5 拖放">HTML5 拖放</a></li>
+<li class="currentLink"><a href="html5_webstorage.asp.htm" tppabs="https://www.w3school.com.cn/html/html5_webstorage.asp" title="HTML5 Web 存储">HTML5 Web 存储</a></li>
+<li><a href="html5_app_cache.asp.htm" tppabs="https://www.w3school.com.cn/html/html5_app_cache.asp" title="HTML 5 应用程序缓存">HTML5 应用缓存</a></li>
+<li><a href="html5_webworkers.asp.htm" tppabs="https://www.w3school.com.cn/html/html5_webworkers.asp" title="HTML5 Web Workers">HTML5 Web Workers</a></li>
+<li><a href="html5_serversentevents.asp.htm" tppabs="https://www.w3school.com.cn/html/html5_serversentevents.asp" title="HTML5 服务器发送事件">HTML5 SSE</a></li>
+</ul>
+<h2>实例/测验/总结</h2>
+<ul>
+<li><a href="html_examples.asp.htm" tppabs="https://www.w3school.com.cn/html/html_examples.asp" title="HTML 实例">HTML 实例</a></li>
+<li><a href="html_quiz.asp.htm" tppabs="https://www.w3school.com.cn/html/html_quiz.asp" title="HTML 测验">HTML 测验</a></li>
+<li><a href="html_summary.asp.htm" tppabs="https://www.w3school.com.cn/html/html_summary.asp" title="HTML 总结">HTML 总结</a></li>
+</ul>
+<h2>HTML 参考手册</h2>
+<ul>
+<li><a href="../tags/index.asp.htm" tppabs="https://www.w3school.com.cn/tags/index.asp" title="HTML 元素参考手册">HTML 元素（字母排序）</a></li>
+<li><a href="../tags/html_ref_byfunc.asp.htm" tppabs="https://www.w3school.com.cn/tags/html_ref_byfunc.asp" title="HTML 元素参考手册 - 功能排序">HTML 元素（功能排序）</a></li>
+<li><a href="../tags/html_ref_html_browsersupport.asp.htm" tppabs="https://www.w3school.com.cn/tags/html_ref_html_browsersupport.asp" title="HTML 参考手册 - 浏览器支持">HTML 浏览器支持</a></li>
+<li><a href="../tags/html_ref_standardattributes.asp.htm" tppabs="https://www.w3school.com.cn/tags/html_ref_standardattributes.asp" title="HTML 全局属性">HTML 全局属性</a></li>
+<li><a href="../tags/html_ref_eventattributes.asp.htm" tppabs="https://www.w3school.com.cn/tags/html_ref_eventattributes.asp" title="HTML 事件参考手册">HTML 事件</a></li>
+<li><a href="../tags/html_ref_colornames.asp.htm" tppabs="https://www.w3school.com.cn/tags/html_ref_colornames.asp" title="HTML 颜色名">HTML 颜色名</a></li>
+<li><a href="../tags/html_ref_canvas.asp.htm" tppabs="https://www.w3school.com.cn/tags/html_ref_canvas.asp" title="HTML Canvas 参考手册">HTML 画布</a></li>
+<li><a href="../tags/html_ref_audio_video_dom.asp.htm" tppabs="https://www.w3school.com.cn/tags/html_ref_audio_video_dom.asp" title="HTML 音频/视频参考手册">HTML 视频/音频</a></li>
+<li><a href="../tags/html_ref_charactersets.asp.htm" tppabs="https://www.w3school.com.cn/tags/html_ref_charactersets.asp" title="HTML 字符集">HTML 字符集</a></li>
+<li><a href="../tags/html_ref_dtd.asp.htm" tppabs="https://www.w3school.com.cn/tags/html_ref_dtd.asp" title="HTML &lt;!DOCTYPE&gt;">HTML 文档类型</a></li>
+<li><a href="../tags/html_ref_urlencode.asp.htm" tppabs="https://www.w3school.com.cn/tags/html_ref_urlencode.asp" title="HTML URL 编码">HTML URL 编码</a></li>
+<li><a href="../tags/html_ref_language_codes.asp.htm" tppabs="https://www.w3school.com.cn/tags/html_ref_language_codes.asp" title="HTML 语言代码参考手册">HTML 语言代码</a></li>
+<li><a href="../tags/html_ref_country_codes.asp.htm" tppabs="https://www.w3school.com.cn/tags/html_ref_country_codes.asp" title="HTML ISO 国家代码参考手册">HTML 国家代码</a></li>
+<li><a href="../tags/html_ref_httpmessages.asp.htm" tppabs="https://www.w3school.com.cn/tags/html_ref_httpmessages.asp" title="HTTP 状态消息">HTTP 消息</a></li>
+<li><a href="../tags/html_ref_httpmethods.asp.htm" tppabs="https://www.w3school.com.cn/tags/html_ref_httpmethods.asp" title="HTTP 请求方法">HTTP 方法</a></li>
+<li><a href="../tags/html_ref_keyboardshortcuts.asp.htm" tppabs="https://www.w3school.com.cn/tags/html_ref_keyboardshortcuts.asp" title="键盘快捷键">键盘快捷键</a></li>
+</ul>
+</div><div id="selected">
+<h2>课程推荐：</h2>
+<ul>
+<li><a href="../howto/index.asp.htm" tppabs="https://www.w3school.com.cn/howto/index.asp" title="W3School 百宝箱">W3School 百宝箱</a></li>
+<li><a href="../java/index.asp.htm" tppabs="https://www.w3school.com.cn/java/index.asp" title="Java 教程">Java 教程</a></li>
+</ul>
+
+</div>
+
+</div>
+
+<div id="maincontent">
+
+<h1>HTML 本地存储</h1>
+
+<div class="prenextnav">
+<ul class="prenext">
+<li class="pre"><a href="html5_draganddrop.asp.htm" tppabs="https://www.w3school.com.cn/html/html5_draganddrop.asp" title="HTML5 拖放">HTML5 拖放</a></li>
+<li class="next"><a href="html5_app_cache.asp.htm" tppabs="https://www.w3school.com.cn/html/html5_app_cache.asp" title="HTML 5 应用程序缓存">HTML5 应用缓存</a></li>
+</ul>
+</div>
+
+
+
+<div id="intro">
+<p><strong>HTML 本地存储：优于 cookies。</strong></p>
+</div>
+
+
+
+<div>
+<h2>什么是 HTML 本地存储？</h2>
+
+<p>通过本地存储（Local Storage），web 应用程序能够在用户浏览器中对数据进行本地的存储。</p>
+
+<p>在 HTML5 之前，应用程序数据只能存储在 cookie 中，包括每个服务器请求。本地存储则更安全，并且可在不影响网站性能的前提下将大量数据存储于本地。</p>
+
+<p>与 cookie 不同，存储限制要大得多（至少5MB），并且信息不会被传输到服务器。</p>
+
+<p>本地存储经由起源地（origin）（经由域和协议）。所有页面，从起源地，能够存储和访问相同的数据。</p>
+</div>
+
+
+
+<div>
+<h2>浏览器支持</h2>
+
+<p>表格中的数组指示了完全支持本地存储的首个浏览器版本。</p>
+
+<table class="dataintable browsersupport">
+<tr>
+<td>API</td>
+<td class="bsChrome"></td>
+<td class="bsIE"></td>
+<td class="bsFirefox"></td>
+<td class="bsSafari"></td>
+<td class="bsOpera"></td>
+</tr>
+
+<tr>
+<td>Web Storage</td>
+<td>4.0</td>
+<td>8.0</td>
+<td>3.5</td>
+<td>4.0</td>
+<td>11.5</td>
+</tr>
+</table>
+</div>
+
+
+
+<div>
+<h2>HTML 本地存储对象</h2>
+
+<p>HTML 本地存储提供了两个在客户端存储数据的对象：</p>
+
+<ul>
+<li>window.localStorage - 存储没有截止日期的数据</li>
+<li>window.sessionStorage - 针对一个 session 来存储数据（当关闭浏览器标签页时数据会丢失）</li>
+</ul>
+
+<p>在使用本地存储时，请检测 localStorage 和 sessionStorage 的浏览器支持：</p>
+
+<pre class="language-js">
+if (typeof(Storage) !== &quot;undefined&quot;) {
+    // 针对 localStorage/sessionStorage 的代码
+} else {
+    // 抱歉！不支持 Web Storage ..
+}
+</pre>
+
+</div>
+
+
+
+<div>
+<h2>localStorage 对象</h2>
+
+<p>localStorage 对象存储的是没有截止日期的数据。当浏览器被关闭时数据不会被删除，在下一天、周或年中，都是可用的。</p>
+
+<h3>实例</h3>
+
+<pre class="language-js">
+// 存储
+localStorage.setItem(&quot;lastname&quot;, &quot;Gates&quot;);
+// 取回
+document.getElementById(&quot;result&quot;).innerHTML = localStorage.getItem(&quot;lastname&quot;);
+</pre>
+
+<p class="tiy"><a target="_blank" href="javascript:if(confirm('https://www.w3school.com.cn/tiy/t.asp?f=css_align_padding_2  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ������, �����������, ����Ŀ����ֹͣ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.w3school.com.cn/tiy/t.asp?f=css_align_padding_2'" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_html5_webstorage_local">亲自试一试</a></p>
+
+<h3>实例解释：</h3>
+
+<ul>
+<li>创建 localStorage 名称/值对，其中：name=&quot;lastname&quot;，value=&quot;Gates&quot;</li>
+<li>取回 &quot;lastname&quot; 的值，并把它插到 id=&quot;result&quot; 的元素中</li>
+</ul>
+
+<p>上例也可这样写：</p>
+
+<pre class="language-js">
+// 存储
+localStorage.lastname = &quot;Gates&quot;;
+// 取回
+document.getElementById(&quot;result&quot;).innerHTML = localStorage.lastname;
+</pre>
+
+<p>删除 &quot;lastname&quot; localStorage 项目的语法如下：</p>
+
+<pre class="language-js">
+localStorage.removeItem(&quot;lastname&quot;);
+</pre>
+
+<p class="note"><span>注释：名称/值对始终存储为字符串。如果需要请记得把它们转换为其他格式！</p>
+
+<p>下面的例子对用户点击按钮的次数进行计数。在代码中，值字符串被转换为数值，依次对计数进行递增：</p>
+
+<h3>实例</h3>
+
+<pre class="language-js">
+if (localStorage.clickcount) {
+    localStorage.clickcount = Number(localStorage.clickcount) + 1;
+} else {
+    localStorage.clickcount = 1;
+}
+document.getElementById(&quot;result&quot;).innerHTML = &quot;您已经点击这个按钮 &quot; +
+localStorage.clickcount + &quot; 次。&quot;;
+</pre>
+
+<p class="tiy"><a target="_blank" href="javascript:if(confirm('https://www.w3school.com.cn/tiy/t.asp?f=css_align_line-height  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ������, �����������, ����Ŀ����ֹͣ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.w3school.com.cn/tiy/t.asp?f=css_align_line-height'" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_html5_webstorage_local_clickcount">亲自试一试</a></p>
+</div>
+
+
+
+<div>
+<h2>sessionStorage 对象</h2>
+
+<p>sessionStorage 对象等同 localStorage 对象，不同之处在于只对一个 session 存储数据。如果用户关闭具体的浏览器标签页，数据也会被删除。</p>
+
+<p>下例在当前 session 中对用户点击按钮进行计数：</p>
+
+<h3>实例</h3>
+
+<pre class="language-js">
+if (sessionStorage.clickcount) {
+    sessionStorage.clickcount = Number(sessionStorage.clickcount) + 1;
+} else {
+    sessionStorage.clickcount = 1;
+}
+document.getElementById(&quot;result&quot;).innerHTML = &quot;在本 session 中，您已经点击这个按钮 &quot; +
+sessionStorage.clickcount + &quot; 次。&quot;;
+</pre>
+
+<p class="tiy"><a target="_blank" href="javascript:if(confirm('https://www.w3school.com.cn/tiy/t.asp?f=css_align_transform  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ������, �����������, ����Ŀ����ֹͣ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.w3school.com.cn/tiy/t.asp?f=css_align_transform'" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_html5_webstorage_session">亲自试一试</a></p>
+</div>
+
+
+
+<div class="prenextnav">
+<ul class="prenext">
+<li class="pre"><a href="html5_draganddrop.asp.htm" tppabs="https://www.w3school.com.cn/html/html5_draganddrop.asp" title="HTML5 拖放">HTML5 拖放</a></li>
+<li class="next"><a href="html5_app_cache.asp.htm" tppabs="https://www.w3school.com.cn/html/html5_app_cache.asp" title="HTML 5 应用程序缓存">HTML5 应用缓存</a></li>
+</ul>
+</div><div style="background-color:#fcfdf8; padding:0;">
+<script async src="../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" tppabs="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- W3School ���Ĺ�� -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:800px;height:250px"
+     data-ad-client="ca-pub-3381531532877742"
+     data-ad-slot="2086924285"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+</div>
+<!-- maincontent end -->
+
+<div id="sidebar">
+
+<div id="tools">
+<h5 id="tools_reference"><a href="../tags/index.asp.htm" tppabs="https://www.w3school.com.cn/tags/index.asp">HTML 参考手册</a></h5>
+<h5 id="tools_example"><a href="html_examples.asp.htm" tppabs="https://www.w3school.com.cn/html/html_examples.asp">HTML 实例</a></h5>
+<h5 id="tools_quiz"><a href="html_quiz.asp.htm" tppabs="https://www.w3school.com.cn/html/html_quiz.asp">HTML 测验</a></h5>
+</div>
+
+<div id="sidebar_zzs">
+
+<div id="sbtg">
+<script async src="../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" tppabs="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- W3School 侧栏广告位 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-3381531532877742"
+     data-ad-slot="6744370501"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+</div>
+
+</div>
+
+<div id="footer">
+<p id="p1">
+W3School 简体中文版提供的内容仅用于培训和测试，不保证内容的正确性。通过使用本站内容随之而来的风险与本站无关。版权所有，保留一切权利。
+</p>
+
+<p id="p2">
+<a href="../about/index.asp.htm" tppabs="https://www.w3school.com.cn/about/index.asp" title="关于 W3School">关于 W3School</a>
+<a href="../about/about_helping.asp.htm" tppabs="https://www.w3school.com.cn/about/about_helping.asp" title="帮助 W3School">帮助 W3School</a>
+<a href="../about/about_use.asp.htm" tppabs="https://www.w3school.com.cn/about/about_use.asp" title="关于使用">使用条款</a>
+<a href="../about/about_privacy.asp.htm" tppabs="https://www.w3school.com.cn/about/about_privacy.asp" title="关于隐私">隐私条款</a>
+<a target="_blank" href="javascript:if(confirm('https://www.ykinvestment.com/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.ykinvestment.com/'" tppabs="https://www.ykinvestment.com/">技术支持：赢科</a>
+<a target="_blank" href="javascript:if(confirm('http://www.beian.miit.gov.cn/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://www.beian.miit.gov.cn/'" tppabs="http://www.beian.miit.gov.cn/">蒙ICP备06004630号</a>
+</p>
+</div>
+
+
+</div>
+<!-- wrapper end -->
+
+</body>
+
+</html>

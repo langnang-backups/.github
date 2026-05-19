@@ -1,0 +1,388 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="../../www.googletagmanager.com/gtag/js-id=UA-878633-1" tppabs="https://www.googletagmanager.com/gtag/js?id=UA-878633-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-878633-1');
+</script>
+
+<meta charset=utf-8"utf-8">
+<meta name="robots" content="all" />
+<meta name="author" content="w3school.com.cn" />
+
+<link rel="stylesheet" type="text/css" href="../c.css" tppabs="https://www.w3school.com.cn/c.css" />
+
+<script src="../lib/cc/prism2.js" tppabs="https://www.w3school.com.cn/lib/cc/prism2.js"></script>
+<link rel='stylesheet' href="../lib/cc/prism.css" tppabs="https://www.w3school.com.cn/lib/cc/prism.css">
+
+<link rel="icon" type="image/png" sizes="16x16" href="/ui2019/logo-16-red.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/ui2019/logo-32-red.png">
+<link rel="icon" type="image/png" sizes="48x48" href="/ui2019/logo-48-red.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/ui2019/logo-96-red.png">
+<link rel="apple-touch-icon-precomposed" sizes="180x180" href="/ui2019/logo-180.png">
+
+
+<title>游戏弹跳</title>
+
+</head>
+
+<body class="html">
+
+<div id="wrapper">
+
+<div id="header">
+<a id="logo" href="../index.html" tppabs="https://www.w3school.com.cn/index.html" title="w3school 在线教程" style="float:left;">w3school 在线教程</a>
+<div id="header_gg">
+<script async src="../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" tppabs="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- W3 页眉 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-3381531532877742"
+     data-ad-slot="7423315034"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+
+<div id="navfirst">
+<ul id="menu">
+<li id="h"><a href="../h.asp.htm" tppabs="https://www.w3school.com.cn/h.asp" title="HTML 系列教程">HTML 系列教程</a></li>
+<li id="b"><a href="../b.asp.htm" tppabs="https://www.w3school.com.cn/b.asp" title="浏览器脚本教程">浏览器脚本</a></li>
+<li id="s"><a href="../s.asp.htm" tppabs="https://www.w3school.com.cn/s.asp" title="服务器脚本教程">服务器脚本</a></li>
+<li id="p"><a href="../p.asp.htm" tppabs="https://www.w3school.com.cn/p.asp" title="编程教程">编程教程</a></li>
+<li id="x"><a href="../x.asp.htm" tppabs="https://www.w3school.com.cn/x.asp" title="XML 系列教程">XML 系列教程</a></li>
+<li id="w"><a href="../w.asp.htm" tppabs="https://www.w3school.com.cn/w.asp" title="建站手册">建站手册</a></li>
+<li id="r"><a href="../r.asp.htm" tppabs="https://www.w3school.com.cn/r.asp" title="参考手册">参考手册</a></li>
+</ul>
+</div>
+
+<div id="navsecond">
+
+<div id="course"><h2>HTML 图形</h2>
+<ul>
+<li><a href="index.asp.htm" tppabs="https://www.w3school.com.cn/graphics/index.asp" title="HTML 图形">HTML 图形</a></li>
+</ul>
+<h2>HTML 绘图</h2>
+<ul>
+<li><a href="plot_graphics.asp.htm" tppabs="https://www.w3school.com.cn/graphics/plot_graphics.asp" title="JavaScript 图形">Graphics</a></li>
+<li><a href="plot_canvas.asp.htm" tppabs="https://www.w3school.com.cn/graphics/plot_canvas.asp" title="HTML Canvas">Canvas</a></li>
+<li><a href="plot_plotly.asp.htm" tppabs="https://www.w3school.com.cn/graphics/plot_plotly.asp" title="Plotly.js">Plotly.js</a></li>
+<li><a href="plot_chartjs.asp.htm" tppabs="https://www.w3school.com.cn/graphics/plot_chartjs.asp" title="Chart.js">Chart.js</a></li>
+<li><a href="plot_google_chart.asp.htm" tppabs="https://www.w3school.com.cn/graphics/plot_google_chart.asp" title="谷歌图表">Google</a></li>
+<li><a href="plot_d3js.asp.htm" tppabs="https://www.w3school.com.cn/graphics/plot_d3js.asp" title="D3.js">D3.js</a></li>
+</ul>
+<h2>谷歌地图</h2>
+<ul>
+<li><a href="google_maps_intro.asp.htm" tppabs="https://www.w3school.com.cn/graphics/google_maps_intro.asp" title="谷歌地图教程">Maps 简介</a></li>
+<li><a href="google_maps_basic.asp.htm" tppabs="https://www.w3school.com.cn/graphics/google_maps_basic.asp" title="谷歌地图基础">Maps 基础</a></li>
+<li><a href="google_maps_overlays.asp.htm" tppabs="https://www.w3school.com.cn/graphics/google_maps_overlays.asp" title="谷歌地图叠加层">Maps 叠加层</a></li>
+<li><a href="google_maps_events.asp.htm" tppabs="https://www.w3school.com.cn/graphics/google_maps_events.asp" title="谷歌地图事件">Maps 事件</a></li>
+<li><a href="google_maps_controls.asp.htm" tppabs="https://www.w3school.com.cn/graphics/google_maps_controls.asp" title="谷歌地图控件">Maps 控件</a></li>
+<li><a href="google_maps_types.asp.htm" tppabs="https://www.w3school.com.cn/graphics/google_maps_types.asp" title="谷歌地图类型">Maps 类型</a></li>
+<li><a href="google_maps_reference.asp.htm" tppabs="https://www.w3school.com.cn/graphics/google_maps_reference.asp" title="谷歌地图参考手册">Maps 参考手册</a></li>
+</ul>
+<h2>SVG 教程</h2>
+<ul>
+<li><a href="svg_intro.asp.htm" tppabs="https://www.w3school.com.cn/graphics/svg_intro.asp" title="SVG 教程">SVG 简介</a></li>
+<li><a href="svg_inhtml.asp.htm" tppabs="https://www.w3school.com.cn/graphics/svg_inhtml.asp" title="HTML 中的 SVG">SVG 嵌入 HTML</a></li>
+<li><a href="svg_rect.asp.htm" tppabs="https://www.w3school.com.cn/graphics/svg_rect.asp" title="SVG &lt;rect&gt;">SVG 矩形</a></li>
+<li><a href="svg_circle.asp.htm" tppabs="https://www.w3school.com.cn/graphics/svg_circle.asp" title="SVG &lt;circle&gt;">SVG 圆形</a></li>
+<li><a href="svg_ellipse.asp.htm" tppabs="https://www.w3school.com.cn/graphics/svg_ellipse.asp" title="SVG &lt;ellipse&gt;">SVG 椭圆</a></li>
+<li><a href="svg_line.asp.htm" tppabs="https://www.w3school.com.cn/graphics/svg_line.asp" title="SVG &lt;line&gt;">SVG 直线</a></li>
+<li><a href="svg_polygon.asp.htm" tppabs="https://www.w3school.com.cn/graphics/svg_polygon.asp" title="SVG &lt;polygon&gt;">SVG 多边形</a></li>
+<li><a href="svg_polyline.asp.htm" tppabs="https://www.w3school.com.cn/graphics/svg_polyline.asp" title="SVG &lt;polyline&gt;">SVG 折线</a></li>
+<li><a href="svg_path.asp.htm" tppabs="https://www.w3school.com.cn/graphics/svg_path.asp" title="SVG &lt;path&gt;">SVG 路径</a></li>
+<li><a href="svg_text.asp.htm" tppabs="https://www.w3school.com.cn/graphics/svg_text.asp" title="SVG &lt;text&gt;">SVG 文本</a></li>
+<li><a href="svg_stroking.asp.htm" tppabs="https://www.w3school.com.cn/graphics/svg_stroking.asp" title="SVG 笔触属性">SVG 笔触</a></li>
+<li><a href="svg_filters.asp.htm" tppabs="https://www.w3school.com.cn/graphics/svg_filters.asp" title="SVG 滤镜">SVG 滤镜</a></li>
+<li><a href="svg_fegaussianblur.asp.htm" tppabs="https://www.w3school.com.cn/graphics/svg_fegaussianblur.asp" title="SVG 模糊效果">SVG 模糊</a></li>
+<li><a href="svg_feoffset.asp.htm" tppabs="https://www.w3school.com.cn/graphics/svg_feoffset.asp" title="SVG 阴影">SVG 阴影</a></li>
+<li><a href="svg_grad_linear.asp.htm" tppabs="https://www.w3school.com.cn/graphics/svg_grad_linear.asp" title="SVG 线性渐变">SVG 线性渐变</a></li>
+<li><a href="svg_grad_radial.asp.htm" tppabs="https://www.w3school.com.cn/graphics/svg_grad_radial.asp" title="SVG 径向渐变">SVG 径向渐变</a></li>
+<li><a href="svg_examples.asp.htm" tppabs="https://www.w3school.com.cn/graphics/svg_examples.asp" title="SVG 实例">SVG 实例</a></li>
+<li><a href="svg_reference.asp.htm" tppabs="https://www.w3school.com.cn/graphics/svg_reference.asp" title="SVG 参考手册">SVG 参考手册</a></li>
+</ul>
+<h2>Canvas 教程</h2>
+<ul>
+<li><a href="canvas_intro.asp.htm" tppabs="https://www.w3school.com.cn/graphics/canvas_intro.asp" title="HTML Canvas 教程">Canvas 简介</a></li>
+<li><a href="canvas_drawing.asp.htm" tppabs="https://www.w3school.com.cn/graphics/canvas_drawing.asp" title="HTML Canvas 绘制">Canvas 绘制</a></li>
+<li><a href="canvas_coordinates.asp.htm" tppabs="https://www.w3school.com.cn/graphics/canvas_coordinates.asp" title="HTML Canvas 坐标">Canvas 坐标</a></li>
+<li><a href="canvas_lines.asp.htm" tppabs="https://www.w3school.com.cn/graphics/canvas_lines.asp" title="HTML Canvas 直线">Canvas 直线</a></li>
+<li><a href="canvas_shapes.asp.htm" tppabs="https://www.w3school.com.cn/graphics/canvas_shapes.asp" title="HTML Canvas 形状">Canvas 形状</a></li>
+<li><a href="canvas_rectangles.asp.htm" tppabs="https://www.w3school.com.cn/graphics/canvas_rectangles.asp" title="HTML Canvas 矩形">Canvas 矩形</a></li>
+<li><a href="canvas_circles.asp.htm" tppabs="https://www.w3school.com.cn/graphics/canvas_circles.asp" title="HTML Canvas 圆形">Canvas 圆形</a></li>
+<li><a href="canvas_curves.asp.htm" tppabs="https://www.w3school.com.cn/graphics/canvas_curves.asp" title="HTML Canvas 曲线">Canvas 曲线</a></li>
+<li><a href="canvas_gradients.asp.htm" tppabs="https://www.w3school.com.cn/graphics/canvas_gradients.asp" title="HTML Canvas 渐变">Canvas 渐变</a></li>
+<li><a href="canvas_text.asp.htm" tppabs="https://www.w3school.com.cn/graphics/canvas_text.asp" title="HTML Canvas 文本">Canvas 文本</a></li>
+<li><a href="canvas_images.asp.htm" tppabs="https://www.w3school.com.cn/graphics/canvas_images.asp" title="HTML Canvas 图像">Canvas 图像</a></li>
+</ul>
+<h2>Canvas 时钟</h2>
+<ul>
+<li><a href="canvas_clock.asp.htm" tppabs="https://www.w3school.com.cn/graphics/canvas_clock.asp" title="Canvas 时钟">时钟简介</a></li>
+<li><a href="canvas_clock_face.asp.htm" tppabs="https://www.w3school.com.cn/graphics/canvas_clock_face.asp" title="Canvas 时钟钟面">时钟钟面</a></li>
+<li><a href="canvas_clock_numbers.asp.htm" tppabs="https://www.w3school.com.cn/graphics/canvas_clock_numbers.asp" title="Canvas 时钟数字">时钟数字</a></li>
+<li><a href="canvas_clock_hands.asp.htm" tppabs="https://www.w3school.com.cn/graphics/canvas_clock_hands.asp" title="Canvas 时钟指针">时钟指针</a></li>
+<li><a href="canvas_clock_start.asp.htm" tppabs="https://www.w3school.com.cn/graphics/canvas_clock_start.asp" title="Canvas 时钟启动">时钟启动</a></li>
+</ul>
+<h2>HTML 游戏</h2>
+<ul>
+<li><a href="game_intro.asp.htm" tppabs="https://www.w3school.com.cn/graphics/game_intro.asp" title="HTML 游戏实例">游戏简介</a></li>
+<li><a href="game_canvas.asp.htm" tppabs="https://www.w3school.com.cn/graphics/game_canvas.asp" title="游戏画布">游戏画布</a></li>
+<li><a href="game_components.asp.htm" tppabs="https://www.w3school.com.cn/graphics/game_components.asp" title="游戏组件">游戏组件</a></li>
+<li><a href="game_controllers.asp.htm" tppabs="https://www.w3school.com.cn/graphics/game_controllers.asp" title="游戏控制器">游戏控制器</a></li>
+<li><a href="game_obstacles.asp.htm" tppabs="https://www.w3school.com.cn/graphics/game_obstacles.asp" title="游戏障碍">游戏障碍</a></li>
+<li><a href="game_score.asp.htm" tppabs="https://www.w3school.com.cn/graphics/game_score.asp" title="游戏分数">游戏分数</a></li>
+<li><a href="game_images.asp.htm" tppabs="https://www.w3school.com.cn/graphics/game_images.asp" title="游戏图像">游戏图像</a></li>
+<li><a href="game_sound.asp.htm" tppabs="https://www.w3school.com.cn/graphics/game_sound.asp" title="游戏声音">游戏声音</a></li>
+<li><a href="game_gravity.asp.htm" tppabs="https://www.w3school.com.cn/graphics/game_gravity.asp" title="游戏重力">游戏重力</a></li>
+<li class="currentLink"><a href="game_bouncing.asp.htm" tppabs="https://www.w3school.com.cn/graphics/game_bouncing.asp" title="游戏弹跳">游戏弹跳</a></li>
+<li><a href="game_rotation.asp.htm" tppabs="https://www.w3school.com.cn/graphics/game_rotation.asp" title="游戏旋转">游戏旋转</a></li>
+<li><a href="game_movement.asp.htm" tppabs="https://www.w3school.com.cn/graphics/game_movement.asp" title="游戏运动">游戏运动</a></li>
+</ul>
+</div><div id="selected">
+<h2>课程推荐：</h2>
+<ul>
+<li><a href="../howto/index.asp.htm" tppabs="https://www.w3school.com.cn/howto/index.asp" title="W3School 百宝箱">W3School 百宝箱</a></li>
+<li><a href="../java/index.asp.htm" tppabs="https://www.w3school.com.cn/java/index.asp" title="Java 教程">Java 教程</a></li>
+</ul>
+
+</div>
+
+</div>
+
+<div id="maincontent">
+
+<h1>游戏弹跳</h1>
+
+<div class="prenextnav">
+<ul class="prenext">
+<li class="pre"><a href="game_gravity.asp.htm" tppabs="https://www.w3school.com.cn/graphics/game_gravity.asp" title="游戏重力">游戏重力</a></li>
+<li class="next"><a href="game_rotation.asp.htm" tppabs="https://www.w3school.com.cn/graphics/game_rotation.asp" title="游戏旋转">游戏旋转</a></li>
+</ul>
+</div>
+
+
+
+<section id="intro">
+<p style="margin-bottom: 15px;">这个红色方块落地时会弹起：</p>
+
+<style>
+canvas {border: 1px solid #c3c3c3;}
+div#myfilter {position:absolute;background-color:#000000;opacity:0.3;width:322px;height:182px;display:none;}
+div#myrestartbutton {position:absolute;padding-top:75px;padding-left:120px;display:none;}
+div#myrestartbutton button {border: 0px solid #000;padding: 10px 15px;}
+div#btns {text-align:center;width:320px;}
+div#btns button {padding: 10px 15px;border: 1px solid #000;}
+button#leftbtn {margin-right: 40px;}
+</style>
+
+<div id="canvascontainer"></div>
+<br>
+<div id="btns">
+  <button onclick="restartgame()" id="rstbtn">重新开始</button>
+</div>
+
+<script>
+var myGamePiece;
+var myoverlay;
+var myresult;
+var accel = false;
+
+function startGame() {
+    myGamePiece = new component(30, 30, "red", 50, 50);
+    myGameArea.start();
+}
+
+var myGameArea = {
+    canvas : document.createElement("canvas"),
+    start : function() {
+        this.canvas.width = 320;
+        this.canvas.height = 180;
+        this.context = this.canvas.getContext("2d");
+        document.getElementById("canvascontainer").appendChild(this.canvas);
+        this.interval = setInterval(updateGameArea, 20);        
+    },
+    stop : function() {
+        clearInterval(this.interval);
+    },    
+    clear : function() {
+        this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
+    }
+}
+
+function component(width, height, color, x, y, type) {
+    this.type = type;
+    this.width = width;
+    this.height = height;
+    this.speed = 0;
+    this.gravity = 0.1;
+    this.gravitySpeed = 0;
+    this.bounce = 0.6;
+    this.angle = 0;
+    this.x = x;
+    this.y = y;    
+    this.update = function() {
+        ctx = myGameArea.context;
+        ctx.save();
+        ctx.translate(this.x, this.y);
+        ctx.rotate(this.angle);
+        ctx.fillStyle = color;
+        ctx.fillRect(this.width / -2, this.height / -2, this.width, this.height);        
+        ctx.restore();    
+    }
+    this.newPos = function() {
+        var rockbottom = myGameArea.canvas.height - (this.height / 2);
+        this.gravitySpeed += this.gravity;
+        this.x += this.speed * Math.cos(this.angle);
+        this.y += (this.speed * Math.sin(this.angle)) + this.gravitySpeed;
+        if (this.y > rockbottom) {
+            this.gravitySpeed=-(this.gravitySpeed * this.bounce);
+            this.gravitySpeed = Number(this.gravitySpeed.toFixed(2));
+            this.y = rockbottom;
+        }
+    }
+}
+
+function updateGameArea() {
+    myGameArea.clear();
+    myGamePiece.newPos();
+    myGamePiece.update();
+}
+
+function restartgame(x) {
+    myGameArea.stop();
+    document.getElementById("canvascontainer").innerHTML = "";
+    startGame();
+}
+
+startGame();
+</script>
+</section>
+
+
+
+<section>
+<h2>弹跳</h2>
+
+<p>我们要添加的另一个功能是 <code>bounce</code> 属性。</p>
+
+<p><code>bounce</code> 属性指示当重力使其落到地面时组件是否会反弹。</p>
+
+<p><code>bounce</code> 属性值必须是数字。0 表示根本不反弹，1 将使组件一路反弹回到开始下降的位置。</p>
+
+<h3>实例</h3>
+
+<pre class="language-js">
+function component(width, height, color, x, y, type) {
+  this.type = type;
+  this.width = width;
+  this.height = height;
+  this.x = x;
+  this.y = y;
+  this.speedX = 0;
+  this.speedY = 0;
+  this.gravity = 0.1;
+  this.gravitySpeed = 0;
+  <mark>this.bounce = 0.6;</mark>
+  this.update = function() {
+    ctx = myGameArea.context;
+    ctx.fillStyle = color;
+    ctx.fillRect(this.x, this.y, this.width, this.height);
+  }
+  this.newPos = function() {
+    this.gravitySpeed += this.gravity;
+    this.x += this.speedX;
+    this.y += this.speedY + this.gravitySpeed;
+    this.hitBottom();
+  }
+  this.hitBottom = function() {
+    var rockbottom = this.gamearea.canvas.height - this.height;
+    if (this.y &gt; rockbottom) {
+      this.y = rockbottom;
+      <mark>this.gravitySpeed = -(this.gravitySpeed * this.bounce);</mark>
+    }
+  }
+}
+</pre>
+
+<p class="tiy"><a target="_blank" href="javascript:if(confirm('https://www.w3school.com.cn/tiy/howto_css_login_form.asp  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ������, �����������, ����Ŀ����ֹͣ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.w3school.com.cn/tiy/howto_css_login_form.asp'" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=graphics_game_bouncing">亲自试一试</a></p>
+</section>
+
+
+
+<div class="prenextnav">
+<ul class="prenext">
+<li class="pre"><a href="game_gravity.asp.htm" tppabs="https://www.w3school.com.cn/graphics/game_gravity.asp" title="游戏重力">游戏重力</a></li>
+<li class="next"><a href="game_rotation.asp.htm" tppabs="https://www.w3school.com.cn/graphics/game_rotation.asp" title="游戏旋转">游戏旋转</a></li>
+</ul>
+</div><div style="background-color:#fcfdf8; padding:0;">
+<script async src="../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" tppabs="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- W3School ���Ĺ�� -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:800px;height:250px"
+     data-ad-client="ca-pub-3381531532877742"
+     data-ad-slot="2086924285"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+</div>
+<!-- maincontent end -->
+
+<div id="sidebar">
+
+<div id="tools">
+<h5 id="tools_reference"><a href="../jsref/api_canvas.asp.htm" tppabs="https://www.w3school.com.cn/jsref/api_canvas.asp">Canvas API</a></h5>
+</div>
+
+<div id="sidebar_zzs">
+
+<div id="sbtg">
+<script async src="../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" tppabs="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- W3School 侧栏广告位 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-3381531532877742"
+     data-ad-slot="6744370501"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+</div>
+
+</div>
+
+<div id="footer">
+<p id="p1">
+W3School 简体中文版提供的内容仅用于培训和测试，不保证内容的正确性。通过使用本站内容随之而来的风险与本站无关。版权所有，保留一切权利。
+</p>
+
+<p id="p2">
+<a href="../about/index.asp.htm" tppabs="https://www.w3school.com.cn/about/index.asp" title="关于 W3School">关于 W3School</a>
+<a href="../about/about_helping.asp.htm" tppabs="https://www.w3school.com.cn/about/about_helping.asp" title="帮助 W3School">帮助 W3School</a>
+<a href="../about/about_use.asp.htm" tppabs="https://www.w3school.com.cn/about/about_use.asp" title="关于使用">使用条款</a>
+<a href="../about/about_privacy.asp.htm" tppabs="https://www.w3school.com.cn/about/about_privacy.asp" title="关于隐私">隐私条款</a>
+<a target="_blank" href="javascript:if(confirm('https://www.ykinvestment.com/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.ykinvestment.com/'" tppabs="https://www.ykinvestment.com/">技术支持：赢科</a>
+<a target="_blank" href="javascript:if(confirm('http://www.beian.miit.gov.cn/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://www.beian.miit.gov.cn/'" tppabs="http://www.beian.miit.gov.cn/">蒙ICP备06004630号</a>
+</p>
+</div>
+
+
+</div>
+<!-- wrapper end -->
+
+
+</body>
+
+</html>

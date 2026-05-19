@@ -1,0 +1,429 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="../../www.googletagmanager.com/gtag/js-id=UA-878633-1" tppabs="https://www.googletagmanager.com/gtag/js?id=UA-878633-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-878633-1');
+</script>
+
+<meta charset=utf-8"utf-8">
+<meta name="robots" content="all" />
+<meta name="author" content="w3school.com.cn" />
+
+<link rel="stylesheet" type="text/css" href="../c.css" tppabs="https://www.w3school.com.cn/c.css" />
+
+<script src="../lib/cc/prism2.js" tppabs="https://www.w3school.com.cn/lib/cc/prism2.js"></script>
+<link rel='stylesheet' href="../lib/cc/prism.css" tppabs="https://www.w3school.com.cn/lib/cc/prism.css">
+
+<link rel="icon" type="image/png" sizes="16x16" href="/ui2019/logo-16-red.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/ui2019/logo-32-red.png">
+<link rel="icon" type="image/png" sizes="48x48" href="/ui2019/logo-48-red.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/ui2019/logo-96-red.png">
+<link rel="apple-touch-icon-precomposed" sizes="180x180" href="/ui2019/logo-180.png">
+
+
+<title>HTML DOM Embed å¯¹è±¡</title>
+
+</head>
+
+<body class="browserscripting">
+
+<div id="wrapper">
+
+<div id="header">
+<a id="logo" href="../index.html" tppabs="https://www.w3school.com.cn/index.html" title="w3school åœ¨çº¿æ•™ç¨‹" style="float:left;">w3school åœ¨çº¿æ•™ç¨‹</a>
+<div id="header_gg">
+<script async src="../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" tppabs="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- W3 é¡µçœ‰ -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-3381531532877742"
+     data-ad-slot="7423315034"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+
+<div id="navfirst">
+<ul id="menu">
+<li id="h"><a href="../h.asp.htm" tppabs="https://www.w3school.com.cn/h.asp" title="HTML ç³»åˆ—æ•™ç¨‹">HTML ç³»åˆ—æ•™ç¨‹</a></li>
+<li id="b"><a href="../b.asp.htm" tppabs="https://www.w3school.com.cn/b.asp" title="æµè§ˆå™¨è„šæœ¬æ•™ç¨‹">æµè§ˆå™¨è„šæœ¬</a></li>
+<li id="s"><a href="../s.asp.htm" tppabs="https://www.w3school.com.cn/s.asp" title="æœåŠ¡å™¨è„šæœ¬æ•™ç¨‹">æœåŠ¡å™¨è„šæœ¬</a></li>
+<li id="p"><a href="../p.asp.htm" tppabs="https://www.w3school.com.cn/p.asp" title="ç¼–ç¨‹æ•™ç¨‹">ç¼–ç¨‹æ•™ç¨‹</a></li>
+<li id="x"><a href="../x.asp.htm" tppabs="https://www.w3school.com.cn/x.asp" title="XML ç³»åˆ—æ•™ç¨‹">XML ç³»åˆ—æ•™ç¨‹</a></li>
+<li id="w"><a href="../w.asp.htm" tppabs="https://www.w3school.com.cn/w.asp" title="å»ºç«™æ‰‹å†Œ">å»ºç«™æ‰‹å†Œ</a></li>
+<li id="r"><a href="../r.asp.htm" tppabs="https://www.w3school.com.cn/r.asp" title="å‚è€ƒæ‰‹å†Œ">å‚è€ƒæ‰‹å†Œ</a></li>
+</ul>
+</div>
+
+<div id="navsecond">
+
+<div id="course"><h2>JS å‚è€ƒæ‰‹å†Œ</h2>
+<ul>
+<li><a href="index.asp.htm" tppabs="https://www.w3school.com.cn/jsref/index.asp" title="JavaScript å’Œ HTML DOM å‚è€ƒæ‰‹å†Œ">JS å‚è€ƒæ‰‹å†Œï¼ˆç±»åˆ«æ’åºï¼‰</a></li>
+<li><a href="jsref_reference.asp.htm" tppabs="https://www.w3school.com.cn/jsref/jsref_reference.asp" title="JavaScript å‚è€ƒæ‰‹å†Œ">JS å‚è€ƒæ‰‹å†Œï¼ˆå­—æ¯æ’åºï¼‰</a></li>
+</ul>
+<h2>JavaScript</h2>
+<ul>
+<li><a href="jsref_obj_array.asp.htm" tppabs="https://www.w3school.com.cn/jsref/jsref_obj_array.asp" title="JavaScript Array å‚è€ƒæ‰‹å†Œ">JS Array</a></li>
+<li><a href="jsref_obj_boolean.asp.htm" tppabs="https://www.w3school.com.cn/jsref/jsref_obj_boolean.asp" title="JavaScript Boolean å‚è€ƒæ‰‹å†Œ">JS Boolean</a></li>
+<li><a href="jsref_classes.asp.htm" tppabs="https://www.w3school.com.cn/jsref/jsref_classes.asp" title="JavaScript Class å‚è€ƒæ‰‹å†Œ">JS Class</a></li>
+<li><a href="jsref_obj_date.asp.htm" tppabs="https://www.w3school.com.cn/jsref/jsref_obj_date.asp" title="JavaScript Date å‚è€ƒæ‰‹å†Œ">JS Date</a></li>
+<li><a href="jsref_obj_error.asp.htm" tppabs="https://www.w3school.com.cn/jsref/jsref_obj_error.asp" title="JavaScript Error å‚è€ƒæ‰‹å†Œ">JS Error</a></li>
+<li><a href="jsref_obj_global.asp.htm" tppabs="https://www.w3school.com.cn/jsref/jsref_obj_global.asp" title="JavaScript Global å‚è€ƒæ‰‹å†Œ">JS Global</a></li>
+<li><a href="jsref_obj_json.asp.htm" tppabs="https://www.w3school.com.cn/jsref/jsref_obj_json.asp" title="JavaScript JSON å‚è€ƒæ‰‹å†Œ">JS JSON</a></li>
+<li><a href="jsref_obj_map.asp.htm" tppabs="https://www.w3school.com.cn/jsref/jsref_obj_map.asp" title="JavaScript Map å‚è€ƒæ‰‹å†Œ">JS Map</a></li>
+<li><a href="jsref_obj_math.asp.htm" tppabs="https://www.w3school.com.cn/jsref/jsref_obj_math.asp" title="JavaScript Math å‚è€ƒæ‰‹å†Œ">JS Math</a></li>
+<li><a href="jsref_obj_number.asp.htm" tppabs="https://www.w3school.com.cn/jsref/jsref_obj_number.asp" title="JavaScript Number å‚è€ƒæ‰‹å†Œ">JS Number</a></li>
+<li><a href="jsref_obj_promise.asp.htm" tppabs="https://www.w3school.com.cn/jsref/jsref_obj_promise.asp" title="JavaScript Promise å¯¹è±¡">JS Promise</a></li>
+<li><a href="jsref_obj_regexp.asp.htm" tppabs="https://www.w3school.com.cn/jsref/jsref_obj_regexp.asp" title="JavaScript RegExp å‚è€ƒæ‰‹å†Œ">JS RegExp</a></li>
+<li><a href="jsref_obj_set.asp.htm" tppabs="https://www.w3school.com.cn/jsref/jsref_obj_set.asp" title="JavaScript Set å‚è€ƒæ‰‹å†Œ">JS Set</a></li>
+<li><a href="jsref_obj_string.asp.htm" tppabs="https://www.w3school.com.cn/jsref/jsref_obj_string.asp" title="JavaScript String å‚è€ƒæ‰‹å†Œ">JS String</a></li>
+<li><a href="jsref_obj_object.asp.htm" tppabs="https://www.w3school.com.cn/jsref/jsref_obj_object.asp" title="JavaScript Object å‚è€ƒæ‰‹å†Œ">JS å¯¹è±¡</a></li>
+<li><a href="jsref_operators.asp.htm" tppabs="https://www.w3school.com.cn/jsref/jsref_operators.asp" title="JavaScript è¿ç®—ç¬¦å‚è€ƒæ‰‹å†Œ">JS è¿ç®—ç¬¦</a></li>
+<li><a href="jsref_precedence.asp.htm" tppabs="https://www.w3school.com.cn/jsref/jsref_precedence.asp" title="JavaScript è¿ç®—ç¬¦ä¼˜å…ˆçº§">JS è¿ç®—ç¬¦ä¼˜å…ˆçº§</a></li>
+<li><a href="jsref_statements.asp.htm" tppabs="https://www.w3school.com.cn/jsref/jsref_statements.asp" title="JavaScript è¯­å¥å‚è€ƒæ‰‹å†Œ">JS è¯­å¥</a></li>
+<li><a href="jsref_obj_typed_array.asp.htm" tppabs="https://www.w3school.com.cn/jsref/jsref_obj_typed_array.asp" title="JavaScript ç±»å‹åŒ–æ•°ç»„å‚è€ƒæ‰‹å†Œ">JS ç±»å‹åŒ–æ•°ç»„</a></li>
+</ul>
+<h2>Window</h2>
+<ul>
+<li><a href="obj_window.asp.htm" tppabs="https://www.w3school.com.cn/jsref/obj_window.asp" title="Window å¯¹è±¡">Window å¯¹è±¡</a></li>
+<li><a href="obj_console.asp.htm" tppabs="https://www.w3school.com.cn/jsref/obj_console.asp" title="Window Console å¯¹è±¡">Window Console</a></li>
+<li><a href="obj_history.asp.htm" tppabs="https://www.w3school.com.cn/jsref/obj_history.asp" title="Window History å¯¹è±¡">Window History</a></li>
+<li><a href="obj_location.asp.htm" tppabs="https://www.w3school.com.cn/jsref/obj_location.asp" title="Window Location å¯¹è±¡">Window Location</a></li>
+<li><a href="obj_navigator.asp.htm" tppabs="https://www.w3school.com.cn/jsref/obj_navigator.asp" title="Window Navigator å¯¹è±¡">Window Navigator</a></li>
+<li><a href="obj_screen.asp.htm" tppabs="https://www.w3school.com.cn/jsref/obj_screen.asp" title="Window Screen å¯¹è±¡">Window Screen</a></li>
+</ul>
+<h2>HTML DOM</h2>
+<ul>
+<li><a href="dom_obj_document.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_document.asp" title="HTML DOM Document å¯¹è±¡">HTML Document</a></li>
+<li><a href="dom_obj_all.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_all.asp" title="HTML DOM Element å¯¹è±¡">HTML Element</a></li>
+<li><a href="dom_obj_attributes.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_attributes.asp" title="HTML DOM Attr å¯¹è±¡">HTML Attribute</a></li>
+<li><a href="dom_obj_event.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_event.asp" title="HTML DOM äº‹ä»¶">HTML Event</a></li>
+<li><a href="obj_events.asp.htm" tppabs="https://www.w3school.com.cn/jsref/obj_events.asp" title="HTML DOM Event å¯¹è±¡">HTML Event å¯¹è±¡</a></li>
+<li><a href="dom_obj_htmlcollection.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_htmlcollection.asp" title="DOM HTMLCollection">HTML Collection</a></li>
+<li><a href="dom_obj_html_nodelist.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_html_nodelist.asp" title="HTML DOM NodeList å¯¹è±¡">HTML NodeList</a></li>
+<li><a href="dom_obj_html_domtokenlist.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_html_domtokenlist.asp" title="HTML DOMTokenList å¯¹è±¡">HTML DOMTokenList</a></li>
+<li><a href="dom_obj_style.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_style.asp" title="HTML DOM Style å¯¹è±¡">HTML Style</a></li>
+</ul>
+<h2>Web API</h2>
+<ul>
+<li><a href="api_canvas.asp.htm" tppabs="https://www.w3school.com.cn/jsref/api_canvas.asp" title="JavaScript Canvas API">API Canvas</a></li>
+<li><a href="api_console.asp.htm" tppabs="https://www.w3school.com.cn/jsref/api_console.asp" title="JavaScript Console API">API Console</a></li>
+<li><a href="api_fetch.asp.htm" tppabs="https://www.w3school.com.cn/jsref/api_fetch.asp" title="JavaScript Fetch API">API Fetch</a></li>
+<li><a href="api_fullscreen.asp.htm" tppabs="https://www.w3school.com.cn/jsref/api_fullscreen.asp" title="JavaScript Fullscreen API">API Fullscreen</a></li>
+<li><a href="api_geolocation.asp.htm" tppabs="https://www.w3school.com.cn/jsref/api_geolocation.asp" title="JavaScript Geolocation API">API Geolocation</a></li>
+<li><a href="api_history.asp.htm" tppabs="https://www.w3school.com.cn/jsref/api_history.asp" title="JavaScript History API">API History</a></li>
+<li><a href="api_mediaquerylist.asp.htm" tppabs="https://www.w3school.com.cn/jsref/api_mediaquerylist.asp" title="JavaScript MediaQueryList API">API MediaQueryList</a></li>
+<li><a href="api_storage.asp.htm" tppabs="https://www.w3school.com.cn/jsref/api_storage.asp" title="JavaScript Storage API">API Storage</a></li>
+<li><a href="api_validation.asp.htm" tppabs="https://www.w3school.com.cn/jsref/api_validation.asp" title="JavaScript Validation API">API Validation</a></li>
+<li><a href="api_web.asp.htm" tppabs="https://www.w3school.com.cn/jsref/api_web.asp" title="JavaScript Web API">API Web</a></li>
+</ul>
+<h2>HTML å¯¹è±¡</h2>
+<ul>
+<li><a href="dom_obj_anchor.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_anchor.asp" title="HTML DOM Anchor å¯¹è±¡">&lt;a&gt;</a></li>
+<li><a href="dom_obj_abbr.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_abbr.asp" title="HTML DOM Abbreviation å¯¹è±¡">&lt;abbr&gt;</a></li>
+<li><a href="dom_obj_address.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_address.asp" title="HTML DOM Address å¯¹è±¡">&lt;address&gt;</a></li>
+<li><a href="dom_obj_area.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_area.asp" title="HTML DOM Area å¯¹è±¡">&lt;area&gt;</a></li>
+<li><a href="dom_obj_article.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_article.asp" title="HTML DOM Article å¯¹è±¡">&lt;article&gt;</a></li>
+<li><a href="dom_obj_aside.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_aside.asp" title="HTML DOM Aside å¯¹è±¡">&lt;aside&gt;</a></li>
+<li><a href="dom_obj_audio.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_audio.asp" title="HTML DOM Audio å¯¹è±¡">&lt;audio&gt;</a></li>
+<li><a href="dom_obj_b.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_b.asp" title="HTML DOM Bold å¯¹è±¡">&lt;b&gt;</a></li>
+<li><a href="dom_obj_base.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_base.asp" title="HTML DOM Base å¯¹è±¡">&lt;base&gt;</a></li>
+<li><a href="dom_obj_bdo.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_bdo.asp" title="HTML DOM Bdo å¯¹è±¡">&lt;bdo&gt;</a></li>
+<li><a href="dom_obj_blockquote.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_blockquote.asp" title="HTML DOM Blockquote å¯¹è±¡">&lt;blockquote&gt;</a></li>
+<li><a href="dom_obj_body.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_body.asp" title="HTML DOM Body å¯¹è±¡">&lt;body&gt;</a></li>
+<li><a href="dom_obj_br.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_br.asp" title="HTML DOM BR å¯¹è±¡">&lt;br&gt;</a></li>
+<li><a href="dom_obj_pushbutton.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_pushbutton.asp" title="HTML DOM Button å¯¹è±¡">&lt;button&gt;</a></li>
+<li><a href="dom_obj_canvas.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_canvas.asp" title="HTML DOM Canvas å¯¹è±¡">&lt;canvas&gt;</a></li>
+<li><a href="dom_obj_caption.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_caption.asp" title="HTML DOM Caption å¯¹è±¡">&lt;caption&gt;</a></li>
+<li><a href="dom_obj_cite.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_cite.asp" title="HTML DOM Cite å¯¹è±¡">&lt;cite&gt;</a></li>
+<li><a href="dom_obj_code.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_code.asp" title="HTML DOM Code å¯¹è±¡">&lt;code&gt;</a></li>
+<li><a href="dom_obj_col.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_col.asp" title="HTML DOM Column å¯¹è±¡">&lt;col&gt;</a></li>
+<li><a href="dom_obj_colgroup.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_colgroup.asp" title="HTML DOM ColumnGroup å¯¹è±¡">&lt;colgroup&gt;</a></li>
+<li><a href="dom_obj_datalist.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_datalist.asp" title="HTML DOM Datalist å¯¹è±¡">&lt;datalist&gt;</a></li>
+<li><a href="dom_obj_dd.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_dd.asp" title="HTML DOM DD å¯¹è±¡">&lt;dd&gt;</a></li>
+<li><a href="dom_obj_del.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_del.asp" title="HTML DOM Del å¯¹è±¡">&lt;del&gt;</a></li>
+<li><a href="dom_obj_details.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_details.asp" title="HTML DOM Details å¯¹è±¡">&lt;details&gt;</a></li>
+<li><a href="dom_obj_dfn.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_dfn.asp" title="HTML DOM DFN å¯¹è±¡">&lt;dfn&gt;</a></li>
+<li><a href="dom_obj_dialog.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_dialog.asp" title="HTML DOM Dialog å¯¹è±¡">&lt;dialog&gt;</a></li>
+<li><a href="dom_obj_div.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_div.asp" title="HTML DOM Div å¯¹è±¡">&lt;div&gt;</a></li>
+<li><a href="dom_obj_dl.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_dl.asp" title="HTML DOM DList å¯¹è±¡">&lt;dl&gt;</a></li>
+<li><a href="dom_obj_dt.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_dt.asp" title="HTML DOM DT å¯¹è±¡">&lt;dt&gt;</a></li>
+<li><a href="dom_obj_em.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_em.asp" title="HTML DOM Emphasized å¯¹è±¡">&lt;em&gt;</a></li>
+<li class="currentLink"><a href="dom_obj_embed.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_embed.asp" title="HTML DOM Embed å¯¹è±¡">&lt;embed&gt;</a></li>
+<li><a href="dom_obj_fieldset.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_fieldset.asp" title="HTML DOM Fieldset å¯¹è±¡">&lt;fieldset&gt;</a></li>
+<li><a href="dom_obj_figcaption.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_figcaption.asp" title="HTML DOM Figcaption å¯¹è±¡">&lt;figcaption&gt;</a></li>
+<li><a href="dom_obj_figure.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_figure.asp" title="HTML DOM Figure å¯¹è±¡">&lt;figure&gt;</a></li>
+<li><a href="dom_obj_footer.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_footer.asp" title="HTML DOM Footer å¯¹è±¡">&lt;footer&gt;</a></li>
+<li><a href="dom_obj_form.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_form.asp" title="HTML DOM Form å¯¹è±¡">&lt;form&gt;</a></li>
+<li><a href="dom_obj_head.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_head.asp" title="HTML DOM Head å¯¹è±¡">&lt;head&gt;</a></li>
+<li><a href="dom_obj_header.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_header.asp" title="HTML DOM Header å¯¹è±¡">&lt;header&gt;</a></li>
+<li><a href="dom_obj_heading.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_heading.asp" title="HTML DOM Heading å¯¹è±¡">&lt;h1&gt; - &lt;h6&gt;</a></li>
+<li><a href="dom_obj_hr.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_hr.asp" title="HTML DOM HR å¯¹è±¡">&lt;hr&gt;</a></li>
+<li><a href="dom_obj_html.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_html.asp" title="HTML DOM HTML å¯¹è±¡">&lt;html&gt;</a></li>
+<li><a href="dom_obj_i.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_i.asp" title="HTML DOM Italic å¯¹è±¡">&lt;i&gt;</a></li>
+<li><a href="dom_obj_frame.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_frame.asp" title="HTML DOM IFrame å¯¹è±¡">&lt;iframe&gt;</a></li>
+<li><a href="dom_obj_image.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_image.asp" title="HTML DOM Image å¯¹è±¡">&lt;img&gt;</a></li>
+<li><a href="dom_obj_ins.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_ins.asp" title="HTML DOM Ins å¯¹è±¡">&lt;ins&gt;</a></li>
+<li><a href="dom_obj_button.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_button.asp" title="HTML DOM Input Button å¯¹è±¡">&lt;input&gt; button</a></li>
+<li><a href="dom_obj_checkbox.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_checkbox.asp" title="HTML DOM Input Checkbox å¯¹è±¡">&lt;input&gt; checkbox</a></li>
+<li><a href="dom_obj_color.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_color.asp" title="HTML DOM Input Color å¯¹è±¡">&lt;input&gt; color</a></li>
+<li><a href="dom_obj_date.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_date.asp" title="HTML DOM Input Date å¯¹è±¡">&lt;input&gt; date</a></li>
+<li><a href="dom_obj_datetime.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_datetime.asp" title="HTML DOM Input Datetime å¯¹è±¡">&lt;input&gt; datetime</a></li>
+<li><a href="dom_obj_datetime-local.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_datetime-local.asp" title="HTML DOM Input DatetimeLocal å¯¹è±¡">&lt;input&gt; datetime-local</a></li>
+<li><a href="dom_obj_email.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_email.asp" title="HTML DOM Input Email å¯¹è±¡">&lt;input&gt; email</a></li>
+<li><a href="dom_obj_fileupload.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_fileupload.asp" title="HTML DOM Input FileUpload å¯¹è±¡">&lt;input&gt; file</a></li>
+<li><a href="dom_obj_hidden.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_hidden.asp" title="HTML DOM Input Hidden å¯¹è±¡">&lt;input&gt; hidden</a></li>
+<li><a href="dom_obj_input_image.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_input_image.asp" title="HTML DOM Input Image å¯¹è±¡">&lt;input&gt; image</a></li>
+<li><a href="dom_obj_month.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_month.asp" title="HTML DOM Input Month å¯¹è±¡">&lt;input&gt; month</a></li>
+<li><a href="dom_obj_number.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_number.asp" title="HTML DOM Input Number å¯¹è±¡">&lt;input&gt; number</a></li>
+<li><a href="dom_obj_password.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_password.asp" title="HTML DOM Input Password å¯¹è±¡">&lt;input&gt; password</a></li>
+<li><a href="dom_obj_radio.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_radio.asp" title="HTML DOM Input Radio å¯¹è±¡">&lt;input&gt; radio</a></li>
+<li><a href="dom_obj_range.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_range.asp" title="HTML DOM Input Range å¯¹è±¡">&lt;input&gt; range</a></li>
+<li><a href="dom_obj_reset.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_reset.asp" title="HTML DOM Input Reset å¯¹è±¡">&lt;input&gt; reset</a></li>
+<li><a href="dom_obj_search.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_search.asp" title="HTML DOM Input Search å¯¹è±¡">&lt;input&gt; search</a></li>
+<li><a href="dom_obj_submit.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_submit.asp" title="HTML DOM Input Submit å¯¹è±¡">&lt;input&gt; submit</a></li>
+<li><a href="dom_obj_text.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_text.asp" title="HTML DOM Input Text å¯¹è±¡">&lt;input&gt; text</a></li>
+<li><a href="dom_obj_input_time.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_input_time.asp" title="HTML DOM Input Time å¯¹è±¡">&lt;input&gt; time</a></li>
+<li><a href="dom_obj_url.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_url.asp" title="HTML DOM Input URL å¯¹è±¡">&lt;input&gt; url</a></li>
+<li><a href="dom_obj_week.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_week.asp" title="HTML DOM Input Week å¯¹è±¡">&lt;input&gt; week</a></li>
+<li><a href="dom_obj_kbd.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_kbd.asp" title="HTML DOM Kbd å¯¹è±¡">&lt;kbd&gt;</a></li>
+<li><a href="dom_obj_label.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_label.asp" title="HTML DOM Label å¯¹è±¡">&lt;label&gt;</a></li>
+<li><a href="dom_obj_legend.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_legend.asp" title="HTML DOM Legend å¯¹è±¡">&lt;legend&gt;</a></li>
+<li><a href="dom_obj_li.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_li.asp" title="HTML DOM Li å¯¹è±¡">&lt;li&gt;</a></li>
+<li><a href="dom_obj_link.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_link.asp" title="HTML DOM Link å¯¹è±¡">&lt;link&gt;</a></li>
+<li><a href="dom_obj_map.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_map.asp" title="HTML DOM Map å¯¹è±¡">&lt;map&gt;</a></li>
+<li><a href="dom_obj_mark.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_mark.asp" title="HTML DOM Mark å¯¹è±¡">&lt;mark&gt;</a></li>
+<li><a href="dom_obj_menu.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_menu.asp" title="HTML DOM Menu å¯¹è±¡">&lt;menu&gt;</a></li>
+<li><a href="dom_obj_menuitem.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_menuitem.asp" title="HTML DOM MenuItem å¯¹è±¡">&lt;menuitem&gt;</a></li>
+<li><a href="dom_obj_meta.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_meta.asp" title="HTML DOM Meta å¯¹è±¡">&lt;meta&gt;</a></li>
+<li><a href="dom_obj_meter.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_meter.asp" title="HTML DOM Meter å¯¹è±¡">&lt;meter&gt;</a></li>
+<li><a href="dom_obj_nav.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_nav.asp" title="HTML DOM Nav å¯¹è±¡">&lt;nav&gt;</a></li>
+<li><a href="dom_obj_object.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_object.asp" title="HTML DOM Object å¯¹è±¡">&lt;object&gt;</a></li>
+<li><a href="dom_obj_ol.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_ol.asp" title="HTML DOM Ol å¯¹è±¡">&lt;ol&gt;</a></li>
+<li><a href="dom_obj_optgroup.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_optgroup.asp" title="HTML DOM OptionGroup å¯¹è±¡">&lt;optgroup&gt;</a></li>
+<li><a href="dom_obj_option.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_option.asp" title="HTML DOM Option å¯¹è±¡">&lt;option&gt;</a></li>
+<li><a href="dom_obj_output.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_output.asp" title="HTML DOM Output å¯¹è±¡">&lt;output&gt;</a></li>
+<li><a href="dom_obj_paragraph.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_paragraph.asp" title="HTML DOM Paragraph å¯¹è±¡">&lt;p&gt;</a></li>
+<li><a href="dom_obj_param.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_param.asp" title="HTML DOM Parameter å¯¹è±¡">&lt;param&gt;</a></li>
+<li><a href="dom_obj_pre.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_pre.asp" title="HTML DOM Pre å¯¹è±¡">&lt;pre&gt;</a></li>
+<li><a href="dom_obj_progress.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_progress.asp" title="HTML DOM Progress å¯¹è±¡">&lt;progress&gt;</a></li>
+<li><a href="dom_obj_quote.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_quote.asp" title="HTML DOM Quote å¯¹è±¡">&lt;q&gt;</a></li>
+<li><a href="dom_obj_s.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_s.asp" title="HTML DOM S å¯¹è±¡">&lt;s&gt;</a></li>
+<li><a href="dom_obj_samp.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_samp.asp" title="HTML DOM Samp å¯¹è±¡">&lt;samp&gt;</a></li>
+<li><a href="dom_obj_script.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_script.asp" title="HTML DOM Script å¯¹è±¡">&lt;script&gt;</a></li>
+<li><a href="dom_obj_section.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_section.asp" title="HTML DOM Section å¯¹è±¡">&lt;section&gt;</a></li>
+<li><a href="dom_obj_select.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_select.asp" title="HTML DOM Select å¯¹è±¡">&lt;select&gt;</a></li>
+<li><a href="dom_obj_small.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_small.asp" title="HTML DOM Small å¯¹è±¡">&lt;small&gt;</a></li>
+<li><a href="dom_obj_source.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_source.asp" title="HTML DOM Source å¯¹è±¡">&lt;source&gt;</a></li>
+<li><a href="dom_obj_span.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_span.asp" title="HTML DOM Span å¯¹è±¡">&lt;span&gt;</a></li>
+<li><a href="dom_obj_strong.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_strong.asp" title="HTML DOM Strong å¯¹è±¡">&lt;strong&gt;</a></li>
+<li><a href="dom_obj_sub.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_sub.asp" title="HTML DOM Subscript å¯¹è±¡">&lt;sub&gt;</a></li>
+<li><a href="dom_obj_summary.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_summary.asp" title="HTML DOM Summary å¯¹è±¡">&lt;summary&gt;</a></li>
+<li><a href="dom_obj_sup.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_sup.asp" title="HTML DOM Superscript å¯¹è±¡">&lt;sup&gt;</a></li>
+<li><a href="dom_obj_table.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_table.asp" title="HTML DOM Table å¯¹è±¡">&lt;table&gt;</a></li>
+<li><a href="dom_obj_tbody.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_tbody.asp" title="HTML DOM TBody å¯¹è±¡">&lt;tbody&gt;</a></li>
+<li><a href="dom_obj_tabledata.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_tabledata.asp" title="HTML DOM TableData å¯¹è±¡">&lt;td&gt;</a></li>
+<li><a href="dom_obj_tfoot.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_tfoot.asp" title="HTML DOM TFoot å¯¹è±¡">&lt;tfoot&gt;</a></li>
+<li><a href="dom_obj_tablehead.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_tablehead.asp" title="HTML DOM TableHeader å¯¹è±¡">&lt;th&gt;</a></li>
+<li><a href="dom_obj_thead.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_thead.asp" title="HTML DOM THead å¯¹è±¡">&lt;thead&gt;</a></li>
+<li><a href="dom_obj_tablerow.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_tablerow.asp" title="HTML DOM TableRow å¯¹è±¡">&lt;tr&gt;</a></li>
+<li><a href="dom_obj_textarea.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_textarea.asp" title="HTML DOM Textarea å¯¹è±¡">&lt;textarea&gt;</a></li>
+<li><a href="dom_obj_time.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_time.asp" title="HTML DOM Time å¯¹è±¡">&lt;time&gt;</a></li>
+<li><a href="dom_obj_title.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_title.asp" title="HTML DOM Title å¯¹è±¡">&lt;title&gt;</a></li>
+<li><a href="dom_obj_track.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_track.asp" title="HTML DOM Track å¯¹è±¡">&lt;track&gt;</a></li>
+<li><a href="dom_obj_u.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_u.asp" title="HTML DOM Underline å¯¹è±¡">&lt;u&gt;</a></li>
+<li><a href="dom_obj_ul.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_ul.asp" title="HTML DOM Ul å¯¹è±¡">&lt;ul&gt;</a></li>
+<li><a href="dom_obj_var.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_var.asp" title="HTML DOM Variable å¯¹è±¡">&lt;var&gt;</a></li>
+<li><a href="dom_obj_video.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_video.asp" title="HTML DOM Video å¯¹è±¡">&lt;video&gt;</a></li>
+</ul>
+<h2>å…¶ä»–å‚è€ƒæ‰‹å†Œ</h2>
+<ul>
+<li><a href="obj_cssstyledeclaration.asp.htm" tppabs="https://www.w3school.com.cn/jsref/obj_cssstyledeclaration.asp" title="CSSStyleDeclaration å¯¹è±¡">CSSStyleDeclaration</a></li>
+<li><a href="jsref_type_conversion.asp.htm" tppabs="https://www.w3school.com.cn/jsref/jsref_type_conversion.asp" title="JavaScript ç±»å‹è½¬æ¢">JS ç±»å‹è½¬æ¢</a></li>
+</ul>
+</div><div id="selected">
+<h2>è¯¾ç¨‹æ¨èï¼š</h2>
+<ul>
+<li><a href="../howto/index.asp.htm" tppabs="https://www.w3school.com.cn/howto/index.asp" title="W3School ç™¾å®ç®±">W3School ç™¾å®ç®±</a></li>
+<li><a href="../java/index.asp.htm" tppabs="https://www.w3school.com.cn/java/index.asp" title="Java æ•™ç¨‹">Java æ•™ç¨‹</a></li>
+</ul>
+
+</div>
+
+</div>
+
+<div id="maincontent">
+
+<h1>HTML DOM Embed å¯¹è±¡</h1>
+
+<div class="prenextnav">
+<ul class="prenext">
+<li class="pre"><a href="dom_obj_em.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_em.asp" title="HTML DOM Emphasized å¯¹è±¡">&lt;em&gt;</a></li>
+<li class="next"><a href="dom_obj_fieldset.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_fieldset.asp" title="HTML DOM Fieldset å¯¹è±¡">&lt;fieldset&gt;</a></li>
+</ul>
+</div>
+
+
+
+<div>
+<h2>Embed å¯¹è±¡</h2>
+
+<p>Embed å¯¹è±¡æ˜¯ HTML5 ä¸­çš„æ–°å¯¹è±¡ã€‚</p>
+
+<p>Embed å¯¹è±¡è¡¨ç¤º HTML &lt;embed&gt; å…ƒç´ ã€‚</p>
+
+<h3>è®¿é—® Embed å¯¹è±¡</h3>
+
+<p>æ‚¨å¯ä»¥é€šè¿‡ä½¿ç”¨ getElementById() æ¥è®¿é—® &lt;embed&gt; å…ƒç´ ï¼š</p>
+
+<pre class="language-js">
+var x = document.getElementById(&quot;myEmbed&quot;);
+</pre>
+
+<p class="tiy"><a target="_blank" href="javascript:if(confirm('https://www.w3school.com.cn/tiy/ref_utf_punctuation.asp  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/tiy/ref_utf_punctuation.asp'" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=htmldom_embed_get">äº²è‡ªè¯•ä¸€è¯•</a></p>
+
+<h3>åˆ›å»º Embed å¯¹è±¡</h3>
+
+<p>æ‚¨å¯ä»¥é€šè¿‡ä½¿ç”¨ document.createElement() æ–¹æ³•æ¥åˆ›å»º &lt;embed&gt; å…ƒç´ ï¼š</p>
+
+<pre class="language-js">
+var x = document.createElement(&quot;EMBED&quot;);
+</pre>
+
+<p class="tiy"><a target="_blank" href="javascript:if(confirm('https://www.w3school.com.cn/tiy/ref_utf_currency.asp  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/tiy/ref_utf_currency.asp'" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=htmldom_embed_create">äº²è‡ªè¯•ä¸€è¯•</a></p>
+</div>
+
+
+
+<div>
+<h2>Embed å¯¹è±¡å±æ€§</h2>
+
+<table class="dataintable">
+<tr>
+<th style="width:27%;">å±æ€§</th>
+<th>æè¿°</th>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/jsref/ref_utf_letterlike.asp  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/jsref/ref_utf_letterlike.asp'" tppabs="https://www.w3school.com.cn/jsref/prop_embed_height.asp" title="Embed height å±æ€§">height</a></td>
+<td>è®¾ç½®æˆ–è¿”å› embed å…ƒç´ ä¸­ height å±æ€§çš„å€¼ã€‚</td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/jsref/ref_utf_arrows.asp  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/jsref/ref_utf_arrows.asp'" tppabs="https://www.w3school.com.cn/jsref/prop_embed_src.asp" title="Embed src å±æ€§">src</a></td>
+<td>è®¾ç½®æˆ–è¿”å› embed å…ƒç´ ä¸­ src å±æ€§çš„å€¼ã€‚</td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/jsref/ref_utf_math.asp  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/jsref/ref_utf_math.asp'" tppabs="https://www.w3school.com.cn/jsref/prop_embed_type.asp" title="Embed type å±æ€§">type</a></td>
+<td>è®¾ç½®æˆ–è¿”å› embed å…ƒç´ ä¸­ type å±æ€§çš„å€¼ã€‚</td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/jsref/ref_utf_box.asp  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/jsref/ref_utf_box.asp'" tppabs="https://www.w3school.com.cn/jsref/prop_embed_width.asp" title="Embed width å±æ€§">width</a></td>
+<td>è®¾ç½®æˆ–è¿”å› embed å…ƒç´ ä¸­ width å±æ€§çš„å€¼ã€‚</td>
+</tr>
+</table>
+</div>
+
+
+
+<div>
+<h2>æ ‡å‡†å±æ€§å’Œäº‹ä»¶</h2>
+
+<p>Embed å¯¹è±¡æ”¯æŒæ ‡å‡†<a href="dom_obj_all.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_all.asp" title="HTML DOM Element å¯¹è±¡">å±æ€§</a>å’Œ<a href="dom_obj_event.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_event.asp" title="HTML DOM Event å¯¹è±¡">äº‹ä»¶</a>ã€‚</p>
+</div>
+
+
+
+<div>
+<h2>ç›¸å…³é¡µé¢</h2>
+
+<p>HTML æ•™ç¨‹ï¼š<a href="../html/html_object.asp.htm" tppabs="https://www.w3school.com.cn/html/html_object.asp">HTML æ’ä»¶</a></p>
+
+<p>HTML å‚è€ƒæ‰‹å†Œï¼š<a href="../tags/tag_embed.asp.htm" tppabs="https://www.w3school.com.cn/tags/tag_embed.asp">HTML &lt;embed&gt; æ ‡ç­¾</a></p>
+</div>
+
+
+
+<div class="prenextnav">
+<ul class="prenext">
+<li class="pre"><a href="dom_obj_em.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_em.asp" title="HTML DOM Emphasized å¯¹è±¡">&lt;em&gt;</a></li>
+<li class="next"><a href="dom_obj_fieldset.asp.htm" tppabs="https://www.w3school.com.cn/jsref/dom_obj_fieldset.asp" title="HTML DOM Fieldset å¯¹è±¡">&lt;fieldset&gt;</a></li>
+</ul>
+</div><div style="background-color:#fcfdf8; padding:0;">
+<script async src="../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" tppabs="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- W3School ÕıÎÄ¹ã¸æ -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:800px;height:250px"
+     data-ad-client="ca-pub-3381531532877742"
+     data-ad-slot="2086924285"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+</div>
+<!-- maincontent end -->
+
+<div id="sidebar">
+
+<div id="tools">
+<h5 id="tools_reference"><a href="index.asp.htm" tppabs="https://www.w3school.com.cn/jsref/index.asp">JavaScript å’Œ HTML DOM å‚è€ƒæ‰‹å†Œ</a></h5>
+<h5 id="tools_example"><a href="../js/js_examples.asp.htm" tppabs="https://www.w3school.com.cn/js/js_examples.asp">JavaScript å®ä¾‹</a></h5>
+<h5 id="tools_quiz"><a href="../js/js_quiz.asp.htm" tppabs="https://www.w3school.com.cn/js/js_quiz.asp">JavaScript æµ‹éªŒ</a></h5>
+<h5 id="tools_tutorial"><a href="../js/index.asp.htm" tppabs="https://www.w3school.com.cn/js/index.asp">JavaScript æ•™ç¨‹</a></h5>
+</div>
+
+<div id="sidebar_zzs">
+
+<div id="sbtg">
+<script async src="../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" tppabs="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- W3School ä¾§æ å¹¿å‘Šä½ -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-3381531532877742"
+     data-ad-slot="6744370501"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+</div>
+
+</div>
+
+<div id="footer">
+<p id="p1">
+W3School ç®€ä½“ä¸­æ–‡ç‰ˆæä¾›çš„å†…å®¹ä»…ç”¨äºåŸ¹è®­å’Œæµ‹è¯•ï¼Œä¸ä¿è¯å†…å®¹çš„æ­£ç¡®æ€§ã€‚é€šè¿‡ä½¿ç”¨æœ¬ç«™å†…å®¹éšä¹‹è€Œæ¥çš„é£é™©ä¸æœ¬ç«™æ— å…³ã€‚ç‰ˆæƒæ‰€æœ‰ï¼Œä¿ç•™ä¸€åˆ‡æƒåˆ©ã€‚
+</p>
+
+<p id="p2">
+<a href="../about/index.asp.htm" tppabs="https://www.w3school.com.cn/about/index.asp" title="å…³äº W3School">å…³äº W3School</a>
+<a href="../about/about_helping.asp.htm" tppabs="https://www.w3school.com.cn/about/about_helping.asp" title="å¸®åŠ© W3School">å¸®åŠ© W3School</a>
+<a href="../about/about_use.asp.htm" tppabs="https://www.w3school.com.cn/about/about_use.asp" title="å…³äºä½¿ç”¨">ä½¿ç”¨æ¡æ¬¾</a>
+<a href="../about/about_privacy.asp.htm" tppabs="https://www.w3school.com.cn/about/about_privacy.asp" title="å…³äºéšç§">éšç§æ¡æ¬¾</a>
+<a target="_blank" href="javascript:if(confirm('https://www.ykinvestment.com/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.ykinvestment.com/'" tppabs="https://www.ykinvestment.com/">æŠ€æœ¯æ”¯æŒï¼šèµ¢ç§‘</a>
+<a target="_blank" href="javascript:if(confirm('http://www.beian.miit.gov.cn/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.beian.miit.gov.cn/'" tppabs="http://www.beian.miit.gov.cn/">è’™ICPå¤‡06004630å·</a>
+</p>
+</div>
+
+
+</div>
+<!-- wrapper end -->
+
+
+</body>
+
+</html>

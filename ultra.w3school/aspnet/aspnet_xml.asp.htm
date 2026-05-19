@@ -1,0 +1,405 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="../../www.googletagmanager.com/gtag/js-id=UA-878633-1" tppabs="https://www.googletagmanager.com/gtag/js?id=UA-878633-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-878633-1');
+</script>
+
+<meta charset=utf-8"utf-8">
+<meta name="robots" content="all" />
+<meta name="author" content="w3school.com.cn" />
+
+<link rel="stylesheet" type="text/css" href="../c.css" tppabs="https://www.w3school.com.cn/c.css" />
+
+<script src="../lib/cc/prism2.js" tppabs="https://www.w3school.com.cn/lib/cc/prism2.js"></script>
+<link rel='stylesheet' href="../lib/cc/prism.css" tppabs="https://www.w3school.com.cn/lib/cc/prism.css">
+
+<link rel="icon" type="image/png" sizes="16x16" href="/ui2019/logo-16-red.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/ui2019/logo-32-red.png">
+<link rel="icon" type="image/png" sizes="48x48" href="/ui2019/logo-48-red.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/ui2019/logo-96-red.png">
+<link rel="apple-touch-icon-precomposed" sizes="180x180" href="/ui2019/logo-180.png">
+
+
+<title>ASP.NET - XML æ–‡ä»¶</title>
+
+</head>
+
+<body class="browserscripting">
+
+<div id="wrapper">
+
+<div id="header">
+<a id="logo" href="../index.html" tppabs="https://www.w3school.com.cn/index.html" title="w3school åœ¨çº¿æ•™ç¨‹" style="float:left;">w3school åœ¨çº¿æ•™ç¨‹</a>
+<div id="header_gg">
+<script async src="../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" tppabs="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- W3 é¡µçœ‰ -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-3381531532877742"
+     data-ad-slot="7423315034"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+
+<div id="navfirst">
+<ul id="menu">
+<li id="h"><a href="../h.asp.htm" tppabs="https://www.w3school.com.cn/h.asp" title="HTML ç³»åˆ—æ•™ç¨‹">HTML ç³»åˆ—æ•™ç¨‹</a></li>
+<li id="b"><a href="../b.asp.htm" tppabs="https://www.w3school.com.cn/b.asp" title="æµè§ˆå™¨è„šæœ¬æ•™ç¨‹">æµè§ˆå™¨è„šæœ¬</a></li>
+<li id="s"><a href="../s.asp.htm" tppabs="https://www.w3school.com.cn/s.asp" title="æœåŠ¡å™¨è„šæœ¬æ•™ç¨‹">æœåŠ¡å™¨è„šæœ¬</a></li>
+<li id="p"><a href="../p.asp.htm" tppabs="https://www.w3school.com.cn/p.asp" title="ç¼–ç¨‹æ•™ç¨‹">ç¼–ç¨‹æ•™ç¨‹</a></li>
+<li id="x"><a href="../x.asp.htm" tppabs="https://www.w3school.com.cn/x.asp" title="XML ç³»åˆ—æ•™ç¨‹">XML ç³»åˆ—æ•™ç¨‹</a></li>
+<li id="w"><a href="../w.asp.htm" tppabs="https://www.w3school.com.cn/w.asp" title="å»ºç«™æ‰‹å†Œ">å»ºç«™æ‰‹å†Œ</a></li>
+<li id="r"><a href="../r.asp.htm" tppabs="https://www.w3school.com.cn/r.asp" title="å‚è€ƒæ‰‹å†Œ">å‚è€ƒæ‰‹å†Œ</a></li>
+</ul>
+</div>
+
+<div id="navsecond">
+
+<div id="course"><h2>ASP.NET æ•™ç¨‹</h2>
+<ul>
+<li><a href="index.asp.htm" tppabs="https://www.w3school.com.cn/aspnet/index.asp" title="ASP.NET æ•™ç¨‹">ASP.NET æ•™ç¨‹</a></li>
+<li><a href="aspnet.asp.htm" tppabs="https://www.w3school.com.cn/aspnet/aspnet.asp" title="ASP.NET ç®€ä»‹">ASP.NET ç®€ä»‹</a></li>
+</ul>
+<h2>WP æ•™ç¨‹</h2>
+<ul>
+<li><a href="webpages_intro.asp.htm" tppabs="https://www.w3school.com.cn/aspnet/webpages_intro.asp" title="WebPages ç®€ä»‹">WebPages ç®€ä»‹</a></li>
+<li><a href="webpages_razor.asp.htm" tppabs="https://www.w3school.com.cn/aspnet/webpages_razor.asp" title="WebPages Razor">WebPages Razor</a></li>
+<li><a href="webpages_layout.asp.htm" tppabs="https://www.w3school.com.cn/aspnet/webpages_layout.asp" title="WebPages å¸ƒå±€">WebPages å¸ƒå±€</a></li>
+<li><a href="webpages_folders.asp.htm" tppabs="https://www.w3school.com.cn/aspnet/webpages_folders.asp" title="WebPages æ–‡ä»¶å¤¹">WebPages æ–‡ä»¶å¤¹</a></li>
+<li><a href="webpages_global.asp.htm" tppabs="https://www.w3school.com.cn/aspnet/webpages_global.asp" title="WebPages å…¨å±€">WebPages å…¨å±€</a></li>
+<li><a href="webpages_forms.asp.htm" tppabs="https://www.w3school.com.cn/aspnet/webpages_forms.asp" title="WebPages çª—ä½“">WebPages çª—ä½“</a></li>
+<li><a href="webpages_objects.asp.htm" tppabs="https://www.w3school.com.cn/aspnet/webpages_objects.asp" title="WebPages å¯¹è±¡">WebPages å¯¹è±¡</a></li>
+<li><a href="webpages_files.asp.htm" tppabs="https://www.w3school.com.cn/aspnet/webpages_files.asp" title="WebPages æ–‡ä»¶">WebPages æ–‡ä»¶</a></li>
+<li><a href="webpages_helpers.asp.htm" tppabs="https://www.w3school.com.cn/aspnet/webpages_helpers.asp" title="WebPages å¸®åŠ©å™¨">WebPages å¸®åŠ©å™¨</a></li>
+<li><a href="webpages_webgrid.asp.htm" tppabs="https://www.w3school.com.cn/aspnet/webpages_webgrid.asp" title="WebPages WebGrid">WebPages WebGrid</a></li>
+<li><a href="webpages_chart.asp.htm" tppabs="https://www.w3school.com.cn/aspnet/webpages_chart.asp" title="WebPages å›¾è¡¨">WebPages å›¾è¡¨</a></li>
+<li><a href="webpages_email.asp.htm" tppabs="https://www.w3school.com.cn/aspnet/webpages_email.asp" title="WebPages ç”µé‚®">WebPages ç”µé‚®</a></li>
+<li><a href="webpages_php.asp.htm" tppabs="https://www.w3school.com.cn/aspnet/webpages_php.asp" title="WebPages PHP">WebPages PHP</a></li>
+<li><a href="webpages_publish.asp.htm" tppabs="https://www.w3school.com.cn/aspnet/webpages_publish.asp" title="WebPages å‘å¸ƒ">WebPages å‘å¸ƒ</a></li>
+<li><a href="webpages_examples.asp.htm" tppabs="https://www.w3school.com.cn/aspnet/webpages_examples.asp" title="WebPages å®ä¾‹">WebPages å®ä¾‹</a></li>
+</ul>
+<h2>WP å‚è€ƒæ‰‹å†Œ</h2>
+<ul>
+<li><a href="webpages_ref_classes.asp.htm" tppabs="https://www.w3school.com.cn/aspnet/webpages_ref_classes.asp" title="WebPages ç±»">WebPages ç±»</a></li>
+<li><a href="webpages_ref_websecurity.asp.htm" tppabs="https://www.w3school.com.cn/aspnet/webpages_ref_websecurity.asp" title="WebPages å®‰å…¨">WebPages å®‰å…¨</a></li>
+<li><a href="webpages_ref_database.asp.htm" tppabs="https://www.w3school.com.cn/aspnet/webpages_ref_database.asp" title="WebPages æ•°æ®åº“">WebPages æ•°æ®åº“</a></li>
+<li><a href="webpages_ref_webmail.asp.htm" tppabs="https://www.w3school.com.cn/aspnet/webpages_ref_webmail.asp" title="WebPages WebMail">WebPages WebMail</a></li>
+<li><a href="webpages_ref_helpers.asp.htm" tppabs="https://www.w3school.com.cn/aspnet/webpages_ref_helpers.asp" title="WebPages åŠ©æ‰‹">WebPages åŠ©æ‰‹</a></li>
+</ul>
+<h2>ASP.NET Razor</h2>
+<ul>
+<li><a href="razor_intro.asp.htm" tppabs="https://www.w3school.com.cn/aspnet/razor_intro.asp" title="Razor ç®€ä»‹">Razor ç®€ä»‹</a></li>
+<li><a href="razor_syntax.asp.htm" tppabs="https://www.w3school.com.cn/aspnet/razor_syntax.asp" title="Razor è¯­æ³•">Razor è¯­æ³•</a></li>
+<li><a href="razor_cs_variables.asp.htm" tppabs="https://www.w3school.com.cn/aspnet/razor_cs_variables.asp" title="Razor C# å˜é‡">Razor C# å˜é‡</a></li>
+<li><a href="razor_cs_loops.asp.htm" tppabs="https://www.w3school.com.cn/aspnet/razor_cs_loops.asp" title="Razor C# å¾ªç¯">Razor C# å¾ªç¯</a></li>
+<li><a href="razor_cs_logic.asp.htm" tppabs="https://www.w3school.com.cn/aspnet/razor_cs_logic.asp" title="Razor å¤–è¾¹è·åˆå¹¶">Razor C# é€»è¾‘</a></li>
+<li><a href="razor_vb_variables.asp.htm" tppabs="https://www.w3school.com.cn/aspnet/razor_vb_variables.asp" title="Razor VB å˜é‡">Razor VB å˜é‡</a></li>
+<li><a href="razor_vb_loops.asp.htm" tppabs="https://www.w3school.com.cn/aspnet/razor_vb_loops.asp" title="Razor VB å¾ªç¯">Razor VB å¾ªç¯</a></li>
+<li><a href="razor_vb_logic.asp.htm" tppabs="https://www.w3school.com.cn/aspnet/razor_vb_logic.asp" title="Razor VB é€»è¾‘">Razor VB é€»è¾‘</a></li>
+</ul>
+<h2>ASP.NET MVC</h2>
+<ul>
+<li><a href="mvc_intro.asp.htm" tppabs="https://www.w3school.com.cn/aspnet/mvc_intro.asp" title="MVC ç®€ä»‹">MVC ç®€ä»‹</a></li>
+<li><a href="mvc_app.asp.htm" tppabs="https://www.w3school.com.cn/aspnet/mvc_app.asp" title="MVC åº”ç”¨ç¨‹åº">MVC åº”ç”¨ç¨‹åº</a></li>
+<li><a href="mvc_folders.asp.htm" tppabs="https://www.w3school.com.cn/aspnet/mvc_folders.asp" title="MVC æ–‡ä»¶å¤¹">MVC æ–‡ä»¶å¤¹</a></li>
+<li><a href="mvc_layout.asp.htm" tppabs="https://www.w3school.com.cn/aspnet/mvc_layout.asp" title="MVC å¸ƒå±€">MVC å¸ƒå±€</a></li>
+<li><a href="mvc_controllers.asp.htm" tppabs="https://www.w3school.com.cn/aspnet/mvc_controllers.asp" title="MVC æ§åˆ¶å™¨">MVC æ§åˆ¶å™¨</a></li>
+<li><a href="mvc_views.asp.htm" tppabs="https://www.w3school.com.cn/aspnet/mvc_views.asp" title="MVC è§†å›¾">MVC è§†å›¾</a></li>
+<li><a href="mvc_database.asp.htm" tppabs="https://www.w3school.com.cn/aspnet/mvc_database.asp" title="MVC æ•°æ®åº“">MVC æ•°æ®åº“</a></li>
+<li><a href="mvc_models.asp.htm" tppabs="https://www.w3school.com.cn/aspnet/mvc_models.asp" title="MVC æ¨¡å‹">MVC æ¨¡å‹</a></li>
+<li><a href="mvc_security.asp.htm" tppabs="https://www.w3school.com.cn/aspnet/mvc_security.asp" title="MVC å®‰å…¨">MVC å®‰å…¨</a></li>
+<li><a href="mvc_htmlhelpers.asp.htm" tppabs="https://www.w3school.com.cn/aspnet/mvc_htmlhelpers.asp" title="MVC HTML åŠ©æ‰‹">MVC HTML åŠ©æ‰‹</a></li>
+<li><a href="mvc_publish.asp.htm" tppabs="https://www.w3school.com.cn/aspnet/mvc_publish.asp" title="MVC å‘å¸ƒ">MVC å‘å¸ƒ</a></li>
+<li><a href="mvc_reference.asp.htm" tppabs="https://www.w3school.com.cn/aspnet/mvc_reference.asp" title="MVC å‚è€ƒæ‰‹å†Œ">MVC å‚è€ƒæ‰‹å†Œ</a></li>
+</ul>
+<h2>WF æ•™ç¨‹</h2>
+<ul>
+<li><a href="aspnet_intro.asp.htm" tppabs="https://www.w3school.com.cn/aspnet/aspnet_intro.asp" title="WebForms ç®€ä»‹">WebForms ç®€ä»‹</a></li>
+<li><a href="aspnet_pages.asp.htm" tppabs="https://www.w3school.com.cn/aspnet/aspnet_pages.asp" title="WebForms Pages">WebForms Pages</a></li>
+<li><a href="aspnet_controls.asp.htm" tppabs="https://www.w3school.com.cn/aspnet/aspnet_controls.asp" title="WebForms æ§ä»¶">WebForms æ§ä»¶</a></li>
+<li><a href="aspnet_events.asp.htm" tppabs="https://www.w3school.com.cn/aspnet/aspnet_events.asp" title="WebForms äº‹ä»¶">WebForms äº‹ä»¶</a></li>
+<li><a href="aspnet_forms.asp.htm" tppabs="https://www.w3school.com.cn/aspnet/aspnet_forms.asp" title="WebForms çª—ä½“">WebForms çª—ä½“</a></li>
+<li><a href="aspnet_viewstate.asp.htm" tppabs="https://www.w3school.com.cn/aspnet/aspnet_viewstate.asp" title="WebForms ViewState">WebForms ViewState</a></li>
+<li><a href="aspnet_textbox.asp.htm" tppabs="https://www.w3school.com.cn/aspnet/aspnet_textbox.asp" title="WebForms TextBox">WebForms TextBox</a></li>
+<li><a href="aspnet_button.asp.htm" tppabs="https://www.w3school.com.cn/aspnet/aspnet_button.asp" title="WebForms Button">WebForms Button</a></li>
+<li><a href="aspnet_databinding.asp.htm" tppabs="https://www.w3school.com.cn/aspnet/aspnet_databinding.asp" title="WebForms Data Binding">WebForms æ•°æ®ç»‘å®š</a></li>
+<li><a href="aspnet_arraylist.asp.htm" tppabs="https://www.w3school.com.cn/aspnet/aspnet_arraylist.asp" title="WebForms ArrayList">WebForms ArrayList</a></li>
+<li><a href="aspnet_hashtable.asp.htm" tppabs="https://www.w3school.com.cn/aspnet/aspnet_hashtable.asp" title="WebForms Hashtable">WebForms Hashtable</a></li>
+<li><a href="aspnet_sortedlist.asp.htm" tppabs="https://www.w3school.com.cn/aspnet/aspnet_sortedlist.asp" title="WebForms SortedList">WebForms SortedList</a></li>
+<li class="currentLink"><a href="aspnet_xml.asp.htm" tppabs="https://www.w3school.com.cn/aspnet/aspnet_xml.asp" title="WebForms XML æ–‡ä»¶">WebForms XML æ–‡ä»¶</a></li>
+<li><a href="aspnet_repeater.asp.htm" tppabs="https://www.w3school.com.cn/aspnet/aspnet_repeater.asp" title="WebForms Repeater">WebForms Repeater</a></li>
+<li><a href="aspnet_datalist.asp.htm" tppabs="https://www.w3school.com.cn/aspnet/aspnet_datalist.asp" title="WebForms DataList">WebForms DataList</a></li>
+<li><a href="aspnet_dbconnection.asp.htm" tppabs="https://www.w3school.com.cn/aspnet/aspnet_dbconnection.asp" title="WebForms DbConnection">WebForms æ•°æ®åº“è¿æ¥</a></li>
+<li><a href="aspnet_masterpages.asp.htm" tppabs="https://www.w3school.com.cn/aspnet/aspnet_masterpages.asp" title="WebForms Master Pages">WebForms æ¯ç‰ˆé¡µ</a></li>
+<li><a href="aspnet_navigation.asp.htm" tppabs="https://www.w3school.com.cn/aspnet/aspnet_navigation.asp" title="WebForms å¯¼èˆª">WebForms å¯¼èˆª</a></li>
+<li><a href="aspnet_examples.asp.htm" tppabs="https://www.w3school.com.cn/aspnet/aspnet_examples.asp" title="WebForms å®ä¾‹">WebForms å®ä¾‹</a></li>
+</ul>
+<h2>WF å‚è€ƒæ‰‹å†Œ</h2>
+<ul>
+<li><a href="aspnet_refhtmlcontrols.asp.htm" tppabs="https://www.w3school.com.cn/aspnet/aspnet_refhtmlcontrols.asp" title="WebForms HTML">WebForms HTML</a></li>
+<li><a href="aspnet_refwebcontrols.asp.htm" tppabs="https://www.w3school.com.cn/aspnet/aspnet_refwebcontrols.asp" title="WebForms Controls">WebForms Controls</a></li>
+<li><a href="aspnet_refvalidationcontrols.asp.htm" tppabs="https://www.w3school.com.cn/aspnet/aspnet_refvalidationcontrols.asp" title="WebForms Validation">WebForms Validation</a></li>
+</ul>
+</div><div id="selected">
+<h2>è¯¾ç¨‹æ¨èï¼š</h2>
+<ul>
+<li><a href="../howto/index.asp.htm" tppabs="https://www.w3school.com.cn/howto/index.asp" title="W3School ç™¾å®ç®±">W3School ç™¾å®ç®±</a></li>
+<li><a href="../java/index.asp.htm" tppabs="https://www.w3school.com.cn/java/index.asp" title="Java æ•™ç¨‹">Java æ•™ç¨‹</a></li>
+</ul>
+
+</div>
+
+</div>
+
+<div id="maincontent">
+
+<h1>ASP.NET - XML æ–‡ä»¶</h1>
+
+<div class="prenextnav">
+<ul class="prenext">
+<li class="pre"><a href="aspnet_sortedlist.asp.htm" tppabs="https://www.w3school.com.cn/aspnet/aspnet_sortedlist.asp" title="WebForms SortedList">WebForms SortedList</a></li>
+<li class="next"><a href="aspnet_repeater.asp.htm" tppabs="https://www.w3school.com.cn/aspnet/aspnet_repeater.asp" title="WebForms Repeater">WebForms Repeater</a></li>
+</ul>
+</div>
+
+
+
+<div id="intro">
+<p><strong>æˆ‘ä»¬å¯ä»¥æŠŠ XML æ–‡ä»¶ç»‘å®šåˆ°åˆ—è¡¨æ§ä»¶ã€‚</strong></p>
+</div>
+
+
+
+<div class="example">
+<h2>å®ä¾‹</h2>
+
+<dl>
+<dt><a target="_blank" href="javascript:if(confirm('https://www.w3school.com.cn/tiy/t.asp?f=hdom_option_settext  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/tiy/t.asp?f=hdom_option_settext'" tppabs="https://www.w3school.com.cn/tiy/s.asp?f=demo_aspnet_xml_radio_1">XML RadiobuttonList</a></dt>
+</dl>
+</div>
+
+
+
+<div>
+<h2>ä¸€ä¸ª XML æ–‡ä»¶</h2>
+
+<p>è¿™é‡Œæœ‰ä¸€ä¸ªåä¸º &quot;countries.xml&quot; çš„ XML æ–‡ä»¶ï¼š</p>
+
+<pre class="language-xml">
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;ISO-8859-1&quot;?&gt;
+
+&lt;countries&gt;
+
+&lt;country&gt;
+  &lt;text&gt;China&lt;/text&gt;
+  &lt;value&gt;C&lt;/value&gt;
+&lt;/country&gt;
+
+&lt;country&gt;
+  &lt;text&gt;Sweden&lt;/text&gt;
+  &lt;value&gt;S&lt;/value&gt;
+&lt;/country&gt;
+
+&lt;country&gt;
+  &lt;text&gt;France&lt;/text&gt;
+  &lt;value&gt;F&lt;/value&gt;
+&lt;/country&gt;
+
+&lt;country&gt;
+  &lt;text&gt;Italy&lt;/text&gt;
+  &lt;value&gt;I&lt;/value&gt;
+&lt;/country&gt;
+
+&lt;/countries&gt;
+</pre>
+
+<p>è¯·æŸ¥çœ‹è¯¥æ–‡ä»¶ï¼š<a href="javascript:if(confirm('https://www.w3school.com.cn/example/aspnet/t.asp?f=hdom_select_remove  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/example/aspnet/t.asp?f=hdom_select_remove'" tppabs="https://www.w3school.com.cn/example/aspnet/countries.xml">countries.xml</a></p>
+</div>
+
+
+
+<div>
+<h2>æŠŠ DataSet ç»‘å®šåˆ° List æ§ä»¶</h2>
+
+<p>é¦–å…ˆï¼Œå¯¼å…¥ &quot;System.Data&quot; å‘½åç©ºé—´ã€‚æˆ‘ä»¬éœ€è¦è¯¥å‘½åç©ºé—´ä¸ DataSet å¯¹è±¡ä¸€èµ·å·¥ä½œã€‚æŠŠä¸‹é¢è¿™æ¡æŒ‡ä»¤åŒ…å«åœ¨ .aspx é¡µé¢çš„é¡¶éƒ¨ï¼š</p>
+
+<pre class="language-aspnet">
+&lt;%@ Import Namespace=&quot;System.Data&quot; %&gt;
+</pre>
+
+<p>æ¥ä¸‹æ¥ï¼Œä¸ºè¿™ä¸ª XML æ–‡ä»¶åˆ›å»ºä¸€ä¸ª DataSetï¼Œå¹¶åœ¨é¡µé¢é¦–å…ˆåŠ è½½æ—¶æŠŠè¿™ä¸ª XML æ–‡ä»¶è½½å…¥è¯¥ DataSetï¼š</p>
+
+<pre class="language-vbnet">
+&lt;script runat=&quot;server&quot;&gt;
+sub Page_Load
+if Not Page.IsPostBack then
+  <mark>dim mycountries=New DataSet
+  mycountries.ReadXml(MapPath(&quot;countries.xml&quot;))</mark>
+end if
+end sub
+</pre>
+
+<p>å¦‚éœ€æŠŠè¯¥ DataSet ç»‘å®šåˆ° RadioButtonList æ§ä»¶ï¼Œé¦–å…ˆè¯·åœ¨ .aspx é¡µé¢ä¸­åˆ›å»ºä¸€ä¸ª RadioButtonList æ§ä»¶ï¼ˆæ²¡æœ‰ä»»ä½• asp:ListItem å…ƒç´ ï¼‰ï¼š</p>
+
+<pre class="language-aspnet">
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;form runat=&quot;server&quot;&gt;
+<mark>&lt;asp:RadioButtonList id=&quot;rb&quot; runat=&quot;server&quot; AutoPostBack=&quot;True&quot; /&gt;</mark>
+&lt;/form&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+
+<p>ç„¶åæ·»åŠ æ„å»ºè¿™ä¸ª XML DataSet çš„è„šæœ¬ï¼š</p>
+
+<pre class="language-vbnet">
+&lt;%@ Import Namespace=&quot;System.Data&quot; %&gt;
+
+&lt;script runat=&quot;server&quot;&gt;
+sub Page_Load
+if Not Page.IsPostBack then
+  dim mycountries=New DataSet
+  mycountries.ReadXml(MapPath(&quot;countries.xml&quot;))
+  rb.DataSource=mycountries
+  rb.DataValueField=&quot;value&quot;
+  rb.DataTextField=&quot;text&quot;
+  rb.DataBind()
+end if
+end sub
+&lt;/script&gt;
+
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;form runat=&quot;server&quot;&gt;
+&lt;asp:RadioButtonList id=&quot;rb&quot; runat=&quot;server&quot;
+AutoPostBack=&quot;True&quot; onSelectedIndexChanged=&quot;displayMessage&quot; /&gt;
+&lt;/form&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+
+<p>ç„¶åï¼Œæˆ‘ä»¬æ·»åŠ ä¸€ä¸ªå­ä¾‹ç¨‹ï¼Œè¯¥å­ä¾‹ç¨‹ä¼šåœ¨ç”¨æˆ·ç‚¹å‡» RadioButtonList æ§ä»¶ä¸­çš„é¡¹ç›®æ—¶æ‰§è¡Œã€‚å½“ç”¨æˆ·ç‚¹å‡»æŸä¸ªå•é€‰æŒ‰é’®æ—¶ï¼Œlabel ä¸­ä¼šå‡ºç°ä¸€æ¡æ–‡æœ¬ï¼š</p>
+
+<pre class="language-vbnet">
+&lt;%@ Import Namespace=&quot;System.Data&quot; %&gt;
+
+&lt;script runat=&quot;server&quot;&gt;
+sub Page_Load
+if Not Page.IsPostBack then
+  dim mycountries=New DataSet
+  mycountries.ReadXml(MapPath(&quot;countries.xml&quot;))
+  rb.DataSource=mycountries
+  rb.DataValueField=&quot;value&quot;
+  rb.DataTextField=&quot;text&quot;
+  rb.DataBind()
+end if
+end sub
+
+<mark>sub displayMessage(s as Object,e As EventArgs)
+lbl1.text=&quot;Your favorite country is: &quot; &amp; rb.SelectedItem.Text
+end sub</mark>
+&lt;/script&gt;
+
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;form runat=&quot;server&quot;&gt;
+&lt;asp:RadioButtonList id=&quot;rb&quot; runat=&quot;server&quot;
+AutoPostBack=&quot;True&quot; onSelectedIndexChanged=&quot;displayMessage&quot; /&gt;
+&lt;p&gt;<mark>&lt;asp:label id=&quot;lbl1&quot; runat=&quot;server&quot; /&gt;</mark>&lt;/p&gt;
+&lt;/form&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+
+<p class="tiy"><a target="_blank" href="javascript:if(confirm('https://www.w3school.com.cn/tiy/t.asp?f=hdom_option_settext  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/tiy/t.asp?f=hdom_option_settext'" tppabs="https://www.w3school.com.cn/tiy/s.asp?f=demo_aspnet_xml_radio_1">æ˜¾ç¤ºè¿™ä¸ªä¾‹å­</a></p>
+</div>
+
+
+
+<div class="prenextnav">
+<ul class="prenext">
+<li class="pre"><a href="aspnet_sortedlist.asp.htm" tppabs="https://www.w3school.com.cn/aspnet/aspnet_sortedlist.asp" title="WebForms SortedList">WebForms SortedList</a></li>
+<li class="next"><a href="aspnet_repeater.asp.htm" tppabs="https://www.w3school.com.cn/aspnet/aspnet_repeater.asp" title="WebForms Repeater">WebForms Repeater</a></li>
+</ul>
+</div><div style="background-color:#fcfdf8; padding:0;">
+<script async src="../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" tppabs="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- W3School ÕıÎÄ¹ã¸æ -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:800px;height:250px"
+     data-ad-client="ca-pub-3381531532877742"
+     data-ad-slot="2086924285"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+</div>
+<!-- maincontent end -->
+
+<div id="sidebar">
+
+<div id="tools">
+<h5 id="tools_reference"><a href="index.asp.htm" tppabs="https://www.w3school.com.cn/aspnet/index.asp">JavaScript å’Œ HTML DOM å‚è€ƒæ‰‹å†Œ</a></h5>
+<h5 id="tools_example"><a href="javascript:if(confirm('https://www.w3school.com.cn/aspnet/js_examples.asp  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ·şÎñÆ÷±¨¸æ¸ÃÎÄ¼şÎ´ÕÒµ½¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/aspnet/js_examples.asp'" tppabs="https://www.w3school.com.cn/aspnet/js_examples.asp">JavaScript å®ä¾‹</a></h5>
+<h5 id="tools_quiz"><a href="javascript:if(confirm('https://www.w3school.com.cn/aspnet/js_quiz.asp  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ·şÎñÆ÷±¨¸æ¸ÃÎÄ¼şÎ´ÕÒµ½¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/aspnet/js_quiz.asp'" tppabs="https://www.w3school.com.cn/aspnet/js_quiz.asp">JavaScript æµ‹éªŒ</a></h5>
+</div>
+
+<div id="sidebar_zzs">
+
+<div id="sbtg">
+<script async src="../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" tppabs="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- W3School ä¾§æ å¹¿å‘Šä½ -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-3381531532877742"
+     data-ad-slot="6744370501"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+</div>
+
+</div>
+
+<div id="footer">
+<p id="p1">
+W3School ç®€ä½“ä¸­æ–‡ç‰ˆæä¾›çš„å†…å®¹ä»…ç”¨äºåŸ¹è®­å’Œæµ‹è¯•ï¼Œä¸ä¿è¯å†…å®¹çš„æ­£ç¡®æ€§ã€‚é€šè¿‡ä½¿ç”¨æœ¬ç«™å†…å®¹éšä¹‹è€Œæ¥çš„é£é™©ä¸æœ¬ç«™æ— å…³ã€‚ç‰ˆæƒæ‰€æœ‰ï¼Œä¿ç•™ä¸€åˆ‡æƒåˆ©ã€‚
+</p>
+
+<p id="p2">
+<a href="../about/index.asp.htm" tppabs="https://www.w3school.com.cn/about/index.asp" title="å…³äº W3School">å…³äº W3School</a>
+<a href="../about/about_helping.asp.htm" tppabs="https://www.w3school.com.cn/about/about_helping.asp" title="å¸®åŠ© W3School">å¸®åŠ© W3School</a>
+<a href="../about/about_use.asp.htm" tppabs="https://www.w3school.com.cn/about/about_use.asp" title="å…³äºä½¿ç”¨">ä½¿ç”¨æ¡æ¬¾</a>
+<a href="../about/about_privacy.asp.htm" tppabs="https://www.w3school.com.cn/about/about_privacy.asp" title="å…³äºéšç§">éšç§æ¡æ¬¾</a>
+<a target="_blank" href="javascript:if(confirm('https://www.ykinvestment.com/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.ykinvestment.com/'" tppabs="https://www.ykinvestment.com/">æŠ€æœ¯æ”¯æŒï¼šèµ¢ç§‘</a>
+<a target="_blank" href="javascript:if(confirm('http://www.beian.miit.gov.cn/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.beian.miit.gov.cn/'" tppabs="http://www.beian.miit.gov.cn/">è’™ICPå¤‡06004630å·</a>
+</p>
+</div>
+
+
+</div>
+<!-- wrapper end -->
+
+</body>
+
+</html>

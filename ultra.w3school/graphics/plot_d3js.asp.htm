@@ -1,0 +1,385 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="../../www.googletagmanager.com/gtag/js-id=UA-878633-1" tppabs="https://www.googletagmanager.com/gtag/js?id=UA-878633-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-878633-1');
+</script>
+
+<meta charset=utf-8"utf-8">
+<meta name="robots" content="all" />
+<meta name="author" content="w3school.com.cn" />
+
+<link rel="stylesheet" type="text/css" href="../c.css" tppabs="https://www.w3school.com.cn/c.css" />
+
+<script src="../lib/cc/prism2.js" tppabs="https://www.w3school.com.cn/lib/cc/prism2.js"></script>
+<link rel='stylesheet' href="../lib/cc/prism.css" tppabs="https://www.w3school.com.cn/lib/cc/prism.css">
+
+<link rel="icon" type="image/png" sizes="16x16" href="/ui2019/logo-16-red.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/ui2019/logo-32-red.png">
+<link rel="icon" type="image/png" sizes="48x48" href="/ui2019/logo-48-red.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/ui2019/logo-96-red.png">
+<link rel="apple-touch-icon-precomposed" sizes="180x180" href="/ui2019/logo-180.png">
+
+
+<title>D3.js</title>
+
+</head>
+
+<body class="html">
+
+<div id="wrapper">
+
+<div id="header">
+<a id="logo" href="../index.html" tppabs="https://www.w3school.com.cn/index.html" title="w3school 在线教程" style="float:left;">w3school 在线教程</a>
+<div id="header_gg">
+<script async src="../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" tppabs="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- W3 页眉 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-3381531532877742"
+     data-ad-slot="7423315034"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+
+<div id="navfirst">
+<ul id="menu">
+<li id="h"><a href="../h.asp.htm" tppabs="https://www.w3school.com.cn/h.asp" title="HTML 系列教程">HTML 系列教程</a></li>
+<li id="b"><a href="../b.asp.htm" tppabs="https://www.w3school.com.cn/b.asp" title="浏览器脚本教程">浏览器脚本</a></li>
+<li id="s"><a href="../s.asp.htm" tppabs="https://www.w3school.com.cn/s.asp" title="服务器脚本教程">服务器脚本</a></li>
+<li id="p"><a href="../p.asp.htm" tppabs="https://www.w3school.com.cn/p.asp" title="编程教程">编程教程</a></li>
+<li id="x"><a href="../x.asp.htm" tppabs="https://www.w3school.com.cn/x.asp" title="XML 系列教程">XML 系列教程</a></li>
+<li id="w"><a href="../w.asp.htm" tppabs="https://www.w3school.com.cn/w.asp" title="建站手册">建站手册</a></li>
+<li id="r"><a href="../r.asp.htm" tppabs="https://www.w3school.com.cn/r.asp" title="参考手册">参考手册</a></li>
+</ul>
+</div>
+
+<div id="navsecond">
+
+<div id="course"><h2>HTML 图形</h2>
+<ul>
+<li><a href="index.asp.htm" tppabs="https://www.w3school.com.cn/graphics/index.asp" title="HTML 图形">HTML 图形</a></li>
+</ul>
+<h2>HTML 绘图</h2>
+<ul>
+<li><a href="plot_graphics.asp.htm" tppabs="https://www.w3school.com.cn/graphics/plot_graphics.asp" title="JavaScript 图形">Graphics</a></li>
+<li><a href="plot_canvas.asp.htm" tppabs="https://www.w3school.com.cn/graphics/plot_canvas.asp" title="HTML Canvas">Canvas</a></li>
+<li><a href="plot_plotly.asp.htm" tppabs="https://www.w3school.com.cn/graphics/plot_plotly.asp" title="Plotly.js">Plotly.js</a></li>
+<li><a href="plot_chartjs.asp.htm" tppabs="https://www.w3school.com.cn/graphics/plot_chartjs.asp" title="Chart.js">Chart.js</a></li>
+<li><a href="plot_google_chart.asp.htm" tppabs="https://www.w3school.com.cn/graphics/plot_google_chart.asp" title="谷歌图表">Google</a></li>
+<li class="currentLink"><a href="plot_d3js.asp.htm" tppabs="https://www.w3school.com.cn/graphics/plot_d3js.asp" title="D3.js">D3.js</a></li>
+</ul>
+<h2>谷歌地图</h2>
+<ul>
+<li><a href="google_maps_intro.asp.htm" tppabs="https://www.w3school.com.cn/graphics/google_maps_intro.asp" title="谷歌地图教程">Maps 简介</a></li>
+<li><a href="google_maps_basic.asp.htm" tppabs="https://www.w3school.com.cn/graphics/google_maps_basic.asp" title="谷歌地图基础">Maps 基础</a></li>
+<li><a href="google_maps_overlays.asp.htm" tppabs="https://www.w3school.com.cn/graphics/google_maps_overlays.asp" title="谷歌地图叠加层">Maps 叠加层</a></li>
+<li><a href="google_maps_events.asp.htm" tppabs="https://www.w3school.com.cn/graphics/google_maps_events.asp" title="谷歌地图事件">Maps 事件</a></li>
+<li><a href="google_maps_controls.asp.htm" tppabs="https://www.w3school.com.cn/graphics/google_maps_controls.asp" title="谷歌地图控件">Maps 控件</a></li>
+<li><a href="google_maps_types.asp.htm" tppabs="https://www.w3school.com.cn/graphics/google_maps_types.asp" title="谷歌地图类型">Maps 类型</a></li>
+<li><a href="google_maps_reference.asp.htm" tppabs="https://www.w3school.com.cn/graphics/google_maps_reference.asp" title="谷歌地图参考手册">Maps 参考手册</a></li>
+</ul>
+<h2>SVG 教程</h2>
+<ul>
+<li><a href="svg_intro.asp.htm" tppabs="https://www.w3school.com.cn/graphics/svg_intro.asp" title="SVG 教程">SVG 简介</a></li>
+<li><a href="svg_inhtml.asp.htm" tppabs="https://www.w3school.com.cn/graphics/svg_inhtml.asp" title="HTML 中的 SVG">SVG 嵌入 HTML</a></li>
+<li><a href="svg_rect.asp.htm" tppabs="https://www.w3school.com.cn/graphics/svg_rect.asp" title="SVG &lt;rect&gt;">SVG 矩形</a></li>
+<li><a href="svg_circle.asp.htm" tppabs="https://www.w3school.com.cn/graphics/svg_circle.asp" title="SVG &lt;circle&gt;">SVG 圆形</a></li>
+<li><a href="svg_ellipse.asp.htm" tppabs="https://www.w3school.com.cn/graphics/svg_ellipse.asp" title="SVG &lt;ellipse&gt;">SVG 椭圆</a></li>
+<li><a href="svg_line.asp.htm" tppabs="https://www.w3school.com.cn/graphics/svg_line.asp" title="SVG &lt;line&gt;">SVG 直线</a></li>
+<li><a href="svg_polygon.asp.htm" tppabs="https://www.w3school.com.cn/graphics/svg_polygon.asp" title="SVG &lt;polygon&gt;">SVG 多边形</a></li>
+<li><a href="svg_polyline.asp.htm" tppabs="https://www.w3school.com.cn/graphics/svg_polyline.asp" title="SVG &lt;polyline&gt;">SVG 折线</a></li>
+<li><a href="svg_path.asp.htm" tppabs="https://www.w3school.com.cn/graphics/svg_path.asp" title="SVG &lt;path&gt;">SVG 路径</a></li>
+<li><a href="svg_text.asp.htm" tppabs="https://www.w3school.com.cn/graphics/svg_text.asp" title="SVG &lt;text&gt;">SVG 文本</a></li>
+<li><a href="svg_stroking.asp.htm" tppabs="https://www.w3school.com.cn/graphics/svg_stroking.asp" title="SVG 笔触属性">SVG 笔触</a></li>
+<li><a href="svg_filters.asp.htm" tppabs="https://www.w3school.com.cn/graphics/svg_filters.asp" title="SVG 滤镜">SVG 滤镜</a></li>
+<li><a href="svg_fegaussianblur.asp.htm" tppabs="https://www.w3school.com.cn/graphics/svg_fegaussianblur.asp" title="SVG 模糊效果">SVG 模糊</a></li>
+<li><a href="svg_feoffset.asp.htm" tppabs="https://www.w3school.com.cn/graphics/svg_feoffset.asp" title="SVG 阴影">SVG 阴影</a></li>
+<li><a href="svg_grad_linear.asp.htm" tppabs="https://www.w3school.com.cn/graphics/svg_grad_linear.asp" title="SVG 线性渐变">SVG 线性渐变</a></li>
+<li><a href="svg_grad_radial.asp.htm" tppabs="https://www.w3school.com.cn/graphics/svg_grad_radial.asp" title="SVG 径向渐变">SVG 径向渐变</a></li>
+<li><a href="svg_examples.asp.htm" tppabs="https://www.w3school.com.cn/graphics/svg_examples.asp" title="SVG 实例">SVG 实例</a></li>
+<li><a href="svg_reference.asp.htm" tppabs="https://www.w3school.com.cn/graphics/svg_reference.asp" title="SVG 参考手册">SVG 参考手册</a></li>
+</ul>
+<h2>Canvas 教程</h2>
+<ul>
+<li><a href="canvas_intro.asp.htm" tppabs="https://www.w3school.com.cn/graphics/canvas_intro.asp" title="HTML Canvas 教程">Canvas 简介</a></li>
+<li><a href="canvas_drawing.asp.htm" tppabs="https://www.w3school.com.cn/graphics/canvas_drawing.asp" title="HTML Canvas 绘制">Canvas 绘制</a></li>
+<li><a href="canvas_coordinates.asp.htm" tppabs="https://www.w3school.com.cn/graphics/canvas_coordinates.asp" title="HTML Canvas 坐标">Canvas 坐标</a></li>
+<li><a href="canvas_lines.asp.htm" tppabs="https://www.w3school.com.cn/graphics/canvas_lines.asp" title="HTML Canvas 直线">Canvas 直线</a></li>
+<li><a href="canvas_shapes.asp.htm" tppabs="https://www.w3school.com.cn/graphics/canvas_shapes.asp" title="HTML Canvas 形状">Canvas 形状</a></li>
+<li><a href="canvas_rectangles.asp.htm" tppabs="https://www.w3school.com.cn/graphics/canvas_rectangles.asp" title="HTML Canvas 矩形">Canvas 矩形</a></li>
+<li><a href="canvas_circles.asp.htm" tppabs="https://www.w3school.com.cn/graphics/canvas_circles.asp" title="HTML Canvas 圆形">Canvas 圆形</a></li>
+<li><a href="canvas_curves.asp.htm" tppabs="https://www.w3school.com.cn/graphics/canvas_curves.asp" title="HTML Canvas 曲线">Canvas 曲线</a></li>
+<li><a href="canvas_gradients.asp.htm" tppabs="https://www.w3school.com.cn/graphics/canvas_gradients.asp" title="HTML Canvas 渐变">Canvas 渐变</a></li>
+<li><a href="canvas_text.asp.htm" tppabs="https://www.w3school.com.cn/graphics/canvas_text.asp" title="HTML Canvas 文本">Canvas 文本</a></li>
+<li><a href="canvas_images.asp.htm" tppabs="https://www.w3school.com.cn/graphics/canvas_images.asp" title="HTML Canvas 图像">Canvas 图像</a></li>
+</ul>
+<h2>Canvas 时钟</h2>
+<ul>
+<li><a href="canvas_clock.asp.htm" tppabs="https://www.w3school.com.cn/graphics/canvas_clock.asp" title="Canvas 时钟">时钟简介</a></li>
+<li><a href="canvas_clock_face.asp.htm" tppabs="https://www.w3school.com.cn/graphics/canvas_clock_face.asp" title="Canvas 时钟钟面">时钟钟面</a></li>
+<li><a href="canvas_clock_numbers.asp.htm" tppabs="https://www.w3school.com.cn/graphics/canvas_clock_numbers.asp" title="Canvas 时钟数字">时钟数字</a></li>
+<li><a href="canvas_clock_hands.asp.htm" tppabs="https://www.w3school.com.cn/graphics/canvas_clock_hands.asp" title="Canvas 时钟指针">时钟指针</a></li>
+<li><a href="canvas_clock_start.asp.htm" tppabs="https://www.w3school.com.cn/graphics/canvas_clock_start.asp" title="Canvas 时钟启动">时钟启动</a></li>
+</ul>
+<h2>HTML 游戏</h2>
+<ul>
+<li><a href="game_intro.asp.htm" tppabs="https://www.w3school.com.cn/graphics/game_intro.asp" title="HTML 游戏实例">游戏简介</a></li>
+<li><a href="game_canvas.asp.htm" tppabs="https://www.w3school.com.cn/graphics/game_canvas.asp" title="游戏画布">游戏画布</a></li>
+<li><a href="game_components.asp.htm" tppabs="https://www.w3school.com.cn/graphics/game_components.asp" title="游戏组件">游戏组件</a></li>
+<li><a href="game_controllers.asp.htm" tppabs="https://www.w3school.com.cn/graphics/game_controllers.asp" title="游戏控制器">游戏控制器</a></li>
+<li><a href="game_obstacles.asp.htm" tppabs="https://www.w3school.com.cn/graphics/game_obstacles.asp" title="游戏障碍">游戏障碍</a></li>
+<li><a href="game_score.asp.htm" tppabs="https://www.w3school.com.cn/graphics/game_score.asp" title="游戏分数">游戏分数</a></li>
+<li><a href="game_images.asp.htm" tppabs="https://www.w3school.com.cn/graphics/game_images.asp" title="游戏图像">游戏图像</a></li>
+<li><a href="game_sound.asp.htm" tppabs="https://www.w3school.com.cn/graphics/game_sound.asp" title="游戏声音">游戏声音</a></li>
+<li><a href="game_gravity.asp.htm" tppabs="https://www.w3school.com.cn/graphics/game_gravity.asp" title="游戏重力">游戏重力</a></li>
+<li><a href="game_bouncing.asp.htm" tppabs="https://www.w3school.com.cn/graphics/game_bouncing.asp" title="游戏弹跳">游戏弹跳</a></li>
+<li><a href="game_rotation.asp.htm" tppabs="https://www.w3school.com.cn/graphics/game_rotation.asp" title="游戏旋转">游戏旋转</a></li>
+<li><a href="game_movement.asp.htm" tppabs="https://www.w3school.com.cn/graphics/game_movement.asp" title="游戏运动">游戏运动</a></li>
+</ul>
+</div><div id="selected">
+<h2>课程推荐：</h2>
+<ul>
+<li><a href="../howto/index.asp.htm" tppabs="https://www.w3school.com.cn/howto/index.asp" title="W3School 百宝箱">W3School 百宝箱</a></li>
+<li><a href="../java/index.asp.htm" tppabs="https://www.w3school.com.cn/java/index.asp" title="Java 教程">Java 教程</a></li>
+</ul>
+
+</div>
+
+</div>
+
+<div id="maincontent">
+
+<h1>D3.js</h1>
+
+<div class="prenextnav">
+<ul class="prenext">
+<li class="pre"><a href="plot_google_chart.asp.htm" tppabs="https://www.w3school.com.cn/graphics/plot_google_chart.asp" title="谷歌图表">Google</a></li>
+<li class="next"><a href="google_maps_intro.asp.htm" tppabs="https://www.w3school.com.cn/graphics/google_maps_intro.asp" title="谷歌地图教程">Maps 简介</a></li>
+</ul>
+</div>
+
+
+
+<div id="intro">
+<p><strong>D3.js 是一个用于操作 HTML 数据的 JavaScript 库。</strong></p>
+
+<p><strong>D3.js 很容易使用。</strong></p>
+</div>
+
+
+
+<div>
+<h2>如何使用 D3.js？</h2>
+
+<p>您如需在网页中使用 D3.js，请添加指向库的链接：</p>
+
+<pre class="language-html">
+&lt;script src=&quot;//d3js.org/d3.v3.min.js&quot;&gt;&lt;/script&gt;
+</pre>
+
+<p>这段脚本选择 body 元素并追加一段带有文本 &quot;Hello World!&quot; 的段落：</p>
+
+<pre class="language-js">
+d3.select(&quot;body&quot;).append(&quot;p&quot;).text(&quot;Hello World!&quot;);
+</pre>
+
+<p class="tiy"><a target="_blank" href="javascript:if(confirm('https://www.w3school.com.cn/tiy/bootstrap_flex.asp  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ������, �����������, ����Ŀ����ֹͣ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.w3school.com.cn/tiy/bootstrap_flex.asp'" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=ai_d3js_element">亲自试一试</a></p>
+</div>
+
+
+
+<div>
+<h2>散点图</h2>
+
+<script src="../lib/graphics/bootstrap_forms.asp" tppabs="https://www.w3school.com.cn/lib/graphics/d3.js"></script>
+
+<svg id="myPlot" style="width:500px; height:500px; margin-top: 15px;"></svg>
+
+<script>
+myScatter("myPlot");
+
+function myScatter(id) {
+// 设置维度
+const xSize = 500; 
+const ySize = 500;
+const margin = 40;
+const xMax = xSize - margin*2;
+const yMax = ySize - margin*2;
+
+// 创建随机点
+const numPoints = 100;
+const data = [];
+for (let i = 0; i < numPoints; i++) {
+  data.push([Math.random() * xMax, Math.random() * yMax]);
+}
+
+// 将 SVG 对象追加到页面
+const svg = d3.select("#" + id)
+  .append("svg")
+  .append("g")
+  .attr("transform","translate(" + margin + "," + margin + ")");
+
+// X 轴
+const x = d3.scaleLinear()
+  .domain([0, 500])
+  .range([0, xMax]);
+
+svg.append("g")
+  .attr("transform", "translate(0," + yMax + ")")
+  .call(d3.axisBottom(x));
+
+// Y 轴
+const y = d3.scaleLinear()
+  .domain([0, 500])
+  .range([ yMax, 0]);
+
+svg.append("g")
+  .call(d3.axisLeft(y));
+
+// 点
+svg.append('g')
+  .selectAll("dot")
+  .data(data).enter()
+  .append("circle")
+    .attr("cx", function (d) { return d[0] } )
+    .attr("cy", function (d) { return d[1] } )
+    .attr("r", 3)
+    .style("fill", "Red");
+}
+</script>
+
+<h3>实例</h3>
+
+<pre class="language-js">
+// 设置维度
+const xSize = 500;
+const ySize = 500;
+const margin = 40;
+const xMax = xSize - margin*2;
+const yMax = ySize - margin*2;
+
+// 创建随机点
+const numPoints = 100;
+const data = [];
+for (let i = 0; i &lt; numPoints; i++) {
+  data.push([Math.random() * xMax, Math.random() * yMax]);
+}
+
+// 将 SVG 对象追加到页面
+const svg = d3.select(&quot;#myPlot&quot;)
+  .append(&quot;svg&quot;)
+  .append(&quot;g&quot;)
+  .attr(&quot;transform&quot;,&quot;translate(&quot; + margin + &quot;,&quot; + margin + &quot;)&quot;);
+
+// X 轴
+const x = d3.scaleLinear()
+  .domain([0, 500])
+  .range([0, xMax]);
+
+svg.append(&quot;g&quot;)
+  .attr(&quot;transform&quot;, &quot;translate(0,&quot; + yMax + &quot;)&quot;)
+  .call(d3.axisBottom(x));
+
+// Y 轴
+const y = d3.scaleLinear()
+  .domain([0, 500])
+  .range([ yMax, 0]);
+
+svg.append(&quot;g&quot;)
+  .call(d3.axisLeft(y));
+
+// 点
+svg.append('g')
+  .selectAll(&quot;dot&quot;)
+  .data(data).enter()
+  .append(&quot;circle&quot;)
+  .attr(&quot;cx&quot;, function (d) { return d[0] } )
+  .attr(&quot;cy&quot;, function (d) { return d[1] } )
+  .attr(&quot;r&quot;, 3)
+  .style(&quot;fill&quot;, &quot;Red&quot;);
+</pre>
+
+<p class="tiy"><a target="_blank" href="javascript:if(confirm('https://www.w3school.com.cn/tiy/bootstrap_form_select.asp  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ������, �����������, ����Ŀ����ֹͣ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.w3school.com.cn/tiy/bootstrap_form_select.asp'" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=ai_d3js_scatterplot">亲自试一试</a></p>
+</div>
+
+
+
+<div class="prenextnav">
+<ul class="prenext">
+<li class="pre"><a href="plot_google_chart.asp.htm" tppabs="https://www.w3school.com.cn/graphics/plot_google_chart.asp" title="谷歌图表">Google</a></li>
+<li class="next"><a href="google_maps_intro.asp.htm" tppabs="https://www.w3school.com.cn/graphics/google_maps_intro.asp" title="谷歌地图教程">Maps 简介</a></li>
+</ul>
+</div><div style="background-color:#fcfdf8; padding:0;">
+<script async src="../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" tppabs="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- W3School ���Ĺ�� -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:800px;height:250px"
+     data-ad-client="ca-pub-3381531532877742"
+     data-ad-slot="2086924285"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+</div>
+<!-- maincontent end -->
+
+<div id="sidebar">
+
+<div id="tools">
+<h5 id="tools_reference"><a href="../jsref/api_canvas.asp.htm" tppabs="https://www.w3school.com.cn/jsref/api_canvas.asp">Canvas API</a></h5>
+</div>
+
+<div id="sidebar_zzs">
+
+<div id="sbtg">
+<script async src="../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" tppabs="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- W3School 侧栏广告位 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-3381531532877742"
+     data-ad-slot="6744370501"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+</div>
+
+</div>
+
+<div id="footer">
+<p id="p1">
+W3School 简体中文版提供的内容仅用于培训和测试，不保证内容的正确性。通过使用本站内容随之而来的风险与本站无关。版权所有，保留一切权利。
+</p>
+
+<p id="p2">
+<a href="../about/index.asp.htm" tppabs="https://www.w3school.com.cn/about/index.asp" title="关于 W3School">关于 W3School</a>
+<a href="../about/about_helping.asp.htm" tppabs="https://www.w3school.com.cn/about/about_helping.asp" title="帮助 W3School">帮助 W3School</a>
+<a href="../about/about_use.asp.htm" tppabs="https://www.w3school.com.cn/about/about_use.asp" title="关于使用">使用条款</a>
+<a href="../about/about_privacy.asp.htm" tppabs="https://www.w3school.com.cn/about/about_privacy.asp" title="关于隐私">隐私条款</a>
+<a target="_blank" href="javascript:if(confirm('https://www.ykinvestment.com/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.ykinvestment.com/'" tppabs="https://www.ykinvestment.com/">技术支持：赢科</a>
+<a target="_blank" href="javascript:if(confirm('http://www.beian.miit.gov.cn/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://www.beian.miit.gov.cn/'" tppabs="http://www.beian.miit.gov.cn/">蒙ICP备06004630号</a>
+</p>
+</div>
+
+
+</div>
+<!-- wrapper end -->
+
+
+</body>
+
+</html>

@@ -1,0 +1,422 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="../../www.googletagmanager.com/gtag/js-id=UA-878633-1" tppabs="https://www.googletagmanager.com/gtag/js?id=UA-878633-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-878633-1');
+</script>
+
+<meta charset=utf-8"utf-8">
+<meta name="robots" content="all" />
+<meta name="author" content="w3school.com.cn" />
+
+<link rel="stylesheet" type="text/css" href="../c.css" tppabs="https://www.w3school.com.cn/c.css" />
+
+<script src="../lib/cc/prism2.js" tppabs="https://www.w3school.com.cn/lib/cc/prism2.js"></script>
+<link rel='stylesheet' href="../lib/cc/prism.css" tppabs="https://www.w3school.com.cn/lib/cc/prism.css">
+
+<link rel="icon" type="image/png" sizes="16x16" href="/ui2019/logo-16-red.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/ui2019/logo-32-red.png">
+<link rel="icon" type="image/png" sizes="48x48" href="/ui2019/logo-48-red.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/ui2019/logo-96-red.png">
+<link rel="apple-touch-icon-precomposed" sizes="180x180" href="/ui2019/logo-180.png">
+
+
+<title>AngularJS SQL</title>
+
+</head>
+
+<body class="browserscripting">
+
+<div id="wrapper">
+
+<div id="header">
+<a id="logo" href="../index.html" tppabs="https://www.w3school.com.cn/index.html" title="w3school 在线教程" style="float:left;">w3school 在线教程</a>
+<div id="header_gg">
+<script async src="../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" tppabs="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- W3 页眉 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-3381531532877742"
+     data-ad-slot="7423315034"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+
+<div id="navfirst">
+<ul id="menu">
+<li id="h"><a href="../h.asp.htm" tppabs="https://www.w3school.com.cn/h.asp" title="HTML 系列教程">HTML 系列教程</a></li>
+<li id="b"><a href="../b.asp.htm" tppabs="https://www.w3school.com.cn/b.asp" title="浏览器脚本教程">浏览器脚本</a></li>
+<li id="s"><a href="../s.asp.htm" tppabs="https://www.w3school.com.cn/s.asp" title="服务器脚本教程">服务器脚本</a></li>
+<li id="p"><a href="../p.asp.htm" tppabs="https://www.w3school.com.cn/p.asp" title="编程教程">编程教程</a></li>
+<li id="x"><a href="../x.asp.htm" tppabs="https://www.w3school.com.cn/x.asp" title="XML 系列教程">XML 系列教程</a></li>
+<li id="w"><a href="../w.asp.htm" tppabs="https://www.w3school.com.cn/w.asp" title="建站手册">建站手册</a></li>
+<li id="r"><a href="../r.asp.htm" tppabs="https://www.w3school.com.cn/r.asp" title="参考手册">参考手册</a></li>
+</ul>
+</div>
+
+<div id="navsecond">
+
+<div id="course"><h2>教程</h2>
+<ul>
+<li><a href="index.asp.htm" tppabs="https://www.w3school.com.cn/angular/index.asp" title="AngularJS 教程">AngularJS 教程</a></li>
+<li><a href="angular_intro.asp.htm" tppabs="https://www.w3school.com.cn/angular/angular_intro.asp" title="AngularJS 简介">AngularJS 简介</a></li>
+<li><a href="angular_expressions.asp.htm" tppabs="https://www.w3school.com.cn/angular/angular_expressions.asp" title="AngularJS 表达式">AngularJS 表达式</a></li>
+<li><a href="angular_modules.asp.htm" tppabs="https://www.w3school.com.cn/angular/angular_modules.asp" title="AngularJS 模块">AngularJS 模块</a></li>
+<li><a href="angular_directives.asp.htm" tppabs="https://www.w3school.com.cn/angular/angular_directives.asp" title="AngularJS 指令">AngularJS 指令</a></li>
+<li><a href="angular_model.asp.htm" tppabs="https://www.w3school.com.cn/angular/angular_model.asp" title="AngularJS 模型">AngularJS 模型</a></li>
+<li><a href="angular_databinding.asp.htm" tppabs="https://www.w3school.com.cn/angular/angular_databinding.asp" title="AngularJS 数据绑定">AngularJS 数据绑定</a></li>
+<li><a href="angular_controllers.asp.htm" tppabs="https://www.w3school.com.cn/angular/angular_controllers.asp" title="AngularJS 控制器">AngularJS 控制器</a></li>
+<li><a href="angular_scopes.asp.htm" tppabs="https://www.w3school.com.cn/angular/angular_scopes.asp" title="AngularJS 作用域">AngularJS 作用域</a></li>
+<li><a href="angular_filters.asp.htm" tppabs="https://www.w3school.com.cn/angular/angular_filters.asp" title="AngularJS 过滤器">AngularJS 过滤器</a></li>
+<li><a href="angular_services.asp.htm" tppabs="https://www.w3school.com.cn/angular/angular_services.asp" title="AngularJS 服务">AngularJS 服务</a></li>
+<li><a href="angular_http.asp.htm" tppabs="https://www.w3school.com.cn/angular/angular_http.asp" title="AngularJS Http">AngularJS Http</a></li>
+<li><a href="angular_tables.asp.htm" tppabs="https://www.w3school.com.cn/angular/angular_tables.asp" title="AngularJS 表格">AngularJS 表格</a></li>
+<li><a href="angular_select.asp.htm" tppabs="https://www.w3school.com.cn/angular/angular_select.asp" title="AngularJS 选择">AngularJS 选择</a></li>
+<li class="currentLink"><a href="angular_sql.asp.htm" tppabs="https://www.w3school.com.cn/angular/angular_sql.asp" title="AngularJS SQL">AngularJS SQL</a></li>
+<li><a href="angular_htmldom.asp.htm" tppabs="https://www.w3school.com.cn/angular/angular_htmldom.asp" title="AngularJS DOM">AngularJS DOM</a></li>
+<li><a href="angular_events.asp.htm" tppabs="https://www.w3school.com.cn/angular/angular_events.asp" title="AngularJS 事件">AngularJS 事件</a></li>
+<li><a href="angular_forms.asp.htm" tppabs="https://www.w3school.com.cn/angular/angular_forms.asp" title="AngularJS 表单">AngularJS 表单</a></li>
+<li><a href="angular_validation.asp.htm" tppabs="https://www.w3school.com.cn/angular/angular_validation.asp" title="AngularJS 验证">AngularJS 验证</a></li>
+<li><a href="angular_api.asp.htm" tppabs="https://www.w3school.com.cn/angular/angular_api.asp" title="AngularJS API">AngularJS API</a></li>
+<li><a href="angular_includes.asp.htm" tppabs="https://www.w3school.com.cn/angular/angular_includes.asp" title="AngularJS 包含">AngularJS 包含</a></li>
+<li><a href="angular_animations.asp.htm" tppabs="https://www.w3school.com.cn/angular/angular_animations.asp" title="AngularJS 动画">AngularJS 动画</a></li>
+<li><a href="angular_routing.asp.htm" tppabs="https://www.w3school.com.cn/angular/angular_routing.asp" title="AngularJS 路由">AngularJS 路由</a></li>
+<li><a href="angular_application.asp.htm" tppabs="https://www.w3school.com.cn/angular/angular_application.asp" title="AngularJS 应用程序">AngularJS 应用程序</a></li>
+</ul>
+<h2>实例</h2>
+<ul>
+<li><a href="angular_examples.asp.htm" tppabs="https://www.w3school.com.cn/angular/angular_examples.asp" title="AngularJS 实例">AngularJS 实例</a></li>
+</ul>
+<h2>参考手册</h2>
+<ul>
+<li><a href="angular_ref_directives.asp.htm" tppabs="https://www.w3school.com.cn/angular/angular_ref_directives.asp" title="AngularJS 参考手册">AngularJS 参考手册</a></li>
+</ul>
+</div><div id="selected">
+<h2>课程推荐：</h2>
+<ul>
+<li><a href="../howto/index.asp.htm" tppabs="https://www.w3school.com.cn/howto/index.asp" title="W3School 百宝箱">W3School 百宝箱</a></li>
+<li><a href="../java/index.asp.htm" tppabs="https://www.w3school.com.cn/java/index.asp" title="Java 教程">Java 教程</a></li>
+</ul>
+
+</div>
+
+</div>
+
+<div id="maincontent">
+
+<h1>AngularJS SQL</h1>
+
+<div class="prenextnav">
+<ul class="prenext">
+<li class="pre"><a href="angular_select.asp.htm" tppabs="https://www.w3school.com.cn/angular/angular_select.asp" title="AngularJS 选择">AngularJS 选择</a></li>
+<li class="next"><a href="angular_htmldom.asp.htm" tppabs="https://www.w3school.com.cn/angular/angular_htmldom.asp" title="AngularJS DOM">AngularJS DOM</a></li>
+</ul>
+</div>
+
+
+
+<section id="intro">
+<p>AngularJS 非常适合显示数据库中的数据。只需确保数据为 JSON 格式即可。</p>
+</section>
+
+
+
+<section>
+<h2>从运行 MySQL 的 PHP 服务器获取数据</h2>
+
+<h3>AngularJS 实例</h3>
+
+<pre class="language-html">
+&lt;div ng-app=&quot;myApp&quot; ng-controller=&quot;customersCtrl&quot;&gt;
+
+&lt;table&gt;
+  &lt;tr ng-repeat=&quot;x in names&quot;&gt;
+    &lt;td&gt;{{ x.Name }}&lt;/td&gt;
+    &lt;td&gt;{{ x.Country }}&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;/div&gt;
+
+&lt;script&gt;
+var app = angular.module('myApp', []);
+app.controller('customersCtrl', function($scope, $http) {
+  $http.get(&quot;customers_mysql.php&quot;)
+  .then(function (response) {$scope.names = response.data.records;});
+});
+&lt;/script&gt;
+</pre>
+
+<p class="tiy"><a target="_blank" href="javascript:if(confirm('https://www.w3school.com.cn/tiy/atrule_namespace.asp  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ������, �����������, ����Ŀ����ֹͣ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.w3school.com.cn/tiy/atrule_namespace.asp'" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=angular_customers_mysql">亲自试一试</a></p>
+</section>
+
+
+
+<section>
+<h2>从运行 SQL 的 ASP.NET 服务器获取数据</h2>
+
+<h3>AngularJS 实例</h3>
+
+<pre class="language-html">
+&lt;div ng-app=&quot;myApp&quot; ng-controller=&quot;customersCtrl&quot;&gt;
+
+&lt;table&gt;
+  &lt;tr ng-repeat=&quot;x in names&quot;&gt;
+    &lt;td&gt;{{ x.Name }}&lt;/td&gt;
+    &lt;td&gt;{{ x.Country }}&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;/div&gt;
+
+&lt;script&gt;
+var app = angular.module('myApp', []);
+app.controller('customersCtrl', function($scope, $http) {
+  $http.get(&quot;customers_sql.aspx&quot;)
+  .then(function (response) {$scope.names = response.data.records;});
+});
+&lt;/script&gt;
+</pre>
+
+<p class="tiy"><a target="_blank" href="javascript:if(confirm('https://www.w3school.com.cn/tiy/pr_object-fit.asp  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ������, �����������, ����Ŀ����ֹͣ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.w3school.com.cn/tiy/pr_object-fit.asp'" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=angular_customers_sql">亲自试一试</a></p>
+</section>
+
+
+
+<section>
+<h2>服务器代码示例</h2>
+
+<p>以下部分列出了用于获取 SQL 数据的服务器代码。</p>
+
+<ul>
+<li>使用 PHP 和 MySQL。返回 JSON。</li>
+<li>使用 PHP 和 MS Access。返回 JSON。</li>
+<li>使用 ASP.NET、VB 和 MS Access。返回 JSON。</li>
+<li>使用 ASP.NET、Razor 和 SQL Lite。返回 JSON。</li>
+</ul>
+</section>
+
+
+
+<section>
+<h2>跨站点 HTTP 请求</h2>
+
+<p>从不同服务器（除请求页面外的其他服务器）请求数据称为<em>跨站点</em> HTTP 请求。</p>
+
+<p>跨站点请求在网络上很常见。许多页面从不同的服务器加载 CSS，图像和脚本。</p>
+
+<p>出于安全原因，现代浏览器中的<em>脚本发出的</em>跨站点 HTTP 请求被限制为<em>同一站点</em>。</p>
+
+<p>在我们的 PHP 示例中，已添加以下行以允许跨站点访问。</p>
+
+<pre>
+header(&quot;Access-Control-Allow-Origin: *&quot;);
+</pre>
+</section>
+
+
+
+<section>
+<h2>1. 服务器代码 PHP 和 MySQL</h2>
+
+<pre class="language-php">
+&lt;?php
+header(&quot;Access-Control-Allow-Origin: *&quot;);
+header(&quot;Content-Type: application/json; charset=UTF-8&quot;);
+
+$conn = new mysqli(&quot;myServer&quot;, &quot;myUser&quot;, &quot;myPassword&quot;, &quot;Northwind&quot;);
+
+$result = $conn-&gt;query(&quot;SELECT CompanyName, City, Country FROM Customers&quot;);
+
+$outp = &quot;&quot;;
+while($rs = $result-&gt;fetch_array(MYSQLI_ASSOC)) {
+  if ($outp != &quot;&quot;) {$outp .= &quot;,&quot;;}
+  $outp .= '{&quot;Name&quot;:&quot;'  . $rs[&quot;CompanyName&quot;] . '&quot;,';
+  $outp .= '&quot;City&quot;:&quot;'   . $rs[&quot;City&quot;]        . '&quot;,';
+  $outp .= '&quot;Country&quot;:&quot;'. $rs[&quot;Country&quot;]     . '&quot;}';
+}
+$outp ='{&quot;records&quot;:['.$outp.']}';
+$conn-&gt;close();
+
+echo($outp);
+?&gt;
+</pre>
+</section>
+
+
+
+<section>
+<h2>2. 服务器代码 PHP 和 MS Access</h2>
+
+<pre class="language-php">
+&lt;?php
+header(&quot;Access-Control-Allow-Origin: *&quot;);
+header(&quot;Content-Type: application/json; charset=ISO-8859-1&quot;);
+
+$conn = new COM(&quot;ADODB.Connection&quot;);
+$conn-&gt;open(&quot;PROVIDER=Microsoft.Jet.OLEDB.4.0;Data Source=Northwind.mdb&quot;);
+
+$rs = $conn-&gt;execute(&quot;SELECT CompanyName, City, Country FROM Customers&quot;);
+
+$outp = &quot;&quot;;
+while (!$rs-&gt;EOF) {
+  if ($outp != &quot;&quot;) {$outp .= &quot;,&quot;;}
+  $outp .= '{&quot;Name&quot;:&quot;'  . $rs[&quot;CompanyName&quot;] . '&quot;,';
+  $outp .= '&quot;City&quot;:&quot;'   . $rs[&quot;City&quot;]        . '&quot;,';
+  $outp .= '&quot;Country&quot;:&quot;'. $rs[&quot;Country&quot;]     . '&quot;}';
+  $rs-&gt;MoveNext();
+}
+$outp ='{&quot;records&quot;:['.$outp.']}';
+
+$conn-&gt;close();
+
+echo ($outp);
+?&gt;
+</pre>
+</section>
+
+
+
+<section>
+<h2>3. 服务器代码 ASP.NET、VB 和 MS Access</h2>
+
+<pre class="language-vbnet">
+&lt;%@ Import Namespace=&quot;System.IO&quot;%&gt;
+&lt;%@ Import Namespace=&quot;System.Data&quot;%&gt;
+&lt;%@ Import Namespace=&quot;System.Data.OleDb&quot;%&gt;
+&lt;%
+Response.AppendHeader(&quot;Access-Control-Allow-Origin&quot;, &quot;*&quot;)
+Response.AppendHeader(&quot;Content-type&quot;, &quot;application/json&quot;)
+Dim conn As OleDbConnection
+Dim objAdapter As OleDbDataAdapter
+Dim objTable As DataTable
+Dim objRow As DataRow
+Dim objDataSet As New DataSet()
+Dim outp
+Dim c
+conn = New OledbConnection(&quot;Provider=Microsoft.Jet.OLEDB.4.0;data source=Northwind.mdb&quot;)
+objAdapter = New OledbDataAdapter(&quot;SELECT CompanyName, City, Country FROM Customers&quot;, conn)
+objAdapter.Fill(objDataSet, &quot;myTable&quot;)
+objTable=objDataSet.Tables(&quot;myTable&quot;)
+
+outp = &quot;&quot;
+c = chr(34)
+for each x in objTable.Rows
+if outp &lt;&gt; &quot;&quot; then outp = outp & &quot;,&quot;
+outp = outp & &quot;{&quot; & c & &quot;Name&quot;    & c & &quot;:&quot; & c & x(&quot;CompanyName&quot;) & c & &quot;,&quot;
+outp = outp &       c & &quot;City&quot;    & c & &quot;:&quot; & c & x(&quot;City&quot;)        & c & &quot;,&quot;
+outp = outp &       c & &quot;Country&quot; & c & &quot;:&quot; & c & x(&quot;Country&quot;)     & c & &quot;}&quot;
+next
+
+outp =&quot;{&quot; & c & &quot;records&quot; & c & &quot;:[&quot; & outp & &quot;]}&quot;
+response.write(outp)
+conn.close
+%&gt;
+</pre>
+</section>
+
+
+
+<section>
+<h2>4. 服务器代码 ASP.NET、Razor C# 和 SQL Lite</h2>
+
+<pre class="language-vbnet">
+@{
+Response.AppendHeader(&quot;Access-Control-Allow-Origin&quot;, &quot;*&quot;)
+Response.AppendHeader(&quot;Content-type&quot;, &quot;application/json&quot;)
+var db = Database.Open(&quot;Northwind&quot;);
+var query = db.Query(&quot;SELECT CompanyName, City, Country FROM Customers&quot;);
+var outp =&quot;&quot;
+var c = chr(34)
+}
+@foreach(var row in query){
+if (outp != &quot;&quot;) {outp = outp + &quot;,&quot;}
+outp = outp + &quot;{&quot; + c + &quot;Name&quot;    + c + &quot;:&quot; + c + @row.CompanyName + c + &quot;,&quot;
+outp = outp +       c + &quot;City&quot;    + c + &quot;:&quot; + c + @row.City        + c + &quot;,&quot;
+outp = outp +       c + &quot;Country&quot; + c + &quot;:&quot; + c + @row.Country     + c + &quot;}&quot;
+}
+outp =&quot;{&quot; + c + &quot;records&quot; + c + &quot;:[&quot; + outp + &quot;]}&quot;
+@outp
+</pre>
+</section>
+
+
+
+<div class="prenextnav">
+<ul class="prenext">
+<li class="pre"><a href="angular_select.asp.htm" tppabs="https://www.w3school.com.cn/angular/angular_select.asp" title="AngularJS 选择">AngularJS 选择</a></li>
+<li class="next"><a href="angular_htmldom.asp.htm" tppabs="https://www.w3school.com.cn/angular/angular_htmldom.asp" title="AngularJS DOM">AngularJS DOM</a></li>
+</ul>
+</div><div style="background-color:#fcfdf8; padding:0;">
+<script async src="../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" tppabs="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- W3School ���Ĺ�� -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:800px;height:250px"
+     data-ad-client="ca-pub-3381531532877742"
+     data-ad-slot="2086924285"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+</div>
+<!-- maincontent end -->
+
+<div id="sidebar">
+
+<div id="tools">
+<h5 id="tools_reference"><a href="angular_ref_directives.asp.htm" tppabs="https://www.w3school.com.cn/angular/angular_ref_directives.asp">AngularJS 参考手册</a></h5>
+<h5 id="tools_example"><a href="angular_examples.asp.htm" tppabs="https://www.w3school.com.cn/angular/angular_examples.asp">AngularJS 实例</a></h5>
+</div>
+
+<div id="sidebar_zzs">
+
+<div id="sbtg">
+<script async src="../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" tppabs="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- W3School 侧栏广告位 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-3381531532877742"
+     data-ad-slot="6744370501"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+</div>
+
+</div>
+
+<div id="footer">
+<p id="p1">
+W3School 简体中文版提供的内容仅用于培训和测试，不保证内容的正确性。通过使用本站内容随之而来的风险与本站无关。版权所有，保留一切权利。
+</p>
+
+<p id="p2">
+<a href="../about/index.asp.htm" tppabs="https://www.w3school.com.cn/about/index.asp" title="关于 W3School">关于 W3School</a>
+<a href="../about/about_helping.asp.htm" tppabs="https://www.w3school.com.cn/about/about_helping.asp" title="帮助 W3School">帮助 W3School</a>
+<a href="../about/about_use.asp.htm" tppabs="https://www.w3school.com.cn/about/about_use.asp" title="关于使用">使用条款</a>
+<a href="../about/about_privacy.asp.htm" tppabs="https://www.w3school.com.cn/about/about_privacy.asp" title="关于隐私">隐私条款</a>
+<a target="_blank" href="javascript:if(confirm('https://www.ykinvestment.com/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.ykinvestment.com/'" tppabs="https://www.ykinvestment.com/">技术支持：赢科</a>
+<a target="_blank" href="javascript:if(confirm('http://www.beian.miit.gov.cn/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://www.beian.miit.gov.cn/'" tppabs="http://www.beian.miit.gov.cn/">蒙ICP备06004630号</a>
+</p>
+</div>
+
+
+</div>
+<!-- wrapper end -->
+
+</body>
+
+</html>

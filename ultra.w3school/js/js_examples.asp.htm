@@ -1,0 +1,1149 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="../../www.googletagmanager.com/gtag/js-id=UA-878633-1" tppabs="https://www.googletagmanager.com/gtag/js?id=UA-878633-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-878633-1');
+</script>
+
+<meta charset=utf-8"utf-8">
+<meta name="robots" content="all" />
+<meta name="author" content="w3school.com.cn" />
+
+<link rel="stylesheet" type="text/css" href="../c.css" tppabs="https://www.w3school.com.cn/c.css" />
+
+<script src="../lib/cc/prism2.js" tppabs="https://www.w3school.com.cn/lib/cc/prism2.js"></script>
+<link rel='stylesheet' href="../lib/cc/prism.css" tppabs="https://www.w3school.com.cn/lib/cc/prism.css">
+
+<link rel="icon" type="image/png" sizes="16x16" href="/ui2019/logo-16-red.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/ui2019/logo-32-red.png">
+<link rel="icon" type="image/png" sizes="48x48" href="/ui2019/logo-48-red.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/ui2019/logo-96-red.png">
+<link rel="apple-touch-icon-precomposed" sizes="180x180" href="/ui2019/logo-180.png">
+
+
+<title>JavaScript 实例</title>
+
+</head>
+
+<body class="browserscripting">
+
+<div id="wrapper">
+
+<div id="header">
+<a id="logo" href="../index.html" tppabs="https://www.w3school.com.cn/index.html" title="w3school 在线教程" style="float:left;">w3school 在线教程</a>
+<div id="header_gg">
+<script async src="../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" tppabs="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- W3 页眉 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-3381531532877742"
+     data-ad-slot="7423315034"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+
+<div id="navfirst">
+<ul id="menu">
+<li id="h"><a href="../h.asp.htm" tppabs="https://www.w3school.com.cn/h.asp" title="HTML 系列教程">HTML 系列教程</a></li>
+<li id="b"><a href="../b.asp.htm" tppabs="https://www.w3school.com.cn/b.asp" title="浏览器脚本教程">浏览器脚本</a></li>
+<li id="s"><a href="../s.asp.htm" tppabs="https://www.w3school.com.cn/s.asp" title="服务器脚本教程">服务器脚本</a></li>
+<li id="p"><a href="../p.asp.htm" tppabs="https://www.w3school.com.cn/p.asp" title="编程教程">编程教程</a></li>
+<li id="x"><a href="../x.asp.htm" tppabs="https://www.w3school.com.cn/x.asp" title="XML 系列教程">XML 系列教程</a></li>
+<li id="w"><a href="../w.asp.htm" tppabs="https://www.w3school.com.cn/w.asp" title="建站手册">建站手册</a></li>
+<li id="r"><a href="../r.asp.htm" tppabs="https://www.w3school.com.cn/r.asp" title="参考手册">参考手册</a></li>
+</ul>
+</div>
+
+<div id="navsecond">
+
+<div id="course"><h2>JS 教程</h2>
+<ul>
+<li><a href="index.asp.htm" tppabs="https://www.w3school.com.cn/js/index.asp" title="JavaScript 教程">JS 教程</a></li>
+<li><a href="js_intro.asp.htm" tppabs="https://www.w3school.com.cn/js/js_intro.asp" title="JavaScript 简介">JS 简介</a></li>
+<li><a href="js_shiyong.asp.htm" tppabs="https://www.w3school.com.cn/js/js_shiyong.asp" title="JavaScript 使用">JS 使用</a></li>
+<li><a href="js_output.asp.htm" tppabs="https://www.w3school.com.cn/js/js_output.asp" title="JavaScript 输出">JS 输出</a></li>
+<li><a href="js_statements.asp.htm" tppabs="https://www.w3school.com.cn/js/js_statements.asp" title="JavaScript 语句">JS 语句</a></li>
+<li><a href="js_syntax.asp.htm" tppabs="https://www.w3school.com.cn/js/js_syntax.asp" title="JavaScript 语法">JS 语法</a></li>
+<li><a href="js_comments.asp.htm" tppabs="https://www.w3school.com.cn/js/js_comments.asp" title="JavaScript 注释">JS 注释</a></li>
+<li><a href="js_variables.asp.htm" tppabs="https://www.w3school.com.cn/js/js_variables.asp" title="JavaScript 变量">JS 变量</a></li>
+<li><a href="js_let.asp.htm" tppabs="https://www.w3school.com.cn/js/js_let.asp" title="JavaScript Let">JS Let</a></li>
+<li><a href="js_const.asp.htm" tppabs="https://www.w3school.com.cn/js/js_const.asp" title="JavaScript Const">JS Const</a></li>
+<li><a href="js_operators.asp.htm" tppabs="https://www.w3school.com.cn/js/js_operators.asp" title="JavaScript 运算符">JS 运算符</a></li>
+<li><a href="js_arithmetic.asp.htm" tppabs="https://www.w3school.com.cn/js/js_arithmetic.asp" title="JavaScript 算术">JS 算数</a></li>
+<li><a href="js_assignment.asp.htm" tppabs="https://www.w3school.com.cn/js/js_assignment.asp" title="JavaScript 赋值">JS 赋值</a></li>
+<li><a href="js_datatypes.asp.htm" tppabs="https://www.w3school.com.cn/js/js_datatypes.asp" title="JavaScript 数据类型">JS 数据类型</a></li>
+<li><a href="js_functions.asp.htm" tppabs="https://www.w3school.com.cn/js/js_functions.asp" title="JavaScript 函数">JS 函数</a></li>
+<li><a href="js_objects.asp.htm" tppabs="https://www.w3school.com.cn/js/js_objects.asp" title="JavaScript 对象">JS 对象</a></li>
+<li><a href="js_events.asp.htm" tppabs="https://www.w3school.com.cn/js/js_events.asp" title="JavaScript 事件">JS 事件</a></li>
+<li><a href="js_strings.asp.htm" tppabs="https://www.w3school.com.cn/js/js_strings.asp" title="JavaScript 字符串">JS 字符串</a></li>
+<li><a href="js_string_methods.asp.htm" tppabs="https://www.w3school.com.cn/js/js_string_methods.asp" title="JavaScript 字符串方法">JS 字符串方法</a></li>
+<li><a href="js_string_search.asp.htm" tppabs="https://www.w3school.com.cn/js/js_string_search.asp" title="JavaScript 字符串搜索">JS 字符串搜索</a></li>
+<li><a href="js_string_templates.asp.htm" tppabs="https://www.w3school.com.cn/js/js_string_templates.asp" title="JavaScript 模板文字">JS 字符串模板</a></li>
+<li><a href="js_numbers.asp.htm" tppabs="https://www.w3school.com.cn/js/js_numbers.asp" title="JavaScript 数字">JS 数字</a></li>
+<li><a href="js_bigint.asp.htm" tppabs="https://www.w3school.com.cn/js/js_bigint.asp" title="JavaScript BigInt">JS BigInt</a></li>
+<li><a href="js_number_methods.asp.htm" tppabs="https://www.w3school.com.cn/js/js_number_methods.asp" title="JavaScript 数字方法">JS 数字方法</a></li>
+<li><a href="js_number_properties.asp.htm" tppabs="https://www.w3school.com.cn/js/js_number_properties.asp" title="JavaScript 数字属性">JS 数字属性</a></li>
+<li><a href="js_arrays.asp.htm" tppabs="https://www.w3school.com.cn/js/js_arrays.asp" title="JavaScript 数组">JS 数组</a></li>
+<li><a href="js_array_methods.asp.htm" tppabs="https://www.w3school.com.cn/js/js_array_methods.asp" title="JavaScript 数组方法">JS 数组方法</a></li>
+<li><a href="js_array_search.asp.htm" tppabs="https://www.w3school.com.cn/js/js_array_search.asp" title="JavaScript 数组搜索">JS 数组搜索</a></li>
+<li><a href="js_array_sort.asp.htm" tppabs="https://www.w3school.com.cn/js/js_array_sort.asp" title="JavaScript 数组排序">JS 数组排序</a></li>
+<li><a href="js_array_iteration.asp.htm" tppabs="https://www.w3school.com.cn/js/js_array_iteration.asp" title="JavaScript 数组迭代方法">JS 数组迭代</a></li>
+<li><a href="js_array_const.asp.htm" tppabs="https://www.w3school.com.cn/js/js_array_const.asp" title="JavaScript 数组 Const">JS 数组 Const</a></li>
+<li><a href="js_dates.asp.htm" tppabs="https://www.w3school.com.cn/js/js_dates.asp" title="JavaScript 日期">JS 日期</a></li>
+<li><a href="js_date_formats.asp.htm" tppabs="https://www.w3school.com.cn/js/js_date_formats.asp" title="JavaScript 日期格式">JS 日期格式</a></li>
+<li><a href="js_date_methods.asp.htm" tppabs="https://www.w3school.com.cn/js/js_date_methods.asp" title="JavaScript 获取日期方法">JS 日期获取方法</a></li>
+<li><a href="js_date_methods_set.asp.htm" tppabs="https://www.w3school.com.cn/js/js_date_methods_set.asp" title="JavaScript 设置日期方法">JS 日期设置方法</a></li>
+<li><a href="js_math.asp.htm" tppabs="https://www.w3school.com.cn/js/js_math.asp" title="JavaScript Math 对象">JS 数学</a></li>
+<li><a href="js_random.asp.htm" tppabs="https://www.w3school.com.cn/js/js_random.asp" title="JavaScript 随机">JS 随机</a></li>
+<li><a href="js_booleans.asp.htm" tppabs="https://www.w3school.com.cn/js/js_booleans.asp" title="JavaScript 逻辑">JS 逻辑</a></li>
+<li><a href="js_comparisons.asp.htm" tppabs="https://www.w3school.com.cn/js/js_comparisons.asp" title="JavaScript 比较和逻辑运算">JS 比较</a></li>
+<li><a href="js_if_else.asp.htm" tppabs="https://www.w3school.com.cn/js/js_if_else.asp" title="JavaScript If...Else 语句">JS 条件</a></li>
+<li><a href="js_switch.asp.htm" tppabs="https://www.w3school.com.cn/js/js_switch.asp" title="JavaScript Switch 语句">JS Switch</a></li>
+<li><a href="js_loop_for.asp.htm" tppabs="https://www.w3school.com.cn/js/js_loop_for.asp" title="JavaScript For 循环">JS Loop For</a></li>
+<li><a href="js_loop_forin.asp.htm" tppabs="https://www.w3school.com.cn/js/js_loop_forin.asp" title="JavaScript For In">JS Loop For In</a></li>
+<li><a href="js_loop_forof.asp.htm" tppabs="https://www.w3school.com.cn/js/js_loop_forof.asp" title="JavaScript For Of">JS Loop For Of</a></li>
+<li><a href="js_loop_while.asp.htm" tppabs="https://www.w3school.com.cn/js/js_loop_while.asp" title="JavaScript While 循环">JS Loop While</a></li>
+<li><a href="js_break.asp.htm" tppabs="https://www.w3school.com.cn/js/js_break.asp" title="JavaScript Break 和 Continue">JS Break</a></li>
+<li><a href="js_iterables.asp.htm" tppabs="https://www.w3school.com.cn/js/js_iterables.asp" title="JavaScript 可迭代对象">JS 可迭代对象</a></li>
+<li><a href="js_sets.asp.htm" tppabs="https://www.w3school.com.cn/js/js_sets.asp" title="JavaScript Set">JS Set</a></li>
+<li><a href="js_set_methods.asp.htm" tppabs="https://www.w3school.com.cn/js/js_set_methods.asp" title="JavaScript Set 方法">JS Set 方法</a></li>
+<li><a href="js_maps.asp.htm" tppabs="https://www.w3school.com.cn/js/js_maps.asp" title="JavaScript Map">JS Map</a></li>
+<li><a href="js_map_methods.asp.htm" tppabs="https://www.w3school.com.cn/js/js_map_methods.asp" title="JavaScript Map 方法">JS Map 方法</a></li>
+<li><a href="js_typeof.asp.htm" tppabs="https://www.w3school.com.cn/js/js_typeof.asp" title="JavaScript typeof">JS typeof</a></li>
+<li><a href="js_type_conversion.asp.htm" tppabs="https://www.w3school.com.cn/js/js_type_conversion.asp" title="JavaScript 类型转换">JS 类型转换</a></li>
+<li><a href="js_destructuring.asp.htm" tppabs="https://www.w3school.com.cn/js/js_destructuring.asp" title="JavaScript 解构">JS 解构</a></li>
+<li><a href="js_bitwise.asp.htm" tppabs="https://www.w3school.com.cn/js/js_bitwise.asp" title="JavaScript 位运算符">JS 位运算</a></li>
+<li><a href="js_regexp.asp.htm" tppabs="https://www.w3school.com.cn/js/js_regexp.asp" title="JavaScript 正则表达式">JS 正则表达式</a></li>
+<li><a href="js_precedence.asp.htm" tppabs="https://www.w3school.com.cn/js/js_precedence.asp" title="JavaScript 运算符优先级">JS 运算符优先级</a></li>
+<li><a href="js_errors.asp.htm" tppabs="https://www.w3school.com.cn/js/js_errors.asp" title="JavaScript 错误 - Throw 和 Try to Catch">JS 异常</a></li>
+<li><a href="js_scope.asp.htm" tppabs="https://www.w3school.com.cn/js/js_scope.asp" title="JavaScript 作用域">JS 作用域</a></li>
+<li><a href="js_hoisting.asp.htm" tppabs="https://www.w3school.com.cn/js/js_hoisting.asp" title="JavaScript Hoisting">JS Hoisting</a></li>
+<li><a href="js_strict.asp.htm" tppabs="https://www.w3school.com.cn/js/js_strict.asp" title="JavaScript Use Strict">JS 严格模式</a></li>
+<li><a href="js_this.asp.htm" tppabs="https://www.w3school.com.cn/js/js_this.asp" title="JavaScript this 关键词">JS this 关键词</a></li>
+<li><a href="js_arrow_function.asp.htm" tppabs="https://www.w3school.com.cn/js/js_arrow_function.asp" title="JavaScript 箭头函数">JS 箭头函数</a></li>
+<li><a href="js_classes.asp.htm" tppabs="https://www.w3school.com.cn/js/js_classes.asp" title="JavaScript 类">JS 类</a></li>
+<li><a href="js_modules.asp.htm" tppabs="https://www.w3school.com.cn/js/js_modules.asp" title="JavaScript 模块">JS 模块</a></li>
+<li><a href="js_json.asp.htm" tppabs="https://www.w3school.com.cn/js/js_json.asp" title="JavaScript JSON">JS JSON</a></li>
+<li><a href="js_debugging.asp.htm" tppabs="https://www.w3school.com.cn/js/js_debugging.asp" title="JavaScript 调试">JS 调试</a></li>
+<li><a href="js_conventions.asp.htm" tppabs="https://www.w3school.com.cn/js/js_conventions.asp" title="JavaScript 样式指南和代码约定">JS 样式指南</a></li>
+<li><a href="js_best_practices.asp.htm" tppabs="https://www.w3school.com.cn/js/js_best_practices.asp" title="JavaScript 最佳实践">JS 最佳实践</a></li>
+<li><a href="js_mistakes.asp.htm" tppabs="https://www.w3school.com.cn/js/js_mistakes.asp" title="JavaScript 常见错误">JS 错误</a></li>
+<li><a href="js_performance.asp.htm" tppabs="https://www.w3school.com.cn/js/js_performance.asp" title="JavaScript 性能">JS 性能</a></li>
+<li><a href="js_reserved.asp.htm" tppabs="https://www.w3school.com.cn/js/js_reserved.asp" title="JavaScript 保留词">JS 保留词</a></li>
+</ul>
+<h2>JS 版本</h2>
+<ul>
+<li><a href="js_versions.asp.htm" tppabs="https://www.w3school.com.cn/js/js_versions.asp" title="JavaScript 版本">JS 版本</a></li>
+<li><a href="js_es5.asp.htm" tppabs="https://www.w3school.com.cn/js/js_es5.asp" title="JavaScript ES5">JS 2009 (ES5)</a></li>
+<li><a href="js_es6.asp.htm" tppabs="https://www.w3school.com.cn/js/js_es6.asp" title="Javascript ES6">JS 2015 (ES6)</a></li>
+<li><a href="js_2016.asp.htm" tppabs="https://www.w3school.com.cn/js/js_2016.asp" title="ECMAScript 2016">JS 2016</a></li>
+<li><a href="js_2017.asp.htm" tppabs="https://www.w3school.com.cn/js/js_2017.asp" title="ECMAScript 2017">JS 2017</a></li>
+<li><a href="js_2018.asp.htm" tppabs="https://www.w3school.com.cn/js/js_2018.asp" title="ECMAScript 2018">JS 2018</a></li>
+<li><a href="js_2019.asp.htm" tppabs="https://www.w3school.com.cn/js/js_2019.asp" title="ECMAScript 2019">JS 2019</a></li>
+<li><a href="js_2020.asp.htm" tppabs="https://www.w3school.com.cn/js/js_2020.asp" title="ECMAScript 2020">JS 2020</a></li>
+<li><a href="js_2021.asp.htm" tppabs="https://www.w3school.com.cn/js/js_2021.asp" title="ECMAScript 2021">JS 2021</a></li>
+<li><a href="js_2022.asp.htm" tppabs="https://www.w3school.com.cn/js/js_2022.asp" title="ECMAScript 2022">JS 2022</a></li>
+<li><a href="js_2023.asp.htm" tppabs="https://www.w3school.com.cn/js/js_2023.asp" title="ECMAScript 2023">JS 2023</a></li>
+<li><a href="js_2024.asp.htm" tppabs="https://www.w3school.com.cn/js/js_2024.asp" title="ECMAScript 2024">JS 2024</a></li>
+<li><a href="js_ie_edge.asp.htm" tppabs="https://www.w3school.com.cn/js/js_ie_edge.asp" title="Internet Explorer / Edge">JS IE / Edge</a></li>
+<li><a href="js_history.asp.htm" tppabs="https://www.w3school.com.cn/js/js_history.asp" title="JavaScript 历史">JS 历史</a></li>
+</ul>
+<h2>JS 对象</h2>
+<ul>
+<li><a href="js_object_definition.asp.htm" tppabs="https://www.w3school.com.cn/js/js_object_definition.asp" title="JavaScript 对象定义">JS 对象定义</a></li>
+<li><a href="js_object_properties.asp.htm" tppabs="https://www.w3school.com.cn/js/js_object_properties.asp" title="JavaScript 对象属性">JS 对象属性</a></li>
+<li><a href="js_object_methods.asp.htm" tppabs="https://www.w3school.com.cn/js/js_object_methods.asp" title="JavaScript 对象方法">JS 对象方法</a></li>
+<li><a href="js_object_display.asp.htm" tppabs="https://www.w3school.com.cn/js/js_object_display.asp" title="JavaScript 显示对象">JS 对象显示</a></li>
+<li><a href="js_object_accessors.asp.htm" tppabs="https://www.w3school.com.cn/js/js_object_accessors.asp" title="JavaScript 对象访问器">JS 对象访问器</a></li>
+<li><a href="js_object_constructors.asp.htm" tppabs="https://www.w3school.com.cn/js/js_object_constructors.asp" title="JavaScript 对象构造器">JS 对象构造器</a></li>
+<li><a href="js_object_prototypes.asp.htm" tppabs="https://www.w3school.com.cn/js/js_object_prototypes.asp" title="JavaScript 对象原型">JS 对象原型</a></li>
+<li><a href="js_object_es5.asp.htm" tppabs="https://www.w3school.com.cn/js/js_object_es5.asp" title="JavaScript ES5 对象方法">JS 对象引用</a></li>
+</ul>
+<h2>JS 函数</h2>
+<ul>
+<li><a href="js_function_definition.asp.htm" tppabs="https://www.w3school.com.cn/js/js_function_definition.asp" title="JavaScript 函数定义">JS 函数定义</a></li>
+<li><a href="js_function_parameters.asp.htm" tppabs="https://www.w3school.com.cn/js/js_function_parameters.asp" title="JavaScript 函数参数">JS 函数参数</a></li>
+<li><a href="js_function_invocation.asp.htm" tppabs="https://www.w3school.com.cn/js/js_function_invocation.asp" title="JavaScript 函数调用">JS 函数调用</a></li>
+<li><a href="js_function_call.asp.htm" tppabs="https://www.w3school.com.cn/js/js_function_call.asp" title="JavaScript 函数 Call">JS 函数 Call</a></li>
+<li><a href="js_function_apply.asp.htm" tppabs="https://www.w3school.com.cn/js/js_function_apply.asp" title="JavaScript 函数 Apply">JS 函数 Apply</a></li>
+<li><a href="js_function_bind.asp.htm" tppabs="https://www.w3school.com.cn/js/js_function_bind.asp" title="JavaScript 函数 bind()">JS 函数绑定</a></li>
+<li><a href="js_function_closures.asp.htm" tppabs="https://www.w3school.com.cn/js/js_function_closures.asp" title="JavaScript 闭包">JS 闭包</a></li>
+</ul>
+<h2>JS 类</h2>
+<ul>
+<li><a href="js_class_intro.asp.htm" tppabs="https://www.w3school.com.cn/js/js_class_intro.asp" title="JavaScript 类">JS 类简介</a></li>
+<li><a href="js_class_inheritance.asp.htm" tppabs="https://www.w3school.com.cn/js/js_class_inheritance.asp" title="JavaScript 类继承">JS 类继承</a></li>
+<li><a href="js_class_static.asp.htm" tppabs="https://www.w3school.com.cn/js/js_class_static.asp" title="JavaScript Static 方法">JS Static</a></li>
+</ul>
+<h2>JS Async</h2>
+<ul>
+<li><a href="js_callback.asp.htm" tppabs="https://www.w3school.com.cn/js/js_callback.asp" title="JavaScript 回调">JS 回调</a></li>
+<li><a href="js_asynchronous.asp.htm" tppabs="https://www.w3school.com.cn/js/js_asynchronous.asp" title="异步的 JavaScript">JS 异步</a></li>
+<li><a href="js_promise.asp.htm" tppabs="https://www.w3school.com.cn/js/js_promise.asp" title="JavaScript Promise">JS Promise</a></li>
+<li><a href="js_async.asp.htm" tppabs="https://www.w3school.com.cn/js/js_async.asp" title="JavaScript Async/Await">JS Async</a></li>
+</ul>
+<h2>JS HTML DOM</h2>
+<ul>
+<li><a href="js_htmldom.asp.htm" tppabs="https://www.w3school.com.cn/js/js_htmldom.asp" title="JavaScript HTML DOM">DOM 简介</a></li>
+<li><a href="js_htmldom_methods.asp.htm" tppabs="https://www.w3school.com.cn/js/js_htmldom_methods.asp" title="JavaScript - HTML DOM 方法">DOM 方法</a></li>
+<li><a href="js_htmldom_document.asp.htm" tppabs="https://www.w3school.com.cn/js/js_htmldom_document.asp" title="JavaScript HTML DOM 文档">DOM 文档</a></li>
+<li><a href="js_htmldom_elements.asp.htm" tppabs="https://www.w3school.com.cn/js/js_htmldom_elements.asp" title="JavaScript HTML DOM 元素">DOM 元素</a></li>
+<li><a href="js_htmldom_html.asp.htm" tppabs="https://www.w3school.com.cn/js/js_htmldom_html.asp" title="JavaScript HTML DOM - 改变 HTML">DOM HTML</a></li>
+<li><a href="js_validation.asp.htm" tppabs="https://www.w3school.com.cn/js/js_validation.asp" title="JavaScript 表单">DOM 表单</a></li>
+<li><a href="js_htmldom_css.asp.htm" tppabs="https://www.w3school.com.cn/js/js_htmldom_css.asp" title="JavaScript HTML DOM - 改变 CSS">DOM CSS</a></li>
+<li><a href="js_htmldom_animate.asp.htm" tppabs="https://www.w3school.com.cn/js/js_htmldom_animate.asp" title="JavaScript HTML DOM 动画">DOM 动画</a></li>
+<li><a href="js_htmldom_events.asp.htm" tppabs="https://www.w3school.com.cn/js/js_htmldom_events.asp" title="JavaScript HTML DOM 事件">DOM 事件</a></li>
+<li><a href="js_htmldom_eventlistener.asp.htm" tppabs="https://www.w3school.com.cn/js/js_htmldom_eventlistener.asp" title="JavaScript HTML DOM 事件监听程序">DOM 事件监听程序</a></li>
+<li><a href="js_htmldom_navigation.asp.htm" tppabs="https://www.w3school.com.cn/js/js_htmldom_navigation.asp" title="JavaScript HTML DOM 导航">DOM 导航</a></li>
+<li><a href="js_htmldom_nodes.asp.htm" tppabs="https://www.w3school.com.cn/js/js_htmldom_nodes.asp" title="JavaScript HTML DOM 元素（节点）">DOM 节点</a></li>
+<li><a href="js_htmldom_collections.asp.htm" tppabs="https://www.w3school.com.cn/js/js_htmldom_collections.asp" title="JavaScript HTML DOM 集合">DOM 集合</a></li>
+<li><a href="js_htmldom_nodelist.asp.htm" tppabs="https://www.w3school.com.cn/js/js_htmldom_nodelist.asp" title="JavaScript HTML DOM 节点列表">DOM 节点列表</a></li>
+</ul>
+<h2>JS Browser BOM</h2>
+<ul>
+<li><a href="js_window.asp.htm" tppabs="https://www.w3school.com.cn/js/js_window.asp" title="JavaScript Window - 浏览器对象模型">JS Window</a></li>
+<li><a href="js_window_screen.asp.htm" tppabs="https://www.w3school.com.cn/js/js_window_screen.asp" title="JavaScript Window Screen">JS Screen</a></li>
+<li><a href="js_window_location.asp.htm" tppabs="https://www.w3school.com.cn/js/js_window_location.asp" title="JavaScript Window Location">JS Location</a></li>
+<li><a href="js_window_history.asp.htm" tppabs="https://www.w3school.com.cn/js/js_window_history.asp" title="JavaScript Window History">JS History</a></li>
+<li><a href="js_window_navigator.asp.htm" tppabs="https://www.w3school.com.cn/js/js_window_navigator.asp" title="JavaScript Window Navigator">JS Navigator</a></li>
+<li><a href="js_popup.asp.htm" tppabs="https://www.w3school.com.cn/js/js_popup.asp" title="JavaScript 弹出框">JS 弹出框</a></li>
+<li><a href="js_timing.asp.htm" tppabs="https://www.w3school.com.cn/js/js_timing.asp" title="JavaScript Timing 事件">JS Timing</a></li>
+<li><a href="js_cookies.asp.htm" tppabs="https://www.w3school.com.cn/js/js_cookies.asp" title="JavaScript Cookies">JS Cookies</a></li>
+</ul>
+<h2>JS Web API</h2>
+<ul>
+<li><a href="js_api_intro.asp.htm" tppabs="https://www.w3school.com.cn/js/js_api_intro.asp" title="Web APIs - 简介">Web API 简介</a></li>
+<li><a href="js_validation_api.asp.htm" tppabs="https://www.w3school.com.cn/js/js_validation_api.asp" title="JavaScript 验证 API">Web Form API</a></li>
+<li><a href="js_api_history.asp.htm" tppabs="https://www.w3school.com.cn/js/js_api_history.asp" title="Web History API">Web History API</a></li>
+<li><a href="js_api_web_storage.asp.htm" tppabs="https://www.w3school.com.cn/js/js_api_web_storage.asp" title="Web Storage API">Web Storage API</a></li>
+<li><a href="js_api_web_workers.asp.htm" tppabs="https://www.w3school.com.cn/js/js_api_web_workers.asp" title="Web Worker API">Web Worker API</a></li>
+<li><a href="js_api_fetch.asp.htm" tppabs="https://www.w3school.com.cn/js/js_api_fetch.asp" title="JavaScript Fetch API">Web Fetch API</a></li>
+<li><a href="js_api_geolocation.asp.htm" tppabs="https://www.w3school.com.cn/js/js_api_geolocation.asp" title="Web Geolocation API">Web Geolocation API</a></li>
+</ul>
+<h2>JS AJAX</h2>
+<ul>
+<li><a href="js_ajax_intro.asp.htm" tppabs="https://www.w3school.com.cn/js/js_ajax_intro.asp" title="AJAX 简介">AJAX 简介</a></li>
+<li><a href="js_ajax_http.asp.htm" tppabs="https://www.w3school.com.cn/js/js_ajax_http.asp" title="AJAX - XMLHttpRequest 对象">AJAX XMLHttp</a></li>
+<li><a href="js_ajax_http_send.asp.htm" tppabs="https://www.w3school.com.cn/js/js_ajax_http_send.asp" title="AJAX - XMLHttpRequest">AJAX 请求</a></li>
+<li><a href="js_ajax_http_response.asp.htm" tppabs="https://www.w3school.com.cn/js/js_ajax_http_response.asp" title="AJAX - 服务器响应">AJAX 响应</a></li>
+<li><a href="js_ajax_xmlfile.asp.htm" tppabs="https://www.w3school.com.cn/js/js_ajax_xmlfile.asp" title="AJAX XML 实例">AJAX XML 文件</a></li>
+<li><a href="js_ajax_php.asp.htm" tppabs="https://www.w3school.com.cn/js/js_ajax_php.asp" title="AJAX PHP 实例">AJAX PHP</a></li>
+<li><a href="js_ajax_asp.asp.htm" tppabs="https://www.w3school.com.cn/js/js_ajax_asp.asp" title="AJAX ASP 实例">AJAX ASP</a></li>
+<li><a href="js_ajax_database.asp.htm" tppabs="https://www.w3school.com.cn/js/js_ajax_database.asp" title="AJAX Database 实例">AJAX 数据库</a></li>
+<li><a href="js_ajax_applications.asp.htm" tppabs="https://www.w3school.com.cn/js/js_ajax_applications.asp" title="XML 应用程序">AJAX 应用程序</a></li>
+<li><a href="js_ajax_examples.asp.htm" tppabs="https://www.w3school.com.cn/js/js_ajax_examples.asp" title="AJAX 实例">AJAX 实例</a></li>
+</ul>
+<h2>JS JSON</h2>
+<ul>
+<li><a href="js_json_intro.asp.htm" tppabs="https://www.w3school.com.cn/js/js_json_intro.asp" title="JSON 简介">JSON 简介</a></li>
+<li><a href="js_json_syntax.asp.htm" tppabs="https://www.w3school.com.cn/js/js_json_syntax.asp" title="JSON 语法">JSON 语法</a></li>
+<li><a href="js_json_xml.asp.htm" tppabs="https://www.w3school.com.cn/js/js_json_xml.asp" title="JSON vs XML">JSON vs XML</a></li>
+<li><a href="js_json_datatypes.asp.htm" tppabs="https://www.w3school.com.cn/js/js_json_datatypes.asp" title="JSON 数据类型">JSON 数据类型</a></li>
+<li><a href="js_json_parse.asp.htm" tppabs="https://www.w3school.com.cn/js/js_json_parse.asp" title="JSON.parse()">JSON 解析</a></li>
+<li><a href="js_json_stringify.asp.htm" tppabs="https://www.w3school.com.cn/js/js_json_stringify.asp" title="JSON.stringify()">JSON 字符串化</a></li>
+<li><a href="js_json_objects.asp.htm" tppabs="https://www.w3school.com.cn/js/js_json_objects.asp" title="JSON 对象">JSON 对象</a></li>
+<li><a href="js_json_arrays.asp.htm" tppabs="https://www.w3school.com.cn/js/js_json_arrays.asp" title="JSON 数组">JSON 数组</a></li>
+<li><a href="js_json_server.asp.htm" tppabs="https://www.w3school.com.cn/js/js_json_server.asp" title="JSON 服务器">JSON 服务器</a></li>
+<li><a href="js_json_php.asp.htm" tppabs="https://www.w3school.com.cn/js/js_json_php.asp" title="JSON PHP">JSON PHP</a></li>
+<li><a href="js_json_html.asp.htm" tppabs="https://www.w3school.com.cn/js/js_json_html.asp" title="JSON HTML">JSON HTML</a></li>
+<li><a href="js_json_jsonp.asp.htm" tppabs="https://www.w3school.com.cn/js/js_json_jsonp.asp" title="JSONP">JSON JSONP</a></li>
+</ul>
+<h2>JS vs jQuery</h2>
+<ul>
+<li><a href="js_jquery_selectors.asp.htm" tppabs="https://www.w3school.com.cn/js/js_jquery_selectors.asp" title="JavaScript / jQuery DOM 选择器">jQuery 选择器</a></li>
+<li><a href="js_jquery_elements.asp.htm" tppabs="https://www.w3school.com.cn/js/js_jquery_elements.asp" title="JavaScript / jQuery HTML 元素">jQuery HTML</a></li>
+<li><a href="js_jquery_css.asp.htm" tppabs="https://www.w3school.com.cn/js/js_jquery_css.asp" title="JavaScript / jQuery CSS 样式">jQuery CSS</a></li>
+<li><a href="js_jquery_dom.asp.htm" tppabs="https://www.w3school.com.cn/js/js_jquery_dom.asp" title="JavaScript / jQuery HTML DOM">jQuery DOM</a></li>
+</ul>
+<h2>JS 图形</h2>
+<ul>
+<li><a href="js_graphics.asp.htm" tppabs="https://www.w3school.com.cn/js/js_graphics.asp" title="JavaScript 图形">JS 图形</a></li>
+<li><a href="js_graphics_canvas.asp.htm" tppabs="https://www.w3school.com.cn/js/js_graphics_canvas.asp" title="HTML Canvas">JS Canvas</a></li>
+<li><a href="js_graphics_plotly.asp.htm" tppabs="https://www.w3school.com.cn/js/js_graphics_plotly.asp" title="Plotly.js">JS Plotly.js</a></li>
+<li><a href="js_graphics_chartjs.asp.htm" tppabs="https://www.w3school.com.cn/js/js_graphics_chartjs.asp" title="Chart.js">JS Chart</a></li>
+<li><a href="js_graphics_google_chart.asp.htm" tppabs="https://www.w3school.com.cn/js/js_graphics_google_chart.asp" title="谷歌图表">JS 谷歌图表</a></li>
+<li><a href="js_graphics_d3js.asp.htm" tppabs="https://www.w3school.com.cn/js/js_graphics_d3js.asp" title="D3.js">JS D3.js</a></li>
+</ul>
+<h2>JS 实例</h2>
+<ul>
+<li class="currentLink"><a href="js_examples.asp.htm" tppabs="https://www.w3school.com.cn/js/js_examples.asp" title="JavaScript 实例">JS 实例</a></li>
+<li><a href="js_examples_dom.asp.htm" tppabs="https://www.w3school.com.cn/js/js_examples_dom.asp" title="JavaScript HTML DOM 实例">JS HTML DOM</a></li>
+<li><a href="js_examples_input.asp.htm" tppabs="https://www.w3school.com.cn/js/js_examples_input.asp" title="JavaScript HTML 输入实例">JS HTML 输入</a></li>
+<li><a href="js_examples_html.asp.htm" tppabs="https://www.w3school.com.cn/js/js_examples_html.asp" title="JavaScript HTML 对象实例">JS HTML 对象</a></li>
+<li><a href="js_examples_events.asp.htm" tppabs="https://www.w3school.com.cn/js/js_examples_events.asp" title="JavaScript HTML 事件实例">JS HTML 事件</a></li>
+<li><a href="js_examples_browser.asp.htm" tppabs="https://www.w3school.com.cn/js/js_examples_browser.asp" title="JavaScript Browser 对象实例">JS Browser</a></li>
+<li><a href="js_quiz.asp.htm" tppabs="https://www.w3school.com.cn/js/js_quiz.asp" title="JavaScript 测验">JS 测验</a></li>
+</ul>
+<h2>JS 参考手册</h2>
+<ul>
+<li><a href="../jsref/index.asp.htm" tppabs="https://www.w3school.com.cn/jsref/index.asp" title="JavaScript 和 HTML DOM 参考手册">JavaScript 对象</a></li>
+<li><a href="../jsref/index.asp.htm" tppabs="https://www.w3school.com.cn/jsref/index.asp" title="JavaScript 和 HTML DOM 参考手册">HTML DOM 对象</a></li>
+</ul>
+</div><div id="selected">
+<h2>课程推荐：</h2>
+<ul>
+<li><a href="../howto/index.asp.htm" tppabs="https://www.w3school.com.cn/howto/index.asp" title="W3School 百宝箱">W3School 百宝箱</a></li>
+<li><a href="../java/index.asp.htm" tppabs="https://www.w3school.com.cn/java/index.asp" title="Java 教程">Java 教程</a></li>
+</ul>
+
+</div>
+
+</div>
+
+<div id="maincontent">
+
+<h1>JavaScript 实例</h1>
+
+<div class="prenextnav">
+<ul class="prenext">
+<li class="pre"><a href="js_graphics_d3js.asp.htm" tppabs="https://www.w3school.com.cn/js/js_graphics_d3js.asp" title="D3.js">JS D3.js</a></li>
+<li class="next"><a href="js_examples_dom.asp.htm" tppabs="https://www.w3school.com.cn/js/js_examples_dom.asp" title="JavaScript HTML DOM 实例">JS HTML DOM</a></li>
+</ul>
+</div>
+
+
+
+<div class="example">
+<h2>JavaScript 能做什么？</h2>
+
+<dl>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_intro_inner_html.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_intro_inner_html">JavaScript 能够改变 HTML 内容</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_intro_lightbulb.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_intro_lightbulb">JavaScript 能够改变 HTML 属性</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_intro_style.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_intro_style">JavaScript 能够改变 CSS 样式</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_intro_hide.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_intro_hide">JavaScript 能够隐藏 HTML 元素</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_intro_show.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_intro_show">JavaScript 能够显示隐藏的 HTML 元素</a></dt>
+</dl>
+
+<p class="btn-eg"><a target="_blank" href="js_intro.asp.htm" tppabs="https://www.w3school.com.cn/js/js_intro.asp" title="JavaScript 简介">例子解释：JavaScript 简介</a></p>
+</div>
+
+
+
+<div class="example">
+<h2>在何处插入 JavaScript</h2>
+
+<dl>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_use_head.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_use_head">&lt;head&gt; 中的 JavaScript</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_use_body.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_use_body">&lt;body&gt; 中的 JavaScript</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_use_external.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_use_external">外部文件中的 JavaScript</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_use_url.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_use_url">外部 url 中的 JavaScript</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_use_url_relative.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_use_url_relative">外部文件夹中的 JavaScript</a></dt>
+</dl>
+
+<p class="btn-eg"><a target="_blank" href="js_shiyong.asp.htm" tppabs="https://www.w3school.com.cn/js/js_shiyong.asp" title="JavaScript 使用">例子解释：使用 JavaScript</a></p>
+</div>
+
+
+
+
+<div class="example">
+<h2>JavaScript 输出</h2>
+
+<dl>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_output_write.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_output_write">写入 HTML 输出</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_output_dom.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_output_dom">写入 HTML 元素</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_output_alert.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_output_alert">写入窗口提示框</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_output_console.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_output_console">写入浏览器控制台</a></dt>
+</dl>
+
+<p class="btn-eg"><a target="_blank" href="js_output.asp.htm" tppabs="https://www.w3school.com.cn/js/js_output.asp" title="JavaScript 输出">例子解释：输出</a></p>
+</div>
+
+
+
+<div class="example">
+<h2>JavaScript 语法</h2>
+
+<dl>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_statements.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_statements">JavaScript 语句</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_syntax_numbers.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_syntax_numbers">JavaScript 数字</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_syntax_strings.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_syntax_strings">JavaScript 字符串</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_syntax_variables.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_syntax_variables">JavaScript 变量</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_syntax_operators.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_syntax_operators">JavaScript 运算符</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_syntax_assignment.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_syntax_assignment">JavaScript 赋值</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_syntax_expressions.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_syntax_expressions">JavaScript 表达式（使用常量）</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_syntax_expressions_strings.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_syntax_expressions_strings">JavaScript 表达式（使用字符串）</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_syntax_expressions_variables.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_syntax_expressions_variables">JavaScript 表达式（使用变量）</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_syntax_keywords.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_syntax_keywords">JavaScript 关键词</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_syntax_comments.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_syntax_comments">JavaScript 注释</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_syntax_case.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_syntax_case">JavaScript 对大小写敏感</a></dt>
+</dl>
+
+<p class="btn-eg"><a target="_blank" href="js_syntax.asp.htm" tppabs="https://www.w3school.com.cn/js/js_syntax.asp" title="JavaScript 语法">例子解释：语法</a></p>
+</div>
+
+
+
+<div class="example">
+<h2>JavaScript 语句</h2>
+
+<dl>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_statements.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_statements">JavaScript 语句是对浏览器的命令</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_statement.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_statement">JavaScript 代码是一系列语句</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_statements_semicolon1.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_statements_semicolon1">JavaScript 语句由分号分隔</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_statements_semicolon2.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_statements_semicolon2">一行允许多条语句</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_statements_blocks.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_statements_blocks">JavaScript 语句可以在代码块中组合在一起</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_statements_linebreak.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_statements_linebreak">您可以在运算符或逗号之后对代码折行</a></dt>
+</dl>
+
+<p class="btn-eg"><a target="_blank" href="js_statements.asp.htm" tppabs="https://www.w3school.com.cn/js/js_statements.asp" title="JavaScript 语句">例子解释：语句</a></p>
+</div>
+
+
+
+<div class="example">
+<h2>JavaScript 注释</h2>
+
+<dl>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_comments_1.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_comments_1">单行注释</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_comments_2.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_comments_2">行末的单行注释</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_comments_3.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_comments_3">多行注释</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_comments_4.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_comments_4">阻止执行的单行注释</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_comments_5.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_comments_5">阻止执行的多行注释</a></dt>
+</dl>
+
+<p class="btn-eg"><a target="_blank" href="js_comments.asp.htm" tppabs="https://www.w3school.com.cn/js/js_comments.asp" title="JavaScript 注释">例子解释：注释</a></p>
+</div>
+
+
+
+<div class="example">
+<h2>JavaScript 变量</h2>
+
+<dl>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_variables.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_variables">JavaScript 变量</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_variables_total.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_variables_total">作为代数的 JavaScript 变量</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_variables_types.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_variables_types">JavaScript 数字和字符串</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_variables_create.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_variables_create">JavaScript var 关键词</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_variables_multi.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_variables_multi">在一条语句中声明多个变量</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_variables_multiline.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_variables_multiline">多行声明多个变量</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_variables_undefined.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_variables_undefined">没有值的变量返回值 undefined</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_variables_redefine.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_variables_redefine">重新声明变量不会破坏值</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_variables_add_numbers.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_variables_add_numbers">JavaScript 数组相加</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_variables_add_strings.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_variables_add_strings">JavaScript 字符串相加</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_variables_add_string_number.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_variables_add_string_number">字符串和数字相加</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_variables_add_number_string.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_variables_add_number_string">数值和字符串相加</a></dt>
+</dl>
+
+<p class="btn-eg"><a target="_blank" href="js_variables.asp.htm" tppabs="https://www.w3school.com.cn/js/js_variables.asp" title="JavaScript 变量">例子解释：变量</a></p>
+</div>
+
+
+
+<div class="example">
+<h2>JavaScript 算术</h2>
+
+<dl>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_operator_addition.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_operator_addition">加 (+) 运算符</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_operator_subtraction.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_operator_subtraction">减 (-) 运算符</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_operator_multiplication.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_operator_multiplication">乘 (*) 运算符</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_operator_division.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_operator_division">除 (/) 运算符</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_operator_modulus.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_operator_modulus">取模 (%) 运算符</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_operator_increment.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_operator_increment">递增 (++) 运算符</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_operator_decrement.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_operator_decrement">递减 (--) 运算符</a></dt>
+</dl>
+
+<p class="btn-eg"><a target="_blank" href="js_arithmetic.asp.htm" tppabs="https://www.w3school.com.cn/js/js_arithmetic.asp" title="JavaScript 算术">例子解释：算数</a></p>
+</div>
+
+
+
+<div class="example">
+<h2>JavaScript 赋值</h2>
+
+<dl>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_assignment_equal.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_assignment_equal">= 赋值运算符</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_assignment_plusequal.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_assignment_plusequal">+= 赋值运算符</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_assignment_minusequal.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_assignment_minusequal">-= 赋值运算符</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_assignment_multiplicationequal.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_assignment_multiplicationequal">*= 赋值运算符</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_assignment_divideequal.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_assignment_divideequal">/= 赋值运算符</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_assignment_modulusequal.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_assignment_modulusequal">%= 赋值运算符</a></dt>
+</dl>
+
+<p class="btn-eg"><a target="_blank" href="js_assignment.asp.htm" tppabs="https://www.w3school.com.cn/js/js_assignment.asp" title="JavaScript 赋值">例子解释：赋值</a></p>
+</div>
+
+
+
+<div class="example">
+<h2>JavaScript 字符串级联</h2>
+
+<dl>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_operator_concatenate_1.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_operator_concatenate_1">使用级联运算符 (+) 将两个字符串相加</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_operator_concatenate_4.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_operator_concatenate_4">对两个字符串相加，第一个字符串中包含空格</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_operator_concatenate_5.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_operator_concatenate_5">对两个字符串相加，字符串之间有空格</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_operator_concatenate_2.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_operator_concatenate_2">使用 += 运算符对两个字符串相加</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_operator_concatenate_3.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_operator_concatenate_3">对字符串和数字相加</a></dt>
+</dl>
+
+<p class="btn-eg"><a target="_blank" href="js_operators.asp.htm" tppabs="https://www.w3school.com.cn/js/js_operators.asp" title="JavaScript 运算符">例子解释：字符串级联</a></p>
+</div>
+
+
+
+<div class="example">
+<h2>JavaScript 数据类型</h2>
+
+<dl>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_datatypes_string.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_datatypes_string">声明（创建）字符串</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_datatypes_number.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_datatypes_number">声明（创建）数字</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_datatypes_array.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_datatypes_array">声明（创建）数组</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_datatypes_object.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_datatypes_object">声明（创建）对象</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_datatypes_typeof.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_datatypes_typeof">确定变量的类型</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_datatypes_addstrings_3.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_datatypes_addstrings_3">对两个数字和一个字符串相加</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_datatypes_addstrings_4.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_datatypes_addstrings_4">对一个字符串和两个数字相加</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_datatypes_undefined_1.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_datatypes_undefined_1">一个未定义变量</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_datatypes_empty.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_datatypes_empty">一个空变量</a></dt>
+</dl>
+
+<p class="btn-eg"><a target="_blank" href="js_datatypes.asp.htm" tppabs="https://www.w3school.com.cn/js/js_datatypes.asp" title="JavaScript 数据类型">例子解释：数据类型</a></p>
+</div>
+
+
+
+<div class="example">
+<h2>JavaScript 对象</h2>
+
+<dl>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_object_variable.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_object_variable">创建 JavaScript 变量</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_object_object.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_object_object">创建 JavaScript 对象</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_object_create_1.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_object_create_1">创建 person 对象（单行）</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_object_create_2.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_object_create_2">创建 person 对象（多行）</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_object_property_1.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_object_property_1">使用 .property 访问对象属性</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_object_property_2.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_object_property_2">使用 [property] 访问对象属性</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_object_method.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_object_method">以方法访问函数属性</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_object_function.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_object_function">以属性访问函数属性</a></dt>
+</dl>
+
+<p class="btn-eg"><a target="_blank" href="js_objects.asp.htm" tppabs="https://www.w3school.com.cn/js/js_objects.asp" title="JavaScript 对象">例子解释：对象</a></p>
+</div>
+
+
+
+<div class="example">
+<h2>JavaScript 函数</h2>
+
+<dl>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_function_1.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_function_1">一个简单的函数</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_function_2.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_function_2">带一个参数的函数</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_function_3.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_function_3">带一个参数的函数 2</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_function_return.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_function_return">返回一个值的函数</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_farenheit_to_celsius.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_farenheit_to_celsius">把华氏度转换为摄氏度的函数</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_farenheit_to_celsius_2.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_farenheit_to_celsius_2">没有 () 的函数</a></dt>
+</dl>
+
+<p class="btn-eg"><a target="_blank" href="js_functions.asp.htm" tppabs="https://www.w3school.com.cn/js/js_functions.asp" title="JavaScript 函数">例子解释：函数</a></p>
+</div>
+
+
+
+<div class="example">
+<h2>JavaScript 事件</h2>
+
+<dl>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_event_onclick.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_event_onclick">更改 HTML 元素的 onclick 事件</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_event_onclick_this.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_event_onclick_this">更改元素本身的 onclick 事件</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_event_onclick_function.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_event_onclick_function">调用函数的 onclick 事件</a></dt>
+</dl>
+
+<p class="btn-eg"><a target="_blank" href="js_events.asp.htm" tppabs="https://www.w3school.com.cn/js/js_events.asp" title="JavaScript 事件">例子解释：事件</a></p>
+</div>
+
+
+
+<div class="example">
+<h2>JavaScript 字符串</h2>
+
+<dl>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_string_quotes.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_string_quotes">字符串可由单引号或双引号包围</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_string_quotes_mixed.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_string_quotes_mixed">展示一些字符串实例</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_string_escape_quotes_1.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_string_escape_quotes_1">在引号前添加反斜杠被认定为引号</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_string_length.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_string_length">确定字符串的长度</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_string_break_1.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_string_break_1">用反斜杠对文本字符串折行</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_string_break_code.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_string_break_code">无法对代码使用反斜杠折行</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_string_indexof.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_string_indexof">确定文本在字符串中首次出现的位置 - indexOf()</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_string_match.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_string_match">在字符串中搜索文本并在找到后返回这段文本 - match()</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_string_replace.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_string_replace">替换字符串中的字符 - replace()</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_string_touppercase.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_string_touppercase">把字符串转换为大写 - toUpperCase()</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_string_tolowercase.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_string_tolowercase">把字符串转换为小写 - toLowerCase()</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_string_split.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_string_split">把字符串拆分入数组 - split()</a></dt>
+</dl>
+
+<p class="btn-eg"><a target="_blank" href="js_strings.asp.htm" tppabs="https://www.w3school.com.cn/js/js_strings.asp" title="JavaScript 字符串">例子解释：字符串</a></p>
+</div>
+
+
+
+<div class="example">
+<h2>JavaScript 数字</h2>
+
+<dl>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_number_1.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_number_1">带或不带小数点都可以写数值</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_number_2.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_number_2">可以使用指数计数法编写极大或极小的数</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_number_inaccurate_1.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_number_inaccurate_1">数字会被精确到 15 位</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_number_inaccurate_2.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_number_inaccurate_2">浮点算术不总是 100% 精确</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_number_inaccurate_3.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_number_inaccurate_3">但是可以通过乘并除以 10 解决此问题</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_number_add.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_number_add">两数相加会产生新数</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_number_add_strings_1.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_number_add_strings_1">两个数字字符串相加会产生连接的字符串</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_number_add_strings_2.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_number_add_strings_2">数字和数字字符串相加也会产生连接的字符串</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_number_add_strings_3.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_number_add_strings_3">数字字符串和数字相加也会产生连接的字符串</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_number_add_strings_4.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_number_add_strings_4">字符串和数字相加的常见错误 1</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_number_add_strings_5.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_number_add_strings_5">字符串和数字相加的常见错误 2</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_number_string_1.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_number_string_1">在除法运算时，JavaScript 会尝试把字符串转换为数字</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_number_string_2.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_number_string_2">在乘法运算时，JavaScript 会尝试把字符串转换为数字</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_number_string_3.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_number_string_3">在减法运算时，JavaScript 会尝试把字符串转换为数字</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_number_string_4.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_number_string_4">在加法运算时，JavaScript 不会把字符串转换为数字</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_number_divide_string.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_number_divide_string">被字符串除的数不再是数</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_number_divide_number.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_number_divide_number">数字除以数字字符串为数字</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_number_isnan_true.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_number_isnan_true">全局 JavaScript 函数 isNaN() 判断值是否为数字</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_number_nan_math.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_number_nan_math">在数学运算中使用 NaN 会始终返回 NaN</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_number_nan_concat.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_number_nan_concat">在数学字符串运算中使用 NaN 将连接 NaN</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_number_nan_typeof.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_number_nan_typeof">NaN 的类型是数字（没错！typeof NaN 返回 number）</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_number_infinity.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_number_infinity">如果计算出最大可能数字之外的数字，则返回无穷大（Infinity）</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_number_infinity_zero.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_number_infinity_zero">被零除会生成 Infinity</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_number_infinity_typeof.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_number_infinity_typeof">Infinity 也是数（typeof Infinity 返回 number）</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_number_hex.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_number_hex">前缀为 0x 的常量会被解释为十六进制</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_number_tostring.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_number_tostring">toString() 方法能够以十六进制、八进制或二进制输出数</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_number_object_1.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_number_object_1">数字可以是对象</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_number_object_3.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_number_object_3">数字和对象无法安全地比较</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_number_object_4.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_number_object_4">对象和对象无法安全地比较</a></dt>
+</dl>
+
+<p class="btn-eg"><a target="_blank" href="js_numbers.asp.htm" tppabs="https://www.w3school.com.cn/js/js_numbers.asp" title="JavaScript 数字">例子解释：数字</a></p>
+</div>
+
+
+
+<div class="example">
+<h2>JavaScript 数字方法</h2>
+
+<dl>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_number_tostring.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_number_tostring">toString() 方法将数字转换为字符串</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_number_valueof.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_number_valueof">valueOf() 方法以数字返回数字</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_number_toexponential.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_number_toexponential">toExponential() 返回一个带指数表示法的数字</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_number_tofixed.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_number_tofixed">toFixed() 方法将数字四舍五入为指定位的数字</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_number_toprecision.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_number_toprecision">toPrecision() 返回指定长度的数字</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_global_number.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_global_number">全局方法 Number() 将变量转换为数字</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_global_number_date.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_global_number_date">全局方法 Number() 甚至可以将日期转换为数字</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_global_parseint.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_global_parseint">全局方法 parseInt() 将字符串转换为数字</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_global_parsefloat.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_global_parsefloat">全局方法 parseFloat() 将字符串转换为数字</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_number_max_value.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_number_max_value">MAX_VALUE 返回 JavaScript 中可能的最大数字</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_number_min_value.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_number_min_value">MIN_VALUE 返回 JavaScript 中可能的最小数字</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_number_positive_infinity_1.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_number_positive_infinity_1">POSITIVE_INFINITY 表示无穷大</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_number_positive_infinity_2.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_number_positive_infinity_2">溢出时返回 POSITIVE_INFINITY</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_number_negative_infinity_1.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_number_negative_infinity_1">NEGATIVE_INFINITY 表示负无穷大</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_number_negative_infinity_2.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_number_negative_infinity_2">溢出时返回 NEGATIVE_INFINITY</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_number_nan.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_number_nan">NaN 代表“非数字”</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_number_nan_divide_string.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_number_nan_divide_string">对字符串执行的算术将导致 NaN</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_number_max_undefined.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_number_max_undefined">对变量使用数字属性将返回 undefined</a></dt>
+</dl>
+
+<p class="btn-eg"><a target="_blank" href="js_number_methods.asp.htm" tppabs="https://www.w3school.com.cn/js/js_number_methods.asp" title="JavaScript 数值方法">例子解释：数字方法</a></p>
+</div>
+
+
+
+<div class="example">
+<h2>JavaScript 数学</h2>
+
+<dl>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_math_pi.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_math_pi">Math.PI 返回 PI 的值</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_math_round.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_math_round">Math.round(x) 返回 x 的 取整值（舍入值）</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_math_pow.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_math_pow">Math.pow(x, y) 返回 x 的 y 次方</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_math_sqrt.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_math_sqrt">Math.sqrt(x) 返回 x 的平方</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_math_abs.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_math_abs">Math.abs(x) 返回 x 的绝对值</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_math_ceil.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_math_ceil">Math.ceil(x) 返回 x 的向上舍入值</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_math_floor.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_math_floor">Math.floor(x) 返回 x 的向下舍入值</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_math_sin.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_math_sin">Math.sin(x) 返回角度 x（以弧度计）的正弦</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_math_cos.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_math_cos">Math.cos(x) 返回角度 x（以弧度计）的余弦</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_math_max.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_math_max">Math.max() 返回参数列表中的最高值</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_math_min.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_math_min">Math.min() 返回参数列表中的最低值</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_math_celsius_to_fahrenheit.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_math_celsius_to_fahrenheit">把摄氏度转换为华氏度</a></dt>
+</dl>
+
+<p class="btn-eg"><a target="_blank" href="js_math.asp.htm" tppabs="https://www.w3school.com.cn/js/js_math.asp" title="JavaScript Math 对象">例子解释：数学</a></p>
+</div>
+
+
+
+<div class="example">
+<h2>JavaScript 随机</h2>
+
+<dl>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_random.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_random">Math.random() 返回介于 0（包括）与 1（不包括）之间的随机整数</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_random_0_9.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_random_0_9">如何返回介于 0 与 9 之间（都包括）的随机整数</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_random_0_10.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_random_0_10">如何返回介于 0 与 10 之间（都包括）的随机整数</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_random_0_99.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_random_0_99">如何返回介于 0 与 99 之间（都包括）的随机整数</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_random_0_100.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_random_0_100">如何返回介于 0 与 100 之间（都包括）的随机整数</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_random_1_10.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_random_1_10">如何返回介于 1 与 10 之间（都包括）的随机整数</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_random_1_100.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_random_1_100">如何返回介于 1 与 100 之间（都包括）的随机整数</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_random_function_1.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_random_function_1">如何返回介于 x（包括）与 y（不包括）之间的随机整数</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_random_function_2.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_random_function_2">如何返回介于 x 与 y 之间（都包括）的随机整数</a></dt>
+</dl>
+
+<p class="btn-eg"><a target="_blank" href="js_random.asp.htm" tppabs="https://www.w3school.com.cn/js/js_random.asp" title="JavaScript 随机">例子解释：随机</a></p>
+</div>
+
+
+
+<div class="example">
+<h2>JavaScript 日期</h2>
+
+<dl>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_date_current.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_date_current">使用 Date() 来显示今天的日期和时间</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_date_getfullyear.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_date_getfullyear">使用 getFullYear() 显示年份</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_date_gettime.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_date_gettime">使用 getTime() 计算 1970 年至今的毫秒数</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_date_setfullyear.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_date_setfullyear">使用 setFullYear() 设置一个具体的日期</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_date_toutcstring.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_date_toutcstring">使用 toUTCString() 把今天的日期（根据 UTC）转换为字符串</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_date_getday.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_date_getday">使用 getDay() 以数字显示星期名</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_date_getday_weekday.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_date_getday_weekday">使用 getDay() 以及一个数组以名称显示星期名</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=js_timing_clock.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=js_timing_clock">显示时钟</a></dt>
+</dl>
+
+<p class="btn-eg"><a target="_blank" href="js_dates.asp.htm" tppabs="https://www.w3school.com.cn/js/js_dates.asp" title="JavaScript 日期">例子解释：日期</a></p>
+</div>
+
+
+
+<div class="example">
+<h2>JavaScript 数组</h2>
+
+<dl>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_array.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_array">创建数组 1</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_array_newlines.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_array_newlines">创建数组 2</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_array_element.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_array_element">访问数组元素</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_array_element_change.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_array_element_change">更改数组元素</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_array_full.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_array_full">访问整个数组</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_array_length.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_array_length">确定数组的长度</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_array_loop_for.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_array_loop_for">遍历数组</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_array_add_length.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_array_add_length">向数组添加元素</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_array_holes.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_array_holes">将未定义的“孔”添加到数组中</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_array_instanceof.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_array_instanceof">如何识别数组 1</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_array_isarray_method.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_array_isarray_method">如何识别数组 2</a></dt>
+</dl>
+
+<p class="btn-eg"><a target="_blank" href="js_arrays.asp.htm" tppabs="https://www.w3school.com.cn/js/js_arrays.asp" title="JavaScript 数组">例子解释：数组</a></p>
+</div>
+
+
+
+<div class="example">
+<h2>JavaScript 数组方法</h2>
+
+<dl>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_array_push.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_array_push">向数组添加元素</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_array_pop.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_array_pop">删除数组中最后一个元素 - pop()</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_array_join.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_array_join">将数组的所有元素连接成一个字符串 - join()</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_array_concat_1.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_array_concat_1">连接两个数组 - concat()</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_array_concat_2.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_array_concat_2">连接三个数组 - concat()</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_array_splice.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_array_splice">将一个元素添加到数组中的位置 2 - splice()</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_array_tostring.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_array_tostring">把数组转换为字符串 - toString()</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_array_unshift.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_array_unshift">把新元素添加到数组的开头 - unshift()</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_array_shift.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_array_shift">删除数组中的第一个元素 - shift()</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_array_splice.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_array_splice">选取数组中的元素 - slice()</a></dt>
+</dl>
+
+<p class="btn-eg"><a target="_blank" href="js_array_methods.asp.htm" tppabs="https://www.w3school.com.cn/js/js_array_methods.asp" title="JavaScript 数组方法">例子解释：数组方法</a></p>
+</div>
+
+
+
+<div class="example">
+<h2>JavaScript 数组排序</h2>
+
+<dl>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_array_sort.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_array_sort">按升序对数组排序</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_array_sort_reverse.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_array_sort_reverse">按降序对数组排序</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_array_sort_numeric_1.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_array_sort_numeric_1">按升序排列数字</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_array_sort_numeric_2.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_array_sort_numeric_2">按降序排列数字</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_array_sort_alpha.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_array_sort_alpha">排序数字（按字母顺序或数字顺序）</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_array_sort_random.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_array_sort_random">按随机顺序排序数组中的数字</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_array_sort_low.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_array_sort_low">确定数组中最小的数</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_array_sort_high.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_array_sort_high">确定数组中最大的数</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_array_sort_math_min.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_array_sort_math_min">使用 Math.min() 确定数组中最小的数</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_array_sort_math_max.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_array_sort_math_max">使用 Math.max() 确定数组中最大的数</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_array_sort_min.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_array_sort_min">使用“自制的” myArrayMin 方法</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_array_sort_max.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_array_sort_max">使用“自制的” myArrayMax 方法</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_array_sort_object_1.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_array_sort_object_1">按数字属性排序对象</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_array_sort_object_2.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_array_sort_object_2">按字符串属性排序对象</a></dt>
+</dl>
+
+<p class="btn-eg"><a target="_blank" href="js_array_sort.asp.htm" tppabs="https://www.w3school.com.cn/js/js_array_sort.asp" title="JavaScript 数组排序">例子解释：数组排序</a></p>
+</div>
+
+
+
+<div class="example">
+<h2>JavaScript 数组迭代</h2>
+
+<dl>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_array_foreach.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_array_foreach">Array.forEach()</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_array_map.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_array_map">Array.map()</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_array_filter.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_array_filter">Array.filter()</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_array_reduce.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_array_reduce">Array.reduce()</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_array_reduceright.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_array_reduceright">Array.reduceRight()</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_array_every.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_array_every">Array.every()</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_array_some.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_array_some">Array.some()</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_array_indexof.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_array_indexof">Array.indexOf()</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_array_lastindexof.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_array_lastindexof">Array.lastIndexOf()</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_array_find.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_array_find">Array.find()</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_array_find_index.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_array_find_index">Array.findIndex()</a></dt>
+</dl>
+
+<p class="btn-eg"><a target="_blank" href="js_array_iteration.asp.htm" tppabs="https://www.w3school.com.cn/js/js_array_iteration.asp" title="JavaScript 数组迭代方法">例子解释：数组迭代</a></p>
+</div>
+
+
+
+<div class="example">
+<h2>JavaScript 类型转换</h2>
+
+<dl>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_type_convert_typeof_all.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_type_convert_typeof_all">显示所有变量的类型</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_type_convert_constructor_all.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_type_convert_constructor_all">显示所有变量类型的构造器</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_type_convert_number_string.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_type_convert_number_string">使用 String() 把数转换为字符串</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_type_convert_number_tostring.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_type_convert_number_tostring">使用 toString() 把数转换为字符串</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_array_isarray.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_array_isarray">确认变量是否是数组</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_date_isdate.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_date_isdate">确认变量是否是日期</a></dt>
+</dl>
+
+<p class="btn-eg"><a target="_blank" href="js_type_conversion.asp.htm" tppabs="https://www.w3school.com.cn/js/js_type_conversion.asp" title="JavaScript 类型转换">例子解释：类型转换</a></p>
+</div>
+
+
+
+<div class="example">
+<h2>JavaScript 布尔</h2>
+
+<dl>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_boolean_expression_1.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_boolean_expression_1">显示 Boolean(10 > 9) 的值</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_boolean_expression_2.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_boolean_expression_2">显示 10 &gt; 9 的值</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_boolean.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_boolean">拥有真正值的一切均为 true</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_boolean_zero.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_boolean_zero">零的布尔值是 false</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_boolean_minus.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_boolean_minus">减零（minus zero）的布尔值是 false</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_boolean_empty.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_boolean_empty">空字符串的布尔值是 false</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_boolean_undefined.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_boolean_undefined">undefined 的布尔值是 false</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_boolean_null.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_boolean_null">null 的布尔值是 false</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_boolean_false.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_boolean_false">false 的布尔值是 false</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_boolean_nan.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_boolean_nan">NaN 的布尔值是 false</a></dt>
+</dl>
+
+<p class="btn-eg"><a target="_blank" href="js_booleans.asp.htm" tppabs="https://www.w3school.com.cn/js/js_booleans.asp" title="JavaScript 逻辑">例子解释：布尔</a></p>
+</div>
+
+
+
+<div class="example">
+<h2>JavaScript 比较</h2>
+
+<dl>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_comparison_01.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_comparison_01">把 5 赋值给 x，然后显示 (x == 8) 的值</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_comparison_02.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_comparison_02">把 5 赋值给 x，然后显示 (x == 5) 的值</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_comparison_04.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_comparison_04">把 5 赋值给 x，然后显示 (x === 5) 的值</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_comparison_03.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_comparison_03">把 5 赋值给 x，然后显示 (x === &quot;5&quot;) 的值</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_comparison_06.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_comparison_06">把 5 赋值给 x，然后显示 (x != 8) 的值</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_comparison_07.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_comparison_07">把 5 赋值给 x，然后显示 (x !== 5) 的值</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_comparison_08.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_comparison_08">把 5 赋值给 x，然后显示 (x !== &quot;5&quot;) 的值</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_comparison_10.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_comparison_10">把 5 赋值给 x，然后显示 (x &gt; 8) 的值</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_comparison_11.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_comparison_11">把 5 赋值给 x，然后显示 (x &lt; 8) 的值</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_comparison_12.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_comparison_12">把 5 赋值给 x，然后显示 (x &gt;= 8) 的值</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_comparison_13.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_comparison_13">把 5 赋值给 x，然后显示 (x &lt;= 8) 的值</a></dt>
+</dl>
+
+<p class="btn-eg"><a target="_blank" href="js_comparisons.asp.htm" tppabs="https://www.w3school.com.cn/js/js_comparisons.asp" title="JavaScript 比较和逻辑运算符">例子解释：比较</a></p>
+</div>
+
+
+
+<div class="example">
+<h2>JavaScript 条件</h2>
+
+<dl>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_ifthen.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_ifthen">if 语句</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_ifthenelse.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_ifthenelse">else 语句</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_elseif.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_elseif">else if 语句</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_randomlink.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_randomlink">随机链接</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_switch_1.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_switch_1">Switch 语句</a></dt>
+</dl>
+
+<p class="btn-eg"><a target="_blank" href="js_if_else.asp.htm" tppabs="https://www.w3school.com.cn/js/js_if_else.asp" title="JavaScript If...Else 语句">例子解释：条件</a></p>
+</div>
+
+
+
+<div class="example">
+<h2>JavaScript 循环</h2>
+
+<dl>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_fornext.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_fornext">for 循环</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_fornext_header.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_fornext_header">遍历 HTML 标题</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_while.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_while">while 循环</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_dowhile.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_dowhile">do while 循环</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_break.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_break">打破循环</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_continue.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_continue">打破并继续循环</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_loop_for_in_object.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_loop_for_in_object">使用 for...in 语句遍历对象中的元素</a></dt>
+</dl>
+
+<p class="btn-eg"><a target="_blank" href="js_loop_for.asp.htm" tppabs="https://www.w3school.com.cn/js/js_loop_for.asp" title="JavaScript For 循环">例子解释：循环</a></p>
+</div>
+
+
+
+<div class="example">
+<h2>JavaScript 错误处理</h2>
+
+<dl>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_try_catch.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_try_catch">try...catch 语句</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_try_catch_2.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_try_catch_2">弹出提示框的 try...catch 语句</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_onerror.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_onerror">onerror 事件</a></dt>
+</dl>
+
+<p class="btn-eg"><a target="_blank" href="js_errors.asp.htm" tppabs="https://www.w3school.com.cn/js/js_errors.asp" title="JavaScript 错误 - Throw 和 Try to Catch">例子解释：错误</a></p>
+</div>
+
+
+
+<div class="example">
+<h2>JavaScript 正则表达式</h2>
+
+<dl>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_regexp_string_search.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_regexp_string_search">在字符串中检索表达式</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_regexp_string_replace.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_regexp_string_replace">检索表达式然后替换它</a></dt>
+</dl>
+
+<p class="btn-eg"><a target="_blank" href="js_regexp.asp.htm" tppabs="https://www.w3school.com.cn/js/js_regexp.asp" title="JavaScript 正则表达式">例子解释：正则表达式</a></p>
+</div>
+
+
+
+<div class="example">
+<h2>JavaScript 对象</h2>
+
+<dl>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_object_variable.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_object_variable">创建 JavaScript 变量</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_object_object.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_object_object">创建 JavaScript 对象</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_object_create_1.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_object_create_1">创建 JavaScript 对象（单行）</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_object_create_2.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_object_create_2">创建 JavaScript 对象（多行）</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_object_create_new.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_object_create_new">使用 new 创建 JavaScript 对象</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_object_constructor_1.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_object_constructor_1">使用构造器创建 JavaScript 对象</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_object_constructor_builtin_1.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_object_constructor_builtin_1">创建内置的 JavaScript 对象</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_object_constructor_builtin_2.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_object_constructor_builtin_2">创建 JavaScript 变量的最佳方式</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_object_mutable.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_object_mutable">JavaScript 对象是易变的</a></dt>
+</dl>
+
+<p class="btn-eg"><a target="_blank" href="js_object_definition.asp.htm" tppabs="https://www.w3school.com.cn/js/js_object_definition.asp" title="JavaScript 对象定义">例子解释：对象</a></p>
+</div>
+
+
+
+<div class="example">
+<h2>JavaScript 对象属性</h2>
+
+<dl>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_object_property_access_1.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_object_property_access_1">使用 .property 访问属性</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_object_property_access_2.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_object_property_access_2">使用 [property] 访问属性</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_object_property_for_in.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_object_property_for_in">使用 for in 访问属性</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_object_property_add.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_object_property_add">向已有对象添加新属性</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_object_property_delete.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_object_property_delete">从对象中删除属性</a></dt>
+</dl>
+
+<p class="btn-eg"><a target="_blank" href="js_object_properties.asp.htm" tppabs="https://www.w3school.com.cn/js/js_object_properties.asp" title="JavaScript 对象属性">例子解释：对象属性</a></p>
+</div>
+
+
+
+<div class="example">
+<h2>JSON 对象</h2>
+
+<dl>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_json_object_dot.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_json_object_dot">使用 .property 访问属性</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_json_object_bracket.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_json_object_bracket">使用 [property] 访问属性</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_json_object_loop.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_json_object_loop">遍历属性</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_json_object_loop_bracket.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_json_object_loop_bracket">遍历属性值</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_json_object_nested.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_json_object_nested">访问嵌套的 JSON 对象</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_json_object_modify.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_json_object_modify">使用点号表示法修改值</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_json_object_modify_bracket.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_json_object_modify_bracket">使用括号表示法修改值</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_json_object_delete.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_json_object_delete">删除对象属性</a></dt>
+</dl>
+
+<p class="btn-eg"><a target="_blank" href="js_json_objects.asp.htm" tppabs="https://www.w3school.com.cn/js/js_json_objects.asp" title="JSON 对象">例子解释：JSON 对象</a></p>
+</div>
+
+
+
+<div class="example">
+<h2>JSON 数组</h2>
+
+<dl>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_json_array_access.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_json_array_access">访问数组值</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_json_array_loop_in.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_json_array_loop_in">使用 for-in 循环遍历数组</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_json_array_loop.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_json_array_loop">使用 for 循环遍历数组</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_json_array_nested.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_json_array_nested">访问嵌套的 JSON 数组</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_json_array_modify.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_json_array_modify">修改数组值</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_json_array_delete.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_json_array_delete">删除数组项目</a></dt>
+</dl>
+
+<p class="btn-eg"><a target="_blank" href="js_json_arrays.asp.htm" tppabs="https://www.w3school.com.cn/js/js_json_arrays.asp" title="JSON 数组">例子解释：JSON 数组</a></p>
+</div>
+
+
+
+<div class="example">
+<h2>JSON 解析</h2>
+
+<dl>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_json_parse.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_json_parse">使用 JSON 解析</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_json_ajax.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_json_ajax">在 AJAX 实例中使用 JSON 解析</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_json_ajax_array.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_json_ajax_array">对数组使用 JSON 解析</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_json_parse_date.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_json_parse_date">解析日期</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_json_parse_reviver.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_json_parse_reviver">使用 reviver 函数解析日期</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_json_parse_function.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_json_parse_function">解析函数</a></dt>
+</dl>
+
+<p class="btn-eg"><a target="_blank" href="js_json_parse.asp.htm" tppabs="https://www.w3school.com.cn/js/js_json_parse.asp" title="JSON.parse()">例子解释：JSON 解析</a></p>
+</div>
+
+
+
+<div class="example">
+<h2>JSON Stringify</h2>
+
+<dl>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_json_stringify.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_json_stringify">使用 JSON 字符串化</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_json_stringify_array.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_json_stringify_array">对数组使用 JSON 字符串化</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_json_stringify_date.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_json_stringify_date">对日期字符串化</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_json_stringify_function.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_json_stringify_function">对函数字符串化</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_json_stringify_function_tostring.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_json_stringify_function_tostring">使用 toString() 方法对日期进行字符串化</a></dt>
+</dl>
+
+<p class="btn-eg"><a target="_blank" href="js_json_stringify.asp.htm" tppabs="https://www.w3school.com.cn/js/js_json_stringify.asp" title="JSON.stringify()">例子解释：JSON Stringify</a></p>
+</div>
+
+
+
+<div class="example">
+<h2>JSON PHP</h2>
+
+<dl>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_json_php_simple.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_json_php_simple">从 php 文件获取 JSON</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_json_php_array.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_json_php_array">从 php 文件获取 JSON 数组</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_json_php_db.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_json_php_db">从数据库获取 JSON</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_json_php_db_loop.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_json_php_db_loop">遍历来自数据库的结果</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_json_php_db_post.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_json_php_db_post">使用 POST 方法发送 JSON</a></dt>
+</dl>
+
+<p class="btn-eg"><a target="_blank" href="js_json_php.asp.htm" tppabs="https://www.w3school.com.cn/js/js_json_php.asp" title="JSON PHP">例子解释：JSON PHP</a></p>
+</div>
+
+
+
+<div class="example">
+<h2>JSON HTML</h2>
+
+<dl>
+<dt><a target="_blank" href="../tiy/t.asp-f=json_html_table.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=json_html_table">生成基于 JSON 数据的 HTML 表格</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=json_html_table_dynamic.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=json_html_table_dynamic">生成动态 HTML 表格</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=json_html_select.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=json_html_select">生成基于 JSON 数据的 HTML 下拉列表</a></dt>
+</dl>
+
+<p class="btn-eg"><a target="_blank" href="js_json_html.asp.htm" tppabs="https://www.w3school.com.cn/js/js_json_html.asp" title="JSON HTML">例子解释：JSON HTML</a></p>
+</div>
+
+
+
+<div class="example">
+<h2>JSON JSONP</h2>
+
+<dl>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_json_jsonp.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_json_jsonp">简单的 JSONP 实例</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_json_jsonp_create.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_json_jsonp_create">创建动态脚本标签</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_json_jsonp_php.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_json_jsonp_php">带动态结果的 JSONP 实例</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=eg_js_json_jsonp_callback.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=eg_js_json_jsonp_callback">带回调函数的 JSONP 实例</a></dt>
+</dl>
+
+<p class="btn-eg"><a target="_blank" href="js_json_jsonp.asp.htm" tppabs="https://www.w3school.com.cn/js/js_json_jsonp.asp" title="JSONP">例子解释：JSON JSONP</a></p>
+</div>
+
+
+
+<div class="prenextnav">
+<ul class="prenext">
+<li class="pre"><a href="js_graphics_d3js.asp.htm" tppabs="https://www.w3school.com.cn/js/js_graphics_d3js.asp" title="D3.js">JS D3.js</a></li>
+<li class="next"><a href="js_examples_dom.asp.htm" tppabs="https://www.w3school.com.cn/js/js_examples_dom.asp" title="JavaScript HTML DOM 实例">JS HTML DOM</a></li>
+</ul>
+</div><div style="background-color:#fcfdf8; padding:0;">
+<script async src="../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" tppabs="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- W3School ���Ĺ�� -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:800px;height:250px"
+     data-ad-client="ca-pub-3381531532877742"
+     data-ad-slot="2086924285"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+</div>
+<!-- maincontent end -->
+
+<div id="sidebar">
+
+<div id="tools">
+<h5 id="tools_reference"><a href="../jsref/index.asp.htm" tppabs="https://www.w3school.com.cn/jsref/index.asp">JavaScript 和 HTML DOM 参考手册</a></h5>
+<h5 id="tools_example"><a href="js_examples.asp.htm" tppabs="https://www.w3school.com.cn/js/js_examples.asp">JavaScript 实例</a></h5>
+<h5 id="tools_quiz"><a href="js_quiz.asp.htm" tppabs="https://www.w3school.com.cn/js/js_quiz.asp">JavaScript 测验</a></h5>
+<h5 id="tools_professional"><a href="index_pro.asp.htm" tppabs="https://www.w3school.com.cn/js/index_pro.asp">JavaScript 高级教程</a></h5>
+</div>
+
+<div id="sidebar_zzs">
+
+<div id="sbtg">
+<script async src="../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" tppabs="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- W3School 侧栏广告位 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-3381531532877742"
+     data-ad-slot="6744370501"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+</div>
+
+</div>
+
+<div id="footer">
+<p id="p1">
+W3School 简体中文版提供的内容仅用于培训和测试，不保证内容的正确性。通过使用本站内容随之而来的风险与本站无关。版权所有，保留一切权利。
+</p>
+
+<p id="p2">
+<a href="../about/index.asp.htm" tppabs="https://www.w3school.com.cn/about/index.asp" title="关于 W3School">关于 W3School</a>
+<a href="../about/about_helping.asp.htm" tppabs="https://www.w3school.com.cn/about/about_helping.asp" title="帮助 W3School">帮助 W3School</a>
+<a href="../about/about_use.asp.htm" tppabs="https://www.w3school.com.cn/about/about_use.asp" title="关于使用">使用条款</a>
+<a href="../about/about_privacy.asp.htm" tppabs="https://www.w3school.com.cn/about/about_privacy.asp" title="关于隐私">隐私条款</a>
+<a target="_blank" href="javascript:if(confirm('https://www.ykinvestment.com/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.ykinvestment.com/'" tppabs="https://www.ykinvestment.com/">技术支持：赢科</a>
+<a target="_blank" href="javascript:if(confirm('http://www.beian.miit.gov.cn/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://www.beian.miit.gov.cn/'" tppabs="http://www.beian.miit.gov.cn/">蒙ICP备06004630号</a>
+</p>
+</div>
+
+
+</div>
+<!-- wrapper end -->
+
+
+</body>
+
+</html>

@@ -1,0 +1,415 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="../../www.googletagmanager.com/gtag/js-id=UA-878633-1" tppabs="https://www.googletagmanager.com/gtag/js?id=UA-878633-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-878633-1');
+</script>
+
+<meta charset=utf-8"utf-8">
+<meta name="robots" content="all" />
+<meta name="author" content="w3school.com.cn" />
+
+<link rel="stylesheet" type="text/css" href="../c.css" tppabs="https://www.w3school.com.cn/c.css" />
+
+<script src="../lib/cc/prism2.js" tppabs="https://www.w3school.com.cn/lib/cc/prism2.js"></script>
+<link rel='stylesheet' href="../lib/cc/prism.css" tppabs="https://www.w3school.com.cn/lib/cc/prism.css">
+
+<link rel="icon" type="image/png" sizes="16x16" href="/ui2019/logo-16-red.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/ui2019/logo-32-red.png">
+<link rel="icon" type="image/png" sizes="48x48" href="/ui2019/logo-48-red.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/ui2019/logo-96-red.png">
+<link rel="apple-touch-icon-precomposed" sizes="180x180" href="/ui2019/logo-180.png">
+
+
+<title>ADO Connection å¯¹è±¡</title>
+
+</head>
+
+<body class="serverscripting">
+
+<div id="wrapper">
+
+<div id="header">
+<a id="logo" href="../index.html" tppabs="https://www.w3school.com.cn/index.html" title="w3school åœ¨çº¿æ•™ç¨‹" style="float:left;">w3school åœ¨çº¿æ•™ç¨‹</a>
+<div id="header_gg">
+<script async src="../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" tppabs="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- W3 é¡µçœ‰ -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-3381531532877742"
+     data-ad-slot="7423315034"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+
+<div id="navfirst">
+<ul id="menu">
+<li id="h"><a href="../h.asp.htm" tppabs="https://www.w3school.com.cn/h.asp" title="HTML ç³»åˆ—æ•™ç¨‹">HTML ç³»åˆ—æ•™ç¨‹</a></li>
+<li id="b"><a href="../b.asp.htm" tppabs="https://www.w3school.com.cn/b.asp" title="æµè§ˆå™¨è„šæœ¬æ•™ç¨‹">æµè§ˆå™¨è„šæœ¬</a></li>
+<li id="s"><a href="../s.asp.htm" tppabs="https://www.w3school.com.cn/s.asp" title="æœåŠ¡å™¨è„šæœ¬æ•™ç¨‹">æœåŠ¡å™¨è„šæœ¬</a></li>
+<li id="p"><a href="../p.asp.htm" tppabs="https://www.w3school.com.cn/p.asp" title="ç¼–ç¨‹æ•™ç¨‹">ç¼–ç¨‹æ•™ç¨‹</a></li>
+<li id="x"><a href="../x.asp.htm" tppabs="https://www.w3school.com.cn/x.asp" title="XML ç³»åˆ—æ•™ç¨‹">XML ç³»åˆ—æ•™ç¨‹</a></li>
+<li id="w"><a href="../w.asp.htm" tppabs="https://www.w3school.com.cn/w.asp" title="å»ºç«™æ‰‹å†Œ">å»ºç«™æ‰‹å†Œ</a></li>
+<li id="r"><a href="../r.asp.htm" tppabs="https://www.w3school.com.cn/r.asp" title="å‚è€ƒæ‰‹å†Œ">å‚è€ƒæ‰‹å†Œ</a></li>
+</ul>
+</div>
+
+<div id="navsecond">
+
+<div id="course"><h2>ADO æ•™ç¨‹</h2>
+<ul>
+<li><a href="index.asp.htm" tppabs="https://www.w3school.com.cn/ado/index.asp" title="ADO æ•™ç¨‹">ADO æ•™ç¨‹</a></li>
+<li><a href="ado_intro.asp.htm" tppabs="https://www.w3school.com.cn/ado/ado_intro.asp" title="ADO ç®€ä»‹">ADO ç®€ä»‹</a></li>
+<li><a href="ado_connect.asp.htm" tppabs="https://www.w3school.com.cn/ado/ado_connect.asp" title="ADO æ•°æ®åº“è¿žæŽ¥">ADO è¿žæŽ¥</a></li>
+<li><a href="ado_recordset.asp.htm" tppabs="https://www.w3school.com.cn/ado/ado_recordset.asp" title="ADO Recordsetï¼ˆè®°å½•é›†ï¼‰">ADO è®°å½•é›†</a></li>
+<li><a href="ado_display.asp.htm" tppabs="https://www.w3school.com.cn/ado/ado_display.asp" title="ADO æ˜¾ç¤º">ADO æ˜¾ç¤º</a></li>
+<li><a href="ado_query.asp.htm" tppabs="https://www.w3school.com.cn/ado/ado_query.asp" title="ADO æŸ¥è¯¢">ADO æŸ¥è¯¢</a></li>
+<li><a href="ado_sort.asp.htm" tppabs="https://www.w3school.com.cn/ado/ado_sort.asp" title="ADO æŽ’åº">ADO æŽ’åº</a></li>
+<li><a href="ado_add.asp.htm" tppabs="https://www.w3school.com.cn/ado/ado_add.asp" title="ADO æ·»åŠ è®°å½•">ADO æ·»åŠ </a></li>
+<li><a href="ado_update.asp.htm" tppabs="https://www.w3school.com.cn/ado/ado_update.asp" title="ADO æ›´æ–°è®°å½•">ADO æ›´æ–°</a></li>
+<li><a href="ado_delete.asp.htm" tppabs="https://www.w3school.com.cn/ado/ado_delete.asp" title="ADO åˆ é™¤è®°å½•">ADO åˆ é™¤</a></li>
+<li><a href="ado_getstring.asp.htm" tppabs="https://www.w3school.com.cn/ado/ado_getstring.asp" title="ADO é€šè¿‡ GetString() åŠ é€Ÿè„šæœ¬">ADO åŠ é€Ÿ</a></li>
+</ul>
+<h2>ADO å¯¹è±¡</h2>
+<ul>
+<li><a href="ado_ref_command.asp.htm" tppabs="https://www.w3school.com.cn/ado/ado_ref_command.asp" title="ADO Command å¯¹è±¡">ADO Command</a></li>
+<li class="currentLink"><a href="ado_ref_connection.asp.htm" tppabs="https://www.w3school.com.cn/ado/ado_ref_connection.asp" title="ADO Connection å¯¹è±¡">ADO Connection</a></li>
+<li><a href="ado_ref_error.asp.htm" tppabs="https://www.w3school.com.cn/ado/ado_ref_error.asp" title="ADO Error å¯¹è±¡">ADO Error</a></li>
+<li><a href="ado_ref_field.asp.htm" tppabs="https://www.w3school.com.cn/ado/ado_ref_field.asp" title="ADO Field å¯¹è±¡">ADO Field</a></li>
+<li><a href="ado_ref_parameter.asp.htm" tppabs="https://www.w3school.com.cn/ado/ado_ref_parameter.asp" title="ADO Parameter å¯¹è±¡">ADO Parameter</a></li>
+<li><a href="ado_ref_property.asp.htm" tppabs="https://www.w3school.com.cn/ado/ado_ref_property.asp" title="ADO Property å¯¹è±¡">ADO Property</a></li>
+<li><a href="ado_ref_record.asp.htm" tppabs="https://www.w3school.com.cn/ado/ado_ref_record.asp" title="ADO Record å¯¹è±¡">ADO Record</a></li>
+<li><a href="ado_ref_recordset.asp.htm" tppabs="https://www.w3school.com.cn/ado/ado_ref_recordset.asp" title="ADO Recordset å¯¹è±¡">ADO Recordset</a></li>
+<li><a href="ado_ref_stream.asp.htm" tppabs="https://www.w3school.com.cn/ado/ado_ref_stream.asp" title="ADO Stream å¯¹è±¡">ADO Stream</a></li>
+</ul>
+<h2>ADO æ€»ç»“</h2>
+<ul>
+<li><a href="ado_datatypes.asp.htm" tppabs="https://www.w3school.com.cn/ado/ado_datatypes.asp" title="ADO æ•°æ®ç±»åž‹">ADO æ•°æ®ç±»åž‹</a></li>
+<li><a href="ado_summary.asp.htm" tppabs="https://www.w3school.com.cn/ado/ado_summary.asp" title="æ‚¨å·²ç»å­¦ä¹ äº† ADOï¼Œä¸‹ä¸€æ­¥å‘¢ï¼Ÿ">ADO æ€»ç»“</a></li>
+</ul>
+<h2>ADO å®žä¾‹</h2>
+<ul>
+<li><a href="ado_examples.asp.htm" tppabs="https://www.w3school.com.cn/ado/ado_examples.asp" title="ADO å®žä¾‹">ADO å®žä¾‹</a></li>
+</ul>
+</div><div id="selected">
+<h2>è¯¾ç¨‹æŽ¨èï¼š</h2>
+<ul>
+<li><a href="../howto/index.asp.htm" tppabs="https://www.w3school.com.cn/howto/index.asp" title="W3School ç™¾å®ç®±">W3School ç™¾å®ç®±</a></li>
+<li><a href="../java/index.asp.htm" tppabs="https://www.w3school.com.cn/java/index.asp" title="Java æ•™ç¨‹">Java æ•™ç¨‹</a></li>
+</ul>
+
+</div>
+
+</div>
+
+<div id="maincontent">
+
+<h1>ADO Connection å¯¹è±¡</h1>
+
+<div class="prenextnav">
+<ul class="prenext">
+<li class="pre"><a href="ado_ref_command.asp.htm" tppabs="https://www.w3school.com.cn/ado/ado_ref_command.asp" title="ADO Command å¯¹è±¡">ADO Command</a></li>
+<li class="next"><a href="ado_ref_error.asp.htm" tppabs="https://www.w3school.com.cn/ado/ado_ref_error.asp" title="ADO Error å¯¹è±¡">ADO Error</a></li>
+</ul>
+</div>
+
+
+
+<div>
+<h2>Connection å¯¹è±¡</h2>
+
+<p>ADO Connection å¯¹è±¡ç”¨äºŽåˆ›å»ºä¸€ä¸ªåˆ°è¾¾æŸä¸ªæ•°æ®æºçš„å¼€æ”¾è¿žæŽ¥ã€‚é€šè¿‡æ­¤è¿žæŽ¥ï¼Œæ‚¨å¯ä»¥å¯¹ä¸€ä¸ªæ•°æ®åº“è¿›è¡Œè®¿é—®å’Œæ“ä½œã€‚</p>
+
+<p>å¦‚æžœéœ€è¦å¤šæ¬¡è®¿é—®æŸä¸ªæ•°æ®åº“ï¼Œæ‚¨åº”å½“ä½¿ç”¨ Connection å¯¹è±¡æ¥å»ºç«‹ä¸€ä¸ªè¿žæŽ¥ã€‚æ‚¨ä¹Ÿå¯ä»¥ç»ç”±ä¸€ä¸ª Command æˆ– Recordset å¯¹è±¡ä¼ é€’ä¸€ä¸ªè¿žæŽ¥å­—ç¬¦ä¸²æ¥åˆ›å»ºæŸä¸ªè¿žæŽ¥ã€‚ä¸è¿‡ï¼Œæ­¤ç±»è¿žæŽ¥ä»…ä»…é€‚åˆä¸€æ¬¡å…·ä½“çš„ç®€å•çš„æŸ¥è¯¢ã€‚</p>
+
+<h3>ProgID</h3>
+
+<pre class="language-vbnet">
+set objConnection=Server.CreateObject(&quot;ADODB.connection&quot;)
+</pre>
+</div>
+
+
+
+<div>
+<h2>å±žæ€§</h2>
+
+<table class="dataintable">
+<tr>
+<th>å±žæ€§</th>
+<th>æè¿°</th>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/ado/t.asp?f=hdom_document_referrer  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/ado/t.asp?f=hdom_document_referrer'" tppabs="https://www.w3school.com.cn/ado/prop_conn_attributes.asp" title="">Attributes</a></td>
+<td>è®¾ç½®æˆ–è¿”å›ž Connection å¯¹è±¡çš„å±žæ€§ã€‚</td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/ado/t.asp?f=eg_js_array_join  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/ado/t.asp?f=eg_js_array_join'" tppabs="https://www.w3school.com.cn/ado/prop_conn_commandtimeout.asp" title="">CommandTimeout</a></td>
+<td>æŒ‡ç¤ºåœ¨ç»ˆæ­¢å°è¯•å’Œäº§ç”Ÿé”™è¯¯ä¹‹å‰æ‰§è¡Œå‘½ä»¤æœŸé—´éœ€ç­‰å¾…çš„æ—¶é—´ã€‚</td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/ado/t.asp?f=hdom_document_title  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/ado/t.asp?f=hdom_document_title'" tppabs="https://www.w3school.com.cn/ado/prop_conn_connectionstring.asp" title="">ConnectionString</a></td>
+<td>è®¾ç½®æˆ–è¿”å›žç”¨äºŽå»ºç«‹è¿žæŽ¥æ•°æ®æºçš„ç»†èŠ‚ä¿¡æ¯ã€‚</td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/ado/t.asp?f=eg_js_array_concat_1  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/ado/t.asp?f=eg_js_array_concat_1'" tppabs="https://www.w3school.com.cn/ado/prop_conn_connectiontimeout.asp" title="">ConnectionTimeout</a></td>
+<td>æŒ‡ç¤ºåœ¨ç»ˆæ­¢å°è¯•å’Œäº§ç”Ÿé”™è¯¯å‰å»ºç«‹è¿žæŽ¥æœŸé—´æ‰€ç­‰å¾…çš„æ—¶é—´ã€‚</td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/ado/t.asp?f=hdom_document_url  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/ado/t.asp?f=hdom_document_url'" tppabs="https://www.w3school.com.cn/ado/prop_conn_cursorlocation.asp" title="">CursorLocation</a></td>
+<td>è®¾ç½®æˆ–è¿”å›žæ¸¸æ ‡æœåŠ¡çš„ä½ç½®ã€‚</td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/ado/t.asp?f=eg_js_array_concat_2  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/ado/t.asp?f=eg_js_array_concat_2'" tppabs="https://www.w3school.com.cn/ado/prop_conn_defaultdb.asp" title="">DefaultDatabase</a></td>
+<td>æŒ‡ç¤º Connection å¯¹è±¡çš„é»˜è®¤æ•°æ®åº“ã€‚</td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/ado/t.asp?f=hdom_document_open  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/ado/t.asp?f=hdom_document_open'" tppabs="https://www.w3school.com.cn/ado/prop_conn_isolationlevel.asp" title="">IsolationLevel</a></td>
+<td>æŒ‡ç¤º Connection å¯¹è±¡çš„éš”ç¦»çº§åˆ«ã€‚</td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/ado/t.asp?f=eg_js_array_splice  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/ado/t.asp?f=eg_js_array_splice'" tppabs="https://www.w3school.com.cn/ado/prop_conn_mode.asp" title="">Mode</a></td>
+<td>è®¾ç½®æˆ–è¿”å›ž provider çš„è®¿é—®æƒé™ã€‚</td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/ado/t.asp?f=hdom_window_open  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/ado/t.asp?f=hdom_window_open'" tppabs="https://www.w3school.com.cn/ado/prop_conn_provider.asp" title="">Provider</a></td>
+<td>è®¾ç½®æˆ–è¿”å›ž Connection å¯¹è±¡æä¾›è€…çš„åç§°ã€‚</td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/ado/t.asp?f=eg_js_array_tostring  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/ado/t.asp?f=eg_js_array_tostring'" tppabs="https://www.w3school.com.cn/ado/prop_conn_state.asp" title="">State</a></td>
+<td>è¿”å›žä¸€ä¸ªæè¿°è¿žæŽ¥æ˜¯æ‰“å¼€è¿˜æ˜¯å…³é—­çš„å€¼ã€‚</td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/ado/t.asp?f=hdom_document_getbyname  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/ado/t.asp?f=hdom_document_getbyname'" tppabs="https://www.w3school.com.cn/ado/prop_conn_version.asp" title="">Version</a></td>
+<td>è¿”å›ž ADO çš„ç‰ˆæœ¬å·ã€‚</td>
+</tr>
+</table>
+</div>
+
+
+
+<div>
+<h2>æ–¹æ³•</h2>
+
+<table class="dataintable">
+<tr>
+<th>æ–¹æ³•</th>
+<th>æè¿°</th>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/ado/t.asp?f=eg_js_array_unshift  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/ado/t.asp?f=eg_js_array_unshift'" tppabs="https://www.w3school.com.cn/ado/met_conn_begintrans.asp" title="">BeginTrans</a></td>
+<td>å¼€å§‹ä¸€ä¸ªæ–°äº‹åŠ¡ã€‚</td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/ado/t.asp?f=hdom_document_getbytagname  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/ado/t.asp?f=hdom_document_getbytagname'" tppabs="https://www.w3school.com.cn/ado/met_conn_cancel.asp" title="">Cancel</a></td>
+<td>å–æ¶ˆä¸€æ¬¡æ‰§è¡Œã€‚</td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/ado/t.asp?f=eg_js_array_shift  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/ado/t.asp?f=eg_js_array_shift'" tppabs="https://www.w3school.com.cn/ado/met_conn_close.asp" title="">Close</a></td>
+<td>å…³é—­ä¸€ä¸ªè¿žæŽ¥ã€‚</td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/ado/t.asp?f=eg_js_array_unshift  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/ado/t.asp?f=eg_js_array_unshift'" tppabs="https://www.w3school.com.cn/ado/met_conn_begintrans.asp" title="">CommitTrans</a></td>
+<td>ä¿å­˜ä»»ä½•æ›´æ”¹å¹¶ç»“æŸå½“å‰äº‹åŠ¡ã€‚</td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/ado/t.asp?f=hdom_document_anchors_1  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/ado/t.asp?f=hdom_document_anchors_1'" tppabs="https://www.w3school.com.cn/ado/met_conn_execute.asp" title="">Execute</a></td>
+<td>æ‰§è¡ŒæŸ¥è¯¢ã€SQL è¯­å¥ã€å­˜å‚¨è¿‡ç¨‹æˆ– provider å…·ä½“æ–‡æœ¬ã€‚</td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/ado/t.asp?f=hdom_document_anchors_2  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/ado/t.asp?f=hdom_document_anchors_2'" tppabs="https://www.w3school.com.cn/ado/met_conn_open.asp" title="">Open</a></td>
+<td>æ‰“å¼€ä¸€ä¸ªè¿žæŽ¥ã€‚</td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/ado/t.asp?f=hdom_document_links_1  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/ado/t.asp?f=hdom_document_links_1'" tppabs="https://www.w3school.com.cn/ado/met_conn_openschema.asp" title="">OpenSchema</a></td>
+<td>ä»Ž provider è¿”å›žæœ‰å…³æ•°æ®æºçš„ schema ä¿¡æ¯ã€‚</td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/ado/t.asp?f=eg_js_array_unshift  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/ado/t.asp?f=eg_js_array_unshift'" tppabs="https://www.w3school.com.cn/ado/met_conn_begintrans.asp" title="">RollbackTrans</a></td>
+<td>å–æ¶ˆå½“å‰äº‹åŠ¡ä¸­æ‰€ä½œçš„ä»»ä½•æ›´æ”¹å¹¶ç»“æŸäº‹åŠ¡ã€‚</td>
+</tr>
+</table>
+</div>
+
+
+
+<div>
+<h2>äº‹ä»¶</h2>
+
+<p>æ³¨é‡Šï¼šæ‚¨æ— æ³•ä½¿ç”¨ VBScript or JScript æ¥å¤„ç†äº‹ä»¶ï¼ˆä»…èƒ½ä½¿ç”¨ Visual Basicã€Visual C++ ä»¥åŠ Visual J++ è¯­è¨€å¤„ç†äº‹ä»¶ï¼‰ã€‚</p>
+
+<table class="dataintable">
+<tr>
+<th>äº‹ä»¶</th>
+<th>æè¿°</th>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/ado/t.asp?f=eg_js_array_sort  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/ado/t.asp?f=eg_js_array_sort'" tppabs="https://www.w3school.com.cn/ado/ev_conn_transcomplete.asp" title="">BeginTransComplete</a></td>
+<td>åœ¨ BeginTrans æ“ä½œä¹‹åŽè¢«è§¦å‘ã€‚</td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/ado/t.asp?f=eg_js_array_sort  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/ado/t.asp?f=eg_js_array_sort'" tppabs="https://www.w3school.com.cn/ado/ev_conn_transcomplete.asp" title="">CommitTransComplete</a></td>
+<td>åœ¨ CommitTrans æ“ä½œä¹‹åŽè¢«è§¦å‘ã€‚</td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/ado/t.asp?f=hdom_document_links_2  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/ado/t.asp?f=hdom_document_links_2'" tppabs="https://www.w3school.com.cn/ado/ev_conn_connect.asp" title="">ConnectComplete</a></td>
+<td>åœ¨ä¸€ä¸ªè¿žæŽ¥å¼€å§‹åŽè¢«è§¦å‘ã€‚</td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/ado/t.asp?f=hdom_document_links_2  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/ado/t.asp?f=hdom_document_links_2'" tppabs="https://www.w3school.com.cn/ado/ev_conn_connect.asp" title="">Disconnect</a></td>
+<td>åœ¨ä¸€ä¸ªè¿žæŽ¥ç»“æŸä¹‹åŽè¢«è§¦å‘ã€‚</td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/ado/t.asp?f=eg_js_array_sort_reverse  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/ado/t.asp?f=eg_js_array_sort_reverse'" tppabs="https://www.w3school.com.cn/ado/ev_conn_execute.asp" title="">ExecuteComplete</a></td>
+<td>åœ¨ä¸€æ¡å‘½ä»¤æ‰§è¡Œå®Œæ¯•åŽè¢«è§¦å‘ã€‚</td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/ado/t.asp?f=hdom_document_forms_length  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/ado/t.asp?f=hdom_document_forms_length'" tppabs="https://www.w3school.com.cn/ado/ev_conn_infomessage.asp" title="">InfoMessage</a></td>
+<td>å‡å¦‚åœ¨ä¸€ä¸ª ConnectionEvent æ“ä½œè¿‡ç¨‹ä¸­è­¦å‘Šå‘ç”Ÿï¼Œåˆ™è§¦å‘è¯¥äº‹ä»¶ã€‚</td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/ado/t.asp?f=eg_js_array_sort  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/ado/t.asp?f=eg_js_array_sort'" tppabs="https://www.w3school.com.cn/ado/ev_conn_transcomplete.asp" title="">RollbackTransComplete</a></td>
+<td>åœ¨ RollbackTrans æ“ä½œä¹‹åŽè¢«è§¦å‘ã€‚</td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/ado/t.asp?f=hdom_document_links_2  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/ado/t.asp?f=hdom_document_links_2'" tppabs="https://www.w3school.com.cn/ado/ev_conn_connect.asp" title="">WillConnect</a></td>
+<td>åœ¨ä¸€ä¸ªè¿žæŽ¥å¼€å§‹ä¹‹å‰è¢«è§¦å‘ã€‚</td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/ado/t.asp?f=eg_js_array_sort_reverse  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/ado/t.asp?f=eg_js_array_sort_reverse'" tppabs="https://www.w3school.com.cn/ado/ev_conn_execute.asp" title="">WillExecute</a></td>
+<td>åœ¨ä¸€æ¡å‘½ä»¤è¢«æ‰§è¡Œä¹‹å‰è¢«è§¦å‘ã€‚</td>
+</tr>
+</table>
+</div>
+
+
+
+<div>
+<h2>é›†åˆ</h2>
+
+<table class="dataintable">
+<tr>
+<th>é›†åˆ</th>
+<th>æè¿°</th>
+</tr>
+
+<tr>
+<td>Errors</td>
+<td>åŒ…å« Connection å¯¹è±¡çš„æ‰€æœ‰ Error å¯¹è±¡ã€‚</td>
+</tr>
+
+<tr>
+<td>Properties</td>
+<td>åŒ…å« Connection å¯¹è±¡çš„æ‰€æœ‰ Property å¯¹è±¡ã€‚</td>
+</tr>
+</table>
+</div>
+
+
+
+<div class="prenextnav">
+<ul class="prenext">
+<li class="pre"><a href="ado_ref_command.asp.htm" tppabs="https://www.w3school.com.cn/ado/ado_ref_command.asp" title="ADO Command å¯¹è±¡">ADO Command</a></li>
+<li class="next"><a href="ado_ref_error.asp.htm" tppabs="https://www.w3school.com.cn/ado/ado_ref_error.asp" title="ADO Error å¯¹è±¡">ADO Error</a></li>
+</ul>
+</div><div style="background-color:#fcfdf8; padding:0;">
+<script async src="../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" tppabs="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- W3School ÕýÎÄ¹ã¸æ -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:800px;height:250px"
+     data-ad-client="ca-pub-3381531532877742"
+     data-ad-slot="2086924285"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+</div>
+<!-- maincontent end -->
+
+<div id="sidebar">
+
+<div id="tools">
+<h5 id="tools_reference"><a href="ado_reference.asp.htm" tppabs="https://www.w3school.com.cn/ado/ado_reference.asp">ADO å‚è€ƒæ‰‹å†Œ</a></h5>
+<h5 id="tools_example"><a href="ado_examples.asp.htm" tppabs="https://www.w3school.com.cn/ado/ado_examples.asp">ADO å®žä¾‹</a></h5>
+</div>
+
+<div id="sidebar_zzs">
+
+<div id="sbtg">
+<script async src="../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" tppabs="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- W3School ä¾§æ å¹¿å‘Šä½ -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-3381531532877742"
+     data-ad-slot="6744370501"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+</div>
+
+</div>
+
+<div id="footer">
+<p id="p1">
+W3School ç®€ä½“ä¸­æ–‡ç‰ˆæä¾›çš„å†…å®¹ä»…ç”¨äºŽåŸ¹è®­å’Œæµ‹è¯•ï¼Œä¸ä¿è¯å†…å®¹çš„æ­£ç¡®æ€§ã€‚é€šè¿‡ä½¿ç”¨æœ¬ç«™å†…å®¹éšä¹‹è€Œæ¥çš„é£Žé™©ä¸Žæœ¬ç«™æ— å…³ã€‚ç‰ˆæƒæ‰€æœ‰ï¼Œä¿ç•™ä¸€åˆ‡æƒåˆ©ã€‚
+</p>
+
+<p id="p2">
+<a href="../about/index.asp.htm" tppabs="https://www.w3school.com.cn/about/index.asp" title="å…³äºŽ W3School">å…³äºŽ W3School</a>
+<a href="../about/about_helping.asp.htm" tppabs="https://www.w3school.com.cn/about/about_helping.asp" title="å¸®åŠ© W3School">å¸®åŠ© W3School</a>
+<a href="../about/about_use.asp.htm" tppabs="https://www.w3school.com.cn/about/about_use.asp" title="å…³äºŽä½¿ç”¨">ä½¿ç”¨æ¡æ¬¾</a>
+<a href="../about/about_privacy.asp.htm" tppabs="https://www.w3school.com.cn/about/about_privacy.asp" title="å…³äºŽéšç§">éšç§æ¡æ¬¾</a>
+<a target="_blank" href="javascript:if(confirm('https://www.ykinvestment.com/  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.ykinvestment.com/'" tppabs="https://www.ykinvestment.com/">æŠ€æœ¯æ”¯æŒï¼šèµ¢ç§‘</a>
+<a target="_blank" href="javascript:if(confirm('http://www.beian.miit.gov.cn/  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.beian.miit.gov.cn/'" tppabs="http://www.beian.miit.gov.cn/">è’™ICPå¤‡06004630å·</a>
+</p>
+</div>
+
+
+</div>
+<!-- wrapper end -->
+
+</body>
+
+</html>

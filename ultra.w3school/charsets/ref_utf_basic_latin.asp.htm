@@ -1,0 +1,609 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="../../www.googletagmanager.com/gtag/js-id=UA-878633-1" tppabs="https://www.googletagmanager.com/gtag/js?id=UA-878633-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-878633-1');
+</script>
+
+<meta charset=utf-8"utf-8">
+<meta name="robots" content="all" />
+<meta name="author" content="w3school.com.cn" />
+
+<link rel="stylesheet" type="text/css" href="../c.css" tppabs="https://www.w3school.com.cn/c.css" />
+
+<script src="../lib/cc/prism2.js" tppabs="https://www.w3school.com.cn/lib/cc/prism2.js"></script>
+<link rel='stylesheet' href="../lib/cc/prism.css" tppabs="https://www.w3school.com.cn/lib/cc/prism.css">
+
+<link rel="icon" type="image/png" sizes="16x16" href="/ui2019/logo-16-red.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/ui2019/logo-32-red.png">
+<link rel="icon" type="image/png" sizes="48x48" href="/ui2019/logo-48-red.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/ui2019/logo-96-red.png">
+<link rel="apple-touch-icon-precomposed" sizes="180x180" href="/ui2019/logo-180.png">
+
+
+<title>UTF-8 C0 控制符和基础拉丁文字符</title>
+
+</head>
+
+<body class="html">
+
+<div id="wrapper">
+
+<div id="header">
+<a id="logo" href="../index.html" tppabs="https://www.w3school.com.cn/index.html" title="w3school 在线教程" style="float:left;">w3school 在线教程</a>
+<div id="header_gg">
+<script async src="../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" tppabs="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- W3 页眉 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-3381531532877742"
+     data-ad-slot="7423315034"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+
+<div id="navfirst">
+<ul id="menu">
+<li id="h"><a href="../h.asp.htm" tppabs="https://www.w3school.com.cn/h.asp" title="HTML 系列教程">HTML 系列教程</a></li>
+<li id="b"><a href="../b.asp.htm" tppabs="https://www.w3school.com.cn/b.asp" title="浏览器脚本教程">浏览器脚本</a></li>
+<li id="s"><a href="../s.asp.htm" tppabs="https://www.w3school.com.cn/s.asp" title="服务器脚本教程">服务器脚本</a></li>
+<li id="p"><a href="../p.asp.htm" tppabs="https://www.w3school.com.cn/p.asp" title="编程教程">编程教程</a></li>
+<li id="x"><a href="../x.asp.htm" tppabs="https://www.w3school.com.cn/x.asp" title="XML 系列教程">XML 系列教程</a></li>
+<li id="w"><a href="../w.asp.htm" tppabs="https://www.w3school.com.cn/w.asp" title="建站手册">建站手册</a></li>
+<li id="r"><a href="../r.asp.htm" tppabs="https://www.w3school.com.cn/r.asp" title="参考手册">参考手册</a></li>
+</ul>
+</div>
+
+<div id="navsecond">
+
+<div id="course"><h2>HTML 字符集</h2>
+<ul>
+<li><a href="index.asp.htm" tppabs="https://www.w3school.com.cn/charsets/index.asp" title="HTML 元素参考手册">HTML 字符集</a></li>
+<li><a href="ref_html_ascii.asp.htm" tppabs="https://www.w3school.com.cn/charsets/ref_html_ascii.asp" title="HTML ASCII 参考手册">HTML ASCII</a></li>
+<li><a href="ref_html_ansi.asp.htm" tppabs="https://www.w3school.com.cn/charsets/ref_html_ansi.asp" title="HTML Windows-1252 (ANSI) 参考手册">HTML WIN-1252</a></li>
+<li><a href="ref_html_8859.asp.htm" tppabs="https://www.w3school.com.cn/charsets/ref_html_8859.asp" title="HTML ISO-8859-1 参考手册">HTML ISO-8859</a></li>
+<li><a href="ref_html_symbols.asp.htm" tppabs="https://www.w3school.com.cn/charsets/ref_html_symbols.asp" title="HTML 符号">HTML 符号</a></li>
+<li><a href="ref_html_utf8.asp.htm" tppabs="https://www.w3school.com.cn/charsets/ref_html_utf8.asp" title="HTML Unicode (UTF-8) 参考手册">HTML UTF-8</a></li>
+</ul>
+<h2>HTML UTF-8</h2>
+<ul>
+<li class="currentLink"><a href="ref_utf_basic_latin.asp.htm" tppabs="https://www.w3school.com.cn/charsets/ref_utf_basic_latin.asp" title="UTF-8 C0 控制符和基础拉丁文字符">拉丁文基础</a></li>
+<li><a href="ref_utf_latin1_supplement.asp.htm" tppabs="https://www.w3school.com.cn/charsets/ref_utf_latin1_supplement.asp" title="UTF-8 C1 控制字符和拉丁文-1补充">拉丁文补充</a></li>
+<li><a href="ref_utf_latin_extended_a.asp.htm" tppabs="https://www.w3school.com.cn/charsets/ref_utf_latin_extended_a.asp" title="UTF-8 拉丁文扩展 A">拉丁文扩展 A</a></li>
+<li><a href="ref_utf_latin_extended_b.asp.htm" tppabs="https://www.w3school.com.cn/charsets/ref_utf_latin_extended_b.asp" title="UTF-8 拉丁文扩展 B">拉丁文扩展 B</a></li>
+<li><a href="ref_utf_modifiers.asp.htm" tppabs="https://www.w3school.com.cn/charsets/ref_utf_modifiers.asp" title="UTF-8 间距修饰符字母">修饰语字母</a></li>
+<li><a href="ref_utf_diacritical.asp.htm" tppabs="https://www.w3school.com.cn/charsets/ref_utf_diacritical.asp" title="UTF-8 变音标记">变音标记</a></li>
+<li><a href="ref_utf_greek.asp.htm" tppabs="https://www.w3school.com.cn/charsets/ref_utf_greek.asp" title="UTF-8 希腊文和科普特文">希腊文和科普特文</a></li>
+<li><a href="ref_utf_cyrillic.asp.htm" tppabs="https://www.w3school.com.cn/charsets/ref_utf_cyrillic.asp" title="UTF-8 西里尔文">西里尔文字母</a></li>
+<li><a href="ref_utf_cyrillic_supplement.asp.htm" tppabs="https://www.w3school.com.cn/charsets/ref_utf_cyrillic_supplement.asp" title="UTF-8 西里尔文补充">西里尔文补充</a></li>
+</ul>
+<h2>HTML 符号</h2>
+<ul>
+<li><a href="ref_utf_punctuation.asp.htm" tppabs="https://www.w3school.com.cn/charsets/ref_utf_punctuation.asp" title="UTF-8 常用标点">常用标点</a></li>
+<li><a href="ref_utf_currency.asp.htm" tppabs="https://www.w3school.com.cn/charsets/ref_utf_currency.asp" title="UTF-8 货币符号">货币符号</a></li>
+<li><a href="ref_utf_letterlike.asp.htm" tppabs="https://www.w3school.com.cn/charsets/ref_utf_letterlike.asp" title="UTF-8 字母式符号">字母式符号</a></li>
+<li><a href="ref_utf_arrows.asp.htm" tppabs="https://www.w3school.com.cn/charsets/ref_utf_arrows.asp" title="UTF-8 箭头">箭头</a></li>
+<li><a href="ref_utf_math.asp.htm" tppabs="https://www.w3school.com.cn/charsets/ref_utf_math.asp" title="UTF-8 数学运算符">数学运算符</a></li>
+<li><a href="ref_utf_box.asp.htm" tppabs="https://www.w3school.com.cn/charsets/ref_utf_box.asp" title="UTF-8 箱型图">箱型图</a></li>
+<li><a href="ref_utf_block.asp.htm" tppabs="https://www.w3school.com.cn/charsets/ref_utf_block.asp" title="UTF-8 块元素">块元素</a></li>
+<li><a href="ref_utf_geometric.asp.htm" tppabs="https://www.w3school.com.cn/charsets/ref_utf_geometric.asp" title="UTF-8 几何形状">几何形状</a></li>
+<li><a href="ref_utf_symbols.asp.htm" tppabs="https://www.w3school.com.cn/charsets/ref_utf_symbols.asp" title="UTF-8 杂项符号">杂项符号</a></li>
+<li><a href="ref_utf_dingbats.asp.htm" tppabs="https://www.w3school.com.cn/charsets/ref_utf_dingbats.asp" title="UTF-8 Dingbats">丁巴特</a></li>
+<li><a href="ref_emoji.asp.htm" tppabs="https://www.w3school.com.cn/charsets/ref_emoji.asp" title="Emoji Unicode 参考手册">表情符号</a></li>
+<li><a href="ref_emoji_smileys.asp.htm" tppabs="https://www.w3school.com.cn/charsets/ref_emoji_smileys.asp" title="笑脸表情符号">笑脸表情符号</a></li>
+<li><a href="ref_emoji_skin_tones.asp.htm" tppabs="https://www.w3school.com.cn/charsets/ref_emoji_skin_tones.asp" title="Emoji 肤色">表情符号肤色</a></li>
+</ul>
+<h2>HTML 实体</h2>
+<ul>
+<li><a href="ref_html_entities_4.asp.htm" tppabs="https://www.w3school.com.cn/charsets/ref_html_entities_4.asp" title="HTML 4 实体名称">HTML4 实体</a></li>
+<li><a href="ref_html_entities_a.asp.htm" tppabs="https://www.w3school.com.cn/charsets/ref_html_entities_a.asp" title="按字母分类的 HTML5 实体名称 - A">HTML5 实体 A</a></li>
+<li><a href="ref_html_entities_b.asp.htm" tppabs="https://www.w3school.com.cn/charsets/ref_html_entities_b.asp" title="按字母分类的 HTML5 实体名称 - B">HTML5 实体 B</a></li>
+<li><a href="ref_html_entities_c.asp.htm" tppabs="https://www.w3school.com.cn/charsets/ref_html_entities_c.asp" title="按字母分类的 HTML5 实体名称 - C">HTML5 实体 C</a></li>
+<li><a href="ref_html_entities_d.asp.htm" tppabs="https://www.w3school.com.cn/charsets/ref_html_entities_d.asp" title="按字母分类的 HTML5 实体名称 - D">HTML5 实体 D</a></li>
+<li><a href="ref_html_entities_e.asp.htm" tppabs="https://www.w3school.com.cn/charsets/ref_html_entities_e.asp" title="按字母分类的 HTML5 实体名称 - E">HTML5 实体 E</a></li>
+<li><a href="ref_html_entities_f.asp.htm" tppabs="https://www.w3school.com.cn/charsets/ref_html_entities_f.asp" title="按字母分类的 HTML5 实体名称 - F">HTML5 实体 F</a></li>
+<li><a href="ref_html_entities_g.asp.htm" tppabs="https://www.w3school.com.cn/charsets/ref_html_entities_g.asp" title="按字母分类的 HTML5 实体名称 - G">HTML5 实体 G</a></li>
+<li><a href="ref_html_entities_h.asp.htm" tppabs="https://www.w3school.com.cn/charsets/ref_html_entities_h.asp" title="按字母分类的 HTML5 实体名称 - H">HTML5 实体 H</a></li>
+<li><a href="ref_html_entities_i.asp.htm" tppabs="https://www.w3school.com.cn/charsets/ref_html_entities_i.asp" title="按字母分类的 HTML5 实体名称 - I">HTML5 实体 I</a></li>
+<li><a href="ref_html_entities_j.asp.htm" tppabs="https://www.w3school.com.cn/charsets/ref_html_entities_j.asp" title="按字母分类的 HTML5 实体名称 - J">HTML5 实体 J</a></li>
+<li><a href="ref_html_entities_k.asp.htm" tppabs="https://www.w3school.com.cn/charsets/ref_html_entities_k.asp" title="按字母分类的 HTML5 实体名称 - K">HTML5 实体 K</a></li>
+<li><a href="ref_html_entities_l.asp.htm" tppabs="https://www.w3school.com.cn/charsets/ref_html_entities_l.asp" title="按字母分类的 HTML5 实体名称 - L">HTML5 实体 L</a></li>
+<li><a href="ref_html_entities_m.asp.htm" tppabs="https://www.w3school.com.cn/charsets/ref_html_entities_m.asp" title="按字母分类的 HTML5 实体名称 - M">HTML5 实体 M</a></li>
+<li><a href="ref_html_entities_n.asp.htm" tppabs="https://www.w3school.com.cn/charsets/ref_html_entities_n.asp" title="HTML 元素参考手册">HTML5 实体 N</a></li>
+<li><a href="ref_html_entities_o.asp.htm" tppabs="https://www.w3school.com.cn/charsets/ref_html_entities_o.asp" title="按字母分类的 HTML5 实体名称 - O">HTML5 实体 O</a></li>
+<li><a href="ref_html_entities_p.asp.htm" tppabs="https://www.w3school.com.cn/charsets/ref_html_entities_p.asp" title="按字母分类的 HTML5 实体名称 - P">HTML5 实体 P</a></li>
+<li><a href="ref_html_entities_q.asp.htm" tppabs="https://www.w3school.com.cn/charsets/ref_html_entities_q.asp" title="按字母分类的 HTML5 实体名称 - Q">HTML5 实体 Q</a></li>
+<li><a href="ref_html_entities_r.asp.htm" tppabs="https://www.w3school.com.cn/charsets/ref_html_entities_r.asp" title="按字母分类的 HTML5 实体名称 - R">HTML5 实体 R</a></li>
+<li><a href="ref_html_entities_s.asp.htm" tppabs="https://www.w3school.com.cn/charsets/ref_html_entities_s.asp" title="按字母分类的 HTML5 实体名称 - S">HTML5 实体 S</a></li>
+<li><a href="ref_html_entities_t.asp.htm" tppabs="https://www.w3school.com.cn/charsets/ref_html_entities_t.asp" title="按字母分类的 HTML5 实体名称 - T">HTML5 实体 T</a></li>
+<li><a href="ref_html_entities_u.asp.htm" tppabs="https://www.w3school.com.cn/charsets/ref_html_entities_u.asp" title="HTML 元素参考手册">HTML5 实体 U</a></li>
+<li><a href="ref_html_entities_v.asp.htm" tppabs="https://www.w3school.com.cn/charsets/ref_html_entities_v.asp" title="按字母分类的 HTML5 实体名称 - V">HTML5 实体 V</a></li>
+<li><a href="ref_html_entities_w.asp.htm" tppabs="https://www.w3school.com.cn/charsets/ref_html_entities_w.asp" title="按字母分类的 HTML5 实体名称 - W">HTML5 实体 W</a></li>
+<li><a href="ref_html_entities_x.asp.htm" tppabs="https://www.w3school.com.cn/charsets/ref_html_entities_x.asp" title="按字母分类的 HTML5 实体名称 - X">HTML5 实体 X</a></li>
+<li><a href="ref_html_entities_y.asp.htm" tppabs="https://www.w3school.com.cn/charsets/ref_html_entities_y.asp" title="按字母分类的 HTML5 实体名称 - Y">HTML5 实体 Y</a></li>
+<li><a href="ref_html_entities_z.asp.htm" tppabs="https://www.w3school.com.cn/charsets/ref_html_entities_z.asp" title="按字母分类的 HTML5 实体名称 - Z">HTML5 实体 Z</a></li>
+</ul>
+</div><div id="selected">
+<h2>课程推荐：</h2>
+<ul>
+<li><a href="../howto/index.asp.htm" tppabs="https://www.w3school.com.cn/howto/index.asp" title="W3School 百宝箱">W3School 百宝箱</a></li>
+<li><a href="../java/index.asp.htm" tppabs="https://www.w3school.com.cn/java/index.asp" title="Java 教程">Java 教程</a></li>
+</ul>
+
+</div>
+
+</div>
+
+<div id="maincontent">
+
+<h1>UTF-8 C0 控制符和基础拉丁文字符</h1>
+
+<div class="prenextnav">
+<ul class="prenext">
+<li class="pre"><a href="ref_html_utf8.asp.htm" tppabs="https://www.w3school.com.cn/charsets/ref_html_utf8.asp" title="HTML Unicode (UTF-8) 参考手册">HTML UTF-8</a></li>
+<li class="next"><a href="ref_utf_latin1_supplement.asp.htm" tppabs="https://www.w3school.com.cn/charsets/ref_utf_latin1_supplement.asp" title="UTF-8 C1 控制字符和拉丁文-1补充">拉丁文补充</a></li>
+</ul>
+</div>
+
+
+
+<div>
+<h2>范围：十进制 0-127，十六进制 0000-007F</h2>
+
+<p>该字符集与原始 ASCII 字符集相同。</p>
+
+<p>如果您希望在 HTML 中显示特殊字符，可以使用下表中的 HTML 实体。</p>
+
+<p>如果字符没有 HTML 实体，则可以使用十进制（dec）或十六进制（hex）引用。</p>
+
+<h3>实例</h3>
+
+<pre class="language-html">
+&lt;p&gt;My name is &amp;quot;Bill Gates&amp;quot;&lt;/p&gt;
+&lt;p&gt;My name is &amp;#34;Bill Gates&amp;#34;&lt;/p&gt;
+&lt;p&gt;My name is &amp;#x0022;Bill Gates&amp;#x0022;&lt;/p&gt;
+</pre>
+
+<p>会显示为：</p>
+
+<pre>
+My name is &quot;Bill Gates&quot;
+My name is &quot;Bill Gates&quot;
+My name is &quot;Bill Gates&quot;
+</pre>
+
+<p class="tiy"><a target="_blank" href="javascript:if(confirm('https://www.w3school.com.cn/tiy/js_arrow_function.asp  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ������, �����������, ����Ŀ����ֹͣ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.w3school.com.cn/tiy/js_arrow_function.asp'" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=charsets_quote">亲自试一试</a></p>
+</div>
+
+
+
+<div>
+<h2>控制字符</h2>
+
+<p>ASCII 控制字符（范围为 0-31，外加 127）旨在控制硬件设备。</p>
+
+<p>控制字符<a href="ref_html_ascii.asp.htm" tppabs="https://www.w3school.com.cn/charsets/ref_html_ascii.asp" title="HTML ASCII 参考手册">在此处列出</a>。</p>
+</div>
+
+
+
+<div>
+<h2>UTF-8 基本拉丁文字符</h2>
+
+<table class="dataintable">
+<tr>
+<th style="width:10%">字符</th>
+<th style="width:10%">十进制</th>
+<th style="width:10%">十六进制</th>
+<th style="width:15%">实体</th>
+<th>名称</th>
+</tr>
+<tr><td>&#32;</td><td>32</td><td>0020</td><td>&nbsp;</td><td>SPACE</td></tr>
+<tr><td>!</td><td>33</td><td>0021</td><td>&nbsp;</td><td>EXCLAMATION MARK</td></tr>
+<tr><td>"</td><td>34</td><td>0022</td><td>&amp;quot;</td><td>QUOTATION MARK</td></tr>
+<tr><td>#</td><td>35</td><td>0023</td><td>&nbsp;</td><td>NUMBER SIGN</td></tr>
+<tr><td>$</td><td>36</td><td>0024</td><td>&nbsp;</td><td>DOLLAR SIGN</td></tr>
+<tr><td>%</td><td>37</td><td>0025</td><td>&nbsp;</td><td>PERCENT SIGN</td></tr>
+<tr><td>&amp;</td><td>38</td><td>0026</td><td>&amp;amp;</td><td>AMPERSAND</td></tr>
+<tr><td>'</td><td>39</td><td>0027</td><td>&nbsp;</td><td>APOSTROPHE</td></tr>
+<tr><td>(</td><td>40</td><td>0028</td><td>&nbsp;</td><td>LEFT PARENTHESIS</td></tr>
+<tr><td>)</td><td>41</td><td>0029</td><td>&nbsp;</td><td>RIGHT PARENTHESIS</td></tr>
+<tr><td>*</td><td>42</td><td>002A</td><td>&nbsp;</td><td>ASTERISK</td></tr>
+<tr><td>+</td><td>43</td><td>002B</td><td>&nbsp;</td><td>PLUS SIGN</td></tr>
+<tr><td>,</td><td>44</td><td>002C</td><td>&nbsp;</td><td>COMMA</td></tr>
+<tr><td>-</td><td>45</td><td>002D</td><td>&nbsp;</td><td>HYPHEN-MINUS</td></tr>
+<tr><td>.</td><td>46</td><td>002E</td><td>&nbsp;</td><td>FULL STOP</td></tr>
+<tr><td>/</td><td>47</td><td>002F</td><td>&nbsp;</td><td>SOLIDUS</td></tr>
+<tr><td>0</td><td>48</td><td>0030</td><td>&nbsp;</td><td>DIGIT ZERO</td></tr>
+<tr><td>1</td><td>49</td><td>0031</td><td>&nbsp;</td><td>DIGIT ONE</td></tr>
+<tr><td>2</td><td>50</td><td>0032</td><td>&nbsp;</td><td>DIGIT TWO</td></tr>
+<tr><td>3</td><td>51</td><td>0033</td><td>&nbsp;</td><td>DIGIT THREE</td></tr>
+<tr><td>4</td><td>52</td><td>0034</td><td>&nbsp;</td><td>DIGIT FOUR</td></tr>
+<tr><td>5</td><td>53</td><td>0035</td><td>&nbsp;</td><td>DIGIT FIVE</td></tr>
+<tr><td>6</td><td>54</td><td>0036</td><td>&nbsp;</td><td>DIGIT SIX</td></tr>
+<tr><td>7</td><td>55</td><td>0037</td><td>&nbsp;</td><td>DIGIT SEVEN</td></tr>
+<tr><td>8</td><td>56</td><td>0038</td><td>&nbsp;</td><td>DIGIT EIGHT</td></tr>
+<tr><td>9</td><td>57</td><td>0039</td><td>&nbsp;</td><td>DIGIT NINE</td></tr>
+<tr><td>:</td><td>58</td><td>003A</td><td>&nbsp;</td><td>COLON</td></tr>
+<tr><td>;</td><td>59</td><td>003B</td><td>&nbsp;</td><td>SEMICOLON</td></tr>
+<tr><td>&lt;</td><td>60</td><td>003C</td><td>&amp;lt;</td><td>LESS-THAN SIGN</td></tr>
+<tr><td>=</td><td>61</td><td>003D</td><td>&nbsp;</td><td>EQUALS SIGN</td></tr>
+<tr><td>&gt;</td><td>62</td><td>003E</td><td>&amp;gt;</td><td>GREATER-THAN SIGN</td></tr>
+<tr><td>?</td><td>63</td><td>003F</td><td>&nbsp;</td><td>QUESTION MARK</td></tr>
+<tr><td>@</td><td>64</td><td>0040</td><td>&nbsp;</td><td>COMMERCIAL AT</td></tr>
+<tr><td>A</td><td>65</td><td>0041</td><td>&nbsp;</td><td>LATIN CAPITAL LETTER A</td></tr>
+<tr><td>B</td><td>66</td><td>0042</td><td>&nbsp;</td><td>LATIN CAPITAL LETTER B</td></tr>
+<tr><td>C</td><td>67</td><td>0043</td><td>&nbsp;</td><td>LATIN CAPITAL LETTER C</td></tr>
+<tr><td>D</td><td>68</td><td>0044</td><td>&nbsp;</td><td>LATIN CAPITAL LETTER D</td></tr>
+<tr><td>E</td><td>69</td><td>0045</td><td>&nbsp;</td><td>LATIN CAPITAL LETTER E</td></tr>
+<tr><td>F</td><td>70</td><td>0046</td><td>&nbsp;</td><td>LATIN CAPITAL LETTER F</td></tr>
+<tr><td>G</td><td>71</td><td>0047</td><td>&nbsp;</td><td>LATIN CAPITAL LETTER G</td></tr>
+<tr><td>H</td><td>72</td><td>0048</td><td>&nbsp;</td><td>LATIN CAPITAL LETTER H</td></tr>
+<tr><td>I</td><td>73</td><td>0049</td><td>&nbsp;</td><td>LATIN CAPITAL LETTER I</td></tr>
+<tr><td>J</td><td>74</td><td>004A</td><td>&nbsp;</td><td>LATIN CAPITAL LETTER J</td></tr>
+<tr><td>K</td><td>75</td><td>004B</td><td>&nbsp;</td><td>LATIN CAPITAL LETTER K</td></tr>
+<tr><td>L</td><td>76</td><td>004C</td><td>&nbsp;</td><td>LATIN CAPITAL LETTER L</td></tr>
+<tr><td>M</td><td>77</td><td>004D</td><td>&nbsp;</td><td>LATIN CAPITAL LETTER M</td></tr>
+<tr><td>N</td><td>78</td><td>004E</td><td>&nbsp;</td><td>LATIN CAPITAL LETTER N</td></tr>
+<tr><td>O</td><td>79</td><td>004F</td><td>&nbsp;</td><td>LATIN CAPITAL LETTER O</td></tr>
+<tr><td>P</td><td>80</td><td>0050</td><td>&nbsp;</td><td>LATIN CAPITAL LETTER P</td></tr>
+<tr><td>Q</td><td>81</td><td>0051</td><td>&nbsp;</td><td>LATIN CAPITAL LETTER Q</td></tr>
+<tr><td>R</td><td>82</td><td>0052</td><td>&nbsp;</td><td>LATIN CAPITAL LETTER R</td></tr>
+<tr><td>S</td><td>83</td><td>0053</td><td>&nbsp;</td><td>LATIN CAPITAL LETTER S</td></tr>
+<tr><td>T</td><td>84</td><td>0054</td><td>&nbsp;</td><td>LATIN CAPITAL LETTER T</td></tr>
+<tr><td>U</td><td>85</td><td>0055</td><td>&nbsp;</td><td>LATIN CAPITAL LETTER U</td></tr>
+<tr><td>V</td><td>86</td><td>0056</td><td>&nbsp;</td><td>LATIN CAPITAL LETTER V</td></tr>
+<tr><td>W</td><td>87</td><td>0057</td><td>&nbsp;</td><td>LATIN CAPITAL LETTER W</td></tr>
+<tr><td>X</td><td>88</td><td>0058</td><td>&nbsp;</td><td>LATIN CAPITAL LETTER X</td></tr>
+<tr><td>Y</td><td>89</td><td>0059</td><td>&nbsp;</td><td>LATIN CAPITAL LETTER Y</td></tr>
+<tr><td>Z</td><td>90</td><td>005A</td><td>&nbsp;</td><td>LATIN CAPITAL LETTER Z</td></tr>
+<tr><td>[</td><td>91</td><td>005B</td><td>&nbsp;</td><td>LEFT SQUARE BRACKET</td></tr>
+<tr><td>\</td><td>92</td><td>005C</td><td>&nbsp;</td><td>REVERSE SOLIDUS</td></tr>
+<tr><td>]</td><td>93</td><td>005D</td><td>&nbsp;</td><td>RIGHT SQUARE BRACKET</td></tr>
+<tr><td>^</td><td>94</td><td>005E</td><td>&nbsp;</td><td>CIRCUMFLEX ACCENT</td></tr>
+<tr><td>_</td><td>95</td><td>005F</td><td>&nbsp;</td><td>LOW LINE</td></tr>
+<tr><td>`</td><td>96</td><td>0060</td><td>&nbsp;</td><td>GRAVE ACCENT</td></tr>
+<tr><td>a</td><td>97</td><td>0061</td><td>&nbsp;</td><td>LATIN SMALL LETTER A</td></tr>
+<tr><td>b</td><td>98</td><td>0062</td><td>&nbsp;</td><td>LATIN SMALL LETTER B</td></tr>
+<tr><td>c</td><td>99</td><td>0063</td><td>&nbsp;</td><td>LATIN SMALL LETTER C</td></tr>
+<tr><td>d</td><td>100</td><td>0064</td><td>&nbsp;</td><td>LATIN SMALL LETTER D</td></tr>
+<tr><td>e</td><td>101</td><td>0065</td><td>&nbsp;</td><td>LATIN SMALL LETTER E</td></tr>
+<tr><td>f</td><td>102</td><td>0066</td><td>&nbsp;</td><td>LATIN SMALL LETTER F</td></tr>
+<tr><td>g</td><td>103</td><td>0067</td><td>&nbsp;</td><td>LATIN SMALL LETTER G</td></tr>
+<tr><td>h</td><td>104</td><td>0068</td><td>&nbsp;</td><td>LATIN SMALL LETTER H</td></tr>
+<tr><td>i</td><td>105</td><td>0069</td><td>&nbsp;</td><td>LATIN SMALL LETTER I</td></tr>
+<tr><td>j</td><td>106</td><td>006A</td><td>&nbsp;</td><td>LATIN SMALL LETTER J</td></tr>
+<tr><td>k</td><td>107</td><td>006B</td><td>&nbsp;</td><td>LATIN SMALL LETTER K</td></tr>
+<tr><td>l</td><td>108</td><td>006C</td><td>&nbsp;</td><td>LATIN SMALL LETTER L</td></tr>
+<tr><td>m</td><td>109</td><td>006D</td><td>&nbsp;</td><td>LATIN SMALL LETTER M</td></tr>
+<tr><td>n</td><td>110</td><td>006E</td><td>&nbsp;</td><td>LATIN SMALL LETTER N</td></tr>
+<tr><td>o</td><td>111</td><td>006F</td><td>&nbsp;</td><td>LATIN SMALL LETTER O</td></tr>
+<tr><td>p</td><td>112</td><td>0070</td><td>&nbsp;</td><td>LATIN SMALL LETTER P</td></tr>
+<tr><td>q</td><td>113</td><td>0071</td><td>&nbsp;</td><td>LATIN SMALL LETTER Q</td></tr>
+<tr><td>r</td><td>114</td><td>0072</td><td>&nbsp;</td><td>LATIN SMALL LETTER R</td></tr>
+<tr><td>s</td><td>115</td><td>0073</td><td>&nbsp;</td><td>LATIN SMALL LETTER S</td></tr>
+<tr><td>t</td><td>116</td><td>0074</td><td>&nbsp;</td><td>LATIN SMALL LETTER T</td></tr>
+<tr><td>u</td><td>117</td><td>0075</td><td>&nbsp;</td><td>LATIN SMALL LETTER U</td></tr>
+<tr><td>v</td><td>118</td><td>0076</td><td>&nbsp;</td><td>LATIN SMALL LETTER V</td></tr>
+<tr><td>w</td><td>119</td><td>0077</td><td>&nbsp;</td><td>LATIN SMALL LETTER W</td></tr>
+<tr><td>x</td><td>120</td><td>0078</td><td>&nbsp;</td><td>LATIN SMALL LETTER X</td></tr>
+<tr><td>y</td><td>121</td><td>0079</td><td>&nbsp;</td><td>LATIN SMALL LETTER Y</td></tr>
+<tr><td>z</td><td>122</td><td>007A</td><td>&nbsp;</td><td>LATIN SMALL LETTER Z</td></tr>
+<tr><td>{</td><td>123</td><td>007B</td><td>&nbsp;</td><td>LEFT CURLY BRACKET</td></tr>
+<tr><td>|</td><td>124</td><td>007C</td><td>&nbsp;</td><td>VERTICAL LINE</td></tr>
+<tr><td>}</td><td>125</td><td>007D</td><td>&nbsp;</td><td>RIGHT CURLY BRACKET</td></tr>
+<tr><td>~</td><td>126</td><td>007E</td><td>&nbsp;</td><td>TILDE</td></tr>
+</table>
+
+</div>
+
+
+
+<div>
+<h2>C0 控制字符</h2>
+
+<p>控制字符最初被设计为控制硬件设备。</p>
+
+<p>控制字符（水平制表符、回车符和换行符除外）与 HTML 文档无关。</p>
+
+字符
+十进制
+十六进制
+描述
+
+<table class="dataintable">
+    <tr>
+      <th style="width:7%">Char</th>
+      <th style="width:7%">Dec</th>
+      <th style="width:7%">Hex</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <td>NUL</td>
+      <td>0</td>
+      <td>0000</td>
+      <td>null character</td>
+    </tr>
+    <tr>
+      <td>SOH</td>
+      <td>1</td>
+      <td>0001</td>
+      <td>start of header</td>
+    </tr>
+    <tr>
+      <td>STX</td>
+      <td>2</td>
+      <td>0002</td>
+      <td>start of text</td>
+    </tr>
+    <tr>
+      <td>ETX</td>
+      <td>3</td>
+      <td>0003</td>
+      <td>end of text</td>
+    </tr>
+    <tr>
+      <td>EOT</td>
+      <td>4</td>
+      <td>0004</td>
+      <td>end of transmission</td>
+    </tr>
+    <tr>
+      <td>ENQ</td>
+      <td>5</td>
+      <td>0005</td>
+      <td>enquiry</td>
+    </tr>
+    <tr>
+      <td>ACK</td>
+      <td>6</td>
+      <td>0006</td>
+      <td>acknowledge</td>
+    </tr>
+    <tr>
+      <td>BEL</td>
+      <td>7</td>
+      <td>0007</td>
+      <td>bell (ring)</td>
+    </tr>
+    <tr>
+      <td>BS</td>
+      <td>8</td>
+      <td>0008</td>
+      <td>backspace</td>
+    </tr>
+    <tr>
+      <td>HT</td>
+      <td>9</td>
+      <td>0009</td>
+      <td>horizontal tab</td>
+    </tr>
+    <tr>
+      <td>LF</td>
+      <td>10</td>
+      <td>000A</td>
+      <td>line feed</td>
+    </tr>
+    <tr>
+      <td>VT</td>
+      <td>11</td>
+      <td>000B</td>
+      <td>vertical tab</td>
+    </tr>
+    <tr>
+      <td>FF</td>
+      <td>12</td>
+      <td>000C</td>
+      <td>form feed</td>
+    </tr>
+    <tr>
+      <td>CR</td>
+      <td>13</td>
+      <td>000D</td>
+      <td>carriage return</td>
+    </tr>
+    <tr>
+      <td>SO</td>
+      <td>14</td>
+      <td>000E</td>
+      <td>shift out</td>
+    </tr>
+    <tr>
+      <td>SI</td>
+      <td>15</td>
+      <td>000F</td>
+      <td>shift in</td>
+    </tr>
+    <tr>
+      <td>DLE</td>
+      <td>16</td>
+      <td>0010</td>
+      <td>data link escape</td>
+    </tr>
+    <tr>
+      <td>DC1</td>
+      <td>17</td>
+      <td>0011</td>
+      <td>device control 1</td>
+    </tr>
+    <tr>
+      <td>DC2</td>
+      <td>18</td>
+      <td>0012</td>
+      <td>device control 2</td>
+    </tr>
+    <tr>
+      <td>DC3</td>
+      <td>19</td>
+      <td>0013</td>
+      <td>device control 3</td>
+    </tr>
+    <tr>
+      <td>DC4</td>
+      <td>20</td>
+      <td>0014</td>
+      <td>device control 4</td>
+    </tr>
+    <tr>
+      <td>NAK</td>
+      <td>21</td>
+      <td>0015</td>
+      <td>negative acknowledge</td>
+    </tr>
+    <tr>
+      <td>SYN</td>
+      <td>22</td>
+      <td>0016</td>
+      <td>synchronize</td>
+    </tr>
+    <tr>
+      <td>ETB</td>
+      <td>23</td>
+      <td>0017</td>
+      <td>end transmission block</td>
+    </tr>
+    <tr>
+      <td>CAN</td>
+      <td>24</td>
+      <td>0018</td>
+      <td>cancel</td>
+    </tr>
+    <tr>
+      <td>EM</td>
+      <td>25</td>
+      <td>0019</td>
+      <td>end of medium</td>
+    </tr>
+    <tr>
+      <td>SUB</td>
+      <td>26</td>
+      <td>001A</td>
+      <td>substitute</td>
+    </tr>
+    <tr>
+      <td>ESC</td>
+      <td>27</td>
+      <td>001B</td>
+      <td>escape</td>
+    </tr>
+    <tr>
+      <td>FS</td>
+      <td>28</td>
+      <td>001C</td>
+      <td>file separator</td>
+    </tr>
+    <tr>
+      <td>GS</td>
+      <td>29</td>
+      <td>001D</td>
+      <td>group separator</td>
+    </tr>
+    <tr>
+      <td>RS</td>
+      <td>30</td>
+      <td>001E</td>
+      <td>record separator</td>
+    </tr>
+    <tr>
+      <td>US</td>
+      <td>31</td>
+      <td>001F</td>
+      <td>unit separator</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>DEL</td>
+      <td>127</td>
+      <td>007F</td>
+      <td>delete (rubout)</td>
+    </tr>
+</table>
+</div>
+
+
+
+<div class="prenextnav">
+<ul class="prenext">
+<li class="pre"><a href="ref_html_utf8.asp.htm" tppabs="https://www.w3school.com.cn/charsets/ref_html_utf8.asp" title="HTML Unicode (UTF-8) 参考手册">HTML UTF-8</a></li>
+<li class="next"><a href="ref_utf_latin1_supplement.asp.htm" tppabs="https://www.w3school.com.cn/charsets/ref_utf_latin1_supplement.asp" title="UTF-8 C1 控制字符和拉丁文-1补充">拉丁文补充</a></li>
+</ul>
+</div><div style="background-color:#fcfdf8; padding:0;">
+<script async src="../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" tppabs="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- W3School ���Ĺ�� -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:800px;height:250px"
+     data-ad-client="ca-pub-3381531532877742"
+     data-ad-slot="2086924285"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+</div>
+<!-- maincontent end -->
+
+<div id="sidebar">
+
+<div id="tools">
+<h5 id="tools_reference"><a href="../cssref/index.asp.htm" tppabs="https://www.w3school.com.cn/cssref/index.asp">CSS 参考手册</a></h5>
+<h5 id="tools_example"><a href="../css/css_examples.asp.htm" tppabs="https://www.w3school.com.cn/css/css_examples.asp">CSS 实例</a></h5>
+<h5 id="tools_quiz"><a href="../css/css_quiz.asp.htm" tppabs="https://www.w3school.com.cn/css/css_quiz.asp">CSS 测验</a></h5>
+<h5 id="tools_professional"><a href="../css/index_pro.asp.htm" tppabs="https://www.w3school.com.cn/css/index_pro.asp">CSS 课外书</a></h5>
+</div>
+
+<div id="sidebar_zzs">
+
+<div id="sbtg">
+<script async src="../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" tppabs="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- W3School 侧栏广告位 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-3381531532877742"
+     data-ad-slot="6744370501"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+</div>
+
+</div>
+
+<div id="footer">
+<p id="p1">
+W3School 简体中文版提供的内容仅用于培训和测试，不保证内容的正确性。通过使用本站内容随之而来的风险与本站无关。版权所有，保留一切权利。
+</p>
+
+<p id="p2">
+<a href="../about/index.asp.htm" tppabs="https://www.w3school.com.cn/about/index.asp" title="关于 W3School">关于 W3School</a>
+<a href="../about/about_helping.asp.htm" tppabs="https://www.w3school.com.cn/about/about_helping.asp" title="帮助 W3School">帮助 W3School</a>
+<a href="../about/about_use.asp.htm" tppabs="https://www.w3school.com.cn/about/about_use.asp" title="关于使用">使用条款</a>
+<a href="../about/about_privacy.asp.htm" tppabs="https://www.w3school.com.cn/about/about_privacy.asp" title="关于隐私">隐私条款</a>
+<a target="_blank" href="javascript:if(confirm('https://www.ykinvestment.com/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.ykinvestment.com/'" tppabs="https://www.ykinvestment.com/">技术支持：赢科</a>
+<a target="_blank" href="javascript:if(confirm('http://www.beian.miit.gov.cn/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://www.beian.miit.gov.cn/'" tppabs="http://www.beian.miit.gov.cn/">蒙ICP备06004630号</a>
+</p>
+</div>
+
+
+</div>
+<!-- wrapper end -->
+
+</body>
+
+</html>

@@ -1,0 +1,298 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="../../www.googletagmanager.com/gtag/js-id=UA-878633-1" tppabs="https://www.googletagmanager.com/gtag/js?id=UA-878633-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-878633-1');
+</script>
+
+<meta charset=gb2312"gbk" />
+<meta name="robots" content="all" />
+<meta name="author" content="w3school.com.cn" />
+<link rel="stylesheet" type="text/css" href="../c5.css" tppabs="https://www.w3school.com.cn/c5.css" />
+
+<link rel="icon" type="image/png" sizes="16x16" href="/ui2019/logo-16-red.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/ui2019/logo-32-red.png">
+<link rel="icon" type="image/png" sizes="48x48" href="/ui2019/logo-48-red.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/ui2019/logo-96-red.png">
+<link rel="apple-touch-icon-precomposed" sizes="180x180" href="/ui2019/logo-180.png">
+
+
+<title>SQL COUNT DISTINCT 函数</title>
+
+</head>
+
+<body class="serverscripting">
+
+<div id="wrapper">
+
+<div id="header">
+<a id="logo" href="../index.html" tppabs="https://www.w3school.com.cn/index.html" title="w3school 在线教程" style="float:left;">w3school 在线教程</a>
+<div id="header_gg">
+<script async src="../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" tppabs="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- W3 椤电湁 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-3381531532877742"
+     data-ad-slot="7423315034"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+
+<div id="navfirst">
+<ul id="menu">
+<li id="h"><a href="../h.asp.htm" tppabs="https://www.w3school.com.cn/h.asp" title="HTML 系列教程">HTML 系列教程</a></li>
+<li id="b"><a href="../b.asp.htm" tppabs="https://www.w3school.com.cn/b.asp" title="浏览器脚本教程">浏览器脚本</a></li>
+<li id="s"><a href="../s.asp.htm" tppabs="https://www.w3school.com.cn/s.asp" title="服务器脚本教程">服务器脚本</a></li>
+<li id="p"><a href="../p.asp.htm" tppabs="https://www.w3school.com.cn/p.asp" title="编程教程">编程教程</a></li>
+<li id="x"><a href="../x.asp.htm" tppabs="https://www.w3school.com.cn/x.asp" title="XML 系列教程">XML 系列教程</a></li>
+<li id="w"><a href="../w.asp.htm" tppabs="https://www.w3school.com.cn/w.asp" title="建站手册">建站手册</a></li>
+<li id="r"><a href="../r.asp.htm" tppabs="https://www.w3school.com.cn/r.asp" title="参考手册">参考手册</a></li>
+</ul>
+</div>
+
+<div id="navsecond">
+
+<div id="course"><h2>SQL 基础教程</h2>
+<ul>
+<li><a href="index.asp.htm" tppabs="https://www.w3school.com.cn/sql/index.asp" title="SQL 教程">SQL 教程</a></li>
+<li><a href="sql_intro.asp.htm" tppabs="https://www.w3school.com.cn/sql/sql_intro.asp" title="SQL 简介">SQL 简介</a></li>
+<li><a href="sql_syntax.asp.htm" tppabs="https://www.w3school.com.cn/sql/sql_syntax.asp" title="SQL 语法">SQL 语法</a></li>
+<li><a href="sql_select.asp.htm" tppabs="https://www.w3school.com.cn/sql/sql_select.asp" title="SQL SELECT 语句">SQL select</a></li>
+<li><a href="sql_distinct.asp.htm" tppabs="https://www.w3school.com.cn/sql/sql_distinct.asp" title="SQL SELECT DISTINCT 语句">SQL distinct</a></li>
+<li><a href="sql_where.asp.htm" tppabs="https://www.w3school.com.cn/sql/sql_where.asp" title="SQL WHERE 子句">SQL where</a></li>
+<li><a href="sql_and_or.asp.htm" tppabs="https://www.w3school.com.cn/sql/sql_and_or.asp" title="SQL AND &amp; OR">SQL AND &amp; OR</a></li>
+<li><a href="sql_orderby.asp.htm" tppabs="https://www.w3school.com.cn/sql/sql_orderby.asp" title="SQL ORDER BY 语句">SQL Order By</a></li>
+<li><a href="sql_insert.asp.htm" tppabs="https://www.w3school.com.cn/sql/sql_insert.asp" title="SQL INSERT INTO 语句">SQL insert</a></li>
+<li><a href="sql_update.asp.htm" tppabs="https://www.w3school.com.cn/sql/sql_update.asp" title="SQL UPDATE 语句">SQL update</a></li>
+<li><a href="sql_delete.asp.htm" tppabs="https://www.w3school.com.cn/sql/sql_delete.asp" title="SQL DELETE 语句">SQL delete</a></li>
+</ul>
+<h2>SQL 高级教程</h2>
+<ul>
+<li><a href="sql_top.asp.htm" tppabs="https://www.w3school.com.cn/sql/sql_top.asp" title="SQL TOP 子句">SQL Top</a></li>
+<li><a href="sql_like.asp.htm" tppabs="https://www.w3school.com.cn/sql/sql_like.asp" title="SQL LIKE 运算符">SQL Like</a></li>
+<li><a href="sql_wildcards.asp.htm" tppabs="https://www.w3school.com.cn/sql/sql_wildcards.asp" title="SQL 通配符">SQL 通配符</a></li>
+<li><a href="sql_in.asp.htm" tppabs="https://www.w3school.com.cn/sql/sql_in.asp" title="SQL IN">SQL In</a></li>
+<li><a href="sql_between.asp.htm" tppabs="https://www.w3school.com.cn/sql/sql_between.asp" title="SQL BETWEEN">SQL Between</a></li>
+<li><a href="sql_alias.asp.htm" tppabs="https://www.w3school.com.cn/sql/sql_alias.asp" title="SQL Alias（别名）">SQL Aliases</a></li>
+<li><a href="sql_join.asp.htm" tppabs="https://www.w3school.com.cn/sql/sql_join.asp" title="SQL JOIN">SQL Join</a></li>
+<li><a href="sql_join_inner.asp.htm" tppabs="https://www.w3school.com.cn/sql/sql_join_inner.asp" title="SQL INNER JOIN 关键字">SQL Inner Join</a></li>
+<li><a href="sql_join_left.asp.htm" tppabs="https://www.w3school.com.cn/sql/sql_join_left.asp" title="SQL LEFT JOIN 关键字">SQL Left Join</a></li>
+<li><a href="sql_join_right.asp.htm" tppabs="https://www.w3school.com.cn/sql/sql_join_right.asp" title="SQL RIGHT JOIN 关键字">SQL Right Join</a></li>
+<li><a href="sql_join_full.asp.htm" tppabs="https://www.w3school.com.cn/sql/sql_join_full.asp" title="SQL FULL JOIN 关键字">SQL Full Join</a></li>
+<li><a href="sql_union.asp.htm" tppabs="https://www.w3school.com.cn/sql/sql_union.asp" title="SQL UNION 和 UNION ALL">SQL Union</a></li>
+<li><a href="sql_select_into.asp.htm" tppabs="https://www.w3school.com.cn/sql/sql_select_into.asp" title="SQL SELECT INTO 语句">SQL Select Into</a></li>
+<li><a href="sql_create_db.asp.htm" tppabs="https://www.w3school.com.cn/sql/sql_create_db.asp" title="SQL CREATE DATABASE 语句">SQL Create DB</a></li>
+<li><a href="sql_create_table.asp.htm" tppabs="https://www.w3school.com.cn/sql/sql_create_table.asp" title="SQL CREATE TABLE 语句">SQL Create Table</a></li>
+<li><a href="sql_constraints.asp.htm" tppabs="https://www.w3school.com.cn/sql/sql_constraints.asp" title="SQL 约束">SQL Constraints</a></li>
+<li><a href="sql_notnull.asp.htm" tppabs="https://www.w3school.com.cn/sql/sql_notnull.asp" title="SQL NOT NULL 约束">SQL Not Null</a></li>
+<li><a href="sql_unique.asp.htm" tppabs="https://www.w3school.com.cn/sql/sql_unique.asp" title="SQL UNIQUE 约束">SQL Unique</a></li>
+<li><a href="sql_primarykey.asp.htm" tppabs="https://www.w3school.com.cn/sql/sql_primarykey.asp" title="SQL PRIMARY KEY 约束">SQL Primary Key</a></li>
+<li><a href="sql_foreignkey.asp.htm" tppabs="https://www.w3school.com.cn/sql/sql_foreignkey.asp" title="SQL FOREIGN KEY 约束">SQL Foreign Key</a></li>
+<li><a href="sql_check.asp.htm" tppabs="https://www.w3school.com.cn/sql/sql_check.asp" title="SQL CHECK 约束">SQL Check</a></li>
+<li><a href="sql_default.asp.htm" tppabs="https://www.w3school.com.cn/sql/sql_default.asp" title="SQL DEFAULT 约束">SQL Default</a></li>
+<li><a href="sql_create_index.asp.htm" tppabs="https://www.w3school.com.cn/sql/sql_create_index.asp" title="SQL CREATE INDEX 语句">SQL Create Index</a></li>
+<li><a href="sql_drop.asp.htm" tppabs="https://www.w3school.com.cn/sql/sql_drop.asp" title="SQL 撤销索引、表以及数据库">SQL Drop</a></li>
+<li><a href="sql_alter.asp.htm" tppabs="https://www.w3school.com.cn/sql/sql_alter.asp" title="SQL ALTER TABLE">SQL Alter</a></li>
+<li><a href="sql_autoincrement.asp.htm" tppabs="https://www.w3school.com.cn/sql/sql_autoincrement.asp" title="SQL AUTO INCREMENT 字段">SQL Increment</a></li>
+<li><a href="sql_view.asp.htm" tppabs="https://www.w3school.com.cn/sql/sql_view.asp" title="SQL VIEW（视图）">SQL View</a></li>
+<li><a href="sql_dates.asp.htm" tppabs="https://www.w3school.com.cn/sql/sql_dates.asp" title="SQL Date 函数">SQL Date</a></li>
+<li><a href="sql_null_values.asp.htm" tppabs="https://www.w3school.com.cn/sql/sql_null_values.asp" title="SQL NULL 值">SQL Nulls</a></li>
+<li><a href="sql_isnull.asp.htm" tppabs="https://www.w3school.com.cn/sql/sql_isnull.asp" title="SQL NULL 函数">SQL isnull()</a></li>
+<li><a href="sql_datatypes.asp.htm" tppabs="https://www.w3school.com.cn/sql/sql_datatypes.asp" title="SQL 数据类型">SQL 数据类型</a></li>
+<li><a href="sql_server.asp.htm" tppabs="https://www.w3school.com.cn/sql/sql_server.asp" title="SQL 服务器 - RDBMS">SQL 服务器</a></li>
+</ul>
+<h2>SQL 函数</h2>
+<ul>
+<li><a href="sql_functions.asp.htm" tppabs="https://www.w3school.com.cn/sql/sql_functions.asp" title="SQL 函数">SQL functions</a></li>
+<li><a href="sql_func_avg.asp.htm" tppabs="https://www.w3school.com.cn/sql/sql_func_avg.asp" title="SQL AVG() 函数">SQL avg()</a></li>
+<li><a href="sql_func_count.asp.htm" tppabs="https://www.w3school.com.cn/sql/sql_func_count.asp" title="SQL COUNT() 函数">SQL count()</a></li>
+<li><a href="sql_func_first.asp.htm" tppabs="https://www.w3school.com.cn/sql/sql_func_first.asp" title="SQL FIRST() 函数">SQL first()</a></li>
+<li><a href="sql_func_last.asp.htm" tppabs="https://www.w3school.com.cn/sql/sql_func_last.asp" title="SQL LAST() 函数">SQL last()</a></li>
+<li><a href="sql_func_max.asp.htm" tppabs="https://www.w3school.com.cn/sql/sql_func_max.asp" title="SQL MAX() 函数">SQL max()</a></li>
+<li><a href="sql_func_min.asp.htm" tppabs="https://www.w3school.com.cn/sql/sql_func_min.asp" title="SQL MIN() 函数">SQL min()</a></li>
+<li><a href="sql_func_sum.asp.htm" tppabs="https://www.w3school.com.cn/sql/sql_func_sum.asp" title="SQL SUM() 函数">SQL sum()</a></li>
+<li><a href="sql_groupby.asp.htm" tppabs="https://www.w3school.com.cn/sql/sql_groupby.asp" title="SQL GROUP BY 语句">SQL Group By</a></li>
+<li><a href="sql_having.asp.htm" tppabs="https://www.w3school.com.cn/sql/sql_having.asp" title="SQL HAVING 子句">SQL Having</a></li>
+<li><a href="sql_func_ucase.asp.htm" tppabs="https://www.w3school.com.cn/sql/sql_func_ucase.asp" title="SQL UCASE() 函数">SQL ucase()</a></li>
+<li><a href="sql_func_lcase.asp.htm" tppabs="https://www.w3school.com.cn/sql/sql_func_lcase.asp" title="SQL LCASE() 函数">SQL lcase()</a></li>
+<li><a href="sql_func_mid.asp.htm" tppabs="https://www.w3school.com.cn/sql/sql_func_mid.asp" title="SQL MID() 函数">SQL mid()</a></li>
+<li><a href="sql_func_len.asp.htm" tppabs="https://www.w3school.com.cn/sql/sql_func_len.asp" title="SQL LEN() 函数">SQL len()</a></li>
+<li><a href="sql_func_round.asp.htm" tppabs="https://www.w3school.com.cn/sql/sql_func_round.asp" title="SQL ROUND() 函数">SQL round()</a></li>
+<li><a href="sql_func_now.asp.htm" tppabs="https://www.w3school.com.cn/sql/sql_func_now.asp" title="SQL NOW() 函数">SQL now()</a></li>
+<li><a href="sql_func_format.asp.htm" tppabs="https://www.w3school.com.cn/sql/sql_func_format.asp" title="SQL FORMAT() 函数">SQL format()</a></li>
+</ul>
+<h2>SQL 总结</h2>
+<ul>
+<li><a href="sql_quickref.asp.htm" tppabs="https://www.w3school.com.cn/sql/sql_quickref.asp" title="SQL 快速参考">SQL 快速参考</a></li>
+<li><a href="sql_summary.asp.htm" tppabs="https://www.w3school.com.cn/sql/sql_summary.asp" title="我们已经学习了 SQL，下一步学习什么呢？">SQL 教程总结</a></li>
+</ul>
+<h2>SQL 测验</h2>
+<ul>
+<li><a href="sql_quiz.asp.htm" tppabs="https://www.w3school.com.cn/sql/sql_quiz.asp" title="SQL 测验">SQL 测验</a></li>
+</ul>
+</div><div id="selected">
+<h2>建站手册</h2>
+<ul>
+<li><a href="../site/index.asp.htm" tppabs="https://www.w3school.com.cn/site/index.asp" title="网站构建">网站构建</a></li>
+<li><a href="../w3c/index.asp.htm" tppabs="https://www.w3school.com.cn/w3c/index.asp" title="万维网联盟 (W3C)">万维网联盟 (W3C)</a></li>
+<li><a href="../browsers/index.asp.htm" tppabs="https://www.w3school.com.cn/browsers/index.asp" title="浏览器信息">浏览器信息</a></li>
+<li><a href="../quality/index.asp.htm" tppabs="https://www.w3school.com.cn/quality/index.asp" title="网站品质">网站品质</a></li>
+<li><a href="../semweb/index.asp.htm" tppabs="https://www.w3school.com.cn/semweb/index.asp" title="语义网">语义网</a></li>
+<li><a href="../careers/index.asp.htm" tppabs="https://www.w3school.com.cn/careers/index.asp" title="职业规划">职业规划</a></li>
+<li><a href="../hosting/index.asp.htm" tppabs="https://www.w3school.com.cn/hosting/index.asp" title="网站主机">网站主机</a></li>
+</ul>
+
+<h2>编程</h2>
+<ul>
+<li><a href="../python/index.asp.htm" tppabs="https://www.w3school.com.cn/python/index.asp" title="Python 教程">Python 教程</a></li>
+</ul>
+
+<h2 id="link_about"><a href="../about/index.asp.htm" tppabs="https://www.w3school.com.cn/about/index.asp" title="关于 W3School" target="_blank">关于 W3School</a></h2>
+<h2 id="link_help"><a href="../about/about_helping.asp.htm" tppabs="https://www.w3school.com.cn/about/about_helping.asp" title="帮助 W3School" target="_blank">帮助 W3School</a></h2>
+
+
+</div>
+
+</div>
+
+<div id="maincontent">
+
+<h1>SQL COUNT DISTINCT 函数</h1>
+
+<div class="backtoreference">
+<p><a href="sql_functions.asp.htm" tppabs="https://www.w3school.com.cn/sql/sql_functions.asp" title="SQL 函数">SQL 函数</a></p>
+</div>
+
+
+<div>
+<h2>定义和用法</h2>
+
+<p>可以一同使用 DISTINCT 和 COUNT 关键词，来计算非重复结果的数目。</p>
+
+<h3>语法</h3>
+<pre>SELECT COUNT(DISTINCT column(s)) FROM table</pre>
+</div>
+
+
+<div>
+<h2>例子</h2>
+
+<p class="important"><span>注意：</span>下面的例子仅适用于 ORACLE 和 Microsoft SQL server，不能用于 Microsoft Access。</p>
+
+<h3>&quot;Orders&quot;表：</h3>
+<table class="dataintable">
+<tr>
+<th>Company</th>
+<th>OrderNumber</th>
+</tr>
+
+<tr>
+<td>IBM</td>
+<td>3532</td>
+</tr>
+
+<tr>
+<td>W3School</td>
+<td>2356</td>
+</tr>
+
+<tr>
+<td>Apple</td>
+<td>4698</td>
+</tr>
+
+<tr>
+<td>W3School</td>
+<td>6953</td>
+</tr>
+</table>
+
+
+<h3>例子 1</h3>
+<pre>SELECT COUNT(Company) FROM Orders</pre>
+
+<p>结果：</p>
+<pre>4</pre>
+
+
+<h3>例子 2</h3>
+<pre>SELECT COUNT(DISTINCT Company) FROM Orders</pre>
+
+<p>结果：</p>
+<pre>3</pre>
+
+</div>
+
+
+<div class="backtoreference">
+<p><a href="sql_functions.asp.htm" tppabs="https://www.w3school.com.cn/sql/sql_functions.asp" title="SQL 函数">SQL 函数</a></p>
+</div><div style="background-color:#fcfdf8; padding:0;">
+<script async src="../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" tppabs="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- W3School 正文广告 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:800px;height:250px"
+     data-ad-client="ca-pub-3381531532877742"
+     data-ad-slot="2086924285"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+</div>
+<!-- maincontent end -->
+
+<div id="sidebar">
+
+<div id="tools">
+<h5 id="tools_quiz"><a href="sql_quiz.asp.htm" tppabs="https://www.w3school.com.cn/sql/sql_quiz.asp">SQL 测验</a></h5>
+</div>
+
+<div id="sidebar_zzs">
+
+<div id="sbtg">
+<script async src="../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" tppabs="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- W3School 渚ф爮骞垮憡浣� -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-3381531532877742"
+     data-ad-slot="6744370501"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+</div>
+
+</div>
+
+<div id="footer">
+<p id="p1">
+W3School 简体中文版提供的内容仅用于培训和测试，不保证内容的正确性。通过使用本站内容随之而来的风险与本站无关。版权所有，保留一切权利。
+</p>
+
+<p id="p2">
+<a href="../about/about_use.asp.htm" tppabs="https://www.w3school.com.cn/about/about_use.asp" title="关于使用">使用条款</a>
+<a href="../about/about_privacy.asp.htm" tppabs="https://www.w3school.com.cn/about/about_privacy.asp" title="关于隐私">隐私条款</a>
+<a target="_blank" href="javascript:if(confirm('https://www.ykinvestment.com/  \n\n该文件无法用 Teleport Ultra 下载, 因为 它是一个域或路径外部被设置为它的启始地址的地址。  \n\n你想在服务器上打开它?'))window.location='https://www.ykinvestment.com/'" tppabs="https://www.ykinvestment.com/">技术支持：赢科</a>
+<a target="_blank" href="javascript:if(confirm('https://beian.miit.gov.cn/  \n\n该文件无法用 Teleport Ultra 下载, 因为 它是一个域或路径外部被设置为它的启始地址的地址。  \n\n你想在服务器上打开它?'))window.location='https://beian.miit.gov.cn/'" tppabs="https://beian.miit.gov.cn/">蒙ICP备06004630号</a>
+</p>
+</div>
+
+
+</div>
+<!-- wrapper end -->
+
+</body>
+
+</html>

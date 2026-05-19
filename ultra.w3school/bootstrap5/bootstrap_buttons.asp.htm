@@ -1,0 +1,405 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="../../www.googletagmanager.com/gtag/js-id=UA-878633-1" tppabs="https://www.googletagmanager.com/gtag/js?id=UA-878633-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-878633-1');
+</script>
+
+<meta charset=utf-8"utf-8">
+<meta name="robots" content="all" />
+<meta name="author" content="w3school.com.cn" />
+
+<link rel="stylesheet" type="text/css" href="../c.css" tppabs="https://www.w3school.com.cn/c.css" />
+
+<script src="../lib/cc/prism2.js" tppabs="https://www.w3school.com.cn/lib/cc/prism2.js"></script>
+<link rel='stylesheet' href="../lib/cc/prism.css" tppabs="https://www.w3school.com.cn/lib/cc/prism.css">
+
+<link rel="icon" type="image/png" sizes="16x16" href="/ui2019/logo-16-red.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/ui2019/logo-32-red.png">
+<link rel="icon" type="image/png" sizes="48x48" href="/ui2019/logo-48-red.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/ui2019/logo-96-red.png">
+<link rel="apple-touch-icon-precomposed" sizes="180x180" href="/ui2019/logo-180.png">
+
+
+<title>Bootstrap 5 按钮</title>
+
+</head>
+
+<body class="html">
+
+<div id="wrapper">
+
+<div id="header">
+<a id="logo" href="../index.html" tppabs="https://www.w3school.com.cn/index.html" title="w3school 在线教程" style="float:left;">w3school 在线教程</a>
+<div id="header_gg">
+<script async src="../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" tppabs="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- W3 页眉 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-3381531532877742"
+     data-ad-slot="7423315034"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+
+<div id="navfirst">
+<ul id="menu">
+<li id="h"><a href="../h.asp.htm" tppabs="https://www.w3school.com.cn/h.asp" title="HTML 系列教程">HTML 系列教程</a></li>
+<li id="b"><a href="../b.asp.htm" tppabs="https://www.w3school.com.cn/b.asp" title="浏览器脚本教程">浏览器脚本</a></li>
+<li id="s"><a href="../s.asp.htm" tppabs="https://www.w3school.com.cn/s.asp" title="服务器脚本教程">服务器脚本</a></li>
+<li id="p"><a href="../p.asp.htm" tppabs="https://www.w3school.com.cn/p.asp" title="编程教程">编程教程</a></li>
+<li id="x"><a href="../x.asp.htm" tppabs="https://www.w3school.com.cn/x.asp" title="XML 系列教程">XML 系列教程</a></li>
+<li id="w"><a href="../w.asp.htm" tppabs="https://www.w3school.com.cn/w.asp" title="建站手册">建站手册</a></li>
+<li id="r"><a href="../r.asp.htm" tppabs="https://www.w3school.com.cn/r.asp" title="参考手册">参考手册</a></li>
+</ul>
+</div>
+
+<div id="navsecond">
+
+<div id="course"><h2>Bootstrap 5 教程</h2>
+<ul>
+<li><a href="index.asp.htm" tppabs="https://www.w3school.com.cn/bootstrap5/index.asp" title="Bootstrap 5 教程">BS5 教程</a></li>
+<li><a href="bootstrap_get_started.asp.htm" tppabs="https://www.w3school.com.cn/bootstrap5/bootstrap_get_started.asp" title="Bootstrap 5 入门">BS5 入门</a></li>
+<li><a href="bootstrap_containers.asp.htm" tppabs="https://www.w3school.com.cn/bootstrap5/bootstrap_containers.asp" title="Bootstrap 5 容器">BS5 容器</a></li>
+<li><a href="bootstrap_grid_basic.asp.htm" tppabs="https://www.w3school.com.cn/bootstrap5/bootstrap_grid_basic.asp" title="Bootstrap 5 网格">BS5 网格基础</a></li>
+<li><a href="bootstrap_typography.asp.htm" tppabs="https://www.w3school.com.cn/bootstrap5/bootstrap_typography.asp" title="Bootstrap 5 文字/排版">BS5 排版</a></li>
+<li><a href="bootstrap_colors.asp.htm" tppabs="https://www.w3school.com.cn/bootstrap5/bootstrap_colors.asp" title="Bootstrap 5 颜色">BS5 颜色</a></li>
+<li><a href="bootstrap_tables.asp.htm" tppabs="https://www.w3school.com.cn/bootstrap5/bootstrap_tables.asp" title="Bootstrap 5 表格">BS5 表格</a></li>
+<li><a href="bootstrap_images.asp.htm" tppabs="https://www.w3school.com.cn/bootstrap5/bootstrap_images.asp" title="Bootstrap 5 图像">BS5 图像</a></li>
+<li><a href="bootstrap_jumbotron.asp.htm" tppabs="https://www.w3school.com.cn/bootstrap5/bootstrap_jumbotron.asp" title="Bootstrap 5 Jumbotron">BS5 Jumbotron</a></li>
+<li><a href="bootstrap_alerts.asp.htm" tppabs="https://www.w3school.com.cn/bootstrap5/bootstrap_alerts.asp" title="Bootstrap 5 警告框">BS5 警告框</a></li>
+<li class="currentLink"><a href="bootstrap_buttons.asp.htm" tppabs="https://www.w3school.com.cn/bootstrap5/bootstrap_buttons.asp" title="Bootstrap 5 按钮">BS5 按钮</a></li>
+<li><a href="bootstrap_button_groups.asp.htm" tppabs="https://www.w3school.com.cn/bootstrap5/bootstrap_button_groups.asp" title="Bootstrap 5 按钮组">BS5 按钮组</a></li>
+<li><a href="bootstrap_badges.asp.htm" tppabs="https://www.w3school.com.cn/bootstrap5/bootstrap_badges.asp" title="Bootstrap 5 徽章">BS5 徽章</a></li>
+<li><a href="bootstrap_progressbars.asp.htm" tppabs="https://www.w3school.com.cn/bootstrap5/bootstrap_progressbars.asp" title="Bootstrap 5 进度条">BS5 进度条</a></li>
+<li><a href="bootstrap_spinners.asp.htm" tppabs="https://www.w3school.com.cn/bootstrap5/bootstrap_spinners.asp" title="Bootstrap 5 加载器">BS5 加载器</a></li>
+<li><a href="bootstrap_pagination.asp.htm" tppabs="https://www.w3school.com.cn/bootstrap5/bootstrap_pagination.asp" title="Bootstrap 5 分页">BS5 分页</a></li>
+<li><a href="bootstrap_list_groups.asp.htm" tppabs="https://www.w3school.com.cn/bootstrap5/bootstrap_list_groups.asp" title="Bootstrap 5 列表组">BS5 列表组</a></li>
+<li><a href="bootstrap_cards.asp.htm" tppabs="https://www.w3school.com.cn/bootstrap5/bootstrap_cards.asp" title="Bootstrap 5 卡片">BS5 卡片</a></li>
+<li><a href="bootstrap_dropdowns.asp.htm" tppabs="https://www.w3school.com.cn/bootstrap5/bootstrap_dropdowns.asp" title="Bootstrap 5 下拉菜单">BS5 下拉菜单</a></li>
+<li><a href="bootstrap_collapse.asp.htm" tppabs="https://www.w3school.com.cn/bootstrap5/bootstrap_collapse.asp" title="Bootstrap 5 折叠">BS5 折叠</a></li>
+<li><a href="bootstrap_navs.asp.htm" tppabs="https://www.w3school.com.cn/bootstrap5/bootstrap_navs.asp" title="Bootstrap 5 导航">BS5 导航</a></li>
+<li><a href="bootstrap_navbar.asp.htm" tppabs="https://www.w3school.com.cn/bootstrap5/bootstrap_navbar.asp" title="Bootstrap 5 导航栏">BS5 导航栏</a></li>
+<li><a href="bootstrap_carousel.asp.htm" tppabs="https://www.w3school.com.cn/bootstrap5/bootstrap_carousel.asp" title="Bootstrap 5 轮播">BS5 轮播</a></li>
+<li><a href="bootstrap_modal.asp.htm" tppabs="https://www.w3school.com.cn/bootstrap5/bootstrap_modal.asp" title="Bootstrap 5 模态">BS5 模态</a></li>
+<li><a href="bootstrap_tooltip.asp.htm" tppabs="https://www.w3school.com.cn/bootstrap5/bootstrap_tooltip.asp" title="Bootstrap 5 工具提示">BS5 工具提示</a></li>
+<li><a href="bootstrap_popover.asp.htm" tppabs="https://www.w3school.com.cn/bootstrap5/bootstrap_popover.asp" title="Bootstrap 5 弹出框">BS5 弹出框</a></li>
+<li><a href="bootstrap_toast.asp.htm" tppabs="https://www.w3school.com.cn/bootstrap5/bootstrap_toast.asp" title="Bootstrap 5 Toast">BS5 Toast</a></li>
+<li><a href="bootstrap_scrollspy.asp.htm" tppabs="https://www.w3school.com.cn/bootstrap5/bootstrap_scrollspy.asp" title="Bootstrap 5 Scrollspy">BS5 Scrollspy</a></li>
+<li><a href="bootstrap_offcanvas.asp.htm" tppabs="https://www.w3school.com.cn/bootstrap5/bootstrap_offcanvas.asp" title="Bootstrap 5 Offcanvas">BS5 Offcanvas</a></li>
+<li><a href="bootstrap_utilities.asp.htm" tppabs="https://www.w3school.com.cn/bootstrap5/bootstrap_utilities.asp" title="Bootstrap 5 实用工具">BS5 实用工具</a></li>
+<li><a href="bootstrap_flex.asp.htm" tppabs="https://www.w3school.com.cn/bootstrap5/bootstrap_flex.asp" title="Bootstrap 5 Flex">BS5 Flex</a></li>
+</ul>
+<h2>Bootstrap 5 表单</h2>
+<ul>
+<li><a href="bootstrap_forms.asp.htm" tppabs="https://www.w3school.com.cn/bootstrap5/bootstrap_forms.asp" title="Bootstrap 5 表单">BS5 表单</a></li>
+<li><a href="bootstrap_form_select.asp.htm" tppabs="https://www.w3school.com.cn/bootstrap5/bootstrap_form_select.asp" title="Bootstrap 5 选择菜单">BS5 选择菜单</a></li>
+<li><a href="bootstrap_form_check_radio.asp.htm" tppabs="https://www.w3school.com.cn/bootstrap5/bootstrap_form_check_radio.asp" title="Bootstrap 5 复选框和单选按钮">BS5 复选框和单选按钮</a></li>
+<li><a href="bootstrap_form_range.asp.htm" tppabs="https://www.w3school.com.cn/bootstrap5/bootstrap_form_range.asp" title="Bootstrap 5 范围">BS5 范围</a></li>
+<li><a href="bootstrap_form_input_group.asp.htm" tppabs="https://www.w3school.com.cn/bootstrap5/bootstrap_form_input_group.asp" title="Bootstrap 5 输入组">BS5 输入组</a></li>
+<li><a href="bootstrap_form_floating_labels.asp.htm" tppabs="https://www.w3school.com.cn/bootstrap5/bootstrap_form_floating_labels.asp" title="Bootstrap 5 表单浮动标签">BS5 浮动标签</a></li>
+<li><a href="bootstrap_form_validation.asp.htm" tppabs="https://www.w3school.com.cn/bootstrap5/bootstrap_form_validation.asp" title="Bootstrap 5 表单验证">BS5 表单验证</a></li>
+</ul>
+<h2>Bootstrap 5 网格</h2>
+<ul>
+<li><a href="bootstrap_grid_system.asp.htm" tppabs="https://www.w3school.com.cn/bootstrap5/bootstrap_grid_system.asp" title="Bootstrap 5 网格系统">BS5 网格系统</a></li>
+<li><a href="bootstrap_grid_stacked_to_hor.asp.htm" tppabs="https://www.w3school.com.cn/bootstrap5/bootstrap_grid_stacked_to_hor.asp" title="Bootstrap 5 堆叠/水平">BS5 堆叠/水平</a></li>
+<li><a href="bootstrap_grid_xsmall.asp.htm" tppabs="https://www.w3school.com.cn/bootstrap5/bootstrap_grid_xsmall.asp" title="Bootstrap 5 网格：超小型设备">BS5 网格 XSmall</a></li>
+<li><a href="bootstrap_grid_small.asp.htm" tppabs="https://www.w3school.com.cn/bootstrap5/bootstrap_grid_small.asp" title="Bootstrap 5 网格：小型设备">BS5 网格 Small</a></li>
+<li><a href="bootstrap_grid_medium.asp.htm" tppabs="https://www.w3school.com.cn/bootstrap5/bootstrap_grid_medium.asp" title="Bootstrap 5 网格：中型设备">BS5 网格 Medium</a></li>
+<li><a href="bootstrap_grid_large.asp.htm" tppabs="https://www.w3school.com.cn/bootstrap5/bootstrap_grid_large.asp" title="Bootstrap 5 网格：大型设备">BS5 网格 Large</a></li>
+<li><a href="bootstrap_grid_xlarge.asp.htm" tppabs="https://www.w3school.com.cn/bootstrap5/bootstrap_grid_xlarge.asp" title="Bootstrap 5 网格：超大型设备">BS5 网格 XLarge</a></li>
+<li><a href="bootstrap_grid_xxl.asp.htm" tppabs="https://www.w3school.com.cn/bootstrap5/bootstrap_grid_xxl.asp" title="Bootstrap 5 网格：特大型设备">BS5 网格 XXL</a></li>
+<li><a href="bootstrap_grid_examples.asp.htm" tppabs="https://www.w3school.com.cn/bootstrap5/bootstrap_grid_examples.asp" title="Bootstrap 5 网格实例">BS5 网格实例</a></li>
+</ul>
+<h2>Bootstrap 5 其他</h2>
+<ul>
+<li><a href="bootstrap_templates.asp.htm" tppabs="https://www.w3school.com.cn/bootstrap5/bootstrap_templates.asp" title="Bootstrap 5 基础模板">BS5 基础模板</a></li>
+<li><a href="bootstrap_quiz.asp.htm" tppabs="https://www.w3school.com.cn/bootstrap5/bootstrap_quiz.asp" title="Bootstrap 5 测验">BS5 测验</a></li>
+</ul>
+</div><div id="selected">
+<h2>课程推荐：</h2>
+<ul>
+<li><a href="../howto/index.asp.htm" tppabs="https://www.w3school.com.cn/howto/index.asp" title="W3School 百宝箱">W3School 百宝箱</a></li>
+<li><a href="../java/index.asp.htm" tppabs="https://www.w3school.com.cn/java/index.asp" title="Java 教程">Java 教程</a></li>
+</ul>
+
+</div>
+
+</div>
+
+<div id="maincontent">
+
+<h1>Bootstrap 5 按钮</h1>
+
+<div class="prenextnav">
+<ul class="prenext">
+<li class="pre"><a href="bootstrap_alerts.asp.htm" tppabs="https://www.w3school.com.cn/bootstrap5/bootstrap_alerts.asp" title="Bootstrap 5 警告框">BS5 警告框</a></li>
+<li class="next"><a href="bootstrap_button_groups.asp.htm" tppabs="https://www.w3school.com.cn/bootstrap5/bootstrap_button_groups.asp" title="Bootstrap 5 按钮组">BS5 按钮组</a></li>
+</ul>
+</div>
+
+
+
+<div>
+<h2>按钮样式</h2>
+
+<p>Bootstrap 5 提供了不同样式的按钮：</p>
+
+<iframe scrolling="no" src="../demo/bs/xml_examples.asp" tppabs="https://www.w3school.com.cn/demo/bs/bs_button_styles.html" style="width:100%;height:60px;border:none;margin-top:15px;overflow: hidden;"></iframe>
+
+<h3>实例</h3>
+
+<pre class="language-html">
+&lt;button type=&quot;button&quot; class=&quot;btn&quot;&gt;基础&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;主要&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot;&gt;次要&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-success&quot;&gt;成功&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-info&quot;&gt;信息&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-warning&quot;&gt;警告&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-danger&quot;&gt;危险&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-dark&quot;&gt;深色&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-light&quot;&gt;浅色&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-link&quot;&gt;链接&lt;/button&gt;
+</pre>
+
+<p class="tiy"><a target="_blank" href="javascript:if(confirm('https://www.w3school.com.cn/tiy/about_helping.asp  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ������, �����������, ����Ŀ����ֹͣ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.w3school.com.cn/tiy/about_helping.asp'" tppabs="https://www.w3school.com.cn/tiy/t.asp?s=h&f=bs_button_styles">亲自试一试</a></p>
+
+<p>按钮类可用于 <code>&lt;a&gt;</code>、<code>&lt;button&gt;</code> 或 <code>&lt;input&gt;</code> 元素：</p>
+
+<h3>实例</h3>
+
+<pre class="language-html">
+&lt;a href=&quot;#&quot; class=&quot;btn btn-success&quot;&gt;链接按钮&lt;/a&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-success&quot;&gt;按钮&lt;/button&gt;
+&lt;input type=&quot;button&quot; class=&quot;btn btn-success&quot; value=&quot;输入按钮&quot;&gt;
+&lt;input type=&quot;submit&quot; class=&quot;btn btn-success&quot; value=&quot;提交按钮&quot;&gt;
+&lt;input type=&quot;reset&quot; class=&quot;btn btn-success&quot; value=&quot;重置按钮&quot;&gt;
+</pre>
+
+<p class="tiy"><a target="_blank" href="javascript:if(confirm('https://www.w3school.com.cn/tiy/about_use.asp  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ������, �����������, ����Ŀ����ֹͣ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.w3school.com.cn/tiy/about_use.asp'" tppabs="https://www.w3school.com.cn/tiy/t.asp?s=h&f=bs_button_elements">亲自试一试</a></p>
+
+<h3>为什么我们在链接的 href 属性中写一个 #？</h3>
+
+<p>由于我们没有任何可链接到的页面，而且我们不想收到 &quot;404&quot; 消息，因此我们将 # 作为链接。在现实生活中，它应是“搜索”页面的真实 URL。</p>
+</div>
+
+
+
+<div>
+<h2>按钮轮廓</h2>
+
+<p>Bootstrap 5 还提供了八个轮廓/边框按钮。</p>
+
+<p>将鼠标移到它们上方，可看到额外的“悬停”效果：</p>
+       
+<iframe scrolling="no" src="../demo/bs/about_privacy.asp" tppabs="https://www.w3school.com.cn/demo/bs/bs_button_outline.html" style="width:100%;height:60px;border:none;margin-top:15px;overflow: hidden;"></iframe>
+
+<h3>实例</h3>
+
+<pre class="language-html">
+&lt;button type=&quot;button&quot; class=&quot;btn btn-outline-primary&quot;&gt;主要&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-outline-secondary&quot;&gt;次要&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-outline-success&quot;&gt;成功&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-outline-info&quot;&gt;信息&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-outline-warning&quot;&gt;警告&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-outline-danger&quot;&gt;危险&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-outline-dark&quot;&gt;深色&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-outline-light text-dark&quot;&gt;浅色&lt;/button&gt;
+</pre>
+
+<p class="tiy"><a target="_blank" href="javascript:if(confirm('https://www.w3school.com.cn/tiy/?from=links_w3school  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ������, �����������, ����Ŀ����ֹͣ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.w3school.com.cn/tiy/?from=links_w3school'" tppabs="https://www.w3school.com.cn/tiy/t.asp?s=h&f=bs_button_outline">亲自试一试</a></p>
+</div>
+
+
+
+<div>
+<h2>按钮尺寸</h2>
+
+<p>对大按钮使用 <code>.btn-lg</code> 类，对小按钮使用 <code>.btn-sm</code> 类：</p>
+
+<iframe scrolling="no" src="../demo/bs/wrapper.png" tppabs="https://www.w3school.com.cn/demo/bs/bs_button_sizes.html" style="width:100%;height:70px;border:none;margin-top:15px;overflow: hidden;"></iframe>
+
+<h3>实例</h3>
+
+<pre class="language-html">
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-lg&quot;&gt;大型&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;默认&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-sm&quot;&gt;小型&lt;/button&gt;
+</pre>
+
+<p class="tiy"><a target="_blank" href="javascript:if(confirm('https://www.w3school.com.cn/tiy/footer.png  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ������������ļ�δ�ҵ���  \n\n�����ڷ������ϴ���?'))window.location='https://www.w3school.com.cn/tiy/footer.png'" tppabs="https://www.w3school.com.cn/tiy/t.asp?s=h&f=bs_button_sizes">亲自试一试</a></p>
+</div>
+
+
+
+<div>
+<h2>块级按钮</h2>
+
+<p>如需创建跨越父元素整个宽度的块级按钮，请在父元素上使用 <code>.d-grid</code> &quot;helper&quot; 类：</p>
+
+<iframe scrolling="no" src="../demo/bs/alert.png" tppabs="https://www.w3school.com.cn/demo/bs/bs_button_block_1.html" style="width:100%;height:60px;border:none;margin-top:15px;overflow: hidden;"></iframe>
+
+<h3>实例</h3>
+
+<pre class="language-html">
+&lt;div class=&quot;d-grid&quot;&gt;
+  &lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-block&quot;&gt;全宽按钮&lt;/button&gt;
+&lt;/div&gt;
+</pre>
+
+<p class="tiy"><a target="_blank" href="javascript:if(confirm('https://www.w3school.com.cn/tiy/bg.png  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ������������ļ�δ�ҵ���  \n\n�����ڷ������ϴ���?'))window.location='https://www.w3school.com.cn/tiy/bg.png'" tppabs="https://www.w3school.com.cn/tiy/t.asp?s=h&f=bs_button_block_1">亲自试一试</a></p>
+
+<p>如果您有很多块级按钮，你可以用 <code>.gap-*</code> 类控制它们之间的间距：</p>
+
+<iframe scrolling="no" src="../demo/bs/bg-retina.png" tppabs="https://www.w3school.com.cn/demo/bs/bs_button_block_2.html" style="width:100%;height:170px;border:none;margin-top:15px;overflow: hidden;"></iframe>
+
+<h3>实例</h3>
+
+<pre class="language-html">
+&lt;div class=&quot;d-grid gap-3&quot;&gt;
+  &lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-block&quot;&gt;全宽按钮&lt;/button&gt;
+  &lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-block&quot;&gt;全宽按钮&lt;/button&gt;
+  &lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-block&quot;&gt;全宽按钮&lt;/button&gt;
+&lt;/div&gt;
+</pre>
+
+<p class="tiy"><a target="_blank" href="javascript:if(confirm('https://www.w3school.com.cn/tiy/icon2.png  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ������������ļ�δ�ҵ���  \n\n�����ڷ������ϴ���?'))window.location='https://www.w3school.com.cn/tiy/icon2.png'" tppabs="https://www.w3school.com.cn/tiy/t.asp?s=h&f=bs_button_block_2">亲自试一试</a></p>
+</div>
+
+
+
+<div>
+<h2>活动/禁用按钮</h2>
+
+<p>按钮可以设置为活动（显示为被按下）或禁用（不可点击）状态：</p>
+
+<iframe scrolling="no" src="../demo/bs/icon3.png" tppabs="https://www.w3school.com.cn/demo/bs/bs_button_active.html" style="width:100%;height:60px;border:none;margin-top:15px;overflow: hidden;"></iframe>
+
+<p>类 <code>.active</code> 使按钮显示为被按下的状态，而 <code>disabled</code> 属性使按钮不可点击。请注意，&lt;a&gt; 元素不支持 disabled 属性，因此必须使用 <code>.disabled</code> 类使其在视觉上显示为禁用。</p>
+
+<h3>实例</h3>
+
+<pre class="language-html">
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary active&quot;&gt;Active Primary&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot; disabled&gt;Disabled Primary&lt;/button&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-primary disabled&quot;&gt;Disabled Link&lt;/a&gt;
+</pre>
+
+<p class="tiy"><a target="_blank" href="javascript:if(confirm('https://www.w3school.com.cn/tiy/icon4.png  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ������������ļ�δ�ҵ���  \n\n�����ڷ������ϴ���?'))window.location='https://www.w3school.com.cn/tiy/icon4.png'" tppabs="https://www.w3school.com.cn/tiy/t.asp?s=h&f=bs_button_active">亲自试一试</a></p>
+</div>
+
+
+
+<div>
+<h2>加载器按钮</h2>
+
+<p>您还可以向按钮添加 &quot;spinner&quot;，您将在我们的 BS5 Spinner 教程中学到更多内容：</p>
+
+<iframe scrolling="no" src="../demo/bs/icon5.png" tppabs="https://www.w3school.com.cn/demo/bs/bs_spinners_buttons.html" style="width:100%;height:60px;border:none;margin-top:15px;overflow: hidden;"></iframe>
+
+<h3>实例</h3>
+
+<pre class="language-html">
+&lt;button class=&quot;btn btn-primary&quot;&gt;
+  &lt;span class=&quot;spinner-border spinner-border-sm&quot;&gt;&lt;/span&gt;
+&lt;/button&gt;
+
+&lt;button class=&quot;btn btn-primary&quot;&gt;
+  &lt;span class=&quot;spinner-border spinner-border-sm&quot;&gt;&lt;/span&gt;
+  Loading..
+&lt;/button&gt;
+
+&lt;button class=&quot;btn btn-primary&quot; disabled&gt;
+  &lt;span class=&quot;spinner-border spinner-border-sm&quot;&gt;&lt;/span&gt;
+  Loading..
+&lt;/button&gt;
+
+&lt;button class=&quot;btn btn-primary&quot; disabled&gt;
+  &lt;span class=&quot;spinner-grow spinner-grow-sm&quot;&gt;&lt;/span&gt;
+  Loading..
+&lt;/button&gt;
+</pre>
+
+<p class="tiy"><a target="_blank" href="javascript:if(confirm('https://www.w3school.com.cn/tiy/icon6.png  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ������������ļ�δ�ҵ���  \n\n�����ڷ������ϴ���?'))window.location='https://www.w3school.com.cn/tiy/icon6.png'" tppabs="https://www.w3school.com.cn/tiy/t.asp?s=h&f=bs_spinners_buttons">亲自试一试</a></p>
+</div>
+
+
+
+<div class="prenextnav">
+<ul class="prenext">
+<li class="pre"><a href="bootstrap_alerts.asp.htm" tppabs="https://www.w3school.com.cn/bootstrap5/bootstrap_alerts.asp" title="Bootstrap 5 警告框">BS5 警告框</a></li>
+<li class="next"><a href="bootstrap_button_groups.asp.htm" tppabs="https://www.w3school.com.cn/bootstrap5/bootstrap_button_groups.asp" title="Bootstrap 5 按钮组">BS5 按钮组</a></li>
+</ul>
+</div><div style="background-color:#fcfdf8; padding:0;">
+<script async src="../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" tppabs="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- W3School ���Ĺ�� -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:800px;height:250px"
+     data-ad-client="ca-pub-3381531532877742"
+     data-ad-slot="2086924285"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+</div>
+<!-- maincontent end -->
+
+<div id="sidebar">
+
+<div id="tools">
+<h5 id="tools_quiz"><a href="bootstrap_quiz.asp.htm" tppabs="https://www.w3school.com.cn/bootstrap5/bootstrap_quiz.asp">JavaScript 测验</a></h5>
+</div>
+
+<div id="sidebar_zzs">
+
+<div id="sbtg">
+<script async src="../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" tppabs="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- W3School 侧栏广告位 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-3381531532877742"
+     data-ad-slot="6744370501"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+</div>
+
+</div>
+
+<div id="footer">
+<p id="p1">
+W3School 简体中文版提供的内容仅用于培训和测试，不保证内容的正确性。通过使用本站内容随之而来的风险与本站无关。版权所有，保留一切权利。
+</p>
+
+<p id="p2">
+<a href="../about/index.asp.htm" tppabs="https://www.w3school.com.cn/about/index.asp" title="关于 W3School">关于 W3School</a>
+<a href="../about/about_helping.asp.htm" tppabs="https://www.w3school.com.cn/about/about_helping.asp" title="帮助 W3School">帮助 W3School</a>
+<a href="../about/about_use.asp.htm" tppabs="https://www.w3school.com.cn/about/about_use.asp" title="关于使用">使用条款</a>
+<a href="../about/about_privacy.asp.htm" tppabs="https://www.w3school.com.cn/about/about_privacy.asp" title="关于隐私">隐私条款</a>
+<a target="_blank" href="javascript:if(confirm('https://www.ykinvestment.com/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.ykinvestment.com/'" tppabs="https://www.ykinvestment.com/">技术支持：赢科</a>
+<a target="_blank" href="javascript:if(confirm('http://www.beian.miit.gov.cn/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://www.beian.miit.gov.cn/'" tppabs="http://www.beian.miit.gov.cn/">蒙ICP备06004630号</a>
+</p>
+</div>
+
+
+</div>
+<!-- wrapper end -->
+
+</body>
+
+</html>

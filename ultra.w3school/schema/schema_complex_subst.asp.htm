@@ -1,0 +1,313 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="../../www.googletagmanager.com/gtag/js-id=UA-878633-1" tppabs="https://www.googletagmanager.com/gtag/js?id=UA-878633-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-878633-1');
+</script>
+
+<meta charset=utf-8"utf-8">
+<meta name="robots" content="all" />
+<meta name="author" content="w3school.com.cn" />
+
+<link rel="stylesheet" type="text/css" href="../c.css" tppabs="https://www.w3school.com.cn/c.css" />
+
+<script src="../lib/cc/prism2.js" tppabs="https://www.w3school.com.cn/lib/cc/prism2.js"></script>
+<link rel='stylesheet' href="../lib/cc/prism.css" tppabs="https://www.w3school.com.cn/lib/cc/prism.css">
+
+<link rel="icon" type="image/png" sizes="16x16" href="/ui2019/logo-16-red.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/ui2019/logo-32-red.png">
+<link rel="icon" type="image/png" sizes="48x48" href="/ui2019/logo-48-red.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/ui2019/logo-96-red.png">
+<link rel="apple-touch-icon-precomposed" sizes="180x180" href="/ui2019/logo-180.png">
+
+
+<title>XSD 元素替换（Element Substitution）</title>
+
+</head>
+
+<body class="xml">
+
+<div id="wrapper">
+
+<div id="header">
+<a id="logo" href="../index.html" tppabs="https://www.w3school.com.cn/index.html" title="w3school 在线教程" style="float:left;">w3school 在线教程</a>
+<div id="header_gg">
+<script async src="../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" tppabs="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- W3 页眉 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-3381531532877742"
+     data-ad-slot="7423315034"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+
+<div id="navfirst">
+<ul id="menu">
+<li id="h"><a href="../h.asp.htm" tppabs="https://www.w3school.com.cn/h.asp" title="HTML 系列教程">HTML 系列教程</a></li>
+<li id="b"><a href="../b.asp.htm" tppabs="https://www.w3school.com.cn/b.asp" title="浏览器脚本教程">浏览器脚本</a></li>
+<li id="s"><a href="../s.asp.htm" tppabs="https://www.w3school.com.cn/s.asp" title="服务器脚本教程">服务器脚本</a></li>
+<li id="p"><a href="../p.asp.htm" tppabs="https://www.w3school.com.cn/p.asp" title="编程教程">编程教程</a></li>
+<li id="x"><a href="../x.asp.htm" tppabs="https://www.w3school.com.cn/x.asp" title="XML 系列教程">XML 系列教程</a></li>
+<li id="w"><a href="../w.asp.htm" tppabs="https://www.w3school.com.cn/w.asp" title="建站手册">建站手册</a></li>
+<li id="r"><a href="../r.asp.htm" tppabs="https://www.w3school.com.cn/r.asp" title="参考手册">参考手册</a></li>
+</ul>
+</div>
+
+<div id="navsecond">
+
+<div id="course"><h2>Schema 教程</h2>
+<ul>
+<li><a href="index.asp.htm" tppabs="https://www.w3school.com.cn/schema/index.asp" title="XSD 教程">XSD 教程</a></li>
+<li><a href="schema_intro.asp.htm" tppabs="https://www.w3school.com.cn/schema/schema_intro.asp" title="XSD 简介">XSD 简介</a></li>
+<li><a href="javascript:if(confirm('https://www.w3school.com.cn/schema/js_map_methods.asp  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ������������ļ�δ�ҵ���  \n\n�����ڷ������ϴ���?'))window.location='https://www.w3school.com.cn/schema/js_map_methods.asp'" tppabs="https://www.w3school.com.cn/schema/schema_why.asp" title="为什么要使用 XML Schemas？">XSD 为何使用</a></li>
+<li><a href="schema_howto.asp.htm" tppabs="https://www.w3school.com.cn/schema/schema_howto.asp" title="如何使用 XSD？">XSD 如何使用</a></li>
+<li><a href="schema_schema.asp.htm" tppabs="https://www.w3school.com.cn/schema/schema_schema.asp" title="XSD - &lt;schema&gt; 元素">XSD &lt;schema&gt;</a></li>
+</ul>
+<h2>简单的类型</h2>
+<ul>
+<li><a href="schema_simple.asp.htm" tppabs="https://www.w3school.com.cn/schema/schema_simple.asp" title="XSD 简易元素">XSD 元素</a></li>
+<li><a href="schema_simple_attributes.asp.htm" tppabs="https://www.w3school.com.cn/schema/schema_simple_attributes.asp" title="XSD 属性">XSD 属性</a></li>
+<li><a href="schema_facets.asp.htm" tppabs="https://www.w3school.com.cn/schema/schema_facets.asp" title="XSD 限定/Facets">XSD 限定</a></li>
+</ul>
+<h2>复杂的类型</h2>
+<ul>
+<li><a href="schema_complex.asp.htm" tppabs="https://www.w3school.com.cn/schema/schema_complex.asp" title="XSD 复合元素">XSD 元素</a></li>
+<li><a href="schema_complex_empty.asp.htm" tppabs="https://www.w3school.com.cn/schema/schema_complex_empty.asp" title="XSD 复合空元素">XSD 空元素</a></li>
+<li><a href="schema_complex_elements.asp.htm" tppabs="https://www.w3school.com.cn/schema/schema_complex_elements.asp" title="XSD 复合类型 - 仅含元素">XSD 仅含元素</a></li>
+<li><a href="schema_complex_text.asp.htm" tppabs="https://www.w3school.com.cn/schema/schema_complex_text.asp" title="XSD 仅含文本复合元素">XSD 仅含文本</a></li>
+<li><a href="schema_complex_mixed.asp.htm" tppabs="https://www.w3school.com.cn/schema/schema_complex_mixed.asp" title="XSD 带有混合内容的复合类型">XSD 混合内容</a></li>
+<li><a href="schema_complex_indicators.asp.htm" tppabs="https://www.w3school.com.cn/schema/schema_complex_indicators.asp" title="XSD 复合类型指示器">XSD 指示器</a></li>
+<li><a href="schema_complex_any.asp.htm" tppabs="https://www.w3school.com.cn/schema/schema_complex_any.asp" title="XSD &lt;any&gt; 元素">XSD &lt;any&gt;</a></li>
+<li><a href="schema_complex_anyattribute.asp.htm" tppabs="https://www.w3school.com.cn/schema/schema_complex_anyattribute.asp" title="XSD &lt;anyAttribute&gt; 元素">XSD &lt;anyAttribute&gt;</a></li>
+<li class="currentLink"><a href="schema_complex_subst.asp.htm" tppabs="https://www.w3school.com.cn/schema/schema_complex_subst.asp" title="XSD 元素替换（Element Substitution）">XSD 元素替换</a></li>
+<li><a href="schema_example.asp.htm" tppabs="https://www.w3school.com.cn/schema/schema_example.asp" title="一个 XSD 实例">XSD 实例</a></li>
+</ul>
+<h2>数据类型</h2>
+<ul>
+<li><a href="schema_dtypes_string.asp.htm" tppabs="https://www.w3school.com.cn/schema/schema_dtypes_string.asp" title="XSD 字符串数据类型">XSD 字符串</a></li>
+<li><a href="schema_dtypes_date.asp.htm" tppabs="https://www.w3school.com.cn/schema/schema_dtypes_date.asp" title="XSD 日期及时间数据类型">XSD 日期</a></li>
+<li><a href="schema_dtypes_numeric.asp.htm" tppabs="https://www.w3school.com.cn/schema/schema_dtypes_numeric.asp" title="XSD 数值数据类型">XSD 数值</a></li>
+<li><a href="schema_dtypes_misc.asp.htm" tppabs="https://www.w3school.com.cn/schema/schema_dtypes_misc.asp" title="XSD 杂项数据类型">XSD 杂项</a></li>
+<li><a href="javascript:if(confirm('https://www.w3school.com.cn/schema/howto_js_shrink_header_scroll.asp  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ������, �����������, ����Ŀ����ֹͣ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.w3school.com.cn/schema/howto_js_shrink_header_scroll.asp'" tppabs="https://www.w3school.com.cn/schema/schema_summary.asp" title="您已经学习了 XML Schema，下一步学习什么呢？">XSD 总结</a></li>
+</ul>
+<h2>参考手册</h2>
+<ul>
+<li><a href="javascript:if(confirm('https://www.w3school.com.cn/schema/js_typeof.asp  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ������, �����������, ����Ŀ����ֹͣ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.w3school.com.cn/schema/js_typeof.asp'" tppabs="https://www.w3school.com.cn/schema/schema_elements_ref.asp" title="XSD 参考手册">XSD 参考手册</a></li>
+<li><a href="javascript:if(confirm('http://www.w3.org/2001/03/webdata/howto_css_pricing_table.asp  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://www.w3.org/2001/03/webdata/howto_css_pricing_table.asp'" tppabs="http://www.w3.org/2001/03/webdata/xsv" title="XML Schema (REC (20010502) version, as amended) Checking Service">XSD 验证器</a></li>
+</ul>
+</div><div id="selected">
+<h2>课程推荐：</h2>
+<ul>
+<li><a href="../howto/index.asp.htm" tppabs="https://www.w3school.com.cn/howto/index.asp" title="W3School 百宝箱">W3School 百宝箱</a></li>
+<li><a href="../java/index.asp.htm" tppabs="https://www.w3school.com.cn/java/index.asp" title="Java 教程">Java 教程</a></li>
+</ul>
+
+</div>
+
+</div>
+
+<div id="maincontent">
+
+<h1>XSD 元素替换（Element Substitution）</h1>
+
+<div class="prenextnav">
+<ul class="prenext">
+<li class="pre"><a href="schema_complex_anyattribute.asp.htm" tppabs="https://www.w3school.com.cn/schema/schema_complex_anyattribute.asp" title="XSD &lt;anyAttribute&gt; 元素">XSD &lt;anyAttribute&gt;</a></li>
+<li class="next"><a href="schema_example.asp.htm" tppabs="https://www.w3school.com.cn/schema/schema_example.asp" title="一个 XSD 实例">XSD 实例</a></li>
+</ul>
+</div>
+
+
+
+<div id="intro">
+<p><strong>通过 XML Schema，一个元素可对另一个元素进行替换。</strong></p>
+</div>
+
+
+
+<div>
+<h2>元素替换</h2>
+
+<p>让我们举例说明：我们的用户来自英国和挪威。我们希望有能力让用户选择在 XML 文档中使用挪威语的元素名称还是英语的元素名称。</p>
+
+<p>为了解决这个问题，我们可以在 XML schema 中定义一个 <em>substitutionGroup</em>。首先，我们声明主元素，然后我们会声明次元素，这些次元素可声明它们能够替换主元素。</p>
+
+<pre class="language-xml">
+&lt;xs:element name=&quot;name&quot; type=&quot;xs:string&quot;/&gt;
+&lt;xs:element name=&quot;navn&quot; <mark>substitutionGroup=&quot;name&quot;</mark>/&gt;
+</pre>
+
+<p>在上面的例子中，&quot;name&quot; 元素是主元素，而 &quot;navn&quot; 元素可替代 &quot;name&quot; 元素。</p>
+
+<p>请看一个 XML schema 的片段：</p>
+
+<pre class="language-xml">
+&lt;xs:element name=&quot;name&quot; type=&quot;xs:string&quot;/&gt;
+&lt;xs:element name=&quot;navn&quot; substitutionGroup=&quot;name&quot;/&gt;
+
+&lt;xs:complexType name=&quot;custinfo&quot;&gt;
+  &lt;xs:sequence&gt;
+    &lt;xs:element ref=&quot;name&quot;/&gt;
+  &lt;/xs:sequence&gt;
+&lt;/xs:complexType&gt;
+
+&lt;xs:element name=&quot;customer&quot; type=&quot;custinfo&quot;/&gt;
+&lt;xs:element name=&quot;kunde&quot; substitutionGroup=&quot;customer&quot;/&gt;
+</pre>
+
+<p>有效的 XML 文档类似这样（根据上面的 schema）：</p>
+
+<pre class="language-xml">
+&lt;customer&gt;
+  &lt;name&gt;John Smith&lt;/name&gt;
+&lt;/customer&gt;</pre>
+
+<p>或类似这样：</p>
+<pre class="language-xml">
+&lt;kunde&gt;
+  &lt;navn&gt;John Smith&lt;/navn&gt;
+&lt;/kunde&gt;
+</pre>
+</div>
+
+
+
+<div>
+<h2>阻止元素替换</h2>
+
+<p>为防止其他的元素替换某个指定的元素，请使用 block 属性：</p>
+
+<pre class="language-xml">
+&lt;xs:element name=&quot;name&quot; type=&quot;xs:string&quot; <mark>block=&quot;substitution&quot;</mark>/&gt;
+</pre>
+
+<p>请看某个 XML schema 的片段：</p>
+
+<pre class="language-xml">
+&lt;xs:element name=&quot;name&quot; type=&quot;xs:string&quot; block=&quot;substitution&quot;/&gt;
+&lt;xs:element name=&quot;navn&quot; substitutionGroup=&quot;name&quot;/&gt;
+
+&lt;xs:complexType name=&quot;custinfo&quot;&gt;
+  &lt;xs:sequence&gt;
+    &lt;xs:element ref=&quot;name&quot;/&gt;
+  &lt;/xs:sequence&gt;
+&lt;/xs:complexType&gt;
+
+&lt;xs:element name=&quot;customer&quot; type=&quot;custinfo&quot; block=&quot;substitution&quot;/&gt;
+&lt;xs:element name=&quot;kunde&quot; substitutionGroup=&quot;customer&quot;/&gt;</pre>
+
+<p>合法的 XML 文档应该类似这样（根据上面的 schema）：
+</p>
+
+<pre class="language-xml">
+&lt;customer&gt;
+  &lt;name&gt;John Smith&lt;/name&gt;
+&lt;/customer&gt;</pre>
+
+<p>但是下面的文档不再合法：</p>
+
+<pre class="language-xml">
+&lt;kunde&gt;
+  &lt;navn&gt;John Smith&lt;/navn&gt;
+&lt;/kunde&gt;
+</pre>
+</div>
+
+
+
+<div>
+<h2>使用 substitutionGroup</h2>
+
+<p>可替换元素的类型必须和主元素相同，或者从主元素衍生而来。假如可替换元素的类型与主元素的类型相同，那么您就不必规定可替换元素的类型了。</p>
+
+<p>请注意，substitutionGroup 中的所有元素（主元素和可替换元素）必须被声明为全局元素，否则就无法工作！</p>
+</div>
+
+
+
+<div>
+<h2>什么是全局元素（Global Elements）？</h2>
+
+<p>全局元素指 &quot;schema&quot; 元素的直接子元素！本地元素（Local elements）指嵌套在其他元素中的元素。</p>
+</div>
+
+
+
+<div class="prenextnav">
+<ul class="prenext">
+<li class="pre"><a href="schema_complex_anyattribute.asp.htm" tppabs="https://www.w3school.com.cn/schema/schema_complex_anyattribute.asp" title="XSD &lt;anyAttribute&gt; 元素">XSD &lt;anyAttribute&gt;</a></li>
+<li class="next"><a href="schema_example.asp.htm" tppabs="https://www.w3school.com.cn/schema/schema_example.asp" title="一个 XSD 实例">XSD 实例</a></li>
+</ul>
+</div><div style="background-color:#fcfdf8; padding:0;">
+<script async src="../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" tppabs="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- W3School ���Ĺ�� -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:800px;height:250px"
+     data-ad-client="ca-pub-3381531532877742"
+     data-ad-slot="2086924285"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+</div>
+<!-- maincontent end -->
+
+<div id="sidebar">
+
+<div id="tools">
+<h5 id="tools_reference"><a href="javascript:if(confirm('https://www.w3school.com.cn/schema/js_typeof.asp  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ������, �����������, ����Ŀ����ֹͣ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.w3school.com.cn/schema/js_typeof.asp'" tppabs="https://www.w3school.com.cn/schema/schema_elements_ref.asp">XML Schema 参考手册</a></h5>
+</div>
+
+<div id="sidebar_zzs">
+
+<div id="sbtg">
+<script async src="../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" tppabs="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- W3School 侧栏广告位 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-3381531532877742"
+     data-ad-slot="6744370501"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+</div>
+
+</div>
+
+<div id="footer">
+<p id="p1">
+W3School 简体中文版提供的内容仅用于培训和测试，不保证内容的正确性。通过使用本站内容随之而来的风险与本站无关。版权所有，保留一切权利。
+</p>
+
+<p id="p2">
+<a href="../about/index.asp.htm" tppabs="https://www.w3school.com.cn/about/index.asp" title="关于 W3School">关于 W3School</a>
+<a href="../about/about_helping.asp.htm" tppabs="https://www.w3school.com.cn/about/about_helping.asp" title="帮助 W3School">帮助 W3School</a>
+<a href="../about/about_use.asp.htm" tppabs="https://www.w3school.com.cn/about/about_use.asp" title="关于使用">使用条款</a>
+<a href="../about/about_privacy.asp.htm" tppabs="https://www.w3school.com.cn/about/about_privacy.asp" title="关于隐私">隐私条款</a>
+<a target="_blank" href="javascript:if(confirm('https://www.ykinvestment.com/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.ykinvestment.com/'" tppabs="https://www.ykinvestment.com/">技术支持：赢科</a>
+<a target="_blank" href="javascript:if(confirm('http://www.beian.miit.gov.cn/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://www.beian.miit.gov.cn/'" tppabs="http://www.beian.miit.gov.cn/">蒙ICP备06004630号</a>
+</p>
+</div>
+
+
+</div>
+<!-- wrapper end -->
+
+</body>
+
+</html>

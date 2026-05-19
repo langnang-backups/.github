@@ -1,0 +1,1035 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="../../www.googletagmanager.com/gtag/js-id=UA-878633-1" tppabs="https://www.googletagmanager.com/gtag/js?id=UA-878633-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-878633-1');
+</script>
+
+<meta charset=utf-8"utf-8">
+<meta name="robots" content="all" />
+<meta name="author" content="w3school.com.cn" />
+
+<link rel="stylesheet" type="text/css" href="../c.css" tppabs="https://www.w3school.com.cn/c.css" />
+
+<script src="../lib/cc/prism2.js" tppabs="https://www.w3school.com.cn/lib/cc/prism2.js"></script>
+<link rel='stylesheet' href="../lib/cc/prism.css" tppabs="https://www.w3school.com.cn/lib/cc/prism.css">
+
+<link rel="icon" type="image/png" sizes="16x16" href="/ui2019/logo-16-red.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/ui2019/logo-32-red.png">
+<link rel="icon" type="image/png" sizes="48x48" href="/ui2019/logo-48-red.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/ui2019/logo-96-red.png">
+<link rel="apple-touch-icon-precomposed" sizes="180x180" href="/ui2019/logo-180.png">
+
+
+<title>CSS filter 属性</title>
+
+</head>
+
+<body class="html">
+
+<div id="wrapper">
+
+<div id="header">
+<a id="logo" href="../index.html" tppabs="https://www.w3school.com.cn/index.html" title="w3school 在线教程" style="float:left;">w3school 在线教程</a>
+<div id="header_gg">
+<script async src="../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" tppabs="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- W3 页眉 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-3381531532877742"
+     data-ad-slot="7423315034"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+
+<div id="navfirst">
+<ul id="menu">
+<li id="h"><a href="../h.asp.htm" tppabs="https://www.w3school.com.cn/h.asp" title="HTML 系列教程">HTML 系列教程</a></li>
+<li id="b"><a href="../b.asp.htm" tppabs="https://www.w3school.com.cn/b.asp" title="浏览器脚本教程">浏览器脚本</a></li>
+<li id="s"><a href="../s.asp.htm" tppabs="https://www.w3school.com.cn/s.asp" title="服务器脚本教程">服务器脚本</a></li>
+<li id="p"><a href="../p.asp.htm" tppabs="https://www.w3school.com.cn/p.asp" title="编程教程">编程教程</a></li>
+<li id="x"><a href="../x.asp.htm" tppabs="https://www.w3school.com.cn/x.asp" title="XML 系列教程">XML 系列教程</a></li>
+<li id="w"><a href="../w.asp.htm" tppabs="https://www.w3school.com.cn/w.asp" title="建站手册">建站手册</a></li>
+<li id="r"><a href="../r.asp.htm" tppabs="https://www.w3school.com.cn/r.asp" title="参考手册">参考手册</a></li>
+</ul>
+</div>
+
+<div id="navsecond">
+
+<div id="course"><h2>CSS 参考手册</h2>
+<ul>
+<li><a href="index.asp.htm" tppabs="https://www.w3school.com.cn/cssref/index.asp" title="CSS 参考手册">CSS 参考手册</a></li>
+<li><a href="css_browsersupport.asp.htm" tppabs="https://www.w3school.com.cn/cssref/css_browsersupport.asp" title="CSS 浏览器支持参考手册">CSS 浏览器支持</a></li>
+<li><a href="css_selectors.asp.htm" tppabs="https://www.w3school.com.cn/cssref/css_selectors.asp" title="CSS 选择器参考手册">CSS 选择器</a></li>
+<li><a href="css_ref_combinators.asp.htm" tppabs="https://www.w3school.com.cn/cssref/css_ref_combinators.asp" title="CSS 组合器参考手册">CSS 组合器</a></li>
+<li><a href="css_ref_pseudo_classes.asp.htm" tppabs="https://www.w3school.com.cn/cssref/css_ref_pseudo_classes.asp" title="CSS 伪类参考手册">CSS 伪类</a></li>
+<li><a href="css_ref_pseudo_elements.asp.htm" tppabs="https://www.w3school.com.cn/cssref/css_ref_pseudo_elements.asp" title="CSS 伪元素参考手册">CSS 伪元素</a></li>
+<li><a href="css_functions.asp.htm" tppabs="https://www.w3school.com.cn/cssref/css_functions.asp" title="CSS 函数参考手册">CSS 函数</a></li>
+<li><a href="css_animatable.asp.htm" tppabs="https://www.w3school.com.cn/cssref/css_animatable.asp" title="CSS 动画相关属性">CSS 动画相关属性</a></li>
+<li><a href="css_websafe_fonts.asp.htm" tppabs="https://www.w3school.com.cn/cssref/css_websafe_fonts.asp" title="CSS 网络安全字体">CSS 网络安全字体</a></li>
+<li><a href="css_fonts_fallbacks.asp.htm" tppabs="https://www.w3school.com.cn/cssref/css_fonts_fallbacks.asp" title="CSS 字体回退">CSS 字体回退</a></li>
+<li><a href="css_units.asp.htm" tppabs="https://www.w3school.com.cn/cssref/css_units.asp" title="CSS 单位">CSS 单位</a></li>
+<li><a href="css_colors.asp.htm" tppabs="https://www.w3school.com.cn/cssref/css_colors.asp" title="CSS 颜色">CSS 颜色</a></li>
+<li><a href="css_colors_legal.asp.htm" tppabs="https://www.w3school.com.cn/cssref/css_colors_legal.asp" title="CSS 颜色值">CSS 颜色值</a></li>
+<li><a href="css_default_values.asp.htm" tppabs="https://www.w3school.com.cn/cssref/css_default_values.asp" title="CSS 默认值">CSS 默认值</a></li>
+<li><a href="css_entities.asp.htm" tppabs="https://www.w3school.com.cn/cssref/css_entities.asp" title="CSS 实体">CSS 实体</a></li>
+<li><a href="css_ref_aural.asp.htm" tppabs="https://www.w3school.com.cn/cssref/css_ref_aural.asp" title="CSS 听觉参考手册">CSS 听觉</a></li>
+</ul>
+<h2>CSS 属性</h2>
+<ul>
+<li><a href="pr_accent-color.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_accent-color.asp" title="CSS accent-color 属性">accent-color</a></li>
+<li><a href="pr_align-content.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_align-content.asp" title="CSS align-content 属性">align-content</a></li>
+<li><a href="pr_align-items.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_align-items.asp" title="CSS align-items 属性">align-items</a></li>
+<li><a href="pr_align-self.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_align-self.asp" title="CSS align-self 属性">align-self</a></li>
+<li><a href="pr_all.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_all.asp" title="CSS all 属性">all</a></li>
+<li><a href="pr_animation.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_animation.asp" title="CSS animation 属性">animation</a></li>
+<li><a href="pr_animation-delay.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_animation-delay.asp" title="CSS animation-delay 属性">animation-delay</a></li>
+<li><a href="pr_animation-direction.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_animation-direction.asp" title="CSS animation-direction 属性">animation-direction</a></li>
+<li><a href="pr_animation-duration.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_animation-duration.asp" title="CSS animation-duration 属性">animation-duration</a></li>
+<li><a href="pr_animation-fill-mode.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_animation-fill-mode.asp" title="CSS animation-fill-mode 属性">animation-fill-mode</a></li>
+<li><a href="pr_animation-iteration-count.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_animation-iteration-count.asp" title="CSS animation-iteration-count 属性">animation-iteration-count</a></li>
+<li><a href="pr_animation-name.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_animation-name.asp" title="CSS animation-name 属性">animation-name</a></li>
+<li><a href="pr_animation-play-state.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_animation-play-state.asp" title="CSS animation-play-state 属性">animation-play-state</a></li>
+<li><a href="pr_animation-timing-function.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_animation-timing-function.asp" title="CSS animation-timing-function 属性">animation-timing-function</a></li>
+<li><a href="pr_aspect-ratio.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_aspect-ratio.asp" title="CSS aspect-ratio 属性">aspect-ratio</a></li>
+<li><a href="pr_backdrop-filter.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_backdrop-filter.asp" title="CSS backdrop-filter 属性">backdrop-filter</a></li>
+<li><a href="pr_backface-visibility.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_backface-visibility.asp" title="CSS backface-visibility 属性">backface-visibility</a></li>
+<li><a href="pr_background.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_background.asp" title="CSS background 属性">background</a></li>
+<li><a href="pr_background-attachment.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_background-attachment.asp" title="CSS background-attachment 属性">background-attachment</a></li>
+<li><a href="pr_background-blend-mode.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_background-blend-mode.asp" title="CSS background-blend-mode 属性">background-blend-mode</a></li>
+<li><a href="pr_background-clip.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_background-clip.asp" title="CSS background-clip 属性">background-clip</a></li>
+<li><a href="pr_background-color.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_background-color.asp" title="CSS background-color 属性">background-color</a></li>
+<li><a href="pr_background-image.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_background-image.asp" title="CSS background-image 属性">background-image</a></li>
+<li><a href="pr_background-origin.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_background-origin.asp" title="CSS background-origin 属性">background-origin</a></li>
+<li><a href="pr_background-position.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_background-position.asp" title="CSS background-position 属性">background-position</a></li>
+<li><a href="pr_background-position-x.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_background-position-x.asp" title="CSS background-position-x 属性">background-position-x</a></li>
+<li><a href="pr_background-position-y.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_background-position-y.asp" title="CSS background-position-y 属性">background-position-y</a></li>
+<li><a href="pr_background-repeat.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_background-repeat.asp" title="CSS background-repeat 属性">background-repeat</a></li>
+<li><a href="pr_background-size.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_background-size.asp" title="CSS background-size 属性">background-size</a></li>
+<li><a href="pr_block-size.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_block-size.asp" title="CSS block-size 属性">block-size</a></li>
+<li><a href="pr_border.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_border.asp" title="CSS border 属性">border</a></li>
+<li><a href="pr_border-block.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_border-block.asp" title="CSS border-block 属性">border-block</a></li>
+<li><a href="pr_border-block-color.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_border-block-color.asp" title="CSS border-block-color 属性">border-block-color</a></li>
+<li><a href="pr_border-block-end.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_border-block-end.asp" title="CSS border-block-end 属性">border-block-end</a></li>
+<li><a href="pr_border-block-end-color.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_border-block-end-color.asp" title="CSS border-block-end-color 属性">border-block-end-color</a></li>
+<li><a href="pr_border-block-end-style.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_border-block-end-style.asp" title="CSS border-block-end-style 属性">border-block-end-style</a></li>
+<li><a href="pr_border-block-end-width.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_border-block-end-width.asp" title="CSS border-block-end-width 属性">border-block-end-width</a></li>
+<li><a href="pr_border-block-start.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_border-block-start.asp" title="CSS border-block-start 属性">border-block-start</a></li>
+<li><a href="pr_border-block-start-color.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_border-block-start-color.asp" title="CSS border-block-start-color 属性">border-block-start-color</a></li>
+<li><a href="pr_border-block-start-style.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_border-block-start-style.asp" title="CSS border-block-start-style 属性">border-block-start-style</a></li>
+<li><a href="pr_border-block-start-width.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_border-block-start-width.asp" title="CSS border-block-start-width 属性">border-block-start-width</a></li>
+<li><a href="pr_border-block-style.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_border-block-style.asp" title="CSS border-block-style 属性">border-block-style</a></li>
+<li><a href="pr_border-block-width.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_border-block-width.asp" title="CSS border-block-width 属性">border-block-width</a></li>
+<li><a href="pr_border-bottom.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_border-bottom.asp" title="CSS border-bottom 属性">border-bottom</a></li>
+<li><a href="pr_border-bottom-color.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_border-bottom-color.asp" title="CSS border-bottom-color 属性">border-bottom-color</a></li>
+<li><a href="pr_border-bottom-left-radius.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_border-bottom-left-radius.asp" title="CSS border-bottom-left-radius 属性">border-bottom-left-radius</a></li>
+<li><a href="pr_border-bottom-right-radius.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_border-bottom-right-radius.asp" title="CSS border-bottom-right-radius 属性">border-bottom-right-radius</a></li>
+<li><a href="pr_border-bottom-style.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_border-bottom-style.asp" title="CSS border-bottom-style 属性">border-bottom-style</a></li>
+<li><a href="pr_border-bottom-width.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_border-bottom-width.asp" title="CSS border-bottom-width 属性">border-bottom-width</a></li>
+<li><a href="pr_border-collapse.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_border-collapse.asp" title="CSS border-collapse 属性">border-collapse</a></li>
+<li><a href="pr_border-color.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_border-color.asp" title="CSS border-color 属性">border-color</a></li>
+<li><a href="pr_border-end-end-radius.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_border-end-end-radius.asp" title="CSS border-end-end-radius 属性">border-end-end-radius</a></li>
+<li><a href="pr_border-end-start-radius.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_border-end-start-radius.asp" title="CSS border-end-start-radius 属性">border-end-start-radius</a></li>
+<li><a href="pr_border-image.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_border-image.asp" title="CSS border-image 属性">border-image</a></li>
+<li><a href="pr_border-image-outset.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_border-image-outset.asp" title="CSS border-image-outset 属性">border-image-outset</a></li>
+<li><a href="pr_border-image-repeat.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_border-image-repeat.asp" title="CSS border-image-repeat 属性">border-image-repeat</a></li>
+<li><a href="pr_border-image-slice.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_border-image-slice.asp" title="CSS border-image-slice 属性">border-image-slice</a></li>
+<li><a href="pr_border-image-source.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_border-image-source.asp" title="CSS border-image-source 属性">border-image-source</a></li>
+<li><a href="pr_border-image-width.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_border-image-width.asp" title="CSS border-image-width 属性">border-image-width</a></li>
+<li><a href="pr_border-inline.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_border-inline.asp" title="CSS border-inline 属性">border-inline</a></li>
+<li><a href="pr_border-inline-color.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_border-inline-color.asp" title="CSS border-inline-color 属性">border-inline-color</a></li>
+<li><a href="pr_border-inline-end.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_border-inline-end.asp" title="CSS border-inline-end 属性">border-inline-end</a></li>
+<li><a href="pr_border-inline-end-color.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_border-inline-end-color.asp" title="CSS border-inline-end-color 属性">border-inline-end-color</a></li>
+<li><a href="pr_border-inline-end-style.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_border-inline-end-style.asp" title="CSS border-inline-end-style 属性">border-inline-end-style</a></li>
+<li><a href="pr_border-inline-end-width.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_border-inline-end-width.asp" title="CSS border-inline-end-width 属性">border-inline-end-width</a></li>
+<li><a href="pr_border-inline-start.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_border-inline-start.asp" title="CSS border-inline-start 属性">border-inline-start</a></li>
+<li><a href="pr_border-inline-start-color.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_border-inline-start-color.asp" title="CSS border-inline-start-color 属性">border-inline-start-color</a></li>
+<li><a href="pr_border-inline-start-style.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_border-inline-start-style.asp" title="CSS border-inline-start-style 属性">border-inline-start-style</a></li>
+<li><a href="pr_border-inline-start-width.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_border-inline-start-width.asp" title="CSS border-inline-start-width 属性">border-inline-start-width</a></li>
+<li><a href="pr_border-inline-style.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_border-inline-style.asp" title="CSS border-inline-style 属性">border-inline-style</a></li>
+<li><a href="pr_border-inline-width.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_border-inline-width.asp" title="CSS border-inline-width 属性">border-inline-width</a></li>
+<li><a href="pr_border-left.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_border-left.asp" title="CSS border-left 属性">border-left</a></li>
+<li><a href="pr_border-left-color.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_border-left-color.asp" title="CSS border-left-color 属性">border-left-color</a></li>
+<li><a href="pr_border-left-style.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_border-left-style.asp" title="CSS border-left-style 属性">border-left-style</a></li>
+<li><a href="pr_border-left-width.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_border-left-width.asp" title="CSS border-left-width 属性">border-left-width</a></li>
+<li><a href="pr_border-radius.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_border-radius.asp" title="CSS border-radius 属性">border-radius</a></li>
+<li><a href="pr_border-right.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_border-right.asp" title="CSS border-right 属性">border-right</a></li>
+<li><a href="pr_border-right-color.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_border-right-color.asp" title="CSS border-right-color 属性">border-right-color</a></li>
+<li><a href="pr_border-right-style.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_border-right-style.asp" title="CSS border-right-style 属性">border-right-style</a></li>
+<li><a href="pr_border-right-width.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_border-right-width.asp" title="CSS border-right-width 属性">border-right-width</a></li>
+<li><a href="pr_border-spacing.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_border-spacing.asp" title="CSS border-spacing 属性">border-spacing</a></li>
+<li><a href="pr_border-start-end-radius.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_border-start-end-radius.asp" title="CSS border-start-end-radius 属性">border-start-end-radius</a></li>
+<li><a href="pr_border-start-start-radius.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_border-start-start-radius.asp" title="CSS border-start-start-radius 属性">border-start-start-radius</a></li>
+<li><a href="pr_border-style.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_border-style.asp" title="CSS border-style 属性">border-style</a></li>
+<li><a href="pr_border-top.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_border-top.asp" title="CSS border-top 属性">border-top</a></li>
+<li><a href="pr_border-top-color.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_border-top-color.asp" title="CSS border-top-color 属性">border-top-color</a></li>
+<li><a href="pr_border-top-left-radius.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_border-top-left-radius.asp" title="CSS border-top-left-radius 属性">border-top-left-radius</a></li>
+<li><a href="pr_border-top-right-radius.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_border-top-right-radius.asp" title="CSS border-top-right-radius 属性">border-top-right-radius</a></li>
+<li><a href="pr_border-top-style.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_border-top-style.asp" title="CSS border-top-style 属性">border-top-style</a></li>
+<li><a href="pr_border-top-width.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_border-top-width.asp" title="CSS border-top-width 属性">border-top-width</a></li>
+<li><a href="pr_border-width.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_border-width.asp" title="CSS border-width 属性">border-width</a></li>
+<li><a href="pr_pos_bottom.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_pos_bottom.asp" title="CSS bottom 属性">bottom</a></li>
+<li><a href="pr_box-decoration-break.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_box-decoration-break.asp" title="CSS box-decoration-break 属性">box-decoration-break</a></li>
+<li><a href="pr_box-reflect.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_box-reflect.asp" title="CSS box-reflect 属性">box-reflect</a></li>
+<li><a href="pr_box-shadow.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_box-shadow.asp" title="CSS box-shadow 属性">box-shadow</a></li>
+<li><a href="pr_box-sizing.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_box-sizing.asp" title="CSS box-sizing 属性">box-sizing</a></li>
+<li><a href="pr_break-after.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_break-after.asp" title="CSS break-after 属性">break-after</a></li>
+<li><a href="pr_break-before.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_break-before.asp" title="CSS break-before 属性">break-before</a></li>
+<li><a href="pr_break-inside.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_break-inside.asp" title="CSS break-inside 属性">break-inside</a></li>
+<li><a href="pr_tab_caption-side.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_tab_caption-side.asp" title="CSS caption-side 属性">caption-side</a></li>
+<li><a href="pr_caret-color.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_caret-color.asp" title="CSS caret-color 属性">caret-color</a></li>
+<li><a href="pr_charset_rule.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_charset_rule.asp" title="CSS @charset 属性">@charset</a></li>
+<li><a href="pr_class_clear.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_class_clear.asp" title="CSS clear 属性">clear</a></li>
+<li><a href="pr_pos_clip.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_pos_clip.asp" title="CSS clip 属性">clip</a></li>
+<li><a href="pr_clip-path.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_clip-path.asp" title="CSS clip-path 属性">clip-path</a></li>
+<li><a href="pr_text_color.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_text_color.asp" title="CSS color 属性">color</a></li>
+<li><a href="pr_color-scheme.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_color-scheme.asp" title="CSS color-scheme 属性">color-scheme</a></li>
+<li><a href="pr_column-count.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_column-count.asp" title="CSS column-count 属性">column-count</a></li>
+<li><a href="pr_column-fill.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_column-fill.asp" title="CSS column-fill 属性">column-fill</a></li>
+<li><a href="pr_column-gap.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_column-gap.asp" title="CSS column-gap 属性">column-gap</a></li>
+<li><a href="pr_column-rule.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_column-rule.asp" title="CSS column-rule 属性">column-rule</a></li>
+<li><a href="pr_column-rule-color.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_column-rule-color.asp" title="CSS column-rule-color 属性">column-rule-color</a></li>
+<li><a href="pr_column-rule-style.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_column-rule-style.asp" title="CSS column-rule-style 属性">column-rule-style</a></li>
+<li><a href="pr_column-rule-width.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_column-rule-width.asp" title="CSS column-rule-width 属性">column-rule-width</a></li>
+<li><a href="pr_column-span.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_column-span.asp" title="CSS column-span 属性">column-span</a></li>
+<li><a href="pr_column-width.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_column-width.asp" title="CSS column-width 属性">column-width</a></li>
+<li><a href="pr_columns.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_columns.asp" title="CSS columns 属性">columns</a></li>
+<li><a href="atrule_container.asp.htm" tppabs="https://www.w3school.com.cn/cssref/atrule_container.asp" title="CSS @container 规则">@container</a></li>
+<li><a href="pr_gen_content.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_gen_content.asp" title="CSS content 属性">content</a></li>
+<li><a href="pr_gen_counter-increment.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_gen_counter-increment.asp" title="CSS counter-increment 属性">counter-increment</a></li>
+<li><a href="pr_gen_counter-reset.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_gen_counter-reset.asp" title="CSS counter-reset 属性">counter-reset</a></li>
+<li><a href="pr_gen_counter-set.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_gen_counter-set.asp" title="CSS counter-set 属性">counter-set</a></li>
+<li><a href="atrule_counter-style.asp.htm" tppabs="https://www.w3school.com.cn/cssref/atrule_counter-style.asp" title="CSS @counter-style Rule">@counter-style</a></li>
+<li><a href="pr_class_cursor.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_class_cursor.asp" title="CSS cursor 属性">cursor</a></li>
+<li><a href="pr_text_direction.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_text_direction.asp" title="CSS direction 属性">direction</a></li>
+<li><a href="pr_class_display.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_class_display.asp" title="CSS display 属性">display</a></li>
+<li><a href="pr_tab_empty-cells.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_tab_empty-cells.asp" title="CSS empty-cells 属性">empty-cells</a></li>
+<li class="currentLink"><a href="pr_filter.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_filter.asp" title="CSS filter 属性">filter</a></li>
+<li><a href="pr_flex.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_flex.asp" title="CSS flex 属性">flex</a></li>
+<li><a href="pr_flex-basis.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_flex-basis.asp" title="CSS flex-basis 属性">flex-basis</a></li>
+<li><a href="pr_flex-direction.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_flex-direction.asp" title="CSS flex-direction 属性">flex-direction</a></li>
+<li><a href="pr_flex-flow.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_flex-flow.asp" title="CSS flex-flow 属性">flex-flow</a></li>
+<li><a href="pr_flex-grow.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_flex-grow.asp" title="CSS flex-grow 属性">flex-grow</a></li>
+<li><a href="pr_flex-shrink.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_flex-shrink.asp" title="CSS flex-shrink 属性">flex-shrink</a></li>
+<li><a href="pr_flex-wrap.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_flex-wrap.asp" title="CSS flex-wrap 属性">flex-wrap</a></li>
+<li><a href="pr_class_float.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_class_float.asp" title="CSS float 属性">float</a></li>
+<li><a href="pr_font_font.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_font_font.asp" title="CSS font 属性">font</a></li>
+<li><a href="atrule_font-face.asp.htm" tppabs="https://www.w3school.com.cn/cssref/atrule_font-face.asp" title="CSS @font-face 属性">@font-face</a></li>
+<li><a href="pr_font_font-family.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_font_font-family.asp" title="CSS font-family 属性">font-family</a></li>
+<li><a href="pr_font-feature-settings.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_font-feature-settings.asp" title="CSS font-feature-settings 属性">font-feature-settings</a></li>
+<li><a href="pr_font-kerning.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_font-kerning.asp" title="CSS font-kerning 属性">font-kerning</a></li>
+<li><a href="atrule_font-palette-values.asp.htm" tppabs="https://www.w3school.com.cn/cssref/atrule_font-palette-values.asp" title="CSS @font-palette-values 规则">@font-palette-values</a></li>
+<li><a href="pr_font_font-size.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_font_font-size.asp" title="CSS font-size 属性">font-size</a></li>
+<li><a href="pr_font-size-adjust.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_font-size-adjust.asp" title="CSS font-size-adjust 属性">font-size-adjust</a></li>
+<li><a href="pr_font-stretch.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_font-stretch.asp" title="CSS font-stretch 属性">font-stretch</a></li>
+<li><a href="pr_font_font-style.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_font_font-style.asp" title="CSS font-style 属性">font-style</a></li>
+<li><a href="pr_font_font-variant.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_font_font-variant.asp" title="CSS font-variant 属性">font-variant</a></li>
+<li><a href="pr_font-variant-caps.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_font-variant-caps.asp" title="CSS font-variant-caps 属性">font-variant-caps</a></li>
+<li><a href="pr_font-weight.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_font-weight.asp" title="CSS font-weight 属性">font-weight</a></li>
+<li><a href="pr_gap.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_gap.asp" title="CSS gap 属性">gap</a></li>
+<li><a href="pr_grid.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_grid.asp" title="CSS grid 属性">grid</a></li>
+<li><a href="pr_grid-area.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_grid-area.asp" title="CSS grid-area 属性">grid-area</a></li>
+<li><a href="pr_grid-auto-columns.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_grid-auto-columns.asp" title="CSS grid-auto-columns 属性">grid-auto-columns</a></li>
+<li><a href="pr_grid-auto-flow.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_grid-auto-flow.asp" title="CSS grid-auto-flow 属性">grid-auto-flow</a></li>
+<li><a href="pr_grid-auto-rows.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_grid-auto-rows.asp" title="CSS grid-auto-rows 属性">grid-auto-rows</a></li>
+<li><a href="pr_grid-column.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_grid-column.asp" title="CSS grid-column 属性">grid-column</a></li>
+<li><a href="pr_grid-column-end.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_grid-column-end.asp" title="CSS grid-column-end 属性">grid-column-end</a></li>
+<li><a href="pr_grid-column-gap.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_grid-column-gap.asp" title="CSS grid-column-gap 属性">grid-column-gap</a></li>
+<li><a href="pr_grid-column-start.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_grid-column-start.asp" title="CSS grid-column-start 属性">grid-column-start</a></li>
+<li><a href="pr_grid-gap.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_grid-gap.asp" title="CSS grid-gap 属性">grid-gap</a></li>
+<li><a href="pr_grid-row.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_grid-row.asp" title="CSS grid-row 属性">grid-row</a></li>
+<li><a href="pr_grid-row-end.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_grid-row-end.asp" title="CSS grid-row-end 属性">grid-row-end</a></li>
+<li><a href="pr_grid-row-gap.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_grid-row-gap.asp" title="CSS grid-row-gap 属性">grid-row-gap</a></li>
+<li><a href="pr_grid-row-start.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_grid-row-start.asp" title="CSS grid-row-start 属性">grid-row-start</a></li>
+<li><a href="pr_grid-template.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_grid-template.asp" title="CSS grid-template 属性">grid-template</a></li>
+<li><a href="pr_grid-template-areas.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_grid-template-areas.asp" title="CSS grid-template-areas 属性">grid-template-areas</a></li>
+<li><a href="pr_grid-template-columns.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_grid-template-columns.asp" title="CSS grid-template-columns 属性">grid-template-columns</a></li>
+<li><a href="pr_grid-template-rows.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_grid-template-rows.asp" title="CSS grid-template-rows 属性">grid-template-rows</a></li>
+<li><a href="pr_hanging-punctuation.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_hanging-punctuation.asp" title="CSS hanging-punctuation 属性">hanging-punctuation</a></li>
+<li><a href="pr_dim_height.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_dim_height.asp" title="CSS height 属性">height</a></li>
+<li><a href="pr_hyphens.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_hyphens.asp" title="CSS hyphens 属性">hyphens</a></li>
+<li><a href="pr_hyphenate-character.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_hyphenate-character.asp" title="CSS hyphenate-character 属性">hyphenate-character</a></li>
+<li><a href="pr_image-rendering.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_image-rendering.asp" title="CSS image-rendering 属性">image-rendering</a></li>
+<li><a href="atrule_import.asp.htm" tppabs="https://www.w3school.com.cn/cssref/atrule_import.asp" title="CSS @import 属性">@import</a></li>
+<li><a href="pr_initial-letter.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_initial-letter.asp" title="CSS initial-letter 属性">initial-letter</a></li>
+<li><a href="pr_inline-size.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_inline-size.asp" title="CSS inline-size 属性">inline-size</a></li>
+<li><a href="pr_inset.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_inset.asp" title="CSS inset 属性">inset</a></li>
+<li><a href="pr_inset-block.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_inset-block.asp" title="CSS inset-block 属性">inset-block</a></li>
+<li><a href="pr_inset-block-end.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_inset-block-end.asp" title="CSS inset-block-end 属性">inset-block-end</a></li>
+<li><a href="pr_inset-block-start.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_inset-block-start.asp" title="CSS inset-block-start 属性">inset-block-start</a></li>
+<li><a href="pr_inset-inline.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_inset-inline.asp" title="CSS inset-inline 属性">inset-inline</a></li>
+<li><a href="pr_inset-inline-end.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_inset-inline-end.asp" title="CSS inset-inline-end 属性">inset-inline-end</a></li>
+<li><a href="pr_inset-inline-start.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_inset-inline-start.asp" title="CSS inset-inline-start 属性">inset-inline-start</a></li>
+<li><a href="pr_isolation.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_isolation.asp" title="CSS isolation 属性">isolation</a></li>
+<li><a href="pr_justify-content.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_justify-content.asp" title="CSS justify-content 属性">justify-content</a></li>
+<li><a href="pr_justify-items.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_justify-items.asp" title="CSS justify-items 属性">justify-items</a></li>
+<li><a href="pr_justify-self.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_justify-self.asp" title="CSS justify-self 属性">justify-self</a></li>
+<li><a href="pr_keyframes.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_keyframes.asp" title="CSS @keyframes 规则">@keyframes</a></li>
+<li><a href="atrule_layer.asp.htm" tppabs="https://www.w3school.com.cn/cssref/atrule_layer.asp" title="CSS @layer 规则">@layer</a></li>
+<li><a href="pr_pos_left.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_pos_left.asp" title="CSS left 属性">left</a></li>
+<li><a href="pr_text_letter-spacing.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_text_letter-spacing.asp" title="CSS letter-spacing 属性">letter-spacing</a></li>
+<li><a href="pr_dim_line-height.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_dim_line-height.asp" title="CSS line-height 属性">line-height</a></li>
+<li><a href="pr_list-style.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_list-style.asp" title="CSS list-style 属性">list-style</a></li>
+<li><a href="pr_list-style-image.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_list-style-image.asp" title="CSS list-style-image 属性">list-style-image</a></li>
+<li><a href="pr_list-style-position.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_list-style-position.asp" title="CSS list-style-position 属性">list-style-position</a></li>
+<li><a href="pr_list-style-type.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_list-style-type.asp" title="CSS list-style-type 属性">list-style-type</a></li>
+<li><a href="pr_margin.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_margin.asp" title="CSS margin 属性">margin</a></li>
+<li><a href="pr_margin-block.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_margin-block.asp" title="CSS margin-block 属性">margin-block</a></li>
+<li><a href="pr_margin-block-end.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_margin-block-end.asp" title="CSS margin-block-end 属性">margin-block-end</a></li>
+<li><a href="pr_margin-block-start.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_margin-block-start.asp" title="CSS margin-block-start 属性">margin-block-start</a></li>
+<li><a href="pr_margin-bottom.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_margin-bottom.asp" title="CSS margin-bottom 属性">margin-bottom</a></li>
+<li><a href="pr_margin-inline.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_margin-inline.asp" title="CSS margin-inline 属性">margin-inline</a></li>
+<li><a href="pr_margin-inline-end.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_margin-inline-end.asp" title="CSS margin-inline-end 属性">margin-inline-end</a></li>
+<li><a href="pr_margin-inline-start.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_margin-inline-start.asp" title="CSS margin-inline-start 属性">margin-inline-start</a></li>
+<li><a href="pr_margin-left.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_margin-left.asp" title="CSS margin-left 属性">margin-left</a></li>
+<li><a href="pr_margin-right.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_margin-right.asp" title="CSS margin-right 属性">margin-right</a></li>
+<li><a href="pr_margin-top.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_margin-top.asp" title="CSS margin-top 属性">margin-top</a></li>
+<li><a href="pr_marker.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_marker.asp" title="CSS marker 属性">marker</a></li>
+<li><a href="pr_marker-end.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_marker-end.asp" title="CSS marker-end 属性">marker-end</a></li>
+<li><a href="pr_marker-mid.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_marker-mid.asp" title="CSS marker-mid 属性">marker-mid</a></li>
+<li><a href="pr_marker-start.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_marker-start.asp" title="CSS marker-start 属性">marker-start</a></li>
+<li><a href="pr_mask.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_mask.asp" title="CSS mask 属性">mask</a></li>
+<li><a href="pr_mask-clip.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_mask-clip.asp" title="CSS mask-clip 属性">mask-clip</a></li>
+<li><a href="pr_mask-composite.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_mask-composite.asp" title="CSS mask-composite 属性">mask-composite</a></li>
+<li><a href="pr_mask-image.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_mask-image.asp" title="CSS mask-image 属性">mask-image</a></li>
+<li><a href="pr_mask-mode.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_mask-mode.asp" title="CSS mask-mode 属性">mask-mode</a></li>
+<li><a href="pr_mask-origin.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_mask-origin.asp" title="CSS mask-origin 属性">mask-origin</a></li>
+<li><a href="pr_mask-position.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_mask-position.asp" title="CSS mask-position 属性">mask-position</a></li>
+<li><a href="pr_mask-repeat.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_mask-repeat.asp" title="CSS mask-repeat 属性">mask-repeat</a></li>
+<li><a href="pr_mask-size.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_mask-size.asp" title="CSS mask-size 属性">mask-size</a></li>
+<li><a href="pr_mask-type.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_mask-type.asp" title="CSS mask-type 属性">mask-type</a></li>
+<li><a href="pr_max-block-size.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_max-block-size.asp" title="CSS max-block-size 属性">max-block-size</a></li>
+<li><a href="pr_dim_max-height.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_dim_max-height.asp" title="CSS max-height 属性">max-height</a></li>
+<li><a href="pr_max-inline-size.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_max-inline-size.asp" title="CSS max-inline-size 属性">max-inline-size</a></li>
+<li><a href="pr_dim_max-width.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_dim_max-width.asp" title="CSS max-width 属性">max-width</a></li>
+<li><a href="pr_mediaquery.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_mediaquery.asp" title="CSS @media 属性">@media</a></li>
+<li><a href="pr_min-block-size.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_min-block-size.asp" title="CSS min-block-size 属性">min-block-size</a></li>
+<li><a href="pr_min-inline-size.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_min-inline-size.asp" title="CSS min-inline-size 属性">min-inline-size</a></li>
+<li><a href="pr_dim_min-height.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_dim_min-height.asp" title="CSS min-height 属性">min-height</a></li>
+<li><a href="pr_dim_min-width.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_dim_min-width.asp" title="CSS min-width 属性">min-width</a></li>
+<li><a href="pr_mix-blend-mode.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_mix-blend-mode.asp" title="CSS mix-blend-mode 属性">mix-blend-mode</a></li>
+<li><a href="atrule_namespace.asp.htm" tppabs="https://www.w3school.com.cn/cssref/atrule_namespace.asp" title="CSS @namespace 规则">@namespace</a></li>
+<li><a href="pr_object-fit.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_object-fit.asp" title="CSS object-fit 属性">object-fit</a></li>
+<li><a href="pr_object-position.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_object-position.asp" title="CSS object-position 属性">object-position</a></li>
+<li><a href="pr_offset.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_offset.asp" title="CSS offset 属性">offset</a></li>
+<li><a href="pr_offset-anchor.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_offset-anchor.asp" title="CSS offset-anchor 属性">offset-anchor</a></li>
+<li><a href="pr_offset-distance.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_offset-distance.asp" title="CSS offset-distance 属性">offset-distance</a></li>
+<li><a href="pr_offset-path.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_offset-path.asp" title="CSS offset-path 属性">offset-path</a></li>
+<li><a href="pr_offset-position.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_offset-position.asp" title="CSS offset-position 属性">offset-position</a></li>
+<li><a href="pr_offset-rotate.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_offset-rotate.asp" title="CSS offset-rotate 属性">offset-rotate</a></li>
+<li><a href="pr_opacity.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_opacity.asp" title="CSS opacity 属性">opacity</a></li>
+<li><a href="pr_order.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_order.asp" title="CSS order 属性">order</a></li>
+<li><a href="pr_orphans.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_orphans.asp" title="CSS orphans 属性">orphans</a></li>
+<li><a href="pr_outline.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_outline.asp" title="CSS outline 属性">outline</a></li>
+<li><a href="pr_outline-color.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_outline-color.asp" title="CSS outline-color 属性">outline-color</a></li>
+<li><a href="pr_outline-offset.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_outline-offset.asp" title="CSS outline-offset 属性">outline-offset</a></li>
+<li><a href="pr_outline-style.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_outline-style.asp" title="CSS outline-style 属性">outline-style</a></li>
+<li><a href="pr_outline-width.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_outline-width.asp" title="CSS outline-width 属性">outline-width</a></li>
+<li><a href="pr_pos_overflow.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_pos_overflow.asp" title="CSS overflow 属性">overflow</a></li>
+<li><a href="pr_overflow-anchor.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_overflow-anchor.asp" title="CSS overflow-anchor 属性">overflow-anchor</a></li>
+<li><a href="pr_overflow-wrap.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_overflow-wrap.asp" title="CSS overflow-wrap 属性">overflow-wrap</a></li>
+<li><a href="pr_overflow-x.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_overflow-x.asp" title="CSS overflow-x 属性">overflow-x</a></li>
+<li><a href="pr_overflow-y.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_overflow-y.asp" title="CSS overflow-y 属性">overflow-y</a></li>
+<li><a href="pr_overscroll-behavior.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_overscroll-behavior.asp" title="CSS overscroll-behavior 属性">overscroll-behavior</a></li>
+<li><a href="pr_overscroll-behavior-block.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_overscroll-behavior-block.asp" title="CSS overscroll-behavior-block 属性">overscroll-behavior-block</a></li>
+<li><a href="pr_overscroll-behavior-inline.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_overscroll-behavior-inline.asp" title="CSS overscroll-behavior-inline 属性">overscroll-behavior-inline</a></li>
+<li><a href="pr_overscroll-behavior-x.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_overscroll-behavior-x.asp" title="CSS overscroll-behavior-x 属性">overscroll-behavior-x</a></li>
+<li><a href="pr_overscroll-behavior-y.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_overscroll-behavior-y.asp" title="CSS overscroll-behavior-y 属性">overscroll-behavior-y</a></li>
+<li><a href="pr_padding.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_padding.asp" title="CSS padding 属性">padding</a></li>
+<li><a href="pr_padding-block.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_padding-block.asp" title="CSS padding-block 属性">padding-block</a></li>
+<li><a href="pr_padding-block-end.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_padding-block-end.asp" title="CSS padding-block-end 属性">padding-block-end</a></li>
+<li><a href="pr_padding-block-start.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_padding-block-start.asp" title="CSS padding-block-start 属性">padding-block-start</a></li>
+<li><a href="pr_padding-bottom.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_padding-bottom.asp" title="CSS padding-bottom 属性">padding-bottom</a></li>
+<li><a href="pr_padding-inline.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_padding-inline.asp" title="CSS padding-inline 属性">padding-inline</a></li>
+<li><a href="pr_padding-inline-end.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_padding-inline-end.asp" title="CSS padding-inline-end 属性">padding-inline-end</a></li>
+<li><a href="pr_padding-inline-start.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_padding-inline-start.asp" title="CSS padding-inline-start 属性">padding-inline-start</a></li>
+<li><a href="pr_padding-left.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_padding-left.asp" title="CSS padding-left 属性">padding-left</a></li>
+<li><a href="pr_padding-right.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_padding-right.asp" title="CSS padding-right 属性">padding-right</a></li>
+<li><a href="pr_padding-top.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_padding-top.asp" title="CSS padding-top 属性">padding-top</a></li>
+<li><a href="atrule_page.asp.htm" tppabs="https://www.w3school.com.cn/cssref/atrule_page.asp" title="CSS @page 规则">@page</a></li>
+<li><a href="pr_page-break-after.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_page-break-after.asp" title="CSS page-break-after 属性">page-break-after</a></li>
+<li><a href="pr_page-break-before.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_page-break-before.asp" title="CSS page-break-before 属性">page-break-before</a></li>
+<li><a href="pr_page-break-inside.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_page-break-inside.asp" title="CSS page-break-inside 属性">page-break-inside</a></li>
+<li><a href="pr_paint-order.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_paint-order.asp" title="CSS paint-order 属性">paint-order</a></li>
+<li><a href="pr_perspective.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_perspective.asp" title="CSS perspective 属性">perspective</a></li>
+<li><a href="pr_perspective-origin.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_perspective-origin.asp" title="CSS perspective-origin 属性">perspective-origin</a></li>
+<li><a href="pr_place-content.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_place-content.asp" title="CSS place-content 属性">place-content</a></li>
+<li><a href="pr_place-items.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_place-items.asp" title="CSS place-items 属性">place-items</a></li>
+<li><a href="pr_place-self.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_place-self.asp" title="CSS place-self 属性">place-self</a></li>
+<li><a href="pr_pointer-events.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_pointer-events.asp" title="CSS pointer-events 属性">pointer-events</a></li>
+<li><a href="pr_class_position.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_class_position.asp" title="CSS position 属性">position</a></li>
+<li><a href="atrule_property.asp.htm" tppabs="https://www.w3school.com.cn/cssref/atrule_property.asp" title="CSS @property 规则">@property</a></li>
+<li><a href="pr_gen_quotes.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_gen_quotes.asp" title="CSS quotes 属性">quotes</a></li>
+<li><a href="pr_resize.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_resize.asp" title="CSS resize 属性">resize</a></li>
+<li><a href="pr_pos_right.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_pos_right.asp" title="CSS right 属性">right</a></li>
+<li><a href="pr_rotate.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_rotate.asp" title="CSS rotate 属性">rotate</a></li>
+<li><a href="pr_row-gap.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_row-gap.asp" title="CSS row-gap 属性">row-gap</a></li>
+<li><a href="pr_scale.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_scale.asp" title="CSS scale 属性">scale</a></li>
+<li><a href="atrule_scope.asp.htm" tppabs="https://www.w3school.com.cn/cssref/atrule_scope.asp" title="CSS @scope 规则">@scope</a></li>
+<li><a href="pr_scroll-behavior.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_scroll-behavior.asp" title="CSS scroll-behavior 属性">scroll-behavior</a></li>
+<li><a href="pr_scroll-margin.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_scroll-margin.asp" title="CSS scroll-margin 属性">scroll-margin</a></li>
+<li><a href="pr_scroll-margin-block.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_scroll-margin-block.asp" title="CSS scroll-margin-block 属性">scroll-margin-block</a></li>
+<li><a href="pr_scroll-margin-block-end.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_scroll-margin-block-end.asp" title="CSS scroll-margin-block-end 属性">scroll-margin-block-end</a></li>
+<li><a href="pr_scroll-margin-block-start.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_scroll-margin-block-start.asp" title="CSS scroll-margin-block-start 属性">scroll-margin-block-start</a></li>
+<li><a href="pr_scroll-margin-bottom.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_scroll-margin-bottom.asp" title="CSS scroll-margin-bottom 属性">scroll-margin-bottom</a></li>
+<li><a href="pr_scroll-margin-inline.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_scroll-margin-inline.asp" title="CSS scroll-margin-inline 属性">scroll-margin-inline</a></li>
+<li><a href="pr_scroll-margin-inline-end.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_scroll-margin-inline-end.asp" title="CSS scroll-margin-inline-end 属性">scroll-margin-inline-end</a></li>
+<li><a href="pr_scroll-margin-inline-start.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_scroll-margin-inline-start.asp" title="CSS scroll-margin-inline-start 属性">scroll-margin-inline-start</a></li>
+<li><a href="pr_scroll-margin-left.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_scroll-margin-left.asp" title="CSS scroll-margin-left 属性">scroll-margin-left</a></li>
+<li><a href="pr_scroll-margin-right.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_scroll-margin-right.asp" title="CSS scroll-margin-right 属性">scroll-margin-right</a></li>
+<li><a href="pr_scroll-margin-top.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_scroll-margin-top.asp" title="CSS scroll-margin-top 属性">scroll-margin-top</a></li>
+<li><a href="pr_scroll-padding.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_scroll-padding.asp" title="CSS scroll-padding 属性">scroll-padding</a></li>
+<li><a href="pr_scroll-padding-block.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_scroll-padding-block.asp" title="CSS scroll-padding-block 属性">scroll-padding-block</a></li>
+<li><a href="pr_scroll-padding-block-end.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_scroll-padding-block-end.asp" title="CSS scroll-padding-block-end 属性">scroll-padding-block-end</a></li>
+<li><a href="pr_scroll-padding-block-start.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_scroll-padding-block-start.asp" title="CSS scroll-padding-block-start 属性">scroll-padding-block-start</a></li>
+<li><a href="pr_scroll-padding-bottom.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_scroll-padding-bottom.asp" title="CSS scroll-padding-bottom 属性">scroll-padding-bottom</a></li>
+<li><a href="pr_scroll-padding-inline.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_scroll-padding-inline.asp" title="CSS scroll-padding-inline 属性">scroll-padding-inline</a></li>
+<li><a href="pr_scroll-padding-inline-end.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_scroll-padding-inline-end.asp" title="CSS scroll-padding-inline-end 属性">scroll-padding-inline-end</a></li>
+<li><a href="pr_scroll-padding-inline-start.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_scroll-padding-inline-start.asp" title="CSS scroll-padding-inline-start 属性">scroll-padding-inline-start</a></li>
+<li><a href="pr_scroll-padding-left.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_scroll-padding-left.asp" title="CSS scroll-padding-left 属性">scroll-padding-left</a></li>
+<li><a href="pr_scroll-padding-right.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_scroll-padding-right.asp" title="CSS scroll-padding-right 属性">scroll-padding-right</a></li>
+<li><a href="pr_scroll-padding-top.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_scroll-padding-top.asp" title="CSS scroll-padding-top 属性">scroll-padding-top</a></li>
+<li><a href="pr_scroll-snap-align.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_scroll-snap-align.asp" title="CSS scroll-snap-align 属性">scroll-snap-align</a></li>
+<li><a href="pr_scroll-snap-stop.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_scroll-snap-stop.asp" title="CSS scroll-snap-stop 属性">scroll-snap-stop</a></li>
+<li><a href="pr_scroll-snap-type.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_scroll-snap-type.asp" title="CSS scroll-snap-type 属性">scroll-snap-type</a></li>
+<li><a href="pr_scrollbar-color.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_scrollbar-color.asp" title="CSS scrollbar-color 属性">scrollbar-color</a></li>
+<li><a href="pr_shape-outside.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_shape-outside.asp" title="CSS shape-outside 属性">shape-outside</a></li>
+<li><a href="atrule_starting-style.asp.htm" tppabs="https://www.w3school.com.cn/cssref/atrule_starting-style.asp" title="CSS @starting-style 规则">@starting-style</a></li>
+<li><a href="atrule_supports.asp.htm" tppabs="https://www.w3school.com.cn/cssref/atrule_supports.asp" title="CSS @supports 规则">@supports</a></li>
+<li><a href="pr_tab-size.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_tab-size.asp" title="CSS tab-size 属性">tab-size</a></li>
+<li><a href="pr_tab_table-layout.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_tab_table-layout.asp" title="CSS table-layout 属性">table-layout</a></li>
+<li><a href="pr_text_text-align.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_text_text-align.asp" title="CSS text-align 属性">text-align</a></li>
+<li><a href="pr_text-align-last.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_text-align-last.asp" title="CSS text-align-last 属性">text-align-last</a></li>
+<li><a href="pr_text_text-decoration.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_text_text-decoration.asp" title="CSS text-decoration 属性">text-decoration</a></li>
+<li><a href="pr_text-decoration-color.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_text-decoration-color.asp" title="CSS text-decoration-color 属性">text-decoration-color</a></li>
+<li><a href="pr_text-decoration-line.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_text-decoration-line.asp" title="CSS text-decoration-line 属性">text-decoration-line</a></li>
+<li><a href="pr_text-decoration-style.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_text-decoration-style.asp" title="CSS text-decoration-style 属性">text-decoration-style</a></li>
+<li><a href="pr_text_text-decoration-thickness.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_text_text-decoration-thickness.asp" title="CSS text-decoration-thickness 属性">text-decoration-thickness</a></li>
+<li><a href="pr_text-emphasis.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_text-emphasis.asp" title="CSS text-emphasis 属性">text-emphasis</a></li>
+<li><a href="pr_text-emphasis-color.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_text-emphasis-color.asp" title="CSS text-emphasis-color 属性">text-emphasis-color</a></li>
+<li><a href="pr_text-emphasis-position.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_text-emphasis-position.asp" title="CSS text-emphasis-position 属性">text-emphasis-position</a></li>
+<li><a href="pr_text-emphasis-style.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_text-emphasis-style.asp" title="CSS text-emphasis-style 属性">text-emphasis-style</a></li>
+<li><a href="pr_text_text-indent.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_text_text-indent.asp" title="CSS text-indent 属性">text-indent</a></li>
+<li><a href="pr_text-justify.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_text-justify.asp" title="CSS text-justify 属性">text-justify</a></li>
+<li><a href="pr_text-orientation.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_text-orientation.asp" title="CSS text-orientation 属性">text-orientation</a></li>
+<li><a href="pr_text-overflow.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_text-overflow.asp" title="CSS text-overflow 属性">text-overflow</a></li>
+<li><a href="pr_text-shadow.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_text-shadow.asp" title="CSS text-shadow 属性">text-shadow</a></li>
+<li><a href="pr_text_text-transform.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_text_text-transform.asp" title="CSS text-transform 属性">text-transform</a></li>
+<li><a href="pr_text-underline-offset.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_text-underline-offset.asp" title="CSS text-underline-offset 属性">text-underline-offset</a></li>
+<li><a href="pr_text-underline-position.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_text-underline-position.asp" title="CSS text-underline-position 属性">text-underline-position</a></li>
+<li><a href="pr_pos_top.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_pos_top.asp" title="CSS top 属性">top</a></li>
+<li><a href="pr_transform.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_transform.asp" title="CSS transform 属性">transform</a></li>
+<li><a href="pr_transform-origin.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_transform-origin.asp" title="CSS transform-origin 属性">transform-origin</a></li>
+<li><a href="pr_transform-style.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_transform-style.asp" title="CSS transform-style 属性">transform-style</a></li>
+<li><a href="pr_transition.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_transition.asp" title="CSS transition 属性">transition</a></li>
+<li><a href="pr_transition-delay.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_transition-delay.asp" title="CSS transition-delay 属性">transition-delay</a></li>
+<li><a href="pr_transition-duration.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_transition-duration.asp" title="CSS transition-duration 属性">transition-duration</a></li>
+<li><a href="pr_transition-property.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_transition-property.asp" title="CSS transition-property 属性">transition-property</a></li>
+<li><a href="pr_transition-timing-function.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_transition-timing-function.asp" title="CSS transition-timing-function 属性">transition-timing-function</a></li>
+<li><a href="pr_translate.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_translate.asp" title="CSS translate 属性">translate</a></li>
+<li><a href="pr_unicode-bidi.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_unicode-bidi.asp" title="CSS unicode-bidi 属性">unicode-bidi</a></li>
+<li><a href="pr_user-select.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_user-select.asp" title="CSS user-select 属性">user-select</a></li>
+<li><a href="pr_pos_vertical-align.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_pos_vertical-align.asp" title="CSS vertical-align 属性">vertical-align</a></li>
+<li><a href="pr_class_visibility.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_class_visibility.asp" title="CSS visibility 属性">visibility</a></li>
+<li><a href="pr_text_white-space.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_text_white-space.asp" title="CSS white-space 属性">white-space</a></li>
+<li><a href="pr_widows.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_widows.asp" title="CSS widows 属性">widows</a></li>
+<li><a href="pr_dim_width.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_dim_width.asp" title="CSS width 属性">width</a></li>
+<li><a href="pr_word-break.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_word-break.asp" title="CSS word-break 属性">word-break</a></li>
+<li><a href="pr_text_word-spacing.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_text_word-spacing.asp" title="CSS word-spacing 属性">word-spacing</a></li>
+<li><a href="pr_word-wrap.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_word-wrap.asp" title="CSS word-wrap 属性">word-wrap</a></li>
+<li><a href="pr_writing-mode.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_writing-mode.asp" title="CSS writing-mode 属性">writing-mode</a></li>
+<li><a href="pr_pos_z-index.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_pos_z-index.asp" title="z-index">z-index</a></li>
+<li><a href="pr_zoom.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_zoom.asp" title="CSS zoom 属性">zoom</a></li>
+</ul>
+</div><div id="selected">
+<h2>课程推荐：</h2>
+<ul>
+<li><a href="../howto/index.asp.htm" tppabs="https://www.w3school.com.cn/howto/index.asp" title="W3School 百宝箱">W3School 百宝箱</a></li>
+<li><a href="../java/index.asp.htm" tppabs="https://www.w3school.com.cn/java/index.asp" title="Java 教程">Java 教程</a></li>
+</ul>
+
+</div>
+
+</div>
+
+<div id="maincontent">
+
+<h1>CSS filter 属性</h1>
+
+<div class="prenextnav">
+<ul class="prenext">
+<li class="pre"><a href="pr_tab_empty-cells.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_tab_empty-cells.asp" title="CSS empty-cells 属性">empty-cells</a></li>
+<li class="next"><a href="pr_flex.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_flex.asp" title="CSS flex 属性">flex</a></li>
+</ul>
+</div>
+
+
+
+<div>
+<h2>定义和用法</h2>
+
+<p>filter 属性定义元素（通常是 &lt;img&gt;）的视觉效果（如模糊和饱和度）。</p>
+
+<h3>另请参阅：</h3>
+
+<p>CSS 教程：<a href="../css/css3_images.asp.htm" tppabs="https://www.w3school.com.cn/css/css3_images.asp" title="CSS 图像样式">CSS 图像</a></p>
+
+<p>HTML DOM 参考手册：<a href="pr_filter.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_filter.asp" title="CSS filter 属性">filter 属性</a></p>
+</div>
+
+
+
+<div>
+<h2>实例</h2>
+
+<p>把所有图像都改为黑白（100% 灰色）：</p>
+
+<pre class="language-css">
+img {
+  filter: grayscale(100%);
+}
+</pre>
+
+<p class="tiy"><a target="_blank" href="javascript:if(confirm('https://www.w3school.com.cn/tiy/java_methods_overloading.asp  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ������, �����������, ����Ŀ����ֹͣ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.w3school.com.cn/tiy/java_methods_overloading.asp'" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=cssref_filter_grayscale_1">亲自试一试</a></p>
+
+<p class="tip"><span>提示：</span>可以在页面下方找到更多 TIY 实例。</p>
+</div>
+
+
+
+<div>
+<h2>CSS 语法</h2>
+
+<pre>filter: none | blur() | brightness() | contrast() | drop-shadow() | grayscale() | hue-rotate() | invert() | opacity() | saturate() | sepia() | url();</pre>
+
+<p class="tip"><span>提示：</span>如需使用多个滤镜，请用空格分隔每个滤镜（参见页面下方的更多实例）。</p>
+</div>
+
+
+
+<div>
+<h2>技术细节</h2>
+
+<table class="definition-usage">
+<tr>
+<th style="width:25%;">默认值：</th>
+<td>none</td>
+</tr>
+
+<tr>
+<th>继承：</th>
+<td>否</td>
+</tr>
+
+<tr>
+<th>动画制作：</th>
+<td>支持。请参阅：<a href="css_animatable.asp.htm" tppabs="https://www.w3school.com.cn/cssref/css_animatable.asp" title="CSS 动画相关属性">动画相关属性</a>。</td>
+</tr>
+
+<tr>
+<td>版本：</td>
+<td>CSS3</td>
+</tr>
+
+<tr>
+<th>JavaScript 语法：</th>
+<td>object.style.filter=&quot;grayscale(100%)&quot;</td>
+</tr>
+</table>
+</div>
+
+
+
+<div>
+<h2>滤镜函数</h2>
+
+<p class="note"><span>注释：</span>使用百分比值（例如 75％）的滤镜，也接受该值是十进制（例如 0.75）。</p>
+
+<table class="dataintable">
+<tr>
+<th>滤镜</th>
+<th>描述</th>
+</tr>
+
+<tr>
+<td>none</td>
+<td>默认值。规定无效果。</td>
+</tr>
+
+<tr>
+<td>blur(px)</td>
+<td>
+<p>对图像应用模糊效果。较大的值将产生更多的模糊。</p>
+<p>如果为指定值，则使用 0。</p>
+</td>
+</tr>
+
+<tr>
+<td>brightness(%)</td>
+<td>
+<p>调整图像的亮度。</p>
+
+<ul>
+<li>0％ 将使图像完全变黑。</li>
+<li>默认值是 100％，代表原始图像。</li>
+<li>值超过 100％ 将提供更明亮的结果。</li>
+</ul>
+</td>
+</tr>
+
+<tr>
+<td>contrast(%)</td>
+<td>
+<p>调整图像的对比度。</p>
+
+<ul>
+<li>0％ 将使图像完全变黑。</li>
+<li>默认值是 100％，代表原始图像。</li>
+<li>超过 100％ 的值将提供更具对比度的结果。</li>
+</ul>
+</td>
+</tr>
+
+<tr>
+<td>drop-shadow(h-shadow v-shadow blur spread color)</td>
+<td>
+<p>对图像应用阴影效果。</p>
+
+<p>可能的值：</p>
+
+<ul>
+<li>h-shadow - 必需。指定水平阴影的像素值。负值会将阴影放置在图像的左侧。</li>
+<li>v-shadow - 必需。指定垂直阴影的像素值。负值会将阴影放置在图像上方。</li>
+</ul>
+
+<p>blur -可选。这是第三个值，单位必须用像素。为阴影添加模糊效果。值越大创建的模糊就越多（阴影会变得更大更亮）。不允许负值。如果未规定值，会使用 0（阴影的边缘很锐利）。</p>
+
+<p>spread - 可选。这是第四个值，单位必须用像素。正值将导致阴影扩展并增大，负值将导致阴影缩小。如果未规定值，会使用 0（阴影与元素的大小相同）。</p>
+
+<p class="note"><span>注释：</span>Chrome、Safari 和 Opera，也许还有其他浏览器，不支持第 4 个长度；如果添加，则不会呈现。</p>
+
+<p>color - 可选。为阴影添加颜色。如果未规定，则颜色取决于浏览器（通常为黑色）。</p>
+
+<p>这个例子创建了红色的阴影，水平和垂直方向均为 8px，带有 10px 的模糊效果：</p>
+
+<p>filter: drop-shadow(8px 8px 10px red);</p>
+
+<p class="tip"><span>提示：</span>这个滤镜类似 box-shadow 属性。</p>
+</td>
+</tr>
+
+<tr>
+<td>grayscale(%)</td>
+<td>
+<p>将图像转换为灰阶。</p>
+
+<ul>
+<li>0% (0) 是默认值，代表原始图像。</li>
+<li>100％ 将使图像完全变灰（用于黑白图像）。</li>
+</ul>
+
+<p class="note"><span>注释：</span>不允许负值。</p>
+</td>
+</tr>
+
+<tr>
+<td>hue-rotate(deg)</td>
+<td>
+<p>在图像上应用色相旋转。该值定义色环的度数。默认值为 0deg，代表原始图像。</p>
+
+<p class="note"><span>注释：</span>最大值是 360deg。</p>
+</td>
+</tr>
+
+<tr>
+<td>invert(%)</td>
+<td>
+<p>反转图像中的样本。</p>
+
+<ul>
+<li>0% (0) 是默认值，代表原始图像。</li>
+<li>100％将使图像完全反转。</li>
+</ul>
+
+<p class="note"><span>注释：</span>不允许负值。</p>
+</td>
+</tr>
+
+<tr>
+<td>opacity(%)</td>
+<td>
+<p>设置图像的不透明度级别。opacity-level 描述了透明度级别，其中：</p>
+
+<ul>
+<li>0% 为完全透明。</li>
+<li>100% (1) 是默认值，代表原始图像（不透明）。</li>
+</ul>
+
+<p class="note"><span>注释：</span>不允许负值。</p>
+
+<p class="tip"><span>提示：</span>这个滤镜类似 opacity 属性。</p>
+</td>
+</tr>
+
+<tr>
+<td>saturate(%)</td>
+<td>
+<p>设置图像的饱和度。</p>
+
+<ul>
+<li>0% (0) will make the image completely un-saturated.</li>
+<li>100% is default and represents the original image.</li>
+<li>Values over 100% provides super-saturated results. </li>
+</ul>
+
+<p class="note"><span>注释：</span>不允许负值。</p>
+</td>
+</tr>
+
+<tr>
+<td>sepia(%)</td>
+<td>
+<p>将图像转换为棕褐色。</p>
+
+<ul>
+<li>0% (0) 是默认值，代表原始图像。</li>
+<li>100％ 将使图像完全变为棕褐色。</li>
+</ul>
+
+<p class="note"><span>注释：</span>不允许负值。</p>
+</td>
+</tr>
+
+<tr>
+<td>url()</td>
+<td>
+<p>url() 函数接受规定 SVG 滤镜的 XML 文件的位置，并且可以包含指向特定滤镜元素的锚点。实例：</p>
+
+<p>filter: url(svg-url#element-id)</p>
+</td>
+</tr>
+
+<tr>
+<td>initial</td>
+<td>将此属性设置为其默认值。参阅 <a href="javascript:if(confirm('https://www.w3school.com.cn/cssref/js_history.asp  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ������, �����������, ����Ŀ����ֹͣ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.w3school.com.cn/cssref/js_history.asp'" tppabs="https://www.w3school.com.cn/cssref/css_initial.asp" title="CSS initial 关键字">initial</a>。</td>
+</tr>
+
+<tr>
+<td>inherit</td>
+<td>从其父元素继承此属性。参阅 <a href="javascript:if(confirm('https://www.w3school.com.cn/cssref/howto_css_force_scrollbars.asp  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ������, �����������, ����Ŀ����ֹͣ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.w3school.com.cn/cssref/howto_css_force_scrollbars.asp'" tppabs="https://www.w3school.com.cn/cssref/css_inherit.asp" title="CSS inherit 关键字">inherit</a>。</td>
+</tr>
+</table>
+</div>
+
+
+
+<div>
+<h2>更多实例</h2>
+
+<h3>模糊实例</h3>
+
+<p>为图像添加模糊效果：</p>
+
+<pre class="language-css">
+img {
+  filter: blur(5px);
+}
+</pre>
+
+<p class="tiy"><a target="_blank" href="javascript:if(confirm('https://www.w3school.com.cn/tiy/java_scope.asp  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ������, �����������, ����Ŀ����ֹͣ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.w3school.com.cn/tiy/java_scope.asp'" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=cssref_filter_blur_1">亲自试一试</a></p>
+
+<h3>模糊实例 2</h3>
+
+<p>应用模糊的背景图片：</p>
+
+<pre class="language-css">
+img.background {
+  filter: blur(35px);
+}
+</pre>
+
+<p class="tiy"><a target="_blank" href="javascript:if(confirm('https://www.w3school.com.cn/tiy/java_recursion.asp  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ������, �����������, ����Ŀ����ֹͣ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.w3school.com.cn/tiy/java_recursion.asp'" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=cssref_filter_blur_2">亲自试一试</a></p>
+
+<h3>亮度实例</h3>
+
+<p>调整图像的亮度：</p>
+
+<pre class="language-css">
+img {
+  filter: brightness(200%);
+}
+</pre>
+
+<p class="tiy"><a target="_blank" href="javascript:if(confirm('https://www.w3school.com.cn/tiy/java_oop.asp  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ������, �����������, ����Ŀ����ֹͣ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.w3school.com.cn/tiy/java_oop.asp'" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=cssref_filter_brightness">亲自试一试</a></p>
+
+<h3>对比度实例</h3>
+
+<p>调整图像的对比度：</p>
+
+<pre class="language-css">
+img {
+  filter: contrast(200%);
+}
+</pre>
+
+<p class="tiy"><a target="_blank" href="javascript:if(confirm('https://www.w3school.com.cn/tiy/java_classes.asp  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ������, �����������, ����Ŀ����ֹͣ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.w3school.com.cn/tiy/java_classes.asp'" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=cssref_filter_contrast">亲自试一试</a></p>
+
+<h3>阴影实例</h3>
+
+<p>为图像应用阴影效果：</p>
+
+<pre class="language-css">
+img {
+  filter: drop-shadow(8px 8px 10px gray);
+}
+</pre>
+
+<p class="tiy"><a target="_blank" href="javascript:if(confirm('https://www.w3school.com.cn/tiy/java_class_attributes.asp  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ������, �����������, ����Ŀ����ֹͣ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.w3school.com.cn/tiy/java_class_attributes.asp'" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=cssref_filter_dropshadow">亲自试一试</a></p>
+
+<h3>灰阶实例</h3>
+
+<p>将图像转换为灰阶：</p>
+
+<pre class="language-css">
+img {
+  filter: grayscale(50%);
+}
+</pre>
+
+<p class="tiy"><a target="_blank" href="javascript:if(confirm('https://www.w3school.com.cn/tiy/java_class_methods.asp  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ������, �����������, ����Ŀ����ֹͣ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.w3school.com.cn/tiy/java_class_methods.asp'" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=cssref_filter_grayscale_2">亲自试一试</a></p>
+
+<h3>色相旋转实例</h3>
+
+<p>在图像上应用色相旋转：</p>
+
+<pre class="language-css">
+img {
+  filter: hue-rotate(90deg);
+}
+</pre>
+
+<p class="tiy"><a target="_blank" href="javascript:if(confirm('https://www.w3school.com.cn/tiy/java_constructors.asp  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ������, �����������, ����Ŀ����ֹͣ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.w3school.com.cn/tiy/java_constructors.asp'" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=cssref_filter_huerotate">亲自试一试</a></p>
+
+<h3>反转实例</h3>
+
+<p>反转图像中的样本：</p>
+
+<pre class="language-css">
+img {
+  filter: invert(100%);
+}
+</pre>
+
+<p class="tiy"><a target="_blank" href="javascript:if(confirm('https://www.w3school.com.cn/tiy/java_modifiers.asp  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ������, �����������, ����Ŀ����ֹͣ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.w3school.com.cn/tiy/java_modifiers.asp'" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=cssref_filter_invert">亲自试一试</a></p>
+
+<h3>不透明度实例</h3>
+
+<p>设置图像的不透明度级别：</p>
+
+<pre class="language-css">
+img {
+  filter: opacity(30%);
+}
+</pre>
+
+<p class="tiy"><a target="_blank" href="javascript:if(confirm('https://www.w3school.com.cn/tiy/java_encapsulation.asp  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ������, �����������, ����Ŀ����ֹͣ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.w3school.com.cn/tiy/java_encapsulation.asp'" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=cssref_filter_opacity">亲自试一试</a></p>
+
+<h3>饱和度实例</h3>
+
+<p>调整图像的饱和度：</p>
+
+<pre class="language-css">
+img {
+  filter: saturate(800%);
+}
+</pre>
+
+<p class="tiy"><a target="_blank" href="javascript:if(confirm('https://www.w3school.com.cn/tiy/java_packages.asp  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ������, �����������, ����Ŀ����ֹͣ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.w3school.com.cn/tiy/java_packages.asp'" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=cssref_filter_saturate">亲自试一试</a></p>
+
+<h3>棕褐色实例</h3>
+
+<p>将图像转换为棕褐色：</p>
+
+
+<pre class="language-css">
+img {
+  filter: sepia(100%);
+}
+</pre>
+
+<p class="tiy"><a target="_blank" href="javascript:if(confirm('https://www.w3school.com.cn/tiy/java_inheritance.asp  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ������, �����������, ����Ŀ����ֹͣ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.w3school.com.cn/tiy/java_inheritance.asp'" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=cssref_filter_sepia">亲自试一试</a></p>
+
+<h3>使用多重滤镜</h3>
+
+<p>要使用多个滤镜，请用空格分隔每个滤镜。请注意，顺序很重要（例如在 sepia() 之后使用 grayscale() 将产生完全灰色的图像）：</p>
+
+<pre class="language-css">
+img {
+  filter: contrast(200%) brightness(150%);
+}
+</pre>
+
+<p class="tiy"><a target="_blank" href="javascript:if(confirm('https://www.w3school.com.cn/tiy/java_polymorphism.asp  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ������, �����������, ����Ŀ����ֹͣ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.w3school.com.cn/tiy/java_polymorphism.asp'" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=cssref_filter_multiple">亲自试一试</a></p>
+
+<h3>所有滤镜</h3>
+
+<p>演示所有滤镜函数：</p>
+
+<pre class="language-css">
+.blur {
+  filter: blur(4px);
+}
+
+.brightness {
+  filter: brightness(0.30);
+}
+
+.contrast {
+  filter: contrast(180%);
+}
+
+.grayscale {
+  filter: grayscale(100%);
+}
+
+.huerotate {
+  filter: hue-rotate(180deg);
+}
+
+.invert {
+  filter: invert(100%);
+}
+
+.opacity {
+  filter: opacity(50%);
+}
+
+.saturate {
+  filter: saturate(7);
+}
+
+.sepia {
+  filter: sepia(100%);
+}
+
+.shadow {
+  filter: drop-shadow(8px 8px 10px green);
+}
+</pre>
+
+<p class="tiy"><a target="_blank" href="javascript:if(confirm('https://www.w3school.com.cn/tiy/java_inner_classes.asp  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ������, �����������, ����Ŀ����ֹͣ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.w3school.com.cn/tiy/java_inner_classes.asp'" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=cssref_filter_all">亲自试一试</a></p>
+</div>
+
+
+
+<div>
+<h2>浏览器支持</h2>
+
+<p>表格中的数字注明了完全支持该属性的首个浏览器版本。</p>
+
+<p>带 -webkit- 的数字表示使用前缀的首个版本。</p>
+
+<table class="browser-support">
+<tr>
+<th class="bsChrome" title="Chrome">Chrome</th>
+<th class="bsEdge" title="IE / Edge">IE / Edge</th>
+<th class="bsFirefox" title="Firefox">Firefox</th>
+<th class="bsSafari" title="Safari">Safari</th>
+<th class="bsOpera" title="Opera">Opera</th>
+</tr>	
+
+<tr>
+<td>53.0<br />18.0 -webkit-</td>
+<td>13.0</td>
+<td>35.0</td>
+<td>9.1<br />6.0 -webkit-</td>
+<td>40.0<br />15.0 -webkit-</td>
+</tr>
+</table>
+
+<p class="note"><span>注释：</span>较旧版本的 Internet Explorer（4. 0到 8.0）支持已弃用的非标准 &quot;filter&quot; 属性。当需要 IE8 及更低版本的支持时，主要用于不透明度。</p>
+</div>
+
+
+
+<div class="prenextnav">
+<ul class="prenext">
+<li class="pre"><a href="pr_tab_empty-cells.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_tab_empty-cells.asp" title="CSS empty-cells 属性">empty-cells</a></li>
+<li class="next"><a href="pr_flex.asp.htm" tppabs="https://www.w3school.com.cn/cssref/pr_flex.asp" title="CSS flex 属性">flex</a></li>
+</ul>
+</div><div style="background-color:#fcfdf8; padding:0;">
+<script async src="../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" tppabs="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- W3School ���Ĺ�� -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:800px;height:250px"
+     data-ad-client="ca-pub-3381531532877742"
+     data-ad-slot="2086924285"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+</div>
+<!-- maincontent end -->
+
+<div id="sidebar">
+
+<div id="tools">
+<h5 id="tools_reference"><a href="index.asp.htm" tppabs="https://www.w3school.com.cn/cssref/index.asp">CSS 参考手册</a></h5>
+<h5 id="tools_example"><a href="../css/css_examples.asp.htm" tppabs="https://www.w3school.com.cn/css/css_examples.asp">CSS 实例</a></h5>
+<h5 id="tools_quiz"><a href="../css/css_quiz.asp.htm" tppabs="https://www.w3school.com.cn/css/css_quiz.asp">CSS 测验</a></h5>
+<h5 id="tools_tutorial"><a href="../css/index.asp.htm" tppabs="https://www.w3school.com.cn/css/index.asp">CSS 教程</a></h5>
+</div>
+
+<div id="sidebar_zzs">
+
+<div id="sbtg">
+<script async src="../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" tppabs="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- W3School 侧栏广告位 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-3381531532877742"
+     data-ad-slot="6744370501"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+</div>
+
+</div>
+
+<div id="footer">
+<p id="p1">
+W3School 简体中文版提供的内容仅用于培训和测试，不保证内容的正确性。通过使用本站内容随之而来的风险与本站无关。版权所有，保留一切权利。
+</p>
+
+<p id="p2">
+<a href="../about/index.asp.htm" tppabs="https://www.w3school.com.cn/about/index.asp" title="关于 W3School">关于 W3School</a>
+<a href="../about/about_helping.asp.htm" tppabs="https://www.w3school.com.cn/about/about_helping.asp" title="帮助 W3School">帮助 W3School</a>
+<a href="../about/about_use.asp.htm" tppabs="https://www.w3school.com.cn/about/about_use.asp" title="关于使用">使用条款</a>
+<a href="../about/about_privacy.asp.htm" tppabs="https://www.w3school.com.cn/about/about_privacy.asp" title="关于隐私">隐私条款</a>
+<a target="_blank" href="javascript:if(confirm('https://www.ykinvestment.com/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.ykinvestment.com/'" tppabs="https://www.ykinvestment.com/">技术支持：赢科</a>
+<a target="_blank" href="javascript:if(confirm('http://www.beian.miit.gov.cn/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://www.beian.miit.gov.cn/'" tppabs="http://www.beian.miit.gov.cn/">蒙ICP备06004630号</a>
+</p>
+</div>
+
+
+</div>
+<!-- wrapper end -->
+
+
+</body>
+
+</html>

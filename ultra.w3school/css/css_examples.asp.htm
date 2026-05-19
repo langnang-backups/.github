@@ -1,0 +1,1474 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="../../www.googletagmanager.com/gtag/js-id=UA-878633-1" tppabs="https://www.googletagmanager.com/gtag/js?id=UA-878633-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-878633-1');
+</script>
+
+<meta charset=utf-8"utf-8">
+<meta name="robots" content="all" />
+<meta name="author" content="w3school.com.cn" />
+
+<link rel="stylesheet" type="text/css" href="../c.css" tppabs="https://www.w3school.com.cn/c.css" />
+
+<script src="../lib/cc/prism2.js" tppabs="https://www.w3school.com.cn/lib/cc/prism2.js"></script>
+<link rel='stylesheet' href="../lib/cc/prism.css" tppabs="https://www.w3school.com.cn/lib/cc/prism.css">
+
+<link rel="icon" type="image/png" sizes="16x16" href="/ui2019/logo-16-red.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/ui2019/logo-32-red.png">
+<link rel="icon" type="image/png" sizes="48x48" href="/ui2019/logo-48-red.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/ui2019/logo-96-red.png">
+<link rel="apple-touch-icon-precomposed" sizes="180x180" href="/ui2019/logo-180.png">
+
+
+<title>CSS 实例</title>
+
+</head>
+
+<body class="html">
+
+<div id="wrapper">
+
+<div id="header">
+<a id="logo" href="../index.html" tppabs="https://www.w3school.com.cn/index.html" title="w3school 在线教程" style="float:left;">w3school 在线教程</a>
+<div id="header_gg">
+<script async src="../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" tppabs="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- W3 页眉 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-3381531532877742"
+     data-ad-slot="7423315034"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+
+<div id="navfirst">
+<ul id="menu">
+<li id="h"><a href="../h.asp.htm" tppabs="https://www.w3school.com.cn/h.asp" title="HTML 系列教程">HTML 系列教程</a></li>
+<li id="b"><a href="../b.asp.htm" tppabs="https://www.w3school.com.cn/b.asp" title="浏览器脚本教程">浏览器脚本</a></li>
+<li id="s"><a href="../s.asp.htm" tppabs="https://www.w3school.com.cn/s.asp" title="服务器脚本教程">服务器脚本</a></li>
+<li id="p"><a href="../p.asp.htm" tppabs="https://www.w3school.com.cn/p.asp" title="编程教程">编程教程</a></li>
+<li id="x"><a href="../x.asp.htm" tppabs="https://www.w3school.com.cn/x.asp" title="XML 系列教程">XML 系列教程</a></li>
+<li id="w"><a href="../w.asp.htm" tppabs="https://www.w3school.com.cn/w.asp" title="建站手册">建站手册</a></li>
+<li id="r"><a href="../r.asp.htm" tppabs="https://www.w3school.com.cn/r.asp" title="参考手册">参考手册</a></li>
+</ul>
+</div>
+
+<div id="navsecond">
+
+<div id="course"><h2>CSS 基础教程</h2>
+<ul>
+<li><a href="index.asp.htm" tppabs="https://www.w3school.com.cn/css/index.asp" title="CSS 教程">CSS 教程</a></li>
+<li><a href="css_jianjie.asp.htm" tppabs="https://www.w3school.com.cn/css/css_jianjie.asp" title="CSS 简介">CSS 简介</a></li>
+<li><a href="css_syntax.asp.htm" tppabs="https://www.w3school.com.cn/css/css_syntax.asp" title="CSS 语法">CSS 语法</a></li>
+<li><a href="css_selectors.asp.htm" tppabs="https://www.w3school.com.cn/css/css_selectors.asp" title="CSS 选择器">CSS 选择器</a></li>
+<li><a href="css_shiyong.asp.htm" tppabs="https://www.w3school.com.cn/css/css_shiyong.asp" title="CSS 使用">CSS 使用</a></li>
+<li><a href="css_comments.asp.htm" tppabs="https://www.w3school.com.cn/css/css_comments.asp" title="CSS 注释">CSS 注释</a></li>
+<li><a href="css_colors.asp.htm" tppabs="https://www.w3school.com.cn/css/css_colors.asp" title="CSS 颜色">CSS 颜色</a></li>
+<li><a href="css_colors_rgb.asp.htm" tppabs="https://www.w3school.com.cn/css/css_colors_rgb.asp" title="CSS RGB 颜色">CSS RGB 颜色</a></li>
+<li><a href="css_colors_hex.asp.htm" tppabs="https://www.w3school.com.cn/css/css_colors_hex.asp" title="CSS HEX 颜色">CSS HEX 颜色</a></li>
+<li><a href="css_colors_hsl.asp.htm" tppabs="https://www.w3school.com.cn/css/css_colors_hsl.asp" title="CSS HSL 颜色">CSS HSL 颜色</a></li>
+<li><a href="css_background.asp.htm" tppabs="https://www.w3school.com.cn/css/css_background.asp" title="CSS 背景">CSS 背景</a></li>
+<li><a href="css_background_image.asp.htm" tppabs="https://www.w3school.com.cn/css/css_background_image.asp" title="CSS 背景图像">CSS 背景图像</a></li>
+<li><a href="css_background_repeat.asp.htm" tppabs="https://www.w3school.com.cn/css/css_background_repeat.asp" title="CSS 背景重复">CSS 背景重复</a></li>
+<li><a href="css_background_attachment.asp.htm" tppabs="https://www.w3school.com.cn/css/css_background_attachment.asp" title="CSS 背景附着">CSS 背景附着</a></li>
+<li><a href="css_background_shorthand.asp.htm" tppabs="https://www.w3school.com.cn/css/css_background_shorthand.asp" title="CSS 简写背景属性">CSS 简写背景属性</a></li>
+<li><a href="css_border.asp.htm" tppabs="https://www.w3school.com.cn/css/css_border.asp" title="CSS 边框">CSS 边框</a></li>
+<li><a href="css_border_width.asp.htm" tppabs="https://www.w3school.com.cn/css/css_border_width.asp" title="CSS 边框宽度">CSS 边框宽度</a></li>
+<li><a href="css_border_color.asp.htm" tppabs="https://www.w3school.com.cn/css/css_border_color.asp" title="CSS 边框颜色">CSS 边框颜色</a></li>
+<li><a href="css_border_sides.asp.htm" tppabs="https://www.w3school.com.cn/css/css_border_sides.asp" title="CSS 边框各边">CSS 边框各边</a></li>
+<li><a href="css_border_shorthand.asp.htm" tppabs="https://www.w3school.com.cn/css/css_border_shorthand.asp" title="CSS 简写边框属性">CSS 简写边框属性</a></li>
+<li><a href="css_border_rounded.asp.htm" tppabs="https://www.w3school.com.cn/css/css_border_rounded.asp" title="CSS 圆角边框">CSS 圆角边框</a></li>
+<li><a href="css_margin.asp.htm" tppabs="https://www.w3school.com.cn/css/css_margin.asp" title="CSS 外边距">CSS 外边距</a></li>
+<li><a href="css_margin_collapse.asp.htm" tppabs="https://www.w3school.com.cn/css/css_margin_collapse.asp" title="CSS 外边距合并">CSS 外边距合并</a></li>
+<li><a href="css_padding.asp.htm" tppabs="https://www.w3school.com.cn/css/css_padding.asp" title="CSS 内边距">CSS 内边距</a></li>
+<li><a href="css_dimension.asp.htm" tppabs="https://www.w3school.com.cn/css/css_dimension.asp" title="CSS 高度和宽度">CSS 高度/宽度</a></li>
+<li><a href="css_boxmodel.asp.htm" tppabs="https://www.w3school.com.cn/css/css_boxmodel.asp" title="CSS 框模型">CSS 框模型</a></li>
+<li><a href="css_outline.asp.htm" tppabs="https://www.w3school.com.cn/css/css_outline.asp" title="CSS 轮廓">CSS 轮廓</a></li>
+<li><a href="css_outline_width.asp.htm" tppabs="https://www.w3school.com.cn/css/css_outline_width.asp" title="CSS 轮廓宽度">CSS 轮廓宽度</a></li>
+<li><a href="css_outline_color.asp.htm" tppabs="https://www.w3school.com.cn/css/css_outline_color.asp" title="CSS 轮廓颜色">CSS 轮廓颜色</a></li>
+<li><a href="css_outline_shorthand.asp.htm" tppabs="https://www.w3school.com.cn/css/css_outline_shorthand.asp" title="CSS 简写轮廓属性">CSS 简写轮廓属性</a></li>
+<li><a href="css_outline_offset.asp.htm" tppabs="https://www.w3school.com.cn/css/css_outline_offset.asp" title="CSS 轮廓偏移">CSS 轮廓偏移</a></li>
+<li><a href="css_text.asp.htm" tppabs="https://www.w3school.com.cn/css/css_text.asp" title="CSS 文本">CSS 文本</a></li>
+<li><a href="css_text_align.asp.htm" tppabs="https://www.w3school.com.cn/css/css_text_align.asp" title="CSS 文本对齐">CSS 文本对齐</a></li>
+<li><a href="css_text_decoration.asp.htm" tppabs="https://www.w3school.com.cn/css/css_text_decoration.asp" title="CSS 文本装饰">CSS 文本装饰</a></li>
+<li><a href="css_text_transformation.asp.htm" tppabs="https://www.w3school.com.cn/css/css_text_transformation.asp" title="CSS 文本转换">CSS 文本转换</a></li>
+<li><a href="css_text_spacing.asp.htm" tppabs="https://www.w3school.com.cn/css/css_text_spacing.asp" title="CSS 文字间距">CSS 文字间距</a></li>
+<li><a href="css_text_shadow.asp.htm" tppabs="https://www.w3school.com.cn/css/css_text_shadow.asp" title="CSS 文本阴影">CSS 文本阴影</a></li>
+<li><a href="css_font.asp.htm" tppabs="https://www.w3school.com.cn/css/css_font.asp" title="CSS 字体">CSS 字体</a></li>
+<li><a href="css_font_style.asp.htm" tppabs="https://www.w3school.com.cn/css/css_font_style.asp" title="CSS 字体样式">CSS 字体样式</a></li>
+<li><a href="css_font_size.asp.htm" tppabs="https://www.w3school.com.cn/css/css_font_size.asp" title="CSS 字体大小">CSS 字体大小</a></li>
+<li><a href="css_font_google.asp.htm" tppabs="https://www.w3school.com.cn/css/css_font_google.asp" title="CSS 谷歌字体">CSS 谷歌字体</a></li>
+<li><a href="css_font_shorthand.asp.htm" tppabs="https://www.w3school.com.cn/css/css_font_shorthand.asp" title="CSS 简写字体属性">CSS 简写字体属性</a></li>
+<li><a href="css_icons.asp.htm" tppabs="https://www.w3school.com.cn/css/css_icons.asp" title="CSS 图标">CSS 图标</a></li>
+<li><a href="css_link.asp.htm" tppabs="https://www.w3school.com.cn/css/css_link.asp" title="CSS 链接">CSS 链接</a></li>
+<li><a href="css_list.asp.htm" tppabs="https://www.w3school.com.cn/css/css_list.asp" title="CSS 列表">CSS 列表</a></li>
+<li><a href="css_table.asp.htm" tppabs="https://www.w3school.com.cn/css/css_table.asp" title="CSS 表格">CSS 表格</a></li>
+</ul>
+<h2>CSS 中级教程</h2>
+<ul>
+<li><a href="css_display_visibility.asp.htm" tppabs="https://www.w3school.com.cn/css/css_display_visibility.asp" title="CSS 布局 - display 属性">CSS Display</a></li>
+<li><a href="css_max-width.asp.htm" tppabs="https://www.w3school.com.cn/css/css_max-width.asp" title="CSS 布局 - width 和 max-width">CSS max-width</a></li>
+<li><a href="css_positioning.asp.htm" tppabs="https://www.w3school.com.cn/css/css_positioning.asp" title="CSS 布局 - position 属性">CSS 定位</a></li>
+<li><a href="css_z-index.asp.htm" tppabs="https://www.w3school.com.cn/css/css_z-index.asp" title="CSS 布局 - z-index 属性">CSS z-index</a></li>
+<li><a href="css_overflow.asp.htm" tppabs="https://www.w3school.com.cn/css/css_overflow.asp" title="CSS 布局 - 溢出">CSS 溢出</a></li>
+<li><a href="css_float.asp.htm" tppabs="https://www.w3school.com.cn/css/css_float.asp" title="CSS 布局 - 浮动和清除">CSS 浮动</a></li>
+<li><a href="css_float_clear.asp.htm" tppabs="https://www.w3school.com.cn/css/css_float_clear.asp" title="CSS 布局 - clear 和 clearfix">CSS 清除浮动</a></li>
+<li><a href="css_float_examples.asp.htm" tppabs="https://www.w3school.com.cn/css/css_float_examples.asp" title="CSS 布局 - 浮动实例">CSS 布局 - 浮动实例</a></li>
+<li><a href="css_inline-block.asp.htm" tppabs="https://www.w3school.com.cn/css/css_inline-block.asp" title="CSS 布局 - display: inline-block">CSS inline-block</a></li>
+<li><a href="css_align.asp.htm" tppabs="https://www.w3school.com.cn/css/css_align.asp" title="CSS 布局 - 水平和垂直对齐">CSS 对齐</a></li>
+<li><a href="css_combinators.asp.htm" tppabs="https://www.w3school.com.cn/css/css_combinators.asp" title="CSS 选择器">CSS 组合器</a></li>
+<li><a href="css_pseudo_classes.asp.htm" tppabs="https://www.w3school.com.cn/css/css_pseudo_classes.asp" title="CSS 伪类">CSS 伪类</a></li>
+<li><a href="css_pseudo_elements.asp.htm" tppabs="https://www.w3school.com.cn/css/css_pseudo_elements.asp" title="CSS 伪元素">CSS 伪元素</a></li>
+<li><a href="css_image_transparency.asp.htm" tppabs="https://www.w3school.com.cn/css/css_image_transparency.asp" title="CSS 不透明度">CSS 不透明度</a></li>
+<li><a href="css_navbar.asp.htm" tppabs="https://www.w3school.com.cn/css/css_navbar.asp" title="CSS 导航栏">CSS 导航栏</a></li>
+<li><a href="css_navbar_vertical.asp.htm" tppabs="https://www.w3school.com.cn/css/css_navbar_vertical.asp" title="CSS 垂直导航栏">CSS 垂直导航栏</a></li>
+<li><a href="css_navbar_horizontal.asp.htm" tppabs="https://www.w3school.com.cn/css/css_navbar_horizontal.asp" title="CSS 水平导航栏">CSS 水平导航栏</a></li>
+<li><a href="css_dropdowns.asp.htm" tppabs="https://www.w3school.com.cn/css/css_dropdowns.asp" title="CSS 下拉菜单">CSS 下拉菜单</a></li>
+<li><a href="css_image_gallery.asp.htm" tppabs="https://www.w3school.com.cn/css/css_image_gallery.asp" title="CSS 图片库">CSS 图片库</a></li>
+<li><a href="css_image_sprites.asp.htm" tppabs="https://www.w3school.com.cn/css/css_image_sprites.asp" title="CSS 图像精灵">CSS 图像精灵</a></li>
+<li><a href="css_attribute_selectors.asp.htm" tppabs="https://www.w3school.com.cn/css/css_attribute_selectors.asp" title="CSS 属性选择器">CSS 属性选择器</a></li>
+<li><a href="css_form.asp.htm" tppabs="https://www.w3school.com.cn/css/css_form.asp" title="CSS 表单">CSS 表单</a></li>
+<li><a href="css_counters.asp.htm" tppabs="https://www.w3school.com.cn/css/css_counters.asp" title="CSS 计数器">CSS 计数器</a></li>
+<li><a href="css_website_layout.asp.htm" tppabs="https://www.w3school.com.cn/css/css_website_layout.asp" title="CSS 网站布局">CSS 网站布局</a></li>
+<li><a href="css_units.asp.htm" tppabs="https://www.w3school.com.cn/css/css_units.asp" title="CSS 单位">CSS 单位</a></li>
+<li><a href="css_specificity.asp.htm" tppabs="https://www.w3school.com.cn/css/css_specificity.asp" title="CSS 特异性">CSS 特异性</a></li>
+<li><a href="css_important.asp.htm" tppabs="https://www.w3school.com.cn/css/css_important.asp" title="CSS !important 规则">CSS !important</a></li>
+<li><a href="css_math_functions.asp.htm" tppabs="https://www.w3school.com.cn/css/css_math_functions.asp" title="CSS 数学函数">CSS 数学函数</a></li>
+</ul>
+<h2>CSS3 高级教程</h2>
+<ul>
+<li><a href="css3_borders.asp.htm" tppabs="https://www.w3school.com.cn/css/css3_borders.asp" title="CSS 圆角">CSS 圆角</a></li>
+<li><a href="css3_border_images.asp.htm" tppabs="https://www.w3school.com.cn/css/css3_border_images.asp" title="CSS 边框图像">CSS 边框图像</a></li>
+<li><a href="css3_backgrounds.asp.htm" tppabs="https://www.w3school.com.cn/css/css3_backgrounds.asp" title="CSS 背景">CSS 背景</a></li>
+<li><a href="css3_colors.asp.htm" tppabs="https://www.w3school.com.cn/css/css3_colors.asp" title="CSS 颜色">CSS 颜色</a></li>
+<li><a href="css_colors_keywords.asp.htm" tppabs="https://www.w3school.com.cn/css/css_colors_keywords.asp" title="CSS 颜色关键字">CSS 颜色关键字</a></li>
+<li><a href="css3_gradients.asp.htm" tppabs="https://www.w3school.com.cn/css/css3_gradients.asp" title="CSS 渐变">CSS 渐变</a></li>
+<li><a href="css3_gradients_radial.asp.htm" tppabs="https://www.w3school.com.cn/css/css3_gradients_radial.asp" title="CSS 径向渐变">CSS 径向渐变</a></li>
+<li><a href="css3_shadows.asp.htm" tppabs="https://www.w3school.com.cn/css/css3_shadows.asp" title="CSS 阴影">CSS 阴影</a></li>
+<li><a href="css3_shadows_box.asp.htm" tppabs="https://www.w3school.com.cn/css/css3_shadows_box.asp" title="CSS box-shadow">CSS box-shadow</a></li>
+<li><a href="css3_text_effects.asp.htm" tppabs="https://www.w3school.com.cn/css/css3_text_effects.asp" title="CSS 文本效果">CSS 文本效果</a></li>
+<li><a href="css3_fonts.asp.htm" tppabs="https://www.w3school.com.cn/css/css3_fonts.asp" title="CSS 网络字体">CSS 网络字体</a></li>
+<li><a href="css3_2dtransforms.asp.htm" tppabs="https://www.w3school.com.cn/css/css3_2dtransforms.asp" title="CSS 2D 转换">CSS 2D 转换</a></li>
+<li><a href="css3_3dtransforms.asp.htm" tppabs="https://www.w3school.com.cn/css/css3_3dtransforms.asp" title="CSS 3D 转换">CSS 3D 转换</a></li>
+<li><a href="css3_transitions.asp.htm" tppabs="https://www.w3school.com.cn/css/css3_transitions.asp" title="CSS 过渡">CSS 过渡</a></li>
+<li><a href="css3_animations.asp.htm" tppabs="https://www.w3school.com.cn/css/css3_animations.asp" title="CSS 动画">CSS 动画</a></li>
+<li><a href="css_tooltip.asp.htm" tppabs="https://www.w3school.com.cn/css/css_tooltip.asp" title="CSS 工具提示">CSS 工具提示</a></li>
+<li><a href="css3_images.asp.htm" tppabs="https://www.w3school.com.cn/css/css3_images.asp" title="CSS 图像样式">CSS 图像样式</a></li>
+<li><a href="css3_object-fit.asp.htm" tppabs="https://www.w3school.com.cn/css/css3_object-fit.asp" title="CSS object-fit">CSS object-fit</a></li>
+<li><a href="css3_object-position.asp.htm" tppabs="https://www.w3school.com.cn/css/css3_object-position.asp" title="CSS object-position 属性">CSS object-position</a></li>
+<li><a href="css3_masking.asp.htm" tppabs="https://www.w3school.com.cn/css/css3_masking.asp" title="CSS 遮罩">CSS 遮罩</a></li>
+<li><a href="css3_buttons.asp.htm" tppabs="https://www.w3school.com.cn/css/css3_buttons.asp" title="CSS 按钮">CSS 按钮</a></li>
+<li><a href="css3_pagination.asp.htm" tppabs="https://www.w3school.com.cn/css/css3_pagination.asp" title="CSS 分页">CSS 分页</a></li>
+<li><a href="css3_multiple_columns.asp.htm" tppabs="https://www.w3school.com.cn/css/css3_multiple_columns.asp" title="CSS 多列">CSS 多列</a></li>
+<li><a href="css3_user_interface.asp.htm" tppabs="https://www.w3school.com.cn/css/css3_user_interface.asp" title="CSS 用户界面">CSS 用户界面</a></li>
+<li><a href="css3_variables.asp.htm" tppabs="https://www.w3school.com.cn/css/css3_variables.asp" title="CSS 变量">CSS 变量</a></li>
+<li><a href="css3_variables_overriding.asp.htm" tppabs="https://www.w3school.com.cn/css/css3_variables_overriding.asp" title="CSS 覆盖变量">CSS 覆盖变量</a></li>
+<li><a href="css3_variables_javascript.asp.htm" tppabs="https://www.w3school.com.cn/css/css3_variables_javascript.asp" title="CSS 使用 JavaScript 更改变量">CSS 变量 - JavaScript</a></li>
+<li><a href="css3_variables_mediaqueries.asp.htm" tppabs="https://www.w3school.com.cn/css/css3_variables_mediaqueries.asp" title="CSS 在媒体查询中使用变量">CSS 变量 - 媒体查询</a></li>
+<li><a href="css3_property.asp.htm" tppabs="https://www.w3school.com.cn/css/css3_property.asp" title="CSS @property 规则">CSS @property</a></li>
+<li><a href="css3_box-sizing.asp.htm" tppabs="https://www.w3school.com.cn/css/css3_box-sizing.asp" title="CSS Box Sizing">CSS Box Sizing</a></li>
+<li><a href="css3_flexbox.asp.htm" tppabs="https://www.w3school.com.cn/css/css3_flexbox.asp" title="CSS Flexbox">CSS Flexbox</a></li>
+<li><a href="css3_mediaqueries.asp.htm" tppabs="https://www.w3school.com.cn/css/css3_mediaqueries.asp" title="CSS 媒体查询">CSS 媒体查询</a></li>
+<li><a href="css3_mediaqueries_ex.asp.htm" tppabs="https://www.w3school.com.cn/css/css3_mediaqueries_ex.asp" title="CSS 媒体查询实例">CSS 媒体查询实例</a></li>
+</ul>
+<h2>CSS 响应式设计</h2>
+<ul>
+<li><a href="css_rwd_intro.asp.htm" tppabs="https://www.w3school.com.cn/css/css_rwd_intro.asp" title="响应式网站设计 - 简介">RWD 简介</a></li>
+<li><a href="css_rwd_viewport.asp.htm" tppabs="https://www.w3school.com.cn/css/css_rwd_viewport.asp" title="响应式网页设计 - 视口">RWD 视口</a></li>
+<li><a href="css_rwd_grid.asp.htm" tppabs="https://www.w3school.com.cn/css/css_rwd_grid.asp" title="响应式网页设计 - Grid-View">RWD 网格视图</a></li>
+<li><a href="css_rwd_mediaqueries.asp.htm" tppabs="https://www.w3school.com.cn/css/css_rwd_mediaqueries.asp" title="响应式网页设计 - 媒体查询">RWD 媒体查询</a></li>
+<li><a href="css_rwd_images.asp.htm" tppabs="https://www.w3school.com.cn/css/css_rwd_images.asp" title="响应式网页设计 - 图像">RWD 图像</a></li>
+<li><a href="css_rwd_videos.asp.htm" tppabs="https://www.w3school.com.cn/css/css_rwd_videos.asp" title="响应式网页设计 - 视频">RWD 视频</a></li>
+</ul>
+<h2>CSS 网格教程</h2>
+<ul>
+<li><a href="css_grid.asp.htm" tppabs="https://www.w3school.com.cn/css/css_grid.asp" title="CSS 网格布局模块">CSS 网格布局模块</a></li>
+<li><a href="css_grid_container.asp.htm" tppabs="https://www.w3school.com.cn/css/css_grid_container.asp" title="CSS 网格容器">CSS 网格容器</a></li>
+<li><a href="css_grid_item.asp.htm" tppabs="https://www.w3school.com.cn/css/css_grid_item.asp" title="CSS 网格项目">CSS 网格项目</a></li>
+</ul>
+<h2>CSS 实例</h2>
+<ul>
+<li class="currentLink"><a href="css_examples.asp.htm" tppabs="https://www.w3school.com.cn/css/css_examples.asp" title="CSS 实例">CSS 实例</a></li>
+</ul>
+<h2>CSS 测验</h2>
+<ul>
+<li><a href="css_quiz.asp.htm" tppabs="https://www.w3school.com.cn/css/css_quiz.asp" title="CSS 测验">CSS 测验</a></li>
+</ul>
+<h2>CSS 参考手册</h2>
+<ul>
+<li><a href="../cssref/index.asp.htm" tppabs="https://www.w3school.com.cn/cssref/index.asp" title="CSS 参考手册">CSS 参考手册</a></li>
+<li><a href="../cssref/css_browsersupport.asp.htm" tppabs="https://www.w3school.com.cn/cssref/css3_browsersupport.asp" title="CSS 浏览器支持">CSS 浏览器支持</a></li>
+<li><a href="../cssref/css_selectors.asp.htm" tppabs="https://www.w3school.com.cn/cssref/css_selectors.asp" title="CSS 选择器">CSS 选择器</a></li>
+<li><a href="../cssref/css_functions.asp.htm" tppabs="https://www.w3school.com.cn/cssref/css_functions.asp" title="CSS 函数">CSS 函数</a></li>
+<li><a href="../cssref/css_units.asp.htm" tppabs="https://www.w3school.com.cn/cssref/css_units.asp" title="CSS 单位">CSS 单位</a></li>
+<li><a href="../cssref/css_ref_aural.asp.htm" tppabs="https://www.w3school.com.cn/cssref/css_ref_aural.asp" title="CSS 听觉">CSS 听觉</a></li>
+<li><a href="../cssref/css_websafe_fonts.asp.htm" tppabs="https://www.w3school.com.cn/cssref/css_websafe_fonts.asp" title="CSS 网络安全字体">CSS 网络安全字体</a></li>
+<li><a href="../cssref/css_animatable.asp.htm" tppabs="https://www.w3school.com.cn/cssref/css_animatable.asp" title="CSS 可动画制作">CSS 可动画制作</a></li>
+<li><a href="../cssref/css_units.asp.htm" tppabs="https://www.w3school.com.cn/cssref/css_units.asp" title="CSS 单位">CSS 单位</a></li>
+<li><a href="../cssref/css_colors.asp.htm" tppabs="https://www.w3school.com.cn/cssref/css_colors.asp" title="CSS 颜色">CSS 颜色</a></li>
+<li><a href="../cssref/css_colors_legal.asp.htm" tppabs="https://www.w3school.com.cn/cssref/css_colors_legal.asp" title="CSS 颜色值">CSS 颜色值</a></li>
+<li><a href="../cssref/css_default_values.asp.htm" tppabs="https://www.w3school.com.cn/cssref/css_default_values.asp" title="CSS 默认值">CSS 默认值</a></li>
+<li><a href="../cssref/css_entities.asp.htm" tppabs="https://www.w3school.com.cn/cssref/css_entities.asp" title="CSS 实体">CSS 实体</a></li>
+</ul>
+</div><div id="selected">
+<h2>课程推荐：</h2>
+<ul>
+<li><a href="../howto/index.asp.htm" tppabs="https://www.w3school.com.cn/howto/index.asp" title="W3School 百宝箱">W3School 百宝箱</a></li>
+<li><a href="../java/index.asp.htm" tppabs="https://www.w3school.com.cn/java/index.asp" title="Java 教程">Java 教程</a></li>
+</ul>
+
+</div>
+
+</div>
+
+<div id="maincontent">
+
+<h1>CSS 实例</h1>
+
+<div class="prenextnav">
+<ul class="prenext">
+<li class="pre"><a href="css_grid_item.asp.htm" tppabs="https://www.w3school.com.cn/css/css_grid_item.asp" title="CSS 网格项目">CSS 网格项目</a></li>
+<li class="next"><a href="css_quiz.asp.htm" tppabs="https://www.w3school.com.cn/css/css_quiz.asp" title="CSS 测验">CSS 测验</a></li>
+</ul>
+</div>
+
+
+
+<style>
+div#maincontent ul.example-list {
+list-style-type: none;
+margin: 15px 0 0 0;
+padding: 0;
+}
+
+div#maincontent ul.example-list li {
+margin: 0;
+padding: 0;
+border-bottom: 1px solid #ccc;
+}
+
+div#maincontent ul.example-list li:last-child {
+border-bottom: none;
+}
+
+ul.example-list li a {
+color: #000;
+border: none;
+display: block;
+width: 100%;
+padding: 10px 20px;
+background-color: #f1f1f1;
+box-sizing: border-box;
+margin: 0;
+}
+
+ul.example-list li a:hover {
+background-color: #ccc;
+}
+</style>
+
+
+
+<div>
+<h2>CSS 语法</h2>
+
+<ul class="example-list">
+<li><a target="_blank" href="../tiy/t.asp-f=css_syntax_1.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_syntax_1">CSS 语法</a></li>
+</ul>
+
+<p><a class="btn-blue" href="css_syntax.asp.htm" tppabs="https://www.w3school.com.cn/css/css_syntax.asp">实例解释：CSS 语法</a></p>
+</div>
+
+
+
+<div>
+<h2>CSS 选择器</h2>
+
+<ul class="example-list">
+<li><a target="_blank" href="../tiy/t.asp-f=css_syntax_element.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_syntax_element">元素选择器</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_syntax_id.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_syntax_id">id 选择器</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_syntax_class.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_syntax_class">类选择器（针对所有元素）</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_syntax_element_class_1.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_syntax_element_class_1">类选择器（只针对 &lt;p&gt; 元素）</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_syntax_element_class_2.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_syntax_element_class_2">引用两个类的 HTML 元素</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_syntax_universal.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_syntax_universal">通用选择器</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_grouping.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_grouping">分组选择器</a></li>
+</ul>
+
+<p><a class="btn-blue" href="css_selectors.asp.htm" tppabs="https://www.w3school.com.cn/css/css_selectors.asp">实例解释：CSS 选择器</a></p>
+</div>
+
+
+
+<div>
+<h2>CSS 使用</h2>
+
+<ul class="example-list">
+<li><a target="_blank" href="../tiy/t.asp-f=css_howto_external.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_howto_external">外部 CSS</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_howto_internal.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_howto_internal">内部 CSS</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_howto_inline.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_howto_inline">行内 CSS</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_howto_multiple_1.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_howto_multiple_1">多个样式表</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_howto_cascade.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_howto_cascade">层叠顺序</a></li>
+</ul>
+
+<p><a class="btn-blue" href="css_howto.asp.htm" tppabs="https://www.w3school.com.cn/css/css_howto.asp">实例解释：如何添加 CSS</a></p>
+</div>
+
+
+
+<div>
+<h2>CSS 注释</h2>
+
+<ul class="example-list">
+<li><a target="_blank" href="../tiy/t.asp-f=css_comments_1.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_comments_1">单行注释</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_comments_3.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_comments_3">多行注释</a></li>
+</ul>
+
+<p><a class="btn-blue" href="css_comments.asp.htm" tppabs="https://www.w3school.com.cn/css/css_comments.asp">实例解释：CSS 注释</a></p>
+</div>
+
+
+
+<div>
+<h2>CSS 颜色</h2>
+
+<ul class="example-list">
+<li><a target="_blank" href="../tiy/t.asp-f=css_color_background.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_color_background">设置颜色的背景色</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_color_text.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_color_text">设置文本颜色</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_color_border.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_color_border">设置边框颜色</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_color_values.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_color_values">设置不同的颜色值</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_color_rgb.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_color_rgb">设置 RGB 值</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_color_hex.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_color_hex">设置 HEX 值</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_color_hsl.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_color_hsl">设置 HSL 值</a></li>
+</ul>
+
+<p><a class="btn-blue" href="css_colors.asp.htm" tppabs="https://www.w3school.com.cn/css/css_colors.asp">实例解释：CSS 颜色</a></p>
+</div>
+
+
+
+<div>
+<h2>CSS 背景</h2>
+
+<ul class="example-list">
+<li><a target="_blank" href="../tiy/t.asp-f=css_background-color_body.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_background-color_body">设置页面的背景色</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_background-color_elements.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_background-color_elements">设置不同元素的背景色</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_background-image.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_background-image">把图像设置为页面背景</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_background-image_gradient_2.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_background-image_gradient_2">如何只在水平方向重复背景图像</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_background-image_position.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_background-image_position">如何定位背景图像</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_background-image_attachment_1.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_background-image_attachment_1">固定的背景图像（该图像不会随着页面的其余部分滚动）</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_background_shorthand.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_background_shorthand">所有背景属性在一条声明中</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_background_shorthand_2.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_background_shorthand_2">高级背景实例</a></li>
+</ul>
+
+<p><a class="btn-blue" href="css_background.asp.htm" tppabs="https://www.w3school.com.cn/css/css_background.asp">实例解释：背景属性</a></p>
+</div>
+
+
+
+<div>
+<h2>CSS 边框</h2>
+
+<ul class="example-list">
+<li><a target="_blank" href="../tiy/t.asp-f=css_border-width.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_border-width">设置四条边框的宽度</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_border-top-width.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_border-top-width">设置上边框的宽度</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_border-bottom-width.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_border-bottom-width">设置下边框的宽度</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_border-left-width.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_border-left-width">设置左边框的宽度</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_border-right-width.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_border-right-width">设置右边框的宽度</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_border-style.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_border-style">设置四条边框的样式</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_border-top-style.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_border-top-style">设置上边框的样式</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_border-bottom-style.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_border-bottom-style">设置下边框的样式</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_border-left-style.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_border-left-style">设置左边框的样式</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_border-right-style.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_border-right-style">设置右边框的样式</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_border-color.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_border-color">设置四条边框的颜色</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_border-top-color.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_border-top-color">设置上边框的颜色</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_border-bottom-color.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_border-bottom-color">设置下边框的颜色</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_border-left-color.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_border-left-color">设置左边框的颜色</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_border-right-color.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_border-right-color">设置右边框的颜色</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_border.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_border">所有边框属性在一条声明中</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_border_round.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_border_round">为元素添加圆角</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_border-style_2.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_border-style_2">为每个边设置不同的边框</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_border-top.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_border-top">所有上边框属性在一条声明中</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_border-bottom.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_border-bottom">所有下边框属性在一条声明中</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_border-left.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_border-left">所有左边框属性在一条声明中</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_border-right.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_border-right">所有右边框属性在一条声明中</a></li>
+</ul>
+
+<p><a class="btn-blue" href="css_border.asp.htm" tppabs="https://www.w3school.com.cn/css/css_border.asp">实例解释：边框属性</a></p>
+</div>
+
+
+
+<div>
+<h2>CSS 外边距</h2>
+
+<ul class="example-list">
+<li><a target="_blank" href="../tiy/t.asp-f=css_margin_sides.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_margin_sides">为元素的各边规定不同的外边距</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_margin_shorthand_4value.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_margin_shorthand_4value">使用带有四个值的简写 margin 属性</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_margin_shorthand_3value.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_margin_shorthand_3value">使用带有三个值的简写 margin 属性</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_margin_shorthand_2value.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_margin_shorthand_2value">使用带有两个值的简写 margin 属性</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_margin_shorthand_1value.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_margin_shorthand_1value">使用带有一个值的简写 margin 属性</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_margin_auto.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_margin_auto">把外边距设置 auto，来居中其容器内的元素</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_margin-left_inherit.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_margin-left_inherit">让左外边距继承父元素</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_margin_collapse.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_margin_collapse">外边距合并</a></li>
+</ul>
+
+<p><a class="btn-blue" href="css_margin.asp.htm" tppabs="https://www.w3school.com.cn/css/css_margin.asp">实例解释：外边距属性</a></p>
+</div>
+
+
+
+<div>
+<h2>CSS 内边距</h2>
+
+<ul class="example-list">
+<li><a target="_blank" href="../tiy/t.asp-f=css_padding_sides.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_padding_sides">为元素的各边规定不同的内边距</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_padding_shorthand_4value.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_padding_shorthand_4value">使用带有四个值的简写内边距</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_padding_shorthand_3value.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_padding_shorthand_3value">使用带有三个值的简写内边距</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_padding_shorthand_2value.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_padding_shorthand_2value">使用带有两个值的简写内边距</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_padding_shorthand_1value.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_padding_shorthand_1value">使用带有一个值的简写内边距</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_padding_width_1.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_padding_width_1">内边距和元素宽度（不设置 box-sizing）</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_padding_width_2.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_padding_width_2">内边距和元素宽度（设置 box-sizing）</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_padding-left.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_padding-left">设置元素的左内边距</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_padding-right.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_padding-right">设置元素的右内边距</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_padding-top.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_padding-top">设置元素的上内边距</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_padding-bottom.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_padding-bottom">设置元素的下内边距</a></li>
+</ul>
+
+<p><a class="btn-blue" href="css_padding.asp.htm" tppabs="https://www.w3school.com.cn/css/css_padding.asp">实例解释：内边距属性</a></p>
+</div>
+
+
+
+<div>
+<h2>CSS 高度/宽度</h2>
+
+<ul class="example-list">
+<li><a target="_blank" href="../tiy/t.asp-f=css_dim_height_width_1.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_dim_height_width_1">设置元素的高度和宽度</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_dim_max_width.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_dim_max_width">设置元素的最大宽度</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_dim_height.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_dim_height">设置不同元素的高度和宽度</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_dim_height_percent.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_dim_height_percent">使用百分百来设置图像的高度和宽度</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_dim_max-width.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_dim_max-width">设置元素的最小宽度和最大宽度</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_dim_max-height.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_dim_max-height">设置元素的最小高度和最大高度</a></li>
+</ul>
+
+<p><a class="btn-blue" href="css_dimension.asp.htm" tppabs="https://www.w3school.com.cn/css/css_dimension.asp">实例解释：定位属性</a></p>
+</div>
+
+
+
+<div>
+<h2>CSS 盒模型</h2>
+
+<ul class="example-list">
+<li><a target="_blank" href="../tiy/t.asp-f=css_boxmodel.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_boxmodel">演示盒模型</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_boxmodel_width.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_boxmodel_width">规定总宽度为 250 像素的元素</a></li>
+</ul>
+
+<p><a class="btn-blue" href="css_boxmodel.asp.htm" tppabs="https://www.w3school.com.cn/css/css_boxmodel.asp">实例解释：盒模型</a></p>
+</div>
+
+
+
+<div>
+<h2>CSS 轮廓</h2>
+
+<ul class="example-list">
+<li><a target="_blank" href="../tiy/t.asp-f=css_outline_intro.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_outline_intro">绘制围绕元素的线条（轮廓）</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_outline-style.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_outline-style">设置轮廓的样式</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_outline-color.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_outline-color">设置轮廓的颜色</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_outline-color_invert.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_outline-color_invert">使用 outline-color：翻转轮廓</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_outline-width.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_outline-width">设置轮廓的宽度</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_outline.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_outline">使用简写的轮廓属性</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_outline-offset_1.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_outline-offset_1">在元素的轮廓与边框之间添加空间</a></li>
+</ul>
+
+<p><a class="btn-blue" href="css_outline.asp.htm" tppabs="https://www.w3school.com.cn/css/css_outline.asp">实例解释：轮廓属性</a></p>
+</div>
+
+
+
+<div>
+<h2>CSS 文本</h2>
+
+<ul class="example-list">
+<li><a target="_blank" href="../tiy/t.asp-f=css_color.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_color">设置不同元素的文本色</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_text-align.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_text-align">对齐文本</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_text-decoration_link.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_text-decoration_link">删除链接下面的线</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_text-decoration.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_text-decoration">修饰文本</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_text-transform.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_text-transform">控制文本中的字母大小写</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_text-indent.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_text-indent">缩进文本</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_letter-spacing.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_letter-spacing">规定字符间距</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_line-height.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_line-height">规定行间距</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_text_direction.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_text_direction">设置元素的文本方向</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_text_word-spacing.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_text_word-spacing">增加字间距</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_text-shadow.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_text-shadow">规定元素的文本阴影</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_text_white-space.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_text_white-space">在元素内禁用文本换行</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_vertical-align.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_vertical-align">垂直对齐文本内的图像</a></li>
+</ul>
+
+<p><a class="btn-blue" href="css_text.asp.htm" tppabs="https://www.w3school.com.cn/css/css_text.asp">实例解释：文本属性</a></p>
+</div>
+
+
+
+<div>
+<h2>CSS 字体</h2>
+
+<ul class="example-list">
+<li><a target="_blank" href="../tiy/t.asp-f=css_font-family_1.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_font-family_1">设置文本的字体</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_font-size.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_font-size">设置字体的大小</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_font-size_px.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_font-size_px">以 px 为单位设置字体大小</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_font-size_em.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_font-size_em">以 em 为单位设置字体大小</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_font-size_percent_em.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_font-size_percent_em">以百分百和 em 为单位设置字体大小</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_font-style.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_font-style">设置字体的样式</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_font-variant.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_font-variant">设置字体的变体</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_font-weight.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_font-weight">设置字体的粗细</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_font.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_font">所有字体属性在一条声明中</a></li>
+</ul>
+
+<p><a class="btn-blue" href="css_font.asp.htm" tppabs="https://www.w3school.com.cn/css/css_font.asp">实例解释：字体属性</a></p>
+</div>
+
+
+
+<div>
+<h2>CSS 图标</h2>
+
+<ul class="example-list">
+<li><a target="_blank" href="../tiy/t.asp-f=css_icons_fontawesome.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_icons_fontawesome">Font Awesome 图标</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_icons_bootstrap.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_icons_bootstrap">Bootstrap 图标</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_icons_google.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_icons_google">Google 图标</a></li>
+</ul>
+
+<p><a class="btn-blue" href="css_icons.asp.htm" tppabs="https://www.w3school.com.cn/css/css_icons.asp">实例解释：图标</a></p>
+</div>
+
+
+
+<div>
+<h2>CSS 链接</h2>
+
+<ul class="example-list">
+<li><a target="_blank" href="../tiy/t.asp-f=css_link_1.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_link_1">为已访问/未访问链接添加不同的颜色</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_link_decoration.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_link_decoration">在链接上使用 text-decoration</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_link_background.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_link_background">为链接规定背景色</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_link_2.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_link_2">为超链接添加其他样式</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_cursor.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_cursor">不同类型的指针</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_link_advanced_1.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_link_advanced_1">高级 - 创建链接框</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_link_advanced_2.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_link_advanced_2">高级 - 创建带边框的链接框</a></li>
+</ul>
+
+<p><a class="btn-blue" href="css_link.asp.htm" tppabs="https://www.w3school.com.cn/css/css_link.asp">实例解释：链接属性</a></p>
+</div>
+
+
+
+<div>
+<h2>CSS 列表</h2>
+
+<ul class="example-list">
+<li><a target="_blank" href="../tiy/t.asp-f=css_list-style-type_all.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_list-style-type_all">列表中的所有不同的列表项标记</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_list-style-image.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_list-style-image">把图像设置为列表项标记</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_list-style-position.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_list-style-position">定位列表项标记</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_list-style_none.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_list-style_none">删除默认列表设置</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_list-style.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_list-style">所有列表属性在一条声明中</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_list-style_colors.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_list-style_colors">用颜色设置列表样式</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_list-style-border.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_list-style-border">全宽带边框的列表</a></li>
+</ul>
+
+<p><a class="btn-blue" href="css_list.asp.htm" tppabs="https://www.w3school.com.cn/css/css_list.asp">实例解释：列表属性</a></p>
+</div>
+
+
+
+<div>
+<h2>CSS 表格</h2>
+
+<ul class="example-list">
+<li><a target="_blank" href="../tiy/t.asp-f=css_table_border_1.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_table_border_1">规定 table、th 以及 td 元素的黑色边框</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_table_border-collapse.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_table_border-collapse">使用 border-collapse</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_table_border_2.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_table_border_2">围绕表格的单一边框</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_table_width_1.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_table_width_1">规定表格的宽度和高度</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_table_align.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_table_align">设置内容的水平对齐（text-align）</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_table_vertical-align.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_table_vertical-align">设置内容的垂直对齐（vertical-align）</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_table_padding.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_table_padding">规定 th 和 td 元素的内边距</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_table_border_divider.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_table_border_divider">水平分隔符</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_table_hover.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_table_hover">可悬停的表格</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_table_striped.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_table_striped">条状表格</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_table_color.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_table_color">规定表格边框的颜色</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_table_caption-side.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_table_caption-side">设置表格标题的位置</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_table_responsive.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_table_responsive">响应式表格</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_table_fancy.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_table_fancy">创建美观的表格</a></li>
+</ul>
+
+<p><a class="btn-blue" href="css_table.asp.htm" tppabs="https://www.w3school.com.cn/css/css_table.asp">实例解释：表格属性</a></p>
+</div>
+
+
+
+<div>
+<h2>CSS 显示</h2>
+
+<ul class="example-list">
+<li><a target="_blank" href="../tiy/t.asp-f=css_visibility_hidden.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_visibility_hidden">如何隐藏元素（visibility:hidden）</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_display_none.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_display_none">如何不显示元素（display:none）</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_display_inline.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_display_inline">如何把块级元素显示为行内元素</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_display_block.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_display_block">如何把行内元素显示为块级元素</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_display_js.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_display_js">如何将 CSS 与 JavaScript 一起使用来显示隐藏内容</a></li>
+</ul>
+
+<p><a class="btn-blue" href="css_display_visibility.asp.htm" tppabs="https://www.w3school.com.cn/css/css_display_visibility.asp">实例解释：display 属性</a></p>
+</div>
+
+
+
+<div>
+<h2>CSS 定位</h2>
+
+<ul class="example-list">
+<li><a target="_blank" href="../tiy/t.asp-f=css_position_fixed.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_position_fixed">相对于浏览器窗口来放置元素</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_position_relative.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_position_relative">相对于元素正常位置来放置元素</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_position_absolute.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_position_absolute">用绝对值定位元素</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_position_sticky.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_position_sticky">粘性定位</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_zindex.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_zindex">重叠元素</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_clip.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_clip">设置元素的形状</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_position_top.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_position_top">使用像素值设置图像的上边缘</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_position_bottom.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_position_bottom">使用像素值设置图像的下边缘</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_position_left.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_position_left">使用像素值设置图像的左边缘</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_position_right.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_position_right">使用像素值设置图像的右边缘</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_image_text_top_left.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_image_text_top_left">定位图像文本（左上角）</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_image_text_top_right.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_image_text_top_right">定位图像文本（右上角）</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_image_text_bottom_left.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_image_text_bottom_left">定位图像文本（左下角）</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_image_text_bottom_right.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_image_text_bottom_right">定位图像文本（右下角）</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_image_text_center.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_image_text_center">定位图像文本（居中）</a></li>
+</ul>
+
+<p><a class="btn-blue" href="css_positioning.asp.htm" tppabs="https://www.w3school.com.cn/css/css_positioning.asp">实例解释：定位属性</a></p>
+</div>
+
+
+
+<div>
+<h2>CSS 溢出</h2>
+
+<ul class="example-list">
+<li><a target="_blank" href="../tiy/t.asp-f=css_overflow_visible.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_overflow_visible">使用 overflow: visible - 溢出没有被裁剪。它在元素框之外渲染。</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_overflow_hidden.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_overflow_hidden">使用 overflow: hidden - 溢出被裁剪，其余内容被隐藏。</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_overflow_scroll.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_overflow_scroll">使用 overflow: scroll - 溢出被裁剪，但是添加了滚动条以查看其余内容。</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_overflow_auto.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_overflow_auto">使用 overflow: auto - 如果裁剪了溢出，则应添加滚动条以查看其余内容。</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_overflow_xy.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_overflow_xy">使用 overflow-x 和 overflow-y</a></li>
+</ul>
+
+<p><a class="btn-blue" href="css_overflow.asp.htm" tppabs="https://www.w3school.com.cn/css/css_overflow.asp">实例解释：溢出属性</a></p>
+</div>
+
+
+
+<div>
+<h2>CSS 浮动</h2>
+
+<ul class="example-list">
+<li><a target="_blank" href="../tiy/t.asp-f=css_float_1.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_float_1">float 属性的简单使用</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_float_2.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_float_2">带有边框和外边距的图像浮动到段落的右侧</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_float_3.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_float_3">带标题的图像向右浮动</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_float_4.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_float_4">让段落的第一个字母向左浮动</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_layout_clear.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_layout_clear">关闭浮动（使用 clear 属性）</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_layout_clearfix_2.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_layout_clearfix_2">关闭浮动（使用 clearfix hack）</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_float_boxes.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_float_boxes">创建浮动框</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_float_images_side.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_float_images_side">创建并排图像</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_float_boxes_flex.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_float_boxes_flex">创建等高框（通过 flexbox）</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_float_navigation_menu.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_float_navigation_menu">创建水平菜单</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_layout_cols.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_layout_cols">创建 web 布局实例</a></li>
+</ul>
+
+<p><a class="btn-blue" href="css_float.asp.htm" tppabs="https://www.w3school.com.cn/css/css_float.asp">实例解释：浮动属性</a></p>
+</div>
+
+
+
+<div>
+<h2>CSS Inline-block</h2>
+
+<ul class="example-list">
+<li><a target="_blank" href="../tiy/t.asp-f=css_inline-block_span.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_inline-block_span">展示行内、行内块、块级元素的区别</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_inline-block_nav.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_inline-block_nav">使用 inline-block 来创建导航链接</a></li>
+</ul>
+
+<p><a class="btn-blue" href="css_inline-block.asp.htm" tppabs="https://www.w3school.com.cn/css/css_inline-block.asp">实例解释：Inline-block</a></p>
+</div>
+
+
+
+<div>
+<h2>CSS 对齐元素</h2>
+
+<ul class="example-list">
+<li><a target="_blank" href="../tiy/t.asp-f=css_align_container.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_align_container">通过外边距进行居中对齐</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_align_text.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_align_text">居中对齐文本</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_align_image.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_align_image">居中对齐图像</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_align_position.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_align_position">通过 position 实现左对齐/右对齐</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_align_position_crossbrowser.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_align_position_crossbrowser">通过 position 实现左对齐/右对齐 - 跨浏览器方案</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_align_float.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_align_float">通过 float 实现左对齐/右对齐</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_align_float_crossbrowser.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_align_float_crossbrowser">通过 float 实现左对齐/右对齐 - 跨浏览器方案</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_align_padding_1.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_align_padding_1">通过 padding 垂直居中</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_align_padding_2.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_align_padding_2">垂直和水平居中</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_align_line-height.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_align_line-height">通过 line-height 垂直居中</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_align_transform.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_align_transform">通过 position 实现垂直和水平居中</a></li>
+</ul>
+
+<p><a class="btn-blue" href="css_align.asp.htm" tppabs="https://www.w3school.com.cn/css/css_align.asp">实例解释：对齐属性</a></p>
+</div>
+
+
+
+<div>
+<h2>CSS 组合器</h2>
+
+<ul class="example-list">
+<li><a target="_blank" href="../tiy/t.asp-f=css_sel_element_element.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_sel_element_element">后代选择器</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_sel_element_gt.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_sel_element_gt">子选择器</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_sel_element_plus.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_sel_element_plus">相邻同胞选择器</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_sel_element_tilde.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_sel_element_tilde">通用同胞选择器</a></li>
+</ul>
+
+<p><a class="btn-blue" href="css_combinators.asp.htm" tppabs="https://www.w3school.com.cn/css/css_combinators.asp">实例解释：组合器选择器</a></p>
+</div>
+
+
+
+<div>
+<h2>CSS 伪类</h2>
+
+<ul class="example-list">
+<li><a target="_blank" href="../tiy/t.asp-f=css_link_1.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_link_1">给链接添加不同的颜色</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_link_2.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_link_2">为链接添加其他样式</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_link_focus.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_link_focus">使用 :focus</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_first-child_1.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_first-child_1">:first-child - 匹配首个 p 元素</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_first-child_2.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_first-child_2">:first-child - 匹配所有 p 元素内的首个 i 元素</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_first-child_3.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_first-child_3">:first-child - 匹配所有第一个子 p 元素中的所有 i 元素</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_lang.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_lang">使用 :lang</a></li>
+</ul>
+
+<p><a class="btn-blue" href="css_pseudo_classes.asp.htm" tppabs="https://www.w3school.com.cn/css/css_pseudo_classes.asp">实例解释：伪类</a></p>
+</div>
+
+
+
+<div>
+<h2>CSS 伪元素</h2>
+
+<ul class="example-list">
+<li><a target="_blank" href="../tiy/t.asp-f=css_firstletter.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_firstletter">制作文本中特别的首字母</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_firstline.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_firstline">制作文本中特别的首行</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_firstline_letter.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_firstline_letter">制作特别的首字母和首行</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_before.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_before">使用 :before 在元素之前插入内容</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_after.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_after">使用 :after 在元素之后插入内容</a></li>
+</ul>
+
+<p><a class="btn-blue" href="css_pseudo_elements.asp.htm" tppabs="https://www.w3school.com.cn/css/css_pseudo_elements.asp">实例解释：伪元素</a></p>
+</div>
+
+
+
+<div>
+<h2>CSS 内容生成</h2>
+
+<ul class="example-list">
+<li><a target="_blank" href="../tiy/t.asp-f=css_gen_content.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_gen_content">在每个带有 content 属性的链接之后的括号中插入 URL</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_gen_counter-reset.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_gen_counter-reset">用 &quot;Section 1&quot;、&quot;1.1&quot;、&quot;1.2&quot; 等为节和子节编号</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_gen_quotes.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_gen_quotes">用 quotes 属性指定引号</a></li>
+</ul>
+
+<p><a class="btn-blue" href="css_counters.asp.htm" tppabs="https://www.w3school.com.cn/css/css_counters.asp">实例解释：CSS 计数器</a></p>
+</div>
+
+
+
+<div>
+<h2>CSS 不透明度</h2>
+
+<ul class="example-list">
+<li><a target="_blank" href="../tiy/t.asp-f=css_image_opacity.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_image_opacity">创建透明图像</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_image_transparency_1.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_image_transparency_1">创建透明图像 - mouseover 效果</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_image_transparency_2.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_image_transparency_2">透明图像的反转的 mouseover 效果</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_opacity_box_1.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_opacity_box_1">透明框（div）</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_opacity_box_2.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_opacity_box_2">用了 RGBA 值的透明框</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_transparency.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_transparency">创建一个文本位于背景图像上的透明框</a></li>
+</ul>
+
+<p><a class="btn-blue" href="css_image_transparency.asp.htm" tppabs="https://www.w3school.com.cn/css/css_image_transparency.asp">实例解释：图像不透明度</a></p>
+</div>
+
+
+
+<div>
+<h2>CSS 导航栏</h2>
+
+<ul class="example-list">
+<li><a target="_blank" href="../tiy/t.asp-f=css_navbar_vertical_active.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_navbar_vertical_active">拥有完整样式的垂直导航栏</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_navbar_horizontal_float_advanced.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_navbar_horizontal_float_advanced">拥有完整样式的水平导航栏</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_navbar_vertical_fixed.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_navbar_vertical_fixed">全高的固定垂直导航栏</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_navbar_horizontal_black_fixed_1.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_navbar_horizontal_black_fixed_1">固定的水平导航栏</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_navbar_sticky.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_navbar_sticky">粘性导航栏（在 IE 或 Edge 15 及更早版本中不起作用）</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_navbar_horizontal_responsive.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_navbar_horizontal_responsive">响应式的顶部导航栏</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_navbar_vertical_responsive.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_navbar_vertical_responsive">响应式的侧边导航栏</a></li>
+</ul>
+
+<p><a class="btn-blue" href="css_navbar.asp.htm" tppabs="https://www.w3school.com.cn/css/css_navbar.asp">实例解释：导航栏</a></p>
+</div>
+
+
+
+<div>
+<h2>CSS 下拉列表</h2>
+
+<ul class="example-list">
+<li><a target="_blank" href="../tiy/t.asp-f=css_dropdown_text.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_dropdown_text">下拉文本</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_dropdown_button.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_dropdown_button">下拉菜单</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_dropdown_right.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_dropdown_right">右对齐的下拉菜单</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_dropdown_image.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_dropdown_image">下拉图像</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_dropdown_navbar.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_dropdown_navbar">下拉导航栏</a></li>
+</ul>
+
+<p><a class="btn-blue" href="css_dropdowns.asp.htm" tppabs="https://www.w3school.com.cn/css/css_dropdowns.asp">实例解释：下拉菜单</a></p>
+</div>
+
+
+
+<div>
+<h2>CSS 图片库</h2>
+
+<ul class="example-list">
+<li><a target="_blank" href="../tiy/t.asp-f=css_image_gallery.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_image_gallery">图片库</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_image_gallery_responsive.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_image_gallery_responsive">响应式图片库</a></li>
+</ul>
+
+<p><a class="btn-blue" href="css_image_gallery.asp.htm" tppabs="https://www.w3school.com.cn/css/css_image_gallery.asp">实例解释：图片库</a></p>
+</div>
+
+
+
+<div>
+<h2>CSS 图像精灵</h2>
+
+<ul class="example-list">
+<li><a target="_blank" href="../tiy/t.asp-f=css_sprites_img.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_sprites_img">图像精灵</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_sprites_nav.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_sprites_nav">图像精灵 - 导航列表</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_sprites_hover_nav.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_sprites_hover_nav">有悬停效果的图像精灵</a></li>
+</ul>
+
+<p><a class="btn-blue" href="css_image_sprites.asp.htm" tppabs="https://www.w3school.com.cn/css/css_image_sprites.asp">实例解释：图像精灵</a></p>
+</div>
+
+
+
+<div>
+<h2>CSS 属性选择器</h2>
+
+<ul class="example-list">
+<li><a target="_blank" href="../tiy/t.asp-f=css_sel_attribute.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_sel_attribute">选取带有 target 属性的所有 &lt;a&gt; 元素</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_sel_attribute_value_1.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_sel_attribute_value_1">选取带有 target=&quot;_blank&quot; 属性的所有 &lt;a&gt; 元素</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_sel_attribute_value_2.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_sel_attribute_value_2">选取所有带有 title 属性的元素，其中 title 属性包含以空格分隔的单词列表，单词之一是 &quot;flower&quot;</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_sel_attribute_hyphen.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_sel_attribute_hyphen">选取所有带有以 &quot;top&quot; 开头的 class 属性值的元素（必须是整个单词）</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_sel_attribute_start.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_sel_attribute_start">选取所有带有以 &quot;top&quot; 开头的 class 属性值的元素（一定不能是整个单词）</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_sel_attribute_end.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_sel_attribute_end">选取所有带有以 &quot;test&quot; 结尾的 class 属性值的元素</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_sel_attribute_contain.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_sel_attribute_contain">选择带有包含 &quot;te&quot; 的 class 属性值的所有元素</a></li>
+</ul>
+
+<p><a class="btn-blue" href="css_attribute_selectors.asp.htm" tppabs="https://www.w3school.com.cn/css/css_attribute_selectors.asp">实例解释：属性选择器</a></p>
+</div>
+
+
+
+<div>
+<h2>CSS 表单</h2>
+
+<ul class="example-list">
+<li><a target="_blank" href="../tiy/t.asp-f=css_form_width.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_form_width">全宽的输入字段</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_form_padding.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_form_padding">填充的输入字段</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_form_border_1.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_form_border_1">带边框的输入字段</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_form_border_2.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_form_border_2">带下边框的输入字段</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_form_color.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_form_color">带颜色的输入字段</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_form_focus_1.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_form_focus_1">获得焦点的输入字段</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_form_focus_2.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_form_focus_2">获得焦点的输入字段 2</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_form_icon.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_form_icon">带图标的输入字段</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_form_search_animated.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_form_search_animated">有动画效果的搜索框</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_form_textarea.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_form_textarea">设置文本框的样式</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_form_select.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_form_select">设置选择菜单的样式</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_form_button.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_form_button">设置按钮的样式</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_form_responsive.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_form_responsive">响应式表单</a></li>
+</ul>
+
+<p><a class="btn-blue" href="css_form.asp.htm" tppabs="https://www.w3school.com.cn/css/css_form.asp">实例解释：表单</a></p>
+</div>
+
+
+
+<div>
+<h2>CSS 计数器</h2>
+
+<ul class="example-list">
+<li><a target="_blank" href="../tiy/t.asp-f=css_counters_1.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_counters_1">创建计数器</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_counters_2.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_counters_2">嵌套计数器 1</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_counters_3.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_counters_3">嵌套计数器 2</a></li>
+</ul>
+
+<p><a class="btn-blue" href="css_counters.asp.htm" tppabs="https://www.w3school.com.cn/css/css_counters.asp">实例解释：计数器</a></p>
+</div>
+
+
+
+<div>
+<h2>CSS 网站布局</h2>
+
+<ul class="example-list">
+<li><a target="_blank" href="../tiy/t.asp-f=css_website_layout_footer.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_website_layout_footer">简单的响应式网站布局</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_website_layout_blog.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_website_layout_blog">一个网站的实例</a></li>
+</ul>
+
+<p><a class="btn-blue" href="css_website_layout.asp.htm" tppabs="https://www.w3school.com.cn/css/css_website_layout.asp">实例解释：网站布局</a></p>
+</div>
+
+
+
+<div>
+<h2>CSS 圆角</h2>
+
+<ul class="example-list">
+<li><a target="_blank" href="../tiy/t.asp-f=css3_border-radius_1.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_border-radius_1">为元素添加圆角</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css3_border-radius_2.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_border-radius_2">单独设置每个圆角</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css3_border-radius_3.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_border-radius_3">创建椭圆角</a></li>
+</ul>
+
+<p><a class="btn-blue" href="css3_borders.asp.htm" tppabs="https://www.w3school.com.cn/css/css3_borders.asp">实例解释：CSS 圆角边框</a></p>
+</div>
+
+
+
+<div>
+<h2>CSS 边框图像</h2>
+
+<ul class="example-list">
+<li><a target="_blank" href="../tiy/t.asp-f=css3_border-image_1.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_border-image_1">创建围绕元素的图像边框，使用 round 关键字</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css3_border-image_2.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_border-image_2">创建围绕元素的图像边框，使用 stretch 关键字</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css3_border-image_3.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_border-image_3">图像边框 - 不同的 slice 边框</a></li>
+</ul>
+
+<p><a class="btn-blue" href="css3_border_images.asp.htm" tppabs="https://www.w3school.com.cn/css/css3_border_images.asp">实例解释：CSS 边框图像</a></p>
+</div>
+
+
+
+<div>
+<h2>CSS 背景</h2>
+
+<ul class="example-list">
+<li><a target="_blank" href="../tiy/t.asp-f=css3_background_multiple_1.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_background_multiple_1">为元素添加多个背景图像</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css3_background-size.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_background-size">规定背景图像的大小</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css3_background-size_contain.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_background-size_contain">使用 &quot;contain&quot; 和 &quot;cover&quot; 缩放背景图像</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css3_background_multiple_3.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_background_multiple_3">定义背景图像的大小</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css3_background_full.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_background_full">全尺寸的背景图像（完全覆盖内容区域）</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css3_background-origin.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_background-origin">使用 background-origin 来规定放置背景图像的位置</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css3_background-clip.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_background-clip">使用 background-clip 来规定背景的绘制区域</a></li>
+</ul>
+
+<p><a class="btn-blue" href="css3_backgrounds.asp.htm" tppabs="https://www.w3school.com.cn/css/css3_backgrounds.asp">实例解释：CSS 背景</a></p>
+</div>
+
+
+
+<div>
+<h2>CSS 渐变</h2>
+
+<ul class="example-list">
+<li><a target="_blank" href="../tiy/t.asp-f=css3_gradient-linear.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_gradient-linear">线性渐变 - 从上到下</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css3_gradient-linear_ltr.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_gradient-linear_ltr">线性渐变 - 从左到右</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css3_gradient-linear_diagonal.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_gradient-linear_diagonal">线性渐变 - 对角线</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css3_gradient-linear_angles.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_gradient-linear_angles">线性渐变 - 特定角度</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css3_gradient-linear_color_stops.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_gradient-linear_color_stops">线性渐变 - 多个色标</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css3_gradient-linear_rainbow.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_gradient-linear_rainbow">线性渐变 - 彩虹色 + 文本</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css3_gradient-linear_transparency.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_gradient-linear_transparency">线性渐变 - 透明度</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css3_gradient-linear_repeating.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_gradient-linear_repeating">线性渐变 - 重复的线性渐变</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css3_gradient-radial_1.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_gradient-radial_1">径向渐变 - 均匀分布的色标</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css3_gradient-radial_2.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_gradient-radial_2">径向渐变 - 间距不同的色标</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css3_gradient-radial_shape.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_gradient-radial_shape">径向渐变 - 设置形状</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css3_gradient-radial_size.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_gradient-radial_size">径向渐变 - 不同的尺寸关键字</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css3_gradient-radial_repeating.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_gradient-radial_repeating">径向渐变 - 重复的径向渐变</a></li>
+</ul>
+
+<p><a class="btn-blue" href="css3_gradients.asp.htm" tppabs="https://www.w3school.com.cn/css/css3_gradients.asp">实例解释：CSS 渐变</a></p>
+</div>
+
+
+
+<div>
+<h2>CSS 阴影效果</h2>
+
+<ul class="example-list">
+<li><a target="_blank" href="../tiy/t.asp-f=css3_text-shadow_1.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_text-shadow_1">简单的阴影效果</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css3_text-shadow_2.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_text-shadow_2">向阴影添加颜色</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css3_text-shadow_3.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_text-shadow_3">向阴影添加模糊效果</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css3_text-shadow_4.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_text-shadow_4">带黑色阴影的白色文本</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css3_text-shadow_5.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_text-shadow_5">红色霓虹灯发光阴影</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css3_text-shadow_6.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_text-shadow_6">红色和蓝色霓虹灯发光阴影</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css3_text-shadow_7.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_text-shadow_7">黑色、蓝色和深蓝色阴影的白色文本</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css3_box-shadow_1.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_box-shadow_1">向元素添加简单的 box-shadow</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css3_box-shadow_2.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_box-shadow_2">向 box-shadow 添加颜色</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css3_box-shadow_3.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_box-shadow_3">向 box-shadow 添加颜色和模糊效果</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css3_box-shadow_4.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_box-shadow_4">创建类似纸质卡片（文本）</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css3_box-shadow_5.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_box-shadow_5">创建类似纸质卡片（宝丽来图像）</a></li>
+</ul>
+
+<p><a class="btn-blue" href="css3_shadows.asp.htm" tppabs="https://www.w3school.com.cn/css/css3_shadows.asp">实例解释：CSS 阴影效果</a></p>
+</div>
+
+
+
+<div>
+<h2>CSS 文本效果</h2>
+
+<ul class="example-list">
+<li><a target="_blank" href="../tiy/t.asp-f=css3_text-overflow.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_text-overflow">指定应如何向用户呈现未显示的溢出内容</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css3_text-overflow_hover.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_text-overflow_hover">将鼠标悬停在元素上时如何显示溢出的内容</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css3_word-wrap.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_word-wrap">允许长文字能够被折断并换到下一行</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css3_word-break.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_word-break">规定换行规则</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css3_writing-mode.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_writing-mode">规定文本的书写模式（横着写还是竖着写）</a></li>
+</ul>
+
+<p><a class="btn-blue" href="css3_text_effects.asp.htm" tppabs="https://www.w3school.com.cn/css/css3_text_effects.asp">实例解释：CSS 文本</a></p>
+</div>
+
+
+
+<div>
+<h2>CSS Web 字体</h2>
+
+<ul class="example-list">
+<li><a target="_blank" href="../tiy/t.asp-f=css3_font-face_rule.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_font-face_rule">在 @font-face 规则中使用您自己的字体</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css3_font-face_rule_bold.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_font-face_rule_bold">在 @font-face 规则中使用您自己的字体（粗体）</a></li>
+</ul>
+
+<p><a class="btn-blue" href="css3_fonts.asp.htm" tppabs="https://www.w3school.com.cn/css/css3_fonts.asp">实例解释：CSS web 字体</a></p>
+</div>
+
+
+
+<div>
+<h2>CSS 2D 转换</h2>
+
+<ul class="example-list">
+<li><a target="_blank" href="../tiy/t.asp-f=css3_transform_translate.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_transform_translate">translate() - 从当前位置删除元素</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css3_transform_rotate_1.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_transform_rotate_1">rotate() - 顺时针旋转元素</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css3_transform_rotate_2.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_transform_rotate_2">rotate() - 逆时针旋转元素</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css3_transform_scale_1.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_transform_scale_1">scale() - 增加元素</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css3_transform_scale_2.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_transform_scale_2">scale() - 减少元素</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css3_transform_skewx.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_transform_skewx">skewX() - 沿 X 轴倾斜元素</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css3_transform_skewy.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_transform_skewy">skewY() - 沿 Y 轴倾斜元素</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css3_transform_skew_1.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_transform_skew_1">skew() - 沿 X 和 Y 轴倾斜元素</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css3_transform_matrix.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_transform_matrix">matrix() - 旋转、缩放、移动和倾斜元素</a></li>
+</ul>
+
+<p><a class="btn-blue" href="css3_2dtransforms.asp.htm" tppabs="https://www.w3school.com.cn/css/css3_2dtransforms.asp">实例解释：CSS 2D 转换</a></p>
+</div>
+
+
+
+<div>
+<h2>CSS 3D 转换</h2>
+
+<ul class="example-list">
+<li><a target="_blank" href="../tiy/t.asp-f=css3_transform_rotateX.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_transform_rotateX">rotateX() - 将元素绕其 X 轴旋转给定角度</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css3_transform_rotateY.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_transform_rotateY">rotateY() - 将元素绕其 Y 轴旋转给定角度</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css3_transform_rotateZ.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_transform_rotateZ">rotateZ() - 将元素绕其 Z 轴旋转给定角度</a></li>
+</ul>
+
+<p><a class="btn-blue" href="css3_3dtransforms.asp.htm" tppabs="https://www.w3school.com.cn/css/css3_3dtransforms.asp">实例解释：CSS 3D 转换</a></p>
+</div>
+
+
+
+<div>
+<h2>CSS 过渡</h2>
+
+<ul class="example-list">
+<li><a target="_blank" href="../tiy/t.asp-f=css3_transition_1.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_transition_1">过渡 - 更改元素的宽度</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css3_transition_2.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_transition_2">过渡 - 更改元素的宽度和高度</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css3_transition_speed.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_transition_speed">为过渡规定不同的速度曲线</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css3_transition_delay.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_transition_delay">为过渡效果规定延迟</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css3_transition_transform.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_transition_transform">向过渡效果添加变换</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css3_transition_4.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_transition_4">在一条简写属性中规定所有过渡属性</a></li>
+</ul>
+
+<p><a class="btn-blue" href="css3_transitions.asp.htm" tppabs="https://www.w3school.com.cn/css/css3_transitions.asp">实例解释：CSS 过渡</a></p>
+</div>
+
+
+
+<div>
+<h2>CSS 动画</h2>
+
+<ul class="example-list">
+<li><a target="_blank" href="../tiy/t.asp-f=css3_animation_1.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_animation_1">把动画绑定到一个元素</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css3_animation_2.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_animation_2">动画 - 改变一个元素的背景色</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css3_animation_3.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_animation_3">动画 - 改变一个元素的背景色和位置</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css3_animation_delay_1.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_animation_delay_1">延迟动画</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css3_animation_count_1.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_animation_count_1">在动画停止前运行三次</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css3_animation_count_2.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_animation_count_2">永远运行动画</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css3_animation_direction_1.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_animation_direction_1">从反方向运行动画</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css3_animation_direction_2.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_animation_direction_2">交替运行动画</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css3_animation_speed.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_animation_speed">动画的速度曲线</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css3_animation_5.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_animation_5">动画的简写属性</a></li>
+</ul>
+
+<p><a class="btn-blue" href="css3_animations.asp.htm" tppabs="https://www.w3school.com.cn/css/css3_animations.asp">实例解释：CSS 动画</a></p>
+</div>
+
+
+
+<div>
+<h2>CSS 工具提示</h2>
+
+<ul class="example-list">
+<li><a target="_blank" href="../tiy/t.asp-f=css_tooltip_right.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_tooltip_right">右侧工具提示</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_tooltip_left.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_tooltip_left">左侧工具提示</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_tooltip_top.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_tooltip_top">顶部工具提示</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_tooltip_bottom.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_tooltip_bottom">底部工具提示</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_tooltip_arrow_bottom.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_tooltip_arrow_bottom">带箭头的工具提示</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_tooltip_transition.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_tooltip_transition">有动画效果的工具提示</a></li>
+</ul>
+
+<p><a class="btn-blue" href="css_tooltip.asp.htm" tppabs="https://www.w3school.com.cn/css/css_tooltip.asp">实例解释：工具提示</a></p>
+</div>
+
+
+
+<div>
+<h2>CSS 样式图像</h2>
+
+<ul class="example-list">
+<li><a target="_blank" href="../tiy/t.asp-f=css_ex_images_round.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_ex_images_round">圆角图像</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_ex_images_circle.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_ex_images_circle">圆形图像</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_ex_images_thumbnail.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_ex_images_thumbnail">缩略图</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_ex_images_thumbnail_link.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_ex_images_thumbnail_link">作为链接的缩略图</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_ex_images_responsive.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_ex_images_responsive">响应式图像</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_image_text_top_left.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_image_text_top_left">图像文本（左上角）</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_image_text_top_right.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_image_text_top_right">图像文本（右上角）</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_image_text_bottom_left.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_image_text_bottom_left">图像文本（左下角）</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_image_text_bottom_right.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_image_text_bottom_right">图像文本（右上角）</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_image_text_center.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_image_text_center">图像文本（居中）</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_ex_images_card.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_ex_images_card">宝丽来图像</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css3_filter_grayscale.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_filter_grayscale">灰度图像滤镜</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_image_modal_js.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_image_modal_js">高级 - 通过 CSS 和 JavaScript 实现的图像模态</a></li>
+</ul>
+
+<p><a class="btn-blue" href="css3_images.asp.htm" tppabs="https://www.w3school.com.cn/css/css3_images.asp">实例解释：CSS 图像</a></p>
+</div>
+
+
+
+<div>
+<h2>CSS Object-fit</h2>
+
+<ul class="example-list">
+<li><a target="_blank" href="../tiy/t.asp-f=css3_object-fit_2.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_object-fit_2">剪裁图像的两边，保留长宽比，然后填充空间</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css3_object-fit_all.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_object-fit_all">所有 object-fit 属性值的例子</a></li>
+</ul>
+
+<p><a class="btn-blue" href="css3_object-fit.asp.htm" tppabs="https://www.w3school.com.cn/css/css3_object-fit.asp">实例解释：Object-fit</a></p>
+</div>
+
+
+
+<div>
+<h2>CSS 按钮</h2>
+
+<ul class="example-list">
+<li><a target="_blank" href="../tiy/t.asp-f=css_buttons_basic.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_buttons_basic">基础的 CSS 按钮</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_buttons_color.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_buttons_color">按钮颜色</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_buttons_font.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_buttons_font">按钮尺寸</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_buttons_round.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_buttons_round">圆角按钮</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_buttons_border.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_buttons_border">带颜色的按钮边框</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_buttons_hover.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_buttons_hover">可悬停的按钮</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_buttons_shadow.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_buttons_shadow">带阴影的按钮</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_buttons_disabled.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_buttons_disabled">被禁用的按钮</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_buttons_width.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_buttons_width">按钮宽度</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_buttons_group.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_buttons_group">按钮分组</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_buttons_group_border.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_buttons_group_border">带边框的按钮分组
+<li><a target="_blank" href="../tiy/t.asp-f=css_buttons_animate_1.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_buttons_animate_1">带动画的按钮（悬停效果）</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_buttons_animate_2.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_buttons_animate_2">带动画的按钮（按键效果）</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_buttons_animate_3.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_buttons_animate_3">带动画的按钮（涟漪效果）</a></li>
+</ul>
+
+<p><a class="btn-blue" href="css3_buttons.asp.htm" tppabs="https://www.w3school.com.cn/css/css3_buttons.asp">实例解释：CSS 按钮</a></p>
+</div>
+
+
+
+<div>
+<h2>CSS 分页</h2>
+
+<ul class="example-list">
+<li><a target="_blank" href="../tiy/t.asp-f=css_ex_pagination.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_ex_pagination">简单的分页</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_ex_pagination_active.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_ex_pagination_active">活动的、可悬停的分页</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_ex_pagination_active_round.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_ex_pagination_active_round">带圆角的活动可悬停分页</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_ex_pagination_transition.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_ex_pagination_transition">可悬停的过渡效果</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_ex_pagination_border.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_ex_pagination_border">带边框的分页</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_ex_pagination_border_round.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_ex_pagination_border_round">圆角带边框的分页</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_ex_pagination_margin.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_ex_pagination_margin">链接之间隔着空白的分页</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_ex_pagination_size.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_ex_pagination_size">分页的大小</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_ex_pagination_center.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_ex_pagination_center">居中的分页</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_ex_pagination_breadcrumbs.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_ex_pagination_breadcrumbs">面包屑</a></li>
+</ul>
+
+<p><a class="btn-blue" href="css3_pagination.asp.htm" tppabs="https://www.w3school.com.cn/css/css3_pagination.asp">实例解释：CSS 分页</a></p>
+</div>
+
+
+
+<div>
+<h2>CSS 多列</h2>
+
+<ul class="example-list">
+<li><a target="_blank" href="../tiy/t.asp-f=css3_column-count.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_column-count">创建多列</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css3_column-gap.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_column-gap">规定列之间的间隙</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css3_column-rule-style.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_column-rule-style">规定列之间的规则样式</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css3_column-rule-width.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_column-rule-width">规定列之间的规则宽度</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css3_column-rule-color.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_column-rule-color">规定列之间的规则颜色</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css3_column-rule.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_column-rule">规定列之间的规则的宽度、样式和颜色</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css3_column-span.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_column-span">规定元素应该横跨多少列</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css3_column-width.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_column-width">为列规定建议的最佳宽度</a></li>
+</ul>
+
+<p><a class="btn-blue" href="css3_multiple_columns.asp.htm" tppabs="https://www.w3school.com.cn/css/css3_multiple_columns.asp">实例解释：CSS 多列</a></p>
+</div>
+
+
+
+<div>
+<h2>CSS 用户界面</h2>
+
+<ul class="example-list">
+<li><a target="_blank" href="../tiy/t.asp-f=css3_resize_width.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_resize_width">允许用户调整元素的宽度</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css3_resize_height.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_resize_height">允许用户调整元素的高度</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css3_resize.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_resize">允许用户同时调整元素的宽度和高度</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css3_outline-offset.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_outline-offset">在元素轮廓与边框之间添加空间</a></li>
+</ul>
+
+<p><a class="btn-blue" href="css3_user_interface.asp.htm" tppabs="https://www.w3school.com.cn/css/css3_user_interface.asp">实例解释：CSS 用户界面</a></p>
+</div>
+
+
+
+<div>
+<h2>CSS 变量</h2>
+
+<ul class="example-list">
+<li><a target="_blank" href="../tiy/t.asp-f=css3_var_1.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_var_1">使用 var() 函数</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css3_var_2.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_var_2">使用 var() 函数来插入若干自定义的属性值</a></li>
+</ul>
+
+<p><a class="btn-blue" href="css3_variables.asp.htm" tppabs="https://www.w3school.com.cn/css/css3_variables.asp">实例解释：CSS 变量</a></p>
+</div>
+
+
+
+<div>
+<h2>CSS Box Sizing</h2>
+
+<ul class="example-list">
+<li><a target="_blank" href="../tiy/t.asp-f=css3_box-sizing_old.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_box-sizing_old">不设置 box-sizing 的元素宽度</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css3_box-sizing_new.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_box-sizing_new">设置 box-sizing 的元素宽度</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css3_box-sizing_all.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_box-sizing_all">表单元素 + box-sizing</a></li>
+</ul>
+
+<p><a class="btn-blue" href="css3_variables.asp.htm" tppabs="https://www.w3school.com.cn/css/css3_variables.asp">实例解释：CSS box sizing</a></p>
+</div>
+
+
+
+<div>
+<h2>CSS 弹性盒</h2>
+
+<ul class="example-list">
+<li><a target="_blank" href="../tiy/t.asp-f=css3_flexbox_flexline.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_flexbox_flexline">带有三个弹性项目的弹性盒</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css3_flexbox_flexline_rtl.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_flexbox_flexline_rtl">带有三个弹性项目的弹性盒 - rtl 方向</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css3_flexbox_direction_row-reverse.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_flexbox_direction_row-reverse">flex-direction - row-reverse</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css3_flexbox_direction_column.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_flexbox_direction_column">flex-direction - column</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css3_flexbox_direction_column-reverse.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_flexbox_direction_column-reverse">flex-direction - column-reverse</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css3_flexbox_justify_flex-end.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_flexbox_justify_flex-end">justify-content - flex-end</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css3_flexbox_justify_center.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_flexbox_justify_center">justify-content - center</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css3_flexbox_justify_space-between.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_flexbox_justify_space-between">justify-content - space-between</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css3_flexbox_justify_space-around.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_flexbox_justify_space-around">justify-content - space-around</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css3_flexbox_align_stretch.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_flexbox_align_stretch">align-items - stretch</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css3_flexbox_align_flex-start.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_flexbox_align_flex-start">align-items - flex-start</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css3_flexbox_align_flex-end.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_flexbox_align_flex-end">align-items - flex-end</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css3_flexbox_align_center.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_flexbox_align_center">align-items - center</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css3_flexbox_align_baseline.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_flexbox_align_baseline">align-items - baseline</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css3_flexbox_nowrap.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_flexbox_nowrap">flex-wrap - nowrap</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css3_flexbox_wrap.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_flexbox_wrap">flex-wrap - wrap</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css3_flexbox_wrap-reverse.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_flexbox_wrap-reverse">flex-wrap - wrap-reverse</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css3_flexbox_align-content.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_flexbox_align-content">align-content - center</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css3_flexbox_order.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_flexbox_order">弹性项目排序</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css3_flexbox_margin_1.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_flexbox_margin_1">Margin-right:auto;</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css3_flexbox_margin_2.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_flexbox_margin_2">Margin:auto; = 完美的居中</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css3_flexbox_align-self.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_flexbox_align-self">在弹性项目上设置 align-self</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css3_flexbox_flex_number.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_flexbox_flex_number">规定弹性项目的长度，相对于弹性项目的其余部分</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css3_flexbox_image_gallery.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_flexbox_image_gallery">用弹性盒创建响应式的图片库</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css3_flexbox_website.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_flexbox_website">用弹性盒创建响应式网站</a></li>
+</ul>
+
+<p><a class="btn-blue" href="css3_flexbox.asp.htm" tppabs="https://www.w3school.com.cn/css/css3_flexbox.asp">实例解释：CSS flexbox</a></p>
+</div>
+
+
+
+<div>
+<h2>CSS 媒体查询</h2>
+
+<ul class="example-list">
+<li><a target="_blank" href="../tiy/t.asp-f=css3_media_queries_1.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_media_queries_1">如果视口宽度为 480 像素或更宽，则将背景色改为浅绿色</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css3_media_queries_2.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css3_media_queries_2">如果视口宽度为 480 像素或更宽，显示一个浮动到页面左侧的菜单</a></li>
+</ul>
+
+<p><a class="btn-blue" href="css3_mediaqueries.asp.htm" tppabs="https://www.w3school.com.cn/css/css3_mediaqueries.asp">实例解释：CSS 媒体查询</a></p>
+</div>
+
+
+
+<div>
+<h2>CSS 媒体查询 - 更多实例</h2>
+
+<ul class="example-list">
+<li><a target="_blank" href="../tiy/t.asp-f=css_mediaqueries_ex_1.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_mediaqueries_ex_1">根据屏幕宽度设置不同的背景色</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_mediaqueries_navbar.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_mediaqueries_navbar">响应式的导航菜单</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_mediaqueries_ex_2.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_mediaqueries_ex_2">使用浮动的响应式列</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_mediaqueries_flex.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_mediaqueries_flex">使用弹性盒的响应式列</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_mediaqueries_hide.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_mediaqueries_hide">通过媒体查询隐藏元素</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_mediaqueries_fontsize.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_mediaqueries_fontsize">响应式字体大小</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_mediaqueries_img_gallery.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_mediaqueries_img_gallery">响应式图片库</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_mediaqueries_website.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_mediaqueries_website">响应式网站</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=responsive_mediaquery_orientation.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=responsive_mediaquery_orientation">根据浏览器方向改变页面布局</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_mediaqueries_minmax_1.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_mediaqueries_minmax_1">最小宽度到最大宽度</a></li>
+</ul>
+
+<p><a class="btn-blue" href="css3_mediaqueries_ex.asp.htm" tppabs="https://www.w3school.com.cn/css/css3_mediaqueries_ex.asp">实例解释：CSS 媒体查询实例</a></p>
+</div>
+
+
+
+<div>
+<h2>CSS 响应式 Web 设计</h2>
+
+<ul class="example-list">
+<li><a target="_blank" href="../tiy/t.asp-f=responsive_styles.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=responsive_styles">响应式网格视图</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=responsive_col-s.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=responsive_col-s">为台式机、笔电和手机添加断点</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=responsive_mediaquery_breakpoints.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=responsive_mediaquery_breakpoints">典型的断点</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=responsive_image_1.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=responsive_image_1">响应式图像</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=responsive_video_1.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=responsive_video_1">响应式视频</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=responsive_w3css.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=responsive_w3css">响应式框架：W3.CSS</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=responsive_bootstrap.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=responsive_bootstrap">响应式框架：Bootstrap</a></li>
+</ul>
+
+<p><a class="btn-blue" href="css_rwd_intro.asp.htm" tppabs="https://www.w3school.com.cn/css/css_rwd_intro.asp">实例解释：CSS 响应式 Web 设计</a></p>
+</div>
+
+
+
+<div>
+<h2>CSS 网格</h2>
+
+<ul class="example-list">
+<li><a target="_blank" href="../tiy/t.asp-f=css_grid_layout_named.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_grid_layout_named">网格布局</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_grid.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_grid">网格元素</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_grid_grid-column-gap.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_grid_grid-column-gap">网格列间隙</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_grid_lines_1.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_grid_lines_1">网格行</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_grid_container.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_grid_container">网格容器</a></li>
+<li><a target="_blank" href="../tiy/t.asp-f=css_grid_item.htm" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=css_grid_item">网格项目</a></li>
+</ul>
+
+<p><a class="btn-blue" href="css_grid.asp.htm" tppabs="https://www.w3school.com.cn/css/css_grid.asp">实例解释：CSS 网格</a></p>
+</div>
+
+
+
+<div class="prenextnav">
+<ul class="prenext">
+<li class="pre"><a href="css_grid_item.asp.htm" tppabs="https://www.w3school.com.cn/css/css_grid_item.asp" title="CSS 网格项目">CSS 网格项目</a></li>
+<li class="next"><a href="css_quiz.asp.htm" tppabs="https://www.w3school.com.cn/css/css_quiz.asp" title="CSS 测验">CSS 测验</a></li>
+</ul>
+</div><div style="background-color:#fcfdf8; padding:0;">
+<script async src="../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" tppabs="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- W3School ���Ĺ�� -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:800px;height:250px"
+     data-ad-client="ca-pub-3381531532877742"
+     data-ad-slot="2086924285"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+</div>
+<!-- maincontent end -->
+
+<div id="sidebar">
+
+<div id="tools">
+<h5 id="tools_reference"><a href="../cssref/index.asp.htm" tppabs="https://www.w3school.com.cn/cssref/index.asp">CSS 参考手册</a></h5>
+<h5 id="tools_example"><a href="css_examples.asp.htm" tppabs="https://www.w3school.com.cn/css/css_examples.asp">CSS 实例</a></h5>
+<h5 id="tools_quiz"><a href="css_quiz.asp.htm" tppabs="https://www.w3school.com.cn/css/css_quiz.asp">CSS 测验</a></h5>
+<h5 id="tools_professional"><a href="index_pro.asp.htm" tppabs="https://www.w3school.com.cn/css/index_pro.asp">CSS 课外书</a></h5>
+</div>
+
+<div id="sidebar_zzs">
+
+<div id="sbtg">
+<script async src="../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" tppabs="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- W3School 侧栏广告位 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-3381531532877742"
+     data-ad-slot="6744370501"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+</div>
+
+</div>
+
+<div id="footer">
+<p id="p1">
+W3School 简体中文版提供的内容仅用于培训和测试，不保证内容的正确性。通过使用本站内容随之而来的风险与本站无关。版权所有，保留一切权利。
+</p>
+
+<p id="p2">
+<a href="../about/index.asp.htm" tppabs="https://www.w3school.com.cn/about/index.asp" title="关于 W3School">关于 W3School</a>
+<a href="../about/about_helping.asp.htm" tppabs="https://www.w3school.com.cn/about/about_helping.asp" title="帮助 W3School">帮助 W3School</a>
+<a href="../about/about_use.asp.htm" tppabs="https://www.w3school.com.cn/about/about_use.asp" title="关于使用">使用条款</a>
+<a href="../about/about_privacy.asp.htm" tppabs="https://www.w3school.com.cn/about/about_privacy.asp" title="关于隐私">隐私条款</a>
+<a target="_blank" href="javascript:if(confirm('https://www.ykinvestment.com/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.ykinvestment.com/'" tppabs="https://www.ykinvestment.com/">技术支持：赢科</a>
+<a target="_blank" href="javascript:if(confirm('http://www.beian.miit.gov.cn/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://www.beian.miit.gov.cn/'" tppabs="http://www.beian.miit.gov.cn/">蒙ICP备06004630号</a>
+</p>
+</div>
+
+
+</div>
+<!-- wrapper end -->
+
+</body>
+
+</html>

@@ -1,0 +1,393 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="../../www.googletagmanager.com/gtag/js-id=UA-878633-1" tppabs="https://www.googletagmanager.com/gtag/js?id=UA-878633-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-878633-1');
+</script>
+
+<meta charset=utf-8"utf-8">
+<meta name="robots" content="all" />
+<meta name="author" content="w3school.com.cn" />
+
+<link rel="stylesheet" type="text/css" href="../c.css" tppabs="https://www.w3school.com.cn/c.css" />
+
+<script src="../lib/cc/prism2.js" tppabs="https://www.w3school.com.cn/lib/cc/prism2.js"></script>
+<link rel='stylesheet' href="../lib/cc/prism.css" tppabs="https://www.w3school.com.cn/lib/cc/prism.css">
+
+<link rel="icon" type="image/png" sizes="16x16" href="/ui2019/logo-16-red.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/ui2019/logo-32-red.png">
+<link rel="icon" type="image/png" sizes="48x48" href="/ui2019/logo-48-red.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/ui2019/logo-96-red.png">
+<link rel="apple-touch-icon-precomposed" sizes="180x180" href="/ui2019/logo-180.png">
+
+
+<title>Python MongoDB 查询</title>
+
+</head>
+
+<body class="programming">
+
+<div id="wrapper">
+
+<div id="header">
+<a id="logo" href="../index.html" tppabs="https://www.w3school.com.cn/index.html" title="w3school 在线教程" style="float:left;">w3school 在线教程</a>
+<div id="header_gg">
+<script async src="../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" tppabs="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- W3 页眉 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-3381531532877742"
+     data-ad-slot="7423315034"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+
+<div id="navfirst">
+<ul id="menu">
+<li id="h"><a href="../h.asp.htm" tppabs="https://www.w3school.com.cn/h.asp" title="HTML 系列教程">HTML 系列教程</a></li>
+<li id="b"><a href="../b.asp.htm" tppabs="https://www.w3school.com.cn/b.asp" title="浏览器脚本教程">浏览器脚本</a></li>
+<li id="s"><a href="../s.asp.htm" tppabs="https://www.w3school.com.cn/s.asp" title="服务器脚本教程">服务器脚本</a></li>
+<li id="p"><a href="../p.asp.htm" tppabs="https://www.w3school.com.cn/p.asp" title="编程教程">编程教程</a></li>
+<li id="x"><a href="../x.asp.htm" tppabs="https://www.w3school.com.cn/x.asp" title="XML 系列教程">XML 系列教程</a></li>
+<li id="w"><a href="../w.asp.htm" tppabs="https://www.w3school.com.cn/w.asp" title="建站手册">建站手册</a></li>
+<li id="r"><a href="../r.asp.htm" tppabs="https://www.w3school.com.cn/r.asp" title="参考手册">参考手册</a></li>
+</ul>
+</div>
+
+<div id="navsecond">
+
+<div id="course"><h2>Python 教程</h2>
+<ul>
+<li><a href="index.asp.htm" tppabs="https://www.w3school.com.cn/python/index.asp" title="Python 教程">Python 教程</a></li>
+<li><a href="python_intro.asp.htm" tppabs="https://www.w3school.com.cn/python/python_intro.asp" title="Python 简介">Python 简介</a></li>
+<li><a href="python_getstarted.asp.htm" tppabs="https://www.w3school.com.cn/python/python_getstarted.asp" title="Python 入门">Python 入门</a></li>
+<li><a href="python_syntax.asp.htm" tppabs="https://www.w3school.com.cn/python/python_syntax.asp" title="Python 语法">Python 语法</a></li>
+<li><a href="python_comments.asp.htm" tppabs="https://www.w3school.com.cn/python/python_comments.asp" title="Python 注释">Python 注释</a></li>
+<li><a href="python_variables.asp.htm" tppabs="https://www.w3school.com.cn/python/python_variables.asp" title="Python 变量">Python 变量</a></li>
+<li><a href="python_datatypes.asp.htm" tppabs="https://www.w3school.com.cn/python/python_datatypes.asp" title="Python 数据类型">Python 数据类型</a></li>
+<li><a href="python_numbers.asp.htm" tppabs="https://www.w3school.com.cn/python/python_numbers.asp" title="Python 简介">Python 数字</a></li>
+<li><a href="python_casting.asp.htm" tppabs="https://www.w3school.com.cn/python/python_casting.asp" title="Python Casting">Python Casting</a></li>
+<li><a href="python_strings.asp.htm" tppabs="https://www.w3school.com.cn/python/python_strings.asp" title="Python 字符串">Python 字符串</a></li>
+<li><a href="python_booleans.asp.htm" tppabs="https://www.w3school.com.cn/python/python_booleans.asp" title="Python 布尔">Python 布尔</a></li>
+<li><a href="python_operators.asp.htm" tppabs="https://www.w3school.com.cn/python/python_operators.asp" title="Python 运算符">Python 运算符</a></li>
+<li><a href="python_lists.asp.htm" tppabs="https://www.w3school.com.cn/python/python_lists.asp" title="Python 列表">Python 列表</a></li>
+<li><a href="python_tuples.asp.htm" tppabs="https://www.w3school.com.cn/python/python_tuples.asp" title="Python 元组">Python 元组</a></li>
+<li><a href="python_sets.asp.htm" tppabs="https://www.w3school.com.cn/python/python_sets.asp" title="Python 集合">Python 集合</a></li>
+<li><a href="python_dictionaries.asp.htm" tppabs="https://www.w3school.com.cn/python/python_dictionaries.asp" title="Python 字典">Python 字典</a></li>
+<li><a href="python_conditions.asp.htm" tppabs="https://www.w3school.com.cn/python/python_conditions.asp" title="Python If ... Else">Python If Else</a></li>
+<li><a href="python_while_loops.asp.htm" tppabs="https://www.w3school.com.cn/python/python_while_loops.asp" title="Python While 循环">Python While 循环</a></li>
+<li><a href="python_for_loops.asp.htm" tppabs="https://www.w3school.com.cn/python/python_for_loops.asp" title="Python For 循环">Python For 循环</a></li>
+<li><a href="python_functions.asp.htm" tppabs="https://www.w3school.com.cn/python/python_functions.asp" title="Python 函数">Python 函数</a></li>
+<li><a href="python_lambda.asp.htm" tppabs="https://www.w3school.com.cn/python/python_lambda.asp" title="Python Lambda">Python Lambda</a></li>
+<li><a href="python_arrays.asp.htm" tppabs="https://www.w3school.com.cn/python/python_arrays.asp" title="Python 数组">Python 数组</a></li>
+<li><a href="python_classes.asp.htm" tppabs="https://www.w3school.com.cn/python/python_classes.asp" title="Python 类和对象">Python 类/对象</a></li>
+<li><a href="python_inheritance.asp.htm" tppabs="https://www.w3school.com.cn/python/python_inheritance.asp" title="Python 继承">Python 继承</a></li>
+<li><a href="python_iterators.asp.htm" tppabs="https://www.w3school.com.cn/python/python_iterators.asp" title="Python 迭代">Python 迭代</a></li>
+<li><a href="python_scope.asp.htm" tppabs="https://www.w3school.com.cn/python/python_scope.asp" title="Python 作用域">Python 作用域</a></li>
+<li><a href="python_modules.asp.htm" tppabs="https://www.w3school.com.cn/python/python_modules.asp" title="Python 模块">Python 模块</a></li>
+<li><a href="python_datetime.asp.htm" tppabs="https://www.w3school.com.cn/python/python_datetime.asp" title="Python 日期">Python 日期</a></li>
+<li><a href="python_json.asp.htm" tppabs="https://www.w3school.com.cn/python/python_json.asp" title="Python JSON">Python JSON</a></li>
+<li><a href="python_regex.asp.htm" tppabs="https://www.w3school.com.cn/python/python_regex.asp" title="Python RegEx">Python RegEx</a></li>
+<li><a href="python_pip.asp.htm" tppabs="https://www.w3school.com.cn/python/python_pip.asp" title="Python PIP">Python PIP</a></li>
+<li><a href="python_try_except.asp.htm" tppabs="https://www.w3school.com.cn/python/python_try_except.asp" title="Python Try Except">Python Try Except</a></li>
+<li><a href="python_cmd_input.asp.htm" tppabs="https://www.w3school.com.cn/python/python_cmd_input.asp" title="Python 命令行输入">Python 命令输入</a></li>
+<li><a href="python_string_formatting.asp.htm" tppabs="https://www.w3school.com.cn/python/python_string_formatting.asp" title="Python 字符串格式化">Python 字符串格式化</a></li>
+</ul>
+<h2>文件处理</h2>
+<ul>
+<li><a href="python_file_handling.asp.htm" tppabs="https://www.w3school.com.cn/python/python_file_handling.asp" title="Python 文件打开">Python 文件打开</a></li>
+<li><a href="python_file_open.asp.htm" tppabs="https://www.w3school.com.cn/python/python_file_open.asp" title="Python 文件读取">Python 文件读取</a></li>
+<li><a href="python_file_write.asp.htm" tppabs="https://www.w3school.com.cn/python/python_file_write.asp" title="Python 文件写入">Python 文件写入/创建</a></li>
+<li><a href="python_file_remove.asp.htm" tppabs="https://www.w3school.com.cn/python/python_file_remove.asp" title="Python 文件删除">Python 文件删除</a></li>
+</ul>
+<h2>Python NumPy</h2>
+<ul>
+<li><a href="numpy_intro.asp.htm" tppabs="https://www.w3school.com.cn/python/numpy_intro.asp" title="NumPy 简介">NumPy 简介</a></li>
+<li><a href="numpy_getting_started.asp.htm" tppabs="https://www.w3school.com.cn/python/numpy_getting_started.asp" title="NumPy 入门">NumPy 入门</a></li>
+<li><a href="numpy_creating_arrays.asp.htm" tppabs="https://www.w3school.com.cn/python/numpy_creating_arrays.asp" title="NumPy 数组创建">NumPy 数组创建</a></li>
+<li><a href="numpy_array_indexing.asp.htm" tppabs="https://www.w3school.com.cn/python/numpy_array_indexing.asp" title="NumPy 数组索引">NumPy 数组索引</a></li>
+<li><a href="numpy_array_slicing.asp.htm" tppabs="https://www.w3school.com.cn/python/numpy_array_slicing.asp" title="NumPy 数组裁切">NumPy 数组裁切</a></li>
+<li><a href="numpy_data_types.asp.htm" tppabs="https://www.w3school.com.cn/python/numpy_data_types.asp" title="NumPy 数据类型">NumPy 数据类型</a></li>
+<li><a href="numpy_copy_vs_view.asp.htm" tppabs="https://www.w3school.com.cn/python/numpy_copy_vs_view.asp" title="NumPy 副本/视图">NumPy 副本/视图</a></li>
+<li><a href="numpy_array_shape.asp.htm" tppabs="https://www.w3school.com.cn/python/numpy_array_shape.asp" title="NumPy 数组形状">NumPy 数组形状</a></li>
+<li><a href="numpy_array_reshape.asp.htm" tppabs="https://www.w3school.com.cn/python/numpy_array_reshape.asp" title="NumPy 数组重塑">NumPy 数组重塑</a></li>
+<li><a href="numpy_array_iterating.asp.htm" tppabs="https://www.w3school.com.cn/python/numpy_array_iterating.asp" title="NumPy 数组迭代">NumPy 数组迭代</a></li>
+<li><a href="numpy_array_join.asp.htm" tppabs="https://www.w3school.com.cn/python/numpy_array_join.asp" title="NumPy 数组连接">NumPy 数组连接</a></li>
+<li><a href="numpy_array_split.asp.htm" tppabs="https://www.w3school.com.cn/python/numpy_array_split.asp" title="NumPy 数组拆分">NumPy 数组拆分</a></li>
+<li><a href="numpy_array_search.asp.htm" tppabs="https://www.w3school.com.cn/python/numpy_array_search.asp" title="NumPy 数组搜索">NumPy 数组搜索</a></li>
+<li><a href="numpy_array_sort.asp.htm" tppabs="https://www.w3school.com.cn/python/numpy_array_sort.asp" title="NumPy 数组排序">NumPy 数组排序</a></li>
+<li><a href="numpy_array_filter.asp.htm" tppabs="https://www.w3school.com.cn/python/numpy_array_filter.asp" title="NumPy 数组过滤">NumPy 数组过滤</a></li>
+<li><a href="numpy_random.asp.htm" tppabs="https://www.w3school.com.cn/python/numpy_random.asp" title="NumPy 随机">NumPy 随机</a></li>
+<li><a href="numpy_ufunc.asp.htm" tppabs="https://www.w3school.com.cn/python/numpy_ufunc.asp" title="NumPy ufuncs">NumPy ufuncs</a></li>
+</ul>
+<h2>机器学习</h2>
+<ul>
+<li><a href="python_ml_getting_started.asp.htm" tppabs="https://www.w3school.com.cn/python/python_ml_getting_started.asp" title="机器学习 - 入门">入门</a></li>
+<li><a href="python_ml_mean_median_mode.asp.htm" tppabs="https://www.w3school.com.cn/python/python_ml_mean_median_mode.asp" title="机器学习 - 平均中位数模式">平均中位数模式</a></li>
+<li><a href="python_ml_standard_deviation.asp.htm" tppabs="https://www.w3school.com.cn/python/python_ml_standard_deviation.asp" title="机器学习 - 标准差">标准差</a></li>
+<li><a href="python_ml_percentile.asp.htm" tppabs="https://www.w3school.com.cn/python/python_ml_percentile.asp" title="机器学习 - 百分位数">百分位数</a></li>
+<li><a href="python_ml_data_distribution.asp.htm" tppabs="https://www.w3school.com.cn/python/python_ml_data_distribution.asp" title="机器学习 - 数据分布">数据分布</a></li>
+<li><a href="python_ml_normal_data_distribution.asp.htm" tppabs="https://www.w3school.com.cn/python/python_ml_normal_data_distribution.asp" title="机器学习 - 正态数据分布">正态数据分布</a></li>
+<li><a href="python_ml_scatterplot.asp.htm" tppabs="https://www.w3school.com.cn/python/python_ml_scatterplot.asp" title="机器学习 - 散点图">散点图</a></li>
+<li><a href="python_ml_linear_regression.asp.htm" tppabs="https://www.w3school.com.cn/python/python_ml_linear_regression.asp" title="机器学习 - 线性回归">线性回归</a></li>
+<li><a href="python_ml_polynomial_regression.asp.htm" tppabs="https://www.w3school.com.cn/python/python_ml_polynomial_regression.asp" title="机器学习 - 多项式回归">多项式回归</a></li>
+<li><a href="python_ml_multiple_regression.asp.htm" tppabs="https://www.w3school.com.cn/python/python_ml_multiple_regression.asp" title="机器学习 - 多元回归">多元回归</a></li>
+<li><a href="python_ml_scale.asp.htm" tppabs="https://www.w3school.com.cn/python/python_ml_scale.asp" title="机器学习 - 缩放">缩放</a></li>
+<li><a href="python_ml_train_test.asp.htm" tppabs="https://www.w3school.com.cn/python/python_ml_train_test.asp" title="机器学习 - 训练/测试">训练/测试</a></li>
+<li><a href="python_ml_decision_tree.asp.htm" tppabs="https://www.w3school.com.cn/python/python_ml_decision_tree.asp" title="机器学习 - 决策树">决策树</a></li>
+</ul>
+<h2>Python MySQL</h2>
+<ul>
+<li><a href="python_mysql_getstarted.asp.htm" tppabs="https://www.w3school.com.cn/python/python_mysql_getstarted.asp" title="Python MySQL 入门">MySQL 入门</a></li>
+<li><a href="python_mysql_create_db.asp.htm" tppabs="https://www.w3school.com.cn/python/python_mysql_create_db.asp" title="Python MySQL Create Database">MySQL Create Database</a></li>
+<li><a href="python_mysql_create_table.asp.htm" tppabs="https://www.w3school.com.cn/python/python_mysql_create_table.asp" title="Python MySQL Create Table">MySQL Create Table</a></li>
+<li><a href="python_mysql_insert.asp.htm" tppabs="https://www.w3school.com.cn/python/python_mysql_insert.asp" title="Python MySQL Insert Into Table">MySQL Insert</a></li>
+<li><a href="python_mysql_select.asp.htm" tppabs="https://www.w3school.com.cn/python/python_mysql_select.asp" title="Python MySQL Select From">MySQL Select</a></li>
+<li><a href="python_mysql_where.asp.htm" tppabs="https://www.w3school.com.cn/python/python_mysql_where.asp" title="Python MySQL Where">MySQL Where</a></li>
+<li><a href="python_mysql_orderby.asp.htm" tppabs="https://www.w3school.com.cn/python/python_mysql_orderby.asp" title="Python MySQL Order By">MySQL Order By</a></li>
+<li><a href="python_mysql_delete.asp.htm" tppabs="https://www.w3school.com.cn/python/python_mysql_delete.asp" title="Python MySQL Delete From By">MySQL Delete</a></li>
+<li><a href="python_mysql_drop_table.asp.htm" tppabs="https://www.w3school.com.cn/python/python_mysql_drop_table.asp" title="Python MySQL Drop Table">MySQL Drop Table</a></li>
+<li><a href="python_mysql_update.asp.htm" tppabs="https://www.w3school.com.cn/python/python_mysql_update.asp" title="Python MySQL 更新表">MySQL Update</a></li>
+<li><a href="python_mysql_limit.asp.htm" tppabs="https://www.w3school.com.cn/python/python_mysql_limit.asp" title="Python MySQL Limit">MySQL Limit</a></li>
+<li><a href="python_mysql_join.asp.htm" tppabs="https://www.w3school.com.cn/python/python_mysql_join.asp" title="Python MySQL Join">MySQL Join</a></li>
+</ul>
+<h2>Python MongoDB</h2>
+<ul>
+<li><a href="python_mongodb_getstarted.asp.htm" tppabs="https://www.w3school.com.cn/python/python_mongodb_getstarted.asp" title="Python 教程">MongoDB 入门</a></li>
+<li><a href="python_mongodb_create_db.asp.htm" tppabs="https://www.w3school.com.cn/python/python_mongodb_create_db.asp" title="Python 教程">MongoDB 创建数据库</a></li>
+<li><a href="python_mongodb_create_collection.asp.htm" tppabs="https://www.w3school.com.cn/python/python_mongodb_create_collection.asp" title="Python 教程">MongoDB 创建集合</a></li>
+<li><a href="python_mongodb_insert.asp.htm" tppabs="https://www.w3school.com.cn/python/python_mongodb_insert.asp" title="Python 教程">MongoDB Insert</a></li>
+<li><a href="python_mongodb_find.asp.htm" tppabs="https://www.w3school.com.cn/python/python_mongodb_find.asp" title="Python 教程">MongoDB Find</a></li>
+<li class="currentLink"><a href="python_mongodb_query.asp.htm" tppabs="https://www.w3school.com.cn/python/python_mongodb_query.asp" title="Python 教程">MongoDB Query</a></li>
+<li><a href="python_mongodb_sort.asp.htm" tppabs="https://www.w3school.com.cn/python/python_mongodb_sort.asp" title="Python 教程">MongoDB Sort</a></li>
+<li><a href="python_mongodb_delete.asp.htm" tppabs="https://www.w3school.com.cn/python/python_mongodb_delete.asp" title="Python 教程">MongoDB Delete</a></li>
+<li><a href="python_mongodb_drop_collection.asp.htm" tppabs="https://www.w3school.com.cn/python/python_mongodb_drop_collection.asp" title="Python 教程">MongoDB 删除集合</a></li>
+<li><a href="python_mongodb_update.asp.htm" tppabs="https://www.w3school.com.cn/python/python_mongodb_update.asp" title="Python 教程">MongoDB Update</a></li>
+<li><a href="python_mongodb_limit.asp.htm" tppabs="https://www.w3school.com.cn/python/python_mongodb_limit.asp" title="Python 教程">MongoDB Limit</a></li>
+</ul>
+<h2>Python 参考手册</h2>
+<ul>
+<li><a href="python_reference.asp.htm" tppabs="https://www.w3school.com.cn/python/python_reference.asp" title="Python 教程">Python 参考概览</a></li>
+<li><a href="python_ref_functions.asp.htm" tppabs="https://www.w3school.com.cn/python/python_ref_functions.asp" title="Python 教程">Python 内建函数</a></li>
+<li><a href="python_ref_string.asp.htm" tppabs="https://www.w3school.com.cn/python/python_ref_string.asp" title="Python 教程">Python 字符串方法</a></li>
+<li><a href="python_ref_list.asp.htm" tppabs="https://www.w3school.com.cn/python/python_ref_list.asp" title="Python 教程">Python 列表方法</a></li>
+<li><a href="python_ref_dictionary.asp.htm" tppabs="https://www.w3school.com.cn/python/python_ref_dictionary.asp" title="Python 教程">Python 字典方法</a></li>
+<li><a href="python_ref_tuple.asp.htm" tppabs="https://www.w3school.com.cn/python/python_ref_tuple.asp" title="Python 教程">Python 元组方法</a></li>
+<li><a href="python_ref_set.asp.htm" tppabs="https://www.w3school.com.cn/python/python_ref_set.asp" title="Python 教程">Python 集合方法</a></li>
+<li><a href="python_ref_file.asp.htm" tppabs="https://www.w3school.com.cn/python/python_ref_file.asp" title="Python 教程">Python 文件方法</a></li>
+<li><a href="python_ref_keywords.asp.htm" tppabs="https://www.w3school.com.cn/python/python_ref_keywords.asp" title="Python 教程">Python 关键字</a></li>
+</ul>
+<h2>模块参考手册</h2>
+<ul>
+<li><a href="python_module_random.asp.htm" tppabs="https://www.w3school.com.cn/python/python_module_random.asp" title="Python 教程">随机模块</a></li>
+<li><a href="python_module_requests.asp.htm" tppabs="https://www.w3school.com.cn/python/python_module_requests.asp" title="Python 教程">请求模块</a></li>
+</ul>
+<h2>Python How To</h2>
+<ul>
+<li><a href="python_howto_remove_duplicates.asp.htm" tppabs="https://www.w3school.com.cn/python/python_howto_remove_duplicates.asp" title="Python 教程">删除列表重复项</a></li>
+<li><a href="python_howto_reverse_string.asp.htm" tppabs="https://www.w3school.com.cn/python/python_howto_reverse_string.asp" title="Python 教程">反转字符串</a></li>
+</ul>
+<h2>Python 实例</h2>
+<ul>
+<li><a href="python_examples.asp.htm" tppabs="https://www.w3school.com.cn/python/python_examples.asp" title="Python 实例">Python 实例</a></li>
+<li><a href="python_quiz.asp.htm" tppabs="https://www.w3school.com.cn/python/python_quiz.asp" title="Python 测验">Python 测验</a></li>
+</ul>
+</div><div id="selected">
+<h2>课程推荐：</h2>
+<ul>
+<li><a href="../howto/index.asp.htm" tppabs="https://www.w3school.com.cn/howto/index.asp" title="W3School 百宝箱">W3School 百宝箱</a></li>
+<li><a href="../java/index.asp.htm" tppabs="https://www.w3school.com.cn/java/index.asp" title="Java 教程">Java 教程</a></li>
+</ul>
+
+</div>
+
+</div>
+
+<div id="maincontent">
+
+<h1>Python MongoDB 查询</h1>
+
+<div class="prenextnav">
+<ul class="prenext">
+<li class="pre"><a href="python_mongodb_find.asp.htm" tppabs="https://www.w3school.com.cn/python/python_mongodb_find.asp" title="Python 教程">MongoDB Find</a></li>
+<li class="next"><a href="python_mongodb_sort.asp.htm" tppabs="https://www.w3school.com.cn/python/python_mongodb_sort.asp" title="Python 教程">MongoDB Sort</a></li>
+</ul>
+</div>
+
+
+
+<div>
+<h2>筛选结果</h2>
+
+<p>在集合中查找文档时，您能够使用 query 对象过滤结果。</p>
+
+<p><code>find()</code> 方法的第一个参数是 query 对象，用于限定搜索。</p>
+
+<h3>实例</h3>
+
+<p>查找地址为 &quot;Park Lane 38&quot; 的文档：</p>
+
+<pre class="language-python">
+import pymongo
+
+myclient = pymongo.MongoClient(&quot;mongodb://localhost:27017/&quot;)
+mydb = myclient[&quot;mydatabase&quot;]
+mycol = mydb[&quot;customers&quot;]
+
+<mark>myquery = { &quot;address&quot;: &quot;Park Lane 38&quot; }</mark>
+
+mydoc = mycol.find(<mark>myquery</mark>)
+
+for x in mydoc:
+  print(x)
+</pre>
+
+<p class="tiy"><a target="_blank" href="javascript:if(confirm('https://www.w3school.com.cn/tiy/sass_extend.asp  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ������, �����������, ����Ŀ����ֹͣ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.w3school.com.cn/tiy/sass_extend.asp'" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=demo_python_mongodb_query">运行实例</a></p>
+</div>
+
+
+
+<div>
+<h2>高级查询</h2>
+
+<p>如需进行高级查询，可以使用修饰符作为查询对象中的值。</p>
+
+<p>例如，要查找 &quot;address&quot; 字段以字母 &quot;S&quot; 或更高（按字母顺序）开头的文档，请使用大于修饰符：<code>{&quot;$gt&quot;: &quot;S&quot;}</code>：</p>
+
+<h3>实例</h3>
+
+<p>查找地址以字母 &quot;S&quot; 或更高开头的文档：</p>
+
+<pre class="language-python">
+import pymongo
+
+myclient = pymongo.MongoClient(&quot;mongodb://localhost:27017/&quot;)
+mydb = myclient[&quot;mydatabase&quot;]
+mycol = mydb[&quot;customers&quot;]
+
+myquery = { &quot;address&quot;: { <mark>&quot;$gt&quot;: &quot;S&quot;</mark> } }
+
+mydoc = mycol.find(myquery)
+
+for x in mydoc:
+  print(x)
+</pre>
+
+<p class="tiy"><a target="_blank" href="javascript:if(confirm('https://www.w3school.com.cn/tiy/css3_animations.asp  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ������, �����������, ����Ŀ����ֹͣ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.w3school.com.cn/tiy/css3_animations.asp'" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=demo_python_mongodb_query_modifier">运行实例</a></p>
+</div>
+
+
+
+<div>
+<h2>使用正则表达式来筛选</h2>
+
+<p>您也可以将正则表达式用作修饰符。</p>
+
+<p>正则表达式只能用于查询字符串。</p>
+
+<p>如果只查找 &quot;address&quot; 字段以字母 &quot;S&quot; 开头的文档，请使用正则表达式 <code>{&quot;$regex&quot;: &quot;^S&quot;}</code>：</p>
+
+<h3>实例</h3>
+
+<p>查找地址以字母 &quot;S&quot; 开头的文档：</p>
+
+<pre class="language-python">
+import pymongo
+
+myclient = pymongo.MongoClient(&quot;mongodb://localhost:27017/&quot;)
+mydb = myclient[&quot;mydatabase&quot;]
+mycol = mydb[&quot;customers&quot;]
+
+myquery = { &quot;address&quot;: { <mark>&quot;$regex&quot;: &quot;^S&quot;</mark> } }
+
+mydoc = mycol.find(myquery)
+
+for x in mydoc:
+  print(x)
+</pre>
+
+<p class="tiy"><a target="_blank" href="javascript:if(confirm('https://www.w3school.com.cn/tiy/sass_functions_string.asp  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ������, �����������, ����Ŀ����ֹͣ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.w3school.com.cn/tiy/sass_functions_string.asp'" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=demo_python_mongodb_query_regex">运行实例</a></p>
+</div>
+
+
+
+<div class="prenextnav">
+<ul class="prenext">
+<li class="pre"><a href="python_mongodb_find.asp.htm" tppabs="https://www.w3school.com.cn/python/python_mongodb_find.asp" title="Python 教程">MongoDB Find</a></li>
+<li class="next"><a href="python_mongodb_sort.asp.htm" tppabs="https://www.w3school.com.cn/python/python_mongodb_sort.asp" title="Python 教程">MongoDB Sort</a></li>
+</ul>
+</div><div style="background-color:#fcfdf8; padding:0;">
+<script async src="../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" tppabs="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- W3School ���Ĺ�� -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:800px;height:250px"
+     data-ad-client="ca-pub-3381531532877742"
+     data-ad-slot="2086924285"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+</div>
+<!-- maincontent end -->
+
+<div id="sidebar">
+
+<div id="tools">
+<h5 id="tools_reference"><a href="python_reference.asp.htm" tppabs="https://www.w3school.com.cn/python/python_reference.asp">Python 参考手册</a></h5>
+<h5 id="tools_example"><a href="python_examples.asp.htm" tppabs="https://www.w3school.com.cn/python/python_examples.asp">Python 实例</a></h5>
+<h5 id="tools_quiz"><a href="python_quiz.asp.htm" tppabs="https://www.w3school.com.cn/python/python_quiz.asp">Python 测验</a></h5>
+</div>
+
+<div id="sidebar_zzs">
+
+<div id="sbtg">
+<script async src="../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" tppabs="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- W3School 侧栏广告位 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-3381531532877742"
+     data-ad-slot="6744370501"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+</div>
+
+</div>
+
+<div id="footer">
+<p id="p1">
+W3School 简体中文版提供的内容仅用于培训和测试，不保证内容的正确性。通过使用本站内容随之而来的风险与本站无关。版权所有，保留一切权利。
+</p>
+
+<p id="p2">
+<a href="../about/index.asp.htm" tppabs="https://www.w3school.com.cn/about/index.asp" title="关于 W3School">关于 W3School</a>
+<a href="../about/about_helping.asp.htm" tppabs="https://www.w3school.com.cn/about/about_helping.asp" title="帮助 W3School">帮助 W3School</a>
+<a href="../about/about_use.asp.htm" tppabs="https://www.w3school.com.cn/about/about_use.asp" title="关于使用">使用条款</a>
+<a href="../about/about_privacy.asp.htm" tppabs="https://www.w3school.com.cn/about/about_privacy.asp" title="关于隐私">隐私条款</a>
+<a target="_blank" href="javascript:if(confirm('https://www.ykinvestment.com/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.ykinvestment.com/'" tppabs="https://www.ykinvestment.com/">技术支持：赢科</a>
+<a target="_blank" href="javascript:if(confirm('http://www.beian.miit.gov.cn/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://www.beian.miit.gov.cn/'" tppabs="http://www.beian.miit.gov.cn/">蒙ICP备06004630号</a>
+</p>
+</div>
+
+
+</div>
+<!-- wrapper end -->
+
+
+</body>
+
+</html>

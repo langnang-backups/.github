@@ -1,0 +1,366 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="../../www.googletagmanager.com/gtag/js-id=UA-878633-1" tppabs="https://www.googletagmanager.com/gtag/js?id=UA-878633-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-878633-1');
+</script>
+
+<meta charset=utf-8"utf-8">
+<meta name="robots" content="all" />
+<meta name="author" content="w3school.com.cn" />
+
+<link rel="stylesheet" type="text/css" href="../c.css" tppabs="https://www.w3school.com.cn/c.css" />
+
+<script src="../lib/cc/prism2.js" tppabs="https://www.w3school.com.cn/lib/cc/prism2.js"></script>
+<link rel='stylesheet' href="../lib/cc/prism.css" tppabs="https://www.w3school.com.cn/lib/cc/prism.css">
+
+<link rel="icon" type="image/png" sizes="16x16" href="/ui2019/logo-16-red.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/ui2019/logo-32-red.png">
+<link rel="icon" type="image/png" sizes="48x48" href="/ui2019/logo-48-red.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/ui2019/logo-96-red.png">
+<link rel="apple-touch-icon-precomposed" sizes="180x180" href="/ui2019/logo-180.png">
+
+
+<title>Java 类型转换</title>
+
+</head>
+
+<body class="browserscripting">
+
+<div id="wrapper">
+
+<div id="header">
+<a id="logo" href="../index.html" tppabs="https://www.w3school.com.cn/index.html" title="w3school 在线教程" style="float:left;">w3school 在线教程</a>
+<div id="header_gg">
+<script async src="../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" tppabs="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- W3 页眉 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-3381531532877742"
+     data-ad-slot="7423315034"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+
+<div id="navfirst">
+<ul id="menu">
+<li id="h"><a href="../h.asp.htm" tppabs="https://www.w3school.com.cn/h.asp" title="HTML 系列教程">HTML 系列教程</a></li>
+<li id="b"><a href="../b.asp.htm" tppabs="https://www.w3school.com.cn/b.asp" title="浏览器脚本教程">浏览器脚本</a></li>
+<li id="s"><a href="../s.asp.htm" tppabs="https://www.w3school.com.cn/s.asp" title="服务器脚本教程">服务器脚本</a></li>
+<li id="p"><a href="../p.asp.htm" tppabs="https://www.w3school.com.cn/p.asp" title="编程教程">编程教程</a></li>
+<li id="x"><a href="../x.asp.htm" tppabs="https://www.w3school.com.cn/x.asp" title="XML 系列教程">XML 系列教程</a></li>
+<li id="w"><a href="../w.asp.htm" tppabs="https://www.w3school.com.cn/w.asp" title="建站手册">建站手册</a></li>
+<li id="r"><a href="../r.asp.htm" tppabs="https://www.w3school.com.cn/r.asp" title="参考手册">参考手册</a></li>
+</ul>
+</div>
+
+<div id="navsecond">
+
+<div id="course"><h2>Java 教程</h2>
+<ul>
+<li><a href="index.asp.htm" tppabs="https://www.w3school.com.cn/java/index.asp" title="Java 教程">Java 教程</a></li>
+<li><a href="java_intro.asp.htm" tppabs="https://www.w3school.com.cn/java/java_intro.asp" title="Java 简介">Java 简介</a></li>
+<li><a href="java_getstarted.asp.htm" tppabs="https://www.w3school.com.cn/java/java_getstarted.asp" title="Java 入门">Java 入门</a></li>
+<li><a href="java_syntax.asp.htm" tppabs="https://www.w3school.com.cn/java/java_syntax.asp" title="Java 语法">Java 语法</a></li>
+<li><a href="java_output.asp.htm" tppabs="https://www.w3school.com.cn/java/java_output.asp" title="Java 输出 / 打印">Java 输出</a></li>
+<li><a href="java_comments.asp.htm" tppabs="https://www.w3school.com.cn/java/java_comments.asp" title="Java 注释">Java 注释</a></li>
+<li><a href="java_variables.asp.htm" tppabs="https://www.w3school.com.cn/java/java_variables.asp" title="Java 变量">Java 变量</a></li>
+<li><a href="java_data_types.asp.htm" tppabs="https://www.w3school.com.cn/java/java_data_types.asp" title="Java 数据类型">Java 数据类型</a></li>
+<li class="currentLink"><a href="java_type_casting.asp.htm" tppabs="https://www.w3school.com.cn/java/java_type_casting.asp" title="Java 类型转换">Java 类型转换</a></li>
+<li><a href="java_operators.asp.htm" tppabs="https://www.w3school.com.cn/java/java_operators.asp" title="Java 运算符">Java 运算符</a></li>
+<li><a href="java_strings.asp.htm" tppabs="https://www.w3school.com.cn/java/java_strings.asp" title="Java 字符串">Java 字符串</a></li>
+<li><a href="java_math.asp.htm" tppabs="https://www.w3school.com.cn/java/java_math.asp" title="Java 数学">Java 数学</a></li>
+<li><a href="java_booleans.asp.htm" tppabs="https://www.w3school.com.cn/java/java_booleans.asp" title="Java 布尔">Java 布尔</a></li>
+<li><a href="java_conditions.asp.htm" tppabs="https://www.w3school.com.cn/java/java_conditions.asp" title="Java If...Else">Java If...Else</a></li>
+<li><a href="java_switch.asp.htm" tppabs="https://www.w3school.com.cn/java/java_switch.asp" title="Java Switch">Java Switch</a></li>
+<li><a href="java_while_loop.asp.htm" tppabs="https://www.w3school.com.cn/java/java_while_loop.asp" title="Java While 循环">Java While 循环</a></li>
+<li><a href="java_for_loop.asp.htm" tppabs="https://www.w3school.com.cn/java/java_for_loop.asp" title="Java For 循环">Java For 循环</a></li>
+<li><a href="java_break.asp.htm" tppabs="https://www.w3school.com.cn/java/java_break.asp" title="Java Break 和 Continue">Java Break/Continue</a></li>
+<li><a href="java_arrays.asp.htm" tppabs="https://www.w3school.com.cn/java/java_arrays.asp" title="Java 数组">Java 数组</a></li>
+</ul>
+<h2>Java 方法</h2>
+<ul>
+<li><a href="java_methods.asp.htm" tppabs="https://www.w3school.com.cn/java/java_methods.asp" title="Java 方法">Java 方法</a></li>
+<li><a href="java_methods_param.asp.htm" tppabs="https://www.w3school.com.cn/java/java_methods_param.asp" title="Java 方法参数">Java 方法参数</a></li>
+<li><a href="java_methods_overloading.asp.htm" tppabs="https://www.w3school.com.cn/java/java_methods_overloading.asp" title="Java 方法重载">Java 方法重载</a></li>
+<li><a href="java_scope.asp.htm" tppabs="https://www.w3school.com.cn/java/java_scope.asp" title="Java 作用域">Java 作用域</a></li>
+<li><a href="java_recursion.asp.htm" tppabs="https://www.w3school.com.cn/java/java_recursion.asp" title="Java 递归">Java 递归</a></li>
+</ul>
+<h2>Java 类</h2>
+<ul>
+<li><a href="java_oop.asp.htm" tppabs="https://www.w3school.com.cn/java/java_oop.asp" title="Java OOP">Java OOP</a></li>
+<li><a href="java_classes.asp.htm" tppabs="https://www.w3school.com.cn/java/java_classes.asp" title="Java 类/对象">Java 类/对象</a></li>
+<li><a href="java_class_attributes.asp.htm" tppabs="https://www.w3school.com.cn/java/java_class_attributes.asp" title="Java 类属性">Java 类属性</a></li>
+<li><a href="java_class_methods.asp.htm" tppabs="https://www.w3school.com.cn/java/java_class_methods.asp" title="Java 类方法">Java 类方法</a></li>
+<li><a href="java_constructors.asp.htm" tppabs="https://www.w3school.com.cn/java/java_constructors.asp" title="Java 构造函数">Java 构造函数</a></li>
+<li><a href="java_modifiers.asp.htm" tppabs="https://www.w3school.com.cn/java/java_modifiers.asp" title="Java 修饰符">Java 修饰符</a></li>
+<li><a href="java_encapsulation.asp.htm" tppabs="https://www.w3school.com.cn/java/java_encapsulation.asp" title="Java 封装">Java 封装</a></li>
+<li><a href="java_packages.asp.htm" tppabs="https://www.w3school.com.cn/java/java_packages.asp" title="Java 包">Java 包 / API</a></li>
+<li><a href="java_inheritance.asp.htm" tppabs="https://www.w3school.com.cn/java/java_inheritance.asp" title="Java 继承">Java 继承</a></li>
+<li><a href="java_polymorphism.asp.htm" tppabs="https://www.w3school.com.cn/java/java_polymorphism.asp" title="Java 多态">Java 多态</a></li>
+<li><a href="java_inner_classes.asp.htm" tppabs="https://www.w3school.com.cn/java/java_inner_classes.asp" title="Java 内部类">Java 内部类</a></li>
+<li><a href="java_abstract.asp.htm" tppabs="https://www.w3school.com.cn/java/java_abstract.asp" title="Java 抽象">Java 抽象</a></li>
+<li><a href="java_interface.asp.htm" tppabs="https://www.w3school.com.cn/java/java_interface.asp" title="Java 接口">Java 接口</a></li>
+<li><a href="java_enums.asp.htm" tppabs="https://www.w3school.com.cn/java/java_enums.asp" title="Java 枚举">Java 枚举</a></li>
+<li><a href="java_user_input.asp.htm" tppabs="https://www.w3school.com.cn/java/java_user_input.asp" title="Java 用户输入">Java 用户输入</a></li>
+<li><a href="java_date.asp.htm" tppabs="https://www.w3school.com.cn/java/java_date.asp" title="Java 日期">Java 日期</a></li>
+</ul>
+<h2>Java 数据结构</h2>
+<ul>
+<li><a href="java_arraylist.asp.htm" tppabs="https://www.w3school.com.cn/java/java_arraylist.asp" title="Java ArrayList">Java ArrayList</a></li>
+<li><a href="java_linkedlist.asp.htm" tppabs="https://www.w3school.com.cn/java/java_linkedlist.asp" title="Java LinkedList">Java LinkedList</a></li>
+<li><a href="java_sort_list.asp.htm" tppabs="https://www.w3school.com.cn/java/java_sort_list.asp" title="Java 列表排序">Java 列表排序</a></li>
+<li><a href="java_hashmap.asp.htm" tppabs="https://www.w3school.com.cn/java/java_hashmap.asp" title="Java HashMap">Java HashMap</a></li>
+<li><a href="java_hashset.asp.htm" tppabs="https://www.w3school.com.cn/java/java_hashset.asp" title="Java HashSet">Java HashSet</a></li>
+<li><a href="java_iterator.asp.htm" tppabs="https://www.w3school.com.cn/java/java_iterator.asp" title="Java 迭代器">Java 迭代器</a></li>
+<li><a href="java_wrapper_classes.asp.htm" tppabs="https://www.w3school.com.cn/java/java_wrapper_classes.asp" title="Java 包装类">Java 包装类</a></li>
+</ul>
+<h2>Java 高级</h2>
+<ul>
+<li><a href="java_try_catch.asp.htm" tppabs="https://www.w3school.com.cn/java/java_try_catch.asp" title="Java 异常">Java 异常</a></li>
+<li><a href="java_regex.asp.htm" tppabs="https://www.w3school.com.cn/java/java_regex.asp" title="Java RegEx">Java RegEx</a></li>
+<li><a href="java_threads.asp.htm" tppabs="https://www.w3school.com.cn/java/java_threads.asp" title="Java 线程">Java 线程</a></li>
+<li><a href="java_lambda.asp.htm" tppabs="https://www.w3school.com.cn/java/java_lambda.asp" title="Java Lambda">Java Lambda</a></li>
+<li><a href="java_advanced_sorting.asp.htm" tppabs="https://www.w3school.com.cn/java/java_advanced_sorting.asp" title="Java 高级排序（Comparator 和 Comparable）">Java 高级排序</a></li>
+</ul>
+<h2>Java 文件处理</h2>
+<ul>
+<li><a href="java_files.asp.htm" tppabs="https://www.w3school.com.cn/java/java_files.asp" title="Java 文件">Java 文件</a></li>
+<li><a href="java_files_create.asp.htm" tppabs="https://www.w3school.com.cn/java/java_files_create.asp" title="Java 创建/写入文件">Java 创建/写入文件</a></li>
+<li><a href="java_files_read.asp.htm" tppabs="https://www.w3school.com.cn/java/java_files_read.asp" title="Java 读取文件">Java 读取文件</a></li>
+<li><a href="java_files_delete.asp.htm" tppabs="https://www.w3school.com.cn/java/java_files_delete.asp" title="Java 删除文件">Java 删除文件</a></li>
+</ul>
+<h2>Java 案例</h2>
+<ul>
+<li><a href="java_howto_add_two_numbers.asp.htm" tppabs="https://www.w3school.com.cn/java/java_howto_add_two_numbers.asp" title="Java 如何对两个数字相加">两个数字相加</a></li>
+<li><a href="java_howto_count_words.asp.htm" tppabs="https://www.w3school.com.cn/java/java_howto_count_words.asp" title="Java 如何统计字数">统计字数</a></li>
+<li><a href="java_howto_reverse_string.asp.htm" tppabs="https://www.w3school.com.cn/java/java_howto_reverse_string.asp" title="Java 如何反转字符串">反转字符串</a></li>
+<li><a href="java_howto_sum_of_array_elements.asp.htm" tppabs="https://www.w3school.com.cn/java/java_howto_sum_of_array_elements.asp" title="Java 如何计算数组元素的和">计算数组元素的和</a></li>
+<li><a href="java_howto_string_to_array.asp.htm" tppabs="https://www.w3school.com.cn/java/java_howto_string_to_array.asp" title="Java 如何将字符串转换为数组">将字符串转换为数组</a></li>
+<li><a href="java_howto_sort_an_array.asp.htm" tppabs="https://www.w3school.com.cn/java/java_howto_sort_an_array.asp" title="Java 如何排序数组">排序数组</a></li>
+<li><a href="java_howto_calculate_avg_array.asp.htm" tppabs="https://www.w3school.com.cn/java/java_howto_calculate_avg_array.asp" title="Java 如何计算数组元素的平均值">计算数组元素的平均值</a></li>
+<li><a href="java_howto_find_smallest_array_el.asp.htm" tppabs="https://www.w3school.com.cn/java/java_howto_find_smallest_array_el.asp" title="Java 如何找到数组中的最小元素">找到数组中的最小元素</a></li>
+<li><a href="java_howto_loop_through_arraylist.asp.htm" tppabs="https://www.w3school.com.cn/java/java_howto_loop_through_arraylist.asp" title="Java 如何遍历 ArrayList">遍历 ArrayList</a></li>
+<li><a href="java_howto_loop_through_hashmap.asp.htm" tppabs="https://www.w3school.com.cn/java/java_howto_loop_through_hashmap.asp" title="Java 如何遍历 HashMap">遍历 HashMap</a></li>
+<li><a href="java_howto_loop_through_enum.asp.htm" tppabs="https://www.w3school.com.cn/java/java_howto_loop_through_enum.asp" title="Java 如何遍历枚举">遍历枚举</a></li>
+<li><a href="java_howto_area_of_rectangle.asp.htm" tppabs="https://www.w3school.com.cn/java/java_howto_area_of_rectangle.asp" title="Java 如何计算矩形的面积">计算矩形的面积</a></li>
+<li><a href="java_howto_even_or_odd.asp.htm" tppabs="https://www.w3school.com.cn/java/java_howto_even_or_odd.asp" title="Java 如何判断数字的奇偶性">判断数字的奇偶性</a></li>
+<li><a href="java_howto_pos_or_neg.asp.htm" tppabs="https://www.w3school.com.cn/java/java_howto_pos_or_neg.asp" title="Java 如何判断数字的正负">判断数字的正负</a></li>
+<li><a href="java_howto_find_square_root.asp.htm" tppabs="https://www.w3school.com.cn/java/java_howto_find_square_root.asp" title="Java 如何求一个数的平方根">求一个数的平方根</a></li>
+<li><a href="java_howto_random_number.asp.htm" tppabs="https://www.w3school.com.cn/java/java_howto_random_number.asp" title="Java 如何生成随机数">生成随机数</a></li>
+</ul>
+<h2>Java 参考手册</h2>
+<ul>
+<li><a href="java_reference.asp.htm" tppabs="https://www.w3school.com.cn/java/java_reference.asp" title="Java 参考手册">Java 参考手册</a></li>
+<li><a href="java_ref_keywords.asp.htm" tppabs="https://www.w3school.com.cn/java/java_ref_keywords.asp" title="Java 关键字">Java 关键字</a></li>
+<li><a href="java_ref_string.asp.htm" tppabs="https://www.w3school.com.cn/java/java_ref_string.asp" title="Java String 方法">Java String 方法</a></li>
+<li><a href="java_ref_math.asp.htm" tppabs="https://www.w3school.com.cn/java/java_ref_math.asp" title="Java Math 方法">Java Math 方法</a></li>
+<li><a href="java_ref_output.asp.htm" tppabs="https://www.w3school.com.cn/java/java_ref_output.asp" title="Java Output 方法">Java Output 方法</a></li>
+<li><a href="java_ref_arrays.asp.htm" tppabs="https://www.w3school.com.cn/java/java_ref_arrays.asp" title="Java Arrays 方法">Java Arrays 方法</a></li>
+<li><a href="java_ref_arraylist.asp.htm" tppabs="https://www.w3school.com.cn/java/java_ref_arraylist.asp" title="Java ArrayList 方法">Java ArrayList 方法</a></li>
+<li><a href="java_ref_linkedlist.asp.htm" tppabs="https://www.w3school.com.cn/java/java_ref_linkedlist.asp" title="Java LinkedList 方法">Java LinkedList 方法</a></li>
+<li><a href="java_ref_hashmap.asp.htm" tppabs="https://www.w3school.com.cn/java/java_ref_hashmap.asp" title="Java HashMap 方法">Java HashMap 方法</a></li>
+<li><a href="java_ref_scanner.asp.htm" tppabs="https://www.w3school.com.cn/java/java_ref_scanner.asp" title="Java Scanner 方法">Java Scanner 方法</a></li>
+<li><a href="java_ref_iterators.asp.htm" tppabs="https://www.w3school.com.cn/java/java_ref_iterators.asp" title="Java Iterator 方法">Java Iterator 方法</a></li>
+<li><a href="java_ref_errors.asp.htm" tppabs="https://www.w3school.com.cn/java/java_ref_errors.asp" title="Java 错误和异常类型">Java 错误和异常</a></li>
+</ul>
+<h2>Java 实例</h2>
+<ul>
+<li><a href="java_examples.asp.htm" tppabs="https://www.w3school.com.cn/java/java_examples.asp" title="Java 实例">Java 实例</a></li>
+<li><a href="java_quiz.asp.htm" tppabs="https://www.w3school.com.cn/java/java_quiz.asp" title="Java 测验">Java 测验</a></li>
+</ul>
+</div><div id="selected">
+<h2>课程推荐：</h2>
+<ul>
+<li><a href="../howto/index.asp.htm" tppabs="https://www.w3school.com.cn/howto/index.asp" title="W3School 百宝箱">W3School 百宝箱</a></li>
+<li><a href="index.asp.htm" tppabs="https://www.w3school.com.cn/java/index.asp" title="Java 教程">Java 教程</a></li>
+</ul>
+
+</div>
+
+</div>
+
+<div id="maincontent">
+
+<h1>Java 类型转换</h1>
+
+<div class="prenextnav">
+<ul class="prenext">
+<li class="pre"><a href="java_data_types.asp.htm" tppabs="https://www.w3school.com.cn/java/java_data_types.asp" title="Java 数据类型">Java 数据类型</a></li>
+<li class="next"><a href="java_operators.asp.htm" tppabs="https://www.w3school.com.cn/java/java_operators.asp" title="Java 运算符">Java 运算符</a></li>
+</ul>
+</div>
+
+
+
+<div>
+<h2>Java 类型转换</h2>
+
+<p>类型转换指的是将一种原始数据类型的值赋给另一种类型。</p>
+
+<p>在 Java 中，有两种类型的转换：</p>
+
+<ul>
+<li>放大转换（Widening Casting）（自动） - 将较小的类型转换为较大的类型<br>
+<code>byte</code> -&gt; <code>short</code> -&gt; <code>char</code> -&gt; <code>int</code> -&gt; <code>long</code> -&gt; <code>float</code> -&gt; <code>double</code></li>
+
+<li>缩小转换（Narrowing Casting）（手动） - 将较大的类型转换为较小的类型<br>
+<code>double</code> -&gt; <code>float</code> -&gt; <code>long</code> -&gt; <code>int</code> -&gt; <code>char</code> -&gt; <code>short</code> -&gt; <code>byte</code></li>
+</ul>
+</div>
+
+
+
+<div>
+<h2>放大转换（Widening Casting）</h2>
+
+<p>将较小尺寸的类型传递给较大尺寸的类型时，会自动完成放大转换：</p>
+
+<h3>实例</h3>
+
+<pre class="language-java">
+public class Main {
+  public static void main(String[] args) {
+    int myInt = 9;
+    double myDouble = myInt; // 自动转换：int 到 double
+
+    System.out.println(myInt);      // 输出 9
+    System.out.println(myDouble);   // 输出 9.0
+  }
+}
+</pre>
+
+<p class="tiy"><a target="_blank" href="javascript:if(confirm('https://www.w3school.com.cn/java/pr_text_text-indent.asp  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ������, �����������, ����Ŀ����ֹͣ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.w3school.com.cn/java/pr_text_text-indent.asp'" tppabs="https://www.w3school.com.cn/java/t.php?f=java_casting_wide">亲自试一试</a></p>
+</div>
+
+
+
+<div>
+<h2>缩小转换</h2>
+
+<p>必须通过将类型放在值前面的括号中来手动完成缩小转换：</p>
+
+<h3>实例</h3>
+
+<pre class="language-java">
+public class Main {
+  public static void main(String[] args) {
+    double myDouble = 9.78d;
+    int myInt = (int) myDouble; // 手动转换：double 转换为 int
+
+    System.out.println(myDouble);   // 输出 9.78
+    System.out.println(myInt);      // 输出 9
+  }
+}
+</pre>
+
+<p class="tiy"><a target="_blank" href="javascript:if(confirm('https://www.w3school.com.cn/java/pr_text-justify.asp  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ������, �����������, ����Ŀ����ֹͣ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.w3school.com.cn/java/pr_text-justify.asp'" tppabs="https://www.w3school.com.cn/java/t.php?f=java_casting_narrow">亲自试一试</a></p>
+</div>
+
+
+
+<section>
+<h2>真实生活中的例子</h2>
+
+<p>以下是一个类型转换的实际实例，我们创建了一个程序来计算用户在游戏中的得分与最高分之间的百分比。</p>
+
+<p>我们使用类型转换来确保结果是一个浮点值，而不是整数：</p>
+
+<pre class="language-java">
+// 将游戏中的最高可能得分设置为 500
+int maxScore = 500;
+
+// 用户的实际得分
+int userScore = 423;
+
+/* 计算用户得分与最高可得分数之间的百分比。
+将 userScore 转换为浮点数以确保除法运算准确。 */
+float percentage = (float) userScore / maxScore * 100.0f;
+System.out.println(&quot;User's percentage is &quot; + percentage);
+</pre>
+
+<p class="tiy"><a target="_blank" href="javascript:if(confirm('https://www.w3school.com.cn/java/pr_text-orientation.asp  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ������, �����������, ����Ŀ����ֹͣ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.w3school.com.cn/java/pr_text-orientation.asp'" tppabs="https://www.w3school.com.cn/java/t.php?f=java_casting_reallife">亲自试一试</a></p>
+</section>
+
+
+
+<div class="prenextnav">
+<ul class="prenext">
+<li class="pre"><a href="java_data_types.asp.htm" tppabs="https://www.w3school.com.cn/java/java_data_types.asp" title="Java 数据类型">Java 数据类型</a></li>
+<li class="next"><a href="java_operators.asp.htm" tppabs="https://www.w3school.com.cn/java/java_operators.asp" title="Java 运算符">Java 运算符</a></li>
+</ul>
+</div><div style="background-color:#fcfdf8; padding:0;">
+<script async src="../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" tppabs="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- W3School ���Ĺ�� -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:800px;height:250px"
+     data-ad-client="ca-pub-3381531532877742"
+     data-ad-slot="2086924285"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+</div>
+<!-- maincontent end -->
+
+<div id="sidebar">
+
+<div id="tools">
+<h5 id="tools_reference"><a href="java_reference.asp.htm" tppabs="https://www.w3school.com.cn/java/java_reference.asp">Java 参考手册</a></h5>
+<h5 id="tools_example"><a href="java_examples.asp.htm" tppabs="https://www.w3school.com.cn/java/java_examples.asp">Java 实例</a></h5>
+<h5 id="tools_quiz"><a href="java_quiz.asp.htm" tppabs="https://www.w3school.com.cn/java/java_quiz.asp">Java 测验</a></h5>
+</div>
+
+<div id="sidebar_zzs">
+
+<div id="sbtg">
+<script async src="../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" tppabs="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- W3School 侧栏广告位 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-3381531532877742"
+     data-ad-slot="6744370501"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+</div>
+
+</div>
+
+<div id="footer">
+<p id="p1">
+W3School 简体中文版提供的内容仅用于培训和测试，不保证内容的正确性。通过使用本站内容随之而来的风险与本站无关。版权所有，保留一切权利。
+</p>
+
+<p id="p2">
+<a href="../about/index.asp.htm" tppabs="https://www.w3school.com.cn/about/index.asp" title="关于 W3School">关于 W3School</a>
+<a href="../about/about_helping.asp.htm" tppabs="https://www.w3school.com.cn/about/about_helping.asp" title="帮助 W3School">帮助 W3School</a>
+<a href="../about/about_use.asp.htm" tppabs="https://www.w3school.com.cn/about/about_use.asp" title="关于使用">使用条款</a>
+<a href="../about/about_privacy.asp.htm" tppabs="https://www.w3school.com.cn/about/about_privacy.asp" title="关于隐私">隐私条款</a>
+<a target="_blank" href="javascript:if(confirm('https://www.ykinvestment.com/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.ykinvestment.com/'" tppabs="https://www.ykinvestment.com/">技术支持：赢科</a>
+<a target="_blank" href="javascript:if(confirm('http://www.beian.miit.gov.cn/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://www.beian.miit.gov.cn/'" tppabs="http://www.beian.miit.gov.cn/">蒙ICP备06004630号</a>
+</p>
+</div>
+
+
+</div>
+<!-- wrapper end -->
+
+
+</body>
+
+</html>

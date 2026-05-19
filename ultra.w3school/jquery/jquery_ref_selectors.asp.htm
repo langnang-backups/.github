@@ -1,0 +1,527 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="../../www.googletagmanager.com/gtag/js-id=UA-878633-1" tppabs="https://www.googletagmanager.com/gtag/js?id=UA-878633-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-878633-1');
+</script>
+
+<meta charset=utf-8"utf-8">
+<meta name="robots" content="all" />
+<meta name="author" content="w3school.com.cn" />
+
+<link rel="stylesheet" type="text/css" href="../c.css" tppabs="https://www.w3school.com.cn/c.css" />
+
+<script src="../lib/cc/prism2.js" tppabs="https://www.w3school.com.cn/lib/cc/prism2.js"></script>
+<link rel='stylesheet' href="../lib/cc/prism.css" tppabs="https://www.w3school.com.cn/lib/cc/prism.css">
+
+<link rel="icon" type="image/png" sizes="16x16" href="/ui2019/logo-16-red.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/ui2019/logo-32-red.png">
+<link rel="icon" type="image/png" sizes="48x48" href="/ui2019/logo-48-red.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/ui2019/logo-96-red.png">
+<link rel="apple-touch-icon-precomposed" sizes="180x180" href="/ui2019/logo-180.png">
+
+
+<title>jQuery å‚è€ƒæ‰‹å†Œ - é€‰æ‹©å™¨</title>
+
+</head>
+
+<body class="browserscripting">
+
+<div id="wrapper">
+
+<div id="header">
+<a id="logo" href="../index.html" tppabs="https://www.w3school.com.cn/index.html" title="w3school åœ¨çº¿æ•™ç¨‹" style="float:left;">w3school åœ¨çº¿æ•™ç¨‹</a>
+<div id="header_gg">
+<script async src="../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" tppabs="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- W3 é¡µçœ‰ -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-3381531532877742"
+     data-ad-slot="7423315034"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+
+<div id="navfirst">
+<ul id="menu">
+<li id="h"><a href="../h.asp.htm" tppabs="https://www.w3school.com.cn/h.asp" title="HTML ç³»åˆ—æ•™ç¨‹">HTML ç³»åˆ—æ•™ç¨‹</a></li>
+<li id="b"><a href="../b.asp.htm" tppabs="https://www.w3school.com.cn/b.asp" title="æµè§ˆå™¨è„šæœ¬æ•™ç¨‹">æµè§ˆå™¨è„šæœ¬</a></li>
+<li id="s"><a href="../s.asp.htm" tppabs="https://www.w3school.com.cn/s.asp" title="æœåŠ¡å™¨è„šæœ¬æ•™ç¨‹">æœåŠ¡å™¨è„šæœ¬</a></li>
+<li id="p"><a href="../p.asp.htm" tppabs="https://www.w3school.com.cn/p.asp" title="ç¼–ç¨‹æ•™ç¨‹">ç¼–ç¨‹æ•™ç¨‹</a></li>
+<li id="x"><a href="../x.asp.htm" tppabs="https://www.w3school.com.cn/x.asp" title="XML ç³»åˆ—æ•™ç¨‹">XML ç³»åˆ—æ•™ç¨‹</a></li>
+<li id="w"><a href="../w.asp.htm" tppabs="https://www.w3school.com.cn/w.asp" title="å»ºç«™æ‰‹å†Œ">å»ºç«™æ‰‹å†Œ</a></li>
+<li id="r"><a href="../r.asp.htm" tppabs="https://www.w3school.com.cn/r.asp" title="å‚è€ƒæ‰‹å†Œ">å‚è€ƒæ‰‹å†Œ</a></li>
+</ul>
+</div>
+
+<div id="navsecond">
+
+<div id="course"><h2>jQuery æ•™ç¨‹</h2>
+<ul>
+<li><a href="index.asp.htm" tppabs="https://www.w3school.com.cn/jquery/index.asp" title="jQuery æ•™ç¨‹">jQuery æ•™ç¨‹</a></li>
+<li><a href="jquery_intro.asp.htm" tppabs="https://www.w3school.com.cn/jquery/jquery_intro.asp" title="jQuery ç®€ä»‹">jQuery ç®€ä»‹</a></li>
+<li><a href="jquery_install.asp.htm" tppabs="https://www.w3school.com.cn/jquery/jquery_install.asp" title="jQuery å®‰è£…">jQuery å®‰è£…</a></li>
+<li><a href="jquery_syntax.asp.htm" tppabs="https://www.w3school.com.cn/jquery/jquery_syntax.asp" title="jQuery è¯­æ³•">jQuery è¯­æ³•</a></li>
+<li><a href="jquery_selectors.asp.htm" tppabs="https://www.w3school.com.cn/jquery/jquery_selectors.asp" title="jQuery é€‰æ‹©å™¨">jQuery é€‰æ‹©å™¨</a></li>
+<li><a href="jquery_events.asp.htm" tppabs="https://www.w3school.com.cn/jquery/jquery_events.asp" title="jQuery äº‹ä»¶">jQuery äº‹ä»¶</a></li>
+</ul>
+<h2>jQuery æ•ˆæœ</h2>
+<ul>
+<li><a href="jquery_hide_show.asp.htm" tppabs="https://www.w3school.com.cn/jquery/jquery_hide_show.asp" title="jQuery jQuery æ•ˆæœ - éšè—å’Œæ˜¾ç¤º">jQuery éšè—/æ˜¾ç¤º</a></li>
+<li><a href="jquery_fade.asp.htm" tppabs="https://www.w3school.com.cn/jquery/jquery_fade.asp" title="jQuery jQuery æ•ˆæœ - æ·¡å…¥æ·¡å‡º">jQuery æ·¡å…¥æ·¡å‡º</a></li>
+<li><a href="jquery_slide.asp.htm" tppabs="https://www.w3school.com.cn/jquery/jquery_slide.asp" title="jQuery æ•ˆæœ - æ»‘åŠ¨">jQuery æ»‘åŠ¨</a></li>
+<li><a href="jquery_animate.asp.htm" tppabs="https://www.w3school.com.cn/jquery/jquery_animate.asp" title="jQuery æ•ˆæœ - åŠ¨ç”»">jQuery åŠ¨ç”»</a></li>
+<li><a href="jquery_stop.asp.htm" tppabs="https://www.w3school.com.cn/jquery/jquery_stop.asp" title="jQuery åœæ­¢åŠ¨ç”»">jQuery stop()</a></li>
+<li><a href="jquery_callback.asp.htm" tppabs="https://www.w3school.com.cn/jquery/jquery_callback.asp" title="jQuery å›è°ƒå‡½æ•°">jQuery Callback</a></li>
+<li><a href="jquery_chaining.asp.htm" tppabs="https://www.w3school.com.cn/jquery/jquery_chaining.asp" title="jQuery - Chaining">jQuery Chaining</a></li>
+</ul>
+<h2>jQuery HTML</h2>
+<ul>
+<li><a href="jquery_dom_get.asp.htm" tppabs="https://www.w3school.com.cn/jquery/jquery_dom_get.asp" title="jQuery - è·å–å†…å®¹å’Œå±æ€§">jQuery è·å–</a></li>
+<li><a href="jquery_dom_set.asp.htm" tppabs="https://www.w3school.com.cn/jquery/jquery_dom_set.asp" title="jQuery - è®¾ç½®å†…å®¹å’Œå±æ€§">jQuery è®¾ç½®</a></li>
+<li><a href="jquery_dom_add.asp.htm" tppabs="https://www.w3school.com.cn/jquery/jquery_dom_add.asp" title="jQuery - æ·»åŠ å…ƒç´ ">jQuery æ·»åŠ </a></li>
+<li><a href="jquery_dom_remove.asp.htm" tppabs="https://www.w3school.com.cn/jquery/jquery_dom_remove.asp" title="jQuery - åˆ é™¤å…ƒç´ ">jQuery åˆ é™¤</a></li>
+<li><a href="jquery_css_classes.asp.htm" tppabs="https://www.w3school.com.cn/jquery/jquery_css_classes.asp" title="jQuery - è·å–å’Œè®¾ç½® CSS ç±»">jQuery CSS ç±»</a></li>
+<li><a href="jquery_css.asp.htm" tppabs="https://www.w3school.com.cn/jquery/jquery_css.asp" title="jQuery - css() æ–¹æ³•">jQuery css()</a></li>
+<li><a href="jquery_dimensions.asp.htm" tppabs="https://www.w3school.com.cn/jquery/jquery_dimensions.asp" title="jQuery - å°ºå¯¸">jQuery å°ºå¯¸</a></li>
+</ul>
+<h2>jQuery éå†</h2>
+<ul>
+<li><a href="jquery_traversing.asp.htm" tppabs="https://www.w3school.com.cn/jquery/jquery_traversing.asp" title="jQuery éå†">jQuery éå†</a></li>
+<li><a href="jquery_traversing_ancestors.asp.htm" tppabs="https://www.w3school.com.cn/jquery/jquery_traversing_ancestors.asp" title="jQuery éå† - ç¥–å…ˆ">jQuery ç¥–å…ˆ</a></li>
+<li><a href="jquery_traversing_descendants.asp.htm" tppabs="https://www.w3school.com.cn/jquery/jquery_traversing_descendants.asp" title="jQuery éå† - åä»£">jQuery åä»£</a></li>
+<li><a href="jquery_traversing_siblings.asp.htm" tppabs="https://www.w3school.com.cn/jquery/jquery_traversing_siblings.asp" title="jQuery éå† - åŒèƒ">jQuery åŒèƒ</a></li>
+<li><a href="jquery_traversing_filtering.asp.htm" tppabs="https://www.w3school.com.cn/jquery/jquery_traversing_filtering.asp" title="jQuery éå† - è¿‡æ»¤">jQuery è¿‡æ»¤</a></li>
+</ul>
+<h2>jQuery AJAX</h2>
+<ul>
+<li><a href="jquery_ajax_intro.asp.htm" tppabs="https://www.w3school.com.cn/jquery/jquery_ajax_intro.asp" title="jQuery - AJAX ç®€ä»‹">jQuery AJAX ç®€ä»‹</a></li>
+<li><a href="jquery_ajax_load.asp.htm" tppabs="https://www.w3school.com.cn/jquery/jquery_ajax_load.asp" title="jQuery - AJAX load() æ–¹æ³•">jQuery åŠ è½½</a></li>
+<li><a href="jquery_ajax_get_post.asp.htm" tppabs="https://www.w3school.com.cn/jquery/jquery_ajax_get_post.asp" title="jQuery - AJAX get() å’Œ post() æ–¹æ³•">jQuery Get/Post</a></li>
+</ul>
+<h2>jQuery æ‚é¡¹</h2>
+<ul>
+<li><a href="jquery_noconflict.asp.htm" tppabs="https://www.w3school.com.cn/jquery/jquery_noconflict.asp" title="jQuery - noConflict() æ–¹æ³•">jQuery noConflict()</a></li>
+</ul>
+<h2>jQuery å®ä¾‹</h2>
+<ul>
+<li><a href="jquery_examples.asp.htm" tppabs="https://www.w3school.com.cn/jquery/jquery_examples.asp" title="jQuery å®ä¾‹">jQuery å®ä¾‹</a></li>
+<li><a href="jquery_quiz.asp.htm" tppabs="https://www.w3school.com.cn/jquery/jquery_quiz.asp" title="jQuery æµ‹éªŒ">jQuery æµ‹éªŒ</a></li>
+</ul>
+<h2>jQuery å‚è€ƒæ‰‹å†Œ</h2>
+<ul>
+<li><a href="jquery_reference.asp.htm" tppabs="https://www.w3school.com.cn/jquery/jquery_reference.asp" title="jQuery å‚è€ƒæ‰‹å†Œ">jQuery å‚è€ƒæ‰‹å†Œ</a></li>
+<li class="currentLink"><a href="jquery_ref_selectors.asp.htm" tppabs="https://www.w3school.com.cn/jquery/jquery_ref_selectors.asp" title="jQuery å‚è€ƒæ‰‹å†Œ - é€‰æ‹©å™¨">jQuery é€‰æ‹©å™¨</a></li>
+<li><a href="jquery_ref_events.asp.htm" tppabs="https://www.w3school.com.cn/jquery/jquery_ref_events.asp" title="jQuery å‚è€ƒæ‰‹å†Œ - äº‹ä»¶">jQuery äº‹ä»¶</a></li>
+<li><a href="jquery_ref_effects.asp.htm" tppabs="https://www.w3school.com.cn/jquery/jquery_ref_effects.asp" title="jQuery å‚è€ƒæ‰‹å†Œ - æ•ˆæœ">jQuery æ•ˆæœ</a></li>
+<li><a href="jquery_ref_manipulation.asp.htm" tppabs="https://www.w3school.com.cn/jquery/jquery_ref_manipulation.asp" title="jQuery å‚è€ƒæ‰‹å†Œ - æ–‡æ¡£æ“ä½œ">jQuery æ–‡æ¡£æ“ä½œ</a></li>
+<li><a href="jquery_ref_attributes.asp.htm" tppabs="https://www.w3school.com.cn/jquery/jquery_ref_attributes.asp" title="jQuery å‚è€ƒæ‰‹å†Œ - å±æ€§æ“ä½œ">jQuery å±æ€§æ“ä½œ</a></li>
+<li><a href="jquery_ref_css.asp.htm" tppabs="https://www.w3school.com.cn/jquery/jquery_ref_css.asp" title="jQuery å‚è€ƒæ‰‹å†Œ - CSS æ“ä½œ">jQuery CSS æ“ä½œ</a></li>
+<li><a href="jquery_ref_ajax.asp.htm" tppabs="https://www.w3school.com.cn/jquery/jquery_ref_ajax.asp" title="jQuery å‚è€ƒæ‰‹å†Œ - Ajax">jQuery Ajax</a></li>
+<li><a href="jquery_ref_traversing.asp.htm" tppabs="https://www.w3school.com.cn/jquery/jquery_ref_traversing.asp" title="jQuery å‚è€ƒæ‰‹å†Œ - éå†">jQuery éå†</a></li>
+<li><a href="jquery_ref_data.asp.htm" tppabs="https://www.w3school.com.cn/jquery/jquery_ref_data.asp" title="jQuery å‚è€ƒæ‰‹å†Œ - æ•°æ®">jQuery æ•°æ®</a></li>
+<li><a href="jquery_ref_dom_element_methods.asp.htm" tppabs="https://www.w3school.com.cn/jquery/jquery_ref_dom_element_methods.asp" title="jQuery å‚è€ƒæ‰‹å†Œ - DOM å…ƒç´ æ–¹æ³•">jQuery DOM å…ƒç´ </a></li>
+<li><a href="jquery_ref_core.asp.htm" tppabs="https://www.w3school.com.cn/jquery/jquery_ref_core.asp" title="jQuery å‚è€ƒæ‰‹å†Œ - æ ¸å¿ƒ">jQuery æ ¸å¿ƒ</a></li>
+<li><a href="jquery_ref_prop.asp.htm" tppabs="https://www.w3school.com.cn/jquery/jquery_ref_prop.asp" title="jQuery å±æ€§">jQuery å±æ€§</a></li>
+</ul>
+</div><div id="selected">
+<h2>è¯¾ç¨‹æ¨èï¼š</h2>
+<ul>
+<li><a href="../howto/index.asp.htm" tppabs="https://www.w3school.com.cn/howto/index.asp" title="W3School ç™¾å®ç®±">W3School ç™¾å®ç®±</a></li>
+<li><a href="../java/index.asp.htm" tppabs="https://www.w3school.com.cn/java/index.asp" title="Java æ•™ç¨‹">Java æ•™ç¨‹</a></li>
+</ul>
+
+</div>
+
+</div>
+
+<div id="maincontent">
+
+<h1>jQuery å‚è€ƒæ‰‹å†Œ - é€‰æ‹©å™¨</h1>
+
+<div class="prenextnav">
+<ul class="prenext">
+<li class="pre"><a href="jquery_reference.asp.htm" tppabs="https://www.w3school.com.cn/jquery/jquery_reference.asp" title="jQuery å‚è€ƒæ‰‹å†Œ">jQuery å‚è€ƒæ‰‹å†Œ</a></li>
+<li class="next"><a href="jquery_ref_events.asp.htm" tppabs="https://www.w3school.com.cn/jquery/jquery_ref_events.asp" title="jQuery å‚è€ƒæ‰‹å†Œ - äº‹ä»¶">jQuery äº‹ä»¶</a></li>
+</ul>
+</div>
+
+
+
+<div>
+<h2>jQuery é€‰æ‹©å™¨</h2>
+
+<table class="dataintable">
+<tr>
+<th>é€‰æ‹©å™¨</th>
+<th>å®ä¾‹</th>
+<th>é€‰å–</th>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/jquery/angular_api.asp  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/jquery/angular_api.asp'" tppabs="https://www.w3school.com.cn/jquery/selector_all.asp" title="jQuery * é€‰æ‹©å™¨">*</a></td>
+<td>$(&quot;*&quot;)</td>
+<td>æ‰€æœ‰å…ƒç´ </td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/jquery/angular_validation.asp  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/jquery/angular_validation.asp'" tppabs="https://www.w3school.com.cn/jquery/selector_id.asp" title="jQuery # é€‰æ‹©å™¨">#<i>id</i></a></td>
+<td>$(&quot;#lastname&quot;)</td>
+<td>id=&quot;lastname&quot; çš„å…ƒç´ </td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/jquery/angular_includes.asp  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/jquery/angular_includes.asp'" tppabs="https://www.w3school.com.cn/jquery/selector_class.asp" title="jQuery . é€‰æ‹©å™¨">.<i>class</i></a></td>
+<td>$(&quot;.intro&quot;)</td>
+<td>æ‰€æœ‰ class=&quot;intro&quot; çš„å…ƒç´ </td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/jquery/angular_forms.asp  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/jquery/angular_forms.asp'" tppabs="https://www.w3school.com.cn/jquery/selector_element.asp" title="jQuery element é€‰æ‹©å™¨"><i>element</i></a></td>
+<td>$(&quot;p&quot;)</td>
+<td>æ‰€æœ‰ &lt;p&gt; å…ƒç´ </td>
+</tr>
+
+<tr>
+<td>.<i>class</i>.<i>class</i></td>
+<td>$(&quot;.intro.demo&quot;)</td>
+<td>æ‰€æœ‰ class=&quot;intro&quot; ä¸” class=&quot;demo&quot; çš„å…ƒç´ </td>
+</tr>
+
+<tr>
+<td style="background-color:#fff;">&nbsp;</td>
+<td style="background-color:#fff;">&nbsp;</td>
+<td style="background-color:#fff;">&nbsp;</td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/jquery/atrule_import.asp  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/jquery/atrule_import.asp'" tppabs="https://www.w3school.com.cn/jquery/selector_first.asp" title="jQuery :first é€‰æ‹©å™¨">:first</a></td>
+<td>$(&quot;p:first&quot;)</td>
+<td>ç¬¬ä¸€ä¸ª &lt;p&gt; å…ƒç´ </td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/jquery/pr_inline-size.asp  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/jquery/pr_inline-size.asp'" tppabs="https://www.w3school.com.cn/jquery/selector_last.asp" title="jQuery :last é€‰æ‹©å™¨">:last</a></td>
+<td>$(&quot;p:last&quot;)</td>
+<td>æœ€åä¸€ä¸ª &lt;p&gt; å…ƒç´ </td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/jquery/pr_inset-block.asp  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/jquery/pr_inset-block.asp'" tppabs="https://www.w3school.com.cn/jquery/selector_even.asp" title="jQuery :even é€‰æ‹©å™¨">:even</a></td>
+<td>$(&quot;tr:even&quot;)</td>
+<td>æ‰€æœ‰å¶æ•° &lt;tr&gt; å…ƒç´ </td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/jquery/pr_inset-block-start.asp  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/jquery/pr_inset-block-start.asp'" tppabs="https://www.w3school.com.cn/jquery/selector_odd.asp" title="jQuery :odd é€‰æ‹©å™¨">:odd</a></td>
+<td>$(&quot;tr:odd&quot;)</td>
+<td>æ‰€æœ‰å¥‡æ•° &lt;tr&gt; å…ƒç´ </td>
+</tr>
+
+<tr>
+<td style="background-color:#fff;">&nbsp;</td>
+<td style="background-color:#fff;">&nbsp;</td>
+<td style="background-color:#fff;">&nbsp;</td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/jquery/pr_inset-inline-end.asp  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/jquery/pr_inset-inline-end.asp'" tppabs="https://www.w3school.com.cn/jquery/selector_eq.asp" title="jQuery :eq() é€‰æ‹©å™¨">:eq(<i>index</i>)</a></td>
+<td>$(&quot;ul li:eq(3)&quot;)</td>
+<td>åˆ—è¡¨ä¸­çš„ç¬¬å››ä¸ªå…ƒç´ ï¼ˆindex ä» 0 å¼€å§‹ï¼‰</td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/jquery/pr_inset-inline-start.asp  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/jquery/pr_inset-inline-start.asp'" tppabs="https://www.w3school.com.cn/jquery/selector_gt.asp" title="jQuery :gt é€‰æ‹©å™¨">:gt(<i>no</i>)</a></td>
+<td>$(&quot;ul li:gt(3)&quot;)</td>
+<td>åˆ—å‡º index å¤§äº 3 çš„å…ƒç´ </td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/jquery/pr_isolation.asp  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/jquery/pr_isolation.asp'" tppabs="https://www.w3school.com.cn/jquery/selector_lt.asp" title="jQuery :lt é€‰æ‹©å™¨">:lt(<i>no</i>)</a></td>
+<td>$(&quot;ul li:lt(3)&quot;)</td>
+<td>åˆ—å‡º index å°äº 3 çš„å…ƒç´ </td>
+</tr>
+
+<tr>
+<td>:not(<i>selector</i>)</td>
+<td>$(&quot;input:not(:empty)&quot;)</td>
+<td>æ‰€æœ‰ä¸ä¸ºç©ºçš„ input å…ƒç´ </td>
+</tr>
+
+<tr>
+<td style="background-color:#fff;">&nbsp;</td>
+<td style="background-color:#fff;">&nbsp;</td>
+<td style="background-color:#fff;">&nbsp;</td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/jquery/pr_justify-content.asp  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/jquery/pr_justify-content.asp'" tppabs="https://www.w3school.com.cn/jquery/selector_header.asp" title="jQuery :header é€‰æ‹©å™¨">:header</a></td>
+<td>$(&quot;:header&quot;)</td>
+<td>æ‰€æœ‰æ ‡é¢˜å…ƒç´  &lt;h1&gt; - &lt;h6&gt;</td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/jquery/pr_justify-self.asp  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/jquery/pr_justify-self.asp'" tppabs="https://www.w3school.com.cn/jquery/selector_animated.asp" title="jQuery :animated é€‰æ‹©å™¨">:animated</a></td>
+<td>&nbsp;</td>
+<td>æ‰€æœ‰åŠ¨ç”»å…ƒç´ </td>
+</tr>
+
+<tr>
+<td style="background-color:#fff;">&nbsp;</td>
+<td style="background-color:#fff;">&nbsp;</td>
+<td style="background-color:#fff;">&nbsp;</td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/jquery/pr_keyframes.asp  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/jquery/pr_keyframes.asp'" tppabs="https://www.w3school.com.cn/jquery/selector_contains.asp" title="jQuery :contains é€‰æ‹©å™¨">:contains(<i>text</i>)</a></td>
+<td>$(&quot;:contains('W3School')&quot;)</td>
+<td>åŒ…å«æŒ‡å®šå­—ç¬¦ä¸²çš„æ‰€æœ‰å…ƒç´ </td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/jquery/pr_pos_left.asp  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/jquery/pr_pos_left.asp'" tppabs="https://www.w3school.com.cn/jquery/selector_empty.asp" title="jQuery :empty é€‰æ‹©å™¨">:empty</a></td>
+<td>$(&quot;:empty&quot;)</td>
+<td>æ— å­ï¼ˆå…ƒç´ ï¼‰èŠ‚ç‚¹çš„æ‰€æœ‰å…ƒç´ </td>
+</tr>
+
+<tr>
+<td>:hidden</td>
+<td>$(&quot;p:hidden&quot;)</td>
+<td>æ‰€æœ‰éšè—çš„ &lt;p&gt; å…ƒç´ </td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/jquery/pr_text_letter-spacing.asp  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/jquery/pr_text_letter-spacing.asp'" tppabs="https://www.w3school.com.cn/jquery/selector_visible.asp" title="jQuery :visible é€‰æ‹©å™¨">:visible</a></td>
+<td>$(&quot;table:visible&quot;)</td>
+<td>æ‰€æœ‰å¯è§çš„è¡¨æ ¼</td>
+</tr>
+
+<tr>
+<td style="background-color:#fff;">&nbsp;</td>
+<td style="background-color:#fff;">&nbsp;</td>
+<td style="background-color:#fff;">&nbsp;</td>
+</tr>
+
+<tr>
+<td>s1,s2,s3</td>
+<td>$(&quot;th,td,.intro&quot;)</td>
+<td>æ‰€æœ‰å¸¦æœ‰åŒ¹é…é€‰æ‹©çš„å…ƒç´ </td>
+</tr>
+
+<tr>
+<td style="background-color:#fff;">&nbsp;</td>
+<td style="background-color:#fff;">&nbsp;</td>
+<td style="background-color:#fff;">&nbsp;</td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/jquery/angular_animations.asp  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/jquery/angular_animations.asp'" tppabs="https://www.w3school.com.cn/jquery/selector_attribute.asp" title="jQuery [attribute] é€‰æ‹©å™¨">[<i>attribute</i>]</a></td>
+<td>$(&quot;[href]&quot;)</td>
+<td>æ‰€æœ‰å¸¦æœ‰ href å±æ€§çš„å…ƒç´ </td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/jquery/pr_list-style.asp  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/jquery/pr_list-style.asp'" tppabs="https://www.w3school.com.cn/jquery/selector_attribute_equal_value.asp" title="jQuery [attribute=value] é€‰æ‹©å™¨">[<i>attribute</i>=<i>value</i>]</a></td>
+<td>$(&quot;[href='#']&quot;)</td>
+<td>æ‰€æœ‰ href å±æ€§çš„å€¼ç­‰äº &quot;#&quot; çš„å…ƒç´ </td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/jquery/pr_list-style-position.asp  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/jquery/pr_list-style-position.asp'" tppabs="https://www.w3school.com.cn/jquery/selector_attribute_notequal_value.asp" title="jQuery [attribute!=value] é€‰æ‹©å™¨">[<i>attribute</i>!=<i>value</i>]</a></td>
+<td>$(&quot;[href!='#']&quot;)</td>
+<td>æ‰€æœ‰ href å±æ€§çš„å€¼ä¸ç­‰äº &quot;#&quot; çš„å…ƒç´ </td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/jquery/pr_margin.asp  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/jquery/pr_margin.asp'" tppabs="https://www.w3school.com.cn/jquery/selector_attribute_end_value.asp" title="jQuery [attribute$=value] é€‰æ‹©å™¨">[<i>attribute</i>$=<i>value</i>]</a></td>
+<td>$(&quot;[href$='.jpg']&quot;)</td>
+<td>æ‰€æœ‰ href å±æ€§çš„å€¼åŒ…å«ä»¥ &quot;.jpg&quot; ç»“å°¾çš„å…ƒç´ </td>
+</tr>
+
+<tr>
+<td style="background-color:#fff;">&nbsp;</td>
+<td style="background-color:#fff;">&nbsp;</td>
+<td style="background-color:#fff;">&nbsp;</td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/jquery/pr_margin-block-end.asp  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/jquery/pr_margin-block-end.asp'" tppabs="https://www.w3school.com.cn/jquery/selector_input.asp" title="jQuery :input é€‰æ‹©å™¨">:input</a></td>
+<td>$(&quot;:input&quot;)</td>
+<td>æ‰€æœ‰ &lt;input&gt; å…ƒç´ </td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/jquery/pr_margin-bottom.asp  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/jquery/pr_margin-bottom.asp'" tppabs="https://www.w3school.com.cn/jquery/selector_input_text.asp" title="jQuery :text é€‰æ‹©å™¨">:text</a></td>
+<td>$(&quot;:text&quot;)</td>
+<td>æ‰€æœ‰ type=&quot;text&quot; çš„ &lt;input&gt; å…ƒç´ </td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/jquery/pr_margin-inline-end.asp  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/jquery/pr_margin-inline-end.asp'" tppabs="https://www.w3school.com.cn/jquery/selector_input_password.asp" title="jQuery :password é€‰æ‹©å™¨">:password</a></td>
+<td>$(&quot;:password&quot;)</td>
+<td>æ‰€æœ‰ type=&quot;password&quot; çš„ &lt;input&gt; å…ƒç´ </td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/jquery/pr_margin-left.asp  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/jquery/pr_margin-left.asp'" tppabs="https://www.w3school.com.cn/jquery/selector_input_radio.asp" title="jQuery :radio é€‰æ‹©å™¨">:radio</a></td>
+<td>$(&quot;:radio&quot;)</td>
+<td>æ‰€æœ‰ type=&quot;radio&quot; çš„ &lt;input&gt; å…ƒç´ </td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/jquery/pr_margin-top.asp  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/jquery/pr_margin-top.asp'" tppabs="https://www.w3school.com.cn/jquery/selector_input_checkbox.asp" title="jQuery :checkbox é€‰æ‹©å™¨">:checkbox</a></td>
+<td>$(&quot;:checkbox&quot;)</td>
+<td>æ‰€æœ‰ type=&quot;checkbox&quot; çš„ &lt;input&gt; å…ƒç´ </td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/jquery/pr_marker-end.asp  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/jquery/pr_marker-end.asp'" tppabs="https://www.w3school.com.cn/jquery/selector_input_submit.asp" title="jQuery :submit é€‰æ‹©å™¨">:submit</a></td>
+<td>$(&quot;:submit&quot;)</td>
+<td>æ‰€æœ‰ type=&quot;submit&quot; çš„ &lt;input&gt; å…ƒç´ </td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/jquery/pr_marker-start.asp  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/jquery/pr_marker-start.asp'" tppabs="https://www.w3school.com.cn/jquery/selector_input_reset.asp" title="jQuery :reset é€‰æ‹©å™¨">:reset</a></td>
+<td>$(&quot;:reset&quot;)</td>
+<td>æ‰€æœ‰ type=&quot;reset&quot; çš„ &lt;input&gt; å…ƒç´ </td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/jquery/pr_mask-clip.asp  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/jquery/pr_mask-clip.asp'" tppabs="https://www.w3school.com.cn/jquery/selector_input_button.asp" title="jQuery :button é€‰æ‹©å™¨">:button</a></td>
+<td>$(&quot;:button&quot;)</td>
+<td>æ‰€æœ‰ type=&quot;button&quot; çš„ &lt;input&gt; å…ƒç´ </td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/jquery/pr_mask-image.asp  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/jquery/pr_mask-image.asp'" tppabs="https://www.w3school.com.cn/jquery/selector_input_image.asp" title="jQuery :image é€‰æ‹©å™¨">:image</a></td>
+<td>$(&quot;:image&quot;)</td>
+<td>æ‰€æœ‰ type=&quot;image&quot; çš„ &lt;input&gt; å…ƒç´ </td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/jquery/pr_mask-origin.asp  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/jquery/pr_mask-origin.asp'" tppabs="https://www.w3school.com.cn/jquery/selector_input_file.asp" title="jQuery :file é€‰æ‹©å™¨">:file</a></td>
+<td>$(&quot;:file&quot;)</td>
+<td>æ‰€æœ‰ type=&quot;file&quot; çš„ &lt;input&gt; å…ƒç´ </td>
+</tr>
+
+<tr>
+<td style="background-color:#fff;">&nbsp;</td>
+<td style="background-color:#fff;">&nbsp;</td>
+<td style="background-color:#fff;">&nbsp;</td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/jquery/pr_mask-repeat.asp  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/jquery/pr_mask-repeat.asp'" tppabs="https://www.w3school.com.cn/jquery/selector_input_enabled.asp" title="jQuery :enabled é€‰æ‹©å™¨">:enabled</a></td>
+<td>$(&quot;:enabled&quot;)</td>
+<td>æ‰€æœ‰æ¿€æ´»çš„ input å…ƒç´ </td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/jquery/pr_mask-type.asp  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/jquery/pr_mask-type.asp'" tppabs="https://www.w3school.com.cn/jquery/selector_input_disabled.asp" title="jQuery :disabled é€‰æ‹©å™¨">:disabled</a></td>
+<td>$(&quot;:disabled&quot;)</td>
+<td>æ‰€æœ‰ç¦ç”¨çš„ input å…ƒç´ </td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/jquery/pr_dim_max-height.asp  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/jquery/pr_dim_max-height.asp'" tppabs="https://www.w3school.com.cn/jquery/selector_input_selected.asp" title="jQuery :selected é€‰æ‹©å™¨">:selected</a></td>
+<td>$(&quot;:selected&quot;)</td>
+<td>æ‰€æœ‰è¢«é€‰å–çš„ input å…ƒç´ </td>
+</tr>
+
+<tr>
+<td><a href="javascript:if(confirm('https://www.w3school.com.cn/jquery/pr_dim_max-width.asp  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.w3school.com.cn/jquery/pr_dim_max-width.asp'" tppabs="https://www.w3school.com.cn/jquery/selector_input_checked.asp" title="jQuery :checked é€‰æ‹©å™¨">:checked</a></td>
+<td>$(&quot;:checked&quot;)</td>
+<td>æ‰€æœ‰è¢«é€‰ä¸­çš„ input å…ƒç´ </td>
+</tr>
+</table>
+</div>
+
+
+
+<div>
+<h2>å‚é˜…</h2>
+
+<p>æ•™ç¨‹ï¼š<a href="jquery_selectors.asp.htm" tppabs="https://www.w3school.com.cn/jquery/jquery_selectors.asp" title="jQuery é€‰æ‹©å™¨">jQuery å…ƒç´ é€‰æ‹©å™¨è¯­æ³•</a></p>
+</div>
+
+
+
+<div class="prenextnav">
+<ul class="prenext">
+<li class="pre"><a href="jquery_reference.asp.htm" tppabs="https://www.w3school.com.cn/jquery/jquery_reference.asp" title="jQuery å‚è€ƒæ‰‹å†Œ">jQuery å‚è€ƒæ‰‹å†Œ</a></li>
+<li class="next"><a href="jquery_ref_events.asp.htm" tppabs="https://www.w3school.com.cn/jquery/jquery_ref_events.asp" title="jQuery å‚è€ƒæ‰‹å†Œ - äº‹ä»¶">jQuery äº‹ä»¶</a></li>
+</ul>
+</div><div style="background-color:#fcfdf8; padding:0;">
+<script async src="../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" tppabs="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- W3School ÕıÎÄ¹ã¸æ -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:800px;height:250px"
+     data-ad-client="ca-pub-3381531532877742"
+     data-ad-slot="2086924285"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+</div>
+<!-- maincontent end -->
+
+<div id="sidebar">
+
+<div id="tools">
+<h5 id="tools_reference"><a href="jquery_reference.asp.htm" tppabs="https://www.w3school.com.cn/jquery/jquery_reference.asp">jQuery å‚è€ƒæ‰‹å†Œ</a></h5>
+<h5 id="tools_quiz"><a href="jquery_quiz.asp.htm" tppabs="https://www.w3school.com.cn/jquery/jquery_quiz.asp">jQuery æµ‹éªŒ</a></h5>
+</div>
+
+<div id="sidebar_zzs">
+
+<div id="sbtg">
+<script async src="../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" tppabs="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- W3School ä¾§æ å¹¿å‘Šä½ -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-3381531532877742"
+     data-ad-slot="6744370501"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+</div>
+
+</div>
+
+<div id="footer">
+<p id="p1">
+W3School ç®€ä½“ä¸­æ–‡ç‰ˆæä¾›çš„å†…å®¹ä»…ç”¨äºåŸ¹è®­å’Œæµ‹è¯•ï¼Œä¸ä¿è¯å†…å®¹çš„æ­£ç¡®æ€§ã€‚é€šè¿‡ä½¿ç”¨æœ¬ç«™å†…å®¹éšä¹‹è€Œæ¥çš„é£é™©ä¸æœ¬ç«™æ— å…³ã€‚ç‰ˆæƒæ‰€æœ‰ï¼Œä¿ç•™ä¸€åˆ‡æƒåˆ©ã€‚
+</p>
+
+<p id="p2">
+<a href="../about/index.asp.htm" tppabs="https://www.w3school.com.cn/about/index.asp" title="å…³äº W3School">å…³äº W3School</a>
+<a href="../about/about_helping.asp.htm" tppabs="https://www.w3school.com.cn/about/about_helping.asp" title="å¸®åŠ© W3School">å¸®åŠ© W3School</a>
+<a href="../about/about_use.asp.htm" tppabs="https://www.w3school.com.cn/about/about_use.asp" title="å…³äºä½¿ç”¨">ä½¿ç”¨æ¡æ¬¾</a>
+<a href="../about/about_privacy.asp.htm" tppabs="https://www.w3school.com.cn/about/about_privacy.asp" title="å…³äºéšç§">éšç§æ¡æ¬¾</a>
+<a target="_blank" href="javascript:if(confirm('https://www.ykinvestment.com/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.ykinvestment.com/'" tppabs="https://www.ykinvestment.com/">æŠ€æœ¯æ”¯æŒï¼šèµ¢ç§‘</a>
+<a target="_blank" href="javascript:if(confirm('http://www.beian.miit.gov.cn/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.beian.miit.gov.cn/'" tppabs="http://www.beian.miit.gov.cn/">è’™ICPå¤‡06004630å·</a>
+</p>
+</div>
+
+
+</div>
+<!-- wrapper end -->
+
+
+</body>
+
+</html>

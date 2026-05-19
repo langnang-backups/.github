@@ -1,0 +1,375 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="../../www.googletagmanager.com/gtag/js-id=UA-878633-1" tppabs="https://www.googletagmanager.com/gtag/js?id=UA-878633-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-878633-1');
+</script>
+
+<meta charset=utf-8"utf-8">
+<meta name="robots" content="all" />
+<meta name="author" content="w3school.com.cn" />
+
+<link rel="stylesheet" type="text/css" href="../c.css" tppabs="https://www.w3school.com.cn/c.css" />
+
+<script src="../lib/cc/prism2.js" tppabs="https://www.w3school.com.cn/lib/cc/prism2.js"></script>
+<link rel='stylesheet' href="../lib/cc/prism.css" tppabs="https://www.w3school.com.cn/lib/cc/prism.css">
+
+<link rel="icon" type="image/png" sizes="16x16" href="/ui2019/logo-16-red.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/ui2019/logo-32-red.png">
+<link rel="icon" type="image/png" sizes="48x48" href="/ui2019/logo-48-red.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/ui2019/logo-96-red.png">
+<link rel="apple-touch-icon-precomposed" sizes="180x180" href="/ui2019/logo-180.png">
+
+
+<title>AngularJS 服务</title>
+
+</head>
+
+<body class="browserscripting">
+
+<div id="wrapper">
+
+<div id="header">
+<a id="logo" href="../index.html" tppabs="https://www.w3school.com.cn/index.html" title="w3school 在线教程" style="float:left;">w3school 在线教程</a>
+<div id="header_gg">
+<script async src="../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" tppabs="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- W3 页眉 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-3381531532877742"
+     data-ad-slot="7423315034"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+
+<div id="navfirst">
+<ul id="menu">
+<li id="h"><a href="../h.asp.htm" tppabs="https://www.w3school.com.cn/h.asp" title="HTML 系列教程">HTML 系列教程</a></li>
+<li id="b"><a href="../b.asp.htm" tppabs="https://www.w3school.com.cn/b.asp" title="浏览器脚本教程">浏览器脚本</a></li>
+<li id="s"><a href="../s.asp.htm" tppabs="https://www.w3school.com.cn/s.asp" title="服务器脚本教程">服务器脚本</a></li>
+<li id="p"><a href="../p.asp.htm" tppabs="https://www.w3school.com.cn/p.asp" title="编程教程">编程教程</a></li>
+<li id="x"><a href="../x.asp.htm" tppabs="https://www.w3school.com.cn/x.asp" title="XML 系列教程">XML 系列教程</a></li>
+<li id="w"><a href="../w.asp.htm" tppabs="https://www.w3school.com.cn/w.asp" title="建站手册">建站手册</a></li>
+<li id="r"><a href="../r.asp.htm" tppabs="https://www.w3school.com.cn/r.asp" title="参考手册">参考手册</a></li>
+</ul>
+</div>
+
+<div id="navsecond">
+
+<div id="course"><h2>教程</h2>
+<ul>
+<li><a href="index.asp.htm" tppabs="https://www.w3school.com.cn/angular/index.asp" title="AngularJS 教程">AngularJS 教程</a></li>
+<li><a href="angular_intro.asp.htm" tppabs="https://www.w3school.com.cn/angular/angular_intro.asp" title="AngularJS 简介">AngularJS 简介</a></li>
+<li><a href="angular_expressions.asp.htm" tppabs="https://www.w3school.com.cn/angular/angular_expressions.asp" title="AngularJS 表达式">AngularJS 表达式</a></li>
+<li><a href="angular_modules.asp.htm" tppabs="https://www.w3school.com.cn/angular/angular_modules.asp" title="AngularJS 模块">AngularJS 模块</a></li>
+<li><a href="angular_directives.asp.htm" tppabs="https://www.w3school.com.cn/angular/angular_directives.asp" title="AngularJS 指令">AngularJS 指令</a></li>
+<li><a href="angular_model.asp.htm" tppabs="https://www.w3school.com.cn/angular/angular_model.asp" title="AngularJS 模型">AngularJS 模型</a></li>
+<li><a href="angular_databinding.asp.htm" tppabs="https://www.w3school.com.cn/angular/angular_databinding.asp" title="AngularJS 数据绑定">AngularJS 数据绑定</a></li>
+<li><a href="angular_controllers.asp.htm" tppabs="https://www.w3school.com.cn/angular/angular_controllers.asp" title="AngularJS 控制器">AngularJS 控制器</a></li>
+<li><a href="angular_scopes.asp.htm" tppabs="https://www.w3school.com.cn/angular/angular_scopes.asp" title="AngularJS 作用域">AngularJS 作用域</a></li>
+<li><a href="angular_filters.asp.htm" tppabs="https://www.w3school.com.cn/angular/angular_filters.asp" title="AngularJS 过滤器">AngularJS 过滤器</a></li>
+<li class="currentLink"><a href="angular_services.asp.htm" tppabs="https://www.w3school.com.cn/angular/angular_services.asp" title="AngularJS 服务">AngularJS 服务</a></li>
+<li><a href="angular_http.asp.htm" tppabs="https://www.w3school.com.cn/angular/angular_http.asp" title="AngularJS Http">AngularJS Http</a></li>
+<li><a href="angular_tables.asp.htm" tppabs="https://www.w3school.com.cn/angular/angular_tables.asp" title="AngularJS 表格">AngularJS 表格</a></li>
+<li><a href="angular_select.asp.htm" tppabs="https://www.w3school.com.cn/angular/angular_select.asp" title="AngularJS 选择">AngularJS 选择</a></li>
+<li><a href="angular_sql.asp.htm" tppabs="https://www.w3school.com.cn/angular/angular_sql.asp" title="AngularJS SQL">AngularJS SQL</a></li>
+<li><a href="angular_htmldom.asp.htm" tppabs="https://www.w3school.com.cn/angular/angular_htmldom.asp" title="AngularJS DOM">AngularJS DOM</a></li>
+<li><a href="angular_events.asp.htm" tppabs="https://www.w3school.com.cn/angular/angular_events.asp" title="AngularJS 事件">AngularJS 事件</a></li>
+<li><a href="angular_forms.asp.htm" tppabs="https://www.w3school.com.cn/angular/angular_forms.asp" title="AngularJS 表单">AngularJS 表单</a></li>
+<li><a href="angular_validation.asp.htm" tppabs="https://www.w3school.com.cn/angular/angular_validation.asp" title="AngularJS 验证">AngularJS 验证</a></li>
+<li><a href="angular_api.asp.htm" tppabs="https://www.w3school.com.cn/angular/angular_api.asp" title="AngularJS API">AngularJS API</a></li>
+<li><a href="angular_includes.asp.htm" tppabs="https://www.w3school.com.cn/angular/angular_includes.asp" title="AngularJS 包含">AngularJS 包含</a></li>
+<li><a href="angular_animations.asp.htm" tppabs="https://www.w3school.com.cn/angular/angular_animations.asp" title="AngularJS 动画">AngularJS 动画</a></li>
+<li><a href="angular_routing.asp.htm" tppabs="https://www.w3school.com.cn/angular/angular_routing.asp" title="AngularJS 路由">AngularJS 路由</a></li>
+<li><a href="angular_application.asp.htm" tppabs="https://www.w3school.com.cn/angular/angular_application.asp" title="AngularJS 应用程序">AngularJS 应用程序</a></li>
+</ul>
+<h2>实例</h2>
+<ul>
+<li><a href="angular_examples.asp.htm" tppabs="https://www.w3school.com.cn/angular/angular_examples.asp" title="AngularJS 实例">AngularJS 实例</a></li>
+</ul>
+<h2>参考手册</h2>
+<ul>
+<li><a href="angular_ref_directives.asp.htm" tppabs="https://www.w3school.com.cn/angular/angular_ref_directives.asp" title="AngularJS 参考手册">AngularJS 参考手册</a></li>
+</ul>
+</div><div id="selected">
+<h2>课程推荐：</h2>
+<ul>
+<li><a href="../howto/index.asp.htm" tppabs="https://www.w3school.com.cn/howto/index.asp" title="W3School 百宝箱">W3School 百宝箱</a></li>
+<li><a href="../java/index.asp.htm" tppabs="https://www.w3school.com.cn/java/index.asp" title="Java 教程">Java 教程</a></li>
+</ul>
+
+</div>
+
+</div>
+
+<div id="maincontent">
+
+<h1>AngularJS 服务</h1>
+
+<div class="prenextnav">
+<ul class="prenext">
+<li class="pre"><a href="angular_filters.asp.htm" tppabs="https://www.w3school.com.cn/angular/angular_filters.asp" title="AngularJS 过滤器">AngularJS 过滤器</a></li>
+<li class="next"><a href="angular_http.asp.htm" tppabs="https://www.w3school.com.cn/angular/angular_http.asp" title="AngularJS Http">AngularJS Http</a></li>
+</ul>
+</div>
+
+
+
+<section id="intro">
+<p>在 AngularJS 中，您可以创建自己的服务，或使用众多内置服务之一。</p>
+</section>
+
+
+
+<section>
+<h2>什么是服务？</h2>
+
+<p>在 AngularJS 中，服务是函数或对象，可用于并仅限于您的 AngularJS 应用程序。</p>
+
+<p>AngularJS 有大约 30 个内置服务。其中之一是 <code>$location</code> 服务。</p>
+
+<p><code>$location</code> 服务有方法可以返回有关当前网页位置的信息：</p>
+
+<h3>实例</h3>
+
+<p>在控制器中使用 $location 服务：</p>
+
+<pre class="language-js">
+var app = angular.module('myApp', []);
+app.controller('customersCtrl', function($scope, $location) {
+    $scope.myUrl = $location.absUrl();
+});
+</pre>
+
+<p class="tiy"><a target="_blank" href="javascript:if(confirm('https://www.w3school.com.cn/tiy/pr_margin-top.asp  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ������, �����������, ����Ŀ����ֹͣ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.w3school.com.cn/tiy/pr_margin-top.asp'" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=angular_services">亲自试一试</a></p>
+
+<p>请注意，<code>$location</code> 服务作为参数传递到控制器。为了在控制器中使用该服务，必须将其定义为依赖项。</p>
+</section>
+
+
+
+<section>
+<h2>为什么使用服务？</h2>
+
+<p>对于许多服务，如 <code>$location</code> 服务，您似乎可以使用 DOM 中已有的对象（例如 <em>window.location 对象</em>），但它会有一些限制，至少对于您的 AngularJS 应用程序来说是这样。</p>
+
+<p>AngularJS 不断监督您的应用程序，为了使其正确处理更改和事件，AngularJS 更喜欢您使用 <code>$location</code> 服务而不是 window.location 对象。</p>
+</section>
+
+
+
+<section>
+<h2>$http 服务</h2>
+
+<p><code>$http</code> 服务是 AngularJS 应用程序中最常用的服务之一。该服务向服务器发出请求，并让您的应用程序处理响应。</p>
+
+<h3>实例</h3>
+
+<p>使用 $http 服务从服务器请求数据：</p>
+
+<pre class="language-js">
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope, $http) {
+  $http.get(&quot;welcome.htm&quot;).then(function (response) {
+    $scope.myWelcome = response.data;
+  });
+});
+</pre>
+
+<p class="tiy"><a target="_blank" href="javascript:if(confirm('https://www.w3school.com.cn/tiy/pr_marker.asp  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ������, �����������, ����Ŀ����ֹͣ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.w3school.com.cn/tiy/pr_marker.asp'" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=angular_services_http">亲自试一试</a></p>
+
+<p>此例演示了 <code>$http</code> 服务的非常简单的用法。请在 AngularJS Http 教程中了解有关 $http 服务的更多信息。</p>
+</section>
+
+
+
+<section>
+<h2>$timeout 服务</h2>
+
+<p><code>$timeout</code> 服务是 AngularJS 版本的 <code>window.setTimeout</code> 函数。</p>
+
+<h3>实例</h3>
+
+<p>两秒后显示新消息：</p>
+
+<pre class="language-js">
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope, $timeout) {
+  $scope.myHeader = &quot;Hello World!&quot;;
+  $timeout(function () {
+    $scope.myHeader = &quot;How are you today?&quot;;
+  }, 2000);
+});
+</pre>
+
+<p class="tiy"><a target="_blank" href="javascript:if(confirm('https://www.w3school.com.cn/tiy/pr_marker-end.asp  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ������, �����������, ����Ŀ����ֹͣ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.w3school.com.cn/tiy/pr_marker-end.asp'" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=angular_services_timeout">亲自试一试</a></p>
+</section>
+
+
+
+<section>
+<h2>$interval 服务</h2>
+
+<p><code>$interval</code> 服务是 AngularJS 版本的 <code>window.setInterval</code> 函数。</p>
+
+<h3>实例</h3>
+
+<p>每秒显示时间：</p>
+
+<pre class="language-js">
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope, $interval) {
+  $scope.theTime = new Date().toLocaleTimeString();
+  $interval(function () {
+    $scope.theTime = new Date().toLocaleTimeString();
+  }, 1000);
+});
+</pre>
+
+<p class="tiy"><a target="_blank" href="javascript:if(confirm('https://www.w3school.com.cn/tiy/pr_marker-mid.asp  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ������, �����������, ����Ŀ����ֹͣ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.w3school.com.cn/tiy/pr_marker-mid.asp'" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=angular_services_interval">亲自试一试</a></p>
+</section>
+
+
+
+<section>
+<h2>创建您自己的服务</h2>
+
+<p>要创建自己的服务，请将服务与模块连接：</p>
+
+<p>创建名为 <code>hexafy</code> 的服务：</p>
+
+<pre class="language-js">
+app.service('hexafy', function() {
+  this.myFunc = function (x) {
+    return x.toString(16);
+  }
+});
+</pre>
+
+<p>要使用您的自定义服务，请在定义控制器时将其添加为依赖项：</p>
+
+<h3>实例</h3>
+
+<p>使用名为 hexafy 的自定义服务将数字转换为十六进制数字：</p>
+
+<pre class="language-js">
+app.controller('myCtrl', function($scope, hexafy) {
+  $scope.hex = hexafy.myFunc(255);
+});
+</pre>
+
+<p class="tiy"><a target="_blank" href="javascript:if(confirm('https://www.w3school.com.cn/tiy/pr_marker-start.asp  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ������, �����������, ����Ŀ����ֹͣ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.w3school.com.cn/tiy/pr_marker-start.asp'" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=angular_services_custom">亲自试一试</a></p>
+</section>
+
+
+
+<section>
+<h2>在过滤器中使用自定义服务</h2>
+
+<p>创建服务并将其连接到您的应用程序后，您可以在任何控制器、指令、过滤器或甚至其他服务中使用该服务。</p>
+
+<p>要在过滤器中使用服务，请在定义过滤器时将其添加为依赖项：</p>
+
+<p>过滤器 myFormat 中使用的服务 hexafy：</p>
+
+<pre class="language-js">
+app.filter('myFormat',['hexafy', function(hexafy) {
+  return function(x) {
+    return hexafy.myFunc(x);
+  };
+}]);
+</pre>
+
+<p class="tiy"><a target="_blank" href="javascript:if(confirm('https://www.w3school.com.cn/tiy/pr_mask.asp  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ������, �����������, ����Ŀ����ֹͣ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.w3school.com.cn/tiy/pr_mask.asp'" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=angular_services_filter_1">亲自试一试</a></p>
+
+<p>您可以在显示对象或数组中的值时使用该过滤器：</p>
+
+<pre class="language-html">
+&lt;ul&gt;
+  &lt;li ng-repeat=&quot;x in counts&quot;&gt;{{x | myFormat}}&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+
+<p class="tiy"><a target="_blank" href="javascript:if(confirm('https://www.w3school.com.cn/tiy/pr_mask-clip.asp  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ������, �����������, ����Ŀ����ֹͣ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.w3school.com.cn/tiy/pr_mask-clip.asp'" tppabs="https://www.w3school.com.cn/tiy/t.asp?f=angular_services_filter_2">亲自试一试</a></p>
+</section>
+
+
+
+<div class="prenextnav">
+<ul class="prenext">
+<li class="pre"><a href="angular_filters.asp.htm" tppabs="https://www.w3school.com.cn/angular/angular_filters.asp" title="AngularJS 过滤器">AngularJS 过滤器</a></li>
+<li class="next"><a href="angular_http.asp.htm" tppabs="https://www.w3school.com.cn/angular/angular_http.asp" title="AngularJS Http">AngularJS Http</a></li>
+</ul>
+</div><div style="background-color:#fcfdf8; padding:0;">
+<script async src="../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" tppabs="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- W3School ���Ĺ�� -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:800px;height:250px"
+     data-ad-client="ca-pub-3381531532877742"
+     data-ad-slot="2086924285"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+</div>
+<!-- maincontent end -->
+
+<div id="sidebar">
+
+<div id="tools">
+<h5 id="tools_reference"><a href="angular_ref_directives.asp.htm" tppabs="https://www.w3school.com.cn/angular/angular_ref_directives.asp">AngularJS 参考手册</a></h5>
+<h5 id="tools_example"><a href="angular_examples.asp.htm" tppabs="https://www.w3school.com.cn/angular/angular_examples.asp">AngularJS 实例</a></h5>
+</div>
+
+<div id="sidebar_zzs">
+
+<div id="sbtg">
+<script async src="../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" tppabs="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- W3School 侧栏广告位 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-3381531532877742"
+     data-ad-slot="6744370501"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+</div>
+
+</div>
+
+<div id="footer">
+<p id="p1">
+W3School 简体中文版提供的内容仅用于培训和测试，不保证内容的正确性。通过使用本站内容随之而来的风险与本站无关。版权所有，保留一切权利。
+</p>
+
+<p id="p2">
+<a href="../about/index.asp.htm" tppabs="https://www.w3school.com.cn/about/index.asp" title="关于 W3School">关于 W3School</a>
+<a href="../about/about_helping.asp.htm" tppabs="https://www.w3school.com.cn/about/about_helping.asp" title="帮助 W3School">帮助 W3School</a>
+<a href="../about/about_use.asp.htm" tppabs="https://www.w3school.com.cn/about/about_use.asp" title="关于使用">使用条款</a>
+<a href="../about/about_privacy.asp.htm" tppabs="https://www.w3school.com.cn/about/about_privacy.asp" title="关于隐私">隐私条款</a>
+<a target="_blank" href="javascript:if(confirm('https://www.ykinvestment.com/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.ykinvestment.com/'" tppabs="https://www.ykinvestment.com/">技术支持：赢科</a>
+<a target="_blank" href="javascript:if(confirm('http://www.beian.miit.gov.cn/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://www.beian.miit.gov.cn/'" tppabs="http://www.beian.miit.gov.cn/">蒙ICP备06004630号</a>
+</p>
+</div>
+
+
+</div>
+<!-- wrapper end -->
+
+</body>
+
+</html>
